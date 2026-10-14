@@ -1,0 +1,35 @@
+{
+  "name": "nerds",
+  "version": "0.1.0",
+  "description": "Offline expedition research and geographic route demonstration",
+  "author": "Faire Wind & Song",
+  "private": true,
+  "main": "src/main.cjs",
+  "scripts": {
+    "setup:desktop": "install-electron",
+    "start": "electron .",
+    "test": "node --test test/core.test.cjs",
+    "test:desktop": "node test/desktop.cjs",
+    "package": "electron-builder --win msi --x64",
+    "package:dir": "electron-builder --win --dir --x64"
+  },
+  "dependencies": {
+    "cesium": "1.146.0",
+    "exifr": "7.1.3"
+  },
+  "devDependencies": {
+    "electron": "44.7.1",
+    "electron-builder": "26.15.3"
+  },
+  "build": {
+    "appId": "org.fairewindandsong.nerds",
+    "productName": "NERDS",
+    "copyright": "Faire Wind & Song",
+    "directories": {"output": "dist"},
+    "electronDist": "node_modules/electron/dist",
+    "files": ["src/**/*", "assets/**/*", "package.json", "node_modules/exifr/**/*", "node_modules/cesium/Build/Cesium/**/*", "node_modules/cesium/package.json", "node_modules/cesium/LICENSE.md", "node_modules/cesium/ThirdParty.extra.json"],
+    "win": {"target": "msi", "icon": "assets/nerds.ico", "signExecutable": false},
+    "msi": {"oneClick": false, "perMachine": false, "createDesktopShortcut": true, "createStartMenuShortcut": true, "artifactName": "NERDS-${version}-${arch}.${ext}"},
+    "npmRebuild": false
+  }
+}
