@@ -1,17 +1,118 @@
 [
- {"name":"Amsterdam","country":"Netherlands","lat":52.3676,"lon":4.9041},
- {"name":"Emden","country":"Germany","lat":53.3675,"lon":7.2078},
- {"name":"Hamburg","country":"Germany","lat":53.5511,"lon":9.9937},
- {"name":"Kiel","country":"Germany","lat":54.3233,"lon":10.1228},
- {"name":"Gdansk","aliases":["Gdańsk"],"country":"Poland","lat":54.3520,"lon":18.6466},
- {"name":"Rotterdam","country":"Netherlands","lat":51.9244,"lon":4.4777},
- {"name":"Copenhagen","country":"Denmark","lat":55.6761,"lon":12.5683},
- {"name":"Oslo","country":"Norway","lat":59.9139,"lon":10.7522},
- {"name":"Stockholm","country":"Sweden","lat":59.3293,"lon":18.0686},
- {"name":"Helsinki","country":"Finland","lat":60.1699,"lon":24.9384},
- {"name":"Tallinn","country":"Estonia","lat":59.4370,"lon":24.7536},
- {"name":"London","country":"United Kingdom","lat":51.5074,"lon":-0.1278},
- {"name":"Lisbon","country":"Portugal","lat":38.7223,"lon":-9.1393},
- {"name":"Reykjavik","aliases":["Reykjavík"],"country":"Iceland","lat":64.1466,"lon":-21.9426},
- {"name":"San Francisco","country":"United States","lat":37.7749,"lon":-122.4194}
+  {
+    "name": "Amsterdam",
+    "country": "Netherlands",
+    "lat": 52.367267,
+    "lon": 4.901533,
+    "locationLabel": "Stopera — city hall",
+    "source": "https://www.wikidata.org/wiki/Q1138851"
+  },
+  {
+    "name": "Emden",
+    "country": "Germany",
+    "lat": 53.3668,
+    "lon": 7.20666,
+    "locationLabel": "Historic town hall (museum)",
+    "source": "https://www.wikidata.org/wiki/Q1335258"
+  },
+  {
+    "name": "Hamburg",
+    "country": "Germany",
+    "lat": 53.55022,
+    "lon": 9.99277,
+    "locationLabel": "City hall",
+    "source": "https://www.wikidata.org/wiki/Q3987"
+  },
+  {
+    "name": "Kiel",
+    "country": "Germany",
+    "lat": 54.3225,
+    "lon": 10.1325,
+    "locationLabel": "City hall",
+    "source": "https://www.wikidata.org/wiki/Q1740971"
+  },
+  {
+    "name": "Gdansk",
+    "aliases": [
+      "Gdańsk"
+    ],
+    "country": "Poland",
+    "lat": 54.34883,
+    "lon": 18.6527,
+    "locationLabel": "Historic Main Town Hall",
+    "source": "https://www.wikidata.org/wiki/Q2135657"
+  },
+  {
+    "name": "Rotterdam",
+    "country": "Netherlands",
+    "lat": 51.9244,
+    "lon": 4.4777,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Copenhagen",
+    "country": "Denmark",
+    "lat": 55.6761,
+    "lon": 12.5683,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Oslo",
+    "country": "Norway",
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Stockholm",
+    "country": "Sweden",
+    "lat": 59.3293,
+    "lon": 18.0686,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Helsinki",
+    "country": "Finland",
+    "lat": 60.1699,
+    "lon": 24.9384,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Tallinn",
+    "country": "Estonia",
+    "lat": 59.437,
+    "lon": 24.7536,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "London",
+    "country": "United Kingdom",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Lisbon",
+    "country": "Portugal",
+    "lat": 38.7223,
+    "lon": -9.1393,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "Reykjavik",
+    "aliases": [
+      "Reykjavík"
+    ],
+    "country": "Iceland",
+    "lat": 64.1466,
+    "lon": -21.9426,
+    "locationLabel": "Approximate city centre"
+  },
+  {
+    "name": "San Francisco",
+    "country": "United States",
+    "lat": 37.7749,
+    "lon": -122.4194,
+    "locationLabel": "Approximate city centre"
+  }
 ]

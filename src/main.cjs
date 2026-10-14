@@ -1,4 +1,10 @@
-const {app,BrowserWindow,ipcMain,session,dialog,Menu}=require('electron');
+const {app,BrowserWindow,ipcMain,session,dialog,Menu,shell,nativeImage}=require('electron');
+const {Worker}=require('node:worker_threads');
+const projects=require('./projects.cjs');
+const formats=require('./exports.cjs');
+const {cleanVessel,estimateHullSpeed}=require('./vessel.cjs');
+const {calculate}=require('./navigation.cjs');
+const {suggest}=require('./water-route.cjs');
 const http=require('node:http');
 const fs=require('node:fs');
 const path=require('node:path');
@@ -7,6 +13,11 @@ const exifr=require('exifr');
 const {openStore,lookup,missions,localEndpoint}=require('./core.cjs');
 const root=path.resolve(__dirname,'..');
 let win,store,config,configFile,httpServer,appBase,appURL;
+let routing=false;
+const markDirty=()=>store.put('project',{...store.get('project',{path:null}),dirty:true});
+const projectInfo=()=>{const p=store.get('project',{path:null,dirty:false});return {...p,name:p.path?path.basename(p.path,path.extname(p.path)):'UNTITLED PROJECT'};};
+async function saveProject(as=false){let file=projectInfo().path;if(as||!file){const r=await dialog.showSaveDialog(win,{defaultPath:file||'Expedition.nerds',filters:[{name:'NERDS project',extensions:['nerds']}]});if(r.canceled)return false;file=r.filePath;if(!file.toLowerCase().endsWith('.nerds'))file+='.nerds';}projects.write(file,projects.snapshot(store));store.put('project',{path:file,dirty:false});return true;}
+async function mayReplace(){if(!projectInfo().dirty)return true;const r=await dialog.showMessageBox(win,{type:'question',message:'Save the current project before continuing?',buttons:['Save','Discard changes','Cancel'],defaultId:0,cancelId:2});return r.response===1||(r.response===0&&await saveProject());}
 const resourcePrefix='/'+randomUUID()+'/';
 const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.xml':'application/xml','.wasm':'application/wasm','.gif':'image/gif'};
 // Cesium's bundled codecs use generated functions and WebAssembly. Script sources
@@ -29,12 +40,12 @@ async function importPaths(paths,waypointId) {
     const hasGPS=Number.isFinite(meta.latitude)&&Number.isFinite(meta.longitude)&&Math.abs(meta.latitude)<=90&&Math.abs(meta.longitude)<=180;
     const safe=JSON.parse(JSON.stringify(meta,(_,v)=>typeof v==='bigint'?String(v):v));
     const item={id:randomUUID(),source_path:path.resolve(file),name:path.basename(file),lat:hasGPS?meta.latitude:null,lon:hasGPS?meta.longitude:null,waypoint_id:waypointId||null,metadata:{...safe,fileSize:stat.size,fileModified:stat.mtime.toISOString()},imported_at:new Date().toISOString()};
-    store.addMedia(item);results.push({name:item.name,gps:hasGPS});
+    store.addMedia(item);markDirty();results.push({name:item.name,gps:hasGPS});
   }catch(error){results.push({name:path.basename(file),error:error.message});}}
   return {results,media:store.media()};
 }
 app.whenReady().then(async()=>{
-  const home=app.getPath('userData');fs.mkdirSync(home,{recursive:true});
+  const home=process.env.NERDS_DATA_DIR?path.join(process.env.NERDS_DATA_DIR,'app-config'):app.getPath('userData');fs.mkdirSync(home,{recursive:true});
   configFile=path.join(home,'config.json');
   config=fs.existsSync(configFile)?JSON.parse(fs.readFileSync(configFile,'utf8')):{};
   config.dataDir=process.env.NERDS_DATA_DIR||config.dataDir||path.join(home,'data');
@@ -64,12 +75,30 @@ app.whenReady().then(async()=>{
   // The renderer cannot acquire remote content. Deliberate local inference calls run in the main process.
   session.defaultSession.webRequest.onBeforeRequest((details,callback)=>callback({cancel:!details.url.startsWith(appBase)&&! /^(devtools:|blob:|data:)/.test(details.url)}));
   session.defaultSession.setPermissionRequestHandler((_,__,callback)=>callback(false));
-  Menu.setApplicationMenu(null);
+  const command=action=>win?.webContents.send('command',action);
+  Menu.setApplicationMenu(Menu.buildFromTemplate([
+   {label:'File',submenu:[{label:'New project',accelerator:'CmdOrCtrl+N',click:()=>command('new')},{label:'Open project…',accelerator:'CmdOrCtrl+O',click:()=>command('open')},{label:'Save project',accelerator:'CmdOrCtrl+S',click:()=>command('save')},{label:'Save project as…',accelerator:'CmdOrCtrl+Shift+S',click:()=>command('save-as')},{type:'separator'},{label:'Export expedition…',click:()=>command('export')},{role:'quit'}]},
+   {label:'Edit',submenu:[{role:'undo'},{role:'redo'},{type:'separator'},{role:'cut'},{role:'copy'},{role:'paste'},{type:'separator'},{label:'Preferences — Vessel…',click:()=>command('vessel')},{label:'Preferences — Storage…',click:()=>command('settings')}]},
+   {label:'Help',submenu:[{label:'About NERDS',click:()=>dialog.showMessageBox(win,{title:'About NERDS',message:'NERDS '+app.getVersion(),detail:'© 2026 4nR TeK Inc. All rights reserved.\nCreated by Clark Graff.\n\nExpedition research software. Water outlines are experimental and are not navigable routes.\n\nCesiumJS: Apache-2.0. Electron: MIT and bundled Chromium notices. Natural Earth: public domain. See THIRD-PARTY-NOTICES.txt in the application resources.'})}]}
+  ]));
   win=new BrowserWindow({width:1500,height:980,minWidth:1120,minHeight:760,title:'NERDS · Faire Wind & Song',icon:path.join(root,'assets','nerds.ico'),backgroundColor:'#0b141c',show:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
   win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',event=>event.preventDefault());
-  handle('load',()=>({state:store.read(),cities:lookup(''),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
-  handle('save',state=>store.save(state));
+  handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),cities:lookup(''),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
+  handle('save',state=>{const valid=store.save(state);markDirty();return valid;});
+  handle('project',async action=>{
+   if(['save','save-as'].includes(action)){if(!await saveProject(action==='save-as'))return null;}
+   else if(action==='new'){if(!await mayReplace())return null;projects.replace(store,projects.blank());store.put('project',{path:null,dirty:false});}
+   else if(action==='open'){const r=await dialog.showOpenDialog(win,{filters:[{name:'NERDS project',extensions:['nerds']}],properties:['openFile']});if(r.canceled)return null;const doc=projects.read(r.filePaths[0]);if(!await mayReplace())return null;projects.replace(store,doc);store.put('project',{path:r.filePaths[0],dirty:false});}
+   else throw Error('Unknown project action.');
+   return {state:store.read(),media:store.media(),project:projectInfo()};
+  });
+  handle('vessel-profile',v=>{const clean=cleanVessel(v);if(!clean.name)throw Error('Name the vessel before saving a profile.');const profiles=store.get('vesselProfiles',[]).filter(p=>p.name!==clean.name);profiles.push(clean);store.put('vesselProfiles',profiles);return profiles;});
+  handle('hull-speed',v=>estimateHullSpeed(v));
+  handle('image',async kind=>{if(!['logo','vessel'].includes(kind))throw Error('Unknown image type.');const r=await dialog.showOpenDialog(win,{filters:[{name:'Image',extensions:['png','jpg','jpeg']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Choose an image below 20 MB.');let img=nativeImage.createFromPath(r.filePaths[0]);if(img.isEmpty())throw Error('Image could not be read.');const size=img.getSize();if(size.width>512||size.height>512)img=img.resize(size.width>=size.height?{width:512}:{height:512});const data=img.toDataURL();if(kind==='logo'){config.logo=data;saveConfig();}return data;});
+  handle('website',()=>shell.openExternal('https://www.4nr.com'));
+  handle('suggest-access',id=>{const w=store.read().waypoints.find(w=>w.id===id);if(!w)throw Error('Save this waypoint first.');return suggest(w);});
+  handle('calculate',async()=>{const s=store.read();if(s.transport!=='BY-SEA')return calculate(s);if(routing)throw Error('A calculation is already running.');routing=true;try{return await new Promise((resolve,reject)=>{const worker=new Worker(path.join(__dirname,'route-worker.cjs'),{workerData:s});const timer=setTimeout(()=>{worker.terminate();reject(Error('Route search timed out. Add intermediate offshore waypoints.'));},90000);worker.once('message',r=>{clearTimeout(timer);r.error?reject(Error(r.error)):resolve(r);});worker.once('error',e=>{clearTimeout(timer);reject(e);});worker.once('exit',code=>{clearTimeout(timer);if(code)reject(Error('Route worker stopped.'));});});}finally{routing=false;}});
   handle('lookup',q=>lookup(String(q).slice(0,200)));
   handle('import',async id=>{const result=await dialog.showOpenDialog(win,{title:'Index photographs (originals stay in place)',properties:['openFile','multiSelections'],filters:[{name:'Photographs',extensions:['jpg','jpeg','tif','tiff','png','webp']}]});return result.canceled?{results:[],media:store.media()}:importPaths(result.filePaths,id);});
   handle('choose-path',async kind=>{
@@ -93,9 +122,10 @@ app.whenReady().then(async()=>{
     const dest=path.join(config.archiveDir,sha256+path.extname(item.source_path).toLowerCase());
     if(!fs.existsSync(dest))await fs.promises.writeFile(dest,bytes,{flag:'wx'});
     store.db.prepare('INSERT INTO acquisitions VALUES (?,?,?,?,?,?,?,?)').run(randomUUID(),'manual-permitted-image',url.href,license.trim(),dest,sha256,'verified',new Date().toISOString());
+    markDirty();
     return {path:dest,sha256};
   });
-  handle('export',async()=>{const result=await dialog.showSaveDialog(win,{defaultPath:'NERDS-expedition.json',filters:[{name:'JSON',extensions:['json']}]});if(!result.canceled)await fs.promises.writeFile(result.filePath,JSON.stringify({version:app.getVersion(),state:store.read(),media:store.media()},null,2));return !result.canceled;});
+  handle('export',async(format='json')=>{if(!['json','kml','kmz','gpx'].includes(format))throw Error('Unknown export format.');const result=await dialog.showSaveDialog(win,{defaultPath:projectInfo().name+'.'+format,filters:[{name:format.toUpperCase(),extensions:[format]}]});if(result.canceled)return false;const s=store.read(),name=projectInfo().name;const data=format==='json'?JSON.stringify(projects.snapshot(store),null,2):format==='gpx'?formats.gpx(s,name):format==='kmz'?formats.kmz(formats.kml(s,name)):formats.kml(s,name);await fs.promises.writeFile(result.filePath,data);return true;});
   await win.loadURL(appURL);win.show();
 }).catch(error=>{dialog.showErrorBox('NERDS startup failed',error.stack||error.message);app.quit();});
 app.on('window-all-closed',()=>app.quit());

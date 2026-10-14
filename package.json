@@ -1,14 +1,14 @@
 {
   "name": "nerds",
-  "version": "0.1.0",
-  "description": "Offline expedition research and geographic route demonstration",
-  "author": "Faire Wind & Song",
+  "version": "0.2.0",
+  "description": "Offline expedition research and geographic planning",
+  "author": "4nR TeK Inc.",
   "private": true,
   "main": "src/main.cjs",
   "scripts": {
     "setup:desktop": "install-electron",
     "start": "electron .",
-    "test": "node --test test/core.test.cjs",
+    "test": "node --test test/*.test.cjs",
     "test:desktop": "node test/desktop.cjs",
     "package": "electron-builder --win msi --x64",
     "package:dir": "electron-builder --win --dir --x64"
@@ -24,12 +24,41 @@
   "build": {
     "appId": "org.fairewindandsong.nerds",
     "productName": "NERDS",
-    "copyright": "Faire Wind & Song",
-    "directories": {"output": "dist"},
+    "copyright": "© 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff.",
+    "directories": {
+      "output": "dist"
+    },
     "electronDist": "node_modules/electron/dist",
-    "files": ["src/**/*", "assets/**/*", "package.json", "node_modules/exifr/**/*", "node_modules/cesium/Build/Cesium/**/*", "node_modules/cesium/package.json", "node_modules/cesium/LICENSE.md", "node_modules/cesium/ThirdParty.extra.json"],
-    "win": {"target": "msi", "icon": "assets/nerds.ico", "signExecutable": false},
-    "msi": {"oneClick": false, "perMachine": false, "createDesktopShortcut": true, "createStartMenuShortcut": true, "artifactName": "NERDS-${version}-${arch}.${ext}"},
-    "npmRebuild": false
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "node_modules/exifr/**/*",
+      "node_modules/cesium/Build/Cesium/**/*",
+      "node_modules/cesium/package.json",
+      "node_modules/cesium/LICENSE.md",
+      "node_modules/cesium/ThirdParty.extra.json",
+      "node_modules/cesium/ThirdParty.json"
+    ],
+    "win": {
+      "target": "msi",
+      "icon": "assets/nerds.ico",
+      "signExecutable": false
+    },
+    "msi": {
+      "oneClick": false,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "NERDS-${version}-${arch}.${ext}"
+    },
+    "npmRebuild": false,
+    "extraFiles": [
+      {
+        "from": "THIRD-PARTY-NOTICES.txt",
+        "to": "THIRD-PARTY-NOTICES.txt"
+      }
+    ],
+    "msiProjectCreated": "scripts/msi-branding.cjs"
   }
 }

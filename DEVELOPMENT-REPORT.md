@@ -1,3 +1,5 @@
+> Historical v0.1.0 report. See RELEASE-NOTES-0.2.0.md for the current release and its verification.
+
 # NERDS v0.1.0 — development report
 
 ## Delivered functions

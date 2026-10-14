@@ -21,14 +21,18 @@ function gpsJpeg(jpeg){
 async function launch(){
  const env={...process.env,NERDS_DATA_DIR:path.join(testDir,'data')};delete env.ELECTRON_RUN_AS_NODE;
  desktop=await _electron.launch({executablePath:process.env.NERDS_TEST_EXECUTABLE||require('electron'),args:process.env.NERDS_TEST_EXECUTABLE?[]:[root],env,timeout:60000});
- const page=await desktop.firstWindow();lastPage=page;page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')console.error('Renderer:',m.text());});
+ const page=await desktop.firstWindow();lastPage=page;page.setDefaultTimeout(25000);page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')console.error('Renderer:',m.text());});
  page.on('requestfailed',r=>console.error('Request failed:',r.url(),r.failure()));
  try{await page.waitForFunction(()=>window.nerdsReady===true,{},{timeout:30000});}catch(e){console.error('Startup status:',await page.locator('body').innerText());console.error('Page errors:',errors);await page.screenshot({path:path.join(artifacts,'startup-failure.png')});throw e;}return page;
 }
 (async()=>{
  let page=await launch();
- assert.equal(await page.locator('.waypoint').count(),5);
- assert.equal(await page.locator('#map-status').textContent(),'Local Natural Earth basemap');
+ assert.equal(await page.locator('.waypoint').count(),0);
+ assert.equal(await page.evaluate(()=>state.view),'GLOBE');
+ await page.screenshot({path:path.join(artifacts,'fresh-globe.png')});
+ for(const city of ['Amsterdam','Emden','Hamburg','Kiel','Gdansk']){await page.locator('#city').fill(city);await page.locator('#add-form button').click();}
+ await page.waitForFunction(()=>state.waypoints.length===5);
+ assert.equal(await page.locator('#map-status').textContent(),'Offline vector coastlines · Natural Earth');
  await page.waitForFunction(()=>viewer.scene.globe.tilesLoaded && viewer.scene.globe._surface._tilesToRender.length>0);
  assert.equal(await page.evaluate(()=>viewer.scene.globe._surface._tilesToRender.length>0),true);
  await page.screenshot({path:path.join(artifacts,'globe.png')});
@@ -54,7 +58,23 @@ async function launch(){
  assert.equal(await page.evaluate(()=>viewer.entities.values.filter(e=>e.id.startsWith('photo-')).length),1);
  await page.getByRole('button',{name:/gps-photo.jpg/}).click();await page.locator('#media-dialog summary').click();await page.locator('#source-url').fill('https://example.invalid/synthetic-test-photo');await page.locator('#license').fill('Synthetic fixture created locally for this test.');await page.locator('#permission').check();await page.locator('#archive').click();await page.waitForFunction(()=>document.getElementById('status').textContent.startsWith('Permitted image archived:'));
  const archived=fs.readdirSync(path.join(testDir,'data','archive'));assert.equal(archived.length,1);assert.deepEqual(fs.readFileSync(path.join(testDir,'data','archive',archived[0])),fs.readFileSync(photo));
- const exported=path.join(testDir,'expedition.json');await desktop.evaluate(({dialog},filePath)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath});},exported);await page.locator('#export').click();await page.waitForFunction(()=>document.getElementById('status').textContent==='Expedition exported.');assert.equal(JSON.parse(fs.readFileSync(exported,'utf8')).state.waypoints.length,6);
+ const exported=path.join(testDir,'expedition.json');await desktop.evaluate(({dialog},filePath)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath});},exported);await page.locator('#export').click();await page.locator('#export-format').selectOption('json');await page.locator('#export-confirm').click();await page.waitForFunction(()=>document.getElementById('status').textContent==='Expedition exported.');assert.equal(JSON.parse(fs.readFileSync(exported,'utf8')).state.waypoints.length,6);
+ // New release workflows use real UI controls and native dialog stubs.
+ await page.locator('#tilted').click();assert.equal(await page.evaluate(()=>viewer.scene.mode),1);
+ await page.locator('#globe').click();assert.equal(await page.evaluate(()=>viewer.scene.mode),3);
+ await page.locator('#vessel-open').click();await page.locator('#v-name').fill('Test Vessel');await page.locator('#v-hullType').selectOption('Displacement monohull');await page.locator('#v-lwl').fill('10');await page.locator('#estimate-hull').click();await page.waitForFunction(()=>Number(document.getElementById('v-hullSpeed').value)>7);await page.locator('#save-profile').click();await page.locator('#vessel-form button[type=submit]').click();await page.waitForFunction(()=>!document.getElementById('vessel-dialog').open);
+ const before=await page.evaluate(()=>state.waypoints.map(w=>w.id));
+ await page.evaluate(()=>{const panel=document.querySelector('.waypoints');panel.scrollTop=document.getElementById('waypoint-list').offsetTop-panel.offsetTop-25;});const sourceBox=await page.locator('.waypoint').first().boundingBox(),targetBox=await page.locator('.waypoint').nth(2).boundingBox();await page.mouse.move(sourceBox.x+12,sourceBox.y+20);await page.mouse.down();await page.mouse.move(sourceBox.x+20,sourceBox.y+30,{steps:5});await page.mouse.move(targetBox.x+20,targetBox.y+25,{steps:10});await page.mouse.move(targetBox.x+21,targetBox.y+26);await page.mouse.up();await page.waitForFunction(id=>state.waypoints[0].id!==id,before[0]);
+ const reordered=await page.evaluate(()=>state.waypoints.map(w=>w.id));assert.equal(new Set(reordered).size,6);assert.notDeepEqual(reordered,before);assert.equal(await page.evaluate(()=>viewer.entities.getById(state.waypoints[0].id).label.text.getValue()),'1  '+await page.evaluate(()=>state.waypoints[0].name));
+ await page.locator('#cruising').fill('6');await page.locator('#cruising').blur();await page.locator('#calculate').click();await page.waitForFunction(()=>calculation!==null);assert.ok(await page.evaluate(()=>calculation.totalNM>0));
+ await page.locator('.waypoint').nth(1).getByTitle('Move waypoint up').click();await page.waitForFunction(()=>calculation===null);assert.equal(await page.locator('#route-total').textContent(),'');
+ const projectFile=path.join(testDir,'Sea Trial.nerds');await desktop.evaluate(({dialog},filePath)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath});},projectFile);await page.locator('#project-save').click();await page.waitForFunction(()=>project.name==='Sea Trial'&&!project.dirty);assert.equal(JSON.parse(fs.readFileSync(projectFile,'utf8')).state.vessel.name,'Test Vessel');
+ // Create and reopen through the same bridge as File menu commands.
+ await page.evaluate(()=>projectAction('new'));assert.equal(await page.locator('.waypoint').count(),0);assert.equal(await page.evaluate(()=>viewer.scene.mode),3);
+ await desktop.evaluate(({dialog},filePath)=>{dialog.showOpenDialog=async()=>({canceled:false,filePaths:[filePath]});},projectFile);await page.evaluate(()=>projectAction('open'));assert.equal(await page.locator('.waypoint').count(),6);assert.equal(await page.locator('#media-count').textContent(),'2');
+ // Cancel New with unsaved edits; retain project state.
+ await page.evaluate(async()=>{state.waypoints.find(w=>w.name!=='Rotterdam test').notes+=' edit';await save();});await desktop.evaluate(({dialog})=>{dialog.showMessageBox=async()=>({response:2});});await page.evaluate(()=>projectAction('new'));assert.equal(await page.locator('.waypoint').count(),6);
+ for(const format of ['kml','kmz','gpx']){const file=path.join(testDir,'export.'+format);await desktop.evaluate(({dialog},filePath)=>{dialog.showSaveDialog=async()=>({canceled:false,filePath});},file);await page.locator('#export').click();await page.locator('#export-format').selectOption(format);await page.locator('#export-confirm').click();await page.waitForFunction(()=>!document.getElementById('export-dialog').open);assert.ok(fs.statSync(file).size>100);}
  // Exercise the replaceable inference interface against a deterministic local server.
  server=http.createServer((req,res)=>{res.setHeader('Content-Type','application/json');if(req.url==='/v1/models')res.end(JSON.stringify({data:[{id:'test-model'}]}));else if(req.url==='/v1/chat/completions')res.end(JSON.stringify({choices:[{message:{content:'Local adapter test response.'}}]}));else{res.statusCode=404;res.end('{}');}});
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
