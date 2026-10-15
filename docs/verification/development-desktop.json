@@ -1,0 +1,23 @@
+{
+  "version": "0.3.0",
+  "timestamp": "2026-10-15T16:36:42.772Z",
+  "checks": [
+    "AF-003/006 clean globe, zero waypoints, creation date and UTC default",
+    "AF-004/005 offline disambiguated lookup and selected place creation",
+    "Manual coordinates, map pin, exact coordinates, cancel and deletion",
+    "AF-014 vessel DONE/CANCEL/X, dimensions, propulsion and profile",
+    "AF-019 automatic sea routing without manual access; dual estimates, connectors excluded",
+    "AF-015 physical drag reorders stable IDs, map and recalculated route",
+    "AF-006 24-hour zone change preserves instant; ambiguous DST choice updates ETAs",
+    "AF-002 transport selection and mode-specific recalculation",
+    "AF-001/018 logo and storage draft cancel/close/commit semantics",
+    "AF-017 assistant DONE/CANCEL without model or external engine",
+    "AF-007–013 actual independent map tiles, external hints, all-hints and forecast labels",
+    "Photo indexing preserves original; globe/Mercator/tilted retained",
+    "AF-016 project export/save/new/open/restart preserves vessel, IDs, selected alternative, layers, zone, logo and media",
+    "All three waypoint creation methods persist exact coordinates and stable IDs through edit, reorder and restart"
+  ],
+  "rendererErrors": [],
+  "offline": "External renderer networking denied; OS adapter not disabled",
+  "projectFile": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-v030-9kShaa\\Acceptance.nerds"
+}

@@ -1,0 +1,4 @@
+# Preserve upstream dataset bytes and their recorded SHA-256 values across checkouts.
+assets/layers/*.geojson -text
+assets/geonames.sqlite.gz -text
+*.docx -text
