@@ -1,0 +1,17 @@
+[
+  {
+    "sha256": "74d9c16229c095fde65943a9919e337682f044bcebccb120764f38edf3b70f4a",
+    "bytes": 2284669,
+    "file": "borders.geojson"
+  },
+  {
+    "sha256": "66a0c7b438e92fd124822cc5921cfa11042f48c294ade5e0f03f2c6640fd0248",
+    "bytes": 50474096,
+    "file": "roads.geojson"
+  },
+  {
+    "sha256": "aa52ab97e5f906693f31fe2e625c9d6be78a4e74fcd4142a7261235b355cacfe",
+    "bytes": 3527701,
+    "file": "timezones.geojson"
+  }
+]

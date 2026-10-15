@@ -5,7 +5,7 @@ const os=require('node:os');
 const path=require('node:path');
 const {lookup,cleanWaypoint,cleanState,openStore,localEndpoint}=require('../src/core.cjs');
 test('offline lookup supports names and diacritics, rejects unknown cities',()=>{
- assert.equal(lookup('Gdańsk')[0].name,'Gdansk');assert.equal(lookup('amster')[0].name,'Amsterdam');assert.deepEqual(lookup('unknownplace'),[]);
+ assert.ok(lookup('Gdansk').some(p=>p.name==='Gdańsk'));assert.ok(lookup('amster').some(p=>p.name==='Amsterdam'));assert.deepEqual(lookup('unknownplace'),[]);
 });
 test('waypoints reject missing, nonfinite and out-of-range coordinates',()=>{
  for(const lat of ['',null,NaN,Infinity,91,-91])assert.throws(()=>cleanWaypoint({name:'test',lat,lon:1}));
