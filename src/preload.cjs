@@ -7,5 +7,6 @@ contextBridge.exposeInMainWorld('nerds',{
  project:action=>ipcRenderer.invoke('project',action),onCommand:fn=>ipcRenderer.on('command',(_,action)=>fn(action)),
  saveVesselProfile:v=>ipcRenderer.invoke('vessel-profile',v),hullSpeed:v=>ipcRenderer.invoke('hull-speed',v),
  image:kind=>ipcRenderer.invoke('image',kind),website:()=>ipcRenderer.invoke('website'),
+ lookupOnline:q=>ipcRenderer.invoke('lookup-online',q),importLayers:()=>ipcRenderer.invoke('import-layers'),commitVessel:v=>ipcRenderer.invoke('commit-vessel',v),saveConfig:c=>ipcRenderer.invoke('save-config',c),saveAI:v=>ipcRenderer.invoke('save-ai',v),closeReady:()=>ipcRenderer.invoke('close-ready'),
  suggestAccess:id=>ipcRenderer.invoke('suggest-access',id),calculate:()=>ipcRenderer.invoke('calculate')
 });

@@ -16,3 +16,6 @@ config.local.json
 *.log
 dist/
 test-results/
+
+work/
+!assets/geonames.sqlite.gz

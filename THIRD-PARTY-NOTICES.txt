@@ -1845,3 +1845,23 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+GeoNames worldwide place database (cities500, country and administrative names)
+Source: https://download.geonames.org/export/dump/
+Attribution: GeoNames, https://www.geonames.org/
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
+Changes: indexed and compressed for offline search; combined with Natural Earth geographic names.
+No warranty of accuracy, completeness or suitability for navigation.
+
+Natural Earth roads, international borders, time-zone reference polygons and named places
+https://www.naturalearthdata.com/about/terms-of-use/ — public domain.
+Data files obtained from https://github.com/nvkelso/natural-earth-vector (10m GeoJSON).
+Time-zone reference polygons are not a current legal or daylight-saving authority.
+
+Optional online geocoding results: OpenStreetMap contributors
+https://www.openstreetmap.org/copyright — Open Database License (ODbL).
+Nominatim service is contacted only by explicit user search, with attribution,
+a descriptive User-Agent, caching and a maximum one request per 1.1 seconds.
+https://operations.osmfoundation.org/policies/nominatim/
+No Earth project code has been copied or bundled.

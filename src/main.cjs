@@ -5,6 +5,8 @@ const formats=require('./exports.cjs');
 const {cleanVessel,estimateHullSpeed}=require('./vessel.cjs');
 const {calculate}=require('./navigation.cjs');
 const {suggest}=require('./water-route.cjs');
+const gazetteer=require('./gazetteer.cjs');
+const {cleanLayers}=require('./layers.cjs');
 const http=require('node:http');
 const fs=require('node:fs');
 const path=require('node:path');
@@ -50,7 +52,7 @@ app.whenReady().then(async()=>{
   config=fs.existsSync(configFile)?JSON.parse(fs.readFileSync(configFile,'utf8')):{};
   config.dataDir=process.env.NERDS_DATA_DIR||config.dataDir||path.join(home,'data');
   config.cacheDir=config.cacheDir||path.join(config.dataDir,'cache');config.archiveDir=config.archiveDir||path.join(config.dataDir,'archive');
-  store=openStore(config.dataDir);
+  store=openStore(config.dataDir);for(const key of ['cacheDir','archiveDir'])fs.mkdirSync(config[key],{recursive:true});
   const resourceResponse=async request=>{
     try{
       const url=new URL(request.url,appBase);if(!url.pathname.startsWith(resourcePrefix)||request.headers.host!==new URL(appBase).host||request.method!=='GET')return new Response('Not found',{status:404});
@@ -84,7 +86,7 @@ app.whenReady().then(async()=>{
   win=new BrowserWindow({width:1500,height:980,minWidth:1120,minHeight:760,title:'NERDS · Faire Wind & Song',icon:path.join(root,'assets','nerds.ico'),backgroundColor:'#0b141c',show:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
   win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',event=>event.preventDefault());
-  handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),cities:lookup(''),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
+  handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),gazetteer:require('../assets/gazetteer-manifest.json'),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
   handle('save',state=>{const valid=store.save(state);markDirty();return valid;});
   handle('project',async action=>{
    if(['save','save-as'].includes(action)){if(!await saveProject(action==='save-as'))return null;}
@@ -95,23 +97,29 @@ app.whenReady().then(async()=>{
   });
   handle('vessel-profile',v=>{const clean=cleanVessel(v);if(!clean.name)throw Error('Name the vessel before saving a profile.');const profiles=store.get('vesselProfiles',[]).filter(p=>p.name!==clean.name);profiles.push(clean);store.put('vesselProfiles',profiles);return profiles;});
   handle('hull-speed',v=>estimateHullSpeed(v));
-  handle('image',async kind=>{if(!['logo','vessel'].includes(kind))throw Error('Unknown image type.');const r=await dialog.showOpenDialog(win,{filters:[{name:'Image',extensions:['png','jpg','jpeg']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Choose an image below 20 MB.');let img=nativeImage.createFromPath(r.filePaths[0]);if(img.isEmpty())throw Error('Image could not be read.');const size=img.getSize();if(size.width>512||size.height>512)img=img.resize(size.width>=size.height?{width:512}:{height:512});const data=img.toDataURL();if(kind==='logo'){config.logo=data;saveConfig();}return data;});
+  handle('commit-vessel',v=>{const clean=cleanVessel(v);const next={...store.read(),vessel:clean,route:null};store.db.exec('BEGIN');try{const result=store.save(next);const profiles=store.get('vesselProfiles',[]).filter(p=>p.name!==clean.name);if(clean.name)profiles.push(clean);store.put('vesselProfiles',profiles);markDirty();store.db.exec('COMMIT');return {state:result,profiles};}catch(e){store.db.exec('ROLLBACK');throw e;}});
+  handle('save-config',draft=>{const next={...config};for(const key of ['dataDir','cacheDir','archiveDir']){if(typeof draft[key]!=='string'||!fs.statSync(draft[key]).isDirectory())throw Error('Select an existing directory.');next[key]=draft[key];}next.logo=cleanVessel({imageData:draft.logo}).imageData;const url=new URL(draft.geocoderUrl||'https://nominatim.openstreetmap.org/search');if(url.protocol!=='https:'||url.username||url.password)throw Error('Use an HTTPS geocoder URL without credentials.');next.geocoderUrl=url.href;config=next;saveConfig();return config;});
+  handle('save-ai',value=>{const ai={endpoint:localEndpoint(value.endpoint),model:String(value.model||'').slice(0,200)};store.put('ai',ai);return ai;});
+  handle('close-ready',()=>{win.destroy();app.quit();});
+  win.on('close',event=>{event.preventDefault();win.webContents.send('command','close');});
+  handle('image',async kind=>{if(!['logo','vessel'].includes(kind))throw Error('Unknown image type.');const r=await dialog.showOpenDialog(win,{filters:[{name:'Image',extensions:['png','jpg','jpeg']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Choose an image below 20 MB.');let img=nativeImage.createFromPath(r.filePaths[0]);if(img.isEmpty())throw Error('Image could not be read.');const size=img.getSize();if(size.width>512||size.height>512)img=img.resize(size.width>=size.height?{width:512}:{height:512});const data=img.toDataURL();return data;});
   handle('website',()=>shell.openExternal('https://www.4nr.com'));
   handle('suggest-access',id=>{const w=store.read().waypoints.find(w=>w.id===id);if(!w)throw Error('Save this waypoint first.');return suggest(w);});
-  handle('calculate',async()=>{const s=store.read();if(s.transport!=='BY-SEA')return calculate(s);if(routing)throw Error('A calculation is already running.');routing=true;try{return await new Promise((resolve,reject)=>{const worker=new Worker(path.join(__dirname,'route-worker.cjs'),{workerData:s});const timer=setTimeout(()=>{worker.terminate();reject(Error('Route search timed out. Add intermediate offshore waypoints.'));},90000);worker.once('message',r=>{clearTimeout(timer);r.error?reject(Error(r.error)):resolve(r);});worker.once('error',e=>{clearTimeout(timer);reject(e);});worker.once('exit',code=>{clearTimeout(timer);if(code)reject(Error('Route worker stopped.'));});});}finally{routing=false;}});
+  handle('calculate',async()=>{const s=store.read();if(routing)throw Error('A calculation is already running.');routing=true;try{return await new Promise((resolve,reject)=>{const worker=new Worker(path.join(__dirname,'route-worker.cjs'),{workerData:s});const timer=setTimeout(()=>{worker.terminate();reject(Error('Route search timed out. Add intermediate offshore waypoints.'));},90000);worker.once('message',r=>{clearTimeout(timer);r.error?reject(Error(r.error)):resolve(r);});worker.once('error',e=>{clearTimeout(timer);reject(e);});worker.once('exit',code=>{clearTimeout(timer);if(code)reject(Error('Route worker stopped.'));});});}finally{routing=false;}});
   handle('lookup',q=>lookup(String(q).slice(0,200)));
+  handle('lookup-online',async q=>{const cache=store.get('onlineLookupCache',{});if(Object.hasOwn(cache,q))return cache[q];const results=await gazetteer.online(q,fetch,config.geocoderUrl||'https://nominatim.openstreetmap.org/search');cache[q]=results;store.put('onlineLookupCache',Object.fromEntries(Object.entries(cache).slice(-500)));return results;});
+  handle('import-layers',async()=>{const r=await dialog.showOpenDialog(win,{title:'Import optional external map layers',filters:[{name:'NERDS layer exchange',extensions:['json']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Layer file exceeds 20 MB.');const bytes=fs.readFileSync(r.filePaths[0]);const doc=JSON.parse(bytes.toString('utf8'));const sha256=createHash('sha256').update(bytes).digest('hex');return cleanLayers((doc.layers||[doc]).map(l=>({...l,sha256,importedAt:new Date().toISOString()})));});
   handle('import',async id=>{const result=await dialog.showOpenDialog(win,{title:'Index photographs (originals stay in place)',properties:['openFile','multiSelections'],filters:[{name:'Photographs',extensions:['jpg','jpeg','tif','tiff','png','webp']}]});return result.canceled?{results:[],media:store.media()}:importPaths(result.filePaths,id);});
   handle('choose-path',async kind=>{
     if(!['dataDir','cacheDir','archiveDir'].includes(kind))throw Error('Unknown storage path.');
     const result=await dialog.showOpenDialog(win,{title:kind==='dataDir'?'Choose database folder (takes effect next launch; does not move existing data)':'Choose storage folder',properties:['openDirectory','createDirectory']});
-    if(!result.canceled){config[kind]=result.filePaths[0];saveConfig();}
-    return {...config,restartRequired:kind==='dataDir'&&!result.canceled};
+    return result.canceled?null:{kind,path:result.filePaths[0]};
   });
-  handle('ai-test',async endpoint=>{const base=localEndpoint(endpoint);const result=await apiRequest(base,'/models');if(!Array.isArray(result.data))throw Error('Expected an OpenAI-compatible /models response.');const models=result.data.map(m=>String(m.id));store.put('ai',{endpoint:base,model:models[0]||''});return models;});
+  handle('ai-test',async endpoint=>{const base=localEndpoint(endpoint);const result=await apiRequest(base,'/models');if(!Array.isArray(result.data))throw Error('Expected an OpenAI-compatible /models response.');const models=result.data.map(m=>String(m.id));return models;});
   handle('ai-chat',async({endpoint,model,prompt})=>{
     if(typeof model!=='string'||!model||typeof prompt!=='string'||!prompt.trim()||prompt.length>8000)throw Error('Select a model and enter a prompt of at most 8,000 characters.');
     const result=await apiRequest(endpoint,'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model,messages:[{role:'system',content:'You are 4nR-AI, a research assistant for Faire Wind & Song. You do not calculate navigable routes. Distinguish uncertain information from verified facts.'},{role:'user',content:prompt}],max_tokens:512,stream:false})});
-    const answer=result.choices?.[0]?.message?.content;if(typeof answer!=='string')throw Error('No text response from the model.');store.put('ai',{endpoint:localEndpoint(endpoint),model});return answer;
+    const answer=result.choices?.[0]?.message?.content;if(typeof answer!=='string')throw Error('No text response from the model.');return answer;
   });
   handle('archive',async({mediaId,sourceUrl,license})=>{
     const item=store.media().find(m=>m.id===mediaId);
