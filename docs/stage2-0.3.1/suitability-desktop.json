@@ -1,0 +1,10 @@
+{
+  "checks": [
+    "Fresh default BYPASS and CANCEL discards draft",
+    "ON persists through desktop restart",
+    "Worker receives ON; supplied restrictions display without blocking connected route",
+    "Preference change recalculates advisory only and keeps route"
+  ],
+  "errors": [],
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-suitability-qKRQSk"
+}
