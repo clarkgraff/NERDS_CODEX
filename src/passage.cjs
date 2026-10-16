@@ -1,12 +1,52 @@
-const {randomUUID}=require('node:crypto');const {distanceNM}=require('./navigation.cjs');
-const {route,suggest}=require('./water-route.cjs');const {accessAssessment}=require('./vessel.cjs');
+const {randomUUID,createHash}=require('node:crypto');
+const {distanceNM}=require('./navigation.cjs');
+const water=require('./water-route.cjs');
+const {accessAssessment}=require('./vessel.cjs');
+const ENGINE_VERSION='0.3.1-stage1';
 function selectedMode(s,w){if(s.transport!=='BY-SEA')return s.transport;const modes=s.vessel.propulsionModes;const requested=w.operatingMode;if(requested&&requested!=='AUTO'){if(!modes.includes(requested))throw Error('Waypoint operating mode is not enabled on this vessel.');return requested;}return modes.find(m=>m==='POWER-DIESEL')||modes.find(m=>m==='POWER-ELECTRIC')||'SAIL';}
 function speed(s,mode){return s.vessel[{'BY-LAND':'landKnots','BY-AIR':'airKnots','SAIL':'sailKnots','POWER-DIESEL':'dieselKnots','POWER-ELECTRIC':'electricKnots'}[mode]];}
-function timeResult(s,legs){let totalNM=0,standardHours=0,calculatedHours=0;for(const leg of legs){leg.standardSpeed=s.vessel.referenceKnots;leg.calculatedSpeed=speed(s,leg.operatingMode);leg.standardHours=leg.distanceNM/leg.standardSpeed;leg.calculatedHours=leg.distanceNM/leg.calculatedSpeed;totalNM+=leg.distanceNM;standardHours+=leg.standardHours;calculatedHours+=leg.calculatedHours;Object.assign(leg,{totalNM,totalStandardHours:standardHours,totalCalculatedHours:calculatedHours,standardETA:new Date(Date.parse(s.departureUTC)+standardHours*3600000).toISOString(),calculatedETA:new Date(Date.parse(s.departureUTC)+calculatedHours*3600000).toISOString(),differenceHours:leg.standardHours-leg.calculatedHours});}return {totalNM,standardHours,calculatedHours,effectiveSOG:totalNM/calculatedHours||0,standardETA:new Date(Date.parse(s.departureUTC)+standardHours*3600000).toISOString(),calculatedETA:new Date(Date.parse(s.departureUTC)+calculatedHours*3600000).toISOString(),differenceHours:standardHours-calculatedHours};}
-function plan(s){if(s.waypoints.length<2)throw Error('Add at least two waypoints.');const sea=s.transport==='BY-SEA';const accesses=sea?s.waypoints.map(w=>w.access||suggest(w)):[];
- if(sea)s.waypoints.forEach((w,i)=>{if(accessAssessment(accesses[i],s.vessel).startsWith('UNSUITABLE'))throw Error(w.name+': '+accessAssessment(accesses[i],s.vessel));});
- function candidate(preference){const legs=s.waypoints.slice(1).map((w,i)=>{const a=sea?accesses[i]:s.waypoints[i],b=sea?accesses[i+1]:w;const points=sea?route(a,b,{separationNM:preference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0}):[a,b];return {fromId:s.waypoints[i].id,waypointId:w.id,operatingMode:selectedMode(s,w),transport:s.transport,points:points.map(p=>({lat:p.lat,lon:p.lon})),distanceNM:points.slice(1).reduce((n,p,j)=>n+distanceNM(points[j],p),0)};});return {id:randomUUID(),preference,legs,...timeResult(s,legs)};}
- const primary=candidate(s.routePreference),alternatives=[primary];if(sea&&s.routePreference==='OFFSHORE PREFERRED')alternatives.push(candidate('SHORTEST WATER'));
- return {...primary,selectedId:primary.id,alternatives,kind:sea?'water-outline':s.transport==='BY-LAND'?'land-estimate':'air-estimate',status:sea?'PRELIMINARY WATER-AWARE ROUTE':'PLANNING DEMONSTRATION',createdAt:new Date().toISOString(),connectors:sea?s.waypoints.map((w,i)=>({waypointId:w.id,anchor:{lat:w.lat,lon:w.lon},access:accesses[i],distanceNM:distanceNM(w,accesses[i]),includedInPassage:false})):[],provenance:sea?'Natural Earth 1:10 million land mask; 0.025° Europe / 0.1° global. Soft coastal-separation grid approximation.':'Direct geodesic geographic distance. '+(s.transport==='BY-LAND'?'Not a road-network route.':'Not an air-traffic flight plan.'),warning:'Provisional nominal-speed estimates. No wind/current/wave integration, fuel model, bathymetric clearance, bridge clearance, restrictions or canal validation. Connectors are excluded from passage distance/time.',confidence:'Coarse planning only; not chart validated',constraints:['depth-under-keel','air-draft-bridge','canal-lock','traffic-restriction','passage-exclusion','reef-shoal'].map(type=>({type,status:'unresolved',source:null,reason:'No authoritative regional dataset supplied'})),validation:{landMask:sea?'screened at grid resolution':'not applicable',depth:'unresolved',bridges:'unresolved',restrictions:'unresolved',forecast:'unavailable; nominal speeds',objective:s.speed+' stored; forecast/performance optimisation unavailable'}};
+function timeResult(s,legs){
+ let calculatedDistanceNM=0,standardSubtotal=0,operatingSubtotal=0,knownPrefix=true,unresolvedLegs=0;
+ const eta=hours=>new Date(Date.parse(s.departureUTC)+hours*3600000).toISOString();
+ for(const leg of legs){
+  leg.standardSpeed=s.vessel.referenceKnots;leg.calculatedSpeed=speed(s,leg.operatingMode)||null;
+  const resolved=leg.status!=='UNRESOLVED'&&Number.isFinite(leg.distanceNM)&&leg.calculatedSpeed>0;
+  if(leg.transitionBefore)knownPrefix=false;
+  if(resolved){leg.standardHours=leg.distanceNM/leg.standardSpeed;leg.calculatedHours=leg.distanceNM/leg.calculatedSpeed;calculatedDistanceNM+=leg.distanceNM;standardSubtotal+=leg.standardHours;operatingSubtotal+=leg.calculatedHours;}
+  else{leg.standardHours=null;leg.calculatedHours=null;knownPrefix=false;unresolvedLegs++;}
+  Object.assign(leg,{calculatedCumulativeNM:calculatedDistanceNM,totalNM:knownPrefix?calculatedDistanceNM:null,totalStandardHours:knownPrefix?standardSubtotal:null,totalCalculatedHours:knownPrefix?operatingSubtotal:null,standardETA:knownPrefix?eta(standardSubtotal):null,calculatedETA:knownPrefix?eta(operatingSubtotal):null,etaStatus:knownPrefix?'NOMINAL':'UNRESOLVED: preceding duration or grid transition is unknown',differenceHours:resolved?leg.standardHours-leg.calculatedHours:null});
+ }
+ const complete=knownPrefix&&unresolvedLegs===0,any=legs.some(l=>l.status!=='UNRESOLVED'&&Number.isFinite(l.distanceNM));
+ return {complete,unresolvedLegs,calculatedDistanceNM:any?calculatedDistanceNM:null,provisionalDistanceNM:complete?0:null,totalEstimatedDistanceNM:complete?calculatedDistanceNM:null,calculatedStandardHours:any?standardSubtotal:null,calculatedOperatingHours:any?operatingSubtotal:null,provisionalStandardHours:complete?0:null,provisionalOperatingHours:complete?0:null,totalNM:complete?calculatedDistanceNM:null,standardHours:complete?standardSubtotal:null,calculatedHours:complete?operatingSubtotal:null,effectiveSOG:complete&&operatingSubtotal>0?calculatedDistanceNM/operatingSubtotal:null,standardETA:complete?eta(standardSubtotal):null,calculatedETA:complete?eta(operatingSubtotal):null,differenceHours:complete?standardSubtotal-operatingSubtotal:null};
 }
-module.exports={plan,timeResult,selectedMode};
+function geometryKey(s,a,b,options){return createHash('sha256').update(JSON.stringify({engine:ENGINE_VERSION,transport:s.transport,from:{id:a.id,lat:a.lat,lon:a.lon,access:a.access},to:{id:b.id,lat:b.lat,lon:b.lon,access:b.access},vessel:s.vessel,options})).digest('hex');}
+function plan(s,options={}){
+ if(s.waypoints.length<2)throw Error('Add at least two waypoints.');
+ // Stage 1 always bypasses optional penalties unless an isolated diagnostic explicitly opts in.
+ const bypass=options.bypass!==false,sea=s.transport==='BY-SEA',id=randomUUID();
+ const routing={bypass,separationNM:!bypass&&s.routePreference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0};
+ const previous=s.route?.engineVersion===ENGINE_VERSION?s.route.legs:[];
+ const legs=s.waypoints.slice(1).map((w,i)=>{
+  const a=s.waypoints[i],inputKey=geometryKey(s,a,w,routing),start=performance.now();
+  const base={id:a.id+'->'+w.id,fromId:a.id,waypointId:w.id,transport:s.transport,inputKey,points:[],distanceNM:null,provisionalDistanceNM:null,status:'UNRESOLVED',evidence:{waypointIds:[a.id,w.id],anchors:[{lat:a.lat,lon:a.lon},{lat:w.lat,lon:w.lon}],grid:null,accessCandidates:[],searchBounds:null,visitedCells:0,optionalPreferences:bypass?'BYPASS':'ENABLED'}};
+  try{
+   base.operatingMode=selectedMode(s,w);
+   for(const endpoint of [a,w])if(sea&&endpoint.access&&accessAssessment(endpoint.access,s.vessel).startsWith('UNSUITABLE'))throw Error('VESSEL_LIMIT: '+endpoint.name+': '+accessAssessment(endpoint.access,s.vessel));
+   const cached=previous.find(l=>l.status==='CALCULATED'&&l.inputKey===inputKey);
+   if(cached)return {...structuredClone(cached),operatingMode:base.operatingMode,transitionBefore:null,reused:true,evidence:{...cached.evidence,reused:true}};
+   if(s.transport==='BY-LAND')throw Error('ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.');
+   if(sea){const result=water.leg(a,w,{...routing,maxVisited:options.maxVisited});base.points=result.points;base.accesses=result.accesses;base.evidence=result.evidence;}
+   else if(s.transport==='BY-AIR'){base.points=[{lat:a.lat,lon:a.lon},{lat:w.lat,lon:w.lon}];base.evidence.termination='GEODESIC_AIR_ESTIMATE';}
+   else throw Error('TRANSPORT_NETWORK_UNAVAILABLE');
+   base.distanceNM=base.points.slice(1).reduce((n,p,j)=>n+distanceNM(base.points[j],p),0);base.provisionalDistanceNM=0;base.status='CALCULATED';base.reason=null;
+  }catch(e){base.reason=e.message;base.evidence=e.evidence||base.evidence;base.evidence.termination=e.message;}
+  base.evidence.elapsedMs=performance.now()-start;return base;
+ });
+ // Different grids may legitimately resolve a shared city to different access points.
+ // Do not imply zero-time travel between those cells or issue an unconditional onward ETA.
+ for(let i=1;i<legs.length;i++){const previousLeg=legs[i-1],current=legs[i];if(previousLeg.accesses&&current.accesses&&distanceNM(previousLeg.accesses[1],current.accesses[0])>.001){current.transitionBefore={status:'UNRESOLVED',waypointId:current.fromId,from:previousLeg.accesses[1],to:current.accesses[0],reason:'Access differs between adjacent leg networks; transfer geometry and duration unresolved.'};}}
+ const totals=timeResult(s,legs),primary={id,preference:bypass?'BYPASS':s.routePreference,legs,...totals};
+ const connectors=legs.flatMap(l=>l.accesses?l.accesses.map((access,j)=>({id:l.id+':'+j,waypointId:j?l.waypointId:l.fromId,anchor:l.evidence.anchors[j],access,distanceNM:distanceNM(l.evidence.anchors[j],access),includedInPassage:false})):[]);
+ return {...primary,engineVersion:ENGINE_VERSION,selectedId:id,alternatives:[primary],requestedPreferences:{routePreference:s.routePreference,coastalSeparationNM:s.coastalSeparationNM,objective:s.speed},effectivePreferences:routing,kind:sea?'water-outline':s.transport==='BY-LAND'?'land-unresolved':'air-estimate',status:totals.complete?'PRELIMINARY ROUTE — ALL LEGS CALCULATED':legs.some(l=>l.status==='CALCULATED')?'PARTIAL ROUTE — UNRESOLVED LEGS OR TRANSFERS':'UNRESOLVED ROUTE',createdAt:new Date().toISOString(),connectors,provenance:sea?'Natural Earth 1:10 million coastline; per-leg compatible 0.025° Europe / 0.1° world grid. Coarse cell connectivity only.':'Air geodesic estimates only; a connected road network is not bundled.',warning:'BYPASS is the Stage 1 baseline. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.',confidence:'Coarse planning only; city/shore connectors unverified',constraints:['depth-under-keel','air-draft-bridge','canal-lock','traffic-restriction','passage-exclusion','reef-shoal'].map(type=>({type,status:'unresolved',source:null})),validation:{landMask:sea?'screened at selected grid resolution':'not applicable',depth:'unresolved',bridges:'unresolved',restrictions:'unresolved',forecast:'nominal speeds only'}};
+}
+module.exports={plan,timeResult,selectedMode,ENGINE_VERSION};
