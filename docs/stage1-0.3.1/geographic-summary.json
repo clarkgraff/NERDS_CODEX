@@ -1,0 +1,483 @@
+{
+  "acceptance": {
+    "PASS": "All requested legs calculate with compatible-grid water cells and legal adjacent edges (or air geodesic), finite matching accounting, no unresolved transfer and complete nominal ETA. Sea PASS is coarse offshore planning only; excluded city connectors and hydrographic suitability are NOT verified.",
+    "FAIL": "Returned results violate a geometry/accounting invariant, or the runner throws unexpectedly.",
+    "UNRESOLVED": "At least one requested leg/transfer lacks a supported connection or duration. This is a non-pass geographic acceptance result even when fault handling is correct.",
+    "DEFERRED": "Case not executed; never counted as PASS."
+  },
+  "counts": {
+    "PASS": 77,
+    "FAIL": 0,
+    "UNRESOLVED": 82,
+    "DEFERRED": 0
+  },
+  "total": 159,
+  "byPurpose": {
+    "geographic": {
+      "PASS": 72,
+      "FAIL": 0,
+      "UNRESOLVED": 80,
+      "DEFERRED": 0
+    },
+    "preference comparison": {
+      "PASS": 4,
+      "FAIL": 0,
+      "UNRESOLVED": 0,
+      "DEFERRED": 0
+    },
+    "preservation": {
+      "PASS": 1,
+      "FAIL": 0,
+      "UNRESOLVED": 1,
+      "DEFERRED": 0
+    },
+    "fault isolation": {
+      "PASS": 0,
+      "FAIL": 0,
+      "UNRESOLVED": 1,
+      "DEFERRED": 0
+    }
+  },
+  "full": [
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Marseille → Barcelona → Ibiza → Algiers → Marseille | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → A Coruña | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 1129.9625820650567
+    },
+    {
+      "name": "Amsterdam → Emden → London → Hastings | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Hamburg → Cuxhaven → Emden | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Amsterdam → Emden | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        }
+      ],
+      "nm": 141.65168334370466
+    },
+    {
+      "name": "Amsterdam → London | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "London → Hastings | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Hastings → Brest | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        }
+      ],
+      "nm": 303.8127238729003
+    },
+    {
+      "name": "Brest → Bordeaux | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "A Coruña → Lisbon | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 344.05964603810247
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → Cádiz | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 1038.8073307870582
+    },
+    {
+      "name": "Barcelona → Ibiza | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 157.9184768925858
+    },
+    {
+      "name": "Ibiza → Gibraltar | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 416.01581848584016
+    },
+    {
+      "name": "Gibraltar → Algiers | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 415.3962206045276
+    },
+    {
+      "name": "Gibraltar → Algiers → Marseille | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        }
+      ],
+      "nm": 813.1247794836169
+    },
+    {
+      "name": "Marseille → Barcelona | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        }
+      ],
+      "nm": 194.933012741259
+    },
+    {
+      "name": "Hamburg → Cuxhaven | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "europe-0.025",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Cuxhaven → Emden | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        }
+      ],
+      "nm": 89.61417784556349
+    },
+    {
+      "name": "Santarém → Macapá | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Macapá → Belém → Breves | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "world-0.1",
+          "reason": null
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Santarém → Itaituba | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Santarém → Alter do Chão | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Kingston Mills → Toronto | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Toronto → Montréal | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Montréal → Québec City | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": "europe-0.025",
+          "reason": null
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": "world-0.1",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land) | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "status": "UNRESOLVED",
+          "grid": null,
+          "reason": "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+        },
+        {
+          "status": "UNRESOLVED",
+          "grid": null,
+          "reason": "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+        }
+      ],
+      "nm": null
+    },
+    {
+      "name": "Lisbon → Ponta Delgada (air) | full forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "status": "CALCULATED",
+          "grid": null,
+          "reason": null
+        }
+      ],
+      "nm": 780.252992301995
+    }
+  ]
+}
