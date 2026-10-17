@@ -15,7 +15,7 @@ function cleanPlan(value={}){
 }
 const constraintsFor=(plan,fromId,toId)=>(plan?.manualConstraints||[]).filter(c=>c.fromId===fromId&&c.toId===toId);
 function annotate(route){
- route.geometryDefinition={authoritative:'legs[].points',segmentType:'GEODESIC',coordinateDatum:'WGS84',distanceModel:'SPHERICAL_LEGACY',presentation:'Derived renderer-only geometry; never used for calculation or export'};
+ route.geometryDefinition={authoritative:'legs[].points',segmentType:'GEODESIC',coordinateDatum:'WGS84',distanceModel:'WGS84_ELLIPSOID',searchCostModel:'Spherical estimate for economical graph search; authoritative distances are ellipsoidal',presentation:'Derived renderer-only geometry; never used for calculation or export'};
  for(const candidate of [route,...(route.alternatives||[])])for(const leg of candidate.legs||[]){
   leg.courseVertices=leg.points.map((p,i)=>({id:leg.id+':auto:'+i,pointIndex:i,kind:'AUTOMATIC'}));
  }

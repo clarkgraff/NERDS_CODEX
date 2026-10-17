@@ -12,17 +12,17 @@
       "legs": [
         {
           "id": "case-Hamburg->case-Cuxhaven",
-          "nm": 57.91732319719088,
+          "nm": 58.06647695455358,
           "grid": "source-waterway-network"
         },
         {
           "id": "case-Cuxhaven->case-Kiel",
-          "nm": 73.72436169393225,
+          "nm": 73.90053394898395,
           "grid": "source-waterway-network"
         },
         {
           "id": "case-Kiel->case-Copenhagen",
-          "nm": 157.0227800438243,
+          "nm": 157.37276673520606,
           "grid": "hybrid-waterway-ocean"
         }
       ],
@@ -36,17 +36,17 @@
       "legs": [
         {
           "id": "case-Copenhagen->case-Kiel",
-          "nm": 157.0227800438243,
+          "nm": 157.37276673520586,
           "grid": "hybrid-waterway-ocean"
         },
         {
           "id": "case-Kiel->case-Cuxhaven",
-          "nm": 73.7243616939323,
+          "nm": 73.90053394898396,
           "grid": "source-waterway-network"
         },
         {
           "id": "case-Cuxhaven->case-Hamburg",
-          "nm": 57.91732319719089,
+          "nm": 58.06647695455355,
           "grid": "source-waterway-network"
         }
       ],
@@ -60,7 +60,7 @@
       "legs": [
         {
           "id": "case-Hamburg->case-Kiel",
-          "nm": 99.2632313391771,
+          "nm": 99.49348380022113,
           "grid": "source-waterway-network"
         }
       ],
@@ -74,7 +74,7 @@
       "legs": [
         {
           "id": "case-Kiel->case-Hamburg",
-          "nm": 99.26323133917703,
+          "nm": 99.49348380022106,
           "grid": "source-waterway-network"
         }
       ],
@@ -94,21 +94,21 @@
           "from": "case-Hamburg",
           "to": "case-Cuxhaven",
           "result": "PASS",
-          "deltaNM": 7.105427357601002e-15,
+          "deltaNM": 2.842170943040401e-14,
           "exactReversedGeometry": true
         },
         {
           "from": "case-Cuxhaven",
           "to": "case-Kiel",
           "result": "PASS",
-          "deltaNM": 4.263256414560601e-14,
+          "deltaNM": 1.4210854715202004e-14,
           "exactReversedGeometry": true
         },
         {
           "from": "case-Kiel",
           "to": "case-Copenhagen",
           "result": "PASS",
-          "deltaNM": 0,
+          "deltaNM": 1.9895196601282805e-13,
           "exactReversedGeometry": true
         }
       ]

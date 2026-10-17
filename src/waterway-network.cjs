@@ -1,13 +1,13 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib');
-const {distanceNM}=require('./navigation.cjs');
+const {distanceNM,estimateNM}=require('./navigation.cjs');
 // No tolerance snapping: only identical source vertices share graph connectivity.
 // Nearby but disconnected lines remain disconnected until source evidence connects them.
 class WaterwayNetwork {
  constructor(doc){
   this.doc=doc;this.lines=new Map(doc.lines.map(l=>[l.id,l]));this.nodes=[];this.index=new Map();this.buckets=new Map();
   const vertex=coordinate=>{const key=coordinate.slice(0,2).join(',');if(this.index.has(key))return this.index.get(key);const id=this.nodes.length,p={lon:coordinate[0],lat:coordinate[1],edges:[]};this.index.set(key,id);this.nodes.push(p);const bucket=`${Math.floor(p.lon)},${Math.floor(p.lat)}`;if(!this.buckets.has(bucket))this.buckets.set(bucket,[]);this.buckets.get(bucket).push(id);return id;};
-  for(const line of doc.lines){for(let i=1;i<line.coordinates.length;i++){const a=vertex(line.coordinates[i-1]),b=vertex(line.coordinates[i]);if(a===b)continue;const distance=distanceNM(this.nodes[a],this.nodes[b]);this.nodes[a].edges.push({to:b,distance,sourceId:line.id,name:line.name});this.nodes[b].edges.push({to:a,distance,sourceId:line.id,name:line.name});}}
+  for(const line of doc.lines){for(let i=1;i<line.coordinates.length;i++){const a=vertex(line.coordinates[i-1]),b=vertex(line.coordinates[i]);if(a===b)continue;const distance=estimateNM(this.nodes[a],this.nodes[b]);this.nodes[a].edges.push({to:b,distance,sourceId:line.id,name:line.name});this.nodes[b].edges.push({to:a,distance,sourceId:line.id,name:line.name});}}
  }
  candidates(p,limit=3){
   if(!this.components){this.components=new Int32Array(this.nodes.length);let label=0;for(let i=0;i<this.nodes.length;i++){if(this.components[i])continue;label++;const stack=[i];this.components[i]=label;while(stack.length){const id=stack.pop();for(const edge of this.nodes[id].edges)if(!this.components[edge.to]){this.components[edge.to]=label;stack.push(edge.to);}}}}

@@ -1,7 +1,7 @@
 // Coarse ocean research routing, not hydrographic or navigational clearance data.
 const fs=require('node:fs');
 const path=require('node:path');
-const {distanceNM}=require('./navigation.cjs');
+const {distanceNM,estimateNM}=require('./navigation.cjs');
 function engine(W,H,STEP,west,south,file,wrap){
 let mask;
 function grid(){return mask||(mask=fs.readFileSync(path.join(__dirname,'../assets/'+file)));}
@@ -18,7 +18,7 @@ function coastDistances(){if(clearance)return clearance;const m=grid();clearance
 function route(a,b,options={}){
  const start=cell(a),end=cell(b),blocked=grid();const trace=options.trace||{};trace.visitedCells=0;trace.searchBounds={minX:start%W,maxX:start%W,minY:Math.floor(start/W),maxY:Math.floor(start/W)};
  if(blocked[start]||blocked[end])throw Error('A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.');
- const scores=new Float64Array(W*H);scores.fill(Infinity);const parents=new Int32Array(W*H);parents.fill(-1);const closed=new Uint8Array(W*H),heap=new Heap();scores[start]=0;heap.push(start,distanceNM(point(start),point(end)));let visited=0;
+ const scores=new Float64Array(W*H);scores.fill(Infinity);const parents=new Int32Array(W*H);parents.fill(-1);const closed=new Uint8Array(W*H),heap=new Heap();scores[start]=0;heap.push(start,estimateNM(point(start),point(end)));let visited=0;
  while(heap.length){const {id}=heap.pop();if(closed[id])continue;closed[id]=1;
   trace.visitedCells++;const bounds=trace.searchBounds;bounds.minX=Math.min(bounds.minX,id%W);bounds.maxX=Math.max(bounds.maxX,id%W);bounds.minY=Math.min(bounds.minY,Math.floor(id/W));bounds.maxY=Math.max(bounds.maxY,Math.floor(id/W));
   if(id===end){const ids=[];for(let at=end;at!==-1;at=parents[at])ids.push(at);ids.reverse();return [a,...ids.map(point),b];}
@@ -26,7 +26,7 @@ function route(a,b,options={}){
   const x=id%W,y=Math.floor(id/W),p=point(id);
   for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){if(!dx&&!dy)continue;const ny=y+dy;if(ny<10||ny>=H-10)continue;if(!wrap&&(x+dx<0||x+dx>=W))continue;const nx=(x+dx+W)%W,nid=ny*W+nx;if(blocked[nid]||closed[nid])continue;
    if(dx&&dy&&(blocked[y*W+nx]||blocked[ny*W+x]))continue;
-   const q=point(nid),near=options.separationNM?coastDistances()[nid]*STEP*60*Math.max(.05,Math.cos(q.lat*Math.PI/180)):0,penalty=options.separationNM?1+2*Math.max(0,1-near/options.separationNM):1,g=scores[id]+distanceNM(p,q)*penalty;if(g<scores[nid]){scores[nid]=g;parents[nid]=id;heap.push(nid,g+distanceNM(q,point(end)));}
+   const q=point(nid),near=options.separationNM?coastDistances()[nid]*STEP*60*Math.max(.05,Math.cos(q.lat*Math.PI/180)):0,penalty=options.separationNM?1+2*Math.max(0,1-near/options.separationNM):1,g=scores[id]+estimateNM(p,q)*penalty;if(g<scores[nid]){scores[nid]=g;parents[nid]=id;heap.push(nid,g+estimateNM(q,point(end)));}
   }
  }
  throw Error('No connected coarse water path was found. Narrow channels and canals may be absent.');

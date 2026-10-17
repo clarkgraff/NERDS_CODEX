@@ -2,7 +2,7 @@ const {randomUUID,createHash}=require('node:crypto');
 const {distanceNM}=require('./navigation.cjs');
 const water=require('./water-route.cjs');
 const {assessSuitability}=require('./suitability.cjs');
-const ENGINE_VERSION='0.3.1-stage2-waterway-3';
+const ENGINE_VERSION='0.3.1-stage2-course-1';
 function selectedMode(s,w){if(s.transport!=='BY-SEA')return s.transport;const modes=s.vessel.propulsionModes;const requested=w.operatingMode;if(requested&&requested!=='AUTO'){if(!modes.includes(requested))throw Error('Waypoint operating mode is not enabled on this vessel.');return requested;}return modes.find(m=>m==='POWER-DIESEL')||modes.find(m=>m==='POWER-ELECTRIC')||'SAIL';}
 function speed(s,mode){return s.vessel[{'BY-LAND':'landKnots','BY-AIR':'airKnots','SAIL':'sailKnots','POWER-DIESEL':'dieselKnots','POWER-ELECTRIC':'electricKnots'}[mode]];}
 function timeResult(s,legs){

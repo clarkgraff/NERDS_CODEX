@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "cesium": "1.146.0",
-    "exifr": "7.1.3"
+    "exifr": "7.1.3",
+    "geographiclib-geodesic": "2.2.0"
   },
   "devDependencies": {
     "electron": "44.7.1",
@@ -41,7 +42,8 @@
       "node_modules/cesium/LICENSE.md",
       "node_modules/cesium/ThirdParty.extra.json",
       "node_modules/cesium/ThirdParty.json",
-      "!assets/geonames.sqlite*"
+      "!assets/geonames.sqlite*",
+      "node_modules/geographiclib-geodesic/**/*"
     ],
     "win": {
       "target": "msi",
