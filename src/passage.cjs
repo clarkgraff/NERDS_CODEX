@@ -2,7 +2,7 @@ const {randomUUID,createHash}=require('node:crypto');
 const {distanceNM}=require('./navigation.cjs');
 const water=require('./water-route.cjs');
 const {assessSuitability}=require('./suitability.cjs');
-const ENGINE_VERSION='0.3.1-stage2-course-1';
+const ENGINE_VERSION='0.3.1-stage2-course-2';
 function selectedMode(s,w){if(s.transport!=='BY-SEA')return s.transport;const modes=s.vessel.propulsionModes;const requested=w.operatingMode;if(requested&&requested!=='AUTO'){if(!modes.includes(requested))throw Error('Waypoint operating mode is not enabled on this vessel.');return requested;}return modes.find(m=>m==='POWER-DIESEL')||modes.find(m=>m==='POWER-ELECTRIC')||'SAIL';}
 function speed(s,mode){return s.vessel[{'BY-LAND':'landKnots','BY-AIR':'airKnots','SAIL':'sailKnots','POWER-DIESEL':'dieselKnots','POWER-ELECTRIC':'electricKnots'}[mode]];}
 function timeResult(s,legs){
@@ -35,7 +35,7 @@ function plan(s,options={}){
    const cached=previous.find(l=>l.status==='CALCULATED'&&l.inputKey===inputKey);
    if(cached)return {...structuredClone(cached),operatingMode:base.operatingMode,transitionBefore:null,reused:true,evidence:{...cached.evidence,reused:true}};
    if(s.transport==='BY-LAND')throw Error('ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.');
-   if(sea){const result=require('./geographic-route.cjs').leg(a,w,{...routing,maxVisited:options.maxVisited});base.points=result.points;base.accesses=result.accesses;base.evidence=result.evidence;}
+   if(sea){const raw=require('./geographic-route.cjs').leg(a,w,{...routing,maxVisited:options.maxVisited});const result=require('./course-geometry.cjs').simplifyLeg(raw);base.points=result.points;base.accesses=result.accesses;base.evidence=result.evidence;}
    else if(s.transport==='BY-AIR'){base.points=[{lat:a.lat,lon:a.lon},{lat:w.lat,lon:w.lon}];base.evidence.termination='GEODESIC_AIR_ESTIMATE';}
    else throw Error('TRANSPORT_NETWORK_UNAVAILABLE');
    base.distanceNM=base.points.slice(1).reduce((n,p,j)=>n+distanceNM(base.points[j],p),0);base.provisionalDistanceNM=0;base.status='CALCULATED';base.reason=null;
