@@ -28,9 +28,24 @@
       "file": "work/stage2/southern-channels-osm.json",
       "sha256": "f1e6e637a2d9b17d761d32eebc72a2cd7ca83dba2d301adb1d56eeefb3af3f72",
       "timestamp": "2026-10-17T01:10:51Z"
+    },
+    {
+      "file": "work/stage2/lawrence-east-osm.json",
+      "sha256": "244026f297a632ca5409c455ede5f8618ff86ac02571c750dfb45b1f3e910027",
+      "timestamp": "2026-10-17T01:15:54Z"
+    },
+    {
+      "file": "work/stage2/lawrence-west-osm.json",
+      "sha256": "3fee5a3b76ba12fccc3ea9c144b73fbc44aceb5c43d246408d742cf60dbf66c9",
+      "timestamp": "2026-10-17T10:16:50Z"
+    },
+    {
+      "file": "work/stage2/breves-channels-osm.json",
+      "sha256": "bb1ee42d420c19158f43a91bddef7b70c81d30753c83d7a68aa658d832282998",
+      "timestamp": "2026-10-17T10:17:51Z"
     }
   ],
   "geometryStatus": "Mapped geographic waterways; access restrictions assessed separately",
-  "sha256": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
-  "lineCount": 12972
+  "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+  "lineCount": 22431
 }

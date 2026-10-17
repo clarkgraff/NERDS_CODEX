@@ -6,17 +6,17 @@
     "DEFERRED": "Case not executed; never counted as PASS."
   },
   "counts": {
-    "PASS": 109,
+    "PASS": 113,
     "FAIL": 0,
-    "UNRESOLVED": 50,
+    "UNRESOLVED": 46,
     "DEFERRED": 0
   },
   "total": 159,
   "byPurpose": {
     "geographic": {
-      "PASS": 104,
+      "PASS": 108,
       "FAIL": 0,
-      "UNRESOLVED": 48,
+      "UNRESOLVED": 44,
       "DEFERRED": 0
     },
     "preference comparison": {
@@ -805,27 +805,27 @@
     },
     {
       "name": "Montréal → Québec City | full forward",
-      "result": "UNRESOLVED",
+      "result": "PASS",
       "legs": [
         {
-          "status": "UNRESOLVED",
-          "grid": "world-0.1",
-          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+          "status": "CALCULATED",
+          "grid": "source-waterway-network",
+          "reason": null
         }
       ],
-      "nm": null
+      "nm": 140.23602629880403
     },
     {
       "name": "Montréal → Québec City | full reverse",
-      "result": "UNRESOLVED",
+      "result": "PASS",
       "legs": [
         {
-          "status": "UNRESOLVED",
-          "grid": "world-0.1",
-          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+          "status": "CALCULATED",
+          "grid": "source-waterway-network",
+          "reason": null
         }
       ],
-      "nm": null
+      "nm": 140.236026298804
     },
     {
       "name": "Odesa → Sevastopol → Rostov-on-Don | full forward",

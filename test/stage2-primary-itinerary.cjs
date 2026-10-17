@@ -1,5 +1,5 @@
 const fs=require('node:fs'),zlib=require('node:zlib');
-const {lookup,cleanWaypoint}=require('../src/core.cjs');const {stateFor}=require('./geographic-cases.cjs');const {plan}=require('../src/passage.cjs');const {distanceNM}=require('../src/navigation.cjs');const {validate}=require('./geographic-validation.cjs');
+const {cleanWaypoint}=require('../src/core.cjs');const {lookupSeed:lookup}=require('../src/gazetteer.cjs');const {stateFor}=require('./geographic-cases.cjs');const {plan}=require('../src/passage.cjs');const {distanceNM}=require('../src/navigation.cjs');const {validate}=require('./geographic-validation.cjs');
 const copenhagen=lookup('Copenhagen').filter(p=>p.country==='Denmark').sort((a,b)=>(a.lat-55.676)**2+(a.lon-12.568)**2-((b.lat-55.676)**2+(b.lon-12.568)**2))[0];if(!copenhagen)throw Error('Copenhagen fixture missing from local gazetteer');
 const primary=stateFor(['Hamburg','Cuxhaven','Kiel']);primary.waypoints.push(cleanWaypoint({...copenhagen,id:'case-Copenhagen',name:'Copenhagen'}));
 // Acceptance gates only: never passed to the pathfinder as mandatory transit points.

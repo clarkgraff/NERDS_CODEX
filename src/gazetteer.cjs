@@ -16,4 +16,4 @@ function combinedLookup(query){
  return [...expanded,...lookup(query).filter(p=>!seen.has(p.sourceId))]
   .sort((a,b)=>a.name.localeCompare(b.name)||a.country.localeCompare(b.country));
 }
-module.exports={lookup:combinedLookup,online};
+module.exports={lookup:combinedLookup,lookupSeed:lookup,online};

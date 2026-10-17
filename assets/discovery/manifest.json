@@ -4,16 +4,16 @@
   "license": "CC BY 4.0",
   "attribution": "GeoNames contributors",
   "source": "https://www.geonames.org/export/",
-  "coverage": "partial-country-import",
+  "coverage": "worldwide-all-features",
   "populationFilter": null,
   "sources": [
     {
-      "file": "AQ.zip",
-      "sha256": "ea3fda7b3406a98285b8c8216826467a8b58e200ba22ba22e2f26b2a574bce11",
-      "url": "https://download.geonames.org/export/dump/AQ.zip"
+      "file": "allCountries.zip",
+      "sha256": "7913ccd39f422d00a166290a8c5855a8b5af995e3f210c18dc9cb60ca07c0f69",
+      "url": "https://download.geonames.org/export/dump/allCountries.zip"
     }
   ],
-  "builtAt": "2026-10-17T01:15:04.031942+00:00",
-  "count": 18571,
-  "databaseSha256": "6efd7d001574da6f0cf20f45d38381ea7b0e1baa7722bcac151bacd23ced55f6"
+  "builtAt": "2026-10-17T10:19:36.313570+00:00",
+  "count": 13472462,
+  "databaseSha256": "831d2e094ec6d7b0cf83aa39c425767d6bc0225c9c9efa81bae3485982ce55e2"
 }
