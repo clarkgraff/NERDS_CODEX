@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:22:22.672Z",
+  "generatedAt": "2026-10-17T20:48:32.304Z",
   "checks": [
     "Offline UI adds selected remote features with source identity, classification and alias provenance; main-process network disabled",
     "Named project preserves four selected geographic features",
@@ -7,7 +7,7 @@
     "Qualified Minnesota lookup does not substitute California locality"
   ],
   "errors": [],
-  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-world-discovery-fZWoXO",
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-world-discovery-AFi9iy",
   "network": "Main-process fetch disabled during every offline workflow",
   "packageBuilt": false
 }

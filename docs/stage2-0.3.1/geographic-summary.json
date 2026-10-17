@@ -6,17 +6,17 @@
     "DEFERRED": "Case not executed; never counted as PASS."
   },
   "counts": {
-    "PASS": 114,
-    "FAIL": 2,
-    "UNRESOLVED": 43,
+    "PASS": 115,
+    "FAIL": 0,
+    "UNRESOLVED": 44,
     "DEFERRED": 0
   },
   "total": 159,
   "byPurpose": {
     "geographic": {
-      "PASS": 109,
-      "FAIL": 2,
-      "UNRESOLVED": 41,
+      "PASS": 110,
+      "FAIL": 0,
+      "UNRESOLVED": 42,
       "DEFERRED": 0
     },
     "preference comparison": {
@@ -118,7 +118,7 @@
           "reason": null
         }
       ],
-      "nm": 840.0647577902689
+      "nm": 843.2243928778221
     },
     {
       "name": "Marseille → Barcelona → Ibiza → Algiers → Marseille | full reverse",
@@ -145,7 +145,7 @@
           "reason": null
         }
       ],
-      "nm": 844.365308837701
+      "nm": 843.224392877822
     },
     {
       "name": "Ponta Delgada → Lisbon → A Coruña | full forward",
@@ -179,7 +179,7 @@
           "reason": null
         }
       ],
-      "nm": 1125.7444275676585
+      "nm": 1104.1751196454134
     },
     {
       "name": "Amsterdam → Emden → London → Hastings | full forward",
@@ -201,7 +201,7 @@
           "reason": null
         }
       ],
-      "nm": 573.8505685238857
+      "nm": 564.4973418262438
     },
     {
       "name": "Amsterdam → Emden → London → Hastings | full reverse",
@@ -223,7 +223,7 @@
           "reason": null
         }
       ],
-      "nm": 562.796517415705
+      "nm": 564.4973418262443
     },
     {
       "name": "Hamburg → Cuxhaven → Emden | full forward",
@@ -240,7 +240,7 @@
           "reason": null
         }
       ],
-      "nm": 143.01831854248684
+      "nm": 147.14373181208123
     },
     {
       "name": "Hamburg → Cuxhaven → Emden | full reverse",
@@ -281,7 +281,7 @@
           "reason": null
         }
       ],
-      "nm": 135.8194751879531
+      "nm": 136.59090763023852
     },
     {
       "name": "Amsterdam → London | full forward",
@@ -293,7 +293,7 @@
           "reason": null
         }
       ],
-      "nm": 194.52338595151392
+      "nm": 193.54935410560208
     },
     {
       "name": "Amsterdam → London | full reverse",
@@ -329,7 +329,7 @@
           "reason": null
         }
       ],
-      "nm": 115.73346940979486
+      "nm": 116.66286137804873
     },
     {
       "name": "Hastings → Brest | full forward",
@@ -341,7 +341,7 @@
           "reason": null
         }
       ],
-      "nm": 289.53703615166154
+      "nm": 289.10803365720113
     },
     {
       "name": "Hastings → Brest | full reverse",
@@ -389,7 +389,7 @@
           "reason": null
         }
       ],
-      "nm": 341.8134393089661
+      "nm": 339.32007694538504
     },
     {
       "name": "A Coruña → Lisbon | full reverse",
@@ -435,7 +435,7 @@
           "reason": null
         }
       ],
-      "nm": 1022.2265166119944
+      "nm": 1002.5627481126086
     },
     {
       "name": "Barcelona → Ibiza | full forward",
@@ -447,7 +447,7 @@
           "reason": null
         }
       ],
-      "nm": 154.86924678475145
+      "nm": 158.62844113936643
     },
     {
       "name": "Barcelona → Ibiza | full reverse",
@@ -471,7 +471,7 @@
           "reason": null
         }
       ],
-      "nm": 388.57963599750974
+      "nm": 394.3569925227095
     },
     {
       "name": "Ibiza → Gibraltar | full reverse",
@@ -507,7 +507,7 @@
           "reason": null
         }
       ],
-      "nm": 400.28593960545373
+      "nm": 394.91112364425805
     },
     {
       "name": "Gibraltar → Algiers → Marseille | full forward",
@@ -541,7 +541,7 @@
           "reason": null
         }
       ],
-      "nm": 793.5794388081179
+      "nm": 787.063706887043
     },
     {
       "name": "Marseille → Barcelona | full forward",
@@ -553,7 +553,7 @@
           "reason": null
         }
       ],
-      "nm": 168.77205064311195
+      "nm": 168.17249137605006
     },
     {
       "name": "Marseille → Barcelona | full reverse",
@@ -601,7 +601,7 @@
           "reason": null
         }
       ],
-      "nm": 84.95184158793325
+      "nm": 89.07725485752766
     },
     {
       "name": "Cuxhaven → Emden | full reverse",
@@ -846,7 +846,7 @@
     },
     {
       "name": "Odesa → Sevastopol → Rostov-on-Don | full reverse",
-      "result": "FAIL",
+      "result": "UNRESOLVED",
       "legs": [
         {
           "status": "UNRESOLVED",

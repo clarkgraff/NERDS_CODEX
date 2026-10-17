@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Isolated fresh state; BYPASS controls retain saved values",
+    "Three-waypoint mixed-grid route displays and calculates",
+    "Failing added leg retains prior paths; unknown distance/time/ETA rendered explicitly",
+    "Later successful leg continues after gap with unknown absolute arrival",
+    "Partial project, preferences and diagnostic logs survive restart",
+    "Physical drag, IDs and map numbering retained with partial results",
+    "WORLD/FIT/FOCUS retained; no Stage 2 controls introduced"
+  ],
+  "rendererErrors": [],
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-stage1-NZ6zAv",
+  "packageBuilt": false
+}

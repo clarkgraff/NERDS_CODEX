@@ -35,7 +35,7 @@
           "from": "case-Kiel",
           "to": "case-Copenhagen",
           "result": "PASS",
-          "deltaNM": 1.9895196601282805e-13,
+          "deltaNM": 0,
           "exactReversedGeometry": true
         }
       ]
@@ -73,7 +73,7 @@
         "Kiel",
         "Copenhagen"
       ],
-      "elapsedMs": 5041.5779,
+      "elapsedMs": 3959.7754999999997,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -96,7 +96,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "20e0bedb-1e5d-4d22-8691-ede556370628",
+        "id": "fb35aced-1a98-491e-950f-d17d14052440",
         "preference": "BYPASS",
         "legs": [
           {
@@ -104,7 +104,7 @@
             "fromId": "case-Hamburg",
             "waypointId": "case-Cuxhaven",
             "transport": "BY-SEA",
-            "inputKey": "666e6d24f6374b3462e48cc86a169a1590cb43b9419d2437bfc32c65c4cd1eb9",
+            "inputKey": "2ae78b4580c5d6de53562f80ed7bd7efc2e69738a4ade2f3653b902bb364a9c5",
             "distanceNM": 58.06647695455358,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -622,7 +622,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 63.647941607446185,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 4030.4698999999996
+              "elapsedMs": 3223.1677
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -1686,7 +1686,7 @@
             "fromId": "case-Cuxhaven",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "e094eb8d1771251534231314b843f9b4b89603c4c7d60b1a3fee9f26202aeb75",
+            "inputKey": "5607bf3991aa16b4e89e3d54f080192fe499c31e57d503ae6c0a3d9e5aff8bdf",
             "distanceNM": 73.90053394898395,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -2391,7 +2391,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 519.798039157066,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 590.9542999999994
+              "elapsedMs": 315.5407
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -4040,8 +4040,8 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Copenhagen",
             "transport": "BY-SEA",
-            "inputKey": "40ccc622a1c9a9b058e23587373bfdd94d65b9cba10309fdc1354990c2dd275d",
-            "distanceNM": 157.37276673520606,
+            "inputKey": "bd70f22db3b4e5b6034d91abf538cf356f582e1fa8d45162cb22f70d2a1f5688",
+            "distanceNM": 151.9537083323819,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
             "evidence": {
@@ -4113,7 +4113,7 @@
               "effectiveSeparationNM": 0,
               "automaticConnectorLimitNM": 15,
               "termination": "CONNECTED_SOURCE_AND_GRID_PATH",
-              "elapsedMs": 410.4353999999994,
+              "elapsedMs": 368.4834000000001,
               "oceanGrid": "europe-0.025",
               "sourceAccessEvidence": [
                 {
@@ -4166,16 +4166,16 @@
             },
             "standardSpeed": 6,
             "calculatedSpeed": 10,
-            "standardHours": 26.228794455867675,
-            "calculatedHours": 15.737276673520606,
-            "calculatedCumulativeNM": 289.3397776387436,
-            "totalNM": 289.3397776387436,
-            "totalStandardHours": 48.223296273123935,
-            "totalCalculatedHours": 28.93397776387436,
-            "standardETA": "2026-10-17T12:13:23.866Z",
-            "calculatedETA": "2026-10-16T16:56:02.319Z",
+            "standardHours": 25.325618055396983,
+            "calculatedHours": 15.19537083323819,
+            "calculatedCumulativeNM": 283.9207192359194,
+            "totalNM": 283.9207192359194,
+            "totalStandardHours": 47.32011987265324,
+            "totalCalculatedHours": 28.392071923591942,
+            "standardETA": "2026-10-17T11:19:12.431Z",
+            "calculatedETA": "2026-10-16T16:23:31.458Z",
             "etaStatus": "NOMINAL",
-            "differenceHours": 10.491517782347069,
+            "differenceHours": 10.130247222158793,
             "courseVertices": [
               {
                 "id": "case-Kiel->case-Copenhagen:auto:0",
@@ -4291,593 +4291,33 @@
                 "id": "case-Kiel->case-Copenhagen:auto:22",
                 "pointIndex": 22,
                 "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:23",
-                "pointIndex": 23,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:24",
-                "pointIndex": 24,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:25",
-                "pointIndex": 25,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:26",
-                "pointIndex": 26,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:27",
-                "pointIndex": 27,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:28",
-                "pointIndex": 28,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:29",
-                "pointIndex": 29,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:30",
-                "pointIndex": 30,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:31",
-                "pointIndex": 31,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:32",
-                "pointIndex": 32,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:33",
-                "pointIndex": 33,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:34",
-                "pointIndex": 34,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:35",
-                "pointIndex": 35,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:36",
-                "pointIndex": 36,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:37",
-                "pointIndex": 37,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:38",
-                "pointIndex": 38,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:39",
-                "pointIndex": 39,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:40",
-                "pointIndex": 40,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:41",
-                "pointIndex": 41,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:42",
-                "pointIndex": 42,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:43",
-                "pointIndex": 43,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:44",
-                "pointIndex": 44,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:45",
-                "pointIndex": 45,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:46",
-                "pointIndex": 46,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:47",
-                "pointIndex": 47,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:48",
-                "pointIndex": 48,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:49",
-                "pointIndex": 49,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:50",
-                "pointIndex": 50,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:51",
-                "pointIndex": 51,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:52",
-                "pointIndex": 52,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:53",
-                "pointIndex": 53,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:54",
-                "pointIndex": 54,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:55",
-                "pointIndex": 55,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:56",
-                "pointIndex": 56,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:57",
-                "pointIndex": 57,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:58",
-                "pointIndex": 58,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:59",
-                "pointIndex": 59,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:60",
-                "pointIndex": 60,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:61",
-                "pointIndex": 61,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:62",
-                "pointIndex": 62,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:63",
-                "pointIndex": 63,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:64",
-                "pointIndex": 64,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:65",
-                "pointIndex": 65,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:66",
-                "pointIndex": 66,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:67",
-                "pointIndex": 67,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:68",
-                "pointIndex": 68,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:69",
-                "pointIndex": 69,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:70",
-                "pointIndex": 70,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:71",
-                "pointIndex": 71,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:72",
-                "pointIndex": 72,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:73",
-                "pointIndex": 73,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:74",
-                "pointIndex": 74,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:75",
-                "pointIndex": 75,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:76",
-                "pointIndex": 76,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:77",
-                "pointIndex": 77,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:78",
-                "pointIndex": 78,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:79",
-                "pointIndex": 79,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:80",
-                "pointIndex": 80,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:81",
-                "pointIndex": 81,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:82",
-                "pointIndex": 82,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:83",
-                "pointIndex": 83,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:84",
-                "pointIndex": 84,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:85",
-                "pointIndex": 85,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:86",
-                "pointIndex": 86,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:87",
-                "pointIndex": 87,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:88",
-                "pointIndex": 88,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:89",
-                "pointIndex": 89,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:90",
-                "pointIndex": 90,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:91",
-                "pointIndex": 91,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:92",
-                "pointIndex": 92,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:93",
-                "pointIndex": 93,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:94",
-                "pointIndex": 94,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:95",
-                "pointIndex": 95,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:96",
-                "pointIndex": 96,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:97",
-                "pointIndex": 97,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:98",
-                "pointIndex": 98,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:99",
-                "pointIndex": 99,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:100",
-                "pointIndex": 100,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:101",
-                "pointIndex": 101,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:102",
-                "pointIndex": 102,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:103",
-                "pointIndex": 103,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:104",
-                "pointIndex": 104,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:105",
-                "pointIndex": 105,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:106",
-                "pointIndex": 106,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:107",
-                "pointIndex": 107,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:108",
-                "pointIndex": 108,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:109",
-                "pointIndex": 109,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:110",
-                "pointIndex": 110,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:111",
-                "pointIndex": 111,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:112",
-                "pointIndex": 112,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:113",
-                "pointIndex": 113,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:114",
-                "pointIndex": 114,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:115",
-                "pointIndex": 115,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:116",
-                "pointIndex": 116,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:117",
-                "pointIndex": 117,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:118",
-                "pointIndex": 118,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:119",
-                "pointIndex": 119,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:120",
-                "pointIndex": 120,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:121",
-                "pointIndex": 121,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:122",
-                "pointIndex": 122,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:123",
-                "pointIndex": 123,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:124",
-                "pointIndex": 124,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:125",
-                "pointIndex": 125,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:126",
-                "pointIndex": 126,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:127",
-                "pointIndex": 127,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:128",
-                "pointIndex": 128,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:129",
-                "pointIndex": 129,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:130",
-                "pointIndex": 130,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:131",
-                "pointIndex": 131,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:132",
-                "pointIndex": 132,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:133",
-                "pointIndex": 133,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Kiel->case-Copenhagen:auto:134",
-                "pointIndex": 134,
-                "kind": "AUTOMATIC"
               }
             ]
           }
         ],
         "complete": true,
         "unresolvedLegs": 0,
-        "calculatedDistanceNM": 289.3397776387436,
+        "calculatedDistanceNM": 283.9207192359194,
         "provisionalDistanceNM": 0,
-        "totalEstimatedDistanceNM": 289.3397776387436,
-        "calculatedStandardHours": 48.223296273123935,
-        "calculatedOperatingHours": 28.93397776387436,
+        "totalEstimatedDistanceNM": 283.9207192359194,
+        "calculatedStandardHours": 47.32011987265324,
+        "calculatedOperatingHours": 28.392071923591942,
         "provisionalStandardHours": 0,
         "provisionalOperatingHours": 0,
-        "totalNM": 289.3397776387436,
-        "standardHours": 48.223296273123935,
-        "calculatedHours": 28.93397776387436,
+        "totalNM": 283.9207192359194,
+        "standardHours": 47.32011987265324,
+        "calculatedHours": 28.392071923591942,
         "effectiveSOG": 10,
-        "standardETA": "2026-10-17T12:13:23.866Z",
-        "calculatedETA": "2026-10-16T16:56:02.319Z",
-        "differenceHours": 19.289318509249576,
+        "standardETA": "2026-10-17T11:19:12.431Z",
+        "calculatedETA": "2026-10-16T16:23:31.458Z",
+        "differenceHours": 18.928047949061295,
         "suitability": {
           "mode": "BYPASS",
           "policy": "ADVISORY_ONLY_BETA",
           "blocksRouting": false
         },
-        "engineVersion": "0.3.1-stage2-course-1",
-        "selectedId": "20e0bedb-1e5d-4d22-8691-ede556370628",
+        "engineVersion": "0.3.1-stage2-course-2",
+        "selectedId": "fb35aced-1a98-491e-950f-d17d14052440",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -4889,7 +4329,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-17T15:30:39.038Z",
+        "createdAt": "2026-10-17T20:46:49.954Z",
         "connectors": [
           {
             "id": "case-Hamburg->case-Cuxhaven:0",
@@ -5043,7 +4483,7 @@
         "Cuxhaven",
         "Hamburg"
       ],
-      "elapsedMs": 806.6428000000005,
+      "elapsedMs": 760.5216999999998,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -5066,7 +4506,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "e32e27f7-047a-4eb3-9e10-c1536fab90fb",
+        "id": "c9875382-5f9b-416e-9434-44af78d54707",
         "preference": "BYPASS",
         "legs": [
           {
@@ -5074,8 +4514,8 @@
             "fromId": "case-Copenhagen",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "7e7c4b529690f1672a2cd8a3de476c6b8c51b090bef237b7b4016228654b438a",
-            "distanceNM": 157.37276673520586,
+            "inputKey": "aef7a6632376a93547f103649e8602c5a49a1322177c1f8e737b188538d19986",
+            "distanceNM": 151.9537083323819,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
             "evidence": {
@@ -5147,7 +4587,7 @@
               "effectiveSeparationNM": 0,
               "automaticConnectorLimitNM": 15,
               "termination": "CONNECTED_SOURCE_AND_GRID_PATH",
-              "elapsedMs": 490.9879000000001,
+              "elapsedMs": 438.11220000000003,
               "oceanGrid": "europe-0.025",
               "sourceAccessEvidence": [
                 {
@@ -5200,16 +4640,16 @@
             },
             "standardSpeed": 6,
             "calculatedSpeed": 10,
-            "standardHours": 26.228794455867643,
-            "calculatedHours": 15.737276673520586,
-            "calculatedCumulativeNM": 157.37276673520586,
-            "totalNM": 157.37276673520586,
-            "totalStandardHours": 26.228794455867643,
-            "totalCalculatedHours": 15.737276673520586,
-            "standardETA": "2026-10-16T14:13:43.660Z",
-            "calculatedETA": "2026-10-16T03:44:14.196Z",
+            "standardHours": 25.325618055396983,
+            "calculatedHours": 15.19537083323819,
+            "calculatedCumulativeNM": 151.9537083323819,
+            "totalNM": 151.9537083323819,
+            "totalStandardHours": 25.325618055396983,
+            "totalCalculatedHours": 15.19537083323819,
+            "standardETA": "2026-10-16T13:19:32.224Z",
+            "calculatedETA": "2026-10-16T03:11:43.334Z",
             "etaStatus": "NOMINAL",
-            "differenceHours": 10.491517782347056,
+            "differenceHours": 10.130247222158793,
             "courseVertices": [
               {
                 "id": "case-Copenhagen->case-Kiel:auto:0",
@@ -5325,566 +4765,6 @@
                 "id": "case-Copenhagen->case-Kiel:auto:22",
                 "pointIndex": 22,
                 "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:23",
-                "pointIndex": 23,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:24",
-                "pointIndex": 24,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:25",
-                "pointIndex": 25,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:26",
-                "pointIndex": 26,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:27",
-                "pointIndex": 27,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:28",
-                "pointIndex": 28,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:29",
-                "pointIndex": 29,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:30",
-                "pointIndex": 30,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:31",
-                "pointIndex": 31,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:32",
-                "pointIndex": 32,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:33",
-                "pointIndex": 33,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:34",
-                "pointIndex": 34,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:35",
-                "pointIndex": 35,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:36",
-                "pointIndex": 36,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:37",
-                "pointIndex": 37,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:38",
-                "pointIndex": 38,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:39",
-                "pointIndex": 39,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:40",
-                "pointIndex": 40,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:41",
-                "pointIndex": 41,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:42",
-                "pointIndex": 42,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:43",
-                "pointIndex": 43,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:44",
-                "pointIndex": 44,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:45",
-                "pointIndex": 45,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:46",
-                "pointIndex": 46,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:47",
-                "pointIndex": 47,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:48",
-                "pointIndex": 48,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:49",
-                "pointIndex": 49,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:50",
-                "pointIndex": 50,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:51",
-                "pointIndex": 51,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:52",
-                "pointIndex": 52,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:53",
-                "pointIndex": 53,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:54",
-                "pointIndex": 54,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:55",
-                "pointIndex": 55,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:56",
-                "pointIndex": 56,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:57",
-                "pointIndex": 57,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:58",
-                "pointIndex": 58,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:59",
-                "pointIndex": 59,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:60",
-                "pointIndex": 60,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:61",
-                "pointIndex": 61,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:62",
-                "pointIndex": 62,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:63",
-                "pointIndex": 63,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:64",
-                "pointIndex": 64,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:65",
-                "pointIndex": 65,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:66",
-                "pointIndex": 66,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:67",
-                "pointIndex": 67,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:68",
-                "pointIndex": 68,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:69",
-                "pointIndex": 69,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:70",
-                "pointIndex": 70,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:71",
-                "pointIndex": 71,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:72",
-                "pointIndex": 72,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:73",
-                "pointIndex": 73,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:74",
-                "pointIndex": 74,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:75",
-                "pointIndex": 75,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:76",
-                "pointIndex": 76,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:77",
-                "pointIndex": 77,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:78",
-                "pointIndex": 78,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:79",
-                "pointIndex": 79,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:80",
-                "pointIndex": 80,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:81",
-                "pointIndex": 81,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:82",
-                "pointIndex": 82,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:83",
-                "pointIndex": 83,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:84",
-                "pointIndex": 84,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:85",
-                "pointIndex": 85,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:86",
-                "pointIndex": 86,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:87",
-                "pointIndex": 87,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:88",
-                "pointIndex": 88,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:89",
-                "pointIndex": 89,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:90",
-                "pointIndex": 90,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:91",
-                "pointIndex": 91,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:92",
-                "pointIndex": 92,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:93",
-                "pointIndex": 93,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:94",
-                "pointIndex": 94,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:95",
-                "pointIndex": 95,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:96",
-                "pointIndex": 96,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:97",
-                "pointIndex": 97,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:98",
-                "pointIndex": 98,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:99",
-                "pointIndex": 99,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:100",
-                "pointIndex": 100,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:101",
-                "pointIndex": 101,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:102",
-                "pointIndex": 102,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:103",
-                "pointIndex": 103,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:104",
-                "pointIndex": 104,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:105",
-                "pointIndex": 105,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:106",
-                "pointIndex": 106,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:107",
-                "pointIndex": 107,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:108",
-                "pointIndex": 108,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:109",
-                "pointIndex": 109,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:110",
-                "pointIndex": 110,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:111",
-                "pointIndex": 111,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:112",
-                "pointIndex": 112,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:113",
-                "pointIndex": 113,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:114",
-                "pointIndex": 114,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:115",
-                "pointIndex": 115,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:116",
-                "pointIndex": 116,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:117",
-                "pointIndex": 117,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:118",
-                "pointIndex": 118,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:119",
-                "pointIndex": 119,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:120",
-                "pointIndex": 120,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:121",
-                "pointIndex": 121,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:122",
-                "pointIndex": 122,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:123",
-                "pointIndex": 123,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:124",
-                "pointIndex": 124,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:125",
-                "pointIndex": 125,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:126",
-                "pointIndex": 126,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:127",
-                "pointIndex": 127,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:128",
-                "pointIndex": 128,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:129",
-                "pointIndex": 129,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:130",
-                "pointIndex": 130,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:131",
-                "pointIndex": 131,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:132",
-                "pointIndex": 132,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:133",
-                "pointIndex": 133,
-                "kind": "AUTOMATIC"
-              },
-              {
-                "id": "case-Copenhagen->case-Kiel:auto:134",
-                "pointIndex": 134,
-                "kind": "AUTOMATIC"
               }
             ]
           },
@@ -5893,7 +4773,7 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Cuxhaven",
             "transport": "BY-SEA",
-            "inputKey": "07f92020697f4b596e43d3e195c86ca7243b1456c13748c9cb14da3d1c43aaef",
+            "inputKey": "55cc8d4514d71e41f5a77fdc0be2d859a79716f0e556f3f27c912a018410f081",
             "distanceNM": 73.90053394898396,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -6598,7 +5478,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 519.7980391570659,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 194.95809999999983
+              "elapsedMs": 185.36449999999968
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -6626,12 +5506,12 @@
             "calculatedSpeed": 10,
             "standardHours": 12.316755658163993,
             "calculatedHours": 7.390053394898397,
-            "calculatedCumulativeNM": 231.27330068418982,
-            "totalNM": 231.27330068418982,
-            "totalStandardHours": 38.545550114031634,
-            "totalCalculatedHours": 23.127330068418985,
-            "standardETA": "2026-10-17T02:32:43.980Z",
-            "calculatedETA": "2026-10-16T11:07:38.388Z",
+            "calculatedCumulativeNM": 225.85424228136586,
+            "totalNM": 225.85424228136586,
+            "totalStandardHours": 37.64237371356098,
+            "totalCalculatedHours": 22.58542422813659,
+            "standardETA": "2026-10-17T01:38:32.545Z",
+            "calculatedETA": "2026-10-16T10:35:07.527Z",
             "etaStatus": "NOMINAL",
             "differenceHours": 4.926702263265597,
             "courseVertices": [
@@ -8247,7 +7127,7 @@
             "fromId": "case-Cuxhaven",
             "waypointId": "case-Hamburg",
             "transport": "BY-SEA",
-            "inputKey": "c3e0b5da0ba0102b61cbba3aca0f2ce3b4737e1f601fa11628f07561a5164853",
+            "inputKey": "6ccae01805bd70403540d2463d61093317fdf6edb17a005902b9ea00a7eff895",
             "distanceNM": 58.06647695455355,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -8765,7 +7645,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 63.64794160744613,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 116.72310000000016
+              "elapsedMs": 117.75619999999981
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -8793,12 +7673,12 @@
             "calculatedSpeed": 10,
             "standardHours": 9.677746159092258,
             "calculatedHours": 5.806647695455355,
-            "calculatedCumulativeNM": 289.3397776387434,
-            "totalNM": 289.3397776387434,
-            "totalStandardHours": 48.22329627312389,
-            "totalCalculatedHours": 28.93397776387434,
-            "standardETA": "2026-10-17T12:13:23.866Z",
-            "calculatedETA": "2026-10-16T16:56:02.319Z",
+            "calculatedCumulativeNM": 283.9207192359194,
+            "totalNM": 283.9207192359194,
+            "totalStandardHours": 47.32011987265324,
+            "totalCalculatedHours": 28.392071923591942,
+            "standardETA": "2026-10-17T11:19:12.431Z",
+            "calculatedETA": "2026-10-16T16:23:31.458Z",
             "etaStatus": "NOMINAL",
             "differenceHours": 3.871098463636903,
             "courseVertices": [
@@ -9827,27 +8707,27 @@
         ],
         "complete": true,
         "unresolvedLegs": 0,
-        "calculatedDistanceNM": 289.3397776387434,
+        "calculatedDistanceNM": 283.9207192359194,
         "provisionalDistanceNM": 0,
-        "totalEstimatedDistanceNM": 289.3397776387434,
-        "calculatedStandardHours": 48.22329627312389,
-        "calculatedOperatingHours": 28.93397776387434,
+        "totalEstimatedDistanceNM": 283.9207192359194,
+        "calculatedStandardHours": 47.32011987265324,
+        "calculatedOperatingHours": 28.392071923591942,
         "provisionalStandardHours": 0,
         "provisionalOperatingHours": 0,
-        "totalNM": 289.3397776387434,
-        "standardHours": 48.22329627312389,
-        "calculatedHours": 28.93397776387434,
+        "totalNM": 283.9207192359194,
+        "standardHours": 47.32011987265324,
+        "calculatedHours": 28.392071923591942,
         "effectiveSOG": 10,
-        "standardETA": "2026-10-17T12:13:23.866Z",
-        "calculatedETA": "2026-10-16T16:56:02.319Z",
-        "differenceHours": 19.289318509249554,
+        "standardETA": "2026-10-17T11:19:12.431Z",
+        "calculatedETA": "2026-10-16T16:23:31.458Z",
+        "differenceHours": 18.928047949061295,
         "suitability": {
           "mode": "BYPASS",
           "policy": "ADVISORY_ONLY_BETA",
           "blocksRouting": false
         },
-        "engineVersion": "0.3.1-stage2-course-1",
-        "selectedId": "e32e27f7-047a-4eb3-9e10-c1536fab90fb",
+        "engineVersion": "0.3.1-stage2-course-2",
+        "selectedId": "c9875382-5f9b-416e-9434-44af78d54707",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -9859,7 +8739,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-17T15:30:39.848Z",
+        "createdAt": "2026-10-17T20:46:50.746Z",
         "connectors": [
           {
             "id": "case-Copenhagen->case-Kiel:0",
@@ -10011,7 +8891,7 @@
         "Hamburg",
         "Kiel"
       ],
-      "elapsedMs": 238.6806999999999,
+      "elapsedMs": 214.92479999999978,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -10034,7 +8914,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "3dac1f51-1620-4650-95b4-a8f94cf0b087",
+        "id": "71a0683f-cca2-46bf-80d6-34f3d7e62520",
         "preference": "BYPASS",
         "legs": [
           {
@@ -10042,7 +8922,7 @@
             "fromId": "case-Hamburg",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "ebe0ce3b7bf10b2216b33647861803f41ba6f48fcdc1f58f18b5e8378cfcda3e",
+            "inputKey": "63beb6b77f8ca783cabf2cddfd84449ae8d81d7c488c39c74f34e58d41888017",
             "distanceNM": 99.49348380022113,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -10950,7 +9830,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 571.3873161933874,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 236.0609000000004
+              "elapsedMs": 212.51249999999982
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -13191,8 +12071,8 @@
           "policy": "ADVISORY_ONLY_BETA",
           "blocksRouting": false
         },
-        "engineVersion": "0.3.1-stage2-course-1",
-        "selectedId": "3dac1f51-1620-4650-95b4-a8f94cf0b087",
+        "engineVersion": "0.3.1-stage2-course-2",
+        "selectedId": "71a0683f-cca2-46bf-80d6-34f3d7e62520",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -13204,7 +12084,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-17T15:30:40.089Z",
+        "createdAt": "2026-10-17T20:46:50.979Z",
         "connectors": [
           {
             "id": "case-Hamburg->case-Kiel:0",
@@ -13294,7 +12174,7 @@
         "Kiel",
         "Hamburg"
       ],
-      "elapsedMs": 221.48050000000057,
+      "elapsedMs": 202.84509999999955,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -13317,7 +12197,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "064080ed-3b45-462b-9451-c6905699c530",
+        "id": "2d922a14-a42d-4f99-b065-ac44880cc241",
         "preference": "BYPASS",
         "legs": [
           {
@@ -13325,7 +12205,7 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Hamburg",
             "transport": "BY-SEA",
-            "inputKey": "ce5d0fa440611ee2ec18ed3a74c130381771a76bf7be79d00453bc3761d45709",
+            "inputKey": "61d4ff221bc225a006dcb8aca79d66041796c5d77695e288c6268ba8b0d1ff83",
             "distanceNM": 99.49348380022106,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -14233,7 +13113,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 571.3873161933867,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 217.34919999999966
+              "elapsedMs": 200.63949999999932
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -16474,8 +15354,8 @@
           "policy": "ADVISORY_ONLY_BETA",
           "blocksRouting": false
         },
-        "engineVersion": "0.3.1-stage2-course-1",
-        "selectedId": "064080ed-3b45-462b-9451-c6905699c530",
+        "engineVersion": "0.3.1-stage2-course-2",
+        "selectedId": "2d922a14-a42d-4f99-b065-ac44880cc241",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -16487,7 +15367,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-17T15:30:40.309Z",
+        "createdAt": "2026-10-17T20:46:51.182Z",
         "connectors": [
           {
             "id": "case-Kiel->case-Hamburg:0",

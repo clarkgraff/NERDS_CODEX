@@ -11,7 +11,23 @@ function source(points,e){
 function grid(points,id,geodesic=false){
  const net=id==='world-0.1'?water.world:id==='europe-0.025'?water.europe:null;if(!net||!points.length)return false;
  if(!points.every(p=>net.inspect(p).classification==='WATER'))return false;
- if(geodesic){const dense=[points[0]];for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],count=Math.max(1,Math.ceil(distanceNM(a,b)/(net.resolution*60*Math.max(.05,Math.cos(Math.max(Math.abs(a.lat),Math.abs(b.lat))*Math.PI/180))/12)));for(let j=1;j<=count;j++)dense.push(require('../src/navigation.cjs').interpolate(a,b,j/count));}return grid(dense,id);}
+ if(geodesic){const dense=[points[0]];for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i],count=Math.max(1,Math.ceil(distanceNM(a,b)/(net.resolution*60*Math.max(.05,Math.cos(Math.max(Math.abs(a.lat),Math.abs(b.lat))*Math.PI/180))/12)));for(let j=1;j<=count;j++)dense.push(require('../src/navigation.cjs').interpolate(a,b,j/count));}if(!dense.every(p=>net.inspect(p).classification==='WATER'))return false;
+ // Independently traverse sample-chord boundary crossings. A diagonal change
+ // between samples is not itself proof that both side cells were crossed.
+ for(let k=1;k<dense.length;k++){
+  const a=dense[k-1],b={...dense[k]};while(b.lon-a.lon>180)b.lon-=360;while(b.lon-a.lon< -180)b.lon+=360;
+  const times=[0,1],r=net.resolution;
+  for(const [axis,origin] of [['lon',net.extent.west],['lat',net.extent.south]]){
+   const delta=b[axis]-a[axis];if(Math.abs(delta)<1e-14)continue;
+   const low=Math.ceil((Math.min(a[axis],b[axis])-origin)/r),high=Math.floor((Math.max(a[axis],b[axis])-origin)/r);
+   for(let n=low;n<=high;n++){const t=(origin+n*r-a[axis])/delta;if(t>0&&t<1)times.push(t);}
+  }
+  times.sort((a,b)=>a-b);
+  const at=t=>({lat:a.lat+(b.lat-a.lat)*t,lon:((a.lon+(b.lon-a.lon)*t+540)%360)-180});
+  for(let j=1;j<times.length;j++)if(net.inspect(at((times[j]+times[j-1])/2)).classification!=='WATER')return false;
+  for(const t of times.slice(1,-1)){const p=at(t);for(const dx of [-1e-9,1e-9])for(const dy of [-1e-9,1e-9])if(net.inspect({lat:p.lat+dy,lon:p.lon+dx}).classification!=='WATER')return false;}
+ }
+ return true;}
  const [width]=net.dimensions;
  return points.slice(1).every((p,i)=>{const u=net.cell(points[i]),v=net.cell(p),dx=Math.abs(u%width-v%width),dy=Math.abs(Math.floor(u/width)-Math.floor(v/width));if(!(dx<=1||id==='world-0.1'&&dx===width-1)||dy>1)return false;if(dx&&dy)return [Math.floor(u/width)*width+v%width,Math.floor(v/width)*width+u%width].every(c=>net.inspect(net.point(c)).classification==='WATER');return true;});
 }

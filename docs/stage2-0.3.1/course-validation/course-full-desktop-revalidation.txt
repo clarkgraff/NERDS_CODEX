@@ -1,0 +1,15 @@
+PASS AF-003/006 clean globe, zero waypoints, creation date and UTC default
+PASS AF-004/005 offline disambiguated lookup and selected place creation
+PASS Manual coordinates, map pin, exact coordinates, cancel and deletion
+PASS AF-014 vessel DONE/CANCEL/X, dimensions, propulsion and profile
+PASS AF-019 automatic sea routing without manual access; dual estimates, connectors excluded
+PASS AF-015 physical drag reorders stable IDs, map and recalculated route
+PASS AF-006 24-hour zone change preserves instant; ambiguous DST choice updates ETAs
+PASS AF-002 transport selection and mode-specific recalculation
+PASS AF-001/018 logo and storage draft cancel/close/commit semantics
+PASS AF-017 assistant DONE/CANCEL without model or external engine
+PASS AF-007–013 actual independent map tiles, external hints, all-hints and forecast labels
+PASS Photo indexing preserves original; globe/Mercator/tilted retained
+PASS AF-016 project export/save/new/open/restart preserves vessel, IDs, baseline route, layers, zone, logo and media
+PASS All three waypoint creation methods persist exact coordinates and stable IDs through edit, reorder and restart
+All desktop acceptance checks passed.

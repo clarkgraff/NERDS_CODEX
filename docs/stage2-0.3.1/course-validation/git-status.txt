@@ -1,0 +1,19 @@
+ M docs/stage2-0.3.1/discovery-desktop-results.json
+ M docs/stage2-0.3.1/discovery-results.json
+ M docs/stage2-0.3.1/geographic-paths.json.gz
+ M docs/stage2-0.3.1/geographic-results.json
+ M docs/stage2-0.3.1/geographic-summary.json
+ M docs/stage2-0.3.1/mixed-grid-desktop-results.json
+ M docs/stage2-0.3.1/primary-desktop-results.json
+ M docs/stage2-0.3.1/primary-itinerary-paths.json.gz
+ M docs/stage2-0.3.1/primary-itinerary-results.json
+ M docs/stage2-0.3.1/suitability-desktop.json
+ M src/course-geometry.cjs
+ M test/course-geometry.test.cjs
+ M test/desktop.cjs
+ M test/geographic-validation.cjs
+ M test/geographic-validation.test.cjs
+ M test/stage1-desktop.cjs
+ M test/stage2-primary-desktop.cjs
+?? docs/stage2-0.3.1/course-stage1-desktop-revalidation.json
+?? docs/stage2-0.3.1/course-validation/

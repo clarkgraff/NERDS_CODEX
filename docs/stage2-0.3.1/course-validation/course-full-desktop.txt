@@ -1,0 +1,17 @@
+PASS AF-003/006 clean globe, zero waypoints, creation date and UTC default
+PASS AF-004/005 offline disambiguated lookup and selected place creation
+PASS Manual coordinates, map pin, exact coordinates, cancel and deletion
+PASS AF-014 vessel DONE/CANCEL/X, dimensions, propulsion and profile
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert.ok(await page.evaluate(()=>calculation.connectors.length===5&&calculation.legs.every(l=>l.calculatedSpeed===10&&l.standardSpeed===6)))
+
+    at C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\desktop.cjs:15:130 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+STATUS PARTIAL ROUTE — UNRESOLVED LEGS OR TRANSFERS. 2/4 legs calculated.

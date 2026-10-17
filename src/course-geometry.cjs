@@ -1,5 +1,4 @@
 const {Geodesic}=require('geographiclib-geodesic');
-const {distanceNM}=require('./navigation.cjs');
 const water=require('./water-route.cjs');
 const gridById=id=>id==='world-0.1'?water.world:id==='europe-0.025'?water.europe:null;
 function supportedSegment(a,b,grid){
@@ -27,6 +26,10 @@ function supportedSegment(a,b,grid){
 }
 function simplify(points,grid){
  if(points.length<3)return points;
+ // Resolve direction-dependent greedy choices in one canonical orientation.
+ // Reversing an itinerary must reverse the same course, not select new bends.
+ const first=points[0],last=points.at(-1);
+ if(first.lon>last.lon||first.lon===last.lon&&first.lat>last.lat)return simplify([...points].reverse(),grid).reverse();
  const result=[points[0]];let i=0;
  while(i<points.length-1){
   let accepted=i+1;

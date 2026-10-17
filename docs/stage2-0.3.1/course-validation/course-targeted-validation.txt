@@ -1,0 +1,19 @@
+✔ open water staircase becomes a direct geodesic without mutating source geometry (3.0966ms)
+✔ geodesic shortcuts cannot cross blocked cells or diagonal land corners (0.5252ms)
+✔ course simplification retains exact source-waterway bends (0.6777ms)
+✔ reversing a constrained raster path reverses the same simplified geometry (0.8593ms)
+✔ legacy projects migrate to an empty course plan and preserve independent itinerary identities (18.1921ms)
+✔ manual constraints survive SQLite restart and project roundtrip independently of itinerary edits (25.3611ms)
+✔ constraints cannot be confused with automatic points, and invalid input is rejected (0.4634ms)
+✔ WGS84 inverse distances match published GeographicLib reference vectors (2.1697ms)
+✔ geodesic sampling preserves endpoints and length across the dateline and near poles (0.9995ms)
+✔ independent geodesic validator checks actual boundary crossings near Black Sea coast (142.2682ms)
+✔ geographic acceptance rejects fabricated source edges, waypoint order, distance and ETA (4481.1759ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4883.1196
