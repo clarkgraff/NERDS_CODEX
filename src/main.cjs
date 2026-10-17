@@ -15,7 +15,7 @@ const exifr=require('exifr');
 const {openStore,lookup,missions,localEndpoint}=require('./core.cjs');
 const root=path.resolve(__dirname,'..');
 let win,store,config,configFile,httpServer,appBase,appURL;
-let routing=false;
+let routing=false,discoveryCache;
 const markDirty=()=>store.put('project',{...store.get('project',{path:null}),dirty:true});
 const projectInfo=()=>{const p=store.get('project',{path:null,dirty:false});return {...p,name:p.path?path.basename(p.path,path.extname(p.path)):'UNTITLED PROJECT'};};
 async function saveProject(as=false){let file=projectInfo().path;if(as||!file){const r=await dialog.showSaveDialog(win,{defaultPath:file||'Expedition.nerds',filters:[{name:'NERDS project',extensions:['nerds']}]});if(r.canceled)return false;file=r.filePath;if(!file.toLowerCase().endsWith('.nerds'))file+='.nerds';}projects.write(file,projects.snapshot(store));store.put('project',{path:file,dirty:false});return true;}
@@ -53,7 +53,7 @@ app.whenReady().then(async()=>{
   config.vesselSuitability=config.vesselSuitability==='ON'?'ON':'BYPASS';
   config.dataDir=process.env.NERDS_DATA_DIR||config.dataDir||path.join(home,'data');
   config.cacheDir=config.cacheDir||path.join(config.dataDir,'cache');config.archiveDir=config.archiveDir||path.join(config.dataDir,'archive');
-  store=openStore(config.dataDir);for(const key of ['cacheDir','archiveDir'])fs.mkdirSync(config[key],{recursive:true});
+  store=openStore(config.dataDir);discoveryCache=require('./discovery-cache.cjs').createCache(store.db);for(const key of ['cacheDir','archiveDir'])fs.mkdirSync(config[key],{recursive:true});
   const resourceResponse=async request=>{
     try{
       const url=new URL(request.url,appBase);if(!url.pathname.startsWith(resourcePrefix)||request.headers.host!==new URL(appBase).host||request.method!=='GET')return new Response('Not found',{status:404});
@@ -87,7 +87,7 @@ app.whenReady().then(async()=>{
   win=new BrowserWindow({width:1500,height:980,minWidth:1120,minHeight:760,title:'NERDS · Faire Wind & Song',icon:path.join(root,'assets','nerds.ico'),backgroundColor:'#0b141c',show:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
   win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',event=>event.preventDefault());
-  handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),gazetteer:require('../assets/gazetteer-manifest.json'),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
+  handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),gazetteer:require('../assets/gazetteer-manifest.json'),discovery:require('./world-discovery.cjs').coverage(),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
   handle('save',state=>{const valid=store.save(state);markDirty();return valid;});
   handle('project',async action=>{
    if(['save','save-as'].includes(action)){if(!await saveProject(action==='save-as'))return null;}
@@ -107,7 +107,8 @@ app.whenReady().then(async()=>{
   handle('website',()=>shell.openExternal('https://www.4nr.com'));
   handle('suggest-access',id=>{const w=store.read().waypoints.find(w=>w.id===id);if(!w)throw Error('Save this waypoint first.');return suggest(w);});
   handle('calculate',async()=>{const s=store.read();if(routing)throw Error('A calculation is already running.');routing=true;try{return await new Promise((resolve,reject)=>{const worker=new Worker(path.join(__dirname,'route-worker.cjs'),{workerData:{state:s,options:{vesselSuitability:config.vesselSuitability}}});const timer=setTimeout(()=>{worker.terminate();reject(Error('Route search timed out. Add intermediate offshore waypoints.'));},90000);worker.once('message',r=>{clearTimeout(timer);if(r.error){reject(Error(r.error));return;}try{const logDir=path.join(config.dataDir,'route-diagnostics');fs.mkdirSync(logDir,{recursive:true});const logFile=path.join(logDir,'legs.jsonl');if(fs.existsSync(logFile)&&fs.statSync(logFile).size>5*1024*1024)fs.renameSync(logFile,path.join(logDir,'legs.previous.jsonl'));fs.appendFileSync(logFile,JSON.stringify({at:new Date().toISOString(),engine:r.engineVersion,legs:r.legs.map(l=>({id:l.id,status:l.status,reason:l.reason,distanceNM:l.distanceNM,standardHours:l.standardHours,calculatedHours:l.calculatedHours,evidence:l.evidence}))})+'\n');}catch(e){r.diagnosticWarning='Could not write route diagnostic log: '+e.message;}resolve(r);});worker.once('error',e=>{clearTimeout(timer);reject(e);});worker.once('exit',code=>{clearTimeout(timer);if(code)reject(Error('Route worker stopped.'));});});}finally{routing=false;}});
-  handle('lookup',q=>lookup(String(q).slice(0,200)));
+  handle('lookup',q=>{q=String(q).slice(0,200);const cached=discoveryCache.lookup(q),ids=new Set(cached.map(p=>p.sourceId));return [...cached,...lookup(q).filter(p=>!ids.has(p.sourceId))];});
+  handle('accept-discovery',p=>discoveryCache.accept(p));
   handle('lookup-online',async q=>{const cache=store.get('onlineLookupCache',{});if(Object.hasOwn(cache,q))return cache[q];const results=await gazetteer.online(q,fetch,config.geocoderUrl||'https://nominatim.openstreetmap.org/search');cache[q]=results;store.put('onlineLookupCache',Object.fromEntries(Object.entries(cache).slice(-500)));return results;});
   handle('import-layers',async()=>{const r=await dialog.showOpenDialog(win,{title:'Import optional external map layers',filters:[{name:'NERDS layer exchange',extensions:['json']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Layer file exceeds 20 MB.');const bytes=fs.readFileSync(r.filePaths[0]);const doc=JSON.parse(bytes.toString('utf8'));const sha256=createHash('sha256').update(bytes).digest('hex');return cleanLayers((doc.layers||[doc]).map(l=>({...l,sha256,importedAt:new Date().toISOString()})));});
   handle('import',async id=>{const result=await dialog.showOpenDialog(win,{title:'Index photographs (originals stay in place)',properties:['openFile','multiSelections'],filters:[{name:'Photographs',extensions:['jpg','jpeg','tif','tiff','png','webp']}]});return result.canceled?{results:[],media:store.media()}:importPaths(result.filePaths,id);});

@@ -8,8 +8,8 @@
   },
   "counts": {
     "total": 5,
-    "PASS": 0,
-    "FAIL": 5,
+    "PASS": 1,
+    "FAIL": 4,
     "UNRESOLVED": 0,
     "DEFERRED": 0
   },
@@ -25,8 +25,8 @@
         "Estación Científica Antártica Machu Picchu"
       ],
       "expected": "Antarctic research station, not the Peruvian settlement/archaeological destination",
-      "result": "FAIL",
-      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "result": "PASS",
+      "reason": "Requested feature found with regional and identity checks.",
       "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
       "searches": [
         {
@@ -40,6 +40,47 @@
         {
           "query": "Machu Picchu",
           "results": [
+            {
+              "name": "Machu Picchu Base",
+              "kind": "populated place",
+              "country": "Antarctica",
+              "region": "",
+              "lat": -62.0915,
+              "lon": -58.4699,
+              "sourceId": "geonames:13526707",
+              "source": "https://www.geonames.org/13526707",
+              "aliases": [
+                "Machu Picchu Base",
+                "Base Machu Picchu",
+                "Base antarctique Machu Picchu",
+                "Estacao de Pesquisas Machu Picchu",
+                "Estação de Pesquisas Machu Picchu",
+                "Machu Picchu",
+                "Machu Picchu Research Station",
+                "Machu Picchu-basen",
+                "Machu Pikchu",
+                "Machu-Picchu-Station",
+                "Macupikcu",
+                "Mačupikču",
+                "Мачу Пикчу"
+              ]
+            },
+            {
+              "name": "Machu Picchu Research Station",
+              "kind": "scientific research base",
+              "country": "Antarctica",
+              "region": "",
+              "lat": -62.09166,
+              "lon": -58.47061,
+              "sourceId": "geonames:6620764",
+              "source": "https://www.geonames.org/6620764",
+              "aliases": [
+                "Machu Picchu Research Station",
+                "Machu Picchu Research Station (Peru)",
+                "Machu Picchu forskingsstasjon",
+                "Machu Picchu forskingsstasjon (Peru)"
+              ]
+            },
             {
               "name": "Machupicchu",
               "kind": "PPL",

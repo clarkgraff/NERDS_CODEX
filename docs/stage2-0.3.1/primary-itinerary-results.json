@@ -73,7 +73,7 @@
         "Kiel",
         "Copenhagen"
       ],
-      "elapsedMs": 1282.2525,
+      "elapsedMs": 1935.8325,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -96,7 +96,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "9eafa25f-38a2-4248-8200-112a90911f2d",
+        "id": "0a4fba5f-fadc-4136-980c-9cf7ae18cad0",
         "preference": "BYPASS",
         "legs": [
           {
@@ -104,7 +104,7 @@
             "fromId": "case-Hamburg",
             "waypointId": "case-Cuxhaven",
             "transport": "BY-SEA",
-            "inputKey": "8f9c26406ec535b0906144b3edcd0d99b22faa3988df946a714ab1c157b95449",
+            "inputKey": "09eb1db41c55a12dfc39a15af5d0876f459f83a278293871b9ed7b65bdd02d9e",
             "distanceNM": 57.91732319719088,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -127,7 +127,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 18621,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:25400238",
                 "osm:way:25400238",
@@ -622,7 +622,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 63.48830339578902,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 1169.2371
+              "elapsedMs": 1716.7709
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -664,7 +664,7 @@
             "fromId": "case-Cuxhaven",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "8d0861eb2c31f15819136abe7403603e4a54a9e0fd490e0dedba2e2e3c675046",
+            "inputKey": "8f690b35c27a9d544efb3262c4617147bc7997754c24e798c534c8639dd03dd4",
             "distanceNM": 73.72436169393225,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -687,7 +687,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 34956,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:152273512",
                 "osm:way:152273512",
@@ -1369,7 +1369,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 518.9113164228378,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 79.74309999999991
+              "elapsedMs": 186.56130000000007
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -1411,7 +1411,7 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Copenhagen",
             "transport": "BY-SEA",
-            "inputKey": "5bef409a7c04024ed6798ffd1cebc3a550db1035d660f5eb90cdf05b44f0bc2d",
+            "inputKey": "59d6f9e7e20917b5b0b2e651c567fd706fe5b281067c4166afdb26bfb4017383",
             "distanceNM": 157.0227800438243,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -1484,7 +1484,7 @@
               "effectiveSeparationNM": 0,
               "automaticConnectorLimitNM": 15,
               "termination": "CONNECTED_SOURCE_AND_GRID_PATH",
-              "elapsedMs": 28.806500000000142,
+              "elapsedMs": 28.16449999999986,
               "oceanGrid": "europe-0.025",
               "sourceAccessEvidence": [
                 {
@@ -1571,7 +1571,7 @@
           "blocksRouting": false
         },
         "engineVersion": "0.3.1-stage2-waterway-2",
-        "selectedId": "9eafa25f-38a2-4248-8200-112a90911f2d",
+        "selectedId": "0a4fba5f-fadc-4136-980c-9cf7ae18cad0",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -1583,7 +1583,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-16T19:44:19.265Z",
+        "createdAt": "2026-10-17T01:15:26.396Z",
         "connectors": [
           {
             "id": "case-Hamburg->case-Cuxhaven:0",
@@ -1729,7 +1729,7 @@
         "Cuxhaven",
         "Hamburg"
       ],
-      "elapsedMs": 118.16969999999992,
+      "elapsedMs": 93.93820000000028,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -1752,7 +1752,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "29720b00-adf5-4b33-aced-0fe24aa0002b",
+        "id": "f28c7d36-da62-4c02-a56e-4c5ea6de8d0d",
         "preference": "BYPASS",
         "legs": [
           {
@@ -1760,7 +1760,7 @@
             "fromId": "case-Copenhagen",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "c989e4b391a4cae8cc65e7e3d98370a853352e35d2c464c4bac4b1f91129bf79",
+            "inputKey": "2a9f723bad11466f1f49e67fb3ba2a096d69cb668a9043dc668e6ee61cb2ce6d",
             "distanceNM": 157.0227800438243,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -1833,7 +1833,7 @@
               "effectiveSeparationNM": 0,
               "automaticConnectorLimitNM": 15,
               "termination": "CONNECTED_SOURCE_AND_GRID_PATH",
-              "elapsedMs": 18.493199999999888,
+              "elapsedMs": 17.137899999999945,
               "oceanGrid": "europe-0.025",
               "sourceAccessEvidence": [
                 {
@@ -1902,7 +1902,7 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Cuxhaven",
             "transport": "BY-SEA",
-            "inputKey": "550be1a9d0e22270a8f5b3fd650190ffbea455fccaeb3e9453960c6917437a79",
+            "inputKey": "9bf44f256633ae4b8438ad00b873542316ca4f45947fee95fafd7b8d0c965c1b",
             "distanceNM": 73.7243616939323,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -1925,7 +1925,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 15949,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:1460296573",
                 "osm:way:1460296573",
@@ -2607,7 +2607,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 518.9113164228379,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 48.32989999999995
+              "elapsedMs": 43.31639999999993
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -2649,7 +2649,7 @@
             "fromId": "case-Cuxhaven",
             "waypointId": "case-Hamburg",
             "transport": "BY-SEA",
-            "inputKey": "5d0b07986f01948739e2803116a73afee2218c1cad963460d8cc852514d97a03",
+            "inputKey": "30eaad53fd5faa346f1cfd5afb4b325c511494052566a57773e5e37a4f5e18ba",
             "distanceNM": 57.91732319719089,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -2672,7 +2672,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 25955,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:152273512",
                 "osm:way:152273512",
@@ -3167,7 +3167,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 63.488303395789025,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 49.565900000000056
+              "elapsedMs": 31.971000000000004
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -3227,7 +3227,7 @@
           "blocksRouting": false
         },
         "engineVersion": "0.3.1-stage2-waterway-2",
-        "selectedId": "29720b00-adf5-4b33-aced-0fe24aa0002b",
+        "selectedId": "f28c7d36-da62-4c02-a56e-4c5ea6de8d0d",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -3239,7 +3239,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-16T19:44:19.384Z",
+        "createdAt": "2026-10-17T01:15:26.490Z",
         "connectors": [
           {
             "id": "case-Copenhagen->case-Kiel:0",
@@ -3383,7 +3383,7 @@
         "Hamburg",
         "Kiel"
       ],
-      "elapsedMs": 67.50499999999988,
+      "elapsedMs": 96.5036,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -3406,7 +3406,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "f2f4011f-c16b-4fe9-8783-af4050c2f515",
+        "id": "a3a2d14b-d3fc-4e2b-9370-502e1400981b",
         "preference": "BYPASS",
         "legs": [
           {
@@ -3414,7 +3414,7 @@
             "fromId": "case-Hamburg",
             "waypointId": "case-Kiel",
             "transport": "BY-SEA",
-            "inputKey": "ff6c003bff8d48981211a273d0aa0b028a20e59095646c5bf2e60697b86e8011",
+            "inputKey": "cb28763dbb259791291a0ee6e16f2c2699609d300f1903428a65f88407e33b40",
             "distanceNM": 99.2632313391771,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -3437,7 +3437,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 35279,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:25400238",
                 "osm:way:25400238",
@@ -4322,7 +4322,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 570.3656932024253,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 66.63329999999996
+              "elapsedMs": 95.42110000000002
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -4382,7 +4382,7 @@
           "blocksRouting": false
         },
         "engineVersion": "0.3.1-stage2-waterway-2",
-        "selectedId": "f2f4011f-c16b-4fe9-8783-af4050c2f515",
+        "selectedId": "a3a2d14b-d3fc-4e2b-9370-502e1400981b",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -4394,7 +4394,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-16T19:44:19.453Z",
+        "createdAt": "2026-10-17T01:15:26.588Z",
         "connectors": [
           {
             "id": "case-Hamburg->case-Kiel:0",
@@ -4476,7 +4476,7 @@
         "Kiel",
         "Hamburg"
       ],
-      "elapsedMs": 50.69390000000021,
+      "elapsedMs": 51.27399999999989,
       "canalConnected": true,
       "entranceChecks": [
         {
@@ -4499,7 +4499,7 @@
       "errors": [],
       "unresolved": [],
       "route": {
-        "id": "a7447a58-3ddb-4345-834b-8691201382af",
+        "id": "d97db15c-da1d-43ca-9176-6987bb4a6f03",
         "preference": "BYPASS",
         "legs": [
           {
@@ -4507,7 +4507,7 @@
             "fromId": "case-Kiel",
             "waypointId": "case-Hamburg",
             "transport": "BY-SEA",
-            "inputKey": "0b11f229e6c412c6ad21972686ba75a33f420c243915f5c3efaa99d174802282",
+            "inputKey": "41dfa02ef9cc93f83ee236a1cc696648860fd97cf6475c8ecb736764d81371e5",
             "distanceNM": 99.26323133917703,
             "provisionalDistanceNM": 0,
             "status": "CALCULATED",
@@ -4530,7 +4530,7 @@
               "termination": "SOURCE_CONNECTED_PATH",
               "visitedCells": 39541,
               "source": "https://www.openstreetmap.org/copyright",
-              "sourceChecksum": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
+              "sourceChecksum": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
               "sourceEdgeIds": [
                 "osm:way:1460296573",
                 "osm:way:1460296573",
@@ -5415,7 +5415,7 @@
               "dataset": "osm",
               "alternativeOceanDistanceNM": 570.3656932024254,
               "selection": "Shorter connected source path with identical attachments",
-              "elapsedMs": 49.751399999999876
+              "elapsedMs": 50.266000000000076
             },
             "operatingMode": "POWER-DIESEL",
             "accesses": [
@@ -5475,7 +5475,7 @@
           "blocksRouting": false
         },
         "engineVersion": "0.3.1-stage2-waterway-2",
-        "selectedId": "a7447a58-3ddb-4345-834b-8691201382af",
+        "selectedId": "d97db15c-da1d-43ca-9176-6987bb4a6f03",
         "requestedPreferences": {
           "routePreference": "OFFSHORE PREFERRED",
           "coastalSeparationNM": 10,
@@ -5487,7 +5487,7 @@
         },
         "kind": "water-outline",
         "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
-        "createdAt": "2026-10-16T19:44:19.504Z",
+        "createdAt": "2026-10-17T01:15:26.639Z",
         "connectors": [
           {
             "id": "case-Kiel->case-Hamburg:0",

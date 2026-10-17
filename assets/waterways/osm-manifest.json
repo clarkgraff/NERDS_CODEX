@@ -23,9 +23,14 @@
       "file": "work/stage2/kiel-denmark-osm.json",
       "sha256": "05100baab0c839d70d21ab2d34bd55b7f6ab31df7257f3a5c4074e9f2d4a85e6",
       "timestamp": "2026-10-16T19:36:36Z"
+    },
+    {
+      "file": "work/stage2/southern-channels-osm.json",
+      "sha256": "f1e6e637a2d9b17d761d32eebc72a2cd7ca83dba2d301adb1d56eeefb3af3f72",
+      "timestamp": "2026-10-17T01:10:51Z"
     }
   ],
   "geometryStatus": "Mapped geographic waterways; access restrictions assessed separately",
-  "sha256": "1125d95a33d5ad70658292c90fff147f03de994f8df8a45efaea71a7e9735292",
-  "lineCount": 11734
+  "sha256": "444e3cf1cca5f79160f53cd313abcce9f57ef5006ffa74b5af2adbb0f4d7f842",
+  "lineCount": 12972
 }
