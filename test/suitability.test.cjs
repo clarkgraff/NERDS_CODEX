@@ -18,6 +18,6 @@ test('BYPASS and advisory ON cannot permit access on land or invent inland conne
  for(const mode of ['ON','BYPASS']){
   const s=stateFor(['Barcelona','Ibiza']);s.waypoints[1].access={lat:48.8,lon:2.3};const r=plan(s,{vesselSuitability:mode});
   assert.equal(r.complete,false);assert.match(r.legs[0].reason,/ACCESS_NOT_WATER/);assert.equal(r.totalNM,null);
-  assert.equal(plan(stateFor(['Santarém','Macapá']),{vesselSuitability:mode}).complete,false);
+  const missing=stateFor(['Barcelona','Ibiza']);missing.waypoints[1]={...missing.waypoints[1],lat:25,lon:15,access:null};assert.equal(plan(missing,{vesselSuitability:mode}).complete,false);
  }
 });

@@ -1865,3 +1865,11 @@ Nominatim service is contacted only by explicit user search, with attribution,
 a descriptive User-Agent, caching and a maximum one request per 1.1 seconds.
 https://operations.osmfoundation.org/policies/nominatim/
 No Earth project code has been copied or bundled.
+
+Stage 2 waterway source additions (development snapshot)
+Natural Earth rivers and lake centerlines: public domain.
+https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/
+Regional OpenStreetMap waterways: Copyright OpenStreetMap contributors, Open Database License (ODbL) 1.0.
+https://www.openstreetmap.org/copyright
+https://opendatacommons.org/licenses/odbl/1-0/
+Source geometry, acquisition timestamps, checksums and conversion scripts are retained in assets/waterways/ and scripts/. Mapped geometry does not establish vessel suitability or current access permission.

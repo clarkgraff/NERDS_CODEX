@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+  "acquisition": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+  "license": "Public domain",
+  "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+  "acquiredAt": "2026-10-16",
+  "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+  "lineCount": 2442
+}

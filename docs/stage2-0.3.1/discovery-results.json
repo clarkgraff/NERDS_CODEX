@@ -1,0 +1,364 @@
+{
+  "governingRequirement": "Worldwide expedition-relevant feature discovery must not be bounded by population thresholds, remoteness or tourism significance.",
+  "acceptance": {
+    "PASS": "The specifically requested feature is returned with correct location/classification and provenance; related settlement or same-name wrong region is not a pass.",
+    "FAIL": "Executed offline searches do not resolve the requested feature.",
+    "UNRESOLVED": "Evidence insufficient to decide identity.",
+    "DEFERRED": "Not executed; never PASS."
+  },
+  "counts": {
+    "total": 5,
+    "PASS": 0,
+    "FAIL": 5,
+    "UNRESOLVED": 0,
+    "DEFERRED": 0
+  },
+  "onlineLookupExecuted": false,
+  "architectureChanged": false,
+  "cases": [
+    {
+      "name": "Machu Picchu Antarctic Scientific Station / ECAMP",
+      "queries": [
+        "Machu Picchu Antarctic Scientific Station",
+        "ECAMP",
+        "Machu Picchu",
+        "Estación Científica Antártica Machu Picchu"
+      ],
+      "expected": "Antarctic research station, not the Peruvian settlement/archaeological destination",
+      "result": "FAIL",
+      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
+      "searches": [
+        {
+          "query": "Machu Picchu Antarctic Scientific Station",
+          "results": []
+        },
+        {
+          "query": "ECAMP",
+          "results": []
+        },
+        {
+          "query": "Machu Picchu",
+          "results": [
+            {
+              "name": "Machupicchu",
+              "kind": "PPL",
+              "country": "Peru",
+              "region": "Cuzco Department",
+              "lat": -13.15549,
+              "lon": -72.52416,
+              "sourceId": "geonames:3935636",
+              "source": "https://www.geonames.org/3935636",
+              "aliases": [
+                "MFT",
+                "Macchupiccho",
+                "Machu Piccho",
+                "Machu Picchu",
+                "Machu-Pikchu",
+                "Machupicchu",
+                "Machupicho",
+                "Maguina",
+                "Mandor",
+                "Maquina",
+                "Mirador",
+                "Mondor Pampa Aserradero",
+                "Мачу-Пикчу"
+              ]
+            }
+          ]
+        },
+        {
+          "query": "Estación Científica Antártica Machu Picchu",
+          "results": []
+        }
+      ],
+      "expectedRecovery": "User may mark an existing match unsatisfactory and request explicit extended discovery; user-approved feature with stable ID, classification, provenance and verification status must be cached for offline reuse. Population is not an eligibility rule."
+    },
+    {
+      "name": "Pitcairn Island",
+      "queries": [
+        "Pitcairn Island",
+        "Pitcairn",
+        "Adamstown"
+      ],
+      "expected": "The island as a geographic feature; Adamstown is a related settlement, not a replacement for island discovery",
+      "result": "FAIL",
+      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
+      "searches": [
+        {
+          "query": "Pitcairn Island",
+          "results": []
+        },
+        {
+          "query": "Pitcairn",
+          "results": [
+            {
+              "name": "Pitcairn",
+              "kind": "PPL",
+              "country": "United States",
+              "region": "Pennsylvania",
+              "lat": 40.40312,
+              "lon": -79.7781,
+              "sourceId": "geonames:5206361",
+              "source": "https://www.geonames.org/5206361",
+              "aliases": [
+                "Pitkairn",
+                "Питкаирн"
+              ]
+            }
+          ]
+        },
+        {
+          "query": "Adamstown",
+          "results": [
+            {
+              "name": "Adamstown",
+              "kind": "PPLX",
+              "country": "Australia",
+              "region": "New South Wales",
+              "lat": -32.93824,
+              "lon": 151.72541,
+              "sourceId": "geonames:8348418",
+              "source": "https://www.geonames.org/8348418",
+              "aliases": [
+                ""
+              ]
+            },
+            {
+              "name": "Adamstown",
+              "kind": "PPLC",
+              "country": "Pitcairn",
+              "region": "",
+              "lat": -25.06597,
+              "lon": -130.10147,
+              "sourceId": "geonames:4030723",
+              "source": "https://www.geonames.org/4030723",
+              "aliases": [
+                "Adams Town",
+                "Adamstaun",
+                "Adamstaunas",
+                "Adamstauno",
+                "Adamstaŭno",
+                "Adamstown",
+                "Antamstaoun",
+                "adamusutaun",
+                "admztawn",
+                "admztwn  pytkrn ayslnd",
+                "aedeomseutaun",
+                "atamstavun",
+                "ya dang si dui",
+                "Άνταμσταουν",
+                "Адамстаун",
+                "Адамстаўн",
+                "אדמסטאון",
+                "آدمزتاون",
+                "ادمزتون، پیتکرن ایسلند",
+                "ایڈمز ٹاؤن، جزائر پٹکیرن",
+                "ॲडम्सटाउन",
+                "ஆடம்ஸ்டவுன்",
+                "แอดัมส์ทาวน์",
+                "ადამსტაუნი",
+                "アダムスタウン",
+                "亚当斯敦",
+                "애덤스타운"
+              ]
+            },
+            {
+              "name": "Adamstown",
+              "kind": "PPL",
+              "country": "United States",
+              "region": "Maryland",
+              "lat": 39.31094,
+              "lon": -77.47471,
+              "sourceId": "geonames:4346978",
+              "source": "https://www.geonames.org/4346978",
+              "aliases": [
+                "Adamstaun",
+                "Adamstown",
+                "Adamstown Junction",
+                "Adamsville",
+                "Davis Warehouse",
+                "adamstwwn  mrylnd",
+                "adamztwwn  mrylnd",
+                "ya dang si dui",
+                "Адамстаун",
+                "آدامزتوون، مریلند",
+                "ادامستوون، مریلند",
+                "亞當斯敦"
+              ]
+            },
+            {
+              "name": "Adamstown",
+              "kind": "PPL",
+              "country": "United States",
+              "region": "Pennsylvania",
+              "lat": 40.2412,
+              "lon": -76.05633,
+              "sourceId": "geonames:5177874",
+              "source": "https://www.geonames.org/5177874",
+              "aliases": [
+                "Adamstaun",
+                "Адамстаун"
+              ]
+            },
+            {
+              "name": "Adamstown Heights",
+              "kind": "PPLX",
+              "country": "Australia",
+              "region": "New South Wales",
+              "lat": -32.94906,
+              "lon": 151.71009,
+              "sourceId": "geonames:8347693",
+              "source": "https://www.geonames.org/8347693",
+              "aliases": [
+                ""
+              ]
+            },
+            {
+              "name": "Pleasantville",
+              "kind": "PPL",
+              "country": "United States",
+              "region": "New Jersey",
+              "lat": 39.38984,
+              "lon": -74.52404,
+              "sourceId": "geonames:4503646",
+              "source": "https://www.geonames.org/4503646",
+              "aliases": [
+                "Adamstown",
+                "Lakestown",
+                "Pleasantville",
+                "Plesantvill",
+                "Plezantvil",
+                "Plisantvill",
+                "Risleytown",
+                "Smith's Landing",
+                "plyzntwyl  nywjrsy",
+                "Плезантвил",
+                "Плесантвилл",
+                "Плисантвилл",
+                "پلیزنتویل، نیوجرسی"
+              ]
+            }
+          ]
+        }
+      ],
+      "expectedRecovery": "User may mark an existing match unsatisfactory and request explicit extended discovery; user-approved feature with stable ID, classification, provenance and verification status must be cached for offline reuse. Population is not an eligibility rule."
+    },
+    {
+      "name": "Two Harbors, Catalina Island",
+      "queries": [
+        "Two Harbors Catalina Island",
+        "Two Harbors",
+        "Catalina Island"
+      ],
+      "expected": "Catalina Island locality/harbour in California, not Two Harbors in Minnesota",
+      "result": "FAIL",
+      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
+      "searches": [
+        {
+          "query": "Two Harbors Catalina Island",
+          "results": []
+        },
+        {
+          "query": "Two Harbors",
+          "results": [
+            {
+              "name": "Two Harbors",
+              "kind": "PPLA2",
+              "country": "United States",
+              "region": "Minnesota",
+              "lat": 47.02271,
+              "lon": -91.67073,
+              "sourceId": "geonames:5050817",
+              "source": "https://www.geonames.org/5050817",
+              "aliases": [
+                "City of Two Harbors",
+                "Tu Kharbors",
+                "Tu-Kharbors",
+                "Two Harbors",
+                "touhabazu",
+                "tw harbwrs",
+                "Ту Харборс",
+                "Ту-Харборс",
+                "تو هاربر، مینه‌سوتا",
+                "تو هاربورس",
+                "トゥーハーバーズ"
+              ]
+            }
+          ]
+        },
+        {
+          "query": "Catalina Island",
+          "results": []
+        }
+      ],
+      "expectedRecovery": "User may mark an existing match unsatisfactory and request explicit extended discovery; user-approved feature with stable ID, classification, provenance and verification status must be cached for offline reuse. Population is not an eligibility rule."
+    },
+    {
+      "name": "Saint Peter & Saint Paul Rocks",
+      "queries": [
+        "Saint Peter and Saint Paul Rocks",
+        "Saint Peter & Saint Paul",
+        "São Pedro e São Paulo",
+        "Arquipélago de São Pedro e São Paulo"
+      ],
+      "expected": "Remote equatorial Atlantic rocks/archipelago, regardless of population",
+      "result": "FAIL",
+      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
+      "searches": [
+        {
+          "query": "Saint Peter and Saint Paul Rocks",
+          "results": []
+        },
+        {
+          "query": "Saint Peter & Saint Paul",
+          "results": []
+        },
+        {
+          "query": "São Pedro e São Paulo",
+          "results": []
+        },
+        {
+          "query": "Arquipélago de São Pedro e São Paulo",
+          "results": []
+        }
+      ],
+      "expectedRecovery": "User may mark an existing match unsatisfactory and request explicit extended discovery; user-approved feature with stable ID, classification, provenance and verification status must be cached for offline reuse. Population is not an eligibility rule."
+    },
+    {
+      "name": "Devil's Island, French Guiana",
+      "queries": [
+        "Devil's Island French Guiana",
+        "Devil's Island",
+        "Île du Diable",
+        "Ile du Diable"
+      ],
+      "expected": "Named island in French Guiana, with English/French aliases",
+      "result": "FAIL",
+      "reason": "Requested feature not resolved by the existing offline name/alias search; no unrelated or nearby settlement is accepted as the requested feature.",
+      "scope": "Mandatory Stage 2 discovery acceptance; Antarctica retained",
+      "searches": [
+        {
+          "query": "Devil's Island French Guiana",
+          "results": []
+        },
+        {
+          "query": "Devil's Island",
+          "results": []
+        },
+        {
+          "query": "Île du Diable",
+          "results": []
+        },
+        {
+          "query": "Ile du Diable",
+          "results": []
+        }
+      ],
+      "expectedRecovery": "User may mark an existing match unsatisfactory and request explicit extended discovery; user-approved feature with stable ID, classification, provenance and verification status must be cached for offline reuse. Population is not an eligibility rule."
+    }
+  ]
+}

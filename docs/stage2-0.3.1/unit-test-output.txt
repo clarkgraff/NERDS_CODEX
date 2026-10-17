@@ -1,0 +1,37 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (11.1133ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (7.9592ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (27.5128ms)
+✔ invalid saves cannot overwrite the last good expedition (11.1602ms)
+✔ inference adapter only accepts local HTTP APIs (0.3762ms)
+✔ project roundtrip, source references, transactional invalid-open protection (37.7891ms)
+✔ vessel units, hull estimate, and known clearance exceedance (0.5395ms)
+✔ distance/time numerical checks and speed validation (0.728ms)
+✔ coarse water route rounds Denmark instead of crossing land; grid nodes clear (34.6458ms)
+✔ exports escape text and KMZ contains complete doc.kml (2.0445ms)
+✔ geographic acceptance rejects fabricated source edges, waypoint order, distance and ETA (2126.1945ms)
+✔ worldwide indexed offline search, disambiguation and provenance roundtrip (28.1417ms)
+✔ UTC, date line, daylight-saving gaps and repeated local hours (14.8916ms)
+✔ city anchors use connected Elbe and Kiel Canal source geometry without manual access (2120.959ms)
+✔ mixed propulsion uses sum of segment times, with editable reference speed (0.9788ms)
+✔ air estimates use mode speed; road network absence is explicit (1.0683ms)
+✔ external layer contract rejects unlabeled forecasts and invalid coordinates (0.44ms)
+✔ online fallback sends compliant requests, preserves source and caches responses (1.0199ms)
+✔ Stage 1 both access cells use the preselected grid; reported defects work in both directions (2235.8425ms)
+✔ Stage 1 appending a failing leg preserves successful geometry and reports unknown totals (255.0494ms)
+✔ Stage 1 later legs continue after failures but receive no fabricated absolute ETA or export timestamp (53.4748ms)
+✔ Stage 1 unresolved inland and road routes never become completed zero-distance journeys (2.8077ms)
+✔ Stage 1 defaults to BYPASS while preserving optional settings and diagnostic opt-in (178.6231ms)
+✔ Stage 1 grid transitions are explicit unknown transfers rather than instantaneous jumps (31.286ms)
+✔ Stage 1 failed explicit access and bounded search are isolated (25.4968ms)
+✔ BETA suitability never changes connected geometry, distance, duration or ETA (1866.6702ms)
+✔ BYPASS and advisory ON cannot permit access on land or invent inland connectivity (177.0484ms)
+✔ source waterway topology follows all vertices, both directions; nearby gaps remain disconnected (1.8014ms)
+✔ mapped Amazon and Elbe routes preserve source edges and bidirectional distance (3328.3526ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3481.8386

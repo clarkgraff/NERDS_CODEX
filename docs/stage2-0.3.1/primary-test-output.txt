@@ -1,0 +1,132 @@
+{
+  "counts": {
+    "PASS": 4,
+    "FAIL": 0,
+    "UNRESOLVED": 0,
+    "DEFERRED": 0
+  },
+  "cases": [
+    {
+      "name": "Primary mandatory itinerary forward",
+      "result": "PASS",
+      "legs": [
+        {
+          "id": "case-Hamburg->case-Cuxhaven",
+          "nm": 57.91732319719088,
+          "grid": "source-waterway-network"
+        },
+        {
+          "id": "case-Cuxhaven->case-Kiel",
+          "nm": 73.72436169393225,
+          "grid": "source-waterway-network"
+        },
+        {
+          "id": "case-Kiel->case-Copenhagen",
+          "nm": 157.0227800438243,
+          "grid": "hybrid-waterway-ocean"
+        }
+      ],
+      "canalConnected": true,
+      "errors": [],
+      "unresolved": []
+    },
+    {
+      "name": "Primary mandatory itinerary reverse",
+      "result": "PASS",
+      "legs": [
+        {
+          "id": "case-Copenhagen->case-Kiel",
+          "nm": 157.0227800438243,
+          "grid": "hybrid-waterway-ocean"
+        },
+        {
+          "id": "case-Kiel->case-Cuxhaven",
+          "nm": 73.7243616939323,
+          "grid": "source-waterway-network"
+        },
+        {
+          "id": "case-Cuxhaven->case-Hamburg",
+          "nm": 57.91732319719089,
+          "grid": "source-waterway-network"
+        }
+      ],
+      "canalConnected": true,
+      "errors": [],
+      "unresolved": []
+    },
+    {
+      "name": "Hamburg to Kiel unrestricted",
+      "result": "PASS",
+      "legs": [
+        {
+          "id": "case-Hamburg->case-Kiel",
+          "nm": 99.2632313391771,
+          "grid": "source-waterway-network"
+        }
+      ],
+      "canalConnected": true,
+      "errors": [],
+      "unresolved": []
+    },
+    {
+      "name": "Kiel to Hamburg unrestricted",
+      "result": "PASS",
+      "legs": [
+        {
+          "id": "case-Kiel->case-Hamburg",
+          "nm": 99.26323133917703,
+          "grid": "source-waterway-network"
+        }
+      ],
+      "canalConnected": true,
+      "errors": [],
+      "unresolved": []
+    }
+  ],
+  "comparisons": [
+    {
+      "forward": "Primary mandatory itinerary forward",
+      "reverse": "Primary mandatory itinerary reverse",
+      "result": "PASS",
+      "distanceToleranceNM": 0.1,
+      "legs": [
+        {
+          "from": "case-Hamburg",
+          "to": "case-Cuxhaven",
+          "result": "PASS",
+          "deltaNM": 7.105427357601002e-15,
+          "exactReversedGeometry": true
+        },
+        {
+          "from": "case-Cuxhaven",
+          "to": "case-Kiel",
+          "result": "PASS",
+          "deltaNM": 4.263256414560601e-14,
+          "exactReversedGeometry": true
+        },
+        {
+          "from": "case-Kiel",
+          "to": "case-Copenhagen",
+          "result": "PASS",
+          "deltaNM": 0,
+          "exactReversedGeometry": true
+        }
+      ]
+    },
+    {
+      "forward": "Hamburg to Kiel unrestricted",
+      "reverse": "Kiel to Hamburg unrestricted",
+      "result": "PASS",
+      "distanceToleranceNM": 0.1,
+      "legs": [
+        {
+          "from": "case-Hamburg",
+          "to": "case-Kiel",
+          "result": "PASS",
+          "deltaNM": 7.105427357601002e-14,
+          "exactReversedGeometry": true
+        }
+      ]
+    }
+  ]
+}
