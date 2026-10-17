@@ -7,8 +7,8 @@ let mask;
 function grid(){return mask||(mask=fs.readFileSync(path.join(__dirname,'../assets/'+file)));}
 const point=id=>({lon:west+(id%W+.5)*STEP,lat:south+(Math.floor(id/W)+.5)*STEP});
 function cell(p){const rawX=Math.floor((p.lon-west)/STEP),x=wrap?(rawX%W+W)%W:Math.min(W-1,Math.max(0,rawX)),y=Math.min(H-1,Math.max(0,Math.floor((p.lat-south)/STEP)));return y*W+x;}
-function suggest(p){const base=cell(p),bx=base%W,by=Math.floor(base/W);let best=null,bestD=Infinity;
- for(let dy=-Math.ceil(2/STEP);dy<=Math.ceil(2/STEP);dy++)for(let dx=-Math.ceil(3/STEP);dx<=Math.ceil(3/STEP);dx++){const y=by+dy;if(y<10||y>=H-10)continue;if(!wrap&&(bx+dx<0||bx+dx>=W))continue;const id=y*W+(bx+dx+W)%W;if(grid()[id])continue;const q=point(id),d=distanceNM(p,q);if(d<bestD){bestD=d;best=q;}}
+function suggest(p,accept=()=>true){const base=cell(p),bx=base%W,by=Math.floor(base/W);let best=null,bestD=Infinity;
+ for(let dy=-Math.ceil(2/STEP);dy<=Math.ceil(2/STEP);dy++)for(let dx=-Math.ceil(3/STEP);dx<=Math.ceil(3/STEP);dx++){const y=by+dy;if(y<10||y>=H-10)continue;if(!wrap&&(bx+dx<0||bx+dx>=W))continue;const id=y*W+(bx+dx+W)%W;if(grid()[id])continue;const q=point(id),d=distanceNM(p,q);if(d<bestD&&accept(q)){bestD=d;best=q;}}
  if(!best)throw Error('No offshore connector could be resolved in this dataset.');
  return {...best,name:'Unverified offshore candidate',source:'Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment',depth:null,airClearance:null,maxLOA:null,maxBeam:null};
 }
@@ -45,13 +45,30 @@ const world=engine(3600,1800,.1,-180,-90,'land-mask.bin',true);
 const europe=engine(2400,1200,.025,-20,40,'europe-mask.bin',false);
 const inside=p=>p.lon>-19&&p.lon<39&&p.lat>41&&p.lat<69;
 const MAX_AUTOMATIC_CONNECTOR_NM=15;
+const sharedAccessCache=new Map();
+function automaticAccess(w,n){
+ if(w.access)return w.access;
+ // A common fine-grid water point can anchor either leg grid. Do not widen the
+ // existing 15 NM local guard or accept a point blocked in either mask.
+ if(inside(w)){
+  const key=w.lat+','+w.lon;
+  if(!sharedAccessCache.has(key)){
+   let point=null;
+   if(europe.inspect(w).classification==='WATER'&&world.inspect(w).classification==='WATER')point={lat:w.lat,lon:w.lon};
+   else try{const candidate=europe.suggest(w,p=>world.inspect(p).classification==='WATER');if(distanceNM(w,candidate)<=MAX_AUTOMATIC_CONNECTOR_NM)point=candidate;}catch{}
+   sharedAccessCache.set(key,point);
+  }
+  if(sharedAccessCache.get(key))return sharedAccessCache.get(key);
+ }
+ return n.inspect(w).classification==='WATER'?{lat:w.lat,lon:w.lon}:n.suggest(w);
+}
 function selectNetwork(a,b){return inside(a)&&inside(b)?{id:'europe-0.025',network:europe}:{id:'world-0.1',network:world};}
 function leg(a,b,options={}){
  const start=performance.now(),selected=selectNetwork(a.access||a,b.access||b),n=selected.network,connectorLimitNM=Math.max(MAX_AUTOMATIC_CONNECTOR_NM,4*n.resolution*60);
  const evidence={waypointIds:[a.id,b.id],anchors:[{lat:a.lat,lon:a.lon},{lat:b.lat,lon:b.lon}],grid:selected.id,resolutionDegrees:n.resolution,gridExtent:n.extent,accessCandidates:[],accessSearchBounds:{latitudeRadiusDegrees:2,longitudeRadiusDegrees:3,globalFallback:false},visitedCells:0,searchBounds:null,optionalPreferences:options.bypass===false?'ENABLED':'BYPASS',effectiveSeparationNM:options.bypass===false?(options.separationNM||0):0,automaticConnectorLimitNM:connectorLimitNM};
  try{
   const endpoints=[a,b].map(w=>{const source=w.access||w,classification=n.inspect(source);let candidate;
-   try{candidate=w.access|| (classification.classification==='WATER'?{lat:w.lat,lon:w.lon}:n.suggest(w));}catch(e){evidence.accessCandidates.push({waypointId:w.id,source:{lat:source.lat,lon:source.lon},sourceCell:classification,error:e.message});return {error:e.message};}
+   try{candidate=automaticAccess(w,n);}catch(e){evidence.accessCandidates.push({waypointId:w.id,source:{lat:source.lat,lon:source.lon},sourceCell:classification,error:e.message});return {error:e.message};}
    const access=n.inspect(candidate),distance=distanceNM(w,candidate);evidence.accessCandidates.push({waypointId:w.id,source:{lat:source.lat,lon:source.lon},sourceCell:classification,candidate,cell:access,distanceNM:distance,explicit:!!w.access});return {candidate,access,distance,explicit:!!w.access};});
   if(endpoints.some(p=>p.error))throw Error('ACCESS_UNRESOLVED: '+endpoints.filter(p=>p.error).map(p=>p.error).join(' / '));
   if(endpoints.some(p=>p.access.classification!=='WATER'))throw Error('ACCESS_NOT_WATER: explicit access is outside or blocked in the selected leg grid.');
@@ -65,4 +82,4 @@ function leg(a,b,options={}){
   return {points:points.map(p=>({lat:p.lat,lon:p.lon})),accesses:endpoints.map(e=>e.candidate),evidence};
  }catch(error){evidence.termination=error.message;evidence.elapsedMs=performance.now()-start;error.evidence=evidence;throw error;}
 }
-module.exports={route:(a,b,options)=>selectNetwork(a,b).network.route(a,b,options),suggest:p=>(inside(p)?europe:world).suggest(p),cell:world.cell,point:world.point,europe,world,selectNetwork,leg,MAX_AUTOMATIC_CONNECTOR_NM};
+module.exports={automaticAccess,route:(a,b,options)=>selectNetwork(a,b).network.route(a,b,options),suggest:p=>(inside(p)?europe:world).suggest(p),cell:world.cell,point:world.point,europe,world,selectNetwork,leg,MAX_AUTOMATIC_CONNECTOR_NM};

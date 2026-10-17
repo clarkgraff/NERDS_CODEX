@@ -12,7 +12,7 @@ function leg(a,b,options={}){
   const source=portalCache.get(key);
   // Resolve each waypoint independently, so adjacent legs on this network share an attachment.
   if(source)return {...source,portal:source.points.at(-1)};
-  const limit=Math.max(15,grid.resolution*240),candidate=w.access||(grid.inspect(w).classification==='WATER'?w:grid.suggest(w));
+  const limit=Math.max(15,grid.resolution*240),candidate=water.automaticAccess(w,grid);
   if(grid.inspect(candidate).classification!=='WATER'||(!w.access&&distanceNM(w,candidate)>limit))return null;
   return {access:candidate,portal:candidate,points:[{lat:candidate.lat,lon:candidate.lon}],sourceEdgeIds:[],sourceAccessEvidence:[]};
  }

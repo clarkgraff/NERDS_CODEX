@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:24:00.762Z",
+  "generatedAt": "2026-10-17T10:26:51.027Z",
   "interpretation": "Candidate components diagnose mapped topology only. Nearby source endpoints are not a verified land-to-water access route. Missing connectivity is not a vessel-access prohibition. No geometry is repaired by this diagnostic.",
   "cases": [
     {
@@ -223,70 +223,6 @@
             "to": {
               "classification": "BLOCKED",
               "cell": 1912669,
-              "component": null
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Marseille → Barcelona → Ibiza → Algiers → Marseille | full forward",
-      "result": "UNRESOLVED",
-      "legs": [
-        {
-          "id": "case-Barcelona->case-Ibiza",
-          "reason": null,
-          "transition": {
-            "status": "UNRESOLVED",
-            "waypointId": "case-Barcelona",
-            "from": {
-              "lon": 2.2375000000000007,
-              "lat": 41.3875,
-              "name": "Unverified offshore candidate",
-              "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
-              "depth": null,
-              "airClearance": null,
-              "maxLOA": null,
-              "maxBeam": null
-            },
-            "to": {
-              "lon": 2.450000000000017,
-              "lat": 41.25,
-              "name": "Unverified offshore candidate",
-              "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
-              "depth": null,
-              "airClearance": null,
-              "maxLOA": null,
-              "maxBeam": null
-            },
-            "reason": "Access differs between adjacent leg networks; transfer geometry and duration unresolved."
-          },
-          "datasets": [
-            {
-              "name": "osm",
-              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
-              "fromCandidates": [],
-              "toCandidates": [],
-              "sharedComponent": false
-            },
-            {
-              "name": "rivers",
-              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
-              "fromCandidates": [],
-              "toCandidates": [],
-              "sharedComponent": false
-            }
-          ],
-          "grid": {
-            "id": "world-0.1",
-            "from": {
-              "classification": "BLOCKED",
-              "cell": 4728621,
-              "component": null
-            },
-            "to": {
-              "classification": "BLOCKED",
-              "cell": 4642214,
               "component": null
             }
           }
