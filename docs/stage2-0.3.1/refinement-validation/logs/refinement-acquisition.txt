@@ -1,0 +1,6 @@
+bordeaux 756 1627845
+amazon-estuary 1310 5902057
+alter-do-chao UNRESOLVED HTTP Error 429: Too Many Requests
+southern 2215 28158438
+great-lakes UNRESOLVED IncompleteRead(7665302 bytes read)
+rostov 1129 1783845

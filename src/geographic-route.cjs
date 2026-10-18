@@ -5,10 +5,11 @@ const portalCache=new Map();
 const length=route=>route.points.slice(1).reduce((sum,p,i)=>sum+distanceNM(route.points[i],p),0);
 function leg(a,b,options={}){
  if(options.maxVisited!==undefined)return water.leg(a,b,options);
+ const datasets=options.datasets||['osm','rivers'];
  const selected=water.selectNetwork(a.access||a,b.access||b),grid=selected.network;
  function endpoint(w){
-  const key=JSON.stringify([w.lat,w.lon,w.access?.lat,w.access?.lon,selected.id]);
-  if(!portalCache.has(key))portalCache.set(key,network.toGrid(w,grid));
+  const key=JSON.stringify([w.lat,w.lon,w.access?.lat,w.access?.lon,selected.id,datasets]);
+  if(!portalCache.has(key))portalCache.set(key,network.toGrid(w,grid,datasets));
   const source=portalCache.get(key);
   // Resolve each waypoint independently, so adjacent legs on this network share an attachment.
   if(source)return {...source,portal:source.points.at(-1)};
@@ -17,10 +18,11 @@ function leg(a,b,options={}){
   return {access:candidate,portal:candidate,points:[{lat:candidate.lat,lon:candidate.lon}],sourceEdgeIds:[],sourceAccessEvidence:[]};
  }
  let from,to;try{from=endpoint(a);to=endpoint(b);}catch{}
- if(!from||!to){const inland=network.leg(a,b);if(inland)return inland;return water.leg(a,b,options);}
+ if(!from||!to){const inland=network.leg(a,b,datasets);if(inland)return inland;return water.leg(a,b,options);}
  if(!from.dataset&&!to.dataset)return water.leg(a,b,options);
  // Use the same attachments for all candidate paths, including canal and ocean alternatives.
- const direct=network.leg({...a,access:from.access},{...b,access:to.access});
+ const direct=network.leg({...a,access:from.access},{...b,access:to.access},datasets);
+ if(options.preferSource&&direct)return direct;
  let ocean;try{ocean=water.leg({...a,access:from.portal},{...b,access:to.portal},options);}catch(error){if(direct)return direct;throw error;}
  const reverse=[...to.points].reverse(),points=[...from.points,...ocean.points.slice(1),...reverse.slice(1)];
  const hybrid={points,accesses:[from.access,to.access],evidence:{...ocean.evidence,grid:'hybrid-waterway-ocean',oceanGrid:selected.id,termination:'CONNECTED_SOURCE_AND_GRID_PATH',anchors:[{lat:a.lat,lon:a.lon},{lat:b.lat,lon:b.lon}],sections:[{kind:'source',...from},{kind:'grid',grid:selected.id,points:ocean.points},{kind:'source',...to}],sourceAccessEvidence:[...from.sourceAccessEvidence,...to.sourceAccessEvidence],accessCandidates:[from,to].map((p,i)=>({waypointId:[a,b][i].id,candidate:p.access,distanceNM:distanceNM([a,b][i],p.access),cell:{classification:p.dataset?'SOURCE_WATERWAY':'WATER'}})),geographicConnectivity:'Source edges meet water grid at identical portal coordinates; no invented joins'}};

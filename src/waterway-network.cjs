@@ -24,10 +24,10 @@ class WaterwayNetwork {
 }
 const networks=new Map();
 function bundled(name='rivers'){if(!networks.has(name))networks.set(name,new WaterwayNetwork(JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(__dirname,'../assets/waterways/'+name+'.json.gz'))))));return networks.get(name);}
-function leg(a,b){for(const name of ['osm','rivers']){const result=bundled(name).leg(a,b);if(result){result.evidence.dataset=name;return result;}}return null;}
-function toGrid(w,grid){
+function leg(a,b,datasets=['osm','rivers']){for(const name of datasets){const result=bundled(name).leg(a,b);if(result){result.evidence.dataset=name;return result;}}return null;}
+function toGrid(w,grid,datasets=['osm','rivers']){
  const choices=[];
- for(const dataset of ['osm','rivers']){const net=bundled(dataset);for(const access of net.candidates(w.access||w,w.access ? .01 : 3)){
+ for(const dataset of datasets){const net=bundled(dataset);for(const access of net.candidates(w.access||w,w.access ? .01 : 3)){
   const route=net.find(access.id,-1,id=>grid.inspect(net.nodes[id]).classification==='WATER');
   if(route){const points=route.ids.map(id=>({lat:net.nodes[id].lat,lon:net.nodes[id].lon}));choices.push({dataset,points,access:access.point,connectorNM:access.distance,distanceNM:route.distanceNM,sourceEdgeIds:route.edges.map(e=>e.sourceId),source:net.doc.source,sourceChecksum:net.doc.sha256,sourceAccessEvidence:[...new Set(route.edges.map(e=>e.sourceId))].map(id=>{const line=net.lines.get(id);return {id,source:line.source||net.doc.source,tags:line.tags||{}};})});}
  }}

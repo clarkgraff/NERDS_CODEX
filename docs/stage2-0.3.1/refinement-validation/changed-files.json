@@ -1,0 +1,279 @@
+{
+  "branch": "codex/stage2-v031",
+  "head": "6b5ac615f7a692f9229bdd031d7b37f517bb0aae",
+  "committed": false,
+  "files": [
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\waterways\\refinement-manifest.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\waterways\\refinement.json.gz",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\REVIEW.md",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\discovery-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\geographic-paths.json.gz",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\geographic-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\geographic-summary.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\primary-itinerary-paths.json.gz",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\baseline\\primary-itinerary-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\changed-files.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\comparison.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\connectivity-diagnostics.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\discovery-desktop-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\full-desktop.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\gironde-comparison.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-acquisition-retry.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-acquisition-tests.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-acquisition.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-baseline-geographic.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-course-desktop-final.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-course-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-diagnostics.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-discovery.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-geographic-final.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-geographic.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-primary-final.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-primary.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-stage1-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-stage2-discovery-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-stage2-mixed-grid-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-stage2-primary-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-suitability-desktop.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-targeted.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-units-final.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\logs\\refinement-units.txt",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\mixed-grid-desktop-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\preservation-verification.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\primary-desktop-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refined\\geographic-paths.json.gz",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refined\\geographic-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refined\\geographic-summary.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refined\\primary-itinerary-paths.json.gz",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refined\\primary-itinerary-results.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\refinement-desktop.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\stage1-desktop.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\refinement-validation\\suitability-desktop.json",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\acquire-refinement.py",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\diagnose-refinement.cjs",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\prepare-refinement.cjs",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\core.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\course-refinement.cjs",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\geographic-route.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\main.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\passage.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\preload.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\public\\app.js",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\public\\index.html",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\waterway-network.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\course-refinement.test.cjs",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\refinement-desktop.cjs",
+      "status": "new"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-discovery-desktop.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-discovery.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-geographic.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-mixed-grid-desktop.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-primary-desktop.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-primary-itinerary.cjs",
+      "status": "modified"
+    },
+    {
+      "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\suitability-desktop.cjs",
+      "status": "modified"
+    }
+  ]
+}

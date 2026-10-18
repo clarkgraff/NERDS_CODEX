@@ -1,0 +1,9 @@
+const fs=require('node:fs'),{places}=require('../test/geographic-cases.cjs'),{bundled,toGrid}=require('../src/waterway-network.cjs'),{selectNetwork}=require('../src/water-route.cjs');
+const regions={Bordeaux:['Brest','Bordeaux'],Amazon:['Macapá','Belém','Breves','Amazon estuary','Manaus','Santarém','Alter do Chão'],Southern:['Stanley','Ushuaia','Punta Arenas','Concepción'],GreatLakes:['Kingston Mills','Toronto','Montréal','Québec City'],Rostov:['Sevastopol','Rostov-on-Don']};
+const result={generatedAt:new Date().toISOString(),interpretation:'Mapped source components and grid attachment diagnostics only. Missing topology is not a genuine vessel restriction. City-to-water connectors are excluded and remain unverified.',regions:{}};
+for(const [region,names] of Object.entries(regions))result.regions[region]=names.map(name=>{
+ const w=places[name],selected=selectNetwork(w,w);
+ const datasets=['osm','rivers','refinement'].map(dataset=>{const net=bundled(dataset),candidates=net.candidates(w),portal=toGrid(w,selected.network,[dataset]);return {dataset,checksum:net.doc.sha256,candidates:candidates.map(c=>({component:c.component,distanceNM:c.distance,point:c.point})),portal:portal?{access:portal.access,point:portal.points.at(-1),sourceEdges:portal.sourceEdgeIds.length,grid:selected.id,gridCell:selected.network.inspect(portal.points.at(-1))}:null,diagnosis:!candidates.length?'NO_SOURCE_ATTACHMENT_WITHIN_3_NM':!portal?'SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID':'SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation'};});
+ return {name,lat:w.lat,lon:w.lon,datasets};
+});
+fs.mkdirSync('docs/stage2-0.3.1/refinement-validation',{recursive:true});fs.writeFileSync('docs/stage2-0.3.1/refinement-validation/connectivity-diagnostics.json',JSON.stringify(result,null,2));console.log('Recorded',Object.keys(result.regions).length,'regions');

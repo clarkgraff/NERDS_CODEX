@@ -21,11 +21,20 @@ function timeResult(s,legs){
 }
 function geometryKey(s,a,b,options){return createHash('sha256').update(JSON.stringify({engine:ENGINE_VERSION,transport:s.transport,manualConstraints:require('./course-model.cjs').constraintsFor(s.coursePlan,a.id,b.id),waterwayData:require('../assets/waterways/osm-manifest.json').sha256,from:{id:a.id,lat:a.lat,lon:a.lon,access:a.access?{lat:a.access.lat,lon:a.access.lon}:null},to:{id:b.id,lat:b.lat,lon:b.lon,access:b.access?{lat:b.access.lat,lon:b.access.lon}:null},options})).digest('hex');}
 function plan(s,options={}){
+ if(options.refine===true){
+  const saved=s.route?.coarseCourse||s.route,bypass=options.bypass!==false,routing={bypass,separationNM:!bypass&&s.routePreference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0};
+  const current=(()=>{try{return saved?.engineVersion===ENGINE_VERSION&&saved.legs.length===s.waypoints.length-1&&saved.legs.every((l,i)=>l.inputKey===geometryKey(s,s.waypoints[i],s.waypoints[i+1],routing)&&l.operatingMode===selectedMode(s,s.waypoints[i+1]));}catch{return false;}})();
+  const timed=current?timeResult(s,structuredClone(saved.legs)):null;
+  const sameTimes=timed&&['calculatedETA','standardETA','calculatedOperatingHours','calculatedStandardHours'].every(k=>timed[k]===saved[k]);
+  const coarse=current&&sameTimes?structuredClone(saved):plan({...s,route:saved},{...options,refine:false});
+  return require('./course-refinement.cjs').refine(s,coarse,options);
+ }
  if(s.waypoints.length<2)throw Error('Add at least two waypoints.');
  // Baseline testing bypasses optional penalties unless an isolated diagnostic explicitly opts in.
  const bypass=options.bypass!==false,sea=s.transport==='BY-SEA',id=randomUUID();
  const routing={bypass,separationNM:!bypass&&s.routePreference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0};
- const previous=s.route?.engineVersion===ENGINE_VERSION?s.route.legs:[];
+ const priorCoarse=s.route?.coarseCourse||s.route;
+ const previous=priorCoarse?.engineVersion===ENGINE_VERSION?priorCoarse.legs:[];
  const legs=s.waypoints.slice(1).map((w,i)=>{
   const a=s.waypoints[i],inputKey=geometryKey(s,a,w,routing),start=performance.now();
   const base={id:a.id+'->'+w.id,fromId:a.id,waypointId:w.id,transport:s.transport,inputKey,points:[],distanceNM:null,provisionalDistanceNM:null,status:'UNRESOLVED',evidence:{waypointIds:[a.id,w.id],anchors:[{lat:a.lat,lon:a.lon},{lat:w.lat,lon:w.lon}],grid:null,accessCandidates:[],searchBounds:null,visitedCells:0,optionalPreferences:bypass?'BYPASS':'ENABLED'}};

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "source": "https://www.openstreetmap.org/copyright",
+  "license": "ODbL 1.0; OpenStreetMap contributors",
+  "acquisition": "https://overpass-api.de/api/interpreter",
+  "sources": [
+    {
+      "dataset": "osm",
+      "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+      "role": "Preserved mapped waterways"
+    },
+    {
+      "file": "alter-do-chao.json",
+      "sha256": "d48ca40b736bbc9341ef3e57289697f93f241c23be58b5096ae2e847d985ae67",
+      "timestamp": "2026-10-18T01:49:51Z",
+      "bounds": [
+        -59.8927349,
+        -3.6022427,
+        -53.2974245,
+        -1.3048311
+      ],
+      "acceptedWays": 95,
+      "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-56,-1.8,-54);out geom;"
+    },
+    {
+      "file": "amazon-estuary.json",
+      "sha256": "d65edf45074624b20c7857bef6423d21d531591700e8715652848fb050eb9560",
+      "timestamp": "2026-10-18T01:46:51Z",
+      "bounds": [
+        -52.4361992,
+        -3.2353156,
+        -47.9448642,
+        1.8904415
+      ],
+      "acceptedWays": 1310,
+      "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-52,1,-48);out geom;"
+    },
+    {
+      "file": "bordeaux.json",
+      "sha256": "061d9758d14297cfc9754812993b3672df4bb8a25a559c6b52c3b7e4e9158274",
+      "timestamp": "2026-10-18T01:46:51Z",
+      "bounds": [
+        -1.2171409,
+        44.6920875,
+        -0.3560179,
+        45.8733209
+      ],
+      "acceptedWays": 756,
+      "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](44.7,-1.5,45.8,-0.4);out geom;"
+    },
+    {
+      "file": "great-lakes-flowlines.json",
+      "sha256": "398d2ea093994583b72d8ed6097bac9625c19d77b2129ae7078521884df42d8e",
+      "timestamp": "2026-10-18T01:50:56Z",
+      "bounds": [
+        -81.3570215,
+        42.9862653,
+        -69.9860502,
+        47.302521
+      ],
+      "acceptedWays": 4540,
+      "query": "[out:json][timeout:40];way[waterway~\"^flowline$\"](43,-80,47,-70);out geom;"
+    },
+    {
+      "file": "rostov.json",
+      "sha256": "2658ddc2631ecfdbab75cc39d541209376d42b1e1721902bda294e1fc0132de0",
+      "timestamp": "2026-10-18T01:49:51Z",
+      "bounds": [
+        38.5927245,
+        46.7891441,
+        40.4535043,
+        47.5590866
+      ],
+      "acceptedWays": 1129,
+      "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](46.8,38.5,47.5,40);out geom;"
+    },
+    {
+      "file": "southern.json",
+      "sha256": "a8ec617437dddedf342eb97ded1cc2a309178597bec637360014e3adefb49e36",
+      "timestamp": "2026-10-18T01:47:51Z",
+      "bounds": [
+        -75.2224338,
+        -55.6923827,
+        -65.8791947,
+        -50.6692644
+      ],
+      "acceptedWays": 2215,
+      "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-56,-76,-51,-66);out geom;"
+    }
+  ],
+  "resolution": "Irregular source vertices, WGS84 coordinates; positional accuracy not guaranteed. No fixed raster resolution.",
+  "coverage": "Existing mapped waterways plus bounded regional queries listed in sources; not worldwide complete.",
+  "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+  "limitations": [
+    "Only exactly shared source vertices connect; no proximity joins",
+    "Coarse ocean mask still governs source-to-ocean transitions",
+    "Waterway mapping is not proof of depth, bridge clearance or vessel suitability"
+  ],
+  "sha256": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+  "lineCount": 29833
+}
