@@ -1,0 +1,68 @@
+{
+  changed: 8,
+  regressions: 0,
+  unresolved: 32,
+  areaEdges: 998,
+  regions: [
+    {
+      id: 'breves',
+      resolution: 0.001,
+      extent: [Object],
+      accepted: 59,
+      rejected: [],
+      waterCells: 52438,
+      worldOverlapCells: 0,
+      europeOverlapCells: 0
+    },
+    {
+      id: 'alter',
+      resolution: 0.002,
+      extent: [Object],
+      accepted: 104,
+      rejected: [Array],
+      waterCells: 36192,
+      worldOverlapCells: 0,
+      europeOverlapCells: 0
+    },
+    {
+      id: 'ontario',
+      resolution: 0.005,
+      extent: [Object],
+      accepted: 16609,
+      rejected: [],
+      waterCells: 87644,
+      worldOverlapCells: 0,
+      europeOverlapCells: 0
+    },
+    {
+      id: 'don',
+      resolution: 0.002,
+      extent: [Object],
+      accepted: 1445,
+      rejected: [],
+      waterCells: 789,
+      worldOverlapCells: 0,
+      europeOverlapCells: 22
+    },
+    {
+      id: 'ushuaia',
+      resolution: 0.002,
+      extent: [Object],
+      accepted: 424,
+      rejected: [],
+      waterCells: 21,
+      worldOverlapCells: 0,
+      europeOverlapCells: 0
+    },
+    {
+      id: 'magellan',
+      resolution: 0.002,
+      extent: [Object],
+      accepted: 158,
+      rejected: [],
+      waterCells: 50,
+      worldOverlapCells: 0,
+      europeOverlapCells: 0
+    }
+  ]
+}

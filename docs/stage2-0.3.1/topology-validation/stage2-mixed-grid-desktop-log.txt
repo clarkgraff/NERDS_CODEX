@@ -1,0 +1,5 @@
+[
+  'Mixed-grid route plots all three continuous legs with validated totals and ETA',
+  'Reverse order updates map geometry and accounting',
+  'Project persists common attachments and valid source accounting'
+]

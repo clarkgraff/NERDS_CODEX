@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-10-19T13:51:47.544Z",
+  "checks": [
+    "Mixed-grid route plots all three continuous legs with validated totals and ETA",
+    "Reverse order updates map geometry and accounting",
+    "Project persists common attachments and valid source accounting"
+  ],
+  "errors": [],
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-mixed-grid-Hu1Rkj",
+  "packageBuilt": false
+}

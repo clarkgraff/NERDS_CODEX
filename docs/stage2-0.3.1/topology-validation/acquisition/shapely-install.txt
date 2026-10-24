@@ -1,0 +1,6 @@
+Collecting shapely==2.1.2
+  Downloading shapely-2.1.2-cp312-cp312-win_amd64.whl.metadata (7.1 kB)
+Downloading shapely-2.1.2-cp312-cp312-win_amd64.whl (1.7 MB)
+   ---------------------------------------- 1.7/1.7 MB 2.3 MB/s  0:00:00
+Installing collected packages: shapely
+Successfully installed shapely-2.1.2

@@ -11,6 +11,7 @@ function sourceValid(points,e){
 }
 function supported(result){
  const e=result.evidence,p=result.points;
+ if(e.grid?.startsWith('water-area-'))return require('./water-area-route.cjs').valid(result);
  if(!p.length||p.some(p=>!Number.isFinite(p.lat)||Math.abs(p.lat)>90||!Number.isFinite(p.lon)||Math.abs(p.lon)>180))return false;
  if(e.grid==='source-waterway-network')return sourceValid(p,e);
  const raster=(points,id)=>points.length>0&&points.every(p=>gridById(id)?.inspect(p).classification==='WATER')&&points.slice(1).every((p,i)=>supportedSegment(points[i],p,gridById(id)));
@@ -28,20 +29,21 @@ function reverse(result,a,b){
 }
 function candidate(a,b,options){
  const inverted=a.lon>b.lon||a.lon===b.lon&&a.lat>b.lat;
- const result=simplifyLeg(require('./geographic-route.cjs').leg(inverted?b:a,inverted?a:b,{...options,datasets:['refinement'],preferSource:true}));
+ let result;try{result=simplifyLeg(require('./geographic-route.cjs').leg(inverted?b:a,inverted?a:b,{...options,datasets:['refinement'],preferSource:true}));}catch(error){if(options.topology===false)throw error;return require('./water-area-route.cjs').leg(a,b,options);}
  return inverted?reverse(result,a,b):result;
 }
 function refine(s,coarse,options={}){
  const r=structuredClone(coarse),manifest=require('../assets/waterways/refinement-manifest.json');
  r.coarseCourse=structuredClone(coarse);delete r.coarseCourse.coarseCourse;
- r.refinement={requested:true,method:'EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS',dataset:manifest,status:'NO_SUPPORTED_IMPROVEMENT',legs:[]};
+ const areaManifest=require('../assets/water-areas/manifest.json');
+ r.refinement={waterAreas:options.topology===false?null:{source:areaManifest.source,license:areaManifest.license,sha256:areaManifest.sha256,regions:areaManifest.regions.map(r=>({id:r.id,extent:r.extent,resolutionDegrees:r.resolutionDegrees,maskSHA256:r.maskSHA256,exclusionSHA256:r.exclusionSHA256}))},requested:true,method:'EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS',dataset:manifest,status:'NO_SUPPORTED_IMPROVEMENT',legs:[]};
  r.legs=r.legs.map((old,i)=>{
   const a=s.waypoints[i],b=s.waypoints[i+1],note={id:old.id,status:'UNCHANGED',reason:null};r.refinement.legs.push(note);
   if(old.transport!=='BY-SEA'){note.reason='No detailed dataset for this transport mode';return old;}
   if(require('./course-model.cjs').constraintsFor(s.coursePlan,a.id,b.id).length){note.status='UNRESOLVED';note.reason='Manual constraints preserved; constraint routing remains pending';return old;}
   try{
    const detailed=candidate(a,b,options);
-   const hasEvidence=detailed.evidence.dataset==='refinement'||detailed.evidence.sections?.some(section=>section.dataset==='refinement'&&section.sourceEdgeIds?.length);
+   const hasEvidence=detailed.evidence.grid?.startsWith('water-area-')||detailed.evidence.dataset==='refinement'||detailed.evidence.sections?.some(section=>section.dataset==='refinement'&&section.sourceEdgeIds?.length);
    if(!hasEvidence)throw Error('No improved source geometry available for this leg');
    if(!supported(detailed))throw Error('Detailed geometry or source-to-grid transition is unsupported');
    // Existing successful attachments are immutable: a more detailed line may
