@@ -1,0 +1,12 @@
+const {_electron}=require('playwright-core'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),a=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),dir=fs.mkdtempSync(path.join(os.tmpdir(),'nerds-manager-desktop-')),checks=[];let app,page;
+async function launch(){const env={...process.env,NERDS_DATA_DIR:dir};delete env.ELECTRON_RUN_AS_NODE;app=await _electron.launch({executablePath:require('electron'),args:[root],env,timeout:60000});page=await app.firstWindow();await page.waitForFunction(()=>window.nerdsReady);}
+(async()=>{try{
+ await launch();const state=await page.evaluate(async()=>{const s=(await window.nerds.load()).state;s.waypoints=[{id:'arbitrary-a',name:'Manual A',lat:20,lon:20},{id:'arbitrary-b',name:'Manual B',lat:20.1,lon:20.1}];return window.nerds.save(s);});
+ const coarse=await page.evaluate(()=>window.nerds.pathCoarse());a.equal(coarse.knots,6);a.equal(coarse.hours,coarse.totalNM/6);checks.push('Desktop COARSE API calculates unrestricted WGS84 intent at 6 knots');
+ const coverage=await page.evaluate(()=>window.nerds.geographicCoverage());a.ok(coverage.tiles.length);a.ok(coverage.tiles.every(t=>t.status==='MISSING'));checks.push('Arbitrary itinerary coverage reports missing evidence without acquisition');
+ const edited=await page.evaluate(async()=>{const s=(await window.nerds.load()).state;s.waypoints.reverse();return window.nerds.save(s);});a.equal(edited.userPath.id,state.userPath.id);a.notEqual(edited.userPath.revision,state.userPath.revision);a.equal(edited.courseVariants[0].result.id,coarse.id);checks.push('Waypoint reorder preserves IDs, creates revision and retains original calculated course');
+ const file=path.join(dir,'Foundation.nerds');await app.evaluate(({dialog},file)=>dialog.showSaveDialog=async()=>({canceled:false,filePath:file}),file);await page.evaluate(()=>window.nerds.project('save-as'));a.ok(fs.existsSync(file));
+ await app.close();await launch();const restarted=await page.evaluate(async()=>(await window.nerds.load()).state);a.deepEqual(restarted.userPath,edited.userPath);a.deepEqual(restarted.courseVariants,edited.courseVariants);checks.push('Project save and desktop restart retain USER PATH history and course variants');
+ fs.writeFileSync(path.join(root,'docs/stage2-0.3.1/data-manager/desktop.json'),JSON.stringify({checks,isolatedDataDir:dir},null,2));console.log(checks);
+ }finally{await app?.close();}})().catch(e=>{console.error(e);process.exitCode=1;});

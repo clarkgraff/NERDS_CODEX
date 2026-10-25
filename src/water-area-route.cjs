@@ -1,7 +1,10 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib'),crypto=require('node:crypto');
 const {distanceNM,estimateNM}=require('./navigation.cjs'),water=require('./water-route.cjs'),{bundled}=require('./waterway-network.cjs'),{supportedSegment,simplifyLeg}=require('./course-geometry.cjs');
-const manifest=require('../assets/water-areas/manifest.json');
+const originalManifest=require('../assets/water-areas/manifest.json'),manifest=structuredClone(originalManifest);
+let configured='',runtimeNetwork;
+function sourceNetwork(){return runtimeNetwork||bundled('refinement');}
+function configure(directories=[]){const key=JSON.stringify(directories);if(key===configured)return;const next=structuredClone(originalManifest.regions);const hashes=[originalManifest.sha256],lines=new Map(bundled('refinement').doc.lines.map(l=>[l.id,l]));for(const directory of directories){require('./geographic-preparation.cjs').verify(directory);const data=JSON.parse(fs.readFileSync(path.join(directory,'manifest.json'),'utf8'));hashes.push(data.sha256);const extra=JSON.parse(fs.readFileSync(path.join(directory,'waterways.json'),'utf8'));for(const line of extra.lines){const old=lines.get(line.id);if(old&&JSON.stringify(old.coordinates)!==JSON.stringify(line.coordinates))throw Error('Conflicting source waterway versions: '+line.id);lines.set(line.id,line);}for(const r of data.regions){if(next.some(a=>a.id===r.id))throw Error('Conflicting geographic tile versions');next.push({...r,runtimeDirectory:directory});}}const doc={...bundled('refinement').doc,lines:[...lines.values()]};doc.sha256=crypto.createHash('sha256').update(JSON.stringify(doc.lines)).digest('hex');runtimeNetwork=directories.length?new (require('./waterway-network.cjs').WaterwayNetwork)(doc):undefined;manifest.regions=next;configured=key;manifest.sha256=directories.length?crypto.createHash('sha256').update(JSON.stringify(hashes)).digest('hex'):originalManifest.sha256;cached=undefined;graph=undefined;}
 const near=(a,b)=>a&&b&&distanceNM(a,b)<1e-7;
 class Area {
  constructor(record,bytes){this.record=record;this.id=record.id;this.resolution=record.resolutionDegrees;this.extent=record.extent;this.dimensions=record.dimensions;this.mask=bytes;const [w,h]=this.dimensions;if(bytes.length!==w*h)throw Error('Water-area mask dimensions mismatch');}
@@ -24,11 +27,11 @@ function exclusionClear(a,b,regions=areas()){
  });
 }
 let cached;
-function areas(){if(!cached)cached=manifest.regions.map(record=>{const bytes=zlib.gunzipSync(fs.readFileSync(path.join(__dirname,'../assets/water-areas/'+record.id+'.bin.gz')));if(crypto.createHash('sha256').update(bytes).digest('hex')!==record.maskSHA256)throw Error('Water-area mask integrity failure');const a=new Area(record,bytes);a.excluded=zlib.gunzipSync(fs.readFileSync(path.join(__dirname,'../assets/water-areas/'+record.id+'-exclusions.bin.gz')));if(crypto.createHash('sha256').update(a.excluded).digest('hex')!==record.exclusionSHA256)throw Error('Water-area exclusion integrity failure');return a;});return cached;}
+function areas(){if(!cached)cached=manifest.regions.map(record=>{const bytes=zlib.gunzipSync(fs.readFileSync(path.join(record.runtimeDirectory||path.join(__dirname,'../assets/water-areas'),record.id+'.bin.gz')));if(crypto.createHash('sha256').update(bytes).digest('hex')!==record.maskSHA256)throw Error('Water-area mask integrity failure');const a=new Area(record,bytes);a.excluded=zlib.gunzipSync(fs.readFileSync(path.join(record.runtimeDirectory||path.join(__dirname,'../assets/water-areas'),record.id+'-exclusions.bin.gz')));if(crypto.createHash('sha256').update(a.excluded).digest('hex')!==record.exclusionSHA256)throw Error('Water-area exclusion integrity failure');return a;});return cached;}
 class Heap{constructor(){this.q=[];}push(id,cost){let i=this.q.length;this.q.push({id,cost});while(i){const p=(i-1)>>1;if(this.q[p].cost<=cost)break;this.q[i]=this.q[p];i=p;}this.q[i]={id,cost};}pop(){const first=this.q[0],last=this.q.pop();if(this.q.length){let i=0;while(i*2+1<this.q.length){let j=i*2+1;if(j+1<this.q.length&&this.q[j+1].cost<this.q[j].cost)j++;if(this.q[j].cost>=last.cost)break;this.q[i]=this.q[j];i=j;}this.q[i]=last;}return first;}}
 let graph;
 function getGraph(){
- if(graph)return graph;const net=bundled('refinement'),regions=areas();let offset=net.nodes.length;
+ if(graph)return graph;const net=sourceNetwork(),regions=areas();let offset=net.nodes.length;
  for(const a of regions){a.offset=offset;offset+=a.mask.length;a.sourceNodes=new Map();const {west,east,south,north}=a.extent;
   for(let x=Math.floor(west);x<=Math.floor(east);x++)for(let y=Math.floor(south);y<=Math.floor(north);y++)for(const id of net.buckets.get(x+','+y)||[]){const p=net.nodes[id],cell=a.cell(p);if(cell>=0&&!a.mask[cell]&&supportedSegment(p,a.point(cell),a)){if(!a.sourceNodes.has(cell))a.sourceNodes.set(cell,[]);a.sourceNodes.get(cell).push(id);}}
  }
@@ -36,7 +39,7 @@ function getGraph(){
  const point=id=>id<net.nodes.length?{lat:net.nodes[id].lat,lon:net.nodes[id].lon}:region(id).point(id-region(id).offset);
  function neighbors(id){
   if(id<net.nodes.length){const p=net.nodes[id],out=p.edges.filter(e=>exclusionClear(p,net.nodes[e.to])).map(e=>({to:e.to,proof:{kind:'SOURCE',sourceId:e.sourceId}}));for(const a of regions){const cell=a.cell(p);if(cell>=0&&a.sourceNodes.get(cell)?.includes(id))out.push({to:a.offset+cell,proof:{kind:'AREA',area:a.id}});}return out;}
-  const a=region(id),cell=id-a.offset;return [...a.neighbors(cell).map(c=>({to:a.offset+c,proof:{kind:'AREA',area:a.id}})),...(a.sourceNodes.get(cell)||[]).map(to=>({to,proof:{kind:'AREA',area:a.id}}))];
+  const a=region(id),cell=id-a.offset;const cross=[];const p=a.point(cell);for(const b of regions){if(b===a)continue;const target=b.cell(p);if(target>=0&&!b.mask[target]){const q=b.point(target);if(supportedSegment(p,q,a)&&supportedSegment(p,q,b))cross.push({to:b.offset+target,proof:{kind:'AREAS',areas:[a.id,b.id]}});}}return [...cross,...a.neighbors(cell).map(c=>({to:a.offset+c,proof:{kind:'AREA',area:a.id}})),...(a.sourceNodes.get(cell)||[]).map(to=>({to,proof:{kind:'AREA',area:a.id}}))];
  }
  function attachments(w){const p=w.access||w,items=net.candidates(p,w.access ? .01 : 3).map(c=>({id:c.id,access:c.point,connectorNM:c.distance}));for(const a of regions)for(const c of a.candidates(p,!!w.access))if(supportedSegment(c.access,a.point(c.cell),a))items.push({...c,id:a.offset+c.cell,area:a.id});return items;}
  graph={net,regions,point,neighbors,attachments};return graph;
@@ -64,10 +67,11 @@ function valid(result){
   const grid=m.evidence.grid==='europe-0.025'?water.europe:water.world;if(!m.points.every(q=>grid.inspect(q).classification==='WATER')||!m.points.slice(1).every((q,i)=>supportedSegment(m.points[i],q,grid)))return false;
   const assembled=[...a.points,...m.points.slice(1),...[...b.points].reverse().slice(1)];return assembled.length===p.length&&assembled.every((q,i)=>near(q,p[i]));
  }
- if(e.grid!=='water-area-topology'||e.areaChecksum!==manifest.sha256||e.sourceChecksum!==bundled('refinement').doc.sha256||e.edgeEvidence?.length!==p.length-1)return false;
+ if(e.grid!=='water-area-topology'||e.areaChecksum!==manifest.sha256||e.sourceChecksum!==sourceNetwork().doc.sha256||e.edgeEvidence?.length!==p.length-1)return false;
  return e.edgeEvidence.every((edge,i)=>{
+  if(edge.kind==='AREAS')return edge.areas?.length===2&&edge.areas.every(id=>{const a=areas().find(a=>a.id===id);return a&&supportedSegment(p[i],p[i+1],a);});
   if(edge.kind==='AREA'){const a=areas().find(a=>a.id===edge.area);return a&&supportedSegment(p[i],p[i+1],a);}
-  if(edge.kind==='SOURCE'){const n=bundled('refinement'),u=n.index.get([p[i].lon,p[i].lat].join(',')),v=n.index.get([p[i+1].lon,p[i+1].lat].join(','));return u!==undefined&&v!==undefined&&exclusionClear(p[i],p[i+1])&&n.nodes[u].edges.some(e=>e.to===v&&e.sourceId===edge.sourceId);}
+  if(edge.kind==='SOURCE'){const n=sourceNetwork(),u=n.index.get([p[i].lon,p[i].lat].join(',')),v=n.index.get([p[i+1].lon,p[i+1].lat].join(','));return u!==undefined&&v!==undefined&&exclusionClear(p[i],p[i+1])&&n.nodes[u].edges.some(e=>e.to===v&&e.sourceId===edge.sourceId);}
   return false;
  });
 }
@@ -78,10 +82,10 @@ function leg(a,b,options={}){
  const selected=water.selectNetwork(a.access||a,b.access||b),grid=selected.network;
  function endpoint(w){const result=search(w,null,grid);if(result&&valid(result))return result;
   const access=water.automaticAccess(w,grid);if(grid.inspect(access).classification!=='WATER'||!w.access&&distanceNM(w,access)>15)throw Error('WATER_AREA_ACCESS_UNRESOLVED');
-  return {points:[{lat:access.lat,lon:access.lon}],accesses:[access,access],evidence:{grid:'water-area-topology',sourceChecksum:bundled('refinement').doc.sha256,areaChecksum:manifest.sha256,edgeEvidence:[]}};
+  return {points:[{lat:access.lat,lon:access.lon}],accesses:[access,access],evidence:{grid:'water-area-topology',sourceChecksum:sourceNetwork().doc.sha256,areaChecksum:manifest.sha256,edgeEvidence:[]}};
  }
  const from=endpoint(a),to=endpoint(b),middle=simplifyLeg(water.leg({...a,access:from.points.at(-1)},{...b,access:to.points.at(-1)},options));
  const result={points:[...from.points,...middle.points.slice(1),...[...to.points].reverse().slice(1)],accesses:[from.accesses[0],to.accesses[0]],evidence:{grid:'water-area-ocean',anchors:[{lat:a.lat,lon:a.lon},{lat:b.lat,lon:b.lon}],waypointIds:[a.id,b.id],sections:[from,middle,to],areaChecksum:manifest.sha256,sourceAccessEvidence:[...(from.evidence.sourceAccessEvidence||[]),...(to.evidence.sourceAccessEvidence||[])],termination:'VERIFIED_WATER_AREA_OCEAN_OVERLAP'}};
  if(!valid(result))throw Error('WATER_AREA_TRANSITION_UNRESOLVED');return result;
 }
-module.exports={Area,areas,leg,valid,manifest,exclusionClear};
+module.exports={Area,areas,leg,valid,manifest,exclusionClear,configure};

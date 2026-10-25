@@ -33,9 +33,10 @@ function candidate(a,b,options){
  return inverted?reverse(result,a,b):result;
 }
 function refine(s,coarse,options={}){
+ if(options.preparedGeography)require('./water-area-route.cjs').configure(options.preparedGeography);
  const r=structuredClone(coarse),manifest=require('../assets/waterways/refinement-manifest.json');
  r.coarseCourse=structuredClone(coarse);delete r.coarseCourse.coarseCourse;
- const areaManifest=require('../assets/water-areas/manifest.json');
+ const areaManifest=require('./water-area-route.cjs').manifest;
  r.refinement={waterAreas:options.topology===false?null:{source:areaManifest.source,license:areaManifest.license,sha256:areaManifest.sha256,regions:areaManifest.regions.map(r=>({id:r.id,extent:r.extent,resolutionDegrees:r.resolutionDegrees,maskSHA256:r.maskSHA256,exclusionSHA256:r.exclusionSHA256}))},requested:true,method:'EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS',dataset:manifest,status:'NO_SUPPORTED_IMPROVEMENT',legs:[]};
  r.legs=r.legs.map((old,i)=>{
   const a=s.waypoints[i],b=s.waypoints[i+1],note={id:old.id,status:'UNCHANGED',reason:null};r.refinement.legs.push(note);

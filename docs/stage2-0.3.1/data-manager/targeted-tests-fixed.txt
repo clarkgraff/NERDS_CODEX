@@ -1,0 +1,19 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (22.4955ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (7.0942ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (28.694ms)
+✔ invalid saves cannot overwrite the last good expedition (11.1131ms)
+✔ inference adapter only accepts local HTTP APIs (0.3312ms)
+✔ arbitrary worldwide corridors cover dateline and polar requests with explicit budgets (1.5678ms)
+✔ cache reuse, restart, versions and rollback preserve source identity (42.2977ms)
+✔ bad responses, byte limits, offline misses and interrupted acquisition preserve previous cache (22.942ms)
+✔ USER PATH revisions preserve intent and independent 6-knot geodesic coarse calculations (1.4952ms)
+✔ legacy projects acquire path identity; edits invalidate active course without deleting archived geometry (12.5462ms)
+✔ OSM provider rejects partial responses and non-world coordinates without inventing water polygons (0.6409ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 198.8993

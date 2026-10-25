@@ -41,11 +41,11 @@ def feature(e):
  if any(not p.is_valid or p.is_empty for p in polys):raise ValueError('Invalid water domain; no geometry repair performed')
  return polys,[Polygon(r) for r in inner]
 
-def main():
- output=pathlib.Path('assets/water-areas');output.mkdir(exist_ok=True)
+def main(regions=None,input_root='work/topology',output_root='assets/water-areas'):
+ output=pathlib.Path(output_root);output.mkdir(parents=True,exist_ok=True)
  manifest={'schemaVersion':1,'source':'https://www.openstreetmap.org/copyright','license':'ODbL 1.0; OpenStreetMap contributors','acquisition':'https://overpass-api.de/api/interpreter','method':'Exact ring assembly; invalid/ambiguous features rejected; entire cell plus 0.000001 degree guard covered by valid water union; all valid source holes unioned and subtracted without coordinate repair','preparer':'Shapely '+shapely.__version__,'regions':[],'limitations':['Geographic water evidence only; not clearance, permanence or vessel suitability','Conservative cells can disconnect narrow passages','No closure of open coastlines and no inferred ocean water','Polygon overlap cannot establish vessel navigability']}
- for name,(west,south,east,north,step) in REGIONS.items():
-  raw=pathlib.Path('work/topology')/(name+'-areas.json')
+ for name,(west,south,east,north,step) in (regions or REGIONS).items():
+  raw=pathlib.Path(input_root)/(name+'-areas.json')
   if not raw.exists():continue
   data=raw.read_bytes();doc=json.loads(data)
   if doc.get('remark'):raise ValueError('Incomplete acquisition')
@@ -72,4 +72,13 @@ def main():
   manifest['regions'].append(record);print(name,len(accepted),len(rejected),record['waterCells'],flush=True)
  manifest['sha256']=hashlib.sha256(json.dumps(manifest['regions'],sort_keys=True).encode()).hexdigest()
  (output/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
-if __name__=='__main__':main()
+if __name__=='__main__':
+ import argparse
+ parser=argparse.ArgumentParser();parser.add_argument('--regions');parser.add_argument('--input-root',default='work/topology');parser.add_argument('--output-root',default='assets/water-areas');args=parser.parse_args()
+ selected=json.loads(pathlib.Path(args.regions).read_text(encoding='utf-8')) if args.regions else None
+ if selected:
+  for name,v in selected.items():
+   if not name.replace('-','').replace('.','').isalnum() or len(v)!=5:raise ValueError('Invalid region definition')
+   west,south,east,north,step=v
+   if not (-180<=west<east<=180 and -90<=south<north<=90 and .0001<=step<=.1) or (east-west)*(north-south)/step**2>2000000:raise ValueError('Region cell budget exceeded')
+ main(selected,args.input_root,args.output_root)
