@@ -64,7 +64,7 @@ function valid(result){
  const e=result?.evidence,p=result?.points;if(!e||!p?.length||!p.every(q=>Number.isFinite(q.lat)&&Number.isFinite(q.lon)&&Math.abs(q.lat)<=90&&Math.abs(q.lon)<=180))return false;
  if(e.grid==='water-area-ocean'){
   const [a,m,b]=e.sections||[];if(e.areaChecksum!==manifest.sha256||!a||!m||!b||!['world-0.1','europe-0.025'].includes(m.evidence?.grid)||!valid(a)||!valid(b)||!near(a.points.at(-1),m.points[0])||!near(m.points.at(-1),b.points.at(-1)))return false;
-  const grid=m.evidence.grid==='europe-0.025'?water.europe:water.world;if(!m.points.every(q=>grid.inspect(q).classification==='WATER')||!m.points.slice(1).every((q,i)=>supportedSegment(m.points[i],q,grid)))return false;
+  const grid=m.evidence.grid==='europe-0.025'?water.europe:water.world;if(!m.points.every(q=>grid.inspect(q).classification==='WATER')||!m.points.slice(1).every((q,i)=>supportedSegment(m.points[i],q,grid)&&exclusionClear(m.points[i],q)))return false;
   const assembled=[...a.points,...m.points.slice(1),...[...b.points].reverse().slice(1)];return assembled.length===p.length&&assembled.every((q,i)=>near(q,p[i]));
  }
  if(e.grid!=='water-area-topology'||e.areaChecksum!==manifest.sha256||e.sourceChecksum!==sourceNetwork().doc.sha256||e.edgeEvidence?.length!==p.length-1)return false;

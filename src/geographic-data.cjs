@@ -32,7 +32,7 @@ class GeographicDataManager{
    for(let attempt=1;attempt<=attempts;attempt++){
     signal?.throwIfAborted();const controller=new AbortController(),cancel=()=>controller.abort(signal.reason),timer=setTimeout(()=>controller.abort(Error('Acquisition timeout')),timeoutMs);signal?.addEventListener('abort',cancel,{once:true});
     try{const response=await provider.request(tile,{signal:controller.signal});if(!response.ok)throw Error('Provider HTTP '+response.status);const reader=response.body.getReader(),chunks=[];let count=0;while(true){const item=await reader.read();if(item.done)break;count+=item.value.length;if(count>maxBytes){await reader.cancel();throw Error('Acquisition byte budget exceeded');}chunks.push(Buffer.from(item.value));}bytes=Buffer.concat(chunks);source=provider.validate(bytes,tile);job.attempts.push({attempt,status:'VALIDATED',bytes:count});break;
-    }catch(e){job.attempts.push({attempt,status:'FAILED',error:e.message});if(attempt===attempts||signal?.aborted)throw e;}finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel);atomic(jobFile,JSON.stringify(job));}
+    }catch(e){job.attempts.push({attempt,status:'FAILED',error:e.message});if(attempt===attempts||signal?.aborted||/Provider HTTP (403|406|429)/.test(e.message))throw e;}finally{clearTimeout(timer);signal?.removeEventListener('abort',cancel);atomic(jobFile,JSON.stringify(job));}
     await new Promise(resolve=>setTimeout(resolve,1000*attempt));
    }
    const sha256=hash(bytes),blob=this.file('blobs/'+sha256);if(!fs.existsSync(blob))atomic(blob,bytes);

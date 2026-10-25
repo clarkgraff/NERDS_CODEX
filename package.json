@@ -27,7 +27,7 @@
   "build": {
     "appId": "org.fairewindandsong.nerds",
     "productName": "NERDS",
-    "copyright": "© 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff.",
+    "copyright": "\u00c2\u00a9 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff.",
     "directories": {
       "output": "dist"
     },
@@ -69,6 +69,10 @@
       {
         "from": "assets/geonames.sqlite",
         "to": "data/places.sqlite"
+      },
+      {
+        "from": "work/preparation-runtime/nerds-geography",
+        "to": "nerds-geography"
       }
     ]
   }

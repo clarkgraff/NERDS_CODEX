@@ -1,0 +1,18 @@
+✔ adaptive detail responds to source complexity and cell budgets, not viewport zoom (0.6703ms)
+✔ expansion wraps date line, respects poles and retains bounded rounds and cache reuse (182.9886ms)
+✔ provider denial, limits and cancellation stay unresolved without repeated requests (17.5538ms)
+{"preparationMs":248.30310000000003,"rssBytes":2779860992}
+✔ bundled runtime classifies directed coastal faces and keeps land excluded (6213.7968ms)
+✔ island interior remains land; incomplete and conflicting coastlines remain unresolved (678.6632ms)
+✔ explicit estuary water connects to coastal sea without erasing surrounding land (3277.3811ms)
+{"bidirectionalRouteMs":151.8796000000002,"rssBytes":2542247936}
+✔ adjacent prepared coastal tiles connect through verified overlap in both directions (3863.4207ms)
+✔ standalone executable works outside repository with no Python environment and matches reference masks (629.4533ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 14974.3904

@@ -57,10 +57,16 @@ def main(regions=None,input_root='work/topology',output_root='assets/water-areas
    try:
     p,h=feature(e);polys.extend(p);holes.extend(h);accepted.append({'id':identity,'tags':e.get('tags',{}),'url':'https://www.openstreetmap.org/'+identity})
    except (ValueError,KeyError,TypeError) as error:rejected.append({'id':identity,'reason':str(error)})
-  coverage=box(west,south,east,north);area=shapely.union_all(polys).intersection(coverage)
+  coverage=box(west,south,east,north);inland=shapely.union_all(polys)
+  from coastline_topology import classify
+  try:
+   ocean,land,coastline=classify(doc['elements'],coverage);polys.extend(ocean)
+  except ValueError as error:
+   land=[];coastline={'status':'UNRESOLVED','reason':str(error)}
+  area=shapely.union_all(polys).intersection(coverage)
   if holes:area=area.difference(shapely.union_all(holes))
   shapely.prepare(area);width=math.ceil((east-west)/step);height=math.ceil((north-south)/step)
-  mask=np.ones((height,width),dtype=np.uint8);excluded=np.zeros((height,width),dtype=np.uint8);hole_area=shapely.union_all(holes).intersection(coverage);shapely.prepare(hole_area);epsilon=.000001
+  mask=np.ones((height,width),dtype=np.uint8);excluded=np.zeros((height,width),dtype=np.uint8);hole_area=shapely.union_all([*holes,shapely.union_all(land).difference(inland)]).intersection(coverage);shapely.prepare(hole_area);epsilon=.000001
   for y in range(height):
    xs=west+np.arange(width)*step;ys=south+y*step
    cells=shapely.box(xs-epsilon,ys-epsilon,xs+step+epsilon,ys+step+epsilon)
@@ -68,7 +74,7 @@ def main(regions=None,input_root='work/topology',output_root='assets/water-areas
   exclusion=excluded.tobytes();(output/(name+'-exclusions.bin.gz')).write_bytes(gzip.compress(exclusion,mtime=0))
   binary=mask.tobytes();digest=hashlib.sha256(binary).hexdigest();(output/(name+'.bin.gz')).write_bytes(gzip.compress(binary,mtime=0))
   geometry=json.dumps(mapping(area),separators=(',',':')).encode();(output/(name+'.geojson.gz')).write_bytes(gzip.compress(geometry,mtime=0))
-  record={'id':name,'extent':{'west':west,'south':south,'east':west+width*step,'north':south+height*step},'resolutionDegrees':step,'dimensions':[width,height],'waterCells':int(np.sum(mask==0)),'maskSHA256':digest,'exclusionSHA256':hashlib.sha256(exclusion).hexdigest(),'geometrySHA256':hashlib.sha256(geometry).hexdigest(),'acquisitionSHA256':hashlib.sha256(data).hexdigest(),'osmTimestamp':doc.get('osm3s',{}).get('timestamp_osm_base'),'query':raw.with_name(name+'-query.txt').read_text(),'accepted':accepted,'rejected':rejected}
+  record={'id':name,'extent':{'west':west,'south':south,'east':west+width*step,'north':south+height*step},'resolutionDegrees':step,'dimensions':[width,height],'waterCells':int(np.sum(mask==0)),'maskSHA256':digest,'exclusionSHA256':hashlib.sha256(exclusion).hexdigest(),'geometrySHA256':hashlib.sha256(geometry).hexdigest(),'acquisitionSHA256':hashlib.sha256(data).hexdigest(),'osmTimestamp':doc.get('osm3s',{}).get('timestamp_osm_base'),'query':raw.with_name(name+'-query.txt').read_text(),'accepted':accepted,'rejected':rejected,'coastline':coastline}
   manifest['regions'].append(record);print(name,len(accepted),len(rejected),record['waterCells'],flush=True)
  manifest['sha256']=hashlib.sha256(json.dumps(manifest['regions'],sort_keys=True).encode()).hexdigest()
  (output/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8')
