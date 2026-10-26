@@ -1,0 +1,16 @@
+{"preparationMs":352.3858,"rssBytes":1179209728}
+✔ bundled runtime classifies directed coastal faces and keeps land excluded (7183.6665ms)
+✔ island interior remains land; incomplete and conflicting coastlines remain unresolved (788.5012ms)
+✔ explicit estuary water connects to coastal sea without erasing surrounding land (6466.823ms)
+{"bidirectionalRouteMs":161.8127999999997,"rssBytes":1121370112}
+✔ adjacent prepared coastal tiles connect through verified overlap in both directions (6112.9953ms)
+✔ standalone executable works outside repository with no Python environment and matches reference masks (665.5939ms)
+✔ arbitrary source acquisition, preparation, runtime routing, restart and rollback (13666.9579ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 21394.0278

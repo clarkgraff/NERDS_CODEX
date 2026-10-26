@@ -1,6 +1,6 @@
 {
   "name": "nerds",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Offline expedition research and geographic planning",
   "author": "4nR TeK Inc.",
   "private": true,
@@ -25,9 +25,9 @@
     "electron-builder": "26.15.3"
   },
   "build": {
-    "appId": "org.fairewindandsong.nerds",
-    "productName": "NERDS",
-    "copyright": "\u00c2\u00a9 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff.",
+    "appId": "com.4nr.nerds.devtest",
+    "productName": "NERDS Development Test",
+    "copyright": "Copyright (c) 2026 4nR TeK Inc. Created by Clark Graff.",
     "directories": {
       "output": "dist"
     },
@@ -43,7 +43,8 @@
       "node_modules/cesium/ThirdParty.extra.json",
       "node_modules/cesium/ThirdParty.json",
       "!assets/geonames.sqlite*",
-      "node_modules/geographiclib-geodesic/**/*"
+      "node_modules/geographiclib-geodesic/**/*",
+      "!assets/discovery/*.sqlite*"
     ],
     "win": {
       "target": "msi",

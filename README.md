@@ -57,3 +57,7 @@ Chart-constrained navigation, authoritative bathymetry/clearance, canals/locks, 
 The installed application stores data in the per-user NERDS data folder shown in Settings. Existing data is retained. Close NERDS before copying its database directory for backup. Do not commit local databases, research archives, production media, model weights, credentials or installers to Git.
 
 Stage 2 local development update: the separate all-feature GeoNames index now covers 13,472,462 source records without population eligibility restrictions. It is generated locally at assets/discovery/world.sqlite (about 3.15 GB) and is not included in the source Git commit. See docs/stage2-0.3.1/WORLDWIDE-DISCOVERY-CHECKPOINT.md for reproduction, exact evidence, remaining failures and data preservation. Current verified routing is 113 PASS / 46 UNRESOLVED; this is not a v0.3.1 release or Stage 2 completion.
+
+## v0.4.0 development test
+See [release notes](docs/v0.4.0/RELEASE-NOTES.md) for the separate test installation, operational controls, packaged validation and known limitations.
+

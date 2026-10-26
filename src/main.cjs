@@ -13,6 +13,7 @@ const path=require('node:path');
 const {randomUUID,createHash}=require('node:crypto');
 const exifr=require('exifr');
 const {openStore,lookup,missions,localEndpoint}=require('./core.cjs');
+app.setPath('userData',path.join(app.getPath('appData'),'NERDS-Development-Test'));
 const root=path.resolve(__dirname,'..');
 let win,store,config,configFile,httpServer,appBase,appURL;
 let routing=false,discoveryCache;

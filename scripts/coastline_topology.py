@@ -3,14 +3,25 @@ import shapely
 from shapely.geometry import LineString, Point
 from shapely.ops import polygonize, unary_union
 
+def local_coordinates(points, center):
+    result=[]
+    for p in points:
+        lon,lat=p['lon'],p['lat']
+        if abs(lat)>=90:raise ValueError('Pole vertex requires a polar topology chart')
+        reference=result[-1][0] if result else center
+        lon+=360*round((reference-lon)/360)
+        if abs(lon-reference)==180:raise ValueError('Ambiguous antipodal longitude segment')
+        result.append((lon,lat))
+    if len(points)>1 and points[0]==points[-1] and result[0]!=result[-1]:
+        raise ValueError('Pole-enclosing ring requires a polar topology chart')
+    return result
+
 def classify(elements, extent):
     lines=[]; ids=[]
     for e in elements:
         if e.get('type')!='way' or e.get('tags',{}).get('natural')!='coastline': continue
-        coords=[(p['lon'],p['lat']) for p in e.get('geometry',[])]
+        coords=local_coordinates(e.get('geometry',[]),(extent.bounds[0]+extent.bounds[2])/2)
         if len(coords)<2: raise ValueError('Incomplete coastline geometry')
-        if any(abs(b[0]-a[0])>180 for a,b in zip(coords,coords[1:])):
-            raise ValueError('Dateline-crossing source needs spherical partition; unresolved')
         line=LineString(coords)
         if not line.is_simple: raise ValueError('Self-intersecting coastline')
         clipped=line.intersection(extent)

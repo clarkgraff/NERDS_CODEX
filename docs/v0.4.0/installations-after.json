@@ -1,0 +1,12 @@
+[
+  {
+    "PSChildName": "{62407761-7419-4191-990D-FAAB986315B0}",
+    "DisplayName": "NERDS Development Test",
+    "DisplayVersion": "0.4.0.0"
+  },
+  {
+    "PSChildName": "{79126283-6BB5-42A9-B6BF-F2E094FB0F78}",
+    "DisplayName": "NERDS",
+    "DisplayVersion": "0.3.0.0"
+  }
+]

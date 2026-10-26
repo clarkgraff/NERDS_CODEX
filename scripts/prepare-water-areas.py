@@ -2,6 +2,7 @@
 Development dependency: Shapely 2.1.2. Runtime uses the generated additive masks.
 """
 import sys,pathlib,json,gzip,hashlib,math
+sys.path.insert(0,str(pathlib.Path(__file__).resolve().parent))
 sys.path.insert(0,str(pathlib.Path('work/topology/python-deps').resolve()))
 import shapely
 import numpy as np
@@ -20,13 +21,15 @@ def rings(parts):
   out.append(ring)
  return out
 
-def feature(e):
- if e['type']=='way':outer=rings([[(p['lon'],p['lat']) for p in e['geometry']]]);inner=[]
+def feature(e,center=None):
+ from coastline_topology import local_coordinates
+ coords=lambda points:local_coordinates(points,center) if center is not None else [(p['lon'],p['lat']) for p in points]
+ if e['type']=='way':outer=rings([coords(e['geometry'])]);inner=[]
  else:
   parts={'outer':[],'inner':[]}
   for m in e['members']:
    if m['type']!='way' or m.get('role') not in parts or not m.get('geometry'):raise ValueError('Unsupported or missing relation member')
-   parts[m['role']].append([(p['lon'],p['lat']) for p in m['geometry']])
+   parts[m['role']].append(coords(m['geometry']))
   outer=rings(parts['outer']);inner=rings(parts['inner'])
  if not outer:raise ValueError('Missing outer ring')
  containers=[Polygon(r) for r in outer];holes=[[] for _ in outer]
@@ -55,7 +58,7 @@ def main(regions=None,input_root='work/topology',output_root='assets/water-areas
    if e['type'] not in ['way','relation'] or e.get('tags',{}).get('natural')!='water' or e['type']=='way' and e['id'] in members:continue
    identity=e['type']+'/'+str(e['id'])
    try:
-    p,h=feature(e);polys.extend(p);holes.extend(h);accepted.append({'id':identity,'tags':e.get('tags',{}),'url':'https://www.openstreetmap.org/'+identity})
+    p,h=feature(e,(west+east)/2);polys.extend(p);holes.extend(h);accepted.append({'id':identity,'tags':e.get('tags',{}),'url':'https://www.openstreetmap.org/'+identity})
    except (ValueError,KeyError,TypeError) as error:rejected.append({'id':identity,'reason':str(error)})
   coverage=box(west,south,east,north);inland=shapely.union_all(polys)
   from coastline_topology import classify
@@ -86,5 +89,5 @@ if __name__=='__main__':
   for name,v in selected.items():
    if not name.replace('-','').replace('.','').isalnum() or len(v)!=5:raise ValueError('Invalid region definition')
    west,south,east,north,step=v
-   if not (-180<=west<east<=180 and -90<=south<north<=90 and .0001<=step<=.1) or (east-west)*(north-south)/step**2>2000000:raise ValueError('Region cell budget exceeded')
+   if not (-185<=west<east<=185 and -90<=south<north<=90 and .0001<=step<=.1) or (east-west)*(north-south)/step**2>2000000:raise ValueError('Region cell budget exceeded')
  main(selected,args.input_root,args.output_root)
