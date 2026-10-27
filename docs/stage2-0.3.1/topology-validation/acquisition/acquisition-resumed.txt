@@ -1,0 +1,8 @@
+PRESERVED breves
+PRESERVED alter
+PRESERVED ontario
+{'region': 'don', 'attempt': 1, 'status': 'UNRESOLVED', 'error': 'HTTP Error 502: Bad Gateway'}
+{'region': 'don', 'attempt': 2, 'status': 'UNRESOLVED', 'error': 'HTTP Error 502: Bad Gateway'}
+{'region': 'ushuaia', 'attempt': 1, 'status': 'ACQUIRED', 'bytes': 2618687, 'sha256': 'f7e7754a46056c35b37ddf9c382675b2351a9a1cee1638586f84039a2edcb843', 'elements': 424}
+{'region': 'magellan', 'attempt': 1, 'status': 'UNRESOLVED', 'error': 'HTTP Error 502: Bad Gateway'}
+{'region': 'magellan', 'attempt': 2, 'status': 'ACQUIRED', 'bytes': 407569, 'sha256': '1d58aa3bac120f25ca8086a263b294fa94c0e12ad0bd66571e6d28708ad8f985', 'elements': 158}

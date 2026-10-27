@@ -1,0 +1,50 @@
+{
+  "reviewDate": "2026-10-19 America/Los_Angeles",
+  "branch": "codex/stage2-v031",
+  "head": "d72b1d4410b97a1cb15a60d4cbb00b3e64d78d2b",
+  "node": {
+    "PASS": 59,
+    "FAIL": 0,
+    "skipped": 0
+  },
+  "python": {
+    "PASS": 5,
+    "FAIL": 0
+  },
+  "coarse": {
+    "PASS": 115,
+    "FAIL": 0,
+    "UNRESOLVED": 44,
+    "DEFERRED": 0
+  },
+  "refined": {
+    "PASS": 127,
+    "FAIL": 0,
+    "UNRESOLVED": 32,
+    "DEFERRED": 0
+  },
+  "primary": {
+    "PASS": 4,
+    "FAIL": 0
+  },
+  "discovery": {
+    "PASS": 5,
+    "FAIL": 0
+  },
+  "desktop": {
+    "existing": 38,
+    "approvedRefinement": 5,
+    "newTopology": 5,
+    "total": 48
+  },
+  "independentAreaAudit": {
+    "method": "GEOS covers against retained source water polygons with holes; authoritative geodesics sampled at <=20 m; independent of production raster validator",
+    "checkedUniqueDirectedAreaEdges": 998,
+    "failures": [],
+    "status": "PASS",
+    "limitation": "Finite 20 m linear approximation; not vessel clearance or worldwide coverage"
+  },
+  "finalGeometryMatchesAuditedRun": true,
+  "sourceCommitted": false,
+  "releaseBuilt": false
+}

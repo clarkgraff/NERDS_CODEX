@@ -1,0 +1,11 @@
+Attempt 1 data.bin Incomplete response; partial retained
+Downloaded data.bin 600000
+Preserved data.bin 600000
+Attempt 1 data.bin Incomplete response; partial retained
+Downloaded data.bin 600000
+Preserved data.bin 600000
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 1.105s
+
+OK

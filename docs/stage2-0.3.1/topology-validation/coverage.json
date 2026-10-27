@@ -1,0 +1,105 @@
+[
+  {
+    "id": "breves",
+    "resolution": 0.001,
+    "extent": {
+      "west": -50.8,
+      "south": -1.95,
+      "east": -50.099999999999994,
+      "north": -1.35
+    },
+    "accepted": 59,
+    "rejected": [],
+    "waterCells": 52438,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 0
+  },
+  {
+    "id": "alter",
+    "resolution": 0.002,
+    "extent": {
+      "west": -55.15,
+      "south": -2.75,
+      "east": -54.5,
+      "north": -2.1
+    },
+    "accepted": 104,
+    "rejected": [
+      {
+        "id": "way/1546908572",
+        "reason": "Open or ambiguous ring; no repair performed"
+      },
+      {
+        "id": "way/1546908573",
+        "reason": "Open or ambiguous ring; no repair performed"
+      },
+      {
+        "id": "way/1546908574",
+        "reason": "Open or ambiguous ring; no repair performed"
+      }
+    ],
+    "waterCells": 36192,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 0
+  },
+  {
+    "id": "ontario",
+    "resolution": 0.005,
+    "extent": {
+      "west": -80,
+      "south": 43,
+      "east": -75.5,
+      "north": 44.705
+    },
+    "accepted": 16609,
+    "rejected": [],
+    "waterCells": 87644,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 0
+  },
+  {
+    "id": "don",
+    "resolution": 0.002,
+    "extent": {
+      "west": 38.8,
+      "south": 46.8,
+      "east": 40.001999999999995,
+      "north": 47.401999999999994
+    },
+    "accepted": 1445,
+    "rejected": [],
+    "waterCells": 789,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 22
+  },
+  {
+    "id": "ushuaia",
+    "resolution": 0.002,
+    "extent": {
+      "west": -68.5,
+      "south": -54.95,
+      "east": -68,
+      "north": -54.648
+    },
+    "accepted": 424,
+    "rejected": [],
+    "waterCells": 21,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 0
+  },
+  {
+    "id": "magellan",
+    "resolution": 0.002,
+    "extent": {
+      "west": -71.2,
+      "south": -53.4,
+      "east": -70.598,
+      "north": -52.9
+    },
+    "accepted": 158,
+    "rejected": [],
+    "waterCells": 50,
+    "worldOverlapCells": 0,
+    "europeOverlapCells": 0
+  }
+]

@@ -1,0 +1,7 @@
+[
+  'Explicit water-area refinement preserves original course and ordered waypoint identities',
+  'Cesium geodesic polyline coordinates match canonical WGS84 vertices; camera fit preserves geometry',
+  'Comparison visibility does not change authoritative water-area accounting',
+  'Project save/restart preserves water-area geometry, source evidence and coarse snapshot',
+  'Reverse desktop itinerary retains exact geometry with no renderer errors'
+]

@@ -1,0 +1,3 @@
+{'region': 'breves', 'attempt': 1, 'status': 'ACQUIRED', 'bytes': 1840965, 'sha256': 'bed38e3407d52eb1a154831799f447f1c7a0ea91c1e3f3fd3678f14052b75be8', 'elements': 59}
+{'region': 'alter', 'attempt': 1, 'status': 'ACQUIRED', 'bytes': 11931423, 'sha256': '9d47c478b8ef4727e7606a2ecd56172b072c18419ba0ff6d3d8117fea50b477b', 'elements': 107}
+{'region': 'ontario', 'attempt': 1, 'status': 'ACQUIRED', 'bytes': 47139676, 'sha256': 'fea29ac5dcc9edfdea92d422e0e300f0490f05b9b36a634b632d59ddd6ed42b5', 'elements': 16618}

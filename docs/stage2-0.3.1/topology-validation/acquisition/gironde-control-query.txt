@@ -1,0 +1,1 @@
+[out:json][timeout:45];(way["natural"="water"](45.25,-1.4,45.8,-0.6);rel["type"="multipolygon"]["natural"="water"](45.25,-1.4,45.8,-0.6););out geom;

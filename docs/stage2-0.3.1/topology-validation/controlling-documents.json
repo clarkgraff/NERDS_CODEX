@@ -1,0 +1,16 @@
+{
+  "master": {
+    "path": "C:\\Users\\Clark\\OneDrive - GRAFF Films\\Documents\\GRAFF_PERSONAL\\CLARK STUFF\\4NR_TEK\\SOFTWARE_DEVELOPMENT\\4nR-MOS\\20261018_4nR-MOS_SIOP_Master_Scope_v1.0_RevA.docx",
+    "sha256": "c8f5929073b8d23b0ed5b420c0b71d02b0300eba1c105d9377e513b605345ddb",
+    "read": "Complete document: 1,618 paragraphs including tables and appendices A-E; original preserved",
+    "githubBinary": "Absent at last checked tree"
+  },
+  "workbook": {
+    "path": "C:\\Users\\Clark\\OneDrive - GRAFF Films\\Documents\\2017\\2017 Faire Wind and Song\\PRODUCTION_TECHNOLOGY\\SHIP_TECHNOLOGY\\2026_FWaS_SHIP_OPERATIONAL_MODES_v3.3.xlsx",
+    "exists": true,
+    "sha256": "b9dcedd52faaf20efa34076d342745722cc893c2ee95e78830683d70db16ea47",
+    "status": "Received; no engineering formulas adopted or implemented in this topology increment"
+  },
+  "sharedRepositoryTree": "6aff582fc942344cde94818189f70aad0ca2779b",
+  "authority": "19 October user directive makes Rev A controlling; shared approval register still says pending; no architectural rewrite before topology approval"
+}
