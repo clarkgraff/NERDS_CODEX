@@ -22,8 +22,8 @@ test('additive refinement dataset matches its manifest and source acquisition di
  for(const source of m.sources.filter(x=>x.file)){if(fs.existsSync('work/refinement/'+source.file))a.equal(hash(fs.readFileSync('work/refinement/'+source.file)),source.sha256);a.match(source.sha256,/^[0-9a-f]{64}$/);a.ok(source.query.includes('out geom'));a.ok(source.timestamp);}
 });
 test('explicit mapped refinement resolves Bordeaux in both directions and retains original unresolved evidence',()=>{
- const s=stateFor(['Brest','Bordeaux']),coarse=plan(s),before=structuredClone(coarse);
- const r=require('../src/course-refinement.cjs').refine(s,coarse),reverse=plan({...s,waypoints:[...s.waypoints].reverse()},{refine:true});
+ const s=stateFor(['Brest','Bordeaux']),coarse=plan(s,{recoverTopology:false}),before=structuredClone(coarse);
+ const r=require('../src/course-refinement.cjs').refine(s,coarse,{recoverTopology:false}),reverse=plan({...s,waypoints:[...s.waypoints].reverse()},{refine:true,recoverTopology:false});
  a.equal(coarse.complete,false);a.deepEqual(coarse,before);a.deepEqual(r.coarseCourse,coarse);a.equal(r.complete,true);a.equal(validate(s,r).result,'PASS');
  a.equal(r.refinement.refinedLegs,1);a.deepEqual(r.legs[0].points,[...reverse.legs[0].points].reverse());a.ok(Math.abs(r.totalNM-reverse.totalNM)<1e-8);
  a.equal(r.legs[0].fromId,s.waypoints[0].id);a.equal(r.legs[0].waypointId,s.waypoints[1].id);a.ok(r.refinement.dataset.sources.some(x=>x.file==='bordeaux.json'));
@@ -35,6 +35,6 @@ test('refinement preserves successful legs, gaps, constraints and nominal accoun
  const t=stateFor(['Brest','Bordeaux']);t.coursePlan.manualConstraints=[{id:'manual',fromId:t.waypoints[0].id,toId:t.waypoints[1].id,lat:46,lon:-2,kind:'MANUAL'}];const constrained=plan(t,{refine:true});a.equal(constrained.legs[0].status,'UNRESOLVED');a.match(constrained.refinement.legs[0].reason,/constraints preserved/);
 });
 test('detailed acceptance rejects fabricated source edges and continental shortcuts',()=>{
- const r=plan(stateFor(['Brest','Bordeaux']),{refine:true}),l=structuredClone(r.legs[0]);a.equal(supported(l),true);l.evidence.sections[2].sourceEdgeIds[0]='invented';a.equal(supported(l),false);
+ const r=plan(stateFor(['Brest','Bordeaux']),{refine:true,recoverTopology:false}),l=structuredClone(r.legs[0]);a.equal(supported(l),true);l.evidence.sections[2].sourceEdgeIds[0]='invented';a.equal(supported(l),false);
  a.equal(supported({points:[{lat:54,lon:4},{lat:43,lon:5}],evidence:{grid:'europe-0.025'}}),false);
 });

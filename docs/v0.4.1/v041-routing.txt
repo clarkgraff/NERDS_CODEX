@@ -1,0 +1,14 @@
+✔ open water staircase becomes a direct geodesic without mutating source geometry (2.859ms)
+✔ geodesic shortcuts cannot cross blocked cells or diagonal land corners (0.6241ms)
+✔ course simplification retains exact source-waterway bends (0.5542ms)
+✔ reversing a constrained raster path reverses the same simplified geometry (0.8949ms)
+✔ mixed European/world itinerary retains shared water attachments and valid accounting both directions (5668.3234ms)
+✔ explicit access remains unchanged; shared selection never increases the guard (14.9006ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6042.9296

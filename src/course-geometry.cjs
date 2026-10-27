@@ -33,6 +33,9 @@ function simplify(points,grid){
  const result=[points[0]];let i=0;
  while(i<points.length-1){
   let accepted=i+1;
+  // Try the actual end first: exponential strides can retain needless bends
+  // when a short candidate touches a coast cell but the whole geodesic is clear.
+  if(supportedSegment(points[i],points.at(-1),grid)){result.push(points.at(-1));break;}
   // Exponential look-ahead bounds work on long raster paths. A failed test
   // retains existing edges, rather than turning an unsupported shortcut valid.
   for(let stride=2;stride<=points.length*2;stride*=2){
@@ -46,7 +49,7 @@ function simplify(points,grid){
 }
 function simplifyLeg(result){
  const e=result.evidence;
- if(e.grid==='source-waterway-network')return result;
+ if(e.grid==='source-waterway-network'||e.grid?.startsWith('water-area-'))return result;
  if(e.grid==='hybrid-waterway-ocean'){
   const [a,m,b]=e.sections,rawPoints=m.points;
   const points=simplify(rawPoints,gridById(m.grid));

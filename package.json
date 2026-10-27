@@ -1,6 +1,6 @@
 {
   "name": "nerds",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Offline expedition research and geographic planning",
   "author": "4nR TeK Inc.",
   "private": true,
@@ -25,8 +25,8 @@
     "electron-builder": "26.15.3"
   },
   "build": {
-    "appId": "com.4nr.nerds.devtest",
-    "productName": "NERDS Development Test",
+    "appId": "com.4nr.nerds.devtest041",
+    "productName": "NERDS Development Test 0.4.1",
     "copyright": "Copyright (c) 2026 4nR TeK Inc. Created by Clark Graff.",
     "directories": {
       "output": "dist"

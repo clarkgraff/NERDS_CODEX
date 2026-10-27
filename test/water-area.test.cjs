@@ -11,7 +11,7 @@ test('adopted masks, exclusions, exact geometry and available acquisitions match
 });
 test('real Alter water area resolves both directions without replacing coarse evidence or waypoint IDs',()=>{
  const s=stateFor(['Santarém','Alter do Chão']),coarse=plan(s),r=require('../src/course-refinement.cjs').refine(s,coarse),back=plan({...s,waypoints:[...s.waypoints].reverse()},{refine:true});
- a.equal(coarse.complete,false);a.equal(validate(s,r).result,'PASS');a.deepEqual(r.coarseCourse,coarse);a.equal(r.legs[0].evidence.grid,'water-area-topology');a.deepEqual(r.legs[0].points,[...back.legs[0].points].reverse());a.ok(Math.abs(r.totalNM-back.totalNM)<1e-8);a.equal(r.legs[0].fromId,s.waypoints[0].id);
+ a.equal(coarse.complete,true);a.equal(coarse.legs[0].evidence.recovery.method,'CONNECTED_MAPPED_WATER_AFTER_GRID_ACCESS_FAILURE');a.equal(validate(s,r).result,'PASS');a.deepEqual(r.coarseCourse,coarse);a.equal(r.legs[0].evidence.grid,'water-area-topology');a.deepEqual(r.legs[0].points,[...back.legs[0].points].reverse());a.ok(Math.abs(r.totalNM-back.totalNM)<1e-8);a.equal(r.legs[0].fromId,s.waypoints[0].id);
  const bad=structuredClone(r.legs[0]);bad.evidence.edgeEvidence[0]={kind:'SOURCE',sourceId:'invented'};a.equal(topology.valid(bad),false);bad.points[0].lat=91;a.equal(topology.valid(bad),false);
 });
 test('partial itinerary preserves resolved water-area leg and suppresses unsupported downstream ETA',()=>{

@@ -1,0 +1,11 @@
+{
+  "installedUIChecks": 7,
+  "msi": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\dist\\NERDS-0.4.1-x64.msi",
+  "installerExit": 0,
+  "installedCourseChecks": 5,
+  "installedVersion": "0.4.1.0",
+  "installedExecutable": "C:\\Users\\Clark\\AppData\\Local\\Programs\\NERDS Development Test 0.4.1\\NERDS Development Test 0.4.1.exe",
+  "unitPass": 79,
+  "bytes": 271066948,
+  "sha256": "201348179056614D0722F5B12C7B6CC94B177094E55BDFED2A7E3F62F8B9B462"
+}

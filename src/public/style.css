@@ -6,3 +6,4 @@
 .waypoints>*{flex-shrink:0}#search-results{height:145px}.input-row button{font-size:12px}.input-row input{flex:1;width:0}#route-total{margin-left:-8px;margin-right:-8px}#route-total td{padding:4px}dialog button{margin-top:6px}
 
 .leg-metrics{margin-left:0;white-space:normal}.leg-metrics table{table-layout:fixed;width:100%;border-collapse:collapse;font-size:10px}.leg-metrics td{width:50%;vertical-align:top;border:1px solid #34505e;padding:5px;overflow-wrap:anywhere}.leg-metrics p{margin:6px 0}
+main>aside{min-width:0} .panel-divider{background:#294956;cursor:col-resize;touch-action:none;z-index:5}.panel-divider:hover{background:#8edccc}.test-tools p{overflow-wrap:anywhere;max-height:160px;overflow:auto}#layer-fields label{min-width:0}#layer-fields output{display:block}#edit-user-path{margin-bottom:8px;width:100%}

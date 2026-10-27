@@ -1,0 +1,25 @@
+
+> nerds@0.4.1 prepackage
+> npm run prepare:data
+
+
+> nerds@0.4.1 prepare:data
+> node scripts/restore-gazetteer.cjs
+
+Verified worldwide gazetteer: 236427 places
+
+> nerds@0.4.1 package
+> electron-builder --win msi --x64
+
+  • electron-builder  version=26.15.3 os=10.0.26300
+  • loaded configuration  file=package.json ("build" field)
+  • skipped dependencies rebuild  reason=npmRebuild is set to false
+  • packaging       platform=win32 arch=x64 electron=44.7.1 appOutDir=dist\win-unpacked
+  • using custom unpacked Electron distribution  electronDist=node_modules\electron\dist
+  • copying unpacked Electron  source=C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\node_modules\electron\dist destination=C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\dist\win-unpacked
+  • searching for node modules  pm=npm searchDir=C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX
+  • duplicate dependency references  dependencies=["protobufjs@8.8.1","@cesium/engine@26.4.0"]
+  • updating asar integrity executable resource  executablePath=dist\win-unpacked\NERDS Development Test 0.4.1.exe
+  • file signing skipped via signExecutable configuration  file=dist\win-unpacked\NERDS Development Test 0.4.1.exe
+  • building        target=MSI arch=x64 file=dist\NERDS-0.4.1-x64.msi
+  • file signing skipped via signExecutable configuration  file=dist\NERDS-0.4.1-x64.msi

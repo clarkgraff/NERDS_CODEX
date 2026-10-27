@@ -61,3 +61,7 @@ Stage 2 local development update: the separate all-feature GeoNames index now co
 ## v0.4.0 development test
 See [release notes](docs/v0.4.0/RELEASE-NOTES.md) for the separate test installation, operational controls, packaged validation and known limitations.
 
+
+## v0.4.1 corrective development test
+See [corrective release notes](docs/v0.4.1/RELEASE-NOTES.md) for routing recovery, interactive controls, separate installation and remaining limitations. Installed verification: 7 UI checks and 5 maritime persistence checks passed; Node suite 79 passed.
+

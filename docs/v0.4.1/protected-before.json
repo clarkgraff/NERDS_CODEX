@@ -1,0 +1,14 @@
+[
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\config.json",
+    "Hash": "9F64AE201C4EE7FA9FA9A18520C8C7A246ED46FA645B00234FE5A267254A944E"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\nerds.sqlite",
+    "Hash": "5F0A8F958BEF9A1EE409545C74432BFE90BC4051BFDFF657BDEB6A0121D85E80"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test\\data\\nerds.sqlite",
+    "Hash": "ABA5FA894765BE8658F7041AC70604DB6099C131B1D214E94549BD9977D18A49"
+  }
+]

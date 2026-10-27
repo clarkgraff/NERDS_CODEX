@@ -69,7 +69,7 @@ function refine(s,coarse,options={}){
  for(let i=1;i<r.legs.length;i++){const a=r.legs[i-1],b=r.legs[i];if(a.accesses&&b.accesses&&!near(a.accesses[1],b.accesses[0]))b.transitionBefore={status:'UNRESOLVED',waypointId:b.fromId,from:a.accesses[1],to:b.accesses[0],reason:'Detailed/coarse attachment transfer is unresolved'};}
  for(const l of r.legs)l.suitability=require('./suitability.cjs').assessSuitability([s.waypoints.find(w=>w.id===l.fromId),s.waypoints.find(w=>w.id===l.waypointId)],s.vessel,options.vesselSuitability,l.transport,l.evidence.sourceAccessEvidence);
  Object.assign(r,require('./passage.cjs').timeResult(s,r.legs));
- r.connectors=r.legs.flatMap(l=>l.accesses?l.accesses.map((access,j)=>({id:l.id+':'+j,waypointId:j?l.waypointId:l.fromId,anchor:l.evidence.anchors[j],access,distanceNM:distanceNM(l.evidence.anchors[j],access),includedInPassage:false})):[]);
+ r.connectors=r.legs.flatMap(l=>l.accesses?l.accesses.map((access,j)=>({id:l.id+':'+j,waypointId:j?l.waypointId:l.fromId,anchor:l.evidence.anchors[j],access,distanceNM:distanceNM(l.evidence.anchors[j],access),includedInPassage:false,status:distanceNM(l.evidence.anchors[j],access)>.001?'PROVISIONAL_TRANSFER':'COINCIDENT',transport:'UNSPECIFIED_TRANSFER',durationHours:null})):[]);
  const count=r.refinement.legs.filter(l=>l.status==='REFINED').length;r.refinement.status=count?'PARTIALLY_REFINED':'NO_SUPPORTED_IMPROVEMENT';r.refinement.refinedLegs=count;
  r.status=(r.complete?'PRELIMINARY ROUTE':'PARTIAL / UNRESOLVED ROUTE')+' — '+count+' LEGS REFINED';
  r.alternatives=[{id:r.id,preference:r.preference,legs:r.legs,...require('./passage.cjs').timeResult(s,r.legs)}];
