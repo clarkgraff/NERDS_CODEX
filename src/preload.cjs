@@ -9,6 +9,7 @@ contextBridge.exposeInMainWorld('nerds',{
  importPhotos:id=>invoke('import',id),choosePath:kind=>invoke('choose-path',kind),
  testAI:endpoint=>invoke('ai-test',endpoint),askAI:request=>invoke('ai-chat',request),
  archive:request=>invoke('archive',request),export:format=>invoke('export',format),
+ displayOnline:online=>invoke('display-online',online),displayStatus:()=>invoke('display-status'),
  project:action=>invoke('project',action),onCommand:fn=>ipcRenderer.on('command',(_,action)=>fn(action)),
  saveVesselProfile:v=>invoke('vessel-profile',v),hullSpeed:v=>invoke('hull-speed',v),
  image:kind=>invoke('image',kind),website:()=>invoke('website'),

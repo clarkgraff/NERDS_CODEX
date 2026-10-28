@@ -56,11 +56,16 @@ app.whenReady().then(async()=>{
   config.dataDir=process.env.NERDS_DATA_DIR||config.dataDir||path.join(home,'data');
   config.cacheDir=config.cacheDir||path.join(config.dataDir,'cache');config.archiveDir=config.archiveDir||path.join(config.dataDir,'archive');
   store=openStore(config.dataDir);discoveryCache=require('./discovery-cache.cjs').createCache(store.db);for(const key of ['cacheDir','archiveDir'])fs.mkdirSync(config[key],{recursive:true});
+  const displayTiles=new (require('./display-tiles.cjs').DisplayTiles)(path.join(config.cacheDir,'display-tiles'));
+  handle('display-online',online=>{displayTiles.online=online===true;return displayTiles.status();});
+  handle('display-status',()=>displayTiles.status());
   const resourceResponse=async request=>{
     try{
       const url=new URL(request.url,appBase);if(!url.pathname.startsWith(resourcePrefix)||request.headers.host!==new URL(appBase).host||request.method!=='GET')return new Response('Not found',{status:404});
       const route='/'+decodeURIComponent(url.pathname.slice(resourcePrefix.length));
       let file;
+      const tileMatch=/^\/display\/(vector|terrain)\/(\d+)\/(\d+)\/(\d+)$/.exec(route);
+      if(tileMatch){const [,kind,z,x,y]=tileMatch;const result=await displayTiles[kind](Number(z),Number(x),Number(y));return new Response(kind==='terrain'?result.bytes:JSON.stringify(result),{headers:{'Content-Type':kind==='terrain'?'image/png':'application/json'}});}
       if(route.startsWith('/geography/')){const record=surfaceRegistry.get(route.slice(11));if(!record)return new Response('Not found',{status:404});return new Response(require('./water-surface-display.cjs').read(record),{headers:{'Content-Type':'application/json'}});
       }else if(route.startsWith('/media/')){
         const item=store.media().find(m=>m.id===route.slice(7));
