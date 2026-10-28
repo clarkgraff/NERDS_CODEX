@@ -1,0 +1,118 @@
+{
+  "result": {
+    "result": "PASS",
+    "errors": [],
+    "unresolved": []
+  },
+  "ms": 6677.409799999999,
+  "distanceComponents": {
+    "vesselPassageNM": 303.65870752142484,
+    "unverifiedConnectorGeometryNM": 62.48248885001644,
+    "connectorsIncludedInVesselDistance": false,
+    "completeExpeditionNM": null
+  },
+  "legs": [
+    {
+      "status": "CALCULATED",
+      "reason": null
+    },
+    {
+      "status": "CALCULATED",
+      "reason": null
+    }
+  ],
+  "connectors": [
+    {
+      "id": "geonames:5850248->geonames:13117949:0",
+      "waypointId": "geonames:5850248",
+      "anchor": {
+        "lat": 21.98121,
+        "lon": -159.3721
+      },
+      "access": {
+        "lon": -159.15,
+        "lat": 21.950000000000003,
+        "name": "Unverified offshore candidate",
+        "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+        "depth": null,
+        "airClearance": null,
+        "maxLOA": null,
+        "maxBeam": null
+      },
+      "distanceNM": 12.52640269514287,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    },
+    {
+      "id": "geonames:5850248->geonames:13117949:1",
+      "waypointId": "geonames:13117949",
+      "anchor": {
+        "lat": 21.30924,
+        "lon": -157.86134
+      },
+      "access": {
+        "lon": -157.85,
+        "lat": 21.05000000000001,
+        "name": "Unverified offshore candidate",
+        "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+        "depth": null,
+        "airClearance": null,
+        "maxLOA": null,
+        "maxBeam": null
+      },
+      "distanceNM": 15.511358921761794,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    },
+    {
+      "id": "geonames:13117949->geonames:5855927:0",
+      "waypointId": "geonames:13117949",
+      "anchor": {
+        "lat": 21.30924,
+        "lon": -157.86134
+      },
+      "access": {
+        "lon": -157.85,
+        "lat": 21.05000000000001,
+        "name": "Unverified offshore candidate",
+        "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+        "depth": null,
+        "airClearance": null,
+        "maxLOA": null,
+        "maxBeam": null
+      },
+      "distanceNM": 15.511358921761794,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    },
+    {
+      "id": "geonames:13117949->geonames:5855927:1",
+      "waypointId": "geonames:5855927",
+      "anchor": {
+        "lat": 19.72991,
+        "lon": -155.09073
+      },
+      "access": {
+        "lon": -154.85,
+        "lat": 19.950000000000003,
+        "name": "Unverified offshore candidate",
+        "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+        "depth": null,
+        "airClearance": null,
+        "maxLOA": null,
+        "maxBeam": null
+      },
+      "distanceNM": 18.933368311349984,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    }
+  ]
+}

@@ -1,3 +1,7 @@
+# Current development test: NERDS v0.4.2
+
+See [v0.4.2 release notes](RELEASE-NOTES-0.4.2.md) and [installed upgrade validation](docs/v0.4.2/REVIEW.md). The production v0.3.0 documentation below is retained as historical context.
+
 # NERDS v0.3.0
 
 Navigation & Expedition Research Discovery Surveyor — © 2026 4nR TeK Inc. Created by Clark Graff.
@@ -64,4 +68,3 @@ See [release notes](docs/v0.4.0/RELEASE-NOTES.md) for the separate test installa
 
 ## v0.4.1 corrective development test
 See [corrective release notes](docs/v0.4.1/RELEASE-NOTES.md) for routing recovery, interactive controls, separate installation and remaining limitations. Installed verification: 7 UI checks and 5 maritime persistence checks passed; Node suite 79 passed.
-

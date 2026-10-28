@@ -1,0 +1,3 @@
+'use strict';
+function annotate(route){const pending=(route.connectors||[]).filter(c=>Number.isFinite(c.distanceNM)&&c.distanceNM>.001),sum=pending.reduce((n,c)=>n+c.distanceNM,0);route.distanceComponents={vesselPassageNM:route.calculatedDistanceNM,unverifiedConnectorGeometryNM:sum,connectorsIncludedInVesselDistance:false,completeExpeditionNM:route.complete&&!pending.length?route.totalNM:null};route.endpointStatus=pending.length?'UNRESOLVED_ACCESS_TRANSFER':'COINCIDENT_WITH_CALCULATED_ACCESS';if(pending.length)route.status+=' — ACCESS TRANSFERS UNRESOLVED';return route;}
+module.exports={annotate};

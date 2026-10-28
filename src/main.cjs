@@ -13,10 +13,11 @@ const path=require('node:path');
 const {randomUUID,createHash}=require('node:crypto');
 const exifr=require('exifr');
 const {openStore,lookup,missions,localEndpoint}=require('./core.cjs');
-app.setPath('userData',path.join(app.getPath('appData'),'NERDS-Development-Test-0.4.1'));
+const priorHome=path.join(app.getPath('appData'),'NERDS-Development-Test-0.4.1');
+app.setPath('userData',fs.existsSync(path.join(priorHome,'config.json'))?priorHome:path.join(app.getPath('appData'),'NERDS-Development-Test'));
 const root=path.resolve(__dirname,'..');
 let win,store,config,configFile,httpServer,appBase,appURL;
-let routing=false,discoveryCache;
+let routing=false,discoveryCache;const surfaceRegistry=new Map();
 const markDirty=()=>store.put('project',{...store.get('project',{path:null}),dirty:true});
 const projectInfo=()=>{const p=store.get('project',{path:null,dirty:false});return {...p,name:p.path?path.basename(p.path,path.extname(p.path)):'UNTITLED PROJECT'};};
 async function saveProject(as=false){let file=projectInfo().path;if(as||!file){const r=await dialog.showSaveDialog(win,{defaultPath:file||'Expedition.nerds',filters:[{name:'NERDS project',extensions:['nerds']}]});if(r.canceled)return false;file=r.filePath;if(!file.toLowerCase().endsWith('.nerds'))file+='.nerds';}projects.write(file,projects.snapshot(store));store.put('project',{path:file,dirty:false});return true;}
@@ -60,7 +61,8 @@ app.whenReady().then(async()=>{
       const url=new URL(request.url,appBase);if(!url.pathname.startsWith(resourcePrefix)||request.headers.host!==new URL(appBase).host||request.method!=='GET')return new Response('Not found',{status:404});
       const route='/'+decodeURIComponent(url.pathname.slice(resourcePrefix.length));
       let file;
-      if(route.startsWith('/media/')){
+      if(route.startsWith('/geography/')){const record=surfaceRegistry.get(route.slice(11));if(!record)return new Response('Not found',{status:404});return new Response(require('./water-surface-display.cjs').read(record),{headers:{'Content-Type':'application/json'}});
+      }else if(route.startsWith('/media/')){
         const item=store.media().find(m=>m.id===route.slice(7));
         if(!item||!['.jpg','.jpeg','.png','.webp','.gif'].includes(path.extname(item.source_path).toLowerCase()))return new Response('No preview',{status:404});
         file=item.source_path;
@@ -88,6 +90,7 @@ app.whenReady().then(async()=>{
   win=new BrowserWindow({width:1500,height:980,minWidth:1120,minHeight:760,title:'NERDS · Faire Wind & Song',icon:path.join(root,'assets','nerds.ico'),backgroundColor:'#0b141c',show:false,webPreferences:{preload:path.join(__dirname,'preload.cjs'),contextIsolation:true,nodeIntegration:false,sandbox:true}});
   win.webContents.setWindowOpenHandler(()=>({action:'deny'}));
   win.webContents.on('will-navigate',event=>event.preventDefault());
+  handle('geographic-surfaces',()=>{surfaceRegistry.clear();return require('./water-surface-display.cjs').catalogue(geography).map(record=>{surfaceRegistry.set(record.id,record);const {file,...publicRecord}=record;return publicRecord;});});
   handle('load',()=>({state:store.read(),project:projectInfo(),profiles:store.get('vesselProfiles',[]),gazetteer:require('../assets/gazetteer-manifest.json'),discovery:require('./world-discovery.cjs').coverage(),missions,media:store.media(),config,version:app.getVersion(),ai:store.get('ai',{endpoint:'http://127.0.0.1:1234/v1',model:''})}));
   handle('save',state=>{const valid=store.save(state);markDirty();return valid;});
   handle('project',async action=>{
@@ -116,7 +119,8 @@ app.whenReady().then(async()=>{
   handle('geographic-acquire',async request=>{const tiles=coverage(store.read().waypoints,request?.coverage||{});const tile=tiles.find(t=>t.id===request?.tileId);if(!tile)throw Error('Requested tile is outside current path coverage');const result=await geography.acquire(tile,require('./geographic-providers.cjs').osmHydrography(),{online:request.online===true,refresh:request.refresh===true});if(!result.cacheHit)invalidateGeography();return result;});
   handle('path-coarse',options=>{const s=store.read(),P=require('./user-path.cjs'),result=P.coarse(s.userPath,{knots:options?.knots??6,departureUTC:s.departureUTC,byWay:s.transport});s.courseVariants.push(P.variant(s.userPath,'COARSE',result,{knots:result.knots,departureUTC:s.departureUTC,byWay:s.transport}));store.save(s);markDirty();return result;});
   handle('calculate',async(request={})=>{const s=store.read();if(routing||geographicBusy)throw Error('A calculation is already running.');routing=true;try{return await new Promise((resolve,reject)=>{const worker=new Worker(path.join(__dirname,'route-worker.cjs'),{workerData:{state:s,options:{bypass:!s.coastalPreferenceEnabled,vesselSuitability:config.vesselSuitability,refine:request.refine===true,geographyRevision:require('./geographic-preparation.cjs').prepared(geography).map(p=>path.basename(p)).join(','),preparedGeography:require('./geographic-preparation.cjs').prepared(geography)}}});const timer=setTimeout(()=>{worker.terminate();reject(Error('Route search timed out. Add intermediate offshore waypoints.'));},90000);worker.once('message',r=>{clearTimeout(timer);if(r.error){reject(Error(r.error));return;}try{const logDir=path.join(config.dataDir,'route-diagnostics');fs.mkdirSync(logDir,{recursive:true});const logFile=path.join(logDir,'legs.jsonl');if(fs.existsSync(logFile)&&fs.statSync(logFile).size>5*1024*1024)fs.renameSync(logFile,path.join(logDir,'legs.previous.jsonl'));fs.appendFileSync(logFile,JSON.stringify({at:new Date().toISOString(),engine:r.engineVersion,legs:r.legs.map(l=>({id:l.id,status:l.status,reason:l.reason,distanceNM:l.distanceNM,standardHours:l.standardHours,calculatedHours:l.calculatedHours,evidence:l.evidence}))})+'\n');}catch(e){r.diagnosticWarning='Could not write route diagnostic log: '+e.message;}resolve(r);});worker.once('error',e=>{clearTimeout(timer);reject(e);});worker.once('exit',code=>{clearTimeout(timer);if(code)reject(Error('Route worker stopped.'));});});}finally{routing=false;}});
-  handle('lookup',q=>{q=String(q).slice(0,200);const cached=discoveryCache.lookup(q),ids=new Set(cached.map(p=>p.sourceId));return [...cached,...lookup(q).filter(p=>!ids.has(p.sourceId))];});
+  const lookupWorker=new Worker(path.join(__dirname,'lookup-worker.cjs'));lookupWorker.unref();const lookups=new Map();let lookupId=0;lookupWorker.on('message',m=>{const pending=lookups.get(m.id);if(!pending)return;lookups.delete(m.id);clearTimeout(pending.timer);m.error?pending.reject(Error(m.error)):pending.resolve(m.records);});lookupWorker.on('error',error=>{for(const p of lookups.values()){clearTimeout(p.timer);p.reject(error);}lookups.clear();});
+  handle('lookup',async q=>{q=String(q).slice(0,200);const cached=discoveryCache.lookup(q),ids=new Set(cached.map(p=>p.sourceId));const found=await new Promise((resolve,reject)=>{const id=++lookupId,timer=setTimeout(()=>{lookups.delete(id);reject(Error('Geographic lookup timed out'));},30000);lookups.set(id,{resolve,reject,timer});lookupWorker.postMessage({id,query:q});});return [...cached,...found.filter(p=>!ids.has(p.sourceId))];});
   handle('accept-discovery',p=>discoveryCache.accept(p));
   handle('lookup-online',async q=>{const cache=store.get('onlineLookupCache',{});if(Object.hasOwn(cache,q))return cache[q];const results=await gazetteer.online(q,fetch,config.geocoderUrl||'https://nominatim.openstreetmap.org/search');cache[q]=results;store.put('onlineLookupCache',Object.fromEntries(Object.entries(cache).slice(-500)));return results;});
   handle('import-layers',async()=>{const r=await dialog.showOpenDialog(win,{title:'Import optional external map layers',filters:[{name:'NERDS layer exchange',extensions:['json']}],properties:['openFile']});if(r.canceled)return null;if(fs.statSync(r.filePaths[0]).size>20*1024*1024)throw Error('Layer file exceeds 20 MB.');const bytes=fs.readFileSync(r.filePaths[0]);const doc=JSON.parse(bytes.toString('utf8'));const sha256=createHash('sha256').update(bytes).digest('hex');return cleanLayers((doc.layers||[doc]).map(l=>({...l,sha256,importedAt:new Date().toISOString()})));});

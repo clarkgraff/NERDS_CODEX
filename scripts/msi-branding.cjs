@@ -2,6 +2,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 module.exports=async file=>{
  let xml=fs.readFileSync(file,'utf8');
+ xml=require('./msi-upgrade.cjs')(xml);
  const notice=fs.readFileSync(path.join(__dirname,'../assets/license.rtf'),'utf8');
  xml=xml.replace('<Property Id="DISABLEADVTSHORTCUTS"', '<Property Id="ARPCOMMENTS" Value="Copyright (c) 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff."/>\n    <Property Id="DISABLEADVTSHORTCUTS"');
  xml=xml.replace('Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="InstallScopeDlg"','Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="NerdsNoticeDlg"');
