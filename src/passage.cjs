@@ -22,7 +22,7 @@ function timeResult(s,legs){
 function geometryKey(s,a,b,options){return createHash('sha256').update(JSON.stringify({engine:ENGINE_VERSION,transport:s.transport,manualConstraints:require('./course-model.cjs').constraintsFor(s.coursePlan,a.id,b.id),waterwayData:require('../assets/waterways/osm-manifest.json').sha256,from:{id:a.id,lat:a.lat,lon:a.lon,access:a.access?{lat:a.access.lat,lon:a.access.lon}:null},to:{id:b.id,lat:b.lat,lon:b.lon,access:b.access?{lat:b.access.lat,lon:b.access.lon}:null},options})).digest('hex');}
 function planInternal(s,options={}){
  if(options.refine===true){
-  const saved=s.route?.coarseCourse||s.route,bypass=options.bypass!==false,routing={...(options.recoverTopology===false?{recoverTopology:false}:{}),...(options.geographyRevision?{geographyRevision:options.geographyRevision}:{}),bypass,separationNM:!bypass&&s.routePreference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0};
+  const saved=s.route?.coarseCourse||s.route,bypass=options.bypass!==false,routing={...(options.recoverTopology===false?{recoverTopology:false}:{}),...(options.geographyRevision?{geographyRevision:options.geographyRevision}:{}),bypass,separationNM:!bypass&&['OFFSHORE PREFERRED','CUSTOM OFFSHORE DISTANCE'].includes(s.routePreference)?s.coastalSeparationNM:0};
   const current=(()=>{try{return saved?.engineVersion===ENGINE_VERSION&&saved.legs.length===s.waypoints.length-1&&saved.legs.every((l,i)=>l.inputKey===geometryKey(s,s.waypoints[i],s.waypoints[i+1],routing)&&l.operatingMode===selectedMode(s,s.waypoints[i+1]));}catch{return false;}})();
   const timed=current?timeResult(s,structuredClone(saved.legs)):null;
   const sameTimes=timed&&['calculatedETA','standardETA','calculatedOperatingHours','calculatedStandardHours'].every(k=>timed[k]===saved[k]);
@@ -32,7 +32,7 @@ function planInternal(s,options={}){
  if(s.waypoints.length<2)throw Error('Add at least two waypoints.');
  // Baseline testing bypasses optional penalties unless an isolated diagnostic explicitly opts in.
  const bypass=options.bypass!==false,sea=s.transport==='BY-SEA',id=randomUUID();
- const routing={...(options.recoverTopology===false?{recoverTopology:false}:{}),...(options.geographyRevision?{geographyRevision:options.geographyRevision}:{}),bypass,separationNM:!bypass&&s.routePreference==='OFFSHORE PREFERRED'?s.coastalSeparationNM:0};
+ const routing={...(options.recoverTopology===false?{recoverTopology:false}:{}),...(options.geographyRevision?{geographyRevision:options.geographyRevision}:{}),bypass,separationNM:!bypass&&['OFFSHORE PREFERRED','CUSTOM OFFSHORE DISTANCE'].includes(s.routePreference)?s.coastalSeparationNM:0};
  const priorCoarse=s.route?.coarseCourse||s.route;
  const previous=priorCoarse?.engineVersion===ENGINE_VERSION?priorCoarse.legs:[];
  const legs=s.waypoints.slice(1).map((w,i)=>{

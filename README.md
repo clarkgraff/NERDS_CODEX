@@ -68,3 +68,6 @@ See [release notes](docs/v0.4.0/RELEASE-NOTES.md) for the separate test installa
 
 ## v0.4.1 corrective development test
 See [corrective release notes](docs/v0.4.1/RELEASE-NOTES.md) for routing recovery, interactive controls, separate installation and remaining limitations. Installed verification: 7 UI checks and 5 maritime persistence checks passed; Node suite 79 passed.
+
+## v0.4.3 Development Test
+Installed test build with approved cached cartography, waypoint renumbering/reversal, global preferences and local location records. See [release verification and unfinished requirements](docs/v0.4.3/release/REVIEW.md). Worldwide endpoint corrections and geographic downloads remain deferred.

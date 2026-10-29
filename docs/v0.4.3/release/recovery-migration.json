@@ -1,0 +1,21 @@
+{
+  "stateAfterMigrationMatches": false,
+  "waypointsUnchanged": true,
+  "counts": {
+    "media": {
+      "before": 0,
+      "after": 0
+    },
+    "research": {
+      "before": 0,
+      "after": 0
+    },
+    "acquisitions": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "changedExistingFields": [],
+  "addedFields": [],
+  "existingFieldsPreserved": true
+}

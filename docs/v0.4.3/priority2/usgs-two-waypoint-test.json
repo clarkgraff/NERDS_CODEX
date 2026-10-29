@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-28T20:19:12.506Z",
+  "acquisition": "FAIL",
+  "geometryValidated": true,
+  "status": "FAIL",
+  "distanceNM": 101.3252879103003,
+  "connectorNM": [
+    0.6066741769039674,
+    0.49226287028363963
+  ],
+  "elapsedMs": 10838.1116,
+  "reason": "No new USGS geometry available; existing baseline routing only",
+  "waypointIds": [
+    "new-orleans",
+    "baton-rouge"
+  ]
+}

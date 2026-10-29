@@ -1,0 +1,42 @@
+{
+  "package": {
+    "name": "nerds",
+    "version": "0.4.3",
+    "description": "Offline expedition research and geographic planning",
+    "author": "4nR TeK Inc.",
+    "private": true,
+    "main": "src/main.cjs",
+    "dependencies": {
+      "@mapbox/vector-tile": "3.0.0",
+      "cesium": "1.146.0",
+      "exifr": "7.1.3",
+      "geographiclib-geodesic": "2.2.0",
+      "pbf": "5.1.2",
+      "pngjs": "7.0.0"
+    }
+  },
+  "archiveEntries": 4572,
+  "sourceDifferences": [],
+  "required": [
+    {
+      "file": "node_modules/cesium/Build/Cesium/Cesium.js",
+      "present": true
+    },
+    {
+      "file": "node_modules/geographiclib-geodesic/package.json",
+      "present": true
+    },
+    {
+      "file": "node_modules/@mapbox/vector-tile/package.json",
+      "present": true
+    },
+    {
+      "file": "node_modules/pbf/package.json",
+      "present": true
+    },
+    {
+      "file": "node_modules/pngjs/package.json",
+      "present": true
+    }
+  ]
+}

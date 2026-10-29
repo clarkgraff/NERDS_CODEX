@@ -1,0 +1,5151 @@
+{
+  "pathId": "8c25a879-da6b-42a6-9e80-be58ae6ffbad",
+  "pathRevision": "9f28b00e8b367bb680bae0fba32595e12552476ca18d9756fa17d07dcfcdc9eb",
+  "id": "33b09fdb-3b32-4946-8e96-e862f724673e",
+  "preference": "BYPASS",
+  "legs": [
+    {
+      "id": "new-orleans->baton-rouge",
+      "fromId": "new-orleans",
+      "waypointId": "baton-rouge",
+      "transport": "BY-SEA",
+      "inputKey": "b5ce7593fb71d4870df905c8123f5b5f1112638ecfb0a1d492ac8a9060dec001",
+      "points": [
+        {
+          "lat": 29.945665,
+          "lon": -90.061676
+        },
+        {
+          "lat": 29.938422,
+          "lon": -90.064524
+        },
+        {
+          "lat": 29.935126,
+          "lon": -90.068349
+        },
+        {
+          "lat": 29.923651,
+          "lon": -90.096262
+        },
+        {
+          "lat": 29.922065,
+          "lon": -90.106272
+        },
+        {
+          "lat": 29.925889,
+          "lon": -90.122141
+        },
+        {
+          "lat": 29.93244,
+          "lon": -90.128407
+        },
+        {
+          "lat": 29.940456,
+          "lon": -90.132192
+        },
+        {
+          "lat": 29.948798,
+          "lon": -90.14037
+        },
+        {
+          "lat": 29.951768,
+          "lon": -90.159169
+        },
+        {
+          "lat": 29.937852,
+          "lon": -90.194203
+        },
+        {
+          "lat": 29.945665,
+          "lon": -90.212392
+        },
+        {
+          "lat": 29.96365,
+          "lon": -90.231435
+        },
+        {
+          "lat": 29.972032,
+          "lon": -90.246002
+        },
+        {
+          "lat": 29.971544,
+          "lon": -90.261627
+        },
+        {
+          "lat": 29.954901,
+          "lon": -90.303334
+        },
+        {
+          "lat": 29.948269,
+          "lon": -90.32787
+        },
+        {
+          "lat": 29.948106,
+          "lon": -90.353627
+        },
+        {
+          "lat": 29.959581,
+          "lon": -90.376861
+        },
+        {
+          "lat": 29.973456,
+          "lon": -90.388539
+        },
+        {
+          "lat": 29.986192,
+          "lon": -90.396962
+        },
+        {
+          "lat": 29.996772,
+          "lon": -90.408274
+        },
+        {
+          "lat": 30.004014,
+          "lon": -90.428375
+        },
+        {
+          "lat": 30.009467,
+          "lon": -90.465566
+        },
+        {
+          "lat": 30.018663,
+          "lon": -90.473256
+        },
+        {
+          "lat": 30.041571,
+          "lon": -90.475575
+        },
+        {
+          "lat": 30.055487,
+          "lon": -90.482818
+        },
+        {
+          "lat": 30.059516,
+          "lon": -90.500722
+        },
+        {
+          "lat": 30.058661,
+          "lon": -90.544423
+        },
+        {
+          "lat": 30.065131,
+          "lon": -90.576772
+        },
+        {
+          "lat": 30.066026,
+          "lon": -90.589182
+        },
+        {
+          "lat": 30.062812,
+          "lon": -90.59496
+        },
+        {
+          "lat": 30.048285,
+          "lon": -90.613922
+        },
+        {
+          "lat": 30.044989,
+          "lon": -90.62328
+        },
+        {
+          "lat": 30.047065,
+          "lon": -90.634999
+        },
+        {
+          "lat": 30.056423,
+          "lon": -90.655629
+        },
+        {
+          "lat": 30.058661,
+          "lon": -90.667958
+        },
+        {
+          "lat": 30.055976,
+          "lon": -90.678293
+        },
+        {
+          "lat": 30.049872,
+          "lon": -90.688222
+        },
+        {
+          "lat": 30.038153,
+          "lon": -90.702748
+        },
+        {
+          "lat": 30.027777,
+          "lon": -90.71996
+        },
+        {
+          "lat": 30.021511,
+          "lon": -90.735097
+        },
+        {
+          "lat": 30.0185,
+          "lon": -90.751943
+        },
+        {
+          "lat": 30.017646,
+          "lon": -90.774078
+        },
+        {
+          "lat": 30.013861,
+          "lon": -90.797027
+        },
+        {
+          "lat": 30.008612,
+          "lon": -90.812611
+        },
+        {
+          "lat": 30.011501,
+          "lon": -90.825266
+        },
+        {
+          "lat": 30.031928,
+          "lon": -90.839263
+        },
+        {
+          "lat": 30.060981,
+          "lon": -90.849843
+        },
+        {
+          "lat": 30.069444,
+          "lon": -90.856313
+        },
+        {
+          "lat": 30.07449,
+          "lon": -90.864613
+        },
+        {
+          "lat": 30.078152,
+          "lon": -90.882802
+        },
+        {
+          "lat": 30.083116,
+          "lon": -90.891103
+        },
+        {
+          "lat": 30.093695,
+          "lon": -90.898793
+        },
+        {
+          "lat": 30.118516,
+          "lon": -90.912709
+        },
+        {
+          "lat": 30.126899,
+          "lon": -90.921213
+        },
+        {
+          "lat": 30.132636,
+          "lon": -90.934275
+        },
+        {
+          "lat": 30.130479,
+          "lon": -90.938954
+        },
+        {
+          "lat": 30.125027,
+          "lon": -90.941803
+        },
+        {
+          "lat": 30.120673,
+          "lon": -90.949086
+        },
+        {
+          "lat": 30.121405,
+          "lon": -90.986928
+        },
+        {
+          "lat": 30.126166,
+          "lon": -91.01301
+        },
+        {
+          "lat": 30.137478,
+          "lon": -91.02481
+        },
+        {
+          "lat": 30.153998,
+          "lon": -91.021108
+        },
+        {
+          "lat": 30.166612,
+          "lon": -91.014801
+        },
+        {
+          "lat": 30.179267,
+          "lon": -91.013539
+        },
+        {
+          "lat": 30.195828,
+          "lon": -91.02481
+        },
+        {
+          "lat": 30.209784,
+          "lon": -91.045522
+        },
+        {
+          "lat": 30.213162,
+          "lon": -91.065826
+        },
+        {
+          "lat": 30.209418,
+          "lon": -91.109853
+        },
+        {
+          "lat": 30.205837,
+          "lon": -91.119252
+        },
+        {
+          "lat": 30.198513,
+          "lon": -91.127919
+        },
+        {
+          "lat": 30.193305,
+          "lon": -91.137074
+        },
+        {
+          "lat": 30.195828,
+          "lon": -91.147776
+        },
+        {
+          "lat": 30.204779,
+          "lon": -91.154368
+        },
+        {
+          "lat": 30.214871,
+          "lon": -91.154286
+        },
+        {
+          "lat": 30.223985,
+          "lon": -91.15095
+        },
+        {
+          "lat": 30.229926,
+          "lon": -91.147776
+        },
+        {
+          "lat": 30.236355,
+          "lon": -91.140452
+        },
+        {
+          "lat": 30.251654,
+          "lon": -91.117787
+        },
+        {
+          "lat": 30.261298,
+          "lon": -91.112945
+        },
+        {
+          "lat": 30.267279,
+          "lon": -91.116811
+        },
+        {
+          "lat": 30.276068,
+          "lon": -91.136138
+        },
+        {
+          "lat": 30.28144,
+          "lon": -91.144358
+        },
+        {
+          "lat": 30.289333,
+          "lon": -91.160715
+        },
+        {
+          "lat": 30.291368,
+          "lon": -91.222808
+        },
+        {
+          "lat": 30.311591,
+          "lon": -91.213206
+        },
+        {
+          "lat": 30.317979,
+          "lon": -91.194651
+        },
+        {
+          "lat": 30.31977,
+          "lon": -91.171457
+        },
+        {
+          "lat": 30.326117,
+          "lon": -91.147776
+        },
+        {
+          "lat": 30.343533,
+          "lon": -91.156972
+        },
+        {
+          "lat": 30.35163,
+          "lon": -91.17101
+        },
+        {
+          "lat": 30.354071,
+          "lon": -91.189605
+        },
+        {
+          "lat": 30.354071,
+          "lon": -91.212961
+        },
+        {
+          "lat": 30.350124,
+          "lon": -91.232533
+        },
+        {
+          "lat": 30.352403,
+          "lon": -91.240712
+        },
+        {
+          "lat": 30.36404,
+          "lon": -91.243967
+        },
+        {
+          "lat": 30.371161,
+          "lon": -91.242055
+        },
+        {
+          "lat": 30.378933,
+          "lon": -91.237416
+        },
+        {
+          "lat": 30.385077,
+          "lon": -91.23176
+        },
+        {
+          "lat": 30.387559,
+          "lon": -91.226552
+        },
+        {
+          "lat": 30.404853,
+          "lon": -91.203765
+        },
+        {
+          "lat": 30.444525,
+          "lon": -91.192128
+        }
+      ],
+      "distanceNM": 101.3252879103003,
+      "provisionalDistanceNM": 0,
+      "status": "CALCULATED",
+      "evidence": {
+        "grid": "source-waterway-network",
+        "anchors": [
+          {
+            "lat": 29.9511,
+            "lon": -90.0715
+          },
+          {
+            "lat": 30.4515,
+            "lon": -91.1871
+          }
+        ],
+        "waypointIds": [
+          "new-orleans",
+          "baton-rouge"
+        ],
+        "termination": "SOURCE_CONNECTED_PATH",
+        "visitedCells": 156,
+        "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+        "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+        "sourceEdgeIds": [
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2",
+          "ne-river:588:2"
+        ],
+        "sourceAccessEvidence": [
+          {
+            "id": "ne-river:588:2",
+            "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+            "tags": {}
+          }
+        ],
+        "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+        "accessCandidates": [
+          {
+            "waypointId": "new-orleans",
+            "distanceNM": 0.6066741769039674,
+            "candidate": {
+              "lat": 29.945665,
+              "lon": -90.061676
+            },
+            "cell": {
+              "classification": "SOURCE_WATERWAY",
+              "component": null
+            }
+          },
+          {
+            "waypointId": "baton-rouge",
+            "distanceNM": 0.49226287028363963,
+            "candidate": {
+              "lat": 30.444525,
+              "lon": -91.192128
+            },
+            "cell": {
+              "classification": "SOURCE_WATERWAY",
+              "component": null
+            }
+          }
+        ],
+        "automaticConnectorLimitNM": 3,
+        "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+        "vesselSuitability": "SEPARATE_ADVISORY",
+        "effectiveSeparationNM": 0,
+        "dataset": "rivers",
+        "elapsedMs": 6037.420400000003
+      },
+      "operatingMode": "POWER-DIESEL",
+      "accesses": [
+        {
+          "lat": 29.945665,
+          "lon": -90.061676
+        },
+        {
+          "lat": 30.444525,
+          "lon": -91.192128
+        }
+      ],
+      "reason": null,
+      "geographicStatus": "CALCULATED",
+      "suitability": {
+        "mode": "BYPASS",
+        "policy": "ADVISORY_ONLY_BETA",
+        "blocksRouting": false,
+        "status": "BYPASSED",
+        "restrictions": [],
+        "unknowns": [],
+        "checks": []
+      },
+      "standardSpeed": 6,
+      "calculatedSpeed": 10,
+      "standardHours": 16.887547985050052,
+      "calculatedHours": 10.13252879103003,
+      "calculatedCumulativeNM": 101.3252879103003,
+      "totalNM": 101.3252879103003,
+      "totalStandardHours": 16.887547985050052,
+      "totalCalculatedHours": 10.13252879103003,
+      "standardETA": "2026-10-29T12:27:15.863Z",
+      "calculatedETA": "2026-10-29T05:41:57.794Z",
+      "etaStatus": "NOMINAL",
+      "differenceHours": 6.755019194020022,
+      "courseVertices": [
+        {
+          "id": "new-orleans->baton-rouge:auto:0",
+          "pointIndex": 0,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:1",
+          "pointIndex": 1,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:2",
+          "pointIndex": 2,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:3",
+          "pointIndex": 3,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:4",
+          "pointIndex": 4,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:5",
+          "pointIndex": 5,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:6",
+          "pointIndex": 6,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:7",
+          "pointIndex": 7,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:8",
+          "pointIndex": 8,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:9",
+          "pointIndex": 9,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:10",
+          "pointIndex": 10,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:11",
+          "pointIndex": 11,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:12",
+          "pointIndex": 12,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:13",
+          "pointIndex": 13,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:14",
+          "pointIndex": 14,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:15",
+          "pointIndex": 15,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:16",
+          "pointIndex": 16,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:17",
+          "pointIndex": 17,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:18",
+          "pointIndex": 18,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:19",
+          "pointIndex": 19,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:20",
+          "pointIndex": 20,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:21",
+          "pointIndex": 21,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:22",
+          "pointIndex": 22,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:23",
+          "pointIndex": 23,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:24",
+          "pointIndex": 24,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:25",
+          "pointIndex": 25,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:26",
+          "pointIndex": 26,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:27",
+          "pointIndex": 27,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:28",
+          "pointIndex": 28,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:29",
+          "pointIndex": 29,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:30",
+          "pointIndex": 30,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:31",
+          "pointIndex": 31,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:32",
+          "pointIndex": 32,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:33",
+          "pointIndex": 33,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:34",
+          "pointIndex": 34,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:35",
+          "pointIndex": 35,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:36",
+          "pointIndex": 36,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:37",
+          "pointIndex": 37,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:38",
+          "pointIndex": 38,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:39",
+          "pointIndex": 39,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:40",
+          "pointIndex": 40,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:41",
+          "pointIndex": 41,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:42",
+          "pointIndex": 42,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:43",
+          "pointIndex": 43,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:44",
+          "pointIndex": 44,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:45",
+          "pointIndex": 45,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:46",
+          "pointIndex": 46,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:47",
+          "pointIndex": 47,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:48",
+          "pointIndex": 48,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:49",
+          "pointIndex": 49,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:50",
+          "pointIndex": 50,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:51",
+          "pointIndex": 51,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:52",
+          "pointIndex": 52,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:53",
+          "pointIndex": 53,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:54",
+          "pointIndex": 54,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:55",
+          "pointIndex": 55,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:56",
+          "pointIndex": 56,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:57",
+          "pointIndex": 57,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:58",
+          "pointIndex": 58,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:59",
+          "pointIndex": 59,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:60",
+          "pointIndex": 60,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:61",
+          "pointIndex": 61,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:62",
+          "pointIndex": 62,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:63",
+          "pointIndex": 63,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:64",
+          "pointIndex": 64,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:65",
+          "pointIndex": 65,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:66",
+          "pointIndex": 66,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:67",
+          "pointIndex": 67,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:68",
+          "pointIndex": 68,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:69",
+          "pointIndex": 69,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:70",
+          "pointIndex": 70,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:71",
+          "pointIndex": 71,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:72",
+          "pointIndex": 72,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:73",
+          "pointIndex": 73,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:74",
+          "pointIndex": 74,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:75",
+          "pointIndex": 75,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:76",
+          "pointIndex": 76,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:77",
+          "pointIndex": 77,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:78",
+          "pointIndex": 78,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:79",
+          "pointIndex": 79,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:80",
+          "pointIndex": 80,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:81",
+          "pointIndex": 81,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:82",
+          "pointIndex": 82,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:83",
+          "pointIndex": 83,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:84",
+          "pointIndex": 84,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:85",
+          "pointIndex": 85,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:86",
+          "pointIndex": 86,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:87",
+          "pointIndex": 87,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:88",
+          "pointIndex": 88,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:89",
+          "pointIndex": 89,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:90",
+          "pointIndex": 90,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:91",
+          "pointIndex": 91,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:92",
+          "pointIndex": 92,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:93",
+          "pointIndex": 93,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:94",
+          "pointIndex": 94,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:95",
+          "pointIndex": 95,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:96",
+          "pointIndex": 96,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:97",
+          "pointIndex": 97,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:98",
+          "pointIndex": 98,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:99",
+          "pointIndex": 99,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:100",
+          "pointIndex": 100,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:101",
+          "pointIndex": 101,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "new-orleans->baton-rouge:auto:102",
+          "pointIndex": 102,
+          "kind": "AUTOMATIC"
+        }
+      ],
+      "transitionBefore": null
+    }
+  ],
+  "complete": true,
+  "unresolvedLegs": 0,
+  "calculatedDistanceNM": 101.3252879103003,
+  "provisionalDistanceNM": 0,
+  "totalEstimatedDistanceNM": 101.3252879103003,
+  "calculatedStandardHours": 16.887547985050052,
+  "calculatedOperatingHours": 10.13252879103003,
+  "provisionalStandardHours": 0,
+  "provisionalOperatingHours": 0,
+  "totalNM": 101.3252879103003,
+  "standardHours": 16.887547985050052,
+  "calculatedHours": 10.13252879103003,
+  "effectiveSOG": 10,
+  "standardETA": "2026-10-29T12:27:15.863Z",
+  "calculatedETA": "2026-10-29T05:41:57.794Z",
+  "differenceHours": 6.755019194020022,
+  "userCoarseCourse": {
+    "id": "3df86e67-2659-412f-99e5-ad34a0ff771e",
+    "pathId": "8c25a879-da6b-42a6-9e80-be58ae6ffbad",
+    "pathRevision": "9f28b00e8b367bb680bae0fba32595e12552476ca18d9756fa17d07dcfcdc9eb",
+    "stage": "COARSE",
+    "byWay": "BY-SEA",
+    "operationalMode": "BYPASS",
+    "knots": 6,
+    "geometryDefinition": "WGS84_ELLIPSOID_GEODESIC",
+    "status": "INTENT_ONLY_NOT_GEOGRAPHIC_CONNECTIVITY",
+    "legs": [
+      {
+        "fromId": "new-orleans",
+        "toId": "baton-rouge",
+        "points": [
+          {
+            "id": "new-orleans",
+            "name": "New Orleans",
+            "lat": 29.9511,
+            "lon": -90.0715
+          },
+          {
+            "id": "baton-rouge",
+            "name": "Baton Rouge",
+            "lat": 30.4515,
+            "lon": -91.1871
+          }
+        ],
+        "distanceNM": 65.27999254355232,
+        "hours": 10.87999875725872,
+        "cumulativeNM": 65.27999254355232,
+        "eta": "2026-10-29T06:26:48.686Z"
+      }
+    ],
+    "totalNM": 65.27999254355232,
+    "hours": 10.87999875725872
+  },
+  "suitability": {
+    "mode": "BYPASS",
+    "policy": "ADVISORY_ONLY_BETA",
+    "blocksRouting": false
+  },
+  "engineVersion": "0.4.1-course-3",
+  "selectedId": "33b09fdb-3b32-4946-8e96-e862f724673e",
+  "alternatives": [
+    {
+      "id": "33b09fdb-3b32-4946-8e96-e862f724673e",
+      "preference": "BYPASS",
+      "legs": [
+        {
+          "id": "new-orleans->baton-rouge",
+          "fromId": "new-orleans",
+          "waypointId": "baton-rouge",
+          "transport": "BY-SEA",
+          "inputKey": "b5ce7593fb71d4870df905c8123f5b5f1112638ecfb0a1d492ac8a9060dec001",
+          "points": [
+            {
+              "lat": 29.945665,
+              "lon": -90.061676
+            },
+            {
+              "lat": 29.938422,
+              "lon": -90.064524
+            },
+            {
+              "lat": 29.935126,
+              "lon": -90.068349
+            },
+            {
+              "lat": 29.923651,
+              "lon": -90.096262
+            },
+            {
+              "lat": 29.922065,
+              "lon": -90.106272
+            },
+            {
+              "lat": 29.925889,
+              "lon": -90.122141
+            },
+            {
+              "lat": 29.93244,
+              "lon": -90.128407
+            },
+            {
+              "lat": 29.940456,
+              "lon": -90.132192
+            },
+            {
+              "lat": 29.948798,
+              "lon": -90.14037
+            },
+            {
+              "lat": 29.951768,
+              "lon": -90.159169
+            },
+            {
+              "lat": 29.937852,
+              "lon": -90.194203
+            },
+            {
+              "lat": 29.945665,
+              "lon": -90.212392
+            },
+            {
+              "lat": 29.96365,
+              "lon": -90.231435
+            },
+            {
+              "lat": 29.972032,
+              "lon": -90.246002
+            },
+            {
+              "lat": 29.971544,
+              "lon": -90.261627
+            },
+            {
+              "lat": 29.954901,
+              "lon": -90.303334
+            },
+            {
+              "lat": 29.948269,
+              "lon": -90.32787
+            },
+            {
+              "lat": 29.948106,
+              "lon": -90.353627
+            },
+            {
+              "lat": 29.959581,
+              "lon": -90.376861
+            },
+            {
+              "lat": 29.973456,
+              "lon": -90.388539
+            },
+            {
+              "lat": 29.986192,
+              "lon": -90.396962
+            },
+            {
+              "lat": 29.996772,
+              "lon": -90.408274
+            },
+            {
+              "lat": 30.004014,
+              "lon": -90.428375
+            },
+            {
+              "lat": 30.009467,
+              "lon": -90.465566
+            },
+            {
+              "lat": 30.018663,
+              "lon": -90.473256
+            },
+            {
+              "lat": 30.041571,
+              "lon": -90.475575
+            },
+            {
+              "lat": 30.055487,
+              "lon": -90.482818
+            },
+            {
+              "lat": 30.059516,
+              "lon": -90.500722
+            },
+            {
+              "lat": 30.058661,
+              "lon": -90.544423
+            },
+            {
+              "lat": 30.065131,
+              "lon": -90.576772
+            },
+            {
+              "lat": 30.066026,
+              "lon": -90.589182
+            },
+            {
+              "lat": 30.062812,
+              "lon": -90.59496
+            },
+            {
+              "lat": 30.048285,
+              "lon": -90.613922
+            },
+            {
+              "lat": 30.044989,
+              "lon": -90.62328
+            },
+            {
+              "lat": 30.047065,
+              "lon": -90.634999
+            },
+            {
+              "lat": 30.056423,
+              "lon": -90.655629
+            },
+            {
+              "lat": 30.058661,
+              "lon": -90.667958
+            },
+            {
+              "lat": 30.055976,
+              "lon": -90.678293
+            },
+            {
+              "lat": 30.049872,
+              "lon": -90.688222
+            },
+            {
+              "lat": 30.038153,
+              "lon": -90.702748
+            },
+            {
+              "lat": 30.027777,
+              "lon": -90.71996
+            },
+            {
+              "lat": 30.021511,
+              "lon": -90.735097
+            },
+            {
+              "lat": 30.0185,
+              "lon": -90.751943
+            },
+            {
+              "lat": 30.017646,
+              "lon": -90.774078
+            },
+            {
+              "lat": 30.013861,
+              "lon": -90.797027
+            },
+            {
+              "lat": 30.008612,
+              "lon": -90.812611
+            },
+            {
+              "lat": 30.011501,
+              "lon": -90.825266
+            },
+            {
+              "lat": 30.031928,
+              "lon": -90.839263
+            },
+            {
+              "lat": 30.060981,
+              "lon": -90.849843
+            },
+            {
+              "lat": 30.069444,
+              "lon": -90.856313
+            },
+            {
+              "lat": 30.07449,
+              "lon": -90.864613
+            },
+            {
+              "lat": 30.078152,
+              "lon": -90.882802
+            },
+            {
+              "lat": 30.083116,
+              "lon": -90.891103
+            },
+            {
+              "lat": 30.093695,
+              "lon": -90.898793
+            },
+            {
+              "lat": 30.118516,
+              "lon": -90.912709
+            },
+            {
+              "lat": 30.126899,
+              "lon": -90.921213
+            },
+            {
+              "lat": 30.132636,
+              "lon": -90.934275
+            },
+            {
+              "lat": 30.130479,
+              "lon": -90.938954
+            },
+            {
+              "lat": 30.125027,
+              "lon": -90.941803
+            },
+            {
+              "lat": 30.120673,
+              "lon": -90.949086
+            },
+            {
+              "lat": 30.121405,
+              "lon": -90.986928
+            },
+            {
+              "lat": 30.126166,
+              "lon": -91.01301
+            },
+            {
+              "lat": 30.137478,
+              "lon": -91.02481
+            },
+            {
+              "lat": 30.153998,
+              "lon": -91.021108
+            },
+            {
+              "lat": 30.166612,
+              "lon": -91.014801
+            },
+            {
+              "lat": 30.179267,
+              "lon": -91.013539
+            },
+            {
+              "lat": 30.195828,
+              "lon": -91.02481
+            },
+            {
+              "lat": 30.209784,
+              "lon": -91.045522
+            },
+            {
+              "lat": 30.213162,
+              "lon": -91.065826
+            },
+            {
+              "lat": 30.209418,
+              "lon": -91.109853
+            },
+            {
+              "lat": 30.205837,
+              "lon": -91.119252
+            },
+            {
+              "lat": 30.198513,
+              "lon": -91.127919
+            },
+            {
+              "lat": 30.193305,
+              "lon": -91.137074
+            },
+            {
+              "lat": 30.195828,
+              "lon": -91.147776
+            },
+            {
+              "lat": 30.204779,
+              "lon": -91.154368
+            },
+            {
+              "lat": 30.214871,
+              "lon": -91.154286
+            },
+            {
+              "lat": 30.223985,
+              "lon": -91.15095
+            },
+            {
+              "lat": 30.229926,
+              "lon": -91.147776
+            },
+            {
+              "lat": 30.236355,
+              "lon": -91.140452
+            },
+            {
+              "lat": 30.251654,
+              "lon": -91.117787
+            },
+            {
+              "lat": 30.261298,
+              "lon": -91.112945
+            },
+            {
+              "lat": 30.267279,
+              "lon": -91.116811
+            },
+            {
+              "lat": 30.276068,
+              "lon": -91.136138
+            },
+            {
+              "lat": 30.28144,
+              "lon": -91.144358
+            },
+            {
+              "lat": 30.289333,
+              "lon": -91.160715
+            },
+            {
+              "lat": 30.291368,
+              "lon": -91.222808
+            },
+            {
+              "lat": 30.311591,
+              "lon": -91.213206
+            },
+            {
+              "lat": 30.317979,
+              "lon": -91.194651
+            },
+            {
+              "lat": 30.31977,
+              "lon": -91.171457
+            },
+            {
+              "lat": 30.326117,
+              "lon": -91.147776
+            },
+            {
+              "lat": 30.343533,
+              "lon": -91.156972
+            },
+            {
+              "lat": 30.35163,
+              "lon": -91.17101
+            },
+            {
+              "lat": 30.354071,
+              "lon": -91.189605
+            },
+            {
+              "lat": 30.354071,
+              "lon": -91.212961
+            },
+            {
+              "lat": 30.350124,
+              "lon": -91.232533
+            },
+            {
+              "lat": 30.352403,
+              "lon": -91.240712
+            },
+            {
+              "lat": 30.36404,
+              "lon": -91.243967
+            },
+            {
+              "lat": 30.371161,
+              "lon": -91.242055
+            },
+            {
+              "lat": 30.378933,
+              "lon": -91.237416
+            },
+            {
+              "lat": 30.385077,
+              "lon": -91.23176
+            },
+            {
+              "lat": 30.387559,
+              "lon": -91.226552
+            },
+            {
+              "lat": 30.404853,
+              "lon": -91.203765
+            },
+            {
+              "lat": 30.444525,
+              "lon": -91.192128
+            }
+          ],
+          "distanceNM": 101.3252879103003,
+          "provisionalDistanceNM": 0,
+          "status": "CALCULATED",
+          "evidence": {
+            "grid": "source-waterway-network",
+            "anchors": [
+              {
+                "lat": 29.9511,
+                "lon": -90.0715
+              },
+              {
+                "lat": 30.4515,
+                "lon": -91.1871
+              }
+            ],
+            "waypointIds": [
+              "new-orleans",
+              "baton-rouge"
+            ],
+            "termination": "SOURCE_CONNECTED_PATH",
+            "visitedCells": 156,
+            "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+            "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "sourceEdgeIds": [
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2",
+              "ne-river:588:2"
+            ],
+            "sourceAccessEvidence": [
+              {
+                "id": "ne-river:588:2",
+                "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+                "tags": {}
+              }
+            ],
+            "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+            "accessCandidates": [
+              {
+                "waypointId": "new-orleans",
+                "distanceNM": 0.6066741769039674,
+                "candidate": {
+                  "lat": 29.945665,
+                  "lon": -90.061676
+                },
+                "cell": {
+                  "classification": "SOURCE_WATERWAY",
+                  "component": null
+                }
+              },
+              {
+                "waypointId": "baton-rouge",
+                "distanceNM": 0.49226287028363963,
+                "candidate": {
+                  "lat": 30.444525,
+                  "lon": -91.192128
+                },
+                "cell": {
+                  "classification": "SOURCE_WATERWAY",
+                  "component": null
+                }
+              }
+            ],
+            "automaticConnectorLimitNM": 3,
+            "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+            "vesselSuitability": "SEPARATE_ADVISORY",
+            "effectiveSeparationNM": 0,
+            "dataset": "rivers",
+            "elapsedMs": 6037.420400000003
+          },
+          "operatingMode": "POWER-DIESEL",
+          "accesses": [
+            {
+              "lat": 29.945665,
+              "lon": -90.061676
+            },
+            {
+              "lat": 30.444525,
+              "lon": -91.192128
+            }
+          ],
+          "reason": null,
+          "geographicStatus": "CALCULATED",
+          "suitability": {
+            "mode": "BYPASS",
+            "policy": "ADVISORY_ONLY_BETA",
+            "blocksRouting": false,
+            "status": "BYPASSED",
+            "restrictions": [],
+            "unknowns": [],
+            "checks": []
+          },
+          "standardSpeed": 6,
+          "calculatedSpeed": 10,
+          "standardHours": 16.887547985050052,
+          "calculatedHours": 10.13252879103003,
+          "calculatedCumulativeNM": 101.3252879103003,
+          "totalNM": 101.3252879103003,
+          "totalStandardHours": 16.887547985050052,
+          "totalCalculatedHours": 10.13252879103003,
+          "standardETA": "2026-10-29T12:27:15.863Z",
+          "calculatedETA": "2026-10-29T05:41:57.794Z",
+          "etaStatus": "NOMINAL",
+          "differenceHours": 6.755019194020022,
+          "courseVertices": [
+            {
+              "id": "new-orleans->baton-rouge:auto:0",
+              "pointIndex": 0,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:1",
+              "pointIndex": 1,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:2",
+              "pointIndex": 2,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:3",
+              "pointIndex": 3,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:4",
+              "pointIndex": 4,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:5",
+              "pointIndex": 5,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:6",
+              "pointIndex": 6,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:7",
+              "pointIndex": 7,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:8",
+              "pointIndex": 8,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:9",
+              "pointIndex": 9,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:10",
+              "pointIndex": 10,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:11",
+              "pointIndex": 11,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:12",
+              "pointIndex": 12,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:13",
+              "pointIndex": 13,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:14",
+              "pointIndex": 14,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:15",
+              "pointIndex": 15,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:16",
+              "pointIndex": 16,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:17",
+              "pointIndex": 17,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:18",
+              "pointIndex": 18,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:19",
+              "pointIndex": 19,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:20",
+              "pointIndex": 20,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:21",
+              "pointIndex": 21,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:22",
+              "pointIndex": 22,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:23",
+              "pointIndex": 23,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:24",
+              "pointIndex": 24,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:25",
+              "pointIndex": 25,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:26",
+              "pointIndex": 26,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:27",
+              "pointIndex": 27,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:28",
+              "pointIndex": 28,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:29",
+              "pointIndex": 29,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:30",
+              "pointIndex": 30,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:31",
+              "pointIndex": 31,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:32",
+              "pointIndex": 32,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:33",
+              "pointIndex": 33,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:34",
+              "pointIndex": 34,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:35",
+              "pointIndex": 35,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:36",
+              "pointIndex": 36,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:37",
+              "pointIndex": 37,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:38",
+              "pointIndex": 38,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:39",
+              "pointIndex": 39,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:40",
+              "pointIndex": 40,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:41",
+              "pointIndex": 41,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:42",
+              "pointIndex": 42,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:43",
+              "pointIndex": 43,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:44",
+              "pointIndex": 44,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:45",
+              "pointIndex": 45,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:46",
+              "pointIndex": 46,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:47",
+              "pointIndex": 47,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:48",
+              "pointIndex": 48,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:49",
+              "pointIndex": 49,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:50",
+              "pointIndex": 50,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:51",
+              "pointIndex": 51,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:52",
+              "pointIndex": 52,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:53",
+              "pointIndex": 53,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:54",
+              "pointIndex": 54,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:55",
+              "pointIndex": 55,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:56",
+              "pointIndex": 56,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:57",
+              "pointIndex": 57,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:58",
+              "pointIndex": 58,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:59",
+              "pointIndex": 59,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:60",
+              "pointIndex": 60,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:61",
+              "pointIndex": 61,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:62",
+              "pointIndex": 62,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:63",
+              "pointIndex": 63,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:64",
+              "pointIndex": 64,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:65",
+              "pointIndex": 65,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:66",
+              "pointIndex": 66,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:67",
+              "pointIndex": 67,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:68",
+              "pointIndex": 68,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:69",
+              "pointIndex": 69,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:70",
+              "pointIndex": 70,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:71",
+              "pointIndex": 71,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:72",
+              "pointIndex": 72,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:73",
+              "pointIndex": 73,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:74",
+              "pointIndex": 74,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:75",
+              "pointIndex": 75,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:76",
+              "pointIndex": 76,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:77",
+              "pointIndex": 77,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:78",
+              "pointIndex": 78,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:79",
+              "pointIndex": 79,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:80",
+              "pointIndex": 80,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:81",
+              "pointIndex": 81,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:82",
+              "pointIndex": 82,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:83",
+              "pointIndex": 83,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:84",
+              "pointIndex": 84,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:85",
+              "pointIndex": 85,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:86",
+              "pointIndex": 86,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:87",
+              "pointIndex": 87,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:88",
+              "pointIndex": 88,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:89",
+              "pointIndex": 89,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:90",
+              "pointIndex": 90,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:91",
+              "pointIndex": 91,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:92",
+              "pointIndex": 92,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:93",
+              "pointIndex": 93,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:94",
+              "pointIndex": 94,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:95",
+              "pointIndex": 95,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:96",
+              "pointIndex": 96,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:97",
+              "pointIndex": 97,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:98",
+              "pointIndex": 98,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:99",
+              "pointIndex": 99,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:100",
+              "pointIndex": 100,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:101",
+              "pointIndex": 101,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "new-orleans->baton-rouge:auto:102",
+              "pointIndex": 102,
+              "kind": "AUTOMATIC"
+            }
+          ],
+          "transitionBefore": null
+        }
+      ],
+      "complete": true,
+      "unresolvedLegs": 0,
+      "calculatedDistanceNM": 101.3252879103003,
+      "provisionalDistanceNM": 0,
+      "totalEstimatedDistanceNM": 101.3252879103003,
+      "calculatedStandardHours": 16.887547985050052,
+      "calculatedOperatingHours": 10.13252879103003,
+      "provisionalStandardHours": 0,
+      "provisionalOperatingHours": 0,
+      "totalNM": 101.3252879103003,
+      "standardHours": 16.887547985050052,
+      "calculatedHours": 10.13252879103003,
+      "effectiveSOG": 10,
+      "standardETA": "2026-10-29T12:27:15.863Z",
+      "calculatedETA": "2026-10-29T05:41:57.794Z",
+      "differenceHours": 6.755019194020022
+    }
+  ],
+  "requestedPreferences": {
+    "routePreference": "OFFSHORE PREFERRED",
+    "coastalSeparationNM": 10,
+    "objective": "BEST-TIME"
+  },
+  "effectivePreferences": {
+    "bypass": true,
+    "separationNM": 0
+  },
+  "kind": "water-outline",
+  "status": "PRELIMINARY ROUTE — 0 LEGS REFINED — ACCESS TRANSFERS UNRESOLVED",
+  "createdAt": "2026-10-28T19:34:06.780Z",
+  "connectors": [
+    {
+      "id": "new-orleans->baton-rouge:0",
+      "waypointId": "new-orleans",
+      "anchor": {
+        "lat": 29.9511,
+        "lon": -90.0715
+      },
+      "access": {
+        "lat": 29.945665,
+        "lon": -90.061676
+      },
+      "distanceNM": 0.6066741769039674,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    },
+    {
+      "id": "new-orleans->baton-rouge:1",
+      "waypointId": "baton-rouge",
+      "anchor": {
+        "lat": 30.4515,
+        "lon": -91.1871
+      },
+      "access": {
+        "lat": 30.444525,
+        "lon": -91.192128
+      },
+      "distanceNM": 0.49226287028363963,
+      "includedInPassage": false,
+      "status": "PROVISIONAL_TRANSFER",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    }
+  ],
+  "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+  "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+  "confidence": "Coarse planning only; city/shore connectors unverified",
+  "constraints": [
+    {
+      "type": "depth-under-keel",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "air-draft-bridge",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "canal-lock",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "traffic-restriction",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "passage-exclusion",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "reef-shoal",
+      "status": "unresolved",
+      "source": null
+    }
+  ],
+  "validation": {
+    "landMask": "screened at selected grid resolution",
+    "depth": "unresolved",
+    "bridges": "unresolved",
+    "restrictions": "unresolved",
+    "forecast": "nominal speeds only"
+  },
+  "geometryDefinition": {
+    "authoritative": "legs[].points",
+    "segmentType": "GEODESIC",
+    "coordinateDatum": "WGS84",
+    "distanceModel": "WGS84_ELLIPSOID",
+    "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+    "presentation": "Derived renderer-only geometry; never used for calculation or export"
+  },
+  "distanceComponents": {
+    "vesselPassageNM": 101.3252879103003,
+    "unverifiedConnectorGeometryNM": 1.098937047187607,
+    "connectorsIncludedInVesselDistance": false,
+    "completeExpeditionNM": null
+  },
+  "endpointStatus": "UNRESOLVED_ACCESS_TRANSFER",
+  "coarseCourse": {
+    "pathId": "8c25a879-da6b-42a6-9e80-be58ae6ffbad",
+    "pathRevision": "9f28b00e8b367bb680bae0fba32595e12552476ca18d9756fa17d07dcfcdc9eb",
+    "id": "33b09fdb-3b32-4946-8e96-e862f724673e",
+    "preference": "BYPASS",
+    "legs": [
+      {
+        "id": "new-orleans->baton-rouge",
+        "fromId": "new-orleans",
+        "waypointId": "baton-rouge",
+        "transport": "BY-SEA",
+        "inputKey": "b5ce7593fb71d4870df905c8123f5b5f1112638ecfb0a1d492ac8a9060dec001",
+        "points": [
+          {
+            "lat": 29.945665,
+            "lon": -90.061676
+          },
+          {
+            "lat": 29.938422,
+            "lon": -90.064524
+          },
+          {
+            "lat": 29.935126,
+            "lon": -90.068349
+          },
+          {
+            "lat": 29.923651,
+            "lon": -90.096262
+          },
+          {
+            "lat": 29.922065,
+            "lon": -90.106272
+          },
+          {
+            "lat": 29.925889,
+            "lon": -90.122141
+          },
+          {
+            "lat": 29.93244,
+            "lon": -90.128407
+          },
+          {
+            "lat": 29.940456,
+            "lon": -90.132192
+          },
+          {
+            "lat": 29.948798,
+            "lon": -90.14037
+          },
+          {
+            "lat": 29.951768,
+            "lon": -90.159169
+          },
+          {
+            "lat": 29.937852,
+            "lon": -90.194203
+          },
+          {
+            "lat": 29.945665,
+            "lon": -90.212392
+          },
+          {
+            "lat": 29.96365,
+            "lon": -90.231435
+          },
+          {
+            "lat": 29.972032,
+            "lon": -90.246002
+          },
+          {
+            "lat": 29.971544,
+            "lon": -90.261627
+          },
+          {
+            "lat": 29.954901,
+            "lon": -90.303334
+          },
+          {
+            "lat": 29.948269,
+            "lon": -90.32787
+          },
+          {
+            "lat": 29.948106,
+            "lon": -90.353627
+          },
+          {
+            "lat": 29.959581,
+            "lon": -90.376861
+          },
+          {
+            "lat": 29.973456,
+            "lon": -90.388539
+          },
+          {
+            "lat": 29.986192,
+            "lon": -90.396962
+          },
+          {
+            "lat": 29.996772,
+            "lon": -90.408274
+          },
+          {
+            "lat": 30.004014,
+            "lon": -90.428375
+          },
+          {
+            "lat": 30.009467,
+            "lon": -90.465566
+          },
+          {
+            "lat": 30.018663,
+            "lon": -90.473256
+          },
+          {
+            "lat": 30.041571,
+            "lon": -90.475575
+          },
+          {
+            "lat": 30.055487,
+            "lon": -90.482818
+          },
+          {
+            "lat": 30.059516,
+            "lon": -90.500722
+          },
+          {
+            "lat": 30.058661,
+            "lon": -90.544423
+          },
+          {
+            "lat": 30.065131,
+            "lon": -90.576772
+          },
+          {
+            "lat": 30.066026,
+            "lon": -90.589182
+          },
+          {
+            "lat": 30.062812,
+            "lon": -90.59496
+          },
+          {
+            "lat": 30.048285,
+            "lon": -90.613922
+          },
+          {
+            "lat": 30.044989,
+            "lon": -90.62328
+          },
+          {
+            "lat": 30.047065,
+            "lon": -90.634999
+          },
+          {
+            "lat": 30.056423,
+            "lon": -90.655629
+          },
+          {
+            "lat": 30.058661,
+            "lon": -90.667958
+          },
+          {
+            "lat": 30.055976,
+            "lon": -90.678293
+          },
+          {
+            "lat": 30.049872,
+            "lon": -90.688222
+          },
+          {
+            "lat": 30.038153,
+            "lon": -90.702748
+          },
+          {
+            "lat": 30.027777,
+            "lon": -90.71996
+          },
+          {
+            "lat": 30.021511,
+            "lon": -90.735097
+          },
+          {
+            "lat": 30.0185,
+            "lon": -90.751943
+          },
+          {
+            "lat": 30.017646,
+            "lon": -90.774078
+          },
+          {
+            "lat": 30.013861,
+            "lon": -90.797027
+          },
+          {
+            "lat": 30.008612,
+            "lon": -90.812611
+          },
+          {
+            "lat": 30.011501,
+            "lon": -90.825266
+          },
+          {
+            "lat": 30.031928,
+            "lon": -90.839263
+          },
+          {
+            "lat": 30.060981,
+            "lon": -90.849843
+          },
+          {
+            "lat": 30.069444,
+            "lon": -90.856313
+          },
+          {
+            "lat": 30.07449,
+            "lon": -90.864613
+          },
+          {
+            "lat": 30.078152,
+            "lon": -90.882802
+          },
+          {
+            "lat": 30.083116,
+            "lon": -90.891103
+          },
+          {
+            "lat": 30.093695,
+            "lon": -90.898793
+          },
+          {
+            "lat": 30.118516,
+            "lon": -90.912709
+          },
+          {
+            "lat": 30.126899,
+            "lon": -90.921213
+          },
+          {
+            "lat": 30.132636,
+            "lon": -90.934275
+          },
+          {
+            "lat": 30.130479,
+            "lon": -90.938954
+          },
+          {
+            "lat": 30.125027,
+            "lon": -90.941803
+          },
+          {
+            "lat": 30.120673,
+            "lon": -90.949086
+          },
+          {
+            "lat": 30.121405,
+            "lon": -90.986928
+          },
+          {
+            "lat": 30.126166,
+            "lon": -91.01301
+          },
+          {
+            "lat": 30.137478,
+            "lon": -91.02481
+          },
+          {
+            "lat": 30.153998,
+            "lon": -91.021108
+          },
+          {
+            "lat": 30.166612,
+            "lon": -91.014801
+          },
+          {
+            "lat": 30.179267,
+            "lon": -91.013539
+          },
+          {
+            "lat": 30.195828,
+            "lon": -91.02481
+          },
+          {
+            "lat": 30.209784,
+            "lon": -91.045522
+          },
+          {
+            "lat": 30.213162,
+            "lon": -91.065826
+          },
+          {
+            "lat": 30.209418,
+            "lon": -91.109853
+          },
+          {
+            "lat": 30.205837,
+            "lon": -91.119252
+          },
+          {
+            "lat": 30.198513,
+            "lon": -91.127919
+          },
+          {
+            "lat": 30.193305,
+            "lon": -91.137074
+          },
+          {
+            "lat": 30.195828,
+            "lon": -91.147776
+          },
+          {
+            "lat": 30.204779,
+            "lon": -91.154368
+          },
+          {
+            "lat": 30.214871,
+            "lon": -91.154286
+          },
+          {
+            "lat": 30.223985,
+            "lon": -91.15095
+          },
+          {
+            "lat": 30.229926,
+            "lon": -91.147776
+          },
+          {
+            "lat": 30.236355,
+            "lon": -91.140452
+          },
+          {
+            "lat": 30.251654,
+            "lon": -91.117787
+          },
+          {
+            "lat": 30.261298,
+            "lon": -91.112945
+          },
+          {
+            "lat": 30.267279,
+            "lon": -91.116811
+          },
+          {
+            "lat": 30.276068,
+            "lon": -91.136138
+          },
+          {
+            "lat": 30.28144,
+            "lon": -91.144358
+          },
+          {
+            "lat": 30.289333,
+            "lon": -91.160715
+          },
+          {
+            "lat": 30.291368,
+            "lon": -91.222808
+          },
+          {
+            "lat": 30.311591,
+            "lon": -91.213206
+          },
+          {
+            "lat": 30.317979,
+            "lon": -91.194651
+          },
+          {
+            "lat": 30.31977,
+            "lon": -91.171457
+          },
+          {
+            "lat": 30.326117,
+            "lon": -91.147776
+          },
+          {
+            "lat": 30.343533,
+            "lon": -91.156972
+          },
+          {
+            "lat": 30.35163,
+            "lon": -91.17101
+          },
+          {
+            "lat": 30.354071,
+            "lon": -91.189605
+          },
+          {
+            "lat": 30.354071,
+            "lon": -91.212961
+          },
+          {
+            "lat": 30.350124,
+            "lon": -91.232533
+          },
+          {
+            "lat": 30.352403,
+            "lon": -91.240712
+          },
+          {
+            "lat": 30.36404,
+            "lon": -91.243967
+          },
+          {
+            "lat": 30.371161,
+            "lon": -91.242055
+          },
+          {
+            "lat": 30.378933,
+            "lon": -91.237416
+          },
+          {
+            "lat": 30.385077,
+            "lon": -91.23176
+          },
+          {
+            "lat": 30.387559,
+            "lon": -91.226552
+          },
+          {
+            "lat": 30.404853,
+            "lon": -91.203765
+          },
+          {
+            "lat": 30.444525,
+            "lon": -91.192128
+          }
+        ],
+        "distanceNM": 101.3252879103003,
+        "provisionalDistanceNM": 0,
+        "status": "CALCULATED",
+        "evidence": {
+          "grid": "source-waterway-network",
+          "anchors": [
+            {
+              "lat": 29.9511,
+              "lon": -90.0715
+            },
+            {
+              "lat": 30.4515,
+              "lon": -91.1871
+            }
+          ],
+          "waypointIds": [
+            "new-orleans",
+            "baton-rouge"
+          ],
+          "termination": "SOURCE_CONNECTED_PATH",
+          "visitedCells": 156,
+          "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+          "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+          "sourceEdgeIds": [
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2"
+          ],
+          "sourceAccessEvidence": [
+            {
+              "id": "ne-river:588:2",
+              "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+              "tags": {}
+            }
+          ],
+          "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+          "accessCandidates": [
+            {
+              "waypointId": "new-orleans",
+              "distanceNM": 0.6066741769039674,
+              "candidate": {
+                "lat": 29.945665,
+                "lon": -90.061676
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            },
+            {
+              "waypointId": "baton-rouge",
+              "distanceNM": 0.49226287028363963,
+              "candidate": {
+                "lat": 30.444525,
+                "lon": -91.192128
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            }
+          ],
+          "automaticConnectorLimitNM": 3,
+          "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+          "vesselSuitability": "SEPARATE_ADVISORY",
+          "effectiveSeparationNM": 0,
+          "dataset": "rivers",
+          "elapsedMs": 6037.420400000003
+        },
+        "operatingMode": "POWER-DIESEL",
+        "accesses": [
+          {
+            "lat": 29.945665,
+            "lon": -90.061676
+          },
+          {
+            "lat": 30.444525,
+            "lon": -91.192128
+          }
+        ],
+        "reason": null,
+        "geographicStatus": "CALCULATED",
+        "suitability": {
+          "mode": "BYPASS",
+          "policy": "ADVISORY_ONLY_BETA",
+          "blocksRouting": false,
+          "status": "BYPASSED",
+          "restrictions": [],
+          "unknowns": [],
+          "checks": []
+        },
+        "standardSpeed": 6,
+        "calculatedSpeed": 10,
+        "standardHours": 16.887547985050052,
+        "calculatedHours": 10.13252879103003,
+        "calculatedCumulativeNM": 101.3252879103003,
+        "totalNM": 101.3252879103003,
+        "totalStandardHours": 16.887547985050052,
+        "totalCalculatedHours": 10.13252879103003,
+        "standardETA": "2026-10-29T12:27:15.863Z",
+        "calculatedETA": "2026-10-29T05:41:57.794Z",
+        "etaStatus": "NOMINAL",
+        "differenceHours": 6.755019194020022,
+        "courseVertices": [
+          {
+            "id": "new-orleans->baton-rouge:auto:0",
+            "pointIndex": 0,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:1",
+            "pointIndex": 1,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:2",
+            "pointIndex": 2,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:3",
+            "pointIndex": 3,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:4",
+            "pointIndex": 4,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:5",
+            "pointIndex": 5,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:6",
+            "pointIndex": 6,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:7",
+            "pointIndex": 7,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:8",
+            "pointIndex": 8,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:9",
+            "pointIndex": 9,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:10",
+            "pointIndex": 10,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:11",
+            "pointIndex": 11,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:12",
+            "pointIndex": 12,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:13",
+            "pointIndex": 13,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:14",
+            "pointIndex": 14,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:15",
+            "pointIndex": 15,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:16",
+            "pointIndex": 16,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:17",
+            "pointIndex": 17,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:18",
+            "pointIndex": 18,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:19",
+            "pointIndex": 19,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:20",
+            "pointIndex": 20,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:21",
+            "pointIndex": 21,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:22",
+            "pointIndex": 22,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:23",
+            "pointIndex": 23,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:24",
+            "pointIndex": 24,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:25",
+            "pointIndex": 25,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:26",
+            "pointIndex": 26,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:27",
+            "pointIndex": 27,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:28",
+            "pointIndex": 28,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:29",
+            "pointIndex": 29,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:30",
+            "pointIndex": 30,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:31",
+            "pointIndex": 31,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:32",
+            "pointIndex": 32,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:33",
+            "pointIndex": 33,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:34",
+            "pointIndex": 34,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:35",
+            "pointIndex": 35,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:36",
+            "pointIndex": 36,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:37",
+            "pointIndex": 37,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:38",
+            "pointIndex": 38,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:39",
+            "pointIndex": 39,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:40",
+            "pointIndex": 40,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:41",
+            "pointIndex": 41,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:42",
+            "pointIndex": 42,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:43",
+            "pointIndex": 43,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:44",
+            "pointIndex": 44,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:45",
+            "pointIndex": 45,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:46",
+            "pointIndex": 46,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:47",
+            "pointIndex": 47,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:48",
+            "pointIndex": 48,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:49",
+            "pointIndex": 49,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:50",
+            "pointIndex": 50,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:51",
+            "pointIndex": 51,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:52",
+            "pointIndex": 52,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:53",
+            "pointIndex": 53,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:54",
+            "pointIndex": 54,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:55",
+            "pointIndex": 55,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:56",
+            "pointIndex": 56,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:57",
+            "pointIndex": 57,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:58",
+            "pointIndex": 58,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:59",
+            "pointIndex": 59,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:60",
+            "pointIndex": 60,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:61",
+            "pointIndex": 61,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:62",
+            "pointIndex": 62,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:63",
+            "pointIndex": 63,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:64",
+            "pointIndex": 64,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:65",
+            "pointIndex": 65,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:66",
+            "pointIndex": 66,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:67",
+            "pointIndex": 67,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:68",
+            "pointIndex": 68,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:69",
+            "pointIndex": 69,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:70",
+            "pointIndex": 70,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:71",
+            "pointIndex": 71,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:72",
+            "pointIndex": 72,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:73",
+            "pointIndex": 73,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:74",
+            "pointIndex": 74,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:75",
+            "pointIndex": 75,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:76",
+            "pointIndex": 76,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:77",
+            "pointIndex": 77,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:78",
+            "pointIndex": 78,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:79",
+            "pointIndex": 79,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:80",
+            "pointIndex": 80,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:81",
+            "pointIndex": 81,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:82",
+            "pointIndex": 82,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:83",
+            "pointIndex": 83,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:84",
+            "pointIndex": 84,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:85",
+            "pointIndex": 85,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:86",
+            "pointIndex": 86,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:87",
+            "pointIndex": 87,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:88",
+            "pointIndex": 88,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:89",
+            "pointIndex": 89,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:90",
+            "pointIndex": 90,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:91",
+            "pointIndex": 91,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:92",
+            "pointIndex": 92,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:93",
+            "pointIndex": 93,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:94",
+            "pointIndex": 94,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:95",
+            "pointIndex": 95,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:96",
+            "pointIndex": 96,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:97",
+            "pointIndex": 97,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:98",
+            "pointIndex": 98,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:99",
+            "pointIndex": 99,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:100",
+            "pointIndex": 100,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:101",
+            "pointIndex": 101,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "new-orleans->baton-rouge:auto:102",
+            "pointIndex": 102,
+            "kind": "AUTOMATIC"
+          }
+        ]
+      }
+    ],
+    "complete": true,
+    "unresolvedLegs": 0,
+    "calculatedDistanceNM": 101.3252879103003,
+    "provisionalDistanceNM": 0,
+    "totalEstimatedDistanceNM": 101.3252879103003,
+    "calculatedStandardHours": 16.887547985050052,
+    "calculatedOperatingHours": 10.13252879103003,
+    "provisionalStandardHours": 0,
+    "provisionalOperatingHours": 0,
+    "totalNM": 101.3252879103003,
+    "standardHours": 16.887547985050052,
+    "calculatedHours": 10.13252879103003,
+    "effectiveSOG": 10,
+    "standardETA": "2026-10-29T12:27:15.863Z",
+    "calculatedETA": "2026-10-29T05:41:57.794Z",
+    "differenceHours": 6.755019194020022,
+    "userCoarseCourse": {
+      "id": "3df86e67-2659-412f-99e5-ad34a0ff771e",
+      "pathId": "8c25a879-da6b-42a6-9e80-be58ae6ffbad",
+      "pathRevision": "9f28b00e8b367bb680bae0fba32595e12552476ca18d9756fa17d07dcfcdc9eb",
+      "stage": "COARSE",
+      "byWay": "BY-SEA",
+      "operationalMode": "BYPASS",
+      "knots": 6,
+      "geometryDefinition": "WGS84_ELLIPSOID_GEODESIC",
+      "status": "INTENT_ONLY_NOT_GEOGRAPHIC_CONNECTIVITY",
+      "legs": [
+        {
+          "fromId": "new-orleans",
+          "toId": "baton-rouge",
+          "points": [
+            {
+              "id": "new-orleans",
+              "name": "New Orleans",
+              "lat": 29.9511,
+              "lon": -90.0715
+            },
+            {
+              "id": "baton-rouge",
+              "name": "Baton Rouge",
+              "lat": 30.4515,
+              "lon": -91.1871
+            }
+          ],
+          "distanceNM": 65.27999254355232,
+          "hours": 10.87999875725872,
+          "cumulativeNM": 65.27999254355232,
+          "eta": "2026-10-29T06:26:48.686Z"
+        }
+      ],
+      "totalNM": 65.27999254355232,
+      "hours": 10.87999875725872
+    },
+    "suitability": {
+      "mode": "BYPASS",
+      "policy": "ADVISORY_ONLY_BETA",
+      "blocksRouting": false
+    },
+    "engineVersion": "0.4.1-course-3",
+    "selectedId": "33b09fdb-3b32-4946-8e96-e862f724673e",
+    "alternatives": [
+      {
+        "pathId": "8c25a879-da6b-42a6-9e80-be58ae6ffbad",
+        "pathRevision": "9f28b00e8b367bb680bae0fba32595e12552476ca18d9756fa17d07dcfcdc9eb",
+        "id": "33b09fdb-3b32-4946-8e96-e862f724673e",
+        "preference": "BYPASS",
+        "legs": [
+          {
+            "id": "new-orleans->baton-rouge",
+            "fromId": "new-orleans",
+            "waypointId": "baton-rouge",
+            "transport": "BY-SEA",
+            "inputKey": "b5ce7593fb71d4870df905c8123f5b5f1112638ecfb0a1d492ac8a9060dec001",
+            "points": [
+              {
+                "lat": 29.945665,
+                "lon": -90.061676
+              },
+              {
+                "lat": 29.938422,
+                "lon": -90.064524
+              },
+              {
+                "lat": 29.935126,
+                "lon": -90.068349
+              },
+              {
+                "lat": 29.923651,
+                "lon": -90.096262
+              },
+              {
+                "lat": 29.922065,
+                "lon": -90.106272
+              },
+              {
+                "lat": 29.925889,
+                "lon": -90.122141
+              },
+              {
+                "lat": 29.93244,
+                "lon": -90.128407
+              },
+              {
+                "lat": 29.940456,
+                "lon": -90.132192
+              },
+              {
+                "lat": 29.948798,
+                "lon": -90.14037
+              },
+              {
+                "lat": 29.951768,
+                "lon": -90.159169
+              },
+              {
+                "lat": 29.937852,
+                "lon": -90.194203
+              },
+              {
+                "lat": 29.945665,
+                "lon": -90.212392
+              },
+              {
+                "lat": 29.96365,
+                "lon": -90.231435
+              },
+              {
+                "lat": 29.972032,
+                "lon": -90.246002
+              },
+              {
+                "lat": 29.971544,
+                "lon": -90.261627
+              },
+              {
+                "lat": 29.954901,
+                "lon": -90.303334
+              },
+              {
+                "lat": 29.948269,
+                "lon": -90.32787
+              },
+              {
+                "lat": 29.948106,
+                "lon": -90.353627
+              },
+              {
+                "lat": 29.959581,
+                "lon": -90.376861
+              },
+              {
+                "lat": 29.973456,
+                "lon": -90.388539
+              },
+              {
+                "lat": 29.986192,
+                "lon": -90.396962
+              },
+              {
+                "lat": 29.996772,
+                "lon": -90.408274
+              },
+              {
+                "lat": 30.004014,
+                "lon": -90.428375
+              },
+              {
+                "lat": 30.009467,
+                "lon": -90.465566
+              },
+              {
+                "lat": 30.018663,
+                "lon": -90.473256
+              },
+              {
+                "lat": 30.041571,
+                "lon": -90.475575
+              },
+              {
+                "lat": 30.055487,
+                "lon": -90.482818
+              },
+              {
+                "lat": 30.059516,
+                "lon": -90.500722
+              },
+              {
+                "lat": 30.058661,
+                "lon": -90.544423
+              },
+              {
+                "lat": 30.065131,
+                "lon": -90.576772
+              },
+              {
+                "lat": 30.066026,
+                "lon": -90.589182
+              },
+              {
+                "lat": 30.062812,
+                "lon": -90.59496
+              },
+              {
+                "lat": 30.048285,
+                "lon": -90.613922
+              },
+              {
+                "lat": 30.044989,
+                "lon": -90.62328
+              },
+              {
+                "lat": 30.047065,
+                "lon": -90.634999
+              },
+              {
+                "lat": 30.056423,
+                "lon": -90.655629
+              },
+              {
+                "lat": 30.058661,
+                "lon": -90.667958
+              },
+              {
+                "lat": 30.055976,
+                "lon": -90.678293
+              },
+              {
+                "lat": 30.049872,
+                "lon": -90.688222
+              },
+              {
+                "lat": 30.038153,
+                "lon": -90.702748
+              },
+              {
+                "lat": 30.027777,
+                "lon": -90.71996
+              },
+              {
+                "lat": 30.021511,
+                "lon": -90.735097
+              },
+              {
+                "lat": 30.0185,
+                "lon": -90.751943
+              },
+              {
+                "lat": 30.017646,
+                "lon": -90.774078
+              },
+              {
+                "lat": 30.013861,
+                "lon": -90.797027
+              },
+              {
+                "lat": 30.008612,
+                "lon": -90.812611
+              },
+              {
+                "lat": 30.011501,
+                "lon": -90.825266
+              },
+              {
+                "lat": 30.031928,
+                "lon": -90.839263
+              },
+              {
+                "lat": 30.060981,
+                "lon": -90.849843
+              },
+              {
+                "lat": 30.069444,
+                "lon": -90.856313
+              },
+              {
+                "lat": 30.07449,
+                "lon": -90.864613
+              },
+              {
+                "lat": 30.078152,
+                "lon": -90.882802
+              },
+              {
+                "lat": 30.083116,
+                "lon": -90.891103
+              },
+              {
+                "lat": 30.093695,
+                "lon": -90.898793
+              },
+              {
+                "lat": 30.118516,
+                "lon": -90.912709
+              },
+              {
+                "lat": 30.126899,
+                "lon": -90.921213
+              },
+              {
+                "lat": 30.132636,
+                "lon": -90.934275
+              },
+              {
+                "lat": 30.130479,
+                "lon": -90.938954
+              },
+              {
+                "lat": 30.125027,
+                "lon": -90.941803
+              },
+              {
+                "lat": 30.120673,
+                "lon": -90.949086
+              },
+              {
+                "lat": 30.121405,
+                "lon": -90.986928
+              },
+              {
+                "lat": 30.126166,
+                "lon": -91.01301
+              },
+              {
+                "lat": 30.137478,
+                "lon": -91.02481
+              },
+              {
+                "lat": 30.153998,
+                "lon": -91.021108
+              },
+              {
+                "lat": 30.166612,
+                "lon": -91.014801
+              },
+              {
+                "lat": 30.179267,
+                "lon": -91.013539
+              },
+              {
+                "lat": 30.195828,
+                "lon": -91.02481
+              },
+              {
+                "lat": 30.209784,
+                "lon": -91.045522
+              },
+              {
+                "lat": 30.213162,
+                "lon": -91.065826
+              },
+              {
+                "lat": 30.209418,
+                "lon": -91.109853
+              },
+              {
+                "lat": 30.205837,
+                "lon": -91.119252
+              },
+              {
+                "lat": 30.198513,
+                "lon": -91.127919
+              },
+              {
+                "lat": 30.193305,
+                "lon": -91.137074
+              },
+              {
+                "lat": 30.195828,
+                "lon": -91.147776
+              },
+              {
+                "lat": 30.204779,
+                "lon": -91.154368
+              },
+              {
+                "lat": 30.214871,
+                "lon": -91.154286
+              },
+              {
+                "lat": 30.223985,
+                "lon": -91.15095
+              },
+              {
+                "lat": 30.229926,
+                "lon": -91.147776
+              },
+              {
+                "lat": 30.236355,
+                "lon": -91.140452
+              },
+              {
+                "lat": 30.251654,
+                "lon": -91.117787
+              },
+              {
+                "lat": 30.261298,
+                "lon": -91.112945
+              },
+              {
+                "lat": 30.267279,
+                "lon": -91.116811
+              },
+              {
+                "lat": 30.276068,
+                "lon": -91.136138
+              },
+              {
+                "lat": 30.28144,
+                "lon": -91.144358
+              },
+              {
+                "lat": 30.289333,
+                "lon": -91.160715
+              },
+              {
+                "lat": 30.291368,
+                "lon": -91.222808
+              },
+              {
+                "lat": 30.311591,
+                "lon": -91.213206
+              },
+              {
+                "lat": 30.317979,
+                "lon": -91.194651
+              },
+              {
+                "lat": 30.31977,
+                "lon": -91.171457
+              },
+              {
+                "lat": 30.326117,
+                "lon": -91.147776
+              },
+              {
+                "lat": 30.343533,
+                "lon": -91.156972
+              },
+              {
+                "lat": 30.35163,
+                "lon": -91.17101
+              },
+              {
+                "lat": 30.354071,
+                "lon": -91.189605
+              },
+              {
+                "lat": 30.354071,
+                "lon": -91.212961
+              },
+              {
+                "lat": 30.350124,
+                "lon": -91.232533
+              },
+              {
+                "lat": 30.352403,
+                "lon": -91.240712
+              },
+              {
+                "lat": 30.36404,
+                "lon": -91.243967
+              },
+              {
+                "lat": 30.371161,
+                "lon": -91.242055
+              },
+              {
+                "lat": 30.378933,
+                "lon": -91.237416
+              },
+              {
+                "lat": 30.385077,
+                "lon": -91.23176
+              },
+              {
+                "lat": 30.387559,
+                "lon": -91.226552
+              },
+              {
+                "lat": 30.404853,
+                "lon": -91.203765
+              },
+              {
+                "lat": 30.444525,
+                "lon": -91.192128
+              }
+            ],
+            "distanceNM": 101.3252879103003,
+            "provisionalDistanceNM": 0,
+            "status": "CALCULATED",
+            "evidence": {
+              "grid": "source-waterway-network",
+              "anchors": [
+                {
+                  "lat": 29.9511,
+                  "lon": -90.0715
+                },
+                {
+                  "lat": 30.4515,
+                  "lon": -91.1871
+                }
+              ],
+              "waypointIds": [
+                "new-orleans",
+                "baton-rouge"
+              ],
+              "termination": "SOURCE_CONNECTED_PATH",
+              "visitedCells": 156,
+              "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "sourceEdgeIds": [
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2",
+                "ne-river:588:2"
+              ],
+              "sourceAccessEvidence": [
+                {
+                  "id": "ne-river:588:2",
+                  "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+                  "tags": {}
+                }
+              ],
+              "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+              "accessCandidates": [
+                {
+                  "waypointId": "new-orleans",
+                  "distanceNM": 0.6066741769039674,
+                  "candidate": {
+                    "lat": 29.945665,
+                    "lon": -90.061676
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                },
+                {
+                  "waypointId": "baton-rouge",
+                  "distanceNM": 0.49226287028363963,
+                  "candidate": {
+                    "lat": 30.444525,
+                    "lon": -91.192128
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                }
+              ],
+              "automaticConnectorLimitNM": 3,
+              "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+              "vesselSuitability": "SEPARATE_ADVISORY",
+              "effectiveSeparationNM": 0,
+              "dataset": "rivers",
+              "elapsedMs": 6037.420400000003
+            },
+            "operatingMode": "POWER-DIESEL",
+            "accesses": [
+              {
+                "lat": 29.945665,
+                "lon": -90.061676
+              },
+              {
+                "lat": 30.444525,
+                "lon": -91.192128
+              }
+            ],
+            "reason": null,
+            "geographicStatus": "CALCULATED",
+            "suitability": {
+              "mode": "BYPASS",
+              "policy": "ADVISORY_ONLY_BETA",
+              "blocksRouting": false,
+              "status": "BYPASSED",
+              "restrictions": [],
+              "unknowns": [],
+              "checks": []
+            },
+            "standardSpeed": 6,
+            "calculatedSpeed": 10,
+            "standardHours": 16.887547985050052,
+            "calculatedHours": 10.13252879103003,
+            "calculatedCumulativeNM": 101.3252879103003,
+            "totalNM": 101.3252879103003,
+            "totalStandardHours": 16.887547985050052,
+            "totalCalculatedHours": 10.13252879103003,
+            "standardETA": "2026-10-29T12:27:15.863Z",
+            "calculatedETA": "2026-10-29T05:41:57.794Z",
+            "etaStatus": "NOMINAL",
+            "differenceHours": 6.755019194020022,
+            "courseVertices": [
+              {
+                "id": "new-orleans->baton-rouge:auto:0",
+                "pointIndex": 0,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:1",
+                "pointIndex": 1,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:2",
+                "pointIndex": 2,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:3",
+                "pointIndex": 3,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:4",
+                "pointIndex": 4,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:5",
+                "pointIndex": 5,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:6",
+                "pointIndex": 6,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:7",
+                "pointIndex": 7,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:8",
+                "pointIndex": 8,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:9",
+                "pointIndex": 9,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:10",
+                "pointIndex": 10,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:11",
+                "pointIndex": 11,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:12",
+                "pointIndex": 12,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:13",
+                "pointIndex": 13,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:14",
+                "pointIndex": 14,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:15",
+                "pointIndex": 15,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:16",
+                "pointIndex": 16,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:17",
+                "pointIndex": 17,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:18",
+                "pointIndex": 18,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:19",
+                "pointIndex": 19,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:20",
+                "pointIndex": 20,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:21",
+                "pointIndex": 21,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:22",
+                "pointIndex": 22,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:23",
+                "pointIndex": 23,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:24",
+                "pointIndex": 24,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:25",
+                "pointIndex": 25,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:26",
+                "pointIndex": 26,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:27",
+                "pointIndex": 27,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:28",
+                "pointIndex": 28,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:29",
+                "pointIndex": 29,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:30",
+                "pointIndex": 30,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:31",
+                "pointIndex": 31,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:32",
+                "pointIndex": 32,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:33",
+                "pointIndex": 33,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:34",
+                "pointIndex": 34,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:35",
+                "pointIndex": 35,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:36",
+                "pointIndex": 36,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:37",
+                "pointIndex": 37,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:38",
+                "pointIndex": 38,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:39",
+                "pointIndex": 39,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:40",
+                "pointIndex": 40,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:41",
+                "pointIndex": 41,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:42",
+                "pointIndex": 42,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:43",
+                "pointIndex": 43,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:44",
+                "pointIndex": 44,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:45",
+                "pointIndex": 45,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:46",
+                "pointIndex": 46,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:47",
+                "pointIndex": 47,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:48",
+                "pointIndex": 48,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:49",
+                "pointIndex": 49,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:50",
+                "pointIndex": 50,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:51",
+                "pointIndex": 51,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:52",
+                "pointIndex": 52,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:53",
+                "pointIndex": 53,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:54",
+                "pointIndex": 54,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:55",
+                "pointIndex": 55,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:56",
+                "pointIndex": 56,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:57",
+                "pointIndex": 57,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:58",
+                "pointIndex": 58,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:59",
+                "pointIndex": 59,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:60",
+                "pointIndex": 60,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:61",
+                "pointIndex": 61,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:62",
+                "pointIndex": 62,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:63",
+                "pointIndex": 63,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:64",
+                "pointIndex": 64,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:65",
+                "pointIndex": 65,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:66",
+                "pointIndex": 66,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:67",
+                "pointIndex": 67,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:68",
+                "pointIndex": 68,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:69",
+                "pointIndex": 69,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:70",
+                "pointIndex": 70,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:71",
+                "pointIndex": 71,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:72",
+                "pointIndex": 72,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:73",
+                "pointIndex": 73,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:74",
+                "pointIndex": 74,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:75",
+                "pointIndex": 75,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:76",
+                "pointIndex": 76,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:77",
+                "pointIndex": 77,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:78",
+                "pointIndex": 78,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:79",
+                "pointIndex": 79,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:80",
+                "pointIndex": 80,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:81",
+                "pointIndex": 81,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:82",
+                "pointIndex": 82,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:83",
+                "pointIndex": 83,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:84",
+                "pointIndex": 84,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:85",
+                "pointIndex": 85,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:86",
+                "pointIndex": 86,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:87",
+                "pointIndex": 87,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:88",
+                "pointIndex": 88,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:89",
+                "pointIndex": 89,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:90",
+                "pointIndex": 90,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:91",
+                "pointIndex": 91,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:92",
+                "pointIndex": 92,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:93",
+                "pointIndex": 93,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:94",
+                "pointIndex": 94,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:95",
+                "pointIndex": 95,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:96",
+                "pointIndex": 96,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:97",
+                "pointIndex": 97,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:98",
+                "pointIndex": 98,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:99",
+                "pointIndex": 99,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:100",
+                "pointIndex": 100,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:101",
+                "pointIndex": 101,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "new-orleans->baton-rouge:auto:102",
+                "pointIndex": 102,
+                "kind": "AUTOMATIC"
+              }
+            ]
+          }
+        ],
+        "complete": true,
+        "unresolvedLegs": 0,
+        "calculatedDistanceNM": 101.3252879103003,
+        "provisionalDistanceNM": 0,
+        "totalEstimatedDistanceNM": 101.3252879103003,
+        "calculatedStandardHours": 16.887547985050052,
+        "calculatedOperatingHours": 10.13252879103003,
+        "provisionalStandardHours": 0,
+        "provisionalOperatingHours": 0,
+        "totalNM": 101.3252879103003,
+        "standardHours": 16.887547985050052,
+        "calculatedHours": 10.13252879103003,
+        "effectiveSOG": 10,
+        "standardETA": "2026-10-29T12:27:15.863Z",
+        "calculatedETA": "2026-10-29T05:41:57.794Z",
+        "differenceHours": 6.755019194020022
+      }
+    ],
+    "requestedPreferences": {
+      "routePreference": "OFFSHORE PREFERRED",
+      "coastalSeparationNM": 10,
+      "objective": "BEST-TIME"
+    },
+    "effectivePreferences": {
+      "bypass": true,
+      "separationNM": 0
+    },
+    "kind": "water-outline",
+    "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED — ACCESS TRANSFERS UNRESOLVED",
+    "createdAt": "2026-10-28T19:34:06.780Z",
+    "connectors": [
+      {
+        "id": "new-orleans->baton-rouge:0",
+        "waypointId": "new-orleans",
+        "anchor": {
+          "lat": 29.9511,
+          "lon": -90.0715
+        },
+        "access": {
+          "lat": 29.945665,
+          "lon": -90.061676
+        },
+        "distanceNM": 0.6066741769039674,
+        "includedInPassage": false,
+        "status": "PROVISIONAL_TRANSFER",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      },
+      {
+        "id": "new-orleans->baton-rouge:1",
+        "waypointId": "baton-rouge",
+        "anchor": {
+          "lat": 30.4515,
+          "lon": -91.1871
+        },
+        "access": {
+          "lat": 30.444525,
+          "lon": -91.192128
+        },
+        "distanceNM": 0.49226287028363963,
+        "includedInPassage": false,
+        "status": "PROVISIONAL_TRANSFER",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      }
+    ],
+    "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+    "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+    "confidence": "Coarse planning only; city/shore connectors unverified",
+    "constraints": [
+      {
+        "type": "depth-under-keel",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "air-draft-bridge",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "canal-lock",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "traffic-restriction",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "passage-exclusion",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "reef-shoal",
+        "status": "unresolved",
+        "source": null
+      }
+    ],
+    "validation": {
+      "landMask": "screened at selected grid resolution",
+      "depth": "unresolved",
+      "bridges": "unresolved",
+      "restrictions": "unresolved",
+      "forecast": "nominal speeds only"
+    },
+    "geometryDefinition": {
+      "authoritative": "legs[].points",
+      "segmentType": "GEODESIC",
+      "coordinateDatum": "WGS84",
+      "distanceModel": "WGS84_ELLIPSOID",
+      "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+      "presentation": "Derived renderer-only geometry; never used for calculation or export"
+    },
+    "distanceComponents": {
+      "vesselPassageNM": 101.3252879103003,
+      "unverifiedConnectorGeometryNM": 1.098937047187607,
+      "connectorsIncludedInVesselDistance": false,
+      "completeExpeditionNM": null
+    },
+    "endpointStatus": "UNRESOLVED_ACCESS_TRANSFER"
+  },
+  "refinement": {
+    "waterAreas": {
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0; OpenStreetMap contributors",
+      "sha256": "28a17e6e5f018f6bf3122aee6293b02d54965fd6bf595bee8fef7bac6177f042",
+      "regions": [
+        {
+          "id": "breves",
+          "extent": {
+            "west": -50.8,
+            "south": -1.95,
+            "east": -50.099999999999994,
+            "north": -1.35
+          },
+          "resolutionDegrees": 0.001,
+          "maskSHA256": "9f97abde4ebd604e6699c151d4b2b3fa4bf0e370594f11a0ef6445ddf9079283",
+          "exclusionSHA256": "b39baf3680395529dbca438c14ba51ae0706826607da9dbcffacf62edd1d69fe"
+        },
+        {
+          "id": "alter",
+          "extent": {
+            "west": -55.15,
+            "south": -2.75,
+            "east": -54.5,
+            "north": -2.1
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "8eb1fd9b4d25b978a7f163ac7ae5228c7d88bc22e886eb7e6aaa96bd3396011e",
+          "exclusionSHA256": "92f00bd155ec325849c10167c07822694f3025868cfca7d262957c9ab65540f5"
+        },
+        {
+          "id": "ontario",
+          "extent": {
+            "west": -80,
+            "south": 43,
+            "east": -75.5,
+            "north": 44.705
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "618113f2ad0ca27e6849aefcffb17b15337160448c7d4ece7e10540f1ee78c41",
+          "exclusionSHA256": "4da823f9dd020d2ca18555d11128f02b8740194d865e9372487c9169b8f6244f"
+        },
+        {
+          "id": "don",
+          "extent": {
+            "west": 38.8,
+            "south": 46.8,
+            "east": 40.001999999999995,
+            "north": 47.401999999999994
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "4ce5238d3c5d0124d86c4c3e29e8feb9444f4d3337b03b401f513c635983ce28",
+          "exclusionSHA256": "9b8cbf110e659685c42e0930501477fe3ac07b9cfabe726bb2e2114725f56a07"
+        },
+        {
+          "id": "ushuaia",
+          "extent": {
+            "west": -68.5,
+            "south": -54.95,
+            "east": -68,
+            "north": -54.648
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "071b93719f88e5db843cfa14d5cc2f147a2801f71b1361fc9ce05fc0c94c54c3",
+          "exclusionSHA256": "2e33e64271c1467923500fbe9818fb54b60b62eb2896a8f28a4f210669596ef6"
+        },
+        {
+          "id": "magellan",
+          "extent": {
+            "west": -71.2,
+            "south": -53.4,
+            "east": -70.598,
+            "north": -52.9
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "5dbbcbb275af58ccc0619d932ab2cb0c636f5dbf413faff3e888def829cf99c2",
+          "exclusionSHA256": "68ef0eef39a42dbf39b8b3a0f81589358fa53e4db4b1a35725f733b657a5d570"
+        }
+      ]
+    },
+    "requested": true,
+    "method": "EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS",
+    "dataset": {
+      "schema": 1,
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0; OpenStreetMap contributors",
+      "acquisition": "https://overpass-api.de/api/interpreter",
+      "sources": [
+        {
+          "dataset": "osm",
+          "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+          "role": "Preserved mapped waterways"
+        },
+        {
+          "file": "alter-do-chao.json",
+          "sha256": "d48ca40b736bbc9341ef3e57289697f93f241c23be58b5096ae2e847d985ae67",
+          "timestamp": "2026-10-18T01:49:51Z",
+          "bounds": [
+            -59.8927349,
+            -3.6022427,
+            -53.2974245,
+            -1.3048311
+          ],
+          "acceptedWays": 95,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-56,-1.8,-54);out geom;"
+        },
+        {
+          "file": "amazon-estuary.json",
+          "sha256": "d65edf45074624b20c7857bef6423d21d531591700e8715652848fb050eb9560",
+          "timestamp": "2026-10-18T01:46:51Z",
+          "bounds": [
+            -52.4361992,
+            -3.2353156,
+            -47.9448642,
+            1.8904415
+          ],
+          "acceptedWays": 1310,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-52,1,-48);out geom;"
+        },
+        {
+          "file": "bordeaux.json",
+          "sha256": "061d9758d14297cfc9754812993b3672df4bb8a25a559c6b52c3b7e4e9158274",
+          "timestamp": "2026-10-18T01:46:51Z",
+          "bounds": [
+            -1.2171409,
+            44.6920875,
+            -0.3560179,
+            45.8733209
+          ],
+          "acceptedWays": 756,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](44.7,-1.5,45.8,-0.4);out geom;"
+        },
+        {
+          "file": "great-lakes-flowlines.json",
+          "sha256": "398d2ea093994583b72d8ed6097bac9625c19d77b2129ae7078521884df42d8e",
+          "timestamp": "2026-10-18T01:50:56Z",
+          "bounds": [
+            -81.3570215,
+            42.9862653,
+            -69.9860502,
+            47.302521
+          ],
+          "acceptedWays": 4540,
+          "query": "[out:json][timeout:40];way[waterway~\"^flowline$\"](43,-80,47,-70);out geom;"
+        },
+        {
+          "file": "rostov.json",
+          "sha256": "2658ddc2631ecfdbab75cc39d541209376d42b1e1721902bda294e1fc0132de0",
+          "timestamp": "2026-10-18T01:49:51Z",
+          "bounds": [
+            38.5927245,
+            46.7891441,
+            40.4535043,
+            47.5590866
+          ],
+          "acceptedWays": 1129,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](46.8,38.5,47.5,40);out geom;"
+        },
+        {
+          "file": "southern.json",
+          "sha256": "a8ec617437dddedf342eb97ded1cc2a309178597bec637360014e3adefb49e36",
+          "timestamp": "2026-10-18T01:47:51Z",
+          "bounds": [
+            -75.2224338,
+            -55.6923827,
+            -65.8791947,
+            -50.6692644
+          ],
+          "acceptedWays": 2215,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-56,-76,-51,-66);out geom;"
+        }
+      ],
+      "resolution": "Irregular source vertices, WGS84 coordinates; positional accuracy not guaranteed. No fixed raster resolution.",
+      "coverage": "Existing mapped waterways plus bounded regional queries listed in sources; not worldwide complete.",
+      "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+      "limitations": [
+        "Only exactly shared source vertices connect; no proximity joins",
+        "Coarse ocean mask still governs source-to-ocean transitions",
+        "Waterway mapping is not proof of depth, bridge clearance or vessel suitability"
+      ],
+      "sha256": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+      "lineCount": 29833
+    },
+    "status": "NO_SUPPORTED_IMPROVEMENT",
+    "legs": [
+      {
+        "id": "new-orleans->baton-rouge",
+        "status": "UNCHANGED",
+        "reason": "WATER_AREA_ACCESS_UNRESOLVED"
+      }
+    ],
+    "refinedLegs": 0
+  }
+}

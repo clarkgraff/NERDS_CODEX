@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "file": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\config.json",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\config.json",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\AMAZON_V1.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\ELBE_RIVER.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\MEKONG_RIVER.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\MISSISSIPPI_RIVER.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\NORTHERN_CANADA_GREENLAND.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\ST_LAWRENCE_RIVER.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\TONLE_SAP_RIVER.nerds",
+      "unchanged": true
+    },
+    {
+      "file": "C:/Program Files/NERDS/NERDS.exe",
+      "unchanged": true
+    },
+    {
+      "file": "C:/Program Files/NERDS/resources/app.asar",
+      "unchanged": true
+    }
+  ],
+  "trees": [
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data",
+      "unchanged": false,
+      "files": 3
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\cache",
+      "unchanged": true,
+      "files": 0
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\archive",
+      "unchanged": true,
+      "files": 0
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data",
+      "unchanged": true,
+      "files": 2
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\cache",
+      "unchanged": true,
+      "files": 0
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\archive",
+      "unchanged": true,
+      "files": 0
+    }
+  ],
+  "note": "Dev Test recovery SQLite may migrate when launched; original projects/configuration compared by SHA256. Tree check is size/mtime, not content hash."
+}

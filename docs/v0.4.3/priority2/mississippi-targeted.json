@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-28T19:33:00.656Z",
+  "waypoints": [
+    {
+      "id": "new-orleans",
+      "name": "New Orleans",
+      "lat": 29.9511,
+      "lon": -90.0715
+    },
+    {
+      "id": "baton-rouge",
+      "name": "Baton Rouge",
+      "lat": 30.4515,
+      "lon": -91.1871
+    }
+  ],
+  "retrieval": "FAIL",
+  "acquisitionAndCaching": "FAIL",
+  "automaticRouting": "FAIL",
+  "requests": 1,
+  "request": {
+    "url": "https://overpass.private.coffee/api/interpreter",
+    "method": "POST",
+    "query": "[out:json][timeout:45];(way[\"natural\"=\"water\"](29.8,-91.5,30.6,-89.9);rel[\"type\"=\"multipolygon\"][\"natural\"=\"water\"](29.8,-91.5,30.6,-89.9);way[\"waterway\"~\"^(river|canal|fairway|flowline)$\"](29.8,-91.5,30.6,-89.9);way[\"natural\"=\"coastline\"](29.8,-91.5,30.6,-89.9););out geom;",
+    "headers": {
+      "Accept": "application/json",
+      "User-Agent": "NERDS/0.4.3 geographic-connectivity-test"
+    }
+  },
+  "acquisitionError": "Acquisition timeout",
+  "retrievalMs": 60026.4526,
+  "routingMs": 10925.327400000002,
+  "route": {
+    "complete": true,
+    "totalNM": 101.3252879103003,
+    "legs": [
+      {
+        "status": "CALCULATED",
+        "reason": null,
+        "distanceNM": 101.3252879103003,
+        "vertices": 103,
+        "evidence": {
+          "grid": "source-waterway-network",
+          "anchors": [
+            {
+              "lat": 29.9511,
+              "lon": -90.0715
+            },
+            {
+              "lat": 30.4515,
+              "lon": -91.1871
+            }
+          ],
+          "waypointIds": [
+            "new-orleans",
+            "baton-rouge"
+          ],
+          "termination": "SOURCE_CONNECTED_PATH",
+          "visitedCells": 156,
+          "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+          "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+          "sourceEdgeIds": [
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2",
+            "ne-river:588:2"
+          ],
+          "sourceAccessEvidence": [
+            {
+              "id": "ne-river:588:2",
+              "source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/",
+              "tags": {}
+            }
+          ],
+          "geometryStatus": "Mapped geographic centerlines; not navigability or vessel clearance",
+          "accessCandidates": [
+            {
+              "waypointId": "new-orleans",
+              "distanceNM": 0.6066741769039674,
+              "candidate": {
+                "lat": 29.945665,
+                "lon": -90.061676
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            },
+            {
+              "waypointId": "baton-rouge",
+              "distanceNM": 0.49226287028363963,
+              "candidate": {
+                "lat": 30.444525,
+                "lon": -91.192128
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            }
+          ],
+          "automaticConnectorLimitNM": 3,
+          "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+          "vesselSuitability": "SEPARATE_ADVISORY",
+          "effectiveSeparationNM": 0,
+          "dataset": "rivers",
+          "elapsedMs": 6037.420400000003
+        }
+      }
+    ],
+    "connectors": [
+      {
+        "id": "new-orleans->baton-rouge:0",
+        "waypointId": "new-orleans",
+        "anchor": {
+          "lat": 29.9511,
+          "lon": -90.0715
+        },
+        "access": {
+          "lat": 29.945665,
+          "lon": -90.061676
+        },
+        "distanceNM": 0.6066741769039674,
+        "includedInPassage": false,
+        "status": "PROVISIONAL_TRANSFER",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      },
+      {
+        "id": "new-orleans->baton-rouge:1",
+        "waypointId": "baton-rouge",
+        "anchor": {
+          "lat": 30.4515,
+          "lon": -91.1871
+        },
+        "access": {
+          "lat": 30.444525,
+          "lon": -91.192128
+        },
+        "distanceNM": 0.49226287028363963,
+        "includedInPassage": false,
+        "status": "PROVISIONAL_TRANSFER",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      }
+    ]
+  },
+  "routingCriterion": "Only the two destination waypoints; connected source-supported course, no unresolved legs or transfers. Imagery is not routing evidence.",
+  "waterGeometryValidated": true,
+  "diagnosis": {
+    "original406": "nginx HTML response; no Overpass query error or sufficient evidence to distinguish provider/proxy/header policy. Existing request uses form-encoded data and valid bbox ordering.",
+    "targetedAttempt": "One POST to documented Private.coffee endpoint with explicit JSON Accept and identifying User-Agent; timeout after 60 seconds, no response status received.",
+    "routing": "Existing Natural Earth 1:10 million centreline graph finds 103-vertex course automatically; no newly acquired OSM geometry. Endpoint transfers remain provisional.",
+    "cache": "No new validated source adopted; failed acquisition job retained in isolated NERDS cache. SURVEYOR and installed user data untouched."
+  }
+}

@@ -7,7 +7,7 @@ const entities=new Map();
 function run(fn){return async(...args)=>{try{await fn(...args);}catch(error){status(error.message,true);}};}
 function button(text,action,title){const b=document.createElement('button');b.textContent=text;b.type='button';if(title)b.title=title;b.onclick=run(action);return b;}
 function option(value,text){const o=document.createElement('option');o.value=value;o.textContent=text;return o;}
-function selectWaypoint(id,fly=true){selectedId=id;renderWaypoints();const w=state.waypoints.find(w=>w.id===id);$('selected-name').textContent=w?w.name:'Select a waypoint';$('notes').disabled=!w;$('notes').value=w?.notes||'';if(w&&fly&&viewer)viewer.camera.flyTo({destination:Cesium.Cartesian3.fromDegrees(w.lon,w.lat,450000),duration:.6});draw();}
+function selectWaypoint(id,fly=false){selectedId=id;renderWaypoints();const w=state.waypoints.find(w=>w.id===id);$('selected-name').textContent=w?w.name:'Select a waypoint';$('notes').disabled=!w;$('notes').value=w?.notes||'';if(w&&fly&&viewer)viewer.camera.flyTo({destination:Cesium.Cartesian3.fromDegrees(w.lon,w.lat,450000),duration:.6});draw();}
 function renderWaypoints(){
  $('count').textContent=state.waypoints.length;$('waypoint-list').replaceChildren();
  state.waypoints.forEach((w,index)=>{
@@ -61,7 +61,7 @@ async function initialize(){
  viewer.scene.backgroundColor=Cesium.Color.fromCssColorString('#070f16');viewer.scene.globe.baseColor=Cesium.Color.fromCssColorString('#1e4754');viewer.scene.globe.showGroundAtmosphere=false;viewer.scene.globe.enableLighting=false;
  try{viewer.imageryLayers.addImageryProvider(await localMap(state.overlays));$('map-status').textContent='Offline vector coastlines · Natural Earth';}catch(error){$('map-status').textContent='Local ellipsoid · basemap unavailable';status('The bundled basemap could not load: '+error.message,true);}
  const click=new Cesium.ScreenSpaceEventHandler(viewer.canvas);click.setInputAction(run(async movement=>{
-   if(pinning){const point=viewer.camera.pickEllipsoid(movement.position,viewer.scene.globe.ellipsoid);if(!point)return;const p=Cesium.Cartographic.fromCartesian(point);editId=null;fillAccess(null);$('location-source').textContent='User-defined location';$('waypoint-kind').value='place';$('waypoint-mode').value='AUTO';$('editor').dataset.method='map-pin';$('edit-name').value='Map pin '+(state.waypoints.length+1);$('edit-lat').value=Cesium.Math.toDegrees(p.latitude).toFixed(6);$('edit-lon').value=Cesium.Math.toDegrees(p.longitude).toFixed(6);$('editor').showModal();pinning=false;$('pin').textContent='＋ Place a map pin';$('map-help').textContent='Drag to explore · Scroll to zoom · Right-click for transport mode';return;}
+   if(pinning){const point=viewer.camera.pickEllipsoid(movement.position,viewer.scene.globe.ellipsoid);if(!point)return;const p=Cesium.Cartographic.fromCartesian(point);pinning=false;viewer.canvas.style.cursor='';$('pin').textContent='＋ Place a map pin';await insertPlace({name:'Map pin '+(state.waypoints.length+1),lat:Cesium.Math.toDegrees(p.latitude),lon:Cesium.Math.toDegrees(p.longitude),source:'USER',resolutionMethod:'map-pin'},{automatic:false});return;}
    const pick=viewer.scene.pick(movement.position);if(pick?.id?.id?.startsWith('photo-'))openPhoto(pick.id.id.slice(6));else if(entities.has(pick?.id?.id))selectWaypoint(pick.id.id,false);
  }),Cesium.ScreenSpaceEventType.LEFT_CLICK);
  $('globe-view').addEventListener('contextmenu',e=>{e.preventDefault();const rect=document.querySelector('.geography').getBoundingClientRect();$('context').style.left=Math.max(5,Math.min(e.clientX-rect.left,rect.width-185))+'px';$('context').style.top=Math.max(5,Math.min(e.clientY-rect.top,rect.height-180))+'px';$('context').hidden=false;});
@@ -77,7 +77,7 @@ async function initialize(){
  $('ai-send').onclick=run(async()=>{$('ai-send').disabled=true;$('ai-result').textContent='Waiting for 4nR-AI…';try{$('ai-result').textContent=await window.nerds.askAI({endpoint:$('endpoint').value,model:$('ai-model').value,prompt:$('ai-prompt').value});}catch(e){$('ai-result').textContent=e.message;throw e;}finally{$('ai-send').disabled=false;}});
  $('archive').onclick=run(async()=>{if(!$('permission').checked)throw Error('Confirm that you have permission to retain this image.');const result=await window.nerds.archive({mediaId:photoId,sourceUrl:$('source-url').value,license:$('license').value});project.dirty=true;renderProject();status('Permitted image archived: '+result.path);$('media-dialog').close();});
  $('export').onclick=()=>$('export-dialog').showModal();document.querySelectorAll('[data-close]').forEach(b=>b.onclick=()=>$(b.dataset.close).close());
- setupRevisionC(data);setupTestBuild();setupCorrective();setupCitySelection();setupDetailedCartography();document.querySelector('.version').textContent='v0.4.3 · cartography preview';refresh();renderMedia();mission();selectWaypoint(state.waypoints[0]?.id,false);applyView(state.view);$('display-title').textContent='Expedition overview';status('Ready. Your expedition is stored locally.');window.nerdsReady=true;
+ setupRevisionC(data);setupTestBuild();setupCorrective();setupCitySelection();setupDetailedCartography();setupRelease043();document.querySelector('.version').textContent='v0.4.3 · Development Test';refresh();renderMedia();mission();selectWaypoint(null,false);applyView(state.view);$('display-title').textContent='Expedition overview';status('Ready. Your expedition is stored locally.');window.nerdsReady=true;
 }
 initialize().catch(error=>{status('Startup error: '+error.message,true);console.error(error);});
 
@@ -97,7 +97,7 @@ async function projectAction(action){await saveQueue;const result=await window.n
 function setupExtras(){
  $('project-save').onclick=run(()=>projectAction('save'));
  window.nerds.onCommand(run(async action=>{if(['new','open','save','save-as'].includes(action))await projectAction(action);else if(action==='close'){await saveQueue;await window.nerds.closeReady();}else if(action==='vessel')openVessel();else if(action==='settings')$('settings').click();else if(action==='export')$('export').click();}));
- $('tilted').onclick=run(()=>changeView('TILTED'));$('world').onclick=wholeGlobe;$('focus').onclick=()=>{if(selectedId)selectWaypoint(selectedId);else status('Select a waypoint to focus.');};
+ $('tilted').onclick=run(()=>changeView('TILTED'));$('world').onclick=wholeGlobe;$('focus').onclick=()=>{if(selectedId)selectWaypoint(selectedId,true);else status('Select a waypoint to focus.');};
  $('company-link').onclick=run(async e=>{e.preventDefault();await window.nerds.website();});
  $('suggest-access').onclick=run(async()=>{await saveQueue;fillAccess(await window.nerds.suggestAccess(editId));status('Offshore candidate only. Review coordinates and current charts before saving.');});
  $('clear-access').onclick=()=>fillAccess(null);
@@ -163,5 +163,5 @@ aiSaved=data.ai;$('search-coverage').textContent=`${data.gazetteer.count.toLocal
  syncControls();restoreRoute();refreshBasemap().catch(e=>status(e.message,true));
 }
 
-function drawPassageLabels(){for(const [i,leg] of (calculation?.legs||[]).filter(l=>l.points.length>1).entries()){const p=leg.points[Math.floor(leg.points.length/2)];viewer.entities.add({id:'passage-label-'+i,position:Cesium.Cartesian3.fromDegrees(p.lon,p.lat),label:{text:`${leg.distanceNM.toFixed(1)} NM · ${duration(leg.calculatedHours)} nominal\n${leg.calculatedETA?NerdsTime.display(leg.calculatedETA,state.timeZone):'ETA UNRESOLVED'}`,font:'10px Segoe UI',fillColor:Cesium.Color.fromCssColorString('#d2fff3'),style:Cesium.LabelStyle.FILL_AND_OUTLINE,outlineWidth:3,pixelOffset:new Cesium.Cartesian2(0,-12),disableDepthTestDistance:Infinity}});}}
+function drawPassageLabels(){for(const [i,leg] of (calculation?.legs||[]).filter(l=>l.points.length>1&&l.waypointId===selectedId).entries()){const p=leg.points[Math.floor(leg.points.length/2)];viewer.entities.add({id:'passage-label-'+i,position:Cesium.Cartesian3.fromDegrees(p.lon,p.lat),label:{text:`${leg.distanceNM.toFixed(1)} NM · ${duration(leg.calculatedHours)} nominal\n${leg.calculatedETA?NerdsTime.display(leg.calculatedETA,state.timeZone):'ETA UNRESOLVED'}`,font:'10px Segoe UI',fillColor:Cesium.Color.fromCssColorString('#d2fff3'),style:Cesium.LabelStyle.FILL_AND_OUTLINE,outlineWidth:3,pixelOffset:new Cesium.Cartesian2(0,-12),disableDepthTestDistance:Infinity}});}}
 

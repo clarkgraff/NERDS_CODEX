@@ -1,0 +1,63 @@
+{
+  "rows": [
+    {
+      "dataset": "rivers",
+      "waypoint": "New Orleans",
+      "nearbySegments": 18,
+      "nearestGeodesicSegment": {
+        "distanceNM": 0.6055979437581381,
+        "point": {
+          "lat": 29.946192721603758,
+          "lon": -90.06133988736033
+        },
+        "sourceEdge": "ne-river:588:2"
+      }
+    },
+    {
+      "dataset": "rivers",
+      "waypoint": "Baton Rouge",
+      "nearbySegments": 18,
+      "nearestGeodesicSegment": {
+        "distanceNM": 0.27009528616282913,
+        "point": {
+          "lat": 30.45139846622369,
+          "lon": -91.19230674298322
+        },
+        "sourceEdge": "ne-river:588:2"
+      }
+    },
+    {
+      "dataset": "osm",
+      "waypoint": "New Orleans",
+      "nearbySegments": 0,
+      "nearestGeodesicSegment": {
+        "distanceNM": null
+      }
+    },
+    {
+      "dataset": "osm",
+      "waypoint": "Baton Rouge",
+      "nearbySegments": 0,
+      "nearestGeodesicSegment": {
+        "distanceNM": null
+      }
+    },
+    {
+      "dataset": "refinement",
+      "waypoint": "New Orleans",
+      "nearbySegments": 0,
+      "nearestGeodesicSegment": {
+        "distanceNM": null
+      }
+    },
+    {
+      "dataset": "refinement",
+      "waypoint": "Baton Rouge",
+      "nearbySegments": 0,
+      "nearestGeodesicSegment": {
+        "distanceNM": null
+      }
+    }
+  ],
+  "note": "Read-only closest-segment diagnostic, not route acceptance or verified bank access. Baseline preserved."
+}
