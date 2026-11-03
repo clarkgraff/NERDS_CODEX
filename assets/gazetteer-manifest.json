@@ -1,0 +1,26 @@
+{
+  "id": "world-places-v1",
+  "createdAt": "2026-10-15T03:15:25.546146+00:00",
+  "count": 236427,
+  "coverage": "GeoNames cities500: populated places >500 residents and administrative centres worldwide; Natural Earth named geographic points. Smaller settlements and missing names can use optional online lookup.",
+  "sources": [
+    {
+      "url": "https://download.geonames.org/export/dump/cities500.zip",
+      "license": "CC BY 4.0",
+      "attribution": "GeoNames"
+    },
+    {
+      "url": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "attribution": "Natural Earth"
+    }
+  ],
+  "sha256": "377d38e6046d6645b2aa99401fa5be38f8cf5c9f834d98ca2aea4fe0b4a4d443",
+  "inputSha256": {
+    "admin1CodesASCII.txt": "1da92a6323a5fec3176f3f743bf4cf4040fd56a876da55e46fbca23c863aa60a",
+    "cities500.zip": "46fd044a7e0d2d097daa96d9075c8c818e8b0e337bf58724a4f94637dd351ad2",
+    "countryInfo.txt": "c55f638cfaafb4fe45a9aa15120a0f1f78e8a34a8e1847d7b9320cf740fbc9ab",
+    "geonames-readme.txt": "b1957379b6c1242c700c98ac9a8aa0a09f56c3c0a50ee72175527005f48ef2c5",
+    "places.geojson": "25821b530966e62756faebf53699f12bf73550f8228aa4bbdf3e4132dd7cf806"
+  }
+}
