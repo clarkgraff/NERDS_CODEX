@@ -11,6 +11,7 @@ function sourceValid(points,e){
 }
 function supported(result){
  const e=result.evidence,p=result.points;
+ if(e.grid==='validated-custom-sections'){const sections=e.sections||[];return sections.length>0&&sections.every(supported)&&sections.slice(1).every((section,i)=>near(sections[i].points.at(-1),section.points[0]))&&JSON.stringify(p)===JSON.stringify(sections.flatMap((section,i)=>i?section.points.slice(1):section.points));}
  if(e.grid?.startsWith('water-area-'))return require('./water-area-route.cjs').valid(result);
  if(!p.length||p.some(p=>!Number.isFinite(p.lat)||Math.abs(p.lat)>90||!Number.isFinite(p.lon)||Math.abs(p.lon)>180))return false;
  if(e.grid==='source-waterway-network')return sourceValid(p,e);
@@ -43,8 +44,10 @@ function refine(s,coarse,options={}){
   if(old.transport!=='BY-SEA'){note.reason='No detailed dataset for this transport mode';return old;}
   if(require('./course-model.cjs').constraintsFor(s.coursePlan,a.id,b.id).length){note.status='UNRESOLVED';note.reason='Manual constraints preserved; constraint routing remains pending';return old;}
   try{
-   const detailed=candidate(a,b,options);
-   const hasEvidence=detailed.evidence.grid?.startsWith('water-area-')||detailed.evidence.dataset==='refinement'||detailed.evidence.sections?.some(section=>section.dataset==='refinement'&&section.sourceEdgeIds?.length);
+   const anchors=(s.customCourse?.anchors||[]).filter(x=>x.legId===old.id).sort((x,y)=>x.order-y.order);let detailed;
+   if(anchors.length){note.customIntent=true;note.anchorIds=anchors.map(x=>x.id);const intent=require('./public/custom-course.js').geometry(old,anchors);if(!intent.length)throw Error('CUSTOM_INTENT_UNAVAILABLE: calculate the leg before refining its edited path');if(intent.length>2048)throw Error('CUSTOM_INTENT_LIMIT: refine fewer anchors per leg');const guides=intent.filter((p,i)=>i>0&&i<intent.length-1&&i%8===0);const checkpoints=[a,...guides.map((p,i)=>({...p,id:'intent-'+i,access:p})),b],sections=[];for(let j=1;j<checkpoints.length;j++){const section=candidate(checkpoints[j-1],checkpoints[j],options);if(!supported(section))throw Error('CUSTOM_INTENT_REJECTED: unsupported geographic section');if(sections.length&&!near(sections.at(-1).points.at(-1),section.points[0]))throw Error('CUSTOM_INTENT_REJECTED: disconnected anchor attachment');sections.push(section);}detailed={points:sections.flatMap((x,i)=>i?x.points.slice(1):x.points),accesses:[sections[0].accesses[0],sections.at(-1).accesses[1]],evidence:{grid:'validated-custom-sections',sections,anchors:[a,b],waypointIds:[a.id,b.id],intentAnchors:anchors,intentGeometry:intent}};
+   }else detailed=candidate(a,b,options);
+   const hasEvidence=detailed.evidence.grid==='validated-custom-sections'||detailed.evidence.grid?.startsWith('water-area-')||detailed.evidence.dataset==='refinement'||detailed.evidence.sections?.some(section=>section.dataset==='refinement'&&section.sourceEdgeIds?.length);
    if(!hasEvidence)throw Error('No improved source geometry available for this leg');
    if(!supported(detailed))throw Error('Detailed geometry or source-to-grid transition is unsupported');
    // Existing successful attachments are immutable: a more detailed line may
