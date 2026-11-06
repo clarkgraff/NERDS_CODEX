@@ -1,0 +1,123 @@
+
+> nerds@0.4.0 test
+> node --test test/*.test.cjs
+
+✔ adaptive detail responds to source complexity and cell budgets, not viewport zoom (0.7253ms)
+✔ expansion wraps date line, respects poles and retains bounded rounds and cache reuse (270.2735ms)
+✔ provider denial, limits and cancellation stay unresolved without repeated requests (31.0069ms)
+{"preparationMs":715.2261000000001,"rssBytes":1180119040}
+✔ bundled runtime classifies directed coastal faces and keeps land excluded (11900.5225ms)
+✔ island interior remains land; incomplete and conflicting coastlines remain unresolved (1181.9989ms)
+✔ explicit estuary water connects to coastal sea without erasing surrounding land (9079.4297ms)
+{"bidirectionalRouteMs":282.03310000000056,"rssBytes":1123557376}
+✔ adjacent prepared coastal tiles connect through verified overlap in both directions (11738.0934ms)
+✖ standalone executable works outside repository with no Python environment and matches reference masks (712.5433ms)
+✔ dateline coastal tiles preserve source continuity and WGS84 route reversal (12554.6072ms)
+✔ high-latitude coastline classifies locally; pole vertices remain explicitly unresolved (732.8391ms)
+✔ offline lookup supports names and diacritics, rejects unknown cities (242.2516ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (13.2961ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (47.3885ms)
+✔ invalid saves cannot overwrite the last good expedition (17.4238ms)
+✔ inference adapter only accepts local HTTP APIs (0.5266ms)
+✔ open water staircase becomes a direct geodesic without mutating source geometry (4.6153ms)
+✔ geodesic shortcuts cannot cross blocked cells or diagonal land corners (0.7802ms)
+✔ course simplification retains exact source-waterway bends (1.0582ms)
+✔ reversing a constrained raster path reverses the same simplified geometry (1.3495ms)
+✔ legacy projects migrate to an empty course plan and preserve independent itinerary identities (28.8775ms)
+✔ manual constraints survive SQLite restart and project roundtrip independently of itinerary edits (63.3507ms)
+✔ constraints cannot be confused with automatic points, and invalid input is rejected (0.6659ms)
+✔ Gironde coarse raster course refines to actual source bends with identical attachments (19476.1369ms)
+✔ source detours do not silently replace the supported original passage (139.2884ms)
+✔ valid coarse snapshots are retained exactly while departure edits recalculate timing (176.651ms)
+✔ additive refinement dataset matches its manifest and source acquisition digests (1027.5892ms)
+✔ explicit mapped refinement resolves Bordeaux in both directions and retains original unresolved evidence (881.1403ms)
+✔ refinement preserves successful legs, gaps, constraints and nominal accounting (13556.8015ms)
+✔ detailed acceptance rejects fabricated source edges and continental shortcuts (246.3817ms)
+✔ approved discovery persists by stable identity, retains aliases and rejects invalid replacements (30.2806ms)
+✔ waypoint persistence retains discovery classification independently of planning role (28.0582ms)
+✔ project roundtrip, source references, transactional invalid-open protection (56.0842ms)
+✔ vessel units, hull estimate, and known clearance exceedance (0.5461ms)
+✔ distance/time numerical checks and speed validation (1.8747ms)
+✔ coarse water route rounds Denmark instead of crossing land; grid nodes clear (101.8316ms)
+✔ exports escape text and KMZ contains complete doc.kml (2.2076ms)
+✔ WGS84 inverse distances match published GeographicLib reference vectors (3.8704ms)
+✔ geodesic sampling preserves endpoints and length across the dateline and near poles (1.7124ms)
+✔ arbitrary worldwide corridors cover dateline and polar requests with explicit budgets (2.3494ms)
+✔ cache reuse, restart, versions and rollback preserve source identity (67.6082ms)
+✔ bad responses, byte limits, offline misses and interrupted acquisition preserve previous cache (31.753ms)
+✔ USER PATH revisions preserve intent and independent 6-knot geodesic coarse calculations (2.8579ms)
+✔ legacy projects acquire path identity; edits invalidate active course without deleting archived geometry (20.9706ms)
+✔ OSM provider rejects partial responses and non-world coordinates without inventing water polygons (1.1406ms)
+✖ arbitrary source acquisition, preparation, runtime routing, restart and rollback (1.6821ms)
+✔ independent geodesic validator checks actual boundary crossings near Black Sea coast (183.9337ms)
+✔ geographic acceptance rejects fabricated source edges, waypoint order, distance and ETA (11083.5522ms)
+✔ worldwide indexed offline search, disambiguation and provenance roundtrip (1261.8937ms)
+✔ UTC, date line, daylight-saving gaps and repeated local hours (22.8461ms)
+✔ city anchors use connected Elbe and Kiel Canal source geometry without manual access (12261.4986ms)
+✔ mixed propulsion uses sum of segment times, with editable reference speed (1.1531ms)
+✔ air estimates use mode speed; road network absence is explicit (1.0088ms)
+✔ external layer contract rejects unlabeled forecasts and invalid coordinates (0.3663ms)
+✔ online fallback sends compliant requests, preserves source and caches responses (0.6232ms)
+✔ mixed European/world itinerary retains shared water attachments and valid accounting both directions (10989.1064ms)
+✔ explicit access remains unchanged; shared selection never increases the guard (30.3353ms)
+✔ Stage 1 both access cells use the preselected grid; reported defects work in both directions (10718.1305ms)
+✔ Stage 1 appending a failing leg preserves successful geometry and reports unknown totals (1041.4871ms)
+✔ Stage 1 later legs continue after failures but receive no fabricated absolute ETA or export timestamp (243.0037ms)
+✔ Stage 1 unresolved inland and road routes never become completed zero-distance journeys (424.1477ms)
+✔ Stage 1 defaults to BYPASS while preserving optional settings and diagnostic opt-in (435.9284ms)
+✔ Unknown transfers still prevent fabricated downstream ETAs (0.8295ms)
+✔ Stage 1 failed explicit access and bounded search are isolated (54.6141ms)
+✔ BETA suitability never changes connected geometry, distance, duration or ETA (10519.519ms)
+✔ BYPASS and advisory ON cannot permit access on land or invent inland connectivity (127.2865ms)
+✔ water-area topology excludes holes, diagonal corner cuts and disconnected components (4.3949ms)
+✔ adopted masks, exclusions, exact geometry and available acquisitions match SHA-256 provenance (198.6037ms)
+✔ real Alter water area resolves both directions without replacing coarse evidence or waypoint IDs (20364.2381ms)
+✔ partial itinerary preserves resolved water-area leg and suppresses unsupported downstream ETA (587.2255ms)
+✔ Lake Ontario interior geometry works without claiming the Toronto fixture or St Lawrence outlet (668.7259ms)
+✔ source-to-ocean transitions preserve portals and reject inconsistent or unsupported assemblies (856.369ms)
+✔ source waterway topology follows all vertices, both directions; nearby gaps remain disconnected (6.2994ms)
+✔ mapped Amazon and Elbe routes preserve source edges and bidirectional distance (15823.3118ms)
+✔ St Lawrence Montreal to Quebec follows validated source geometry both directions (4583.2031ms)
+✔ all-feature discovery matches accented aliases and regional disambiguation without population eligibility (51.8763ms)
+✔ absent expanded index remains optional (0.4009ms)
+ℹ tests 76
+ℹ suites 0
+ℹ pass 74
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 36184.1003
+
+✖ failing tests:
+
+test at test\coastal-runtime.test.cjs:23:1
+✖ standalone executable works outside repository with no Python environment and matches reference masks (712.5433ms)
+  AssertionError [ERR_ASSERTION]: Reference comparison needs configured development Python
+      at TestContext.<anonymous> (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\coastal-runtime.test.cjs:30:54)
+      at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at test\geographic-integration.test.cjs:4:1
+✖ arbitrary source acquisition, preparation, runtime routing, restart and rollback (1.6821ms)
+  AssertionError [ERR_ASSERTION]: Set NERDS_PREPARATION_PYTHON to the development Python with Shapely
+      at TestContext.<anonymous> (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\geographic-integration.test.cjs:5:4)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

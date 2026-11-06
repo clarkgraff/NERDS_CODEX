@@ -1,0 +1,14 @@
+[
+  {
+    "endpoint": "nhd-new-orleans",
+    "layer": 9,
+    "status": "FAIL",
+    "error": "Acquisition timeout"
+  },
+  {
+    "endpoint": "nhd-baton-rouge",
+    "layer": 9,
+    "status": "FAIL",
+    "error": "Acquisition timeout"
+  }
+]

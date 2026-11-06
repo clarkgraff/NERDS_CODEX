@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tianjin",
+    "status": "Detailed Terrain · 112 detail tiles · 0 missing · 0 elevation gaps",
+    "cache": {
+      "online": true,
+      "downloads": 289,
+      "bytes": 34331781,
+      "maxBytes": 52428800,
+      "maxTiles": 3000,
+      "missing": [],
+      "failures": []
+    },
+    "routeOff": true
+  },
+  {
+    "name": "Elbe",
+    "status": "Detailed Terrain · 36 detail tiles · 0 missing · 0 elevation gaps",
+    "cache": {
+      "online": true,
+      "downloads": 351,
+      "bytes": 43433829,
+      "maxBytes": 52428800,
+      "maxTiles": 3000,
+      "missing": [],
+      "failures": []
+    },
+    "routeOff": true
+  },
+  {
+    "name": "Fraser",
+    "status": "Detailed Terrain · 44 detail tiles · 0 missing · 0 elevation gaps",
+    "cache": {
+      "online": true,
+      "downloads": 435,
+      "bytes": 50208069,
+      "maxBytes": 52428800,
+      "maxTiles": 3000,
+      "missing": [],
+      "failures": []
+    },
+    "routeOff": true
+  }
+]

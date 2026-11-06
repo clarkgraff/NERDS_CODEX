@@ -1,0 +1,13 @@
+{
+  "method": "GET",
+  "endpoint": "https://overpass-api.de/api/interpreter",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "NERDS-Stage2-validation/0.3.1"
+  },
+  "timeoutMs": 15000,
+  "outcome": "TIMEOUT",
+  "previousPOST": 406,
+  "previousStatusGET": 406,
+  "conclusion": "Payload alone does not explain status endpoint rejection. Provider/filter/network cause unresolved. No further requests."
+}

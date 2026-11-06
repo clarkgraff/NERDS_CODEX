@@ -1,0 +1,30 @@
+[
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\config.json",
+    "Hash": "DE7F907CE47DA458918DCB563AE9A3A5EB5AC959DD7190E222C5329FDFEDFB8C"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\nerds.sqlite",
+    "Hash": "DB48AEE684414D8E58B5FDB0A14D0D6CF72B2AD12450661B35EFF5171318CE20"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\route-diagnostics\\legs.jsonl",
+    "Hash": "A4B39E3FD268585BF3301044CAE3BC8CCAAE019966BD2E30E06B2DA6136A850D"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\config.json",
+    "Hash": "9F64AE201C4EE7FA9FA9A18520C8C7A246ED46FA645B00234FE5A267254A944E"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\nerds.sqlite",
+    "Hash": "5F0A8F958BEF9A1EE409545C74432BFE90BC4051BFDFF657BDEB6A0121D85E80"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\AMAZON_V1.nerds",
+    "Hash": "2D922ADBA1D299C4D037415D041D10F659E810F4080FF44B2660B488097232E8"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\NORTHERN_CANADA_GREENLAND.nerds",
+    "Hash": "917F04B8D08CA0B83EF63E446AD9E3016CCFEF1DDCD2DF648CB6C599B1C3356F"
+  }
+]

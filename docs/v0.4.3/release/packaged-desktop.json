@@ -1,0 +1,16 @@
+{
+  "checks": [
+    "Launch 0.4.3 with isolated user data and Cesium",
+    "Selection preserves camera and displays only incoming leg annotation",
+    "Direct queue renumber retains stable selected ID",
+    "Reverse cancellation preserves original itinerary",
+    "Reverse saves first and restores stored original order with calculation",
+    "Global palette, tooltip and steady marker preferences save",
+    "Left-panel contact creation and persistence",
+    "Restart preserves project, contacts and global preferences",
+    "UHD and normal desktop usable"
+  ],
+  "errors": [],
+  "exe": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\dist\\win-unpacked\\NERDS Development Test.exe",
+  "dataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds043-release-c3sOGV"
+}

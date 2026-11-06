@@ -1,0 +1,1 @@
+{'method': 'GEOS covers against retained source water polygons with holes; authoritative geodesics sampled at <=20 m; independent of production raster validator', 'checkedUniqueDirectedAreaEdges': 998, 'failures': [], 'status': 'PASS', 'limitation': 'Finite 20 m linear approximation; not vessel clearance or worldwide coverage'}

@@ -1,0 +1,11 @@
+✔ explicit mapped refinement resolves Bordeaux in both directions and retains original unresolved evidence (7212.6369ms)
+✔ refinement preserves successful legs, gaps, constraints and nominal accounting (1633.1912ms)
+✔ detailed acceptance rejects fabricated source edges and continental shortcuts (157.9112ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9346.6567

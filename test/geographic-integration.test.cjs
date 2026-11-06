@@ -1,0 +1,23 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const {GeographicDataManager}=require('../src/geographic-data.cjs'),prep=require('../src/geographic-preparation.cjs'),topology=require('../src/water-area-route.cjs');
+const python=process.env.NERDS_PREPARATION_PYTHON;
+test('arbitrary source acquisition, preparation, runtime routing, restart and rollback',async()=>{
+ a.ok(python,'Set NERDS_PREPARATION_PYTHON to the development Python with Shapely');
+ const m=new GeographicDataManager(fs.mkdtempSync(path.join(os.tmpdir(),'nerds-integration-'))),tile={id:'synthetic-tile',west:20,south:20,east:20.2,north:20.2};
+ const ring=[[20.01,20.01],[20.19,20.01],[20.19,20.19],[20.01,20.19],[20.01,20.01]].map(([lon,lat])=>({lon,lat}));
+ const doc={osm3s:{timestamp_osm_base:'2026-10-24T00:00:00Z'},elements:[{type:'way',id:990001,tags:{natural:'water'},geometry:ring},{type:'way',id:990002,tags:{waterway:'river'},geometry:[{lon:20.1,lat:20.1},{lon:20.1,lat:20.25}]}]};
+ const p=require('../src/geographic-providers.cjs').osmHydrography(async()=>new Response(JSON.stringify(doc)));
+ const initial=m.publish(m.index()),record=await m.acquire(tile,p,{online:true});
+ const first=await prep.prepare(m,record,{python,resolution:.01});
+ a.equal(first.cacheHit,false);a.equal((await prep.prepare(m,record,{python,resolution:.01})).cacheHit,true);
+ topology.configure(prep.prepared(m));
+ const start={id:'a',lat:20.08,lon:20.08,access:{lat:20.08,lon:20.08}},end={id:'b',lat:20.25,lon:20.1,access:{lat:20.25,lon:20.1}};
+ const route=topology.leg(start,end),reverse=topology.leg(end,start);
+ a.equal(topology.valid(route),true);a.deepEqual(reverse.points,[...route.points].reverse());
+ a.ok(route.evidence.edgeEvidence.some(e=>e.kind==='SOURCE'));a.ok(route.evidence.edgeEvidence.some(e=>e.kind==='AREA'));
+ const restarted=new GeographicDataManager(m.root);p.request=()=>{throw Error('Network must not be used');};a.equal((await restarted.acquire(tile,p)).cacheHit,true);a.deepEqual(prep.prepared(restarted),[first.directory]);
+ await prep.prepare(m,record,{python,resolution:.005});a.equal(prep.prepared(m).length,1);topology.configure(prep.prepared(m));
+ a.throws(()=>topology.configure([path.join(m.root,'missing')]));a.equal(topology.valid(topology.leg(start,end)),true);
+ m.rollback(initial);a.deepEqual(prep.prepared(m),[]);topology.configure([]);
+ a.equal(topology.manifest.regions.some(r=>r.id===tile.id),false);
+});

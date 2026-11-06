@@ -1,0 +1,707 @@
+{
+  "checkpoint": "6b5ac615f7a692f9229bdd031d7b37f517bb0aae",
+  "before": {
+    "PASS": 115,
+    "FAIL": 0,
+    "UNRESOLVED": 44,
+    "DEFERRED": 0
+  },
+  "after": {
+    "PASS": 119,
+    "FAIL": 0,
+    "UNRESOLVED": 40,
+    "DEFERRED": 0
+  },
+  "changedEvaluations": [
+    {
+      "name": "Brest → Bordeaux | full forward",
+      "before": "UNRESOLVED",
+      "after": "PASS"
+    },
+    {
+      "name": "Brest → Bordeaux | full reverse",
+      "before": "UNRESOLVED",
+      "after": "PASS"
+    },
+    {
+      "name": "Brest → Bordeaux | isolated",
+      "before": "UNRESOLVED",
+      "after": "PASS"
+    },
+    {
+      "name": "Bordeaux → Brest | isolated",
+      "before": "UNRESOLVED",
+      "after": "PASS"
+    }
+  ],
+  "refinedLegs": [
+    {
+      "case": "Brest → Bordeaux | full forward",
+      "id": "case-Brest->case-Bordeaux",
+      "status": "REFINED",
+      "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+      "beforeNM": null,
+      "afterNM": 286.7986293686668,
+      "beforeVertices": 0,
+      "afterVertices": 171
+    },
+    {
+      "case": "Brest → Bordeaux | full reverse",
+      "id": "case-Bordeaux->case-Brest",
+      "status": "REFINED",
+      "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+      "beforeNM": null,
+      "afterNM": 286.7986293686669,
+      "beforeVertices": 0,
+      "afterVertices": 171
+    },
+    {
+      "case": "Brest → Bordeaux | isolated",
+      "id": "case-Brest->case-Bordeaux",
+      "status": "REFINED",
+      "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+      "beforeNM": null,
+      "afterNM": 286.7986293686668,
+      "beforeVertices": 0,
+      "afterVertices": 171
+    },
+    {
+      "case": "Bordeaux → Brest | isolated",
+      "id": "case-Bordeaux->case-Brest",
+      "status": "REFINED",
+      "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+      "beforeNM": null,
+      "afterNM": 286.7986293686669,
+      "beforeVertices": 0,
+      "afterVertices": 171
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full forward",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Montevideo->case-Stanley",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Stanley->case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Ushuaia->case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Punta Arenas->case-Concepción",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full reverse",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Concepción->case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Punta Arenas->case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Ushuaia->case-Stanley",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Stanley->case-Montevideo",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        }
+      ]
+    },
+    {
+      "name": "Stanley → Ushuaia | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Stanley->case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Ushuaia → Stanley | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Ushuaia->case-Stanley",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Ushuaia → Punta Arenas | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Ushuaia->case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Punta Arenas → Ushuaia | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Punta Arenas->case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Punta Arenas → Concepción | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Punta Arenas->case-Concepción",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Concepción → Punta Arenas | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Concepción->case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Macapá → Belém → Breves | full forward",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Macapá->case-Belém",
+          "status": "UNCHANGED",
+          "reason": "Existing course already uses the available detailed geometry"
+        },
+        {
+          "id": "case-Belém->case-Breves",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Macapá → Belém → Breves | full reverse",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Breves->case-Belém",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "id": "case-Belém->case-Macapá",
+          "status": "UNCHANGED",
+          "reason": "Existing course already uses the available detailed geometry"
+        }
+      ]
+    },
+    {
+      "name": "Belém → Breves | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Belém->case-Breves",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Breves → Belém | isolated",
+      "coarseReasons": [
+        "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Breves->case-Belém",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus | full forward",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Atlantic->case-Amazon estuary",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Amazon estuary->case-Manaus",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus | full reverse",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Manaus->case-Amazon estuary",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        },
+        {
+          "id": "case-Amazon estuary->case-Atlantic",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        }
+      ]
+    },
+    {
+      "name": "Amazon estuary → Manaus | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Amazon estuary->case-Manaus",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Manaus → Amazon estuary | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Manaus->case-Amazon estuary",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Santarém → Alter do Chão | full forward",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Santarém->case-Alter do Chão",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Santarém → Alter do Chão | full reverse",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Alter do Chão->case-Santarém",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Santarém → Alter do Chão | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Santarém->case-Alter do Chão",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Alter do Chão → Santarém | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Alter do Chão->case-Santarém",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Kingston Mills → Toronto | full forward",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Kingston Mills->case-Toronto",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Kingston Mills → Toronto | full reverse",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Toronto->case-Kingston Mills",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Kingston Mills → Toronto | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Kingston Mills->case-Toronto",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Toronto → Kingston Mills | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Toronto->case-Kingston Mills",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Toronto → Montréal | full forward",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Toronto->case-Montréal",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Toronto → Montréal | full reverse",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Montréal->case-Toronto",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Toronto → Montréal | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Toronto->case-Montréal",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Montréal → Toronto | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Montréal->case-Toronto",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don | full forward",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Odesa->case-Sevastopol",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Sevastopol->case-Rostov-on-Don",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don | full reverse",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Rostov-on-Don->case-Sevastopol",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        },
+        {
+          "id": "case-Sevastopol->case-Odesa",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        }
+      ]
+    },
+    {
+      "name": "Sevastopol → Rostov-on-Don | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Sevastopol->case-Rostov-on-Don",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Rostov-on-Don → Sevastopol | isolated",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Rostov-on-Don->case-Sevastopol",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land) | full forward",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.",
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Odesa->case-Istanbul",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        },
+        {
+          "id": "case-Istanbul->case-Tel Aviv",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land) | full reverse",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.",
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Tel Aviv->case-Istanbul",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        },
+        {
+          "id": "case-Istanbul->case-Odesa",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Istanbul | isolated",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Odesa->case-Istanbul",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Istanbul → Odesa | isolated",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Istanbul->case-Odesa",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Istanbul → Tel Aviv | isolated",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Istanbul->case-Tel Aviv",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Tel Aviv → Istanbul | isolated",
+      "coarseReasons": [
+        "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Tel Aviv->case-Istanbul",
+          "status": "UNCHANGED",
+          "reason": "No detailed dataset for this transport mode"
+        }
+      ]
+    },
+    {
+      "name": "Successful three-waypoint route plus failing new leg",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Barcelona->case-Ibiza",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Ibiza->case-Algiers",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Algiers->case-Manaus",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        }
+      ]
+    },
+    {
+      "name": "Failures in middle with later successful leg",
+      "coarseReasons": [
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset.",
+        "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+      ],
+      "refinementAttempts": [
+        {
+          "id": "case-Barcelona->case-Ibiza",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        },
+        {
+          "id": "case-Ibiza->case-Manaus",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        },
+        {
+          "id": "case-Manaus->case-Algiers",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset."
+        },
+        {
+          "id": "case-Algiers->case-Marseille",
+          "status": "UNCHANGED",
+          "reason": "No improved source geometry available for this leg"
+        }
+      ]
+    }
+  ],
+  "timingMs": {
+    "median": 146.24499999999898,
+    "maximum": 9525.9233
+  }
+}

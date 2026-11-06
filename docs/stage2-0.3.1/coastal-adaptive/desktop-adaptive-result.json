@@ -1,0 +1,388 @@
+{
+  "status": "CONNECTED",
+  "stop": "CONNECTED",
+  "events": [
+    {
+      "tile": "d0.25-x799-y439",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\bde0d518fc6367b36e9f6866378c55b98d41537fe4cb800be9375bd47168f811",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x799-y440",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\49d918712eac1d3a392f1f18517669c3122a80544d18c8a5b8c5001b31b6fdde",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x799-y441",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\302bb7a14ed89a224ad33013e9e18db87c039da4321a3fd59e35d045c1127a04",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x800-y439",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\69c11148df97c14fa92c947ece7e907c5987fb82853bdef1f9bcefee8e3f6d8e",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x800-y440",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\59162be1ffda8b0c02c866ac16ff8ecee1b0ff7fab0b59fab67d5dcd820a855e",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x800-y441",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\7d01b4c78f7d20f8b016168f8e2893eb8bdda1ccf24c507feafccb3eb3ae7577",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x801-y439",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\ec9132385cfcd2fbc7934bd267b0647e5e0b134e329ed6647250ff44643c7516",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x801-y440",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\97cd3fa8785f585b4247bbf0e60d88658d9cbf8b3202789719969c7307a379ea",
+      "status": "PREPARED"
+    },
+    {
+      "tile": "d0.25-x801-y441",
+      "round": 0,
+      "cacheHit": true,
+      "preparedCacheHit": false,
+      "detail": {
+        "degrees": 0.005,
+        "desiredDegrees": 0.005,
+        "budgetLimited": false,
+        "vertices": 5,
+        "coast": false,
+        "reason": "MAPPED_WATER"
+      },
+      "directory": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-manager-desktop-Y7rCyD\\geography\\prepared\\9f5c9e63ffbca88ccb7fff5887bff8f2657278ad7e2c15d1fa0aee87977adc2e",
+      "status": "PREPARED"
+    }
+  ],
+  "result": {
+    "connected": true,
+    "legs": [
+      {
+        "status": "CONNECTED",
+        "points": [
+          {
+            "lat": 20,
+            "lon": 20
+          },
+          {
+            "lat": 19.9975,
+            "lon": 19.9975
+          },
+          {
+            "lat": 20.0025,
+            "lon": 20.0025
+          },
+          {
+            "lat": 20.0075,
+            "lon": 20.0075
+          },
+          {
+            "lat": 20.0125,
+            "lon": 20.0125
+          },
+          {
+            "lat": 20.017500000000002,
+            "lon": 20.017500000000002
+          },
+          {
+            "lat": 20.0225,
+            "lon": 20.0225
+          },
+          {
+            "lat": 20.0275,
+            "lon": 20.0275
+          },
+          {
+            "lat": 20.0325,
+            "lon": 20.0325
+          },
+          {
+            "lat": 20.0375,
+            "lon": 20.0375
+          },
+          {
+            "lat": 20.0425,
+            "lon": 20.0425
+          },
+          {
+            "lat": 20.0475,
+            "lon": 20.0475
+          },
+          {
+            "lat": 20.052500000000002,
+            "lon": 20.052500000000002
+          },
+          {
+            "lat": 20.0575,
+            "lon": 20.0575
+          },
+          {
+            "lat": 20.0625,
+            "lon": 20.0625
+          },
+          {
+            "lat": 20.0675,
+            "lon": 20.0675
+          },
+          {
+            "lat": 20.0725,
+            "lon": 20.0725
+          },
+          {
+            "lat": 20.0775,
+            "lon": 20.0775
+          },
+          {
+            "lat": 20.0825,
+            "lon": 20.0825
+          },
+          {
+            "lat": 20.087500000000002,
+            "lon": 20.087500000000002
+          },
+          {
+            "lat": 20.0925,
+            "lon": 20.0925
+          },
+          {
+            "lat": 20.0975,
+            "lon": 20.0975
+          },
+          {
+            "lat": 20.1025,
+            "lon": 20.1025
+          },
+          {
+            "lat": 20.1,
+            "lon": 20.1
+          }
+        ],
+        "accesses": [
+          {
+            "lat": 20,
+            "lon": 20
+          },
+          {
+            "lat": 20.1,
+            "lon": 20.1
+          }
+        ],
+        "evidence": {
+          "grid": "water-area-topology",
+          "waypointIds": [
+            "arbitrary-a",
+            "arbitrary-b"
+          ],
+          "anchors": [
+            {
+              "lat": 20,
+              "lon": 20
+            },
+            {
+              "lat": 20.1,
+              "lon": 20.1
+            }
+          ],
+          "source": "https://www.openstreetmap.org/copyright",
+          "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+          "areaChecksum": "f4d0d3731b08efc2197bffa01242695f3b9d54625da6f24dcdbed65e83ee3c93",
+          "edgeEvidence": [
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            }
+          ],
+          "visitedCells": 1065,
+          "termination": "CONNECTED_SOURCE_AND_WATER_AREA",
+          "automaticConnectorLimitNM": 3,
+          "sourceAccessEvidence": []
+        }
+      }
+    ]
+  },
+  "downloads": 0,
+  "tiles": 9,
+  "elapsedMs": 6592.3675,
+  "rssBytes": 1776881664
+}

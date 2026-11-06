@@ -1,6 +1,6 @@
 {
   "name": "nerds",
-  "version": "0.3.0",
+  "version": "0.4.5",
   "description": "Offline expedition research and geographic planning",
   "author": "4nR TeK Inc.",
   "private": true,
@@ -16,17 +16,21 @@
     "prepackage": "npm run prepare:data"
   },
   "dependencies": {
+    "@mapbox/vector-tile": "3.0.0",
     "cesium": "1.146.0",
-    "exifr": "7.1.3"
+    "exifr": "7.1.3",
+    "geographiclib-geodesic": "2.2.0",
+    "pbf": "5.1.2",
+    "pngjs": "7.0.0"
   },
   "devDependencies": {
     "electron": "44.7.1",
     "electron-builder": "26.15.3"
   },
   "build": {
-    "appId": "org.fairewindandsong.nerds",
-    "productName": "NERDS",
-    "copyright": "© 2026 4nR TeK Inc. All rights reserved. Created by Clark Graff.",
+    "appId": "com.4nr.nerds.devtest041",
+    "productName": "NERDS Development Test",
+    "copyright": "Copyright (c) 2026 4nR TeK Inc. Created by Clark Graff.",
     "directories": {
       "output": "dist"
     },
@@ -41,7 +45,9 @@
       "node_modules/cesium/LICENSE.md",
       "node_modules/cesium/ThirdParty.extra.json",
       "node_modules/cesium/ThirdParty.json",
-      "!assets/geonames.sqlite*"
+      "!assets/geonames.sqlite*",
+      "node_modules/geographiclib-geodesic/**/*",
+      "!assets/discovery/*.sqlite*"
     ],
     "win": {
       "target": "msi",
@@ -50,10 +56,11 @@
     },
     "msi": {
       "oneClick": false,
-      "perMachine": false,
+      "perMachine": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "artifactName": "NERDS-${version}-${arch}.${ext}"
+      "artifactName": "NERDS-${version}-${arch}.${ext}",
+      "upgradeCode": "9156D92F-9DA5-530D-9BCD-D9DDAD09009B"
     },
     "npmRebuild": false,
     "extraFiles": [
@@ -67,6 +74,10 @@
       {
         "from": "assets/geonames.sqlite",
         "to": "data/places.sqlite"
+      },
+      {
+        "from": "work/preparation-runtime/nerds-geography",
+        "to": "nerds-geography"
       }
     ]
   }

@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "startupMs": 1485.7538000000004,
+  "offlineRenderMs": 2871.8775000000005,
+  "display": "Detailed Terrain · 87 detail tiles · 0 missing · 0 elevation gaps",
+  "acquisition": {
+    "online": false,
+    "downloads": 0,
+    "bytes": 0,
+    "maxBytes": 52428800,
+    "maxTiles": 3000,
+    "missing": []
+  },
+  "metrics": [
+    {
+      "type": "Browser",
+      "workingSetKB": 218248
+    },
+    {
+      "type": "GPU",
+      "workingSetKB": 224356
+    },
+    {
+      "type": "Utility",
+      "workingSetKB": 56336
+    },
+    {
+      "type": "Tab",
+      "workingSetKB": 909632
+    }
+  ]
+}

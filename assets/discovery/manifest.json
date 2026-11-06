@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "provider": "GeoNames",
+  "license": "CC BY 4.0",
+  "attribution": "GeoNames contributors",
+  "source": "https://www.geonames.org/export/",
+  "coverage": "worldwide-all-features",
+  "populationFilter": null,
+  "sources": [
+    {
+      "file": "allCountries.zip",
+      "sha256": "7913ccd39f422d00a166290a8c5855a8b5af995e3f210c18dc9cb60ca07c0f69",
+      "url": "https://download.geonames.org/export/dump/allCountries.zip"
+    }
+  ],
+  "builtAt": "2026-10-17T10:19:36.313570+00:00",
+  "count": 13472462,
+  "databaseSha256": "831d2e094ec6d7b0cf83aa39c425767d6bc0225c9c9efa81bae3485982ce55e2"
+}

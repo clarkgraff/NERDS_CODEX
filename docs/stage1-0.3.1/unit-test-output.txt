@@ -1,0 +1,32 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (9.9934ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (6.6492ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (22.3184ms)
+✔ invalid saves cannot overwrite the last good expedition (12.6775ms)
+✔ inference adapter only accepts local HTTP APIs (0.3051ms)
+✔ project roundtrip, source references, transactional invalid-open protection (35.1544ms)
+✔ vessel units, hull estimate, and known clearance exceedance (0.4678ms)
+✔ distance/time numerical checks and speed validation (0.5251ms)
+✔ coarse water route rounds Denmark instead of crossing land; grid nodes clear (34.0877ms)
+✔ exports escape text and KMZ contains complete doc.kml (1.7215ms)
+✔ worldwide indexed offline search, disambiguation and provenance roundtrip (25.1598ms)
+✔ UTC, date line, daylight-saving gaps and repeated local hours (15.4768ms)
+✔ city anchors retain valid legs and diagnose missing Hamburg access without manual input (109.3941ms)
+✔ mixed propulsion uses sum of segment times, with editable reference speed (2.8723ms)
+✔ air estimates use mode speed; road network absence is explicit (0.63ms)
+✔ external layer contract rejects unlabeled forecasts and invalid coordinates (0.354ms)
+✔ online fallback sends compliant requests, preserves source and caches responses (0.7241ms)
+✔ Stage 1 both access cells use the preselected grid; reported defects work in both directions (264.8473ms)
+✔ Stage 1 appending a failing leg preserves successful geometry and reports unknown totals (31.8568ms)
+✔ Stage 1 later legs continue after failures but receive no fabricated absolute ETA or export timestamp (42.4327ms)
+✔ Stage 1 unresolved inland and road routes never become completed zero-distance journeys (1.7118ms)
+✔ Stage 1 defaults to BYPASS while preserving optional settings and diagnostic opt-in (108.209ms)
+✔ Stage 1 grid transitions are explicit unknown transfers rather than instantaneous jumps (28.6922ms)
+✔ Stage 1 failed explicit access and bounded search are isolated (30.8745ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 661.7655

@@ -1,0 +1,4277 @@
+{
+  "state": {
+    "waypoints": [
+      {
+        "lat": 45.6616251,
+        "lon": -1.2171409,
+        "id": "gironde-0",
+        "name": "Mapped Gironde 0",
+        "access": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        }
+      },
+      {
+        "lat": 45.3802966,
+        "lon": -0.8220253,
+        "id": "gironde-1",
+        "name": "Mapped Gironde 1",
+        "access": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        }
+      }
+    ],
+    "coursePlan": {
+      "schemaVersion": 1,
+      "segmentType": "GEODESIC",
+      "manualConstraints": []
+    },
+    "projectId": "87874909-b97c-4e42-be86-84d31d1343d4",
+    "createdAt": "2026-10-18T07:05:44.476Z",
+    "timeZone": "UTC",
+    "departureUTC": "2026-10-15T12:00:00.000Z",
+    "mission": "ROUTE PLOT",
+    "transport": "BY-SEA",
+    "speed": "BEST-TIME",
+    "view": "GLOBE",
+    "departure": "2026-10-18T07:05",
+    "vessel": {
+      "name": "",
+      "imo": "",
+      "mmsi": "",
+      "flag": "",
+      "hullType": "",
+      "propulsion": "SAIL + POWER",
+      "propulsionModes": [
+        "SAIL",
+        "POWER-DIESEL"
+      ],
+      "referenceKnots": 6,
+      "sailKnots": 6,
+      "dieselKnots": 10,
+      "electricKnots": 10,
+      "landKnots": 30,
+      "airKnots": 250,
+      "underKeel": 0,
+      "airAllowance": 0,
+      "draftAllowance": 0,
+      "assumptions": "Nominal planning assumptions; no calibrated environmental model.",
+      "lengthUnit": "m",
+      "massUnit": "t",
+      "loa": null,
+      "beam": null,
+      "draftWater": null,
+      "draftAir": null,
+      "lwl": null,
+      "displacement": null,
+      "hullSpeed": null,
+      "imageData": ""
+    },
+    "cruisingKnots": 6,
+    "routePreference": "OFFSHORE PREFERRED",
+    "coastalSeparationNM": 10,
+    "overlays": {
+      "roads": false,
+      "borders": false,
+      "timezones": false,
+      "MUSIC": false,
+      "CUISINE": false,
+      "CULTURE": false,
+      "HISTORY": false,
+      "ARCHITECTURE": false,
+      "environment": false
+    },
+    "externalLayers": [],
+    "route": null
+  },
+  "validation": {
+    "result": "PASS",
+    "errors": [],
+    "unresolved": []
+  },
+  "coarse": {
+    "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+    "preference": "BYPASS",
+    "legs": [
+      {
+        "id": "gironde-0->gironde-1",
+        "fromId": "gironde-0",
+        "waypointId": "gironde-1",
+        "transport": "BY-SEA",
+        "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+        "points": [
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          {
+            "lat": 45.5875,
+            "lon": -1.0374999999999979
+          },
+          {
+            "lat": 45.4375,
+            "lon": -0.8374999999999986
+          },
+          {
+            "lat": 45.3875,
+            "lon": -0.8125
+          },
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          }
+        ],
+        "distanceNM": 24.88612960311986,
+        "provisionalDistanceNM": 0,
+        "status": "CALCULATED",
+        "evidence": {
+          "waypointIds": [
+            "gironde-0",
+            "gironde-1"
+          ],
+          "anchors": [
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            },
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            }
+          ],
+          "grid": "europe-0.025",
+          "resolutionDegrees": 0.025,
+          "gridExtent": {
+            "west": -20,
+            "south": 40,
+            "east": 40,
+            "north": 70
+          },
+          "accessCandidates": [
+            {
+              "waypointId": "gironde-0",
+              "source": {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              "sourceCell": {
+                "classification": "WATER",
+                "cell": 543151,
+                "component": 1,
+                "componentCells": 1148455
+              },
+              "candidate": {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 543151,
+                "component": 1,
+                "componentCells": 1148455
+              },
+              "distanceNM": 0,
+              "explicit": true
+            },
+            {
+              "waypointId": "gironde-1",
+              "source": {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              "sourceCell": {
+                "classification": "WATER",
+                "cell": 516767,
+                "component": 1,
+                "componentCells": 1148455
+              },
+              "candidate": {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 516767,
+                "component": 1,
+                "componentCells": 1148455
+              },
+              "distanceNM": 0,
+              "explicit": true
+            }
+          ],
+          "accessSearchBounds": {
+            "latitudeRadiusDegrees": 2,
+            "longitudeRadiusDegrees": 3,
+            "globalFallback": false
+          },
+          "visitedCells": 58,
+          "searchBounds": {
+            "minX": 750,
+            "maxX": 767,
+            "minY": 215,
+            "maxY": 227
+          },
+          "optionalPreferences": "BYPASS",
+          "effectiveSeparationNM": 0,
+          "automaticConnectorLimitNM": 15,
+          "termination": "PATH_FOUND",
+          "elapsedMs": 3267.5726,
+          "rawPoints": [
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            },
+            {
+              "lat": 45.6625,
+              "lon": -1.2124999999999986
+            },
+            {
+              "lat": 45.6625,
+              "lon": -1.1875
+            },
+            {
+              "lat": 45.6375,
+              "lon": -1.1624999999999979
+            },
+            {
+              "lat": 45.6375,
+              "lon": -1.1374999999999993
+            },
+            {
+              "lat": 45.6375,
+              "lon": -1.1125000000000007
+            },
+            {
+              "lat": 45.6125,
+              "lon": -1.0874999999999986
+            },
+            {
+              "lat": 45.5875,
+              "lon": -1.0625
+            },
+            {
+              "lat": 45.5875,
+              "lon": -1.0374999999999979
+            },
+            {
+              "lat": 45.5625,
+              "lon": -1.0124999999999993
+            },
+            {
+              "lat": 45.5375,
+              "lon": -0.9875000000000007
+            },
+            {
+              "lat": 45.5375,
+              "lon": -0.9624999999999986
+            },
+            {
+              "lat": 45.5125,
+              "lon": -0.9375
+            },
+            {
+              "lat": 45.5125,
+              "lon": -0.9124999999999979
+            },
+            {
+              "lat": 45.4875,
+              "lon": -0.8874999999999993
+            },
+            {
+              "lat": 45.4625,
+              "lon": -0.8625000000000007
+            },
+            {
+              "lat": 45.4375,
+              "lon": -0.8374999999999986
+            },
+            {
+              "lat": 45.4125,
+              "lon": -0.8125
+            },
+            {
+              "lat": 45.3875,
+              "lon": -0.8125
+            },
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            }
+          ],
+          "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+          "rawVertexCount": 20,
+          "courseVertexCount": 5
+        },
+        "operatingMode": "POWER-DIESEL",
+        "accesses": [
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          }
+        ],
+        "reason": null,
+        "geographicStatus": "CALCULATED",
+        "suitability": {
+          "mode": "BYPASS",
+          "policy": "ADVISORY_ONLY_BETA",
+          "blocksRouting": false,
+          "status": "BYPASSED",
+          "restrictions": [],
+          "unknowns": [],
+          "checks": []
+        },
+        "standardSpeed": 6,
+        "calculatedSpeed": 10,
+        "standardHours": 4.147688267186643,
+        "calculatedHours": 2.4886129603119858,
+        "calculatedCumulativeNM": 24.88612960311986,
+        "totalNM": 24.88612960311986,
+        "totalStandardHours": 4.147688267186643,
+        "totalCalculatedHours": 2.4886129603119858,
+        "standardETA": "2026-10-15T16:08:51.677Z",
+        "calculatedETA": "2026-10-15T14:29:19.006Z",
+        "etaStatus": "NOMINAL",
+        "differenceHours": 1.6590753068746573,
+        "courseVertices": [
+          {
+            "id": "gironde-0->gironde-1:auto:0",
+            "pointIndex": 0,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:1",
+            "pointIndex": 1,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:2",
+            "pointIndex": 2,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:3",
+            "pointIndex": 3,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:4",
+            "pointIndex": 4,
+            "kind": "AUTOMATIC"
+          }
+        ]
+      }
+    ],
+    "complete": true,
+    "unresolvedLegs": 0,
+    "calculatedDistanceNM": 24.88612960311986,
+    "provisionalDistanceNM": 0,
+    "totalEstimatedDistanceNM": 24.88612960311986,
+    "calculatedStandardHours": 4.147688267186643,
+    "calculatedOperatingHours": 2.4886129603119858,
+    "provisionalStandardHours": 0,
+    "provisionalOperatingHours": 0,
+    "totalNM": 24.88612960311986,
+    "standardHours": 4.147688267186643,
+    "calculatedHours": 2.4886129603119858,
+    "effectiveSOG": 10,
+    "standardETA": "2026-10-15T16:08:51.677Z",
+    "calculatedETA": "2026-10-15T14:29:19.006Z",
+    "differenceHours": 1.6590753068746573,
+    "suitability": {
+      "mode": "BYPASS",
+      "policy": "ADVISORY_ONLY_BETA",
+      "blocksRouting": false
+    },
+    "engineVersion": "0.3.1-stage2-course-2",
+    "selectedId": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+    "alternatives": [
+      {
+        "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+        "preference": "BYPASS",
+        "legs": [
+          {
+            "id": "gironde-0->gironde-1",
+            "fromId": "gironde-0",
+            "waypointId": "gironde-1",
+            "transport": "BY-SEA",
+            "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+            "points": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.5875,
+                "lon": -1.0374999999999979
+              },
+              {
+                "lat": 45.4375,
+                "lon": -0.8374999999999986
+              },
+              {
+                "lat": 45.3875,
+                "lon": -0.8125
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "distanceNM": 24.88612960311986,
+            "provisionalDistanceNM": 0,
+            "status": "CALCULATED",
+            "evidence": {
+              "waypointIds": [
+                "gironde-0",
+                "gironde-1"
+              ],
+              "anchors": [
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                }
+              ],
+              "grid": "europe-0.025",
+              "resolutionDegrees": 0.025,
+              "gridExtent": {
+                "west": -20,
+                "south": 40,
+                "east": 40,
+                "north": 70
+              },
+              "accessCandidates": [
+                {
+                  "waypointId": "gironde-0",
+                  "source": {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  "sourceCell": {
+                    "classification": "WATER",
+                    "cell": 543151,
+                    "component": 1,
+                    "componentCells": 1148455
+                  },
+                  "candidate": {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  "cell": {
+                    "classification": "WATER",
+                    "cell": 543151,
+                    "component": 1,
+                    "componentCells": 1148455
+                  },
+                  "distanceNM": 0,
+                  "explicit": true
+                },
+                {
+                  "waypointId": "gironde-1",
+                  "source": {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  "sourceCell": {
+                    "classification": "WATER",
+                    "cell": 516767,
+                    "component": 1,
+                    "componentCells": 1148455
+                  },
+                  "candidate": {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  "cell": {
+                    "classification": "WATER",
+                    "cell": 516767,
+                    "component": 1,
+                    "componentCells": 1148455
+                  },
+                  "distanceNM": 0,
+                  "explicit": true
+                }
+              ],
+              "accessSearchBounds": {
+                "latitudeRadiusDegrees": 2,
+                "longitudeRadiusDegrees": 3,
+                "globalFallback": false
+              },
+              "visitedCells": 58,
+              "searchBounds": {
+                "minX": 750,
+                "maxX": 767,
+                "minY": 215,
+                "maxY": 227
+              },
+              "optionalPreferences": "BYPASS",
+              "effectiveSeparationNM": 0,
+              "automaticConnectorLimitNM": 15,
+              "termination": "PATH_FOUND",
+              "elapsedMs": 3267.5726,
+              "rawPoints": [
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                {
+                  "lat": 45.6625,
+                  "lon": -1.2124999999999986
+                },
+                {
+                  "lat": 45.6625,
+                  "lon": -1.1875
+                },
+                {
+                  "lat": 45.6375,
+                  "lon": -1.1624999999999979
+                },
+                {
+                  "lat": 45.6375,
+                  "lon": -1.1374999999999993
+                },
+                {
+                  "lat": 45.6375,
+                  "lon": -1.1125000000000007
+                },
+                {
+                  "lat": 45.6125,
+                  "lon": -1.0874999999999986
+                },
+                {
+                  "lat": 45.5875,
+                  "lon": -1.0625
+                },
+                {
+                  "lat": 45.5875,
+                  "lon": -1.0374999999999979
+                },
+                {
+                  "lat": 45.5625,
+                  "lon": -1.0124999999999993
+                },
+                {
+                  "lat": 45.5375,
+                  "lon": -0.9875000000000007
+                },
+                {
+                  "lat": 45.5375,
+                  "lon": -0.9624999999999986
+                },
+                {
+                  "lat": 45.5125,
+                  "lon": -0.9375
+                },
+                {
+                  "lat": 45.5125,
+                  "lon": -0.9124999999999979
+                },
+                {
+                  "lat": 45.4875,
+                  "lon": -0.8874999999999993
+                },
+                {
+                  "lat": 45.4625,
+                  "lon": -0.8625000000000007
+                },
+                {
+                  "lat": 45.4375,
+                  "lon": -0.8374999999999986
+                },
+                {
+                  "lat": 45.4125,
+                  "lon": -0.8125
+                },
+                {
+                  "lat": 45.3875,
+                  "lon": -0.8125
+                },
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                }
+              ],
+              "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+              "rawVertexCount": 20,
+              "courseVertexCount": 5
+            },
+            "operatingMode": "POWER-DIESEL",
+            "accesses": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "reason": null,
+            "geographicStatus": "CALCULATED",
+            "suitability": {
+              "mode": "BYPASS",
+              "policy": "ADVISORY_ONLY_BETA",
+              "blocksRouting": false,
+              "status": "BYPASSED",
+              "restrictions": [],
+              "unknowns": [],
+              "checks": []
+            },
+            "standardSpeed": 6,
+            "calculatedSpeed": 10,
+            "standardHours": 4.147688267186643,
+            "calculatedHours": 2.4886129603119858,
+            "calculatedCumulativeNM": 24.88612960311986,
+            "totalNM": 24.88612960311986,
+            "totalStandardHours": 4.147688267186643,
+            "totalCalculatedHours": 2.4886129603119858,
+            "standardETA": "2026-10-15T16:08:51.677Z",
+            "calculatedETA": "2026-10-15T14:29:19.006Z",
+            "etaStatus": "NOMINAL",
+            "differenceHours": 1.6590753068746573,
+            "courseVertices": [
+              {
+                "id": "gironde-0->gironde-1:auto:0",
+                "pointIndex": 0,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:1",
+                "pointIndex": 1,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:2",
+                "pointIndex": 2,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:3",
+                "pointIndex": 3,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:4",
+                "pointIndex": 4,
+                "kind": "AUTOMATIC"
+              }
+            ]
+          }
+        ],
+        "complete": true,
+        "unresolvedLegs": 0,
+        "calculatedDistanceNM": 24.88612960311986,
+        "provisionalDistanceNM": 0,
+        "totalEstimatedDistanceNM": 24.88612960311986,
+        "calculatedStandardHours": 4.147688267186643,
+        "calculatedOperatingHours": 2.4886129603119858,
+        "provisionalStandardHours": 0,
+        "provisionalOperatingHours": 0,
+        "totalNM": 24.88612960311986,
+        "standardHours": 4.147688267186643,
+        "calculatedHours": 2.4886129603119858,
+        "effectiveSOG": 10,
+        "standardETA": "2026-10-15T16:08:51.677Z",
+        "calculatedETA": "2026-10-15T14:29:19.006Z",
+        "differenceHours": 1.6590753068746573
+      }
+    ],
+    "requestedPreferences": {
+      "routePreference": "OFFSHORE PREFERRED",
+      "coastalSeparationNM": 10,
+      "objective": "BEST-TIME"
+    },
+    "effectivePreferences": {
+      "bypass": true,
+      "separationNM": 0
+    },
+    "kind": "water-outline",
+    "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
+    "createdAt": "2026-10-18T07:05:47.757Z",
+    "connectors": [
+      {
+        "id": "gironde-0->gironde-1:0",
+        "waypointId": "gironde-0",
+        "anchor": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "access": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      },
+      {
+        "id": "gironde-0->gironde-1:1",
+        "waypointId": "gironde-1",
+        "anchor": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "access": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      }
+    ],
+    "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+    "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+    "confidence": "Coarse planning only; city/shore connectors unverified",
+    "constraints": [
+      {
+        "type": "depth-under-keel",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "air-draft-bridge",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "canal-lock",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "traffic-restriction",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "passage-exclusion",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "reef-shoal",
+        "status": "unresolved",
+        "source": null
+      }
+    ],
+    "validation": {
+      "landMask": "screened at selected grid resolution",
+      "depth": "unresolved",
+      "bridges": "unresolved",
+      "restrictions": "unresolved",
+      "forecast": "nominal speeds only"
+    },
+    "geometryDefinition": {
+      "authoritative": "legs[].points",
+      "segmentType": "GEODESIC",
+      "coordinateDatum": "WGS84",
+      "distanceModel": "WGS84_ELLIPSOID",
+      "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+      "presentation": "Derived renderer-only geometry; never used for calculation or export"
+    }
+  },
+  "refined": {
+    "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+    "preference": "BYPASS",
+    "legs": [
+      {
+        "id": "gironde-0->gironde-1",
+        "fromId": "gironde-0",
+        "waypointId": "gironde-1",
+        "transport": "BY-SEA",
+        "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+        "points": [
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          {
+            "lat": 45.6631127,
+            "lon": -1.2072532
+          },
+          {
+            "lat": 45.6653409,
+            "lon": -1.1927644
+          },
+          {
+            "lat": 45.6658113,
+            "lon": -1.185932
+          },
+          {
+            "lat": 45.665712,
+            "lon": -1.1797222
+          },
+          {
+            "lat": 45.6652242,
+            "lon": -1.1754255
+          },
+          {
+            "lat": 45.6634183,
+            "lon": -1.1693218
+          },
+          {
+            "lat": 45.6603717,
+            "lon": -1.1623676
+          },
+          {
+            "lat": 45.6573379,
+            "lon": -1.1549124
+          },
+          {
+            "lat": 45.6541142,
+            "lon": -1.1475322
+          },
+          {
+            "lat": 45.6483,
+            "lon": -1.1322314
+          },
+          {
+            "lat": 45.6446435,
+            "lon": -1.1222787
+          },
+          {
+            "lat": 45.6392523,
+            "lon": -1.1124605
+          },
+          {
+            "lat": 45.6351857,
+            "lon": -1.1051607
+          },
+          {
+            "lat": 45.5860682,
+            "lon": -1.041134
+          },
+          {
+            "lat": 45.5838085,
+            "lon": -1.0388591
+          },
+          {
+            "lat": 45.5810381,
+            "lon": -1.0370283
+          },
+          {
+            "lat": 45.5756592,
+            "lon": -1.03575
+          },
+          {
+            "lat": 45.552736,
+            "lon": -1.0300242
+          },
+          {
+            "lat": 45.5518462,
+            "lon": -1.0296175
+          },
+          {
+            "lat": 45.5508916,
+            "lon": -1.028864
+          },
+          {
+            "lat": 45.5493872,
+            "lon": -1.026929
+          },
+          {
+            "lat": 45.5425074,
+            "lon": -1.0161099
+          },
+          {
+            "lat": 45.5246506,
+            "lon": -0.9939013
+          },
+          {
+            "lat": 45.4908155,
+            "lon": -0.9496341
+          },
+          {
+            "lat": 45.4575321,
+            "lon": -0.9086928
+          },
+          {
+            "lat": 45.4338214,
+            "lon": -0.8815489
+          },
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          }
+        ],
+        "distanceNM": 24.916769359203798,
+        "provisionalDistanceNM": 0,
+        "status": "CALCULATED",
+        "evidence": {
+          "grid": "source-waterway-network",
+          "anchors": [
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            },
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            }
+          ],
+          "waypointIds": [
+            "gironde-0",
+            "gironde-1"
+          ],
+          "termination": "SOURCE_CONNECTED_PATH",
+          "visitedCells": 28,
+          "source": "https://www.openstreetmap.org/copyright",
+          "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+          "sourceEdgeIds": [
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320"
+          ],
+          "sourceAccessEvidence": [
+            {
+              "id": "osm:way:519967320",
+              "source": "https://www.openstreetmap.org/way/519967320",
+              "tags": {
+                "CEMT": "VII",
+                "boat": "yes",
+                "name": "La Gironde",
+                "name:br": "Ar Jirond",
+                "name:hu": "Gironde",
+                "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+                "waterway": "river"
+              }
+            }
+          ],
+          "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+          "accessCandidates": [
+            {
+              "waypointId": "gironde-0",
+              "distanceNM": 0,
+              "candidate": {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            },
+            {
+              "waypointId": "gironde-1",
+              "distanceNM": 0,
+              "candidate": {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            }
+          ],
+          "automaticConnectorLimitNM": 3,
+          "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+          "vesselSuitability": "SEPARATE_ADVISORY",
+          "effectiveSeparationNM": 0,
+          "dataset": "refinement"
+        },
+        "operatingMode": "POWER-DIESEL",
+        "accesses": [
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          }
+        ],
+        "reason": null,
+        "geographicStatus": "CALCULATED",
+        "suitability": {
+          "mode": "BYPASS",
+          "policy": "ADVISORY_ONLY_BETA",
+          "blocksRouting": false,
+          "status": "BYPASSED",
+          "restrictions": [],
+          "unknowns": [],
+          "checks": []
+        },
+        "standardSpeed": 6,
+        "calculatedSpeed": 10,
+        "standardHours": 4.152794893200633,
+        "calculatedHours": 2.49167693592038,
+        "calculatedCumulativeNM": 24.916769359203798,
+        "totalNM": 24.916769359203798,
+        "totalStandardHours": 4.152794893200633,
+        "totalCalculatedHours": 2.49167693592038,
+        "standardETA": "2026-10-15T16:09:10.061Z",
+        "calculatedETA": "2026-10-15T14:29:30.036Z",
+        "etaStatus": "NOMINAL",
+        "differenceHours": 1.6611179572802528,
+        "courseVertices": [
+          {
+            "id": "gironde-0->gironde-1:auto:0",
+            "pointIndex": 0,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:1",
+            "pointIndex": 1,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:2",
+            "pointIndex": 2,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:3",
+            "pointIndex": 3,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:4",
+            "pointIndex": 4,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:5",
+            "pointIndex": 5,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:6",
+            "pointIndex": 6,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:7",
+            "pointIndex": 7,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:8",
+            "pointIndex": 8,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:9",
+            "pointIndex": 9,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:10",
+            "pointIndex": 10,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:11",
+            "pointIndex": 11,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:12",
+            "pointIndex": 12,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:13",
+            "pointIndex": 13,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:14",
+            "pointIndex": 14,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:15",
+            "pointIndex": 15,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:16",
+            "pointIndex": 16,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:17",
+            "pointIndex": 17,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:18",
+            "pointIndex": 18,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:19",
+            "pointIndex": 19,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:20",
+            "pointIndex": 20,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:21",
+            "pointIndex": 21,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:22",
+            "pointIndex": 22,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:23",
+            "pointIndex": 23,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:24",
+            "pointIndex": 24,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:25",
+            "pointIndex": 25,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:26",
+            "pointIndex": 26,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-0->gironde-1:auto:27",
+            "pointIndex": 27,
+            "kind": "AUTOMATIC"
+          }
+        ],
+        "reused": false,
+        "transitionBefore": null
+      }
+    ],
+    "complete": true,
+    "unresolvedLegs": 0,
+    "calculatedDistanceNM": 24.916769359203798,
+    "provisionalDistanceNM": 0,
+    "totalEstimatedDistanceNM": 24.916769359203798,
+    "calculatedStandardHours": 4.152794893200633,
+    "calculatedOperatingHours": 2.49167693592038,
+    "provisionalStandardHours": 0,
+    "provisionalOperatingHours": 0,
+    "totalNM": 24.916769359203798,
+    "standardHours": 4.152794893200633,
+    "calculatedHours": 2.49167693592038,
+    "effectiveSOG": 10,
+    "standardETA": "2026-10-15T16:09:10.061Z",
+    "calculatedETA": "2026-10-15T14:29:30.036Z",
+    "differenceHours": 1.6611179572802528,
+    "suitability": {
+      "mode": "BYPASS",
+      "policy": "ADVISORY_ONLY_BETA",
+      "blocksRouting": false
+    },
+    "engineVersion": "0.3.1-stage2-course-2",
+    "selectedId": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+    "alternatives": [
+      {
+        "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+        "preference": "BYPASS",
+        "legs": [
+          {
+            "id": "gironde-0->gironde-1",
+            "fromId": "gironde-0",
+            "waypointId": "gironde-1",
+            "transport": "BY-SEA",
+            "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+            "points": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.6631127,
+                "lon": -1.2072532
+              },
+              {
+                "lat": 45.6653409,
+                "lon": -1.1927644
+              },
+              {
+                "lat": 45.6658113,
+                "lon": -1.185932
+              },
+              {
+                "lat": 45.665712,
+                "lon": -1.1797222
+              },
+              {
+                "lat": 45.6652242,
+                "lon": -1.1754255
+              },
+              {
+                "lat": 45.6634183,
+                "lon": -1.1693218
+              },
+              {
+                "lat": 45.6603717,
+                "lon": -1.1623676
+              },
+              {
+                "lat": 45.6573379,
+                "lon": -1.1549124
+              },
+              {
+                "lat": 45.6541142,
+                "lon": -1.1475322
+              },
+              {
+                "lat": 45.6483,
+                "lon": -1.1322314
+              },
+              {
+                "lat": 45.6446435,
+                "lon": -1.1222787
+              },
+              {
+                "lat": 45.6392523,
+                "lon": -1.1124605
+              },
+              {
+                "lat": 45.6351857,
+                "lon": -1.1051607
+              },
+              {
+                "lat": 45.5860682,
+                "lon": -1.041134
+              },
+              {
+                "lat": 45.5838085,
+                "lon": -1.0388591
+              },
+              {
+                "lat": 45.5810381,
+                "lon": -1.0370283
+              },
+              {
+                "lat": 45.5756592,
+                "lon": -1.03575
+              },
+              {
+                "lat": 45.552736,
+                "lon": -1.0300242
+              },
+              {
+                "lat": 45.5518462,
+                "lon": -1.0296175
+              },
+              {
+                "lat": 45.5508916,
+                "lon": -1.028864
+              },
+              {
+                "lat": 45.5493872,
+                "lon": -1.026929
+              },
+              {
+                "lat": 45.5425074,
+                "lon": -1.0161099
+              },
+              {
+                "lat": 45.5246506,
+                "lon": -0.9939013
+              },
+              {
+                "lat": 45.4908155,
+                "lon": -0.9496341
+              },
+              {
+                "lat": 45.4575321,
+                "lon": -0.9086928
+              },
+              {
+                "lat": 45.4338214,
+                "lon": -0.8815489
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "distanceNM": 24.916769359203798,
+            "provisionalDistanceNM": 0,
+            "status": "CALCULATED",
+            "evidence": {
+              "grid": "source-waterway-network",
+              "anchors": [
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                }
+              ],
+              "waypointIds": [
+                "gironde-0",
+                "gironde-1"
+              ],
+              "termination": "SOURCE_CONNECTED_PATH",
+              "visitedCells": 28,
+              "source": "https://www.openstreetmap.org/copyright",
+              "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+              "sourceEdgeIds": [
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320"
+              ],
+              "sourceAccessEvidence": [
+                {
+                  "id": "osm:way:519967320",
+                  "source": "https://www.openstreetmap.org/way/519967320",
+                  "tags": {
+                    "CEMT": "VII",
+                    "boat": "yes",
+                    "name": "La Gironde",
+                    "name:br": "Ar Jirond",
+                    "name:hu": "Gironde",
+                    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+                    "waterway": "river"
+                  }
+                }
+              ],
+              "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+              "accessCandidates": [
+                {
+                  "waypointId": "gironde-0",
+                  "distanceNM": 0,
+                  "candidate": {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                },
+                {
+                  "waypointId": "gironde-1",
+                  "distanceNM": 0,
+                  "candidate": {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                }
+              ],
+              "automaticConnectorLimitNM": 3,
+              "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+              "vesselSuitability": "SEPARATE_ADVISORY",
+              "effectiveSeparationNM": 0,
+              "dataset": "refinement"
+            },
+            "operatingMode": "POWER-DIESEL",
+            "accesses": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "reason": null,
+            "geographicStatus": "CALCULATED",
+            "suitability": {
+              "mode": "BYPASS",
+              "policy": "ADVISORY_ONLY_BETA",
+              "blocksRouting": false,
+              "status": "BYPASSED",
+              "restrictions": [],
+              "unknowns": [],
+              "checks": []
+            },
+            "standardSpeed": 6,
+            "calculatedSpeed": 10,
+            "standardHours": 4.152794893200633,
+            "calculatedHours": 2.49167693592038,
+            "calculatedCumulativeNM": 24.916769359203798,
+            "totalNM": 24.916769359203798,
+            "totalStandardHours": 4.152794893200633,
+            "totalCalculatedHours": 2.49167693592038,
+            "standardETA": "2026-10-15T16:09:10.061Z",
+            "calculatedETA": "2026-10-15T14:29:30.036Z",
+            "etaStatus": "NOMINAL",
+            "differenceHours": 1.6611179572802528,
+            "courseVertices": [
+              {
+                "id": "gironde-0->gironde-1:auto:0",
+                "pointIndex": 0,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:1",
+                "pointIndex": 1,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:2",
+                "pointIndex": 2,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:3",
+                "pointIndex": 3,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:4",
+                "pointIndex": 4,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:5",
+                "pointIndex": 5,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:6",
+                "pointIndex": 6,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:7",
+                "pointIndex": 7,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:8",
+                "pointIndex": 8,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:9",
+                "pointIndex": 9,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:10",
+                "pointIndex": 10,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:11",
+                "pointIndex": 11,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:12",
+                "pointIndex": 12,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:13",
+                "pointIndex": 13,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:14",
+                "pointIndex": 14,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:15",
+                "pointIndex": 15,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:16",
+                "pointIndex": 16,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:17",
+                "pointIndex": 17,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:18",
+                "pointIndex": 18,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:19",
+                "pointIndex": 19,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:20",
+                "pointIndex": 20,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:21",
+                "pointIndex": 21,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:22",
+                "pointIndex": 22,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:23",
+                "pointIndex": 23,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:24",
+                "pointIndex": 24,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:25",
+                "pointIndex": 25,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:26",
+                "pointIndex": 26,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-0->gironde-1:auto:27",
+                "pointIndex": 27,
+                "kind": "AUTOMATIC"
+              }
+            ],
+            "reused": false,
+            "transitionBefore": null
+          }
+        ],
+        "complete": true,
+        "unresolvedLegs": 0,
+        "calculatedDistanceNM": 24.916769359203798,
+        "provisionalDistanceNM": 0,
+        "totalEstimatedDistanceNM": 24.916769359203798,
+        "calculatedStandardHours": 4.152794893200633,
+        "calculatedOperatingHours": 2.49167693592038,
+        "provisionalStandardHours": 0,
+        "provisionalOperatingHours": 0,
+        "totalNM": 24.916769359203798,
+        "standardHours": 4.152794893200633,
+        "calculatedHours": 2.49167693592038,
+        "effectiveSOG": 10,
+        "standardETA": "2026-10-15T16:09:10.061Z",
+        "calculatedETA": "2026-10-15T14:29:30.036Z",
+        "differenceHours": 1.6611179572802528
+      }
+    ],
+    "requestedPreferences": {
+      "routePreference": "OFFSHORE PREFERRED",
+      "coastalSeparationNM": 10,
+      "objective": "BEST-TIME"
+    },
+    "effectivePreferences": {
+      "bypass": true,
+      "separationNM": 0
+    },
+    "kind": "water-outline",
+    "status": "PRELIMINARY ROUTE — 1 LEGS REFINED",
+    "createdAt": "2026-10-18T07:05:47.757Z",
+    "connectors": [
+      {
+        "id": "gironde-0->gironde-1:0",
+        "waypointId": "gironde-0",
+        "anchor": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "access": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      },
+      {
+        "id": "gironde-0->gironde-1:1",
+        "waypointId": "gironde-1",
+        "anchor": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "access": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      }
+    ],
+    "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+    "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+    "confidence": "Coarse planning only; city/shore connectors unverified",
+    "constraints": [
+      {
+        "type": "depth-under-keel",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "air-draft-bridge",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "canal-lock",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "traffic-restriction",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "passage-exclusion",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "reef-shoal",
+        "status": "unresolved",
+        "source": null
+      }
+    ],
+    "validation": {
+      "landMask": "screened at selected grid resolution",
+      "depth": "unresolved",
+      "bridges": "unresolved",
+      "restrictions": "unresolved",
+      "forecast": "nominal speeds only"
+    },
+    "geometryDefinition": {
+      "authoritative": "legs[].points",
+      "segmentType": "GEODESIC",
+      "coordinateDatum": "WGS84",
+      "distanceModel": "WGS84_ELLIPSOID",
+      "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+      "presentation": "Derived renderer-only geometry; never used for calculation or export"
+    },
+    "coarseCourse": {
+      "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+      "preference": "BYPASS",
+      "legs": [
+        {
+          "id": "gironde-0->gironde-1",
+          "fromId": "gironde-0",
+          "waypointId": "gironde-1",
+          "transport": "BY-SEA",
+          "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+          "points": [
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            },
+            {
+              "lat": 45.5875,
+              "lon": -1.0374999999999979
+            },
+            {
+              "lat": 45.4375,
+              "lon": -0.8374999999999986
+            },
+            {
+              "lat": 45.3875,
+              "lon": -0.8125
+            },
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            }
+          ],
+          "distanceNM": 24.88612960311986,
+          "provisionalDistanceNM": 0,
+          "status": "CALCULATED",
+          "evidence": {
+            "waypointIds": [
+              "gironde-0",
+              "gironde-1"
+            ],
+            "anchors": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "grid": "europe-0.025",
+            "resolutionDegrees": 0.025,
+            "gridExtent": {
+              "west": -20,
+              "south": 40,
+              "east": 40,
+              "north": 70
+            },
+            "accessCandidates": [
+              {
+                "waypointId": "gironde-0",
+                "source": {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                "sourceCell": {
+                  "classification": "WATER",
+                  "cell": 543151,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "candidate": {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                "cell": {
+                  "classification": "WATER",
+                  "cell": 543151,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "distanceNM": 0,
+                "explicit": true
+              },
+              {
+                "waypointId": "gironde-1",
+                "source": {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                "sourceCell": {
+                  "classification": "WATER",
+                  "cell": 516767,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "candidate": {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                "cell": {
+                  "classification": "WATER",
+                  "cell": 516767,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "distanceNM": 0,
+                "explicit": true
+              }
+            ],
+            "accessSearchBounds": {
+              "latitudeRadiusDegrees": 2,
+              "longitudeRadiusDegrees": 3,
+              "globalFallback": false
+            },
+            "visitedCells": 58,
+            "searchBounds": {
+              "minX": 750,
+              "maxX": 767,
+              "minY": 215,
+              "maxY": 227
+            },
+            "optionalPreferences": "BYPASS",
+            "effectiveSeparationNM": 0,
+            "automaticConnectorLimitNM": 15,
+            "termination": "PATH_FOUND",
+            "elapsedMs": 3267.5726,
+            "rawPoints": [
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              {
+                "lat": 45.6625,
+                "lon": -1.2124999999999986
+              },
+              {
+                "lat": 45.6625,
+                "lon": -1.1875
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1624999999999979
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1374999999999993
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1125000000000007
+              },
+              {
+                "lat": 45.6125,
+                "lon": -1.0874999999999986
+              },
+              {
+                "lat": 45.5875,
+                "lon": -1.0625
+              },
+              {
+                "lat": 45.5875,
+                "lon": -1.0374999999999979
+              },
+              {
+                "lat": 45.5625,
+                "lon": -1.0124999999999993
+              },
+              {
+                "lat": 45.5375,
+                "lon": -0.9875000000000007
+              },
+              {
+                "lat": 45.5375,
+                "lon": -0.9624999999999986
+              },
+              {
+                "lat": 45.5125,
+                "lon": -0.9375
+              },
+              {
+                "lat": 45.5125,
+                "lon": -0.9124999999999979
+              },
+              {
+                "lat": 45.4875,
+                "lon": -0.8874999999999993
+              },
+              {
+                "lat": 45.4625,
+                "lon": -0.8625000000000007
+              },
+              {
+                "lat": 45.4375,
+                "lon": -0.8374999999999986
+              },
+              {
+                "lat": 45.4125,
+                "lon": -0.8125
+              },
+              {
+                "lat": 45.3875,
+                "lon": -0.8125
+              },
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              }
+            ],
+            "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+            "rawVertexCount": 20,
+            "courseVertexCount": 5
+          },
+          "operatingMode": "POWER-DIESEL",
+          "accesses": [
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            },
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            }
+          ],
+          "reason": null,
+          "geographicStatus": "CALCULATED",
+          "suitability": {
+            "mode": "BYPASS",
+            "policy": "ADVISORY_ONLY_BETA",
+            "blocksRouting": false,
+            "status": "BYPASSED",
+            "restrictions": [],
+            "unknowns": [],
+            "checks": []
+          },
+          "standardSpeed": 6,
+          "calculatedSpeed": 10,
+          "standardHours": 4.147688267186643,
+          "calculatedHours": 2.4886129603119858,
+          "calculatedCumulativeNM": 24.88612960311986,
+          "totalNM": 24.88612960311986,
+          "totalStandardHours": 4.147688267186643,
+          "totalCalculatedHours": 2.4886129603119858,
+          "standardETA": "2026-10-15T16:08:51.677Z",
+          "calculatedETA": "2026-10-15T14:29:19.006Z",
+          "etaStatus": "NOMINAL",
+          "differenceHours": 1.6590753068746573,
+          "courseVertices": [
+            {
+              "id": "gironde-0->gironde-1:auto:0",
+              "pointIndex": 0,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-0->gironde-1:auto:1",
+              "pointIndex": 1,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-0->gironde-1:auto:2",
+              "pointIndex": 2,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-0->gironde-1:auto:3",
+              "pointIndex": 3,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-0->gironde-1:auto:4",
+              "pointIndex": 4,
+              "kind": "AUTOMATIC"
+            }
+          ]
+        }
+      ],
+      "complete": true,
+      "unresolvedLegs": 0,
+      "calculatedDistanceNM": 24.88612960311986,
+      "provisionalDistanceNM": 0,
+      "totalEstimatedDistanceNM": 24.88612960311986,
+      "calculatedStandardHours": 4.147688267186643,
+      "calculatedOperatingHours": 2.4886129603119858,
+      "provisionalStandardHours": 0,
+      "provisionalOperatingHours": 0,
+      "totalNM": 24.88612960311986,
+      "standardHours": 4.147688267186643,
+      "calculatedHours": 2.4886129603119858,
+      "effectiveSOG": 10,
+      "standardETA": "2026-10-15T16:08:51.677Z",
+      "calculatedETA": "2026-10-15T14:29:19.006Z",
+      "differenceHours": 1.6590753068746573,
+      "suitability": {
+        "mode": "BYPASS",
+        "policy": "ADVISORY_ONLY_BETA",
+        "blocksRouting": false
+      },
+      "engineVersion": "0.3.1-stage2-course-2",
+      "selectedId": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+      "alternatives": [
+        {
+          "id": "ea8c2cee-a0f7-4a49-8ad9-57f0deff69b4",
+          "preference": "BYPASS",
+          "legs": [
+            {
+              "id": "gironde-0->gironde-1",
+              "fromId": "gironde-0",
+              "waypointId": "gironde-1",
+              "transport": "BY-SEA",
+              "inputKey": "9681d952f8cfdbb510d37876671849c984540cdacaade02e794921bb473e2a67",
+              "points": [
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                {
+                  "lat": 45.5875,
+                  "lon": -1.0374999999999979
+                },
+                {
+                  "lat": 45.4375,
+                  "lon": -0.8374999999999986
+                },
+                {
+                  "lat": 45.3875,
+                  "lon": -0.8125
+                },
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                }
+              ],
+              "distanceNM": 24.88612960311986,
+              "provisionalDistanceNM": 0,
+              "status": "CALCULATED",
+              "evidence": {
+                "waypointIds": [
+                  "gironde-0",
+                  "gironde-1"
+                ],
+                "anchors": [
+                  {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  }
+                ],
+                "grid": "europe-0.025",
+                "resolutionDegrees": 0.025,
+                "gridExtent": {
+                  "west": -20,
+                  "south": 40,
+                  "east": 40,
+                  "north": 70
+                },
+                "accessCandidates": [
+                  {
+                    "waypointId": "gironde-0",
+                    "source": {
+                      "lat": 45.6616251,
+                      "lon": -1.2171409
+                    },
+                    "sourceCell": {
+                      "classification": "WATER",
+                      "cell": 543151,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "candidate": {
+                      "lat": 45.6616251,
+                      "lon": -1.2171409
+                    },
+                    "cell": {
+                      "classification": "WATER",
+                      "cell": 543151,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "distanceNM": 0,
+                    "explicit": true
+                  },
+                  {
+                    "waypointId": "gironde-1",
+                    "source": {
+                      "lat": 45.3802966,
+                      "lon": -0.8220253
+                    },
+                    "sourceCell": {
+                      "classification": "WATER",
+                      "cell": 516767,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "candidate": {
+                      "lat": 45.3802966,
+                      "lon": -0.8220253
+                    },
+                    "cell": {
+                      "classification": "WATER",
+                      "cell": 516767,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "distanceNM": 0,
+                    "explicit": true
+                  }
+                ],
+                "accessSearchBounds": {
+                  "latitudeRadiusDegrees": 2,
+                  "longitudeRadiusDegrees": 3,
+                  "globalFallback": false
+                },
+                "visitedCells": 58,
+                "searchBounds": {
+                  "minX": 750,
+                  "maxX": 767,
+                  "minY": 215,
+                  "maxY": 227
+                },
+                "optionalPreferences": "BYPASS",
+                "effectiveSeparationNM": 0,
+                "automaticConnectorLimitNM": 15,
+                "termination": "PATH_FOUND",
+                "elapsedMs": 3267.5726,
+                "rawPoints": [
+                  {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  {
+                    "lat": 45.6625,
+                    "lon": -1.2124999999999986
+                  },
+                  {
+                    "lat": 45.6625,
+                    "lon": -1.1875
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1624999999999979
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1374999999999993
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1125000000000007
+                  },
+                  {
+                    "lat": 45.6125,
+                    "lon": -1.0874999999999986
+                  },
+                  {
+                    "lat": 45.5875,
+                    "lon": -1.0625
+                  },
+                  {
+                    "lat": 45.5875,
+                    "lon": -1.0374999999999979
+                  },
+                  {
+                    "lat": 45.5625,
+                    "lon": -1.0124999999999993
+                  },
+                  {
+                    "lat": 45.5375,
+                    "lon": -0.9875000000000007
+                  },
+                  {
+                    "lat": 45.5375,
+                    "lon": -0.9624999999999986
+                  },
+                  {
+                    "lat": 45.5125,
+                    "lon": -0.9375
+                  },
+                  {
+                    "lat": 45.5125,
+                    "lon": -0.9124999999999979
+                  },
+                  {
+                    "lat": 45.4875,
+                    "lon": -0.8874999999999993
+                  },
+                  {
+                    "lat": 45.4625,
+                    "lon": -0.8625000000000007
+                  },
+                  {
+                    "lat": 45.4375,
+                    "lon": -0.8374999999999986
+                  },
+                  {
+                    "lat": 45.4125,
+                    "lon": -0.8125
+                  },
+                  {
+                    "lat": 45.3875,
+                    "lon": -0.8125
+                  },
+                  {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  }
+                ],
+                "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+                "rawVertexCount": 20,
+                "courseVertexCount": 5
+              },
+              "operatingMode": "POWER-DIESEL",
+              "accesses": [
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                }
+              ],
+              "reason": null,
+              "geographicStatus": "CALCULATED",
+              "suitability": {
+                "mode": "BYPASS",
+                "policy": "ADVISORY_ONLY_BETA",
+                "blocksRouting": false,
+                "status": "BYPASSED",
+                "restrictions": [],
+                "unknowns": [],
+                "checks": []
+              },
+              "standardSpeed": 6,
+              "calculatedSpeed": 10,
+              "standardHours": 4.147688267186643,
+              "calculatedHours": 2.4886129603119858,
+              "calculatedCumulativeNM": 24.88612960311986,
+              "totalNM": 24.88612960311986,
+              "totalStandardHours": 4.147688267186643,
+              "totalCalculatedHours": 2.4886129603119858,
+              "standardETA": "2026-10-15T16:08:51.677Z",
+              "calculatedETA": "2026-10-15T14:29:19.006Z",
+              "etaStatus": "NOMINAL",
+              "differenceHours": 1.6590753068746573,
+              "courseVertices": [
+                {
+                  "id": "gironde-0->gironde-1:auto:0",
+                  "pointIndex": 0,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-0->gironde-1:auto:1",
+                  "pointIndex": 1,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-0->gironde-1:auto:2",
+                  "pointIndex": 2,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-0->gironde-1:auto:3",
+                  "pointIndex": 3,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-0->gironde-1:auto:4",
+                  "pointIndex": 4,
+                  "kind": "AUTOMATIC"
+                }
+              ]
+            }
+          ],
+          "complete": true,
+          "unresolvedLegs": 0,
+          "calculatedDistanceNM": 24.88612960311986,
+          "provisionalDistanceNM": 0,
+          "totalEstimatedDistanceNM": 24.88612960311986,
+          "calculatedStandardHours": 4.147688267186643,
+          "calculatedOperatingHours": 2.4886129603119858,
+          "provisionalStandardHours": 0,
+          "provisionalOperatingHours": 0,
+          "totalNM": 24.88612960311986,
+          "standardHours": 4.147688267186643,
+          "calculatedHours": 2.4886129603119858,
+          "effectiveSOG": 10,
+          "standardETA": "2026-10-15T16:08:51.677Z",
+          "calculatedETA": "2026-10-15T14:29:19.006Z",
+          "differenceHours": 1.6590753068746573
+        }
+      ],
+      "requestedPreferences": {
+        "routePreference": "OFFSHORE PREFERRED",
+        "coastalSeparationNM": 10,
+        "objective": "BEST-TIME"
+      },
+      "effectivePreferences": {
+        "bypass": true,
+        "separationNM": 0
+      },
+      "kind": "water-outline",
+      "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
+      "createdAt": "2026-10-18T07:05:47.757Z",
+      "connectors": [
+        {
+          "id": "gironde-0->gironde-1:0",
+          "waypointId": "gironde-0",
+          "anchor": {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          "access": {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          "distanceNM": 0,
+          "includedInPassage": false
+        },
+        {
+          "id": "gironde-0->gironde-1:1",
+          "waypointId": "gironde-1",
+          "anchor": {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          "access": {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          "distanceNM": 0,
+          "includedInPassage": false
+        }
+      ],
+      "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+      "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+      "confidence": "Coarse planning only; city/shore connectors unverified",
+      "constraints": [
+        {
+          "type": "depth-under-keel",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "air-draft-bridge",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "canal-lock",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "traffic-restriction",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "passage-exclusion",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "reef-shoal",
+          "status": "unresolved",
+          "source": null
+        }
+      ],
+      "validation": {
+        "landMask": "screened at selected grid resolution",
+        "depth": "unresolved",
+        "bridges": "unresolved",
+        "restrictions": "unresolved",
+        "forecast": "nominal speeds only"
+      },
+      "geometryDefinition": {
+        "authoritative": "legs[].points",
+        "segmentType": "GEODESIC",
+        "coordinateDatum": "WGS84",
+        "distanceModel": "WGS84_ELLIPSOID",
+        "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+        "presentation": "Derived renderer-only geometry; never used for calculation or export"
+      }
+    },
+    "refinement": {
+      "requested": true,
+      "method": "EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS",
+      "dataset": {
+        "schema": 1,
+        "source": "https://www.openstreetmap.org/copyright",
+        "license": "ODbL 1.0; OpenStreetMap contributors",
+        "acquisition": "https://overpass-api.de/api/interpreter",
+        "sources": [
+          {
+            "dataset": "osm",
+            "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "role": "Preserved mapped waterways"
+          },
+          {
+            "file": "alter-do-chao.json",
+            "sha256": "d48ca40b736bbc9341ef3e57289697f93f241c23be58b5096ae2e847d985ae67",
+            "timestamp": "2026-10-18T01:49:51Z",
+            "bounds": [
+              -59.8927349,
+              -3.6022427,
+              -53.2974245,
+              -1.3048311
+            ],
+            "acceptedWays": 95,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-56,-1.8,-54);out geom;"
+          },
+          {
+            "file": "amazon-estuary.json",
+            "sha256": "d65edf45074624b20c7857bef6423d21d531591700e8715652848fb050eb9560",
+            "timestamp": "2026-10-18T01:46:51Z",
+            "bounds": [
+              -52.4361992,
+              -3.2353156,
+              -47.9448642,
+              1.8904415
+            ],
+            "acceptedWays": 1310,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-52,1,-48);out geom;"
+          },
+          {
+            "file": "bordeaux.json",
+            "sha256": "061d9758d14297cfc9754812993b3672df4bb8a25a559c6b52c3b7e4e9158274",
+            "timestamp": "2026-10-18T01:46:51Z",
+            "bounds": [
+              -1.2171409,
+              44.6920875,
+              -0.3560179,
+              45.8733209
+            ],
+            "acceptedWays": 756,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](44.7,-1.5,45.8,-0.4);out geom;"
+          },
+          {
+            "file": "great-lakes-flowlines.json",
+            "sha256": "398d2ea093994583b72d8ed6097bac9625c19d77b2129ae7078521884df42d8e",
+            "timestamp": "2026-10-18T01:50:56Z",
+            "bounds": [
+              -81.3570215,
+              42.9862653,
+              -69.9860502,
+              47.302521
+            ],
+            "acceptedWays": 4540,
+            "query": "[out:json][timeout:40];way[waterway~\"^flowline$\"](43,-80,47,-70);out geom;"
+          },
+          {
+            "file": "rostov.json",
+            "sha256": "2658ddc2631ecfdbab75cc39d541209376d42b1e1721902bda294e1fc0132de0",
+            "timestamp": "2026-10-18T01:49:51Z",
+            "bounds": [
+              38.5927245,
+              46.7891441,
+              40.4535043,
+              47.5590866
+            ],
+            "acceptedWays": 1129,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](46.8,38.5,47.5,40);out geom;"
+          },
+          {
+            "file": "southern.json",
+            "sha256": "a8ec617437dddedf342eb97ded1cc2a309178597bec637360014e3adefb49e36",
+            "timestamp": "2026-10-18T01:47:51Z",
+            "bounds": [
+              -75.2224338,
+              -55.6923827,
+              -65.8791947,
+              -50.6692644
+            ],
+            "acceptedWays": 2215,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-56,-76,-51,-66);out geom;"
+          }
+        ],
+        "resolution": "Irregular source vertices, WGS84 coordinates; positional accuracy not guaranteed. No fixed raster resolution.",
+        "coverage": "Existing mapped waterways plus bounded regional queries listed in sources; not worldwide complete.",
+        "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+        "limitations": [
+          "Only exactly shared source vertices connect; no proximity joins",
+          "Coarse ocean mask still governs source-to-ocean transitions",
+          "Waterway mapping is not proof of depth, bridge clearance or vessel suitability"
+        ],
+        "sha256": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+        "lineCount": 29833
+      },
+      "status": "PARTIALLY_REFINED",
+      "legs": [
+        {
+          "id": "gironde-0->gironde-1",
+          "status": "REFINED",
+          "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+          "beforeNM": 24.88612960311986,
+          "afterNM": 24.916769359203798,
+          "beforeVertices": 5,
+          "afterVertices": 28
+        }
+      ],
+      "refinedLegs": 1
+    }
+  },
+  "reverse": {
+    "id": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+    "preference": "BYPASS",
+    "legs": [
+      {
+        "id": "gironde-1->gironde-0",
+        "fromId": "gironde-1",
+        "waypointId": "gironde-0",
+        "transport": "BY-SEA",
+        "inputKey": "ccba66b53803532eda3b48bf15b3829a280dbed3a2be11b6a848e2d9f81a0924",
+        "points": [
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          {
+            "lat": 45.4338214,
+            "lon": -0.8815489
+          },
+          {
+            "lat": 45.4575321,
+            "lon": -0.9086928
+          },
+          {
+            "lat": 45.4908155,
+            "lon": -0.9496341
+          },
+          {
+            "lat": 45.5246506,
+            "lon": -0.9939013
+          },
+          {
+            "lat": 45.5425074,
+            "lon": -1.0161099
+          },
+          {
+            "lat": 45.5493872,
+            "lon": -1.026929
+          },
+          {
+            "lat": 45.5508916,
+            "lon": -1.028864
+          },
+          {
+            "lat": 45.5518462,
+            "lon": -1.0296175
+          },
+          {
+            "lat": 45.552736,
+            "lon": -1.0300242
+          },
+          {
+            "lat": 45.5756592,
+            "lon": -1.03575
+          },
+          {
+            "lat": 45.5810381,
+            "lon": -1.0370283
+          },
+          {
+            "lat": 45.5838085,
+            "lon": -1.0388591
+          },
+          {
+            "lat": 45.5860682,
+            "lon": -1.041134
+          },
+          {
+            "lat": 45.6351857,
+            "lon": -1.1051607
+          },
+          {
+            "lat": 45.6392523,
+            "lon": -1.1124605
+          },
+          {
+            "lat": 45.6446435,
+            "lon": -1.1222787
+          },
+          {
+            "lat": 45.6483,
+            "lon": -1.1322314
+          },
+          {
+            "lat": 45.6541142,
+            "lon": -1.1475322
+          },
+          {
+            "lat": 45.6573379,
+            "lon": -1.1549124
+          },
+          {
+            "lat": 45.6603717,
+            "lon": -1.1623676
+          },
+          {
+            "lat": 45.6634183,
+            "lon": -1.1693218
+          },
+          {
+            "lat": 45.6652242,
+            "lon": -1.1754255
+          },
+          {
+            "lat": 45.665712,
+            "lon": -1.1797222
+          },
+          {
+            "lat": 45.6658113,
+            "lon": -1.185932
+          },
+          {
+            "lat": 45.6653409,
+            "lon": -1.1927644
+          },
+          {
+            "lat": 45.6631127,
+            "lon": -1.2072532
+          },
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          }
+        ],
+        "distanceNM": 24.91676935920379,
+        "provisionalDistanceNM": 0,
+        "status": "CALCULATED",
+        "evidence": {
+          "grid": "source-waterway-network",
+          "anchors": [
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            },
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            }
+          ],
+          "waypointIds": [
+            "gironde-1",
+            "gironde-0"
+          ],
+          "termination": "SOURCE_CONNECTED_PATH",
+          "visitedCells": 28,
+          "source": "https://www.openstreetmap.org/copyright",
+          "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+          "sourceEdgeIds": [
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320",
+            "osm:way:519967320"
+          ],
+          "sourceAccessEvidence": [
+            {
+              "id": "osm:way:519967320",
+              "source": "https://www.openstreetmap.org/way/519967320",
+              "tags": {
+                "CEMT": "VII",
+                "boat": "yes",
+                "name": "La Gironde",
+                "name:br": "Ar Jirond",
+                "name:hu": "Gironde",
+                "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+                "waterway": "river"
+              }
+            }
+          ],
+          "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+          "accessCandidates": [
+            {
+              "waypointId": "gironde-1",
+              "distanceNM": 0,
+              "candidate": {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            },
+            {
+              "waypointId": "gironde-0",
+              "distanceNM": 0,
+              "candidate": {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              },
+              "cell": {
+                "classification": "SOURCE_WATERWAY",
+                "component": null
+              }
+            }
+          ],
+          "automaticConnectorLimitNM": 3,
+          "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+          "vesselSuitability": "SEPARATE_ADVISORY",
+          "effectiveSeparationNM": 0,
+          "dataset": "refinement"
+        },
+        "operatingMode": "POWER-DIESEL",
+        "accesses": [
+          {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          }
+        ],
+        "reason": null,
+        "geographicStatus": "CALCULATED",
+        "suitability": {
+          "mode": "BYPASS",
+          "policy": "ADVISORY_ONLY_BETA",
+          "blocksRouting": false,
+          "status": "BYPASSED",
+          "restrictions": [],
+          "unknowns": [],
+          "checks": []
+        },
+        "standardSpeed": 6,
+        "calculatedSpeed": 10,
+        "standardHours": 4.152794893200632,
+        "calculatedHours": 2.491676935920379,
+        "calculatedCumulativeNM": 24.91676935920379,
+        "totalNM": 24.91676935920379,
+        "totalStandardHours": 4.152794893200632,
+        "totalCalculatedHours": 2.491676935920379,
+        "standardETA": "2026-10-15T16:09:10.061Z",
+        "calculatedETA": "2026-10-15T14:29:30.036Z",
+        "etaStatus": "NOMINAL",
+        "differenceHours": 1.6611179572802528,
+        "courseVertices": [
+          {
+            "id": "gironde-1->gironde-0:auto:0",
+            "pointIndex": 0,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:1",
+            "pointIndex": 1,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:2",
+            "pointIndex": 2,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:3",
+            "pointIndex": 3,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:4",
+            "pointIndex": 4,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:5",
+            "pointIndex": 5,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:6",
+            "pointIndex": 6,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:7",
+            "pointIndex": 7,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:8",
+            "pointIndex": 8,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:9",
+            "pointIndex": 9,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:10",
+            "pointIndex": 10,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:11",
+            "pointIndex": 11,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:12",
+            "pointIndex": 12,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:13",
+            "pointIndex": 13,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:14",
+            "pointIndex": 14,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:15",
+            "pointIndex": 15,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:16",
+            "pointIndex": 16,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:17",
+            "pointIndex": 17,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:18",
+            "pointIndex": 18,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:19",
+            "pointIndex": 19,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:20",
+            "pointIndex": 20,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:21",
+            "pointIndex": 21,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:22",
+            "pointIndex": 22,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:23",
+            "pointIndex": 23,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:24",
+            "pointIndex": 24,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:25",
+            "pointIndex": 25,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:26",
+            "pointIndex": 26,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "gironde-1->gironde-0:auto:27",
+            "pointIndex": 27,
+            "kind": "AUTOMATIC"
+          }
+        ],
+        "reused": false,
+        "transitionBefore": null
+      }
+    ],
+    "complete": true,
+    "unresolvedLegs": 0,
+    "calculatedDistanceNM": 24.91676935920379,
+    "provisionalDistanceNM": 0,
+    "totalEstimatedDistanceNM": 24.91676935920379,
+    "calculatedStandardHours": 4.152794893200632,
+    "calculatedOperatingHours": 2.491676935920379,
+    "provisionalStandardHours": 0,
+    "provisionalOperatingHours": 0,
+    "totalNM": 24.91676935920379,
+    "standardHours": 4.152794893200632,
+    "calculatedHours": 2.491676935920379,
+    "effectiveSOG": 10,
+    "standardETA": "2026-10-15T16:09:10.061Z",
+    "calculatedETA": "2026-10-15T14:29:30.036Z",
+    "differenceHours": 1.6611179572802528,
+    "suitability": {
+      "mode": "BYPASS",
+      "policy": "ADVISORY_ONLY_BETA",
+      "blocksRouting": false
+    },
+    "engineVersion": "0.3.1-stage2-course-2",
+    "selectedId": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+    "alternatives": [
+      {
+        "id": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+        "preference": "BYPASS",
+        "legs": [
+          {
+            "id": "gironde-1->gironde-0",
+            "fromId": "gironde-1",
+            "waypointId": "gironde-0",
+            "transport": "BY-SEA",
+            "inputKey": "ccba66b53803532eda3b48bf15b3829a280dbed3a2be11b6a848e2d9f81a0924",
+            "points": [
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              {
+                "lat": 45.4338214,
+                "lon": -0.8815489
+              },
+              {
+                "lat": 45.4575321,
+                "lon": -0.9086928
+              },
+              {
+                "lat": 45.4908155,
+                "lon": -0.9496341
+              },
+              {
+                "lat": 45.5246506,
+                "lon": -0.9939013
+              },
+              {
+                "lat": 45.5425074,
+                "lon": -1.0161099
+              },
+              {
+                "lat": 45.5493872,
+                "lon": -1.026929
+              },
+              {
+                "lat": 45.5508916,
+                "lon": -1.028864
+              },
+              {
+                "lat": 45.5518462,
+                "lon": -1.0296175
+              },
+              {
+                "lat": 45.552736,
+                "lon": -1.0300242
+              },
+              {
+                "lat": 45.5756592,
+                "lon": -1.03575
+              },
+              {
+                "lat": 45.5810381,
+                "lon": -1.0370283
+              },
+              {
+                "lat": 45.5838085,
+                "lon": -1.0388591
+              },
+              {
+                "lat": 45.5860682,
+                "lon": -1.041134
+              },
+              {
+                "lat": 45.6351857,
+                "lon": -1.1051607
+              },
+              {
+                "lat": 45.6392523,
+                "lon": -1.1124605
+              },
+              {
+                "lat": 45.6446435,
+                "lon": -1.1222787
+              },
+              {
+                "lat": 45.6483,
+                "lon": -1.1322314
+              },
+              {
+                "lat": 45.6541142,
+                "lon": -1.1475322
+              },
+              {
+                "lat": 45.6573379,
+                "lon": -1.1549124
+              },
+              {
+                "lat": 45.6603717,
+                "lon": -1.1623676
+              },
+              {
+                "lat": 45.6634183,
+                "lon": -1.1693218
+              },
+              {
+                "lat": 45.6652242,
+                "lon": -1.1754255
+              },
+              {
+                "lat": 45.665712,
+                "lon": -1.1797222
+              },
+              {
+                "lat": 45.6658113,
+                "lon": -1.185932
+              },
+              {
+                "lat": 45.6653409,
+                "lon": -1.1927644
+              },
+              {
+                "lat": 45.6631127,
+                "lon": -1.2072532
+              },
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              }
+            ],
+            "distanceNM": 24.91676935920379,
+            "provisionalDistanceNM": 0,
+            "status": "CALCULATED",
+            "evidence": {
+              "grid": "source-waterway-network",
+              "anchors": [
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                }
+              ],
+              "waypointIds": [
+                "gironde-1",
+                "gironde-0"
+              ],
+              "termination": "SOURCE_CONNECTED_PATH",
+              "visitedCells": 28,
+              "source": "https://www.openstreetmap.org/copyright",
+              "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+              "sourceEdgeIds": [
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320",
+                "osm:way:519967320"
+              ],
+              "sourceAccessEvidence": [
+                {
+                  "id": "osm:way:519967320",
+                  "source": "https://www.openstreetmap.org/way/519967320",
+                  "tags": {
+                    "CEMT": "VII",
+                    "boat": "yes",
+                    "name": "La Gironde",
+                    "name:br": "Ar Jirond",
+                    "name:hu": "Gironde",
+                    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2009",
+                    "waterway": "river"
+                  }
+                }
+              ],
+              "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+              "accessCandidates": [
+                {
+                  "waypointId": "gironde-1",
+                  "distanceNM": 0,
+                  "candidate": {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                },
+                {
+                  "waypointId": "gironde-0",
+                  "distanceNM": 0,
+                  "candidate": {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  },
+                  "cell": {
+                    "classification": "SOURCE_WATERWAY",
+                    "component": null
+                  }
+                }
+              ],
+              "automaticConnectorLimitNM": 3,
+              "geographicConnectivity": "EXACT_SHARED_SOURCE_VERTICES",
+              "vesselSuitability": "SEPARATE_ADVISORY",
+              "effectiveSeparationNM": 0,
+              "dataset": "refinement"
+            },
+            "operatingMode": "POWER-DIESEL",
+            "accesses": [
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              }
+            ],
+            "reason": null,
+            "geographicStatus": "CALCULATED",
+            "suitability": {
+              "mode": "BYPASS",
+              "policy": "ADVISORY_ONLY_BETA",
+              "blocksRouting": false,
+              "status": "BYPASSED",
+              "restrictions": [],
+              "unknowns": [],
+              "checks": []
+            },
+            "standardSpeed": 6,
+            "calculatedSpeed": 10,
+            "standardHours": 4.152794893200632,
+            "calculatedHours": 2.491676935920379,
+            "calculatedCumulativeNM": 24.91676935920379,
+            "totalNM": 24.91676935920379,
+            "totalStandardHours": 4.152794893200632,
+            "totalCalculatedHours": 2.491676935920379,
+            "standardETA": "2026-10-15T16:09:10.061Z",
+            "calculatedETA": "2026-10-15T14:29:30.036Z",
+            "etaStatus": "NOMINAL",
+            "differenceHours": 1.6611179572802528,
+            "courseVertices": [
+              {
+                "id": "gironde-1->gironde-0:auto:0",
+                "pointIndex": 0,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:1",
+                "pointIndex": 1,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:2",
+                "pointIndex": 2,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:3",
+                "pointIndex": 3,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:4",
+                "pointIndex": 4,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:5",
+                "pointIndex": 5,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:6",
+                "pointIndex": 6,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:7",
+                "pointIndex": 7,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:8",
+                "pointIndex": 8,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:9",
+                "pointIndex": 9,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:10",
+                "pointIndex": 10,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:11",
+                "pointIndex": 11,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:12",
+                "pointIndex": 12,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:13",
+                "pointIndex": 13,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:14",
+                "pointIndex": 14,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:15",
+                "pointIndex": 15,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:16",
+                "pointIndex": 16,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:17",
+                "pointIndex": 17,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:18",
+                "pointIndex": 18,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:19",
+                "pointIndex": 19,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:20",
+                "pointIndex": 20,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:21",
+                "pointIndex": 21,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:22",
+                "pointIndex": 22,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:23",
+                "pointIndex": 23,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:24",
+                "pointIndex": 24,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:25",
+                "pointIndex": 25,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:26",
+                "pointIndex": 26,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "gironde-1->gironde-0:auto:27",
+                "pointIndex": 27,
+                "kind": "AUTOMATIC"
+              }
+            ],
+            "reused": false,
+            "transitionBefore": null
+          }
+        ],
+        "complete": true,
+        "unresolvedLegs": 0,
+        "calculatedDistanceNM": 24.91676935920379,
+        "provisionalDistanceNM": 0,
+        "totalEstimatedDistanceNM": 24.91676935920379,
+        "calculatedStandardHours": 4.152794893200632,
+        "calculatedOperatingHours": 2.491676935920379,
+        "provisionalStandardHours": 0,
+        "provisionalOperatingHours": 0,
+        "totalNM": 24.91676935920379,
+        "standardHours": 4.152794893200632,
+        "calculatedHours": 2.491676935920379,
+        "effectiveSOG": 10,
+        "standardETA": "2026-10-15T16:09:10.061Z",
+        "calculatedETA": "2026-10-15T14:29:30.036Z",
+        "differenceHours": 1.6611179572802528
+      }
+    ],
+    "requestedPreferences": {
+      "routePreference": "OFFSHORE PREFERRED",
+      "coastalSeparationNM": 10,
+      "objective": "BEST-TIME"
+    },
+    "effectivePreferences": {
+      "bypass": true,
+      "separationNM": 0
+    },
+    "kind": "water-outline",
+    "status": "PRELIMINARY ROUTE — 1 LEGS REFINED",
+    "createdAt": "2026-10-18T07:05:51.348Z",
+    "connectors": [
+      {
+        "id": "gironde-1->gironde-0:0",
+        "waypointId": "gironde-1",
+        "anchor": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "access": {
+          "lat": 45.3802966,
+          "lon": -0.8220253
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      },
+      {
+        "id": "gironde-1->gironde-0:1",
+        "waypointId": "gironde-0",
+        "anchor": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "access": {
+          "lat": 45.6616251,
+          "lon": -1.2171409
+        },
+        "distanceNM": 0,
+        "includedInPassage": false
+      }
+    ],
+    "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+    "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+    "confidence": "Coarse planning only; city/shore connectors unverified",
+    "constraints": [
+      {
+        "type": "depth-under-keel",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "air-draft-bridge",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "canal-lock",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "traffic-restriction",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "passage-exclusion",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "reef-shoal",
+        "status": "unresolved",
+        "source": null
+      }
+    ],
+    "validation": {
+      "landMask": "screened at selected grid resolution",
+      "depth": "unresolved",
+      "bridges": "unresolved",
+      "restrictions": "unresolved",
+      "forecast": "nominal speeds only"
+    },
+    "geometryDefinition": {
+      "authoritative": "legs[].points",
+      "segmentType": "GEODESIC",
+      "coordinateDatum": "WGS84",
+      "distanceModel": "WGS84_ELLIPSOID",
+      "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+      "presentation": "Derived renderer-only geometry; never used for calculation or export"
+    },
+    "coarseCourse": {
+      "id": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+      "preference": "BYPASS",
+      "legs": [
+        {
+          "id": "gironde-1->gironde-0",
+          "fromId": "gironde-1",
+          "waypointId": "gironde-0",
+          "transport": "BY-SEA",
+          "inputKey": "ccba66b53803532eda3b48bf15b3829a280dbed3a2be11b6a848e2d9f81a0924",
+          "points": [
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            },
+            {
+              "lat": 45.3875,
+              "lon": -0.8125
+            },
+            {
+              "lat": 45.4375,
+              "lon": -0.8374999999999986
+            },
+            {
+              "lat": 45.5875,
+              "lon": -1.0374999999999979
+            },
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            }
+          ],
+          "distanceNM": 24.88612960311986,
+          "provisionalDistanceNM": 0,
+          "status": "CALCULATED",
+          "evidence": {
+            "waypointIds": [
+              "gironde-1",
+              "gironde-0"
+            ],
+            "anchors": [
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              }
+            ],
+            "grid": "europe-0.025",
+            "resolutionDegrees": 0.025,
+            "gridExtent": {
+              "west": -20,
+              "south": 40,
+              "east": 40,
+              "north": 70
+            },
+            "accessCandidates": [
+              {
+                "waypointId": "gironde-1",
+                "source": {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                "sourceCell": {
+                  "classification": "WATER",
+                  "cell": 516767,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "candidate": {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                "cell": {
+                  "classification": "WATER",
+                  "cell": 516767,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "distanceNM": 0,
+                "explicit": true
+              },
+              {
+                "waypointId": "gironde-0",
+                "source": {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                "sourceCell": {
+                  "classification": "WATER",
+                  "cell": 543151,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "candidate": {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                },
+                "cell": {
+                  "classification": "WATER",
+                  "cell": 543151,
+                  "component": 1,
+                  "componentCells": 1148455
+                },
+                "distanceNM": 0,
+                "explicit": true
+              }
+            ],
+            "accessSearchBounds": {
+              "latitudeRadiusDegrees": 2,
+              "longitudeRadiusDegrees": 3,
+              "globalFallback": false
+            },
+            "visitedCells": 47,
+            "searchBounds": {
+              "minX": 751,
+              "maxX": 768,
+              "minY": 215,
+              "maxY": 226
+            },
+            "optionalPreferences": "BYPASS",
+            "effectiveSeparationNM": 0,
+            "automaticConnectorLimitNM": 15,
+            "termination": "PATH_FOUND",
+            "elapsedMs": 5.865600000000086,
+            "rawPoints": [
+              {
+                "lat": 45.3802966,
+                "lon": -0.8220253
+              },
+              {
+                "lat": 45.3875,
+                "lon": -0.8125
+              },
+              {
+                "lat": 45.4125,
+                "lon": -0.8125
+              },
+              {
+                "lat": 45.4375,
+                "lon": -0.8374999999999986
+              },
+              {
+                "lat": 45.4625,
+                "lon": -0.8625000000000007
+              },
+              {
+                "lat": 45.4875,
+                "lon": -0.8874999999999993
+              },
+              {
+                "lat": 45.5125,
+                "lon": -0.9124999999999979
+              },
+              {
+                "lat": 45.5125,
+                "lon": -0.9375
+              },
+              {
+                "lat": 45.5375,
+                "lon": -0.9624999999999986
+              },
+              {
+                "lat": 45.5375,
+                "lon": -0.9875000000000007
+              },
+              {
+                "lat": 45.5625,
+                "lon": -1.0124999999999993
+              },
+              {
+                "lat": 45.5875,
+                "lon": -1.0374999999999979
+              },
+              {
+                "lat": 45.5875,
+                "lon": -1.0625
+              },
+              {
+                "lat": 45.6125,
+                "lon": -1.0874999999999986
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1125000000000007
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1374999999999993
+              },
+              {
+                "lat": 45.6375,
+                "lon": -1.1624999999999979
+              },
+              {
+                "lat": 45.6625,
+                "lon": -1.1875
+              },
+              {
+                "lat": 45.6625,
+                "lon": -1.2124999999999986
+              },
+              {
+                "lat": 45.6616251,
+                "lon": -1.2171409
+              }
+            ],
+            "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+            "rawVertexCount": 20,
+            "courseVertexCount": 5
+          },
+          "operatingMode": "POWER-DIESEL",
+          "accesses": [
+            {
+              "lat": 45.3802966,
+              "lon": -0.8220253
+            },
+            {
+              "lat": 45.6616251,
+              "lon": -1.2171409
+            }
+          ],
+          "reason": null,
+          "geographicStatus": "CALCULATED",
+          "suitability": {
+            "mode": "BYPASS",
+            "policy": "ADVISORY_ONLY_BETA",
+            "blocksRouting": false,
+            "status": "BYPASSED",
+            "restrictions": [],
+            "unknowns": [],
+            "checks": []
+          },
+          "standardSpeed": 6,
+          "calculatedSpeed": 10,
+          "standardHours": 4.147688267186643,
+          "calculatedHours": 2.4886129603119858,
+          "calculatedCumulativeNM": 24.88612960311986,
+          "totalNM": 24.88612960311986,
+          "totalStandardHours": 4.147688267186643,
+          "totalCalculatedHours": 2.4886129603119858,
+          "standardETA": "2026-10-15T16:08:51.677Z",
+          "calculatedETA": "2026-10-15T14:29:19.006Z",
+          "etaStatus": "NOMINAL",
+          "differenceHours": 1.6590753068746573,
+          "courseVertices": [
+            {
+              "id": "gironde-1->gironde-0:auto:0",
+              "pointIndex": 0,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-1->gironde-0:auto:1",
+              "pointIndex": 1,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-1->gironde-0:auto:2",
+              "pointIndex": 2,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-1->gironde-0:auto:3",
+              "pointIndex": 3,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "gironde-1->gironde-0:auto:4",
+              "pointIndex": 4,
+              "kind": "AUTOMATIC"
+            }
+          ]
+        }
+      ],
+      "complete": true,
+      "unresolvedLegs": 0,
+      "calculatedDistanceNM": 24.88612960311986,
+      "provisionalDistanceNM": 0,
+      "totalEstimatedDistanceNM": 24.88612960311986,
+      "calculatedStandardHours": 4.147688267186643,
+      "calculatedOperatingHours": 2.4886129603119858,
+      "provisionalStandardHours": 0,
+      "provisionalOperatingHours": 0,
+      "totalNM": 24.88612960311986,
+      "standardHours": 4.147688267186643,
+      "calculatedHours": 2.4886129603119858,
+      "effectiveSOG": 10,
+      "standardETA": "2026-10-15T16:08:51.677Z",
+      "calculatedETA": "2026-10-15T14:29:19.006Z",
+      "differenceHours": 1.6590753068746573,
+      "suitability": {
+        "mode": "BYPASS",
+        "policy": "ADVISORY_ONLY_BETA",
+        "blocksRouting": false
+      },
+      "engineVersion": "0.3.1-stage2-course-2",
+      "selectedId": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+      "alternatives": [
+        {
+          "id": "94c1d386-6219-4409-9cab-3b11617bd2a4",
+          "preference": "BYPASS",
+          "legs": [
+            {
+              "id": "gironde-1->gironde-0",
+              "fromId": "gironde-1",
+              "waypointId": "gironde-0",
+              "transport": "BY-SEA",
+              "inputKey": "ccba66b53803532eda3b48bf15b3829a280dbed3a2be11b6a848e2d9f81a0924",
+              "points": [
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                {
+                  "lat": 45.3875,
+                  "lon": -0.8125
+                },
+                {
+                  "lat": 45.4375,
+                  "lon": -0.8374999999999986
+                },
+                {
+                  "lat": 45.5875,
+                  "lon": -1.0374999999999979
+                },
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                }
+              ],
+              "distanceNM": 24.88612960311986,
+              "provisionalDistanceNM": 0,
+              "status": "CALCULATED",
+              "evidence": {
+                "waypointIds": [
+                  "gironde-1",
+                  "gironde-0"
+                ],
+                "anchors": [
+                  {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  }
+                ],
+                "grid": "europe-0.025",
+                "resolutionDegrees": 0.025,
+                "gridExtent": {
+                  "west": -20,
+                  "south": 40,
+                  "east": 40,
+                  "north": 70
+                },
+                "accessCandidates": [
+                  {
+                    "waypointId": "gironde-1",
+                    "source": {
+                      "lat": 45.3802966,
+                      "lon": -0.8220253
+                    },
+                    "sourceCell": {
+                      "classification": "WATER",
+                      "cell": 516767,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "candidate": {
+                      "lat": 45.3802966,
+                      "lon": -0.8220253
+                    },
+                    "cell": {
+                      "classification": "WATER",
+                      "cell": 516767,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "distanceNM": 0,
+                    "explicit": true
+                  },
+                  {
+                    "waypointId": "gironde-0",
+                    "source": {
+                      "lat": 45.6616251,
+                      "lon": -1.2171409
+                    },
+                    "sourceCell": {
+                      "classification": "WATER",
+                      "cell": 543151,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "candidate": {
+                      "lat": 45.6616251,
+                      "lon": -1.2171409
+                    },
+                    "cell": {
+                      "classification": "WATER",
+                      "cell": 543151,
+                      "component": 1,
+                      "componentCells": 1148455
+                    },
+                    "distanceNM": 0,
+                    "explicit": true
+                  }
+                ],
+                "accessSearchBounds": {
+                  "latitudeRadiusDegrees": 2,
+                  "longitudeRadiusDegrees": 3,
+                  "globalFallback": false
+                },
+                "visitedCells": 47,
+                "searchBounds": {
+                  "minX": 751,
+                  "maxX": 768,
+                  "minY": 215,
+                  "maxY": 226
+                },
+                "optionalPreferences": "BYPASS",
+                "effectiveSeparationNM": 0,
+                "automaticConnectorLimitNM": 15,
+                "termination": "PATH_FOUND",
+                "elapsedMs": 5.865600000000086,
+                "rawPoints": [
+                  {
+                    "lat": 45.3802966,
+                    "lon": -0.8220253
+                  },
+                  {
+                    "lat": 45.3875,
+                    "lon": -0.8125
+                  },
+                  {
+                    "lat": 45.4125,
+                    "lon": -0.8125
+                  },
+                  {
+                    "lat": 45.4375,
+                    "lon": -0.8374999999999986
+                  },
+                  {
+                    "lat": 45.4625,
+                    "lon": -0.8625000000000007
+                  },
+                  {
+                    "lat": 45.4875,
+                    "lon": -0.8874999999999993
+                  },
+                  {
+                    "lat": 45.5125,
+                    "lon": -0.9124999999999979
+                  },
+                  {
+                    "lat": 45.5125,
+                    "lon": -0.9375
+                  },
+                  {
+                    "lat": 45.5375,
+                    "lon": -0.9624999999999986
+                  },
+                  {
+                    "lat": 45.5375,
+                    "lon": -0.9875000000000007
+                  },
+                  {
+                    "lat": 45.5625,
+                    "lon": -1.0124999999999993
+                  },
+                  {
+                    "lat": 45.5875,
+                    "lon": -1.0374999999999979
+                  },
+                  {
+                    "lat": 45.5875,
+                    "lon": -1.0625
+                  },
+                  {
+                    "lat": 45.6125,
+                    "lon": -1.0874999999999986
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1125000000000007
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1374999999999993
+                  },
+                  {
+                    "lat": 45.6375,
+                    "lon": -1.1624999999999979
+                  },
+                  {
+                    "lat": 45.6625,
+                    "lon": -1.1875
+                  },
+                  {
+                    "lat": 45.6625,
+                    "lon": -1.2124999999999986
+                  },
+                  {
+                    "lat": 45.6616251,
+                    "lon": -1.2171409
+                  }
+                ],
+                "segmentValidation": "CONSERVATIVE_GEODESIC_GRID_SUPERCOVER",
+                "rawVertexCount": 20,
+                "courseVertexCount": 5
+              },
+              "operatingMode": "POWER-DIESEL",
+              "accesses": [
+                {
+                  "lat": 45.3802966,
+                  "lon": -0.8220253
+                },
+                {
+                  "lat": 45.6616251,
+                  "lon": -1.2171409
+                }
+              ],
+              "reason": null,
+              "geographicStatus": "CALCULATED",
+              "suitability": {
+                "mode": "BYPASS",
+                "policy": "ADVISORY_ONLY_BETA",
+                "blocksRouting": false,
+                "status": "BYPASSED",
+                "restrictions": [],
+                "unknowns": [],
+                "checks": []
+              },
+              "standardSpeed": 6,
+              "calculatedSpeed": 10,
+              "standardHours": 4.147688267186643,
+              "calculatedHours": 2.4886129603119858,
+              "calculatedCumulativeNM": 24.88612960311986,
+              "totalNM": 24.88612960311986,
+              "totalStandardHours": 4.147688267186643,
+              "totalCalculatedHours": 2.4886129603119858,
+              "standardETA": "2026-10-15T16:08:51.677Z",
+              "calculatedETA": "2026-10-15T14:29:19.006Z",
+              "etaStatus": "NOMINAL",
+              "differenceHours": 1.6590753068746573,
+              "courseVertices": [
+                {
+                  "id": "gironde-1->gironde-0:auto:0",
+                  "pointIndex": 0,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-1->gironde-0:auto:1",
+                  "pointIndex": 1,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-1->gironde-0:auto:2",
+                  "pointIndex": 2,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-1->gironde-0:auto:3",
+                  "pointIndex": 3,
+                  "kind": "AUTOMATIC"
+                },
+                {
+                  "id": "gironde-1->gironde-0:auto:4",
+                  "pointIndex": 4,
+                  "kind": "AUTOMATIC"
+                }
+              ]
+            }
+          ],
+          "complete": true,
+          "unresolvedLegs": 0,
+          "calculatedDistanceNM": 24.88612960311986,
+          "provisionalDistanceNM": 0,
+          "totalEstimatedDistanceNM": 24.88612960311986,
+          "calculatedStandardHours": 4.147688267186643,
+          "calculatedOperatingHours": 2.4886129603119858,
+          "provisionalStandardHours": 0,
+          "provisionalOperatingHours": 0,
+          "totalNM": 24.88612960311986,
+          "standardHours": 4.147688267186643,
+          "calculatedHours": 2.4886129603119858,
+          "effectiveSOG": 10,
+          "standardETA": "2026-10-15T16:08:51.677Z",
+          "calculatedETA": "2026-10-15T14:29:19.006Z",
+          "differenceHours": 1.6590753068746573
+        }
+      ],
+      "requestedPreferences": {
+        "routePreference": "OFFSHORE PREFERRED",
+        "coastalSeparationNM": 10,
+        "objective": "BEST-TIME"
+      },
+      "effectivePreferences": {
+        "bypass": true,
+        "separationNM": 0
+      },
+      "kind": "water-outline",
+      "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
+      "createdAt": "2026-10-18T07:05:51.348Z",
+      "connectors": [
+        {
+          "id": "gironde-1->gironde-0:0",
+          "waypointId": "gironde-1",
+          "anchor": {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          "access": {
+            "lat": 45.3802966,
+            "lon": -0.8220253
+          },
+          "distanceNM": 0,
+          "includedInPassage": false
+        },
+        {
+          "id": "gironde-1->gironde-0:1",
+          "waypointId": "gironde-0",
+          "anchor": {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          "access": {
+            "lat": 45.6616251,
+            "lon": -1.2171409
+          },
+          "distanceNM": 0,
+          "includedInPassage": false
+        }
+      ],
+      "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+      "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+      "confidence": "Coarse planning only; city/shore connectors unverified",
+      "constraints": [
+        {
+          "type": "depth-under-keel",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "air-draft-bridge",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "canal-lock",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "traffic-restriction",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "passage-exclusion",
+          "status": "unresolved",
+          "source": null
+        },
+        {
+          "type": "reef-shoal",
+          "status": "unresolved",
+          "source": null
+        }
+      ],
+      "validation": {
+        "landMask": "screened at selected grid resolution",
+        "depth": "unresolved",
+        "bridges": "unresolved",
+        "restrictions": "unresolved",
+        "forecast": "nominal speeds only"
+      },
+      "geometryDefinition": {
+        "authoritative": "legs[].points",
+        "segmentType": "GEODESIC",
+        "coordinateDatum": "WGS84",
+        "distanceModel": "WGS84_ELLIPSOID",
+        "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+        "presentation": "Derived renderer-only geometry; never used for calculation or export"
+      }
+    },
+    "refinement": {
+      "requested": true,
+      "method": "EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS",
+      "dataset": {
+        "schema": 1,
+        "source": "https://www.openstreetmap.org/copyright",
+        "license": "ODbL 1.0; OpenStreetMap contributors",
+        "acquisition": "https://overpass-api.de/api/interpreter",
+        "sources": [
+          {
+            "dataset": "osm",
+            "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "role": "Preserved mapped waterways"
+          },
+          {
+            "file": "alter-do-chao.json",
+            "sha256": "d48ca40b736bbc9341ef3e57289697f93f241c23be58b5096ae2e847d985ae67",
+            "timestamp": "2026-10-18T01:49:51Z",
+            "bounds": [
+              -59.8927349,
+              -3.6022427,
+              -53.2974245,
+              -1.3048311
+            ],
+            "acceptedWays": 95,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-56,-1.8,-54);out geom;"
+          },
+          {
+            "file": "amazon-estuary.json",
+            "sha256": "d65edf45074624b20c7857bef6423d21d531591700e8715652848fb050eb9560",
+            "timestamp": "2026-10-18T01:46:51Z",
+            "bounds": [
+              -52.4361992,
+              -3.2353156,
+              -47.9448642,
+              1.8904415
+            ],
+            "acceptedWays": 1310,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-52,1,-48);out geom;"
+          },
+          {
+            "file": "bordeaux.json",
+            "sha256": "061d9758d14297cfc9754812993b3672df4bb8a25a559c6b52c3b7e4e9158274",
+            "timestamp": "2026-10-18T01:46:51Z",
+            "bounds": [
+              -1.2171409,
+              44.6920875,
+              -0.3560179,
+              45.8733209
+            ],
+            "acceptedWays": 756,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](44.7,-1.5,45.8,-0.4);out geom;"
+          },
+          {
+            "file": "great-lakes-flowlines.json",
+            "sha256": "398d2ea093994583b72d8ed6097bac9625c19d77b2129ae7078521884df42d8e",
+            "timestamp": "2026-10-18T01:50:56Z",
+            "bounds": [
+              -81.3570215,
+              42.9862653,
+              -69.9860502,
+              47.302521
+            ],
+            "acceptedWays": 4540,
+            "query": "[out:json][timeout:40];way[waterway~\"^flowline$\"](43,-80,47,-70);out geom;"
+          },
+          {
+            "file": "rostov.json",
+            "sha256": "2658ddc2631ecfdbab75cc39d541209376d42b1e1721902bda294e1fc0132de0",
+            "timestamp": "2026-10-18T01:49:51Z",
+            "bounds": [
+              38.5927245,
+              46.7891441,
+              40.4535043,
+              47.5590866
+            ],
+            "acceptedWays": 1129,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](46.8,38.5,47.5,40);out geom;"
+          },
+          {
+            "file": "southern.json",
+            "sha256": "a8ec617437dddedf342eb97ded1cc2a309178597bec637360014e3adefb49e36",
+            "timestamp": "2026-10-18T01:47:51Z",
+            "bounds": [
+              -75.2224338,
+              -55.6923827,
+              -65.8791947,
+              -50.6692644
+            ],
+            "acceptedWays": 2215,
+            "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-56,-76,-51,-66);out geom;"
+          }
+        ],
+        "resolution": "Irregular source vertices, WGS84 coordinates; positional accuracy not guaranteed. No fixed raster resolution.",
+        "coverage": "Existing mapped waterways plus bounded regional queries listed in sources; not worldwide complete.",
+        "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+        "limitations": [
+          "Only exactly shared source vertices connect; no proximity joins",
+          "Coarse ocean mask still governs source-to-ocean transitions",
+          "Waterway mapping is not proof of depth, bridge clearance or vessel suitability"
+        ],
+        "sha256": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+        "lineCount": 29833
+      },
+      "status": "PARTIALLY_REFINED",
+      "legs": [
+        {
+          "id": "gironde-1->gironde-0",
+          "status": "REFINED",
+          "reason": "Connected mapped source geometry replaces coarse or unresolved geometry",
+          "beforeNM": 24.88612960311986,
+          "afterNM": 24.91676935920379,
+          "beforeVertices": 5,
+          "afterVertices": 28
+        }
+      ],
+      "refinedLegs": 1
+    }
+  },
+  "exactReverse": true
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "PSChildName": "{4FB73477-47E4-4ECA-B388-8E56ED686C45}",
+    "DisplayName": "NERDS Development Test",
+    "DisplayVersion": "0.4.2.0",
+    "InstallLocation": "C:\\Program Files\\NERDS Development Test\\"
+  },
+  {
+    "PSChildName": "{79126283-6BB5-42A9-B6BF-F2E094FB0F78}",
+    "DisplayName": "NERDS",
+    "DisplayVersion": "0.3.0.0",
+    "InstallLocation": ""
+  }
+]

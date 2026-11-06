@@ -1,0 +1,2459 @@
+{
+  "pathId": "c9c6196b-584e-4b06-84d3-7f70e1b8b282",
+  "pathRevision": "b01d45322de6b3f113dfbc99d4954a11e4f8a75b722cdc5b0141425c30ca4b73",
+  "id": "47416e64-a21c-4551-9927-9a13b61ebff6",
+  "preference": "BYPASS",
+  "legs": [
+    {
+      "id": "a->b",
+      "fromId": "a",
+      "waypointId": "b",
+      "transport": "BY-SEA",
+      "inputKey": "8b9dae8a50c0ba64b9c6e33ad3e031d5d6d8f7f20134132ec11d9be80c56a588",
+      "points": [
+        {
+          "lat": 20.1,
+          "lon": 20.04
+        },
+        {
+          "lat": 20.1025,
+          "lon": 20.0375
+        },
+        {
+          "lat": 20.1075,
+          "lon": 20.0425
+        },
+        {
+          "lat": 20.1125,
+          "lon": 20.0475
+        },
+        {
+          "lat": 20.1175,
+          "lon": 20.052500000000002
+        },
+        {
+          "lat": 20.1225,
+          "lon": 20.0575
+        },
+        {
+          "lat": 20.1275,
+          "lon": 20.0625
+        },
+        {
+          "lat": 20.1325,
+          "lon": 20.0675
+        },
+        {
+          "lat": 20.1375,
+          "lon": 20.0725
+        },
+        {
+          "lat": 20.142500000000002,
+          "lon": 20.0775
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.0825
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.087500000000002
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.0925
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.0975
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.1025
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.1075
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.1125
+        },
+        {
+          "lat": 20.1475,
+          "lon": 20.1175
+        },
+        {
+          "lat": 20.142500000000002,
+          "lon": 20.1225
+        },
+        {
+          "lat": 20.1375,
+          "lon": 20.1275
+        },
+        {
+          "lat": 20.1325,
+          "lon": 20.1325
+        },
+        {
+          "lat": 20.1275,
+          "lon": 20.1375
+        },
+        {
+          "lat": 20.1225,
+          "lon": 20.142500000000002
+        },
+        {
+          "lat": 20.1175,
+          "lon": 20.1475
+        },
+        {
+          "lat": 20.1125,
+          "lon": 20.1525
+        },
+        {
+          "lat": 20.1075,
+          "lon": 20.1575
+        },
+        {
+          "lat": 20.1025,
+          "lon": 20.1575
+        },
+        {
+          "lat": 20.1,
+          "lon": 20.16
+        }
+      ],
+      "distanceNM": 9.674967225199428,
+      "provisionalDistanceNM": 0,
+      "status": "CALCULATED",
+      "evidence": {
+        "grid": "water-area-topology",
+        "waypointIds": [
+          "a",
+          "b"
+        ],
+        "anchors": [
+          {
+            "lat": 20.1,
+            "lon": 20.04
+          },
+          {
+            "lat": 20.1,
+            "lon": 20.16
+          }
+        ],
+        "source": "https://www.openstreetmap.org/copyright",
+        "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+        "areaChecksum": "346372ef9809e897af5accf42f77ab07ebb632799113ad1a978d41c1d82b295c",
+        "edgeEvidence": [
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          },
+          {
+            "kind": "AREA",
+            "area": "d0.25-x800-y440"
+          }
+        ],
+        "visitedCells": 921,
+        "termination": "CONNECTED_SOURCE_AND_WATER_AREA",
+        "automaticConnectorLimitNM": 3,
+        "sourceAccessEvidence": [],
+        "recovery": {
+          "method": "CONNECTED_MAPPED_WATER_AFTER_GRID_ACCESS_FAILURE",
+          "originalFailure": "ACCESS_NOT_WATER: explicit access is outside or blocked in the selected leg grid."
+        },
+        "elapsedMs": 8882.8857
+      },
+      "operatingMode": "POWER-DIESEL",
+      "accesses": [
+        {
+          "lat": 20.1,
+          "lon": 20.04
+        },
+        {
+          "lat": 20.1,
+          "lon": 20.16
+        }
+      ],
+      "reason": null,
+      "geographicStatus": "CALCULATED",
+      "suitability": {
+        "mode": "BYPASS",
+        "policy": "ADVISORY_ONLY_BETA",
+        "blocksRouting": false,
+        "status": "BYPASSED",
+        "restrictions": [],
+        "unknowns": [],
+        "checks": []
+      },
+      "standardSpeed": 6,
+      "calculatedSpeed": 6,
+      "standardHours": 1.612494537533238,
+      "calculatedHours": 1.612494537533238,
+      "calculatedCumulativeNM": 9.674967225199428,
+      "totalNM": 9.674967225199428,
+      "totalStandardHours": 1.612494537533238,
+      "totalCalculatedHours": 1.612494537533238,
+      "standardETA": "2026-10-27T21:59:19.656Z",
+      "calculatedETA": "2026-10-27T21:59:19.656Z",
+      "etaStatus": "NOMINAL",
+      "differenceHours": 0,
+      "courseVertices": [
+        {
+          "id": "a->b:auto:0",
+          "pointIndex": 0,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:1",
+          "pointIndex": 1,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:2",
+          "pointIndex": 2,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:3",
+          "pointIndex": 3,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:4",
+          "pointIndex": 4,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:5",
+          "pointIndex": 5,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:6",
+          "pointIndex": 6,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:7",
+          "pointIndex": 7,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:8",
+          "pointIndex": 8,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:9",
+          "pointIndex": 9,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:10",
+          "pointIndex": 10,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:11",
+          "pointIndex": 11,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:12",
+          "pointIndex": 12,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:13",
+          "pointIndex": 13,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:14",
+          "pointIndex": 14,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:15",
+          "pointIndex": 15,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:16",
+          "pointIndex": 16,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:17",
+          "pointIndex": 17,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:18",
+          "pointIndex": 18,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:19",
+          "pointIndex": 19,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:20",
+          "pointIndex": 20,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:21",
+          "pointIndex": 21,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:22",
+          "pointIndex": 22,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:23",
+          "pointIndex": 23,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:24",
+          "pointIndex": 24,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:25",
+          "pointIndex": 25,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:26",
+          "pointIndex": 26,
+          "kind": "AUTOMATIC"
+        },
+        {
+          "id": "a->b:auto:27",
+          "pointIndex": 27,
+          "kind": "AUTOMATIC"
+        }
+      ],
+      "transitionBefore": null
+    }
+  ],
+  "complete": true,
+  "unresolvedLegs": 0,
+  "calculatedDistanceNM": 9.674967225199428,
+  "provisionalDistanceNM": 0,
+  "totalEstimatedDistanceNM": 9.674967225199428,
+  "calculatedStandardHours": 1.612494537533238,
+  "calculatedOperatingHours": 1.612494537533238,
+  "provisionalStandardHours": 0,
+  "provisionalOperatingHours": 0,
+  "totalNM": 9.674967225199428,
+  "standardHours": 1.612494537533238,
+  "calculatedHours": 1.612494537533238,
+  "effectiveSOG": 6,
+  "standardETA": "2026-10-27T21:59:19.656Z",
+  "calculatedETA": "2026-10-27T21:59:19.656Z",
+  "differenceHours": 0,
+  "userCoarseCourse": {
+    "id": "7bc261be-ff86-4ec1-a1f2-40bea087c390",
+    "pathId": "c9c6196b-584e-4b06-84d3-7f70e1b8b282",
+    "pathRevision": "b01d45322de6b3f113dfbc99d4954a11e4f8a75b722cdc5b0141425c30ca4b73",
+    "stage": "COARSE",
+    "byWay": "BY-SEA",
+    "operationalMode": "BYPASS",
+    "knots": 6,
+    "geometryDefinition": "WGS84_ELLIPSOID_GEODESIC",
+    "status": "INTENT_ONLY_NOT_GEOGRAPHIC_CONNECTIVITY",
+    "legs": [
+      {
+        "fromId": "a",
+        "toId": "b",
+        "points": [
+          {
+            "id": "a",
+            "name": "Synthetic west",
+            "lat": 20.1,
+            "lon": 20.04
+          },
+          {
+            "id": "b",
+            "name": "Synthetic east",
+            "lat": 20.1,
+            "lon": 20.16
+          }
+        ],
+        "distanceNM": 6.776296438328998,
+        "hours": 1.1293827397214997,
+        "cumulativeNM": 6.776296438328998,
+        "eta": "2026-10-27T21:30:20.453Z"
+      }
+    ],
+    "totalNM": 6.776296438328998,
+    "hours": 1.1293827397214997
+  },
+  "suitability": {
+    "mode": "BYPASS",
+    "policy": "ADVISORY_ONLY_BETA",
+    "blocksRouting": false
+  },
+  "engineVersion": "0.4.1-course-3",
+  "selectedId": "47416e64-a21c-4551-9927-9a13b61ebff6",
+  "alternatives": [
+    {
+      "id": "47416e64-a21c-4551-9927-9a13b61ebff6",
+      "preference": "BYPASS",
+      "legs": [
+        {
+          "id": "a->b",
+          "fromId": "a",
+          "waypointId": "b",
+          "transport": "BY-SEA",
+          "inputKey": "8b9dae8a50c0ba64b9c6e33ad3e031d5d6d8f7f20134132ec11d9be80c56a588",
+          "points": [
+            {
+              "lat": 20.1,
+              "lon": 20.04
+            },
+            {
+              "lat": 20.1025,
+              "lon": 20.0375
+            },
+            {
+              "lat": 20.1075,
+              "lon": 20.0425
+            },
+            {
+              "lat": 20.1125,
+              "lon": 20.0475
+            },
+            {
+              "lat": 20.1175,
+              "lon": 20.052500000000002
+            },
+            {
+              "lat": 20.1225,
+              "lon": 20.0575
+            },
+            {
+              "lat": 20.1275,
+              "lon": 20.0625
+            },
+            {
+              "lat": 20.1325,
+              "lon": 20.0675
+            },
+            {
+              "lat": 20.1375,
+              "lon": 20.0725
+            },
+            {
+              "lat": 20.142500000000002,
+              "lon": 20.0775
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.0825
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.087500000000002
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.0925
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.0975
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.1025
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.1075
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.1125
+            },
+            {
+              "lat": 20.1475,
+              "lon": 20.1175
+            },
+            {
+              "lat": 20.142500000000002,
+              "lon": 20.1225
+            },
+            {
+              "lat": 20.1375,
+              "lon": 20.1275
+            },
+            {
+              "lat": 20.1325,
+              "lon": 20.1325
+            },
+            {
+              "lat": 20.1275,
+              "lon": 20.1375
+            },
+            {
+              "lat": 20.1225,
+              "lon": 20.142500000000002
+            },
+            {
+              "lat": 20.1175,
+              "lon": 20.1475
+            },
+            {
+              "lat": 20.1125,
+              "lon": 20.1525
+            },
+            {
+              "lat": 20.1075,
+              "lon": 20.1575
+            },
+            {
+              "lat": 20.1025,
+              "lon": 20.1575
+            },
+            {
+              "lat": 20.1,
+              "lon": 20.16
+            }
+          ],
+          "distanceNM": 9.674967225199428,
+          "provisionalDistanceNM": 0,
+          "status": "CALCULATED",
+          "evidence": {
+            "grid": "water-area-topology",
+            "waypointIds": [
+              "a",
+              "b"
+            ],
+            "anchors": [
+              {
+                "lat": 20.1,
+                "lon": 20.04
+              },
+              {
+                "lat": 20.1,
+                "lon": 20.16
+              }
+            ],
+            "source": "https://www.openstreetmap.org/copyright",
+            "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "areaChecksum": "346372ef9809e897af5accf42f77ab07ebb632799113ad1a978d41c1d82b295c",
+            "edgeEvidence": [
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              },
+              {
+                "kind": "AREA",
+                "area": "d0.25-x800-y440"
+              }
+            ],
+            "visitedCells": 921,
+            "termination": "CONNECTED_SOURCE_AND_WATER_AREA",
+            "automaticConnectorLimitNM": 3,
+            "sourceAccessEvidence": [],
+            "recovery": {
+              "method": "CONNECTED_MAPPED_WATER_AFTER_GRID_ACCESS_FAILURE",
+              "originalFailure": "ACCESS_NOT_WATER: explicit access is outside or blocked in the selected leg grid."
+            },
+            "elapsedMs": 8882.8857
+          },
+          "operatingMode": "POWER-DIESEL",
+          "accesses": [
+            {
+              "lat": 20.1,
+              "lon": 20.04
+            },
+            {
+              "lat": 20.1,
+              "lon": 20.16
+            }
+          ],
+          "reason": null,
+          "geographicStatus": "CALCULATED",
+          "suitability": {
+            "mode": "BYPASS",
+            "policy": "ADVISORY_ONLY_BETA",
+            "blocksRouting": false,
+            "status": "BYPASSED",
+            "restrictions": [],
+            "unknowns": [],
+            "checks": []
+          },
+          "standardSpeed": 6,
+          "calculatedSpeed": 6,
+          "standardHours": 1.612494537533238,
+          "calculatedHours": 1.612494537533238,
+          "calculatedCumulativeNM": 9.674967225199428,
+          "totalNM": 9.674967225199428,
+          "totalStandardHours": 1.612494537533238,
+          "totalCalculatedHours": 1.612494537533238,
+          "standardETA": "2026-10-27T21:59:19.656Z",
+          "calculatedETA": "2026-10-27T21:59:19.656Z",
+          "etaStatus": "NOMINAL",
+          "differenceHours": 0,
+          "courseVertices": [
+            {
+              "id": "a->b:auto:0",
+              "pointIndex": 0,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:1",
+              "pointIndex": 1,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:2",
+              "pointIndex": 2,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:3",
+              "pointIndex": 3,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:4",
+              "pointIndex": 4,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:5",
+              "pointIndex": 5,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:6",
+              "pointIndex": 6,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:7",
+              "pointIndex": 7,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:8",
+              "pointIndex": 8,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:9",
+              "pointIndex": 9,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:10",
+              "pointIndex": 10,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:11",
+              "pointIndex": 11,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:12",
+              "pointIndex": 12,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:13",
+              "pointIndex": 13,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:14",
+              "pointIndex": 14,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:15",
+              "pointIndex": 15,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:16",
+              "pointIndex": 16,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:17",
+              "pointIndex": 17,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:18",
+              "pointIndex": 18,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:19",
+              "pointIndex": 19,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:20",
+              "pointIndex": 20,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:21",
+              "pointIndex": 21,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:22",
+              "pointIndex": 22,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:23",
+              "pointIndex": 23,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:24",
+              "pointIndex": 24,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:25",
+              "pointIndex": 25,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:26",
+              "pointIndex": 26,
+              "kind": "AUTOMATIC"
+            },
+            {
+              "id": "a->b:auto:27",
+              "pointIndex": 27,
+              "kind": "AUTOMATIC"
+            }
+          ],
+          "transitionBefore": null
+        }
+      ],
+      "complete": true,
+      "unresolvedLegs": 0,
+      "calculatedDistanceNM": 9.674967225199428,
+      "provisionalDistanceNM": 0,
+      "totalEstimatedDistanceNM": 9.674967225199428,
+      "calculatedStandardHours": 1.612494537533238,
+      "calculatedOperatingHours": 1.612494537533238,
+      "provisionalStandardHours": 0,
+      "provisionalOperatingHours": 0,
+      "totalNM": 9.674967225199428,
+      "standardHours": 1.612494537533238,
+      "calculatedHours": 1.612494537533238,
+      "effectiveSOG": 6,
+      "standardETA": "2026-10-27T21:59:19.656Z",
+      "calculatedETA": "2026-10-27T21:59:19.656Z",
+      "differenceHours": 0
+    }
+  ],
+  "requestedPreferences": {
+    "routePreference": "OFFSHORE PREFERRED",
+    "coastalSeparationNM": 10,
+    "objective": "BEST-TIME"
+  },
+  "effectivePreferences": {
+    "geographyRevision": "268618f027766272b38f84664ce22adafee154035a026da5fa9ef11a9327e5d0,466a369f5a2fd31bdf97d033e0b268d444b4f8a66f02ca6a0b49a45ec0680c62,52991a3e8a3442cefec278bcd69686cda43d7d04e5323fd3a75ffff6ac56dad3,5eee31a13a2ed99253e7fb865fcd9867c1a21b9402bb7cbc219c4c42d10d9803,732d76bef3be734d731079c088ca668db83744831d1a8faa0e4085db5e72b910,7baf2dd6d3e9b22723d68173656dec77543baa385b978caa8d5dadaa28dd6c64,7fd99a151bac6d463885f4cf163c4011ca6058e609a89472c9e999e7f5f696a5,df228508017d597d2ced055a7ef5238d521efbcf2eaf3312b152baf686dd4ccd,e3b9705f83fd01ed5cb867dc9668e390a6bfd8b5fcba3ebf03469e0a50d81ed8",
+    "bypass": true,
+    "separationNM": 0
+  },
+  "kind": "water-outline",
+  "status": "PRELIMINARY ROUTE — 0 LEGS REFINED",
+  "createdAt": "2026-10-27T20:22:54.046Z",
+  "connectors": [
+    {
+      "id": "a->b:0",
+      "waypointId": "a",
+      "anchor": {
+        "lat": 20.1,
+        "lon": 20.04
+      },
+      "access": {
+        "lat": 20.1,
+        "lon": 20.04
+      },
+      "distanceNM": 0,
+      "includedInPassage": false,
+      "status": "COINCIDENT",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    },
+    {
+      "id": "a->b:1",
+      "waypointId": "b",
+      "anchor": {
+        "lat": 20.1,
+        "lon": 20.16
+      },
+      "access": {
+        "lat": 20.1,
+        "lon": 20.16
+      },
+      "distanceNM": 0,
+      "includedInPassage": false,
+      "status": "COINCIDENT",
+      "transport": "UNSPECIFIED_TRANSFER",
+      "durationHours": null
+    }
+  ],
+  "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+  "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+  "confidence": "Coarse planning only; city/shore connectors unverified",
+  "constraints": [
+    {
+      "type": "depth-under-keel",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "air-draft-bridge",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "canal-lock",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "traffic-restriction",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "passage-exclusion",
+      "status": "unresolved",
+      "source": null
+    },
+    {
+      "type": "reef-shoal",
+      "status": "unresolved",
+      "source": null
+    }
+  ],
+  "validation": {
+    "landMask": "screened at selected grid resolution",
+    "depth": "unresolved",
+    "bridges": "unresolved",
+    "restrictions": "unresolved",
+    "forecast": "nominal speeds only"
+  },
+  "geometryDefinition": {
+    "authoritative": "legs[].points",
+    "segmentType": "GEODESIC",
+    "coordinateDatum": "WGS84",
+    "distanceModel": "WGS84_ELLIPSOID",
+    "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+    "presentation": "Derived renderer-only geometry; never used for calculation or export"
+  },
+  "distanceComponents": {
+    "vesselPassageNM": 9.674967225199428,
+    "unverifiedConnectorGeometryNM": 0,
+    "connectorsIncludedInVesselDistance": false,
+    "completeExpeditionNM": 9.674967225199428
+  },
+  "endpointStatus": "COINCIDENT_WITH_CALCULATED_ACCESS",
+  "basisKey": "{\"engine\":\"0.4.1-course-3\",\"coastalPreferenceEnabled\":false,\"vesselSuitability\":\"BYPASS\",\"coursePlan\":{\"schemaVersion\":1,\"segmentType\":\"GEODESIC\",\"manualConstraints\":[]},\"waypoints\":[{\"id\":\"a\",\"lat\":20.1,\"lon\":20.04,\"access\":{\"name\":\"User-assigned water access\",\"lat\":20.1,\"lon\":20.04,\"source\":\"\",\"depth\":null,\"airClearance\":null,\"maxLOA\":null,\"maxBeam\":null},\"operatingMode\":\"AUTO\"},{\"id\":\"b\",\"lat\":20.1,\"lon\":20.16,\"access\":{\"name\":\"User-assigned water access\",\"lat\":20.1,\"lon\":20.16,\"source\":\"\",\"depth\":null,\"airClearance\":null,\"maxLOA\":null,\"maxBeam\":null},\"operatingMode\":\"AUTO\"}],\"vessel\":{\"name\":\"\",\"imo\":\"\",\"mmsi\":\"\",\"flag\":\"\",\"hullType\":\"\",\"propulsion\":\"SAIL + POWER\",\"propulsionModes\":[\"SAIL\",\"POWER-DIESEL\"],\"referenceKnots\":6,\"sailKnots\":6,\"dieselKnots\":6,\"electricKnots\":10,\"landKnots\":30,\"airKnots\":250,\"underKeel\":0,\"airAllowance\":0,\"draftAllowance\":0,\"assumptions\":\"Nominal planning assumptions; no calibrated environmental model.\",\"lengthUnit\":\"m\",\"massUnit\":\"t\",\"loa\":null,\"beam\":null,\"draftWater\":null,\"draftAir\":null,\"lwl\":null,\"displacement\":null,\"hullSpeed\":null,\"imageData\":\"\"},\"transport\":\"BY-SEA\",\"departureUTC\":\"2026-10-27T20:22:34.676Z\",\"routePreference\":\"OFFSHORE PREFERRED\",\"separation\":10,\"objective\":\"BEST-TIME\",\"environment\":[]}",
+  "coarseCourse": {
+    "pathId": "c9c6196b-584e-4b06-84d3-7f70e1b8b282",
+    "pathRevision": "b01d45322de6b3f113dfbc99d4954a11e4f8a75b722cdc5b0141425c30ca4b73",
+    "id": "47416e64-a21c-4551-9927-9a13b61ebff6",
+    "preference": "BYPASS",
+    "legs": [
+      {
+        "id": "a->b",
+        "fromId": "a",
+        "waypointId": "b",
+        "transport": "BY-SEA",
+        "inputKey": "8b9dae8a50c0ba64b9c6e33ad3e031d5d6d8f7f20134132ec11d9be80c56a588",
+        "points": [
+          {
+            "lat": 20.1,
+            "lon": 20.04
+          },
+          {
+            "lat": 20.1025,
+            "lon": 20.0375
+          },
+          {
+            "lat": 20.1075,
+            "lon": 20.0425
+          },
+          {
+            "lat": 20.1125,
+            "lon": 20.0475
+          },
+          {
+            "lat": 20.1175,
+            "lon": 20.052500000000002
+          },
+          {
+            "lat": 20.1225,
+            "lon": 20.0575
+          },
+          {
+            "lat": 20.1275,
+            "lon": 20.0625
+          },
+          {
+            "lat": 20.1325,
+            "lon": 20.0675
+          },
+          {
+            "lat": 20.1375,
+            "lon": 20.0725
+          },
+          {
+            "lat": 20.142500000000002,
+            "lon": 20.0775
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.0825
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.087500000000002
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.0925
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.0975
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.1025
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.1075
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.1125
+          },
+          {
+            "lat": 20.1475,
+            "lon": 20.1175
+          },
+          {
+            "lat": 20.142500000000002,
+            "lon": 20.1225
+          },
+          {
+            "lat": 20.1375,
+            "lon": 20.1275
+          },
+          {
+            "lat": 20.1325,
+            "lon": 20.1325
+          },
+          {
+            "lat": 20.1275,
+            "lon": 20.1375
+          },
+          {
+            "lat": 20.1225,
+            "lon": 20.142500000000002
+          },
+          {
+            "lat": 20.1175,
+            "lon": 20.1475
+          },
+          {
+            "lat": 20.1125,
+            "lon": 20.1525
+          },
+          {
+            "lat": 20.1075,
+            "lon": 20.1575
+          },
+          {
+            "lat": 20.1025,
+            "lon": 20.1575
+          },
+          {
+            "lat": 20.1,
+            "lon": 20.16
+          }
+        ],
+        "distanceNM": 9.674967225199428,
+        "provisionalDistanceNM": 0,
+        "status": "CALCULATED",
+        "evidence": {
+          "grid": "water-area-topology",
+          "waypointIds": [
+            "a",
+            "b"
+          ],
+          "anchors": [
+            {
+              "lat": 20.1,
+              "lon": 20.04
+            },
+            {
+              "lat": 20.1,
+              "lon": 20.16
+            }
+          ],
+          "source": "https://www.openstreetmap.org/copyright",
+          "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+          "areaChecksum": "346372ef9809e897af5accf42f77ab07ebb632799113ad1a978d41c1d82b295c",
+          "edgeEvidence": [
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            },
+            {
+              "kind": "AREA",
+              "area": "d0.25-x800-y440"
+            }
+          ],
+          "visitedCells": 921,
+          "termination": "CONNECTED_SOURCE_AND_WATER_AREA",
+          "automaticConnectorLimitNM": 3,
+          "sourceAccessEvidence": [],
+          "recovery": {
+            "method": "CONNECTED_MAPPED_WATER_AFTER_GRID_ACCESS_FAILURE",
+            "originalFailure": "ACCESS_NOT_WATER: explicit access is outside or blocked in the selected leg grid."
+          },
+          "elapsedMs": 8882.8857
+        },
+        "operatingMode": "POWER-DIESEL",
+        "accesses": [
+          {
+            "lat": 20.1,
+            "lon": 20.04
+          },
+          {
+            "lat": 20.1,
+            "lon": 20.16
+          }
+        ],
+        "reason": null,
+        "geographicStatus": "CALCULATED",
+        "suitability": {
+          "mode": "BYPASS",
+          "policy": "ADVISORY_ONLY_BETA",
+          "blocksRouting": false,
+          "status": "BYPASSED",
+          "restrictions": [],
+          "unknowns": [],
+          "checks": []
+        },
+        "standardSpeed": 6,
+        "calculatedSpeed": 6,
+        "standardHours": 1.612494537533238,
+        "calculatedHours": 1.612494537533238,
+        "calculatedCumulativeNM": 9.674967225199428,
+        "totalNM": 9.674967225199428,
+        "totalStandardHours": 1.612494537533238,
+        "totalCalculatedHours": 1.612494537533238,
+        "standardETA": "2026-10-27T21:59:19.656Z",
+        "calculatedETA": "2026-10-27T21:59:19.656Z",
+        "etaStatus": "NOMINAL",
+        "differenceHours": 0,
+        "courseVertices": [
+          {
+            "id": "a->b:auto:0",
+            "pointIndex": 0,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:1",
+            "pointIndex": 1,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:2",
+            "pointIndex": 2,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:3",
+            "pointIndex": 3,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:4",
+            "pointIndex": 4,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:5",
+            "pointIndex": 5,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:6",
+            "pointIndex": 6,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:7",
+            "pointIndex": 7,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:8",
+            "pointIndex": 8,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:9",
+            "pointIndex": 9,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:10",
+            "pointIndex": 10,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:11",
+            "pointIndex": 11,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:12",
+            "pointIndex": 12,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:13",
+            "pointIndex": 13,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:14",
+            "pointIndex": 14,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:15",
+            "pointIndex": 15,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:16",
+            "pointIndex": 16,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:17",
+            "pointIndex": 17,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:18",
+            "pointIndex": 18,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:19",
+            "pointIndex": 19,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:20",
+            "pointIndex": 20,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:21",
+            "pointIndex": 21,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:22",
+            "pointIndex": 22,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:23",
+            "pointIndex": 23,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:24",
+            "pointIndex": 24,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:25",
+            "pointIndex": 25,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:26",
+            "pointIndex": 26,
+            "kind": "AUTOMATIC"
+          },
+          {
+            "id": "a->b:auto:27",
+            "pointIndex": 27,
+            "kind": "AUTOMATIC"
+          }
+        ]
+      }
+    ],
+    "complete": true,
+    "unresolvedLegs": 0,
+    "calculatedDistanceNM": 9.674967225199428,
+    "provisionalDistanceNM": 0,
+    "totalEstimatedDistanceNM": 9.674967225199428,
+    "calculatedStandardHours": 1.612494537533238,
+    "calculatedOperatingHours": 1.612494537533238,
+    "provisionalStandardHours": 0,
+    "provisionalOperatingHours": 0,
+    "totalNM": 9.674967225199428,
+    "standardHours": 1.612494537533238,
+    "calculatedHours": 1.612494537533238,
+    "effectiveSOG": 6,
+    "standardETA": "2026-10-27T21:59:19.656Z",
+    "calculatedETA": "2026-10-27T21:59:19.656Z",
+    "differenceHours": 0,
+    "userCoarseCourse": {
+      "id": "7bc261be-ff86-4ec1-a1f2-40bea087c390",
+      "pathId": "c9c6196b-584e-4b06-84d3-7f70e1b8b282",
+      "pathRevision": "b01d45322de6b3f113dfbc99d4954a11e4f8a75b722cdc5b0141425c30ca4b73",
+      "stage": "COARSE",
+      "byWay": "BY-SEA",
+      "operationalMode": "BYPASS",
+      "knots": 6,
+      "geometryDefinition": "WGS84_ELLIPSOID_GEODESIC",
+      "status": "INTENT_ONLY_NOT_GEOGRAPHIC_CONNECTIVITY",
+      "legs": [
+        {
+          "fromId": "a",
+          "toId": "b",
+          "points": [
+            {
+              "id": "a",
+              "name": "Synthetic west",
+              "lat": 20.1,
+              "lon": 20.04
+            },
+            {
+              "id": "b",
+              "name": "Synthetic east",
+              "lat": 20.1,
+              "lon": 20.16
+            }
+          ],
+          "distanceNM": 6.776296438328998,
+          "hours": 1.1293827397214997,
+          "cumulativeNM": 6.776296438328998,
+          "eta": "2026-10-27T21:30:20.453Z"
+        }
+      ],
+      "totalNM": 6.776296438328998,
+      "hours": 1.1293827397214997
+    },
+    "suitability": {
+      "mode": "BYPASS",
+      "policy": "ADVISORY_ONLY_BETA",
+      "blocksRouting": false
+    },
+    "engineVersion": "0.4.1-course-3",
+    "selectedId": "47416e64-a21c-4551-9927-9a13b61ebff6",
+    "alternatives": [
+      {
+        "pathId": "c9c6196b-584e-4b06-84d3-7f70e1b8b282",
+        "pathRevision": "b01d45322de6b3f113dfbc99d4954a11e4f8a75b722cdc5b0141425c30ca4b73",
+        "id": "47416e64-a21c-4551-9927-9a13b61ebff6",
+        "preference": "BYPASS",
+        "legs": [
+          {
+            "id": "a->b",
+            "fromId": "a",
+            "waypointId": "b",
+            "transport": "BY-SEA",
+            "inputKey": "8b9dae8a50c0ba64b9c6e33ad3e031d5d6d8f7f20134132ec11d9be80c56a588",
+            "points": [
+              {
+                "lat": 20.1,
+                "lon": 20.04
+              },
+              {
+                "lat": 20.1025,
+                "lon": 20.0375
+              },
+              {
+                "lat": 20.1075,
+                "lon": 20.0425
+              },
+              {
+                "lat": 20.1125,
+                "lon": 20.0475
+              },
+              {
+                "lat": 20.1175,
+                "lon": 20.052500000000002
+              },
+              {
+                "lat": 20.1225,
+                "lon": 20.0575
+              },
+              {
+                "lat": 20.1275,
+                "lon": 20.0625
+              },
+              {
+                "lat": 20.1325,
+                "lon": 20.0675
+              },
+              {
+                "lat": 20.1375,
+                "lon": 20.0725
+              },
+              {
+                "lat": 20.142500000000002,
+                "lon": 20.0775
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.0825
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.087500000000002
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.0925
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.0975
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.1025
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.1075
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.1125
+              },
+              {
+                "lat": 20.1475,
+                "lon": 20.1175
+              },
+              {
+                "lat": 20.142500000000002,
+                "lon": 20.1225
+              },
+              {
+                "lat": 20.1375,
+                "lon": 20.1275
+              },
+              {
+                "lat": 20.1325,
+                "lon": 20.1325
+              },
+              {
+                "lat": 20.1275,
+                "lon": 20.1375
+              },
+              {
+                "lat": 20.1225,
+                "lon": 20.142500000000002
+              },
+              {
+                "lat": 20.1175,
+                "lon": 20.1475
+              },
+              {
+                "lat": 20.1125,
+                "lon": 20.1525
+              },
+              {
+                "lat": 20.1075,
+                "lon": 20.1575
+              },
+              {
+                "lat": 20.1025,
+                "lon": 20.1575
+              },
+              {
+                "lat": 20.1,
+                "lon": 20.16
+              }
+            ],
+            "distanceNM": 9.674967225199428,
+            "provisionalDistanceNM": 0,
+            "status": "CALCULATED",
+            "evidence": {
+              "grid": "water-area-topology",
+              "waypointIds": [
+                "a",
+                "b"
+              ],
+              "anchors": [
+                {
+                  "lat": 20.1,
+                  "lon": 20.04
+                },
+                {
+                  "lat": 20.1,
+                  "lon": 20.16
+                }
+              ],
+              "source": "https://www.openstreetmap.org/copyright",
+              "sourceChecksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+              "areaChecksum": "346372ef9809e897af5accf42f77ab07ebb632799113ad1a978d41c1d82b295c",
+              "edgeEvidence": [
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                },
+                {
+                  "kind": "AREA",
+                  "area": "d0.25-x800-y440"
+                }
+              ],
+              "visitedCells": 921,
+              "termination": "CONNECTED_SOURCE_AND_WATER_AREA",
+              "automaticConnectorLimitNM": 3,
+              "sourceAccessEvidence": [],
+              "recovery": {
+                "method": "CONNECTED_MAPPED_WATER_AFTER_GRID_ACCESS_FAILURE",
+                "originalFailure": "ACCESS_NOT_WATER: explicit access is outside or blocked in the selected leg grid."
+              },
+              "elapsedMs": 8882.8857
+            },
+            "operatingMode": "POWER-DIESEL",
+            "accesses": [
+              {
+                "lat": 20.1,
+                "lon": 20.04
+              },
+              {
+                "lat": 20.1,
+                "lon": 20.16
+              }
+            ],
+            "reason": null,
+            "geographicStatus": "CALCULATED",
+            "suitability": {
+              "mode": "BYPASS",
+              "policy": "ADVISORY_ONLY_BETA",
+              "blocksRouting": false,
+              "status": "BYPASSED",
+              "restrictions": [],
+              "unknowns": [],
+              "checks": []
+            },
+            "standardSpeed": 6,
+            "calculatedSpeed": 6,
+            "standardHours": 1.612494537533238,
+            "calculatedHours": 1.612494537533238,
+            "calculatedCumulativeNM": 9.674967225199428,
+            "totalNM": 9.674967225199428,
+            "totalStandardHours": 1.612494537533238,
+            "totalCalculatedHours": 1.612494537533238,
+            "standardETA": "2026-10-27T21:59:19.656Z",
+            "calculatedETA": "2026-10-27T21:59:19.656Z",
+            "etaStatus": "NOMINAL",
+            "differenceHours": 0,
+            "courseVertices": [
+              {
+                "id": "a->b:auto:0",
+                "pointIndex": 0,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:1",
+                "pointIndex": 1,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:2",
+                "pointIndex": 2,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:3",
+                "pointIndex": 3,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:4",
+                "pointIndex": 4,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:5",
+                "pointIndex": 5,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:6",
+                "pointIndex": 6,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:7",
+                "pointIndex": 7,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:8",
+                "pointIndex": 8,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:9",
+                "pointIndex": 9,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:10",
+                "pointIndex": 10,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:11",
+                "pointIndex": 11,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:12",
+                "pointIndex": 12,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:13",
+                "pointIndex": 13,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:14",
+                "pointIndex": 14,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:15",
+                "pointIndex": 15,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:16",
+                "pointIndex": 16,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:17",
+                "pointIndex": 17,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:18",
+                "pointIndex": 18,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:19",
+                "pointIndex": 19,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:20",
+                "pointIndex": 20,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:21",
+                "pointIndex": 21,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:22",
+                "pointIndex": 22,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:23",
+                "pointIndex": 23,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:24",
+                "pointIndex": 24,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:25",
+                "pointIndex": 25,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:26",
+                "pointIndex": 26,
+                "kind": "AUTOMATIC"
+              },
+              {
+                "id": "a->b:auto:27",
+                "pointIndex": 27,
+                "kind": "AUTOMATIC"
+              }
+            ]
+          }
+        ],
+        "complete": true,
+        "unresolvedLegs": 0,
+        "calculatedDistanceNM": 9.674967225199428,
+        "provisionalDistanceNM": 0,
+        "totalEstimatedDistanceNM": 9.674967225199428,
+        "calculatedStandardHours": 1.612494537533238,
+        "calculatedOperatingHours": 1.612494537533238,
+        "provisionalStandardHours": 0,
+        "provisionalOperatingHours": 0,
+        "totalNM": 9.674967225199428,
+        "standardHours": 1.612494537533238,
+        "calculatedHours": 1.612494537533238,
+        "effectiveSOG": 6,
+        "standardETA": "2026-10-27T21:59:19.656Z",
+        "calculatedETA": "2026-10-27T21:59:19.656Z",
+        "differenceHours": 0
+      }
+    ],
+    "requestedPreferences": {
+      "routePreference": "OFFSHORE PREFERRED",
+      "coastalSeparationNM": 10,
+      "objective": "BEST-TIME"
+    },
+    "effectivePreferences": {
+      "geographyRevision": "268618f027766272b38f84664ce22adafee154035a026da5fa9ef11a9327e5d0,466a369f5a2fd31bdf97d033e0b268d444b4f8a66f02ca6a0b49a45ec0680c62,52991a3e8a3442cefec278bcd69686cda43d7d04e5323fd3a75ffff6ac56dad3,5eee31a13a2ed99253e7fb865fcd9867c1a21b9402bb7cbc219c4c42d10d9803,732d76bef3be734d731079c088ca668db83744831d1a8faa0e4085db5e72b910,7baf2dd6d3e9b22723d68173656dec77543baa385b978caa8d5dadaa28dd6c64,7fd99a151bac6d463885f4cf163c4011ca6058e609a89472c9e999e7f5f696a5,df228508017d597d2ced055a7ef5238d521efbcf2eaf3312b152baf686dd4ccd,e3b9705f83fd01ed5cb867dc9668e390a6bfd8b5fcba3ebf03469e0a50d81ed8",
+      "bypass": true,
+      "separationNM": 0
+    },
+    "kind": "water-outline",
+    "status": "PRELIMINARY ROUTE — ALL LEGS CALCULATED",
+    "createdAt": "2026-10-27T20:22:54.046Z",
+    "connectors": [
+      {
+        "id": "a->b:0",
+        "waypointId": "a",
+        "anchor": {
+          "lat": 20.1,
+          "lon": 20.04
+        },
+        "access": {
+          "lat": 20.1,
+          "lon": 20.04
+        },
+        "distanceNM": 0,
+        "includedInPassage": false,
+        "status": "COINCIDENT",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      },
+      {
+        "id": "a->b:1",
+        "waypointId": "b",
+        "anchor": {
+          "lat": 20.1,
+          "lon": 20.16
+        },
+        "access": {
+          "lat": 20.1,
+          "lon": 20.16
+        },
+        "distanceNM": 0,
+        "includedInPassage": false,
+        "status": "COINCIDENT",
+        "transport": "UNSPECIFIED_TRANSFER",
+        "durationHours": null
+      }
+    ],
+    "provenance": "Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.",
+    "warning": "Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.",
+    "confidence": "Coarse planning only; city/shore connectors unverified",
+    "constraints": [
+      {
+        "type": "depth-under-keel",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "air-draft-bridge",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "canal-lock",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "traffic-restriction",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "passage-exclusion",
+        "status": "unresolved",
+        "source": null
+      },
+      {
+        "type": "reef-shoal",
+        "status": "unresolved",
+        "source": null
+      }
+    ],
+    "validation": {
+      "landMask": "screened at selected grid resolution",
+      "depth": "unresolved",
+      "bridges": "unresolved",
+      "restrictions": "unresolved",
+      "forecast": "nominal speeds only"
+    },
+    "geometryDefinition": {
+      "authoritative": "legs[].points",
+      "segmentType": "GEODESIC",
+      "coordinateDatum": "WGS84",
+      "distanceModel": "WGS84_ELLIPSOID",
+      "searchCostModel": "Spherical estimate for economical graph search; authoritative distances are ellipsoidal",
+      "presentation": "Derived renderer-only geometry; never used for calculation or export"
+    },
+    "distanceComponents": {
+      "vesselPassageNM": 9.674967225199428,
+      "unverifiedConnectorGeometryNM": 0,
+      "connectorsIncludedInVesselDistance": false,
+      "completeExpeditionNM": 9.674967225199428
+    },
+    "endpointStatus": "COINCIDENT_WITH_CALCULATED_ACCESS",
+    "basisKey": "{\"engine\":\"0.4.1-course-3\",\"coastalPreferenceEnabled\":false,\"vesselSuitability\":\"BYPASS\",\"coursePlan\":{\"schemaVersion\":1,\"segmentType\":\"GEODESIC\",\"manualConstraints\":[]},\"waypoints\":[{\"id\":\"a\",\"lat\":20.1,\"lon\":20.04,\"access\":{\"name\":\"User-assigned water access\",\"lat\":20.1,\"lon\":20.04,\"source\":\"\",\"depth\":null,\"airClearance\":null,\"maxLOA\":null,\"maxBeam\":null},\"operatingMode\":\"AUTO\"},{\"id\":\"b\",\"lat\":20.1,\"lon\":20.16,\"access\":{\"name\":\"User-assigned water access\",\"lat\":20.1,\"lon\":20.16,\"source\":\"\",\"depth\":null,\"airClearance\":null,\"maxLOA\":null,\"maxBeam\":null},\"operatingMode\":\"AUTO\"}],\"vessel\":{\"name\":\"\",\"imo\":\"\",\"mmsi\":\"\",\"flag\":\"\",\"hullType\":\"\",\"propulsion\":\"SAIL + POWER\",\"propulsionModes\":[\"SAIL\",\"POWER-DIESEL\"],\"referenceKnots\":6,\"sailKnots\":6,\"dieselKnots\":6,\"electricKnots\":10,\"landKnots\":30,\"airKnots\":250,\"underKeel\":0,\"airAllowance\":0,\"draftAllowance\":0,\"assumptions\":\"Nominal planning assumptions; no calibrated environmental model.\",\"lengthUnit\":\"m\",\"massUnit\":\"t\",\"loa\":null,\"beam\":null,\"draftWater\":null,\"draftAir\":null,\"lwl\":null,\"displacement\":null,\"hullSpeed\":null,\"imageData\":\"\"},\"transport\":\"BY-SEA\",\"departureUTC\":\"2026-10-27T20:22:34.676Z\",\"routePreference\":\"OFFSHORE PREFERRED\",\"separation\":10,\"objective\":\"BEST-TIME\",\"environment\":[]}"
+  },
+  "refinement": {
+    "waterAreas": {
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0; OpenStreetMap contributors",
+      "sha256": "346372ef9809e897af5accf42f77ab07ebb632799113ad1a978d41c1d82b295c",
+      "regions": [
+        {
+          "id": "breves",
+          "extent": {
+            "west": -50.8,
+            "south": -1.95,
+            "east": -50.099999999999994,
+            "north": -1.35
+          },
+          "resolutionDegrees": 0.001,
+          "maskSHA256": "9f97abde4ebd604e6699c151d4b2b3fa4bf0e370594f11a0ef6445ddf9079283",
+          "exclusionSHA256": "b39baf3680395529dbca438c14ba51ae0706826607da9dbcffacf62edd1d69fe"
+        },
+        {
+          "id": "alter",
+          "extent": {
+            "west": -55.15,
+            "south": -2.75,
+            "east": -54.5,
+            "north": -2.1
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "8eb1fd9b4d25b978a7f163ac7ae5228c7d88bc22e886eb7e6aaa96bd3396011e",
+          "exclusionSHA256": "92f00bd155ec325849c10167c07822694f3025868cfca7d262957c9ab65540f5"
+        },
+        {
+          "id": "ontario",
+          "extent": {
+            "west": -80,
+            "south": 43,
+            "east": -75.5,
+            "north": 44.705
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "618113f2ad0ca27e6849aefcffb17b15337160448c7d4ece7e10540f1ee78c41",
+          "exclusionSHA256": "4da823f9dd020d2ca18555d11128f02b8740194d865e9372487c9169b8f6244f"
+        },
+        {
+          "id": "don",
+          "extent": {
+            "west": 38.8,
+            "south": 46.8,
+            "east": 40.001999999999995,
+            "north": 47.401999999999994
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "4ce5238d3c5d0124d86c4c3e29e8feb9444f4d3337b03b401f513c635983ce28",
+          "exclusionSHA256": "9b8cbf110e659685c42e0930501477fe3ac07b9cfabe726bb2e2114725f56a07"
+        },
+        {
+          "id": "ushuaia",
+          "extent": {
+            "west": -68.5,
+            "south": -54.95,
+            "east": -68,
+            "north": -54.648
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "071b93719f88e5db843cfa14d5cc2f147a2801f71b1361fc9ce05fc0c94c54c3",
+          "exclusionSHA256": "2e33e64271c1467923500fbe9818fb54b60b62eb2896a8f28a4f210669596ef6"
+        },
+        {
+          "id": "magellan",
+          "extent": {
+            "west": -71.2,
+            "south": -53.4,
+            "east": -70.598,
+            "north": -52.9
+          },
+          "resolutionDegrees": 0.002,
+          "maskSHA256": "5dbbcbb275af58ccc0619d932ab2cb0c636f5dbf413faff3e888def829cf99c2",
+          "exclusionSHA256": "68ef0eef39a42dbf39b8b3a0f81589358fa53e4db4b1a35725f733b657a5d570"
+        },
+        {
+          "id": "d0.25-x800-y439",
+          "extent": {
+            "west": 19.98,
+            "south": 19.73,
+            "east": 20.27,
+            "north": 20.02
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "430aef32ac3ed44ca7b0c94676523c0a0087639729f9d80b0ef74ebd28d58856",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x799-y441",
+          "extent": {
+            "west": 19.73,
+            "south": 20.23,
+            "east": 20.02,
+            "north": 20.52
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "45327b35a091fd9a71cda52161ad18e1adabd65787f7999266bd9904915575f0",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x801-y440",
+          "extent": {
+            "west": 20.23,
+            "south": 19.98,
+            "east": 20.52,
+            "north": 20.27
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "edd13e83a0481b7e6a09f7413c46f237ee78014c555ba36324f8422eecf05d5e",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x800-y441",
+          "extent": {
+            "west": 19.98,
+            "south": 20.23,
+            "east": 20.27,
+            "north": 20.52
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "39c471cb16416e730dcc322474e9c3da3fe4e90930d9e55186fe66da9f4088d3",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x799-y439",
+          "extent": {
+            "west": 19.73,
+            "south": 19.73,
+            "east": 20.02,
+            "north": 20.02
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "5bfd1072bb4cf40e3e2342dfd19331dbf8863d7bda123c536acc3063b786541d",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x799-y440",
+          "extent": {
+            "west": 19.73,
+            "south": 19.98,
+            "east": 20.02,
+            "north": 20.27
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "8e5c4a38d185b04fe13fa44a2952b60219c49a6e473fb833d5a3420a03b73691",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x801-y439",
+          "extent": {
+            "west": 20.23,
+            "south": 19.73,
+            "east": 20.52,
+            "north": 20.02
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "bc2ef2cabd195f3c89d8fadcd5f734c40134f6ef55b886ad1074268709bb4131",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        },
+        {
+          "id": "d0.25-x800-y440",
+          "extent": {
+            "west": 19.98,
+            "south": 19.98,
+            "east": 20.27,
+            "north": 20.27
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "5509c5c54698f22206efd02ecd10a196ee7ee9b110aed22f53fe7ead11729640",
+          "exclusionSHA256": "5854f838239af774da46a428cbe1b7578af8989c46e82b0c1e7c03db7d6b9cb3"
+        },
+        {
+          "id": "d0.25-x801-y441",
+          "extent": {
+            "west": 20.23,
+            "south": 20.23,
+            "east": 20.52,
+            "north": 20.52
+          },
+          "resolutionDegrees": 0.005,
+          "maskSHA256": "5f2ea1b1279e0ef3c777b8991478431c9cb15d8857c6a0957fde32d9985acf81",
+          "exclusionSHA256": "a530c25580b53d5f8293f57ca4bf9604e00e5603b2f856892f6395600b9cbc7e"
+        }
+      ]
+    },
+    "requested": true,
+    "method": "EXACT_SOURCE_TOPOLOGY_WITH_VALIDATED_GRID_TRANSITIONS",
+    "dataset": {
+      "schema": 1,
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0; OpenStreetMap contributors",
+      "acquisition": "https://overpass-api.de/api/interpreter",
+      "sources": [
+        {
+          "dataset": "osm",
+          "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+          "role": "Preserved mapped waterways"
+        },
+        {
+          "file": "alter-do-chao.json",
+          "sha256": "d48ca40b736bbc9341ef3e57289697f93f241c23be58b5096ae2e847d985ae67",
+          "timestamp": "2026-10-18T01:49:51Z",
+          "bounds": [
+            -59.8927349,
+            -3.6022427,
+            -53.2974245,
+            -1.3048311
+          ],
+          "acceptedWays": 95,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-56,-1.8,-54);out geom;"
+        },
+        {
+          "file": "amazon-estuary.json",
+          "sha256": "d65edf45074624b20c7857bef6423d21d531591700e8715652848fb050eb9560",
+          "timestamp": "2026-10-18T01:46:51Z",
+          "bounds": [
+            -52.4361992,
+            -3.2353156,
+            -47.9448642,
+            1.8904415
+          ],
+          "acceptedWays": 1310,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-3,-52,1,-48);out geom;"
+        },
+        {
+          "file": "bordeaux.json",
+          "sha256": "061d9758d14297cfc9754812993b3672df4bb8a25a559c6b52c3b7e4e9158274",
+          "timestamp": "2026-10-18T01:46:51Z",
+          "bounds": [
+            -1.2171409,
+            44.6920875,
+            -0.3560179,
+            45.8733209
+          ],
+          "acceptedWays": 756,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](44.7,-1.5,45.8,-0.4);out geom;"
+        },
+        {
+          "file": "great-lakes-flowlines.json",
+          "sha256": "398d2ea093994583b72d8ed6097bac9625c19d77b2129ae7078521884df42d8e",
+          "timestamp": "2026-10-18T01:50:56Z",
+          "bounds": [
+            -81.3570215,
+            42.9862653,
+            -69.9860502,
+            47.302521
+          ],
+          "acceptedWays": 4540,
+          "query": "[out:json][timeout:40];way[waterway~\"^flowline$\"](43,-80,47,-70);out geom;"
+        },
+        {
+          "file": "rostov.json",
+          "sha256": "2658ddc2631ecfdbab75cc39d541209376d42b1e1721902bda294e1fc0132de0",
+          "timestamp": "2026-10-18T01:49:51Z",
+          "bounds": [
+            38.5927245,
+            46.7891441,
+            40.4535043,
+            47.5590866
+          ],
+          "acceptedWays": 1129,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](46.8,38.5,47.5,40);out geom;"
+        },
+        {
+          "file": "southern.json",
+          "sha256": "a8ec617437dddedf342eb97ded1cc2a309178597bec637360014e3adefb49e36",
+          "timestamp": "2026-10-18T01:47:51Z",
+          "bounds": [
+            -75.2224338,
+            -55.6923827,
+            -65.8791947,
+            -50.6692644
+          ],
+          "acceptedWays": 2215,
+          "query": "[out:json][timeout:40];way[waterway~\"^(river|canal|fairway|flowline)$\"](-56,-76,-51,-66);out geom;"
+        }
+      ],
+      "resolution": "Irregular source vertices, WGS84 coordinates; positional accuracy not guaranteed. No fixed raster resolution.",
+      "coverage": "Existing mapped waterways plus bounded regional queries listed in sources; not worldwide complete.",
+      "geometryStatus": "Mapped river/canal/fairway/flowline topology; not hydrographic clearance or legal access",
+      "limitations": [
+        "Only exactly shared source vertices connect; no proximity joins",
+        "Coarse ocean mask still governs source-to-ocean transitions",
+        "Waterway mapping is not proof of depth, bridge clearance or vessel suitability"
+      ],
+      "sha256": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+      "lineCount": 29833
+    },
+    "status": "NO_SUPPORTED_IMPROVEMENT",
+    "legs": [
+      {
+        "id": "a->b",
+        "status": "UNCHANGED",
+        "reason": "Existing course already uses the available detailed geometry"
+      }
+    ],
+    "refinedLegs": 0
+  }
+}

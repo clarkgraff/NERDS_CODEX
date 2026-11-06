@@ -1,0 +1,876 @@
+{
+  "generatedAt": "2026-10-17T10:26:51.027Z",
+  "interpretation": "Candidate components diagnose mapped topology only. Nearby source endpoints are not a verified land-to-water access route. Missing connectivity is not a vessel-access prohibition. No geometry is repaired by this diagnostic.",
+  "cases": [
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Stanley->case-Ushuaia",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 804133,
+                  "component": 1439,
+                  "distance": 1.6539660347426894,
+                  "point": {
+                    "lat": -54.8278387,
+                    "lon": -68.3535341
+                  }
+                },
+                {
+                  "id": 771226,
+                  "component": 1468,
+                  "distance": 2.179678587400931,
+                  "point": {
+                    "lat": -54.7918096,
+                    "lon": -68.2622753
+                  }
+                },
+                {
+                  "id": 771089,
+                  "component": 1469,
+                  "distance": 2.9963305812736976,
+                  "point": {
+                    "lat": -54.7986636,
+                    "lon": -68.2319408
+                  }
+                }
+              ],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 1380021,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 1264716,
+              "component": null
+            }
+          }
+        },
+        {
+          "id": "case-Ushuaia->case-Punta Arenas",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [
+                {
+                  "id": 804133,
+                  "component": 1439,
+                  "distance": 1.6539660347426894,
+                  "point": {
+                    "lat": -54.8278387,
+                    "lon": -68.3535341
+                  }
+                },
+                {
+                  "id": 771226,
+                  "component": 1468,
+                  "distance": 2.179678587400931,
+                  "point": {
+                    "lat": -54.7918096,
+                    "lon": -68.2622753
+                  }
+                },
+                {
+                  "id": 771089,
+                  "component": 1469,
+                  "distance": 2.9963305812736976,
+                  "point": {
+                    "lat": -54.7986636,
+                    "lon": -68.2319408
+                  }
+                }
+              ],
+              "toCandidates": [
+                {
+                  "id": 696300,
+                  "component": 1452,
+                  "distance": 0.23747358053850515,
+                  "point": {
+                    "lat": -53.1594066,
+                    "lon": -70.9058874
+                  }
+                },
+                {
+                  "id": 508235,
+                  "component": 1444,
+                  "distance": 2.2044832717559397,
+                  "point": {
+                    "lat": -53.1285608,
+                    "lon": -70.887201
+                  }
+                },
+                {
+                  "id": 701857,
+                  "component": 1443,
+                  "distance": 2.3348506941463705,
+                  "point": {
+                    "lat": -53.192411,
+                    "lon": -70.9513195
+                  }
+                }
+              ],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 1264716,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 1325890,
+              "component": null
+            }
+          }
+        },
+        {
+          "id": "case-Punta Arenas->case-Concepción",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [
+                {
+                  "id": 696300,
+                  "component": 1452,
+                  "distance": 0.23747358053850515,
+                  "point": {
+                    "lat": -53.1594066,
+                    "lon": -70.9058874
+                  }
+                },
+                {
+                  "id": 508235,
+                  "component": 1444,
+                  "distance": 2.2044832717559397,
+                  "point": {
+                    "lat": -53.1285608,
+                    "lon": -70.887201
+                  }
+                },
+                {
+                  "id": 701857,
+                  "component": 1443,
+                  "distance": 2.3348506941463705,
+                  "point": {
+                    "lat": -53.192411,
+                    "lon": -70.9513195
+                  }
+                }
+              ],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 59997,
+                  "component": 273,
+                  "distance": 0.7645958390625438,
+                  "point": {
+                    "lat": -36.834975,
+                    "lon": -73.062164
+                  }
+                }
+              ],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 1325890,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 1912669,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Brest → Bordeaux | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Brest->case-Bordeaux",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 250598,
+                  "component": 1131,
+                  "distance": 0.4098419205005796,
+                  "point": {
+                    "lat": 44.847195,
+                    "lon": -0.575754
+                  }
+                }
+              ],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "europe-0.025",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 804620,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 463976,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Macapá → Belém → Breves | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Belém->case-Breves",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [
+                {
+                  "id": 208926,
+                  "component": 194,
+                  "distance": 0.7851964613116823,
+                  "point": {
+                    "lat": -1.456304,
+                    "lon": -48.5175134
+                  }
+                },
+                {
+                  "id": 293044,
+                  "component": 665,
+                  "distance": 0.8235730449858206,
+                  "point": {
+                    "lat": -1.4469912,
+                    "lon": -48.4939471
+                  }
+                },
+                {
+                  "id": 293042,
+                  "component": 664,
+                  "distance": 0.8284546669738383,
+                  "point": {
+                    "lat": -1.4461793,
+                    "lon": -48.494575
+                  }
+                },
+                {
+                  "id": 181710,
+                  "component": 416,
+                  "distance": 1.0806047544365582,
+                  "point": {
+                    "lat": -1.4598277,
+                    "lon": -48.486886
+                  }
+                },
+                {
+                  "id": 181679,
+                  "component": 414,
+                  "distance": 1.1055337742773395,
+                  "point": {
+                    "lat": -1.4406163,
+                    "lon": -48.4940643
+                  }
+                },
+                {
+                  "id": 182491,
+                  "component": 424,
+                  "distance": 1.1504762219922984,
+                  "point": {
+                    "lat": -1.4703402,
+                    "lon": -48.491921
+                  }
+                },
+                {
+                  "id": 181659,
+                  "component": 413,
+                  "distance": 1.4272763986598436,
+                  "point": {
+                    "lat": -1.4662114,
+                    "lon": -48.4830478
+                  }
+                },
+                {
+                  "id": 181703,
+                  "component": 417,
+                  "distance": 1.8981526382238687,
+                  "point": {
+                    "lat": -1.4626683,
+                    "lon": -48.4735639
+                  }
+                },
+                {
+                  "id": 326482,
+                  "component": 428,
+                  "distance": 2.095092569799435,
+                  "point": {
+                    "lat": -1.4731498,
+                    "lon": -48.4741372
+                  }
+                },
+                {
+                  "id": 92358,
+                  "component": 358,
+                  "distance": 2.173792194530707,
+                  "point": {
+                    "lat": -1.4544693,
+                    "lon": -48.4682485
+                  }
+                },
+                {
+                  "id": 181822,
+                  "component": 418,
+                  "distance": 2.1913776580973647,
+                  "point": {
+                    "lat": -1.4386295,
+                    "lon": -48.4722386
+                  }
+                },
+                {
+                  "id": 181842,
+                  "component": 419,
+                  "distance": 2.2880783969253424,
+                  "point": {
+                    "lat": -1.4192263,
+                    "lon": -48.4938321
+                  }
+                },
+                {
+                  "id": 181696,
+                  "component": 415,
+                  "distance": 2.426023931080319,
+                  "point": {
+                    "lat": -1.4523205,
+                    "lon": -48.4641733
+                  }
+                },
+                {
+                  "id": 348804,
+                  "component": 765,
+                  "distance": 2.5680693728527397,
+                  "point": {
+                    "lat": -1.4253352,
+                    "lon": -48.5344417
+                  }
+                },
+                {
+                  "id": 222893,
+                  "component": 496,
+                  "distance": 2.9056100346004246,
+                  "point": {
+                    "lat": -1.4967306,
+                    "lon": -48.5303162
+                  }
+                }
+              ],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 3187314,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 3180095,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Amazon estuary->case-Manaus",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 240805,
+                  "component": 501,
+                  "distance": 2.3625126802374234,
+                  "point": {
+                    "lat": -3.1328044,
+                    "lon": -60.0005568
+                  }
+                },
+                {
+                  "id": 97871,
+                  "component": 194,
+                  "distance": 2.514787922374242,
+                  "point": {
+                    "lat": -3.14329,
+                    "lon": -60.018318
+                  }
+                },
+                {
+                  "id": 174894,
+                  "component": 405,
+                  "distance": 2.729634317910595,
+                  "point": {
+                    "lat": -3.0824336,
+                    "lon": -60.0661257
+                  }
+                },
+                {
+                  "id": 287167,
+                  "component": 502,
+                  "distance": 2.7458447364187735,
+                  "point": {
+                    "lat": -3.0564592,
+                    "lon": -60.0298049
+                  }
+                }
+              ],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "WATER",
+              "cell": 3259305,
+              "component": 1,
+              "componentCells": 4113244
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 3125999,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Santarém → Alter do Chão | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Santarém->case-Alter do Chão",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [
+                {
+                  "id": 169964,
+                  "component": 398,
+                  "distance": 1.303818791984397,
+                  "point": {
+                    "lat": -2.4432574,
+                    "lon": -54.7300645
+                  }
+                },
+                {
+                  "id": 75792,
+                  "component": 194,
+                  "distance": 1.906709671152767,
+                  "point": {
+                    "lat": -2.4125901,
+                    "lon": -54.6993724
+                  }
+                }
+              ],
+              "toCandidates": [
+                {
+                  "id": 238312,
+                  "component": 546,
+                  "distance": 0.8366682585928717,
+                  "point": {
+                    "lat": -2.5142846,
+                    "lon": -54.9614662
+                  }
+                },
+                {
+                  "id": 238326,
+                  "component": 548,
+                  "distance": 1.0060903106003862,
+                  "point": {
+                    "lat": -2.5136167,
+                    "lon": -54.9390462
+                  }
+                },
+                {
+                  "id": 238341,
+                  "component": 549,
+                  "distance": 1.3073876749506068,
+                  "point": {
+                    "lat": -2.5125825,
+                    "lon": -54.9326404
+                  }
+                }
+              ],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [
+                {
+                  "id": 62191,
+                  "component": 36,
+                  "distance": 2.33572844298566,
+                  "point": {
+                    "lat": -2.405938,
+                    "lon": -54.696685
+                  }
+                }
+              ],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 3151252,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 3147650,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kingston Mills → Toronto | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Kingston Mills->case-Toronto",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [
+                {
+                  "id": 1562567,
+                  "component": 2526,
+                  "distance": 0.1274189078054883,
+                  "point": {
+                    "lat": 44.2912146,
+                    "lon": -76.4424312
+                  }
+                },
+                {
+                  "id": 1364655,
+                  "component": 2525,
+                  "distance": 1.4754095294484721,
+                  "point": {
+                    "lat": 44.271175,
+                    "lon": -76.4620621
+                  }
+                }
+              ],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 4832235,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 4814206,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Toronto → Montréal | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Toronto->case-Montréal",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset. / No offshore connector could be resolved in this dataset.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 1256107,
+                  "component": 1945,
+                  "distance": 1.6060405276154297,
+                  "point": {
+                    "lat": 45.5001847,
+                    "lon": -73.5516965
+                  }
+                },
+                {
+                  "id": 1223258,
+                  "component": 2314,
+                  "distance": 2.4054485818234257,
+                  "point": {
+                    "lat": 45.5230158,
+                    "lon": -73.5343329
+                  }
+                },
+                {
+                  "id": 1184674,
+                  "component": 2287,
+                  "distance": 2.4385964165764107,
+                  "point": {
+                    "lat": 45.5235541,
+                    "lon": -73.5337834
+                  }
+                }
+              ],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 4814206,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 4879064,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Sevastopol->case-Rostov-on-Don",
+          "reason": "ACCESS_UNRESOLVED: No offshore connector could be resolved in this dataset.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [
+                {
+                  "id": 81927,
+                  "component": 384,
+                  "distance": 1.373232562985431,
+                  "point": {
+                    "lat": 47.197211,
+                    "lon": 39.711029
+                  }
+                }
+              ],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 4847735,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 4941397,
+              "component": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land) | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "id": "case-Odesa->case-Istanbul",
+          "reason": "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "europe-0.025",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 623629,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 97957,
+              "component": null
+            }
+          }
+        },
+        {
+          "id": "case-Istanbul->case-Tel Aviv",
+          "reason": "ROAD_NETWORK_UNAVAILABLE: no connected road/track routing graph is bundled; straight-line land distance is not a road route.",
+          "datasets": [
+            {
+              "name": "osm",
+              "sourceChecksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            },
+            {
+              "name": "rivers",
+              "sourceChecksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+              "fromCandidates": [],
+              "toCandidates": [],
+              "sharedComponent": false
+            }
+          ],
+          "grid": {
+            "id": "world-0.1",
+            "from": {
+              "classification": "BLOCKED",
+              "cell": 4718089,
+              "component": null
+            },
+            "to": {
+              "classification": "BLOCKED",
+              "cell": 4394147,
+              "component": null
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

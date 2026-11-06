@@ -1,0 +1,18 @@
+[
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\dist\\NERDS-0.3.0-x64.msi",
+    "Hash": "2B190FB955A43FDFD2F010AE5844B29D17025E148E408FC28574901B8E3524DE"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\land-mask.bin",
+    "Hash": "BFE9040AB0F2C0E3B19531BA75D54934E07A35CFE96C5F8DF20D04CFCFEC945E"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\europe-mask.bin",
+    "Hash": "02283FDC4409BA6C5320FC5B1C6C9AA987C9DE567ED56F8091CE9EA32ABAB228"
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\geonames.sqlite",
+    "Hash": "377D38E6046D6645B2AA99401FA5BE38F8CF5C9F834D98CA2AEA4FE0B4A4D443"
+  }
+]

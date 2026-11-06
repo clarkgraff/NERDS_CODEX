@@ -1,0 +1,6 @@
+[
+  'Offline UI adds selected remote features with source identity, classification and alias provenance; main-process network disabled',
+  'Named project preserves four selected geographic features',
+  'Restart preserves project and approved offline discovery cache',
+  'Qualified Minnesota lookup does not substitute California locality'
+]

@@ -1,0 +1,17 @@
+{"preparationMs":984.5242000000001,"rssBytes":1183469568}
+✔ bundled runtime classifies directed coastal faces and keeps land excluded (7299.5921ms)
+✔ island interior remains land; incomplete and conflicting coastlines remain unresolved (722.672ms)
+✔ explicit estuary water connects to coastal sea without erasing surrounding land (5944.3222ms)
+{"bidirectionalRouteMs":174.22520000000077,"rssBytes":1124458496}
+✔ adjacent prepared coastal tiles connect through verified overlap in both directions (5956.515ms)
+✔ standalone executable works outside repository with no Python environment and matches reference masks (613.0728ms)
+✔ dateline coastal tiles preserve source continuity and WGS84 route reversal (7795.4748ms)
+✔ high-latitude coastline classifies locally; pole vertices remain explicitly unresolved (474.8314ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 20709.5073

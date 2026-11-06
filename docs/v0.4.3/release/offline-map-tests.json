@@ -1,0 +1,80 @@
+[
+  {
+    "style": "simple",
+    "text": "Simplified NERDS · 87 detail tiles · 0 missing · 0 elevation gaps",
+    "cache": {
+      "online": false,
+      "downloads": 0,
+      "bytes": 0,
+      "maxBytes": 52428800,
+      "maxTiles": 3000,
+      "missing": [
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/2.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/3.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/4.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/5.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/2/1/0.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/1/1/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/1/1/0.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/2/1/2.pbf"
+      ]
+    }
+  },
+  {
+    "style": "terrain",
+    "text": "Detailed Terrain · 87 detail tiles · 0 missing · 0 elevation gaps",
+    "cache": {
+      "online": false,
+      "downloads": 0,
+      "bytes": 0,
+      "maxBytes": 52428800,
+      "maxTiles": 3000,
+      "missing": [
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/2.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/3.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/3/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/4.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/5.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/3/2/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/7/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/2/1/0.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/1/1/1.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/1/1/0.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/8/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/8.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/7.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/9/6.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/4/6/9.pbf",
+        "https://tiles.openfreemap.org/planet/20261025_080012_pt/2/1/2.pbf"
+      ]
+    }
+  }
+]

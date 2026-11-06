@@ -1,0 +1,25 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (23.1302ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (7.3556ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (29.6963ms)
+✔ invalid saves cannot overwrite the last good expedition (11.7874ms)
+✔ inference adapter only accepts local HTTP APIs (0.3535ms)
+✔ project roundtrip, source references, transactional invalid-open protection (36.4481ms)
+✔ vessel units, hull estimate, and known clearance exceedance (0.4051ms)
+✔ distance/time numerical checks and speed validation (1.1013ms)
+✔ coarse water route rounds Denmark instead of crossing land; grid nodes clear (68.8537ms)
+✔ exports escape text and KMZ contains complete doc.kml (1.8617ms)
+✔ worldwide indexed offline search, disambiguation and provenance roundtrip (125.9068ms)
+✔ UTC, date line, daylight-saving gaps and repeated local hours (13.5451ms)
+✔ city anchors use connected Elbe and Kiel Canal source geometry without manual access (6538.0795ms)
+✔ mixed propulsion uses sum of segment times, with editable reference speed (0.7622ms)
+✔ air estimates use mode speed; road network absence is explicit (0.8486ms)
+✔ external layer contract rejects unlabeled forecasts and invalid coordinates (0.3516ms)
+✔ online fallback sends compliant requests, preserves source and caches responses (0.6165ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6888.9124

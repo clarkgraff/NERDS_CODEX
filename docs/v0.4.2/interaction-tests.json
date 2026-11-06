@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Actual Santarém displayed label hit; source record inserted without route recalculation",
+    "Actual offline Manaus lookup",
+    "Eight-second lookup fixture: indicator activates after delay, remains responsive, completes and clears without percentage",
+    "Renderer receives verified routing water polygons including interior islands"
+  ],
+  "errors": [],
+  "actualLookupMs": 12,
+  "delayedFixtureMs": 8000,
+  "rendererTimerTicks": 20,
+  "packaged": true
+}

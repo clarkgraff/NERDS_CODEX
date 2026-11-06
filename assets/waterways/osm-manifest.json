@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "source": "https://www.openstreetmap.org/copyright",
+  "license": "ODbL 1.0; OpenStreetMap contributors",
+  "acquisition": "https://overpass-api.de/api/interpreter",
+  "sources": [
+    {
+      "file": "work/stage2/elbe-osm.json",
+      "sha256": "a4bc38975f8256e2c671983930e030104de309b24c77bdacc776057da4e59a9d",
+      "timestamp": "2026-10-16T14:40:36Z"
+    },
+    {
+      "file": "work/stage2/thames-full-osm.json",
+      "sha256": "6f19fea375c7f99971ef7161f9deb629c3194c2c522a13ffd623d3fd851d01a4",
+      "timestamp": "2026-10-16T14:40:36Z"
+    },
+    {
+      "file": "work/stage2/amazon-osm.json",
+      "sha256": "bc1536c7c50a47f9c0a4cb90c7056f2a72e88eca347073d42f35fc0d7006dc3d",
+      "timestamp": "2026-10-16T14:41:32Z"
+    },
+    {
+      "file": "work/stage2/kiel-denmark-osm.json",
+      "sha256": "05100baab0c839d70d21ab2d34bd55b7f6ab31df7257f3a5c4074e9f2d4a85e6",
+      "timestamp": "2026-10-16T19:36:36Z"
+    },
+    {
+      "file": "work/stage2/southern-channels-osm.json",
+      "sha256": "f1e6e637a2d9b17d761d32eebc72a2cd7ca83dba2d301adb1d56eeefb3af3f72",
+      "timestamp": "2026-10-17T01:10:51Z"
+    },
+    {
+      "file": "work/stage2/lawrence-east-osm.json",
+      "sha256": "244026f297a632ca5409c455ede5f8618ff86ac02571c750dfb45b1f3e910027",
+      "timestamp": "2026-10-17T01:15:54Z"
+    },
+    {
+      "file": "work/stage2/lawrence-west-osm.json",
+      "sha256": "3fee5a3b76ba12fccc3ea9c144b73fbc44aceb5c43d246408d742cf60dbf66c9",
+      "timestamp": "2026-10-17T10:16:50Z"
+    },
+    {
+      "file": "work/stage2/breves-channels-osm.json",
+      "sha256": "bb1ee42d420c19158f43a91bddef7b70c81d30753c83d7a68aa658d832282998",
+      "timestamp": "2026-10-17T10:17:51Z"
+    }
+  ],
+  "geometryStatus": "Mapped geographic waterways; access restrictions assessed separately",
+  "sha256": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+  "lineCount": 22431
+}

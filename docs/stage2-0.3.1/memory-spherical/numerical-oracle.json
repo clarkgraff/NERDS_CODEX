@@ -1,0 +1,12 @@
+{
+  "implementation": "Python geographiclib 2.1",
+  "results": [
+    {
+      "id": "a->b",
+      "reportedNM": 9.674967225199428,
+      "oracleNM": 9.674967225198854,
+      "errorNM": 5.737632591262809e-13
+    }
+  ],
+  "status": "PASS"
+}

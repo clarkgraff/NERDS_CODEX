@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "Cached synthetic water polygon with island prepared and connected offline",
+    "USER PATH to corrected island-avoiding water route to identical Cesium geodesic vertices",
+    "Zoom and original-coarse comparison preserve authoritative geometry and accounting",
+    "Save/restart restores original intent, refined geometry, evidence, accounting and Cesium coordinates",
+    "Offline restart reuses acquired and prepared geography without downloads"
+  ],
+  "errors": [],
+  "maximumCoordinateError": 7.105427357601002e-15,
+  "totalNM": 9.674967225199428,
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-e2e-qOVTNu",
+  "packagedAcceptance": true
+}

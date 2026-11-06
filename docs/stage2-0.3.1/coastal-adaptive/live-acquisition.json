@@ -1,0 +1,21 @@
+{
+  "status": "LIVE_ACQUISITION_UNRESOLVED",
+  "error": "Provider HTTP 406",
+  "elapsedMs": 642.3602999999999,
+  "jobs": [
+    {
+      "id": "ae1b2ac9-ac76-46e4-81b1-0165deb3bcc6",
+      "key": "osm-hydrography:live-coast-a",
+      "status": "FAILED",
+      "startedAt": "2026-10-25T15:13:03.898Z",
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "FAILED",
+          "error": "Provider HTTP 406"
+        }
+      ],
+      "error": "Provider HTTP 406"
+    }
+  ]
+}

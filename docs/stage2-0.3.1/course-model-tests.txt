@@ -1,0 +1,47 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (38.6853ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (10.4558ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (31.046ms)
+✔ invalid saves cannot overwrite the last good expedition (11.5997ms)
+✔ inference adapter only accepts local HTTP APIs (0.4124ms)
+✔ legacy projects migrate to an empty course plan and preserve independent itinerary identities (23.757ms)
+✔ manual constraints survive SQLite restart and project roundtrip independently of itinerary edits (32.3441ms)
+✔ constraints cannot be confused with automatic points, and invalid input is rejected (0.4209ms)
+✔ approved discovery persists by stable identity, retains aliases and rejects invalid replacements (19.866ms)
+✔ waypoint persistence retains discovery classification independently of planning role (22.2567ms)
+✔ project roundtrip, source references, transactional invalid-open protection (43.9935ms)
+✔ vessel units, hull estimate, and known clearance exceedance (0.7387ms)
+✔ distance/time numerical checks and speed validation (0.9148ms)
+✔ coarse water route rounds Denmark instead of crossing land; grid nodes clear (34.8136ms)
+✔ exports escape text and KMZ contains complete doc.kml (2.2074ms)
+✔ geographic acceptance rejects fabricated source edges, waypoint order, distance and ETA (5322.4112ms)
+✔ worldwide indexed offline search, disambiguation and provenance roundtrip (134.2701ms)
+✔ UTC, date line, daylight-saving gaps and repeated local hours (16.7007ms)
+✔ city anchors use connected Elbe and Kiel Canal source geometry without manual access (6228.0896ms)
+✔ mixed propulsion uses sum of segment times, with editable reference speed (3.5186ms)
+✔ air estimates use mode speed; road network absence is explicit (1.0892ms)
+✔ external layer contract rejects unlabeled forecasts and invalid coordinates (0.432ms)
+✔ online fallback sends compliant requests, preserves source and caches responses (1.6762ms)
+✔ mixed European/world itinerary retains shared water attachments and valid accounting both directions (5571.0367ms)
+✔ explicit access remains unchanged; shared selection never increases the guard (5.9991ms)
+✔ Stage 1 both access cells use the preselected grid; reported defects work in both directions (5185.3681ms)
+✔ Stage 1 appending a failing leg preserves successful geometry and reports unknown totals (693.2201ms)
+✔ Stage 1 later legs continue after failures but receive no fabricated absolute ETA or export timestamp (61.4487ms)
+✔ Stage 1 unresolved inland and road routes never become completed zero-distance journeys (86.2641ms)
+✔ Stage 1 defaults to BYPASS while preserving optional settings and diagnostic opt-in (539.3574ms)
+✔ Unknown transfers still prevent fabricated downstream ETAs (0.9254ms)
+✔ Stage 1 failed explicit access and bounded search are isolated (29.9708ms)
+✔ BETA suitability never changes connected geometry, distance, duration or ETA (5448.9014ms)
+✔ BYPASS and advisory ON cannot permit access on land or invent inland connectivity (279.1722ms)
+✔ source waterway topology follows all vertices, both directions; nearby gaps remain disconnected (1.7ms)
+✔ mapped Amazon and Elbe routes preserve source edges and bidirectional distance (7288.0907ms)
+✔ St Lawrence Montreal to Quebec follows validated source geometry both directions (417.9951ms)
+✔ all-feature discovery matches accented aliases and regional disambiguation without population eligibility (27.0825ms)
+✔ absent expanded index remains optional (0.283ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7996.4329

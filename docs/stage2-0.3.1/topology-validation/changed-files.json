@@ -1,0 +1,737 @@
+[
+  {
+    "path": "assets/water-areas/alter-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\alter-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 1208,
+    "sha256": "8e023f46bbc8d5e0347d7005911227c5cc8b924ac9325cb439bf450dc2bd4cd8"
+  },
+  {
+    "path": "assets/water-areas/alter.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\alter.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 2563,
+    "sha256": "b2138517cce5f4b8f984c0880822200a536b51576badbb742d359efb731b189c"
+  },
+  {
+    "path": "assets/water-areas/alter.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\alter.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 160738,
+    "sha256": "b21843dcac8cdd4be20073186ee6b7de58c62b42ab65b425e73c7785166f837c"
+  },
+  {
+    "path": "assets/water-areas/breves-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\breves-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 3201,
+    "sha256": "4d3bd53b8699374624b20290b551f9e44dc05d0f53b9da05922200c739cc22e6"
+  },
+  {
+    "path": "assets/water-areas/breves.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\breves.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 6824,
+    "sha256": "d174be7a09c700ab30551718a4406540c2abd1ccff92bb48962193ac5992039e"
+  },
+  {
+    "path": "assets/water-areas/breves.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\breves.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 126870,
+    "sha256": "4afa244490ff2332f57b410d3f8116828c10ad9b54d1414d87856c89a7e01c24"
+  },
+  {
+    "path": "assets/water-areas/don-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\don-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 464,
+    "sha256": "9404f60a278f40f9c93ab74278bb256ec4fa7c485aca4e8228ab0fad7fa177de"
+  },
+  {
+    "path": "assets/water-areas/don.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\don.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 941,
+    "sha256": "61978b631db15251d011107e2c1cd3912b01e2e8d79e2579ca524489747e37b9"
+  },
+  {
+    "path": "assets/water-areas/don.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\don.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 651375,
+    "sha256": "6c8d7360568979135ae91ac41c2b6e210719df3d36b13071fd416f2a50dfc5af"
+  },
+  {
+    "path": "assets/water-areas/magellan-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\magellan-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 124,
+    "sha256": "62c0a499deac0d4bb2b77dcb8f40ba8ec2f8a77b116e70986862e75f6cdde13c"
+  },
+  {
+    "path": "assets/water-areas/magellan.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\magellan.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 151,
+    "sha256": "cf659a4be639a8f5544ec7c4422d9b7df60166d9b2d070b6fbce3f5cd46d58da"
+  },
+  {
+    "path": "assets/water-areas/magellan.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\magellan.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 39954,
+    "sha256": "21e13e97eabb4054bb828c6a093d25fc163d9f118b6c4695aeed5af654a7ef5e"
+  },
+  {
+    "path": "assets/water-areas/manifest.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\manifest.json",
+    "purpose": "Source identity, licensing, query, resolution, rejected features and hashes",
+    "bytes": 4838080,
+    "sha256": "92fe8b621a31470ef2459278454dfe6736e8f36e68b0b533a89f8150a7516632"
+  },
+  {
+    "path": "assets/water-areas/ontario-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ontario-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 3469,
+    "sha256": "8c0795ac112537c3010c81817f85f76f6b0b2111528ee735fee66e6320700684"
+  },
+  {
+    "path": "assets/water-areas/ontario.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ontario.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 3461,
+    "sha256": "97108e99a3e6cfc96ca0f67ef2c2cbc03060c357491ff59d2afdc796f8a527e6"
+  },
+  {
+    "path": "assets/water-areas/ontario.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ontario.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 5157905,
+    "sha256": "166dc8434c8250e7fbe58c498e681c7a8d5031b659be2fd2dbc9971e5af4a5ac"
+  },
+  {
+    "path": "assets/water-areas/ushuaia-exclusions.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ushuaia-exclusions.bin.gz",
+    "purpose": "Island/hole exclusion mask",
+    "bytes": 97,
+    "sha256": "8c2181d19dcdcd91d8e9b392c1a81e9cbf9732b3cff3e97c2aedfc1f1531b98f"
+  },
+  {
+    "path": "assets/water-areas/ushuaia.bin.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ushuaia.bin.gz",
+    "purpose": "Conservative full-cell water mask",
+    "bytes": 105,
+    "sha256": "4e98d22c97cbbb14112b8da4c532126120f4e678168b4905590b77feba06ff4d"
+  },
+  {
+    "path": "assets/water-areas/ushuaia.geojson.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\water-areas\\ushuaia.geojson.gz",
+    "purpose": "Adopted regional source geometry",
+    "bytes": 239464,
+    "sha256": "88529747c6d785807beb4d0c472b7f0702804c23c7b86f304a8e325bfba96229"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/20261019_NERDS_V001.md",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\20261019_NERDS_V001.md",
+    "purpose": "Complete review/worksheet or file inventory",
+    "bytes": 34468,
+    "sha256": "eede6dda2fba1a5535b8117db80d5436c79f4679a359f90289961ad46e9dfd36"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/FILE-INVENTORY.md",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\FILE-INVENTORY.md",
+    "purpose": "Complete review/worksheet or file inventory",
+    "bytes": 0,
+    "hashNote": "Self/index excluded from recursive digest inventory"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/REVIEW.md",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\REVIEW.md",
+    "purpose": "Complete review/worksheet or file inventory",
+    "bytes": 30415,
+    "sha256": "8d7f36373501eb1a1e76f3e739a204ec84d331a7554bb60cf155ebf19e234550"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/acquisition-control.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\acquisition-control.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 578,
+    "sha256": "8033f0f0a7dce51c1bed8902dc863f373dc5cea711f309f5b68e98e19d4f753f"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/acquisition-resumed.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\acquisition-resumed.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 694,
+    "sha256": "8f7ce414515996c5f7247b576aeefd90c7680359376ed3c80496e75e09214abc"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/acquisition.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\acquisition.json",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 1410,
+    "sha256": "e3a2487ccf84631ab058a595f4b0c5ac1f2f0ed4de4ed4c20045a3948d03d00a"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/acquisition.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\acquisition.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 516,
+    "sha256": "a51af12c5648fbba02aa18158617e5ae4f9b9ebacab9a3ce9c5247f7be307457"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/alter-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\alter-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 154,
+    "sha256": "194d8fc7bc9ef3b948858e1a3ade46bac66b31be2a0203911e34551e100dd6ed"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/breves-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\breves-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 154,
+    "sha256": "c5b484ad36b3b72d4eae7cb9a427c9003ad34b25dd132a44bf045aea1af6a0d5"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/don-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\don-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 142,
+    "sha256": "222e5b9b4156959b413d8fe39802619317753c87bf83d4218e300f5af2534299"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/gironde-control-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\gironde-control-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 148,
+    "sha256": "e96d460464aa3fce8d6ac8043f5f1992027afd21fe0b57deb6f44744d0c96486"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/magellan-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\magellan-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 154,
+    "sha256": "58732d22023c26c99c16c619046ca2017e042e0cff461dac773aecce8d733ed4"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/ontario-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\ontario-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 146,
+    "sha256": "126321a72d9417d9cdff521f8a13dc4277b3cd80580bd6bfbb4bba2c3e5a3f32"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/preparation-conservative-holes.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\preparation-conservative-holes.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 61,
+    "sha256": "b31e1dda13cbe3de5656ad8b74fcdbac2765de8b65513248d2fe11a6c6354d5b"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/preparation-final.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\preparation-final.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 98,
+    "sha256": "9bb4deee6fec49533dd203f0cb83f24fbf23f89ae2743c6f2460bcefcd3b2187"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/preparation-with-don.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\preparation-with-don.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 114,
+    "sha256": "39f4234872eda6d976a3652fd642e3160ed7dd9cdfcab51aba3d1ff9cfb50692"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/preparation.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\preparation.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 60,
+    "sha256": "712fea266b960ff3bfad58311ad01ec5c4f1590c16122e12df46b0fff1aa8f98"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/shapely-install.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\shapely-install.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 314,
+    "sha256": "c8e72c88f8b99e71fb16c62a9792c2fb287e3e7d916706f031bd48db47401e3e"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/acquisition/ushuaia-query.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\acquisition\\ushuaia-query.txt",
+    "purpose": "Preserved acquisition/preparation query or diagnostic log; no raw provider response",
+    "bytes": 154,
+    "sha256": "df056b0b915cf7a59bb93e25ade5859c5c1171c941b950fb0fb64b7adc91040c"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/area-audit-samples.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\area-audit-samples.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 378817,
+    "sha256": "42b7d9671062c886da3b1675e258d0c9644f7b82356ccc3a702862b7605bd5e1"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/changed-files.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\changed-files.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 31947,
+    "hashNote": "Self/index excluded from recursive digest inventory"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/coarse-geographic.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\coarse-geographic.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 354,
+    "sha256": "df1ddfb3acc955c0acce003ebb79a7ee95e048286c54521c8da51b7fd88b23b5"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/coarse/geographic-paths.json.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\coarse\\geographic-paths.json.gz",
+    "purpose": "Complete canonical route geometry/evidence and results for repeated geographic cases",
+    "bytes": 1542120,
+    "sha256": "59d24ae83a63dd61610ff0a417575ddf8a8d500fb39c9e08853d6130f67ed503"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/coarse/geographic-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\coarse\\geographic-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 8389035,
+    "sha256": "7209fce81d80586642e3e9c6941533f10e0564ddb7d42840c57741cabde57acf"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/coarse/geographic-summary.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\coarse\\geographic-summary.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 23677,
+    "sha256": "1d084baf7e9934ebc2990eaae0a468f917f6a3a5ffaef3718baef566d8d4cdad"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/comparison.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\comparison.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 10458,
+    "sha256": "3f91db91d457381e48fa5776568e28885d4f4a42163b53c6b908bb49bb9da41d"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/controlling-documents.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\controlling-documents.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 1102,
+    "sha256": "a0d7f6c220442dd1f8e952417496cd5b3123c00f1f0018fcbce43fe6135fa927"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/coverage.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\coverage.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 2081,
+    "sha256": "6e97341fe7118ddb14ece483a08cd883cfc2fbbec00d09f4bd3b625b95cf884e"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 1193,
+    "sha256": "34a7049ff05a95d06a017d8af838d2995d48af5504c827400ba9ef649fb78ab6"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/desktop.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\desktop.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 1450,
+    "sha256": "c66bdc1ff1b209f392a264e058720121605308f7c3546fea1fb4ae6d326102a6"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/diagnostics-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\diagnostics-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 1380,
+    "sha256": "0f901d2befe39c00bfbae26e0438a08585aa55854d55b18a322a7804ffc08426"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/discovery-desktop-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\discovery-desktop-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 619,
+    "sha256": "9c393a17d0f9659d06e427b4c7fc7c3798f6d8fe1fccc96d4fc9f0c75bfbd4bf"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/discovery-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\discovery-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 60,
+    "sha256": "3f2109875ec10c229ef8bc5a6b155bd1324689d963e52881a707df4801ab6d82"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/discovery-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\discovery-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 243782,
+    "sha256": "64344958e75f39d487c3b4a8f2185426e9db1a0e84ea47ca69142c9bbc11bd4f"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-primary-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-primary-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 3324,
+    "sha256": "0677e6d9d74bb6ffce697ca58149b1d89702bcd017aceca73d22d9397cb7d3e8"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-primary/primary-itinerary-paths.json.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-primary\\primary-itinerary-paths.json.gz",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 203180,
+    "sha256": "32a028c2498dd2df87b6dd11e3a960d49300d2326b5b649b6b912af23faa88d8"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-primary/primary-itinerary-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-primary\\primary-itinerary-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 2268016,
+    "sha256": "d6b7ed068203e93055173257e2f0d860fb3fd9e887507315e3cdb622bfae2743"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-refined-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-refined-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 354,
+    "sha256": "4cd5f55b8431cf058d00c6564262a82cc56391290db29a9d17ed7226b125c204"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-refined/geographic-paths.json.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-refined\\geographic-paths.json.gz",
+    "purpose": "Complete canonical route geometry/evidence and results for repeated geographic cases",
+    "bytes": 3427224,
+    "sha256": "b2fba88a3ef494a1abfe247bc758600ad40d63b83419058afb9a328be6f5169e"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-refined/geographic-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-refined\\geographic-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 8956215,
+    "sha256": "f349b44e4707a80db21f137d2c786c5de43220ce5c6c7c66fad6b3b1f66d1901"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/final-refined/geographic-summary.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\final-refined\\geographic-summary.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 23026,
+    "sha256": "1463a69be7fe283b83a3e8bd3fe3e88d1b1db5486ce0c388ac1a24e8297985a9"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/independent-audit-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\independent-audit-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 331,
+    "sha256": "a135d709a23b9f5c50cb220f8ac61132482511b792acb902ac7d6f5ca8bce45d"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/independent-geometry-audit.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\independent-geometry-audit.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 347,
+    "sha256": "d4aabc67eccf7d5897d9074f78f7a939aedf9f2f9b13a7100b28941d645cb326"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/mixed-grid-desktop-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\mixed-grid-desktop-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 408,
+    "sha256": "2ece12d04edb1a32cc0a148da5e4ff1f4db67d8c58b366f31e7e968d1fc703fa"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/node-tests-complete.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\node-tests-complete.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 5825,
+    "sha256": "7b2bc27a23e96440c2a9b8f0b0b0178d5543d7838b3bdf2111a5273cf13b1656"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/node-tests-final.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\node-tests-final.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 5716,
+    "sha256": "b04e97fe20a6059e39cdd9a660753b67bc14084cba6991a1c30ce0681fe3db66"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/node-tests.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\node-tests.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 5601,
+    "sha256": "f40e462d5d5c9efa322011727b426d6524d6af8d97700fa7e61e5192d77009ac"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/ocean-control.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\ocean-control.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 102662,
+    "sha256": "3b8fd0d72f79836a255721369ec48fd3b64004ec75be6648448e333836f6dd5d"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/preservation-verification.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\preservation-verification.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 3366,
+    "sha256": "6e76088e1a944310f590d79ee007a04e9292d211f763b69d53f229e8ea38746b"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/primary-desktop-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\primary-desktop-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 595,
+    "sha256": "c2ddf0bf5e4ed664fcc0408344457ca02923550d57ddcfc5e07c0a5c659057f7"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/primary-itinerary-paths.json.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\primary-itinerary-paths.json.gz",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 97826,
+    "sha256": "ced701b7afdd5ed8666ee05026366920929b603a93006f30069868ea0b9c89bf"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/primary-itinerary-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\primary-itinerary-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 526616,
+    "sha256": "fd189821d2151619f5d930c69f021582bd76bc2cd33bf2bdf1c1a25049344c69"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/primary-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\primary-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 3324,
+    "sha256": "0677e6d9d74bb6ffce697ca58149b1d89702bcd017aceca73d22d9397cb7d3e8"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/probes.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\probes.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 17414,
+    "sha256": "00ebed5e10883825f43384e6dc59ca6fd8047bf7fa95661ff5446f03e4c4d4bc"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/python-tests-final.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\python-tests-final.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 334,
+    "sha256": "4d3e1daebff9c5f05685165ad3f8e33bb15310236d94f9ff5f00c9406a018097"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/python-tests.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\python-tests.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 334,
+    "sha256": "e6e690bdd2472a0360dd0d82b776d07b8875da68ba81ca3797e6db6f4f46dc15"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refined-geographic.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refined-geographic.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 354,
+    "sha256": "4cd5f55b8431cf058d00c6564262a82cc56391290db29a9d17ed7226b125c204"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refined/geographic-paths.json.gz",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refined\\geographic-paths.json.gz",
+    "purpose": "Complete canonical route geometry/evidence and results for repeated geographic cases",
+    "bytes": 3427165,
+    "sha256": "f04cd8c3e5537cf6d1be146c54fb2300e5758c9bf6405ef924864feff59991e7"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refined/geographic-results.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refined\\geographic-results.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 8956267,
+    "sha256": "3f5f7d287b4a8bf7954ba8e680f65b0ab17ad2d1ff3ab4eac65189c1bf3b28bd"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refined/geographic-summary.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refined\\geographic-summary.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 23026,
+    "sha256": "1463a69be7fe283b83a3e8bd3fe3e88d1b1db5486ce0c388ac1a24e8297985a9"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refinement-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refinement-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 473,
+    "sha256": "93880cc98fe9ede0e236ead96edef3fbe115444af6e1275857e6ef8dd1e2ed42"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/refinement-desktop.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\refinement-desktop.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 597,
+    "sha256": "a100bdba7bacfa370c2ea3ee2d74370e259a797bee8fdb5190d5630bbbe4220f"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/stage1-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\stage1-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 506,
+    "sha256": "ba12d4d56a233a39daacb005cfba212d6d7aaedee87a7580d52fc3cf04bf7d39"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/stage1-desktop.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\stage1-desktop.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 661,
+    "sha256": "7e5aad37e8459d9c5ce446b25bbc91f8f5151a5726e7a7013e98b69644d37fcf"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/stage2-discovery-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\stage2-discovery-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 347,
+    "sha256": "2288d7b95908805c3a89776fdb011a6ce4ea36ad4ea56fed72c306f118cbfac5"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/stage2-mixed-grid-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\stage2-mixed-grid-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 216,
+    "sha256": "c1234a43e072f3cfc607eea692cc3b446f9cba3a34b9e5cf3b5fa6f28574c106"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/stage2-primary-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\stage2-primary-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 448,
+    "sha256": "d6b29220b3e5f602558082ec2c080f7423eb75b940888817803a402b2a38d9b5"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/suitability-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\suitability-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 256,
+    "sha256": "3623f19effe7f837043db1bf827f0de6768f098336abc1a4c0139dcbca521d90"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/suitability-desktop.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\suitability-desktop.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 380,
+    "sha256": "e8e84b50eda01f1a91168f678c5e645889c7c3e891d6c93d5562de02e8b038e7"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/topology-unit.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\topology-unit.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 7342,
+    "sha256": "818b3fffde2fcd5f9255f77a4118a29269b17bf7572fd96338c7dfacc4ebedef"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/validation-summary.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\validation-summary.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 1167,
+    "sha256": "1521ca658b800ead5be826c2feef8aea1974bd659ed4570780ae7876aff0dad5"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/water-area-desktop-final-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\water-area-desktop-final-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 458,
+    "sha256": "8bb62519ee0b0aa1137dc118fa832185b4c20a982c4cb9f968e333eed0bd12e1"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/water-area-desktop-log.txt",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\water-area-desktop-log.txt",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 353,
+    "sha256": "9833d43de25a6f223e40ffa481341695248f73c0a4d8990846041d1dcf21ff6e"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/water-area-desktop.json",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\water-area-desktop.json",
+    "purpose": "Machine-readable validation result, comparison, diagnostic or preserved execution log",
+    "bytes": 582,
+    "sha256": "125871ac9ac42a2d13aeb9000a36c8da7eaa430efb48e61b4b7c99285938dce1"
+  },
+  {
+    "path": "docs/stage2-0.3.1/topology-validation/water-area-desktop.png",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\docs\\stage2-0.3.1\\topology-validation\\water-area-desktop.png",
+    "purpose": "Desktop visual acceptance evidence",
+    "bytes": 85280,
+    "sha256": "2b4735402928a77d09781cca20a7c9cca510a3292884bedc1fa779e8ce3e22b7"
+  },
+  {
+    "path": "scripts/acquire-water-areas.py",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\acquire-water-areas.py",
+    "purpose": "Bounded provider acquisition, preserved responses, query/log records and atomic adoption",
+    "bytes": 2235,
+    "sha256": "957b86f841ebf0f976dd49ec5a650e2da7449084d74508298a3544d0bd4e71cc"
+  },
+  {
+    "path": "scripts/audit-water-area-geometry.py",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\audit-water-area-geometry.py",
+    "purpose": "Independent GEOS source-polygon coverage check",
+    "bytes": 1193,
+    "sha256": "18dd78141d55eb60ee053679a199453f6b8fce05ccc100072eabd1b6075f8d4a"
+  },
+  {
+    "path": "scripts/diagnose-water-areas.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\diagnose-water-areas.cjs",
+    "purpose": "Coverage, changed classifications, ocean control and geodesic audit samples",
+    "bytes": 3147,
+    "sha256": "e14735d92a6934bd21dad0d571c35a784a2e2ad097f5700ff188b9127feebb90"
+  },
+  {
+    "path": "scripts/prepare-water-areas.py",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\scripts\\prepare-water-areas.py",
+    "purpose": "Exact polygon assembly, hole subtraction and conservative derived masks",
+    "bytes": 6236,
+    "sha256": "f4b6b7aa5e3234b260915f22f91785837218242b822464b8f6db5333affe64cb"
+  },
+  {
+    "path": "src/course-refinement.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\course-refinement.cjs",
+    "purpose": "Integrate conservative water-area fallback and retain dataset metadata/coarse snapshots",
+    "bytes": 7853,
+    "sha256": "b8fd68daf10e2c80d615963fa948617d03e2bf417c84469d01ac7b562ba9306a"
+  },
+  {
+    "path": "src/water-area-route.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\src\\water-area-route.cjs",
+    "purpose": "Combined source/water-area graph, exclusions, canonical-direction search and verified ocean assembly",
+    "bytes": 11904,
+    "sha256": "e0bef2fccf96e999f3b97eb59a54a5b993b3dfe27f4dac09966283061e6ea0dd"
+  },
+  {
+    "path": "test/geographic-validation.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\geographic-validation.cjs",
+    "purpose": "Recognize and validate new topology evidence",
+    "bytes": 6403,
+    "sha256": "e9fc3c78859c89522d4fbcf06e0bc16ef5030944372e8a240a979629afdefde3"
+  },
+  {
+    "path": "test/stage2-geographic.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\stage2-geographic.cjs",
+    "purpose": "Allow explicit topology-enabled versus prior-refinement comparisons",
+    "bytes": 4612,
+    "sha256": "94bd586cf6aba935d405e364fb533290e87ec1501d9b82a9006bc7379c6091d1"
+  },
+  {
+    "path": "test/water-area-desktop.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\water-area-desktop.cjs",
+    "purpose": "Five new isolated desktop acceptance groups",
+    "bytes": 4020,
+    "sha256": "4744db19304269429f44b603016696d726c85344fec6cebb03f6365d4aa8077b"
+  },
+  {
+    "path": "test/water-area.test.cjs",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\water-area.test.cjs",
+    "purpose": "Six additional topology, integrity, geometry and isolation unit tests",
+    "bytes": 4224,
+    "sha256": "ce34818ec15cb5b510c1c48dd4e3e18a3b6b11c76578431ade862c599e061b93"
+  },
+  {
+    "path": "test/water_area_test.py",
+    "absolutePath": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\test\\water_area_test.py",
+    "purpose": "Three polygon assembly/exclusion tests",
+    "bytes": 1302,
+    "sha256": "33cb41d99dd485b99a1ad03c004d4b0cb1ad7e3fb06136bac2ed66119bed49e4"
+  }
+]

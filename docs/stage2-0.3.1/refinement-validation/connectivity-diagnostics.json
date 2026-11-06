@@ -1,0 +1,1468 @@
+{
+  "generatedAt": "2026-10-18T01:53:32.494Z",
+  "interpretation": "Mapped source components and grid attachment diagnostics only. Missing topology is not a genuine vessel restriction. City-to-water connectors are excluded and remain unverified.",
+  "regions": {
+    "Bordeaux": [
+      {
+        "name": "Brest",
+        "lat": 48.39029,
+        "lon": -4.48628,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Bordeaux",
+        "lat": 44.84124,
+        "lon": -0.58046,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [
+              {
+                "component": 1131,
+                "distanceNM": 0.40992939153083363,
+                "point": {
+                  "lat": 44.847195,
+                  "lon": -0.575754
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 412,
+                "distanceNM": 0.5896308278699233,
+                "point": {
+                  "lat": 44.8438836,
+                  "lon": -0.5671574
+                }
+              },
+              {
+                "component": 4289,
+                "distanceNM": 2.4210393605217795,
+                "point": {
+                  "lat": 44.8791956,
+                  "lon": -0.5997015
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 44.8438836,
+                "lon": -0.5671574
+              },
+              "point": {
+                "lat": 45.380367,
+                "lon": -0.8214001
+              },
+              "sourceEdges": 154,
+              "grid": "europe-0.025",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 516767,
+                "component": 1,
+                "componentCells": 1148455
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          }
+        ]
+      }
+    ],
+    "Amazon": [
+      {
+        "name": "Macapá",
+        "lat": 0.03889,
+        "lon": -51.06639,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 670,
+                "distanceNM": 0.3480443733325638,
+                "point": {
+                  "lat": 0.0446925,
+                  "lon": -51.0669453
+                }
+              },
+              {
+                "component": 367,
+                "distanceNM": 0.5779308919083883,
+                "point": {
+                  "lat": 0.0337568,
+                  "lon": -51.0582384
+                }
+              },
+              {
+                "component": 368,
+                "distanceNM": 1.1151114796453527,
+                "point": {
+                  "lat": 0.04189,
+                  "lon": -51.048079
+                }
+              },
+              {
+                "component": 671,
+                "distanceNM": 1.5011230951120806,
+                "point": {
+                  "lat": 0.0639522,
+                  "lon": -51.0643994
+                }
+              },
+              {
+                "component": 669,
+                "distanceNM": 1.5016052871627577,
+                "point": {
+                  "lat": 0.0147517,
+                  "lon": -51.0593748
+                }
+              },
+              {
+                "component": 194,
+                "distanceNM": 2.022902330982538,
+                "point": {
+                  "lat": 0.0052893,
+                  "lon": -51.0707134
+                }
+              },
+              {
+                "component": 421,
+                "distanceNM": 2.6634562357313953,
+                "point": {
+                  "lat": 0.0094928,
+                  "lon": -51.0997192
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 507,
+                "distanceNM": 0.3480443733325638,
+                "point": {
+                  "lat": 0.0446925,
+                  "lon": -51.0669453
+                }
+              },
+              {
+                "component": 2755,
+                "distanceNM": 0.5779308919083883,
+                "point": {
+                  "lat": 0.0337568,
+                  "lon": -51.0582384
+                }
+              },
+              {
+                "component": 510,
+                "distanceNM": 1.1151114796453527,
+                "point": {
+                  "lat": 0.04189,
+                  "lon": -51.048079
+                }
+              },
+              {
+                "component": 528,
+                "distanceNM": 1.5011230951120806,
+                "point": {
+                  "lat": 0.0639522,
+                  "lon": -51.0643994
+                }
+              },
+              {
+                "component": 505,
+                "distanceNM": 1.5016052871627577,
+                "point": {
+                  "lat": 0.0147517,
+                  "lon": -51.0593748
+                }
+              },
+              {
+                "component": 83,
+                "distanceNM": 2.022902330982538,
+                "point": {
+                  "lat": 0.0052893,
+                  "lon": -51.0707134
+                }
+              },
+              {
+                "component": 3326,
+                "distanceNM": 2.6634562357313953,
+                "point": {
+                  "lat": 0.0094928,
+                  "lon": -51.0997192
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Belém",
+        "lat": -1.45583,
+        "lon": -48.50444,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 194,
+                "distanceNM": 0.7860697914319537,
+                "point": {
+                  "lat": -1.456304,
+                  "lon": -48.5175134
+                }
+              },
+              {
+                "component": 665,
+                "distanceNM": 0.8222104552337328,
+                "point": {
+                  "lat": -1.4469912,
+                  "lon": -48.4939471
+                }
+              },
+              {
+                "component": 664,
+                "distanceNM": 0.8266737135376644,
+                "point": {
+                  "lat": -1.4461793,
+                  "lon": -48.494575
+                }
+              },
+              {
+                "component": 416,
+                "distanceNM": 1.0814601924008707,
+                "point": {
+                  "lat": -1.4598277,
+                  "lon": -48.486886
+                }
+              },
+              {
+                "component": 414,
+                "distanceNM": 1.101723608141976,
+                "point": {
+                  "lat": -1.4406163,
+                  "lon": -48.4940643
+                }
+              },
+              {
+                "component": 424,
+                "distanceNM": 1.1473537832595668,
+                "point": {
+                  "lat": -1.4703402,
+                  "lon": -48.491921
+                }
+              },
+              {
+                "component": 413,
+                "distanceNM": 1.4270582616835146,
+                "point": {
+                  "lat": -1.4662114,
+                  "lon": -48.4830478
+                }
+              },
+              {
+                "component": 417,
+                "distanceNM": 1.8996876067858277,
+                "point": {
+                  "lat": -1.4626683,
+                  "lon": -48.4735639
+                }
+              },
+              {
+                "component": 428,
+                "distanceNM": 2.093993078043181,
+                "point": {
+                  "lat": -1.4731498,
+                  "lon": -48.4741372
+                }
+              },
+              {
+                "component": 358,
+                "distanceNM": 2.1762085426491256,
+                "point": {
+                  "lat": -1.4544693,
+                  "lon": -48.4682485
+                }
+              },
+              {
+                "component": 418,
+                "distanceNM": 2.1905829728770962,
+                "point": {
+                  "lat": -1.4386295,
+                  "lon": -48.4722386
+                }
+              },
+              {
+                "component": 419,
+                "distanceNM": 2.276508740741376,
+                "point": {
+                  "lat": -1.4192263,
+                  "lon": -48.4938321
+                }
+              },
+              {
+                "component": 415,
+                "distanceNM": 2.428621352965816,
+                "point": {
+                  "lat": -1.4523205,
+                  "lon": -48.4641733
+                }
+              },
+              {
+                "component": 765,
+                "distanceNM": 2.56221957045214,
+                "point": {
+                  "lat": -1.4253352,
+                  "lon": -48.5344417
+                }
+              },
+              {
+                "component": 496,
+                "distanceNM": 2.894980564114247,
+                "point": {
+                  "lat": -1.4967306,
+                  "lon": -48.5303162
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 83,
+                "distanceNM": 0.7860697914319537,
+                "point": {
+                  "lat": -1.456304,
+                  "lon": -48.5175134
+                }
+              },
+              {
+                "component": 434,
+                "distanceNM": 0.8222104552337328,
+                "point": {
+                  "lat": -1.4469912,
+                  "lon": -48.4939471
+                }
+              },
+              {
+                "component": 433,
+                "distanceNM": 0.8266737135376644,
+                "point": {
+                  "lat": -1.4461793,
+                  "lon": -48.494575
+                }
+              },
+              {
+                "component": 3310,
+                "distanceNM": 1.0814601924008707,
+                "point": {
+                  "lat": -1.4598277,
+                  "lon": -48.486886
+                }
+              },
+              {
+                "component": 3308,
+                "distanceNM": 1.101723608141976,
+                "point": {
+                  "lat": -1.4406163,
+                  "lon": -48.4940643
+                }
+              },
+              {
+                "component": 3333,
+                "distanceNM": 1.1473537832595668,
+                "point": {
+                  "lat": -1.4703402,
+                  "lon": -48.491921
+                }
+              },
+              {
+                "component": 436,
+                "distanceNM": 1.4270582616835146,
+                "point": {
+                  "lat": -1.4662114,
+                  "lon": -48.4830478
+                }
+              },
+              {
+                "component": 3311,
+                "distanceNM": 1.8996876067858277,
+                "point": {
+                  "lat": -1.4626683,
+                  "lon": -48.4735639
+                }
+              },
+              {
+                "component": 1416,
+                "distanceNM": 2.093993078043181,
+                "point": {
+                  "lat": -1.4731498,
+                  "lon": -48.4741372
+                }
+              },
+              {
+                "component": 1134,
+                "distanceNM": 2.1762085426491256,
+                "point": {
+                  "lat": -1.4544693,
+                  "lon": -48.4682485
+                }
+              },
+              {
+                "component": 3313,
+                "distanceNM": 2.1905829728770962,
+                "point": {
+                  "lat": -1.4386295,
+                  "lon": -48.4722386
+                }
+              },
+              {
+                "component": 1130,
+                "distanceNM": 2.276508740741376,
+                "point": {
+                  "lat": -1.4192263,
+                  "lon": -48.4938321
+                }
+              },
+              {
+                "component": 3309,
+                "distanceNM": 2.428621352965816,
+                "point": {
+                  "lat": -1.4523205,
+                  "lon": -48.4641733
+                }
+              },
+              {
+                "component": 2000,
+                "distanceNM": 2.56221957045214,
+                "point": {
+                  "lat": -1.4253352,
+                  "lon": -48.5344417
+                }
+              },
+              {
+                "component": 3548,
+                "distanceNM": 2.894980564114247,
+                "point": {
+                  "lat": -1.4967306,
+                  "lon": -48.5303162
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Breves",
+        "lat": -1.68222,
+        "lon": -50.48028,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Amazon estuary",
+        "lat": 0.5,
+        "lon": -49.5,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Manaus",
+        "lat": -3.10194,
+        "lon": -60.025,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 501,
+                "distanceNM": 2.355478913626872,
+                "point": {
+                  "lat": -3.1328044,
+                  "lon": -60.0005568
+                }
+              },
+              {
+                "component": 194,
+                "distanceNM": 2.501250133081359,
+                "point": {
+                  "lat": -3.14329,
+                  "lon": -60.018318
+                }
+              },
+              {
+                "component": 405,
+                "distanceNM": 2.729366128534488,
+                "point": {
+                  "lat": -3.0824336,
+                  "lon": -60.0661257
+                }
+              },
+              {
+                "component": 502,
+                "distanceNM": 2.7307963854040165,
+                "point": {
+                  "lat": -3.0564592,
+                  "lon": -60.0298049
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3599,
+                "distanceNM": 2.355478913626872,
+                "point": {
+                  "lat": -3.1328044,
+                  "lon": -60.0005568
+                }
+              },
+              {
+                "component": 83,
+                "distanceNM": 2.501250133081359,
+                "point": {
+                  "lat": -3.14329,
+                  "lon": -60.018318
+                }
+              },
+              {
+                "component": 3233,
+                "distanceNM": 2.729366128534488,
+                "point": {
+                  "lat": -3.0824336,
+                  "lon": -60.0661257
+                }
+              },
+              {
+                "component": 3600,
+                "distanceNM": 2.7307963854040165,
+                "point": {
+                  "lat": -3.0564592,
+                  "lon": -60.0298049
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Santarém",
+        "lat": -2.44306,
+        "lon": -54.70833,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 398,
+                "distanceNM": 1.3052847899481994,
+                "point": {
+                  "lat": -2.4432574,
+                  "lon": -54.7300645
+                }
+              },
+              {
+                "component": 194,
+                "distanceNM": 1.8971148254034884,
+                "point": {
+                  "lat": -2.4125901,
+                  "lon": -54.6993724
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [
+              {
+                "component": 36,
+                "distanceNM": 2.3241316760686908,
+                "point": {
+                  "lat": -2.405938,
+                  "lon": -54.696685
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 2962,
+                "distanceNM": 1.3052847899481994,
+                "point": {
+                  "lat": -2.4432574,
+                  "lon": -54.7300645
+                }
+              },
+              {
+                "component": 83,
+                "distanceNM": 1.8971148254034884,
+                "point": {
+                  "lat": -2.4125901,
+                  "lon": -54.6993724
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Alter do Chão",
+        "lat": -2.50361,
+        "lon": -54.9525,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 546,
+                "distanceNM": 0.8343302332714352,
+                "point": {
+                  "lat": -2.5142846,
+                  "lon": -54.9614662
+                }
+              },
+              {
+                "component": 548,
+                "distanceNM": 1.0048276355786643,
+                "point": {
+                  "lat": -2.5136167,
+                  "lon": -54.9390462
+                }
+              },
+              {
+                "component": 549,
+                "distanceNM": 1.3073781041152668,
+                "point": {
+                  "lat": -2.5125825,
+                  "lon": -54.9326404
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3879,
+                "distanceNM": 0.8343302332714352,
+                "point": {
+                  "lat": -2.5142846,
+                  "lon": -54.9614662
+                }
+              },
+              {
+                "component": 3881,
+                "distanceNM": 1.0048276355786643,
+                "point": {
+                  "lat": -2.5136167,
+                  "lon": -54.9390462
+                }
+              },
+              {
+                "component": 3882,
+                "distanceNM": 1.3073781041152668,
+                "point": {
+                  "lat": -2.5125825,
+                  "lon": -54.9326404
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      }
+    ],
+    "Southern": [
+      {
+        "name": "Stanley",
+        "lat": -51.69382,
+        "lon": -57.85701,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Ushuaia",
+        "lat": -54.81084,
+        "lon": -68.31591,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 1439,
+                "distanceNM": 1.6581219777063558,
+                "point": {
+                  "lat": -54.8278387,
+                  "lon": -68.3535341
+                }
+              },
+              {
+                "component": 1468,
+                "distanceNM": 2.185669334335651,
+                "point": {
+                  "lat": -54.7918096,
+                  "lon": -68.2622753
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3328,
+                "distanceNM": 1.6581219777063558,
+                "point": {
+                  "lat": -54.8278387,
+                  "lon": -68.3535341
+                }
+              },
+              {
+                "component": 1766,
+                "distanceNM": 2.185669334335651,
+                "point": {
+                  "lat": -54.7918096,
+                  "lon": -68.2622753
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Punta Arenas",
+        "lat": -53.16282,
+        "lon": -70.90922,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 1452,
+                "distanceNM": 0.23782189082958732,
+                "point": {
+                  "lat": -53.1594066,
+                  "lon": -70.9058874
+                }
+              },
+              {
+                "component": 1444,
+                "distanceNM": 2.2070382762526495,
+                "point": {
+                  "lat": -53.1285608,
+                  "lon": -70.887201
+                }
+              },
+              {
+                "component": 1443,
+                "distanceNM": 2.339218867904687,
+                "point": {
+                  "lat": -53.192411,
+                  "lon": -70.9513195
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 527,
+                "distanceNM": 0.23782189082958732,
+                "point": {
+                  "lat": -53.1594066,
+                  "lon": -70.9058874
+                }
+              },
+              {
+                "component": 1083,
+                "distanceNM": 2.2070382762526495,
+                "point": {
+                  "lat": -53.1285608,
+                  "lon": -70.887201
+                }
+              },
+              {
+                "component": 1035,
+                "distanceNM": 2.339218867904687,
+                "point": {
+                  "lat": -53.192411,
+                  "lon": -70.9513195
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      },
+      {
+        "name": "Concepción",
+        "lat": -36.82699,
+        "lon": -73.04977,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [
+              {
+                "component": 273,
+                "distanceNM": 0.7650799823356469,
+                "point": {
+                  "lat": -36.834975,
+                  "lon": -73.062164
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      }
+    ],
+    "GreatLakes": [
+      {
+        "name": "Kingston Mills",
+        "lat": 44.29,
+        "lon": -76.44,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 2526,
+                "distanceNM": 0.12762632296422247,
+                "point": {
+                  "lat": 44.2912146,
+                  "lon": -76.4424312
+                }
+              },
+              {
+                "component": 2525,
+                "distanceNM": 1.4764893593563184,
+                "point": {
+                  "lat": 44.271175,
+                  "lon": -76.4620621
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3,
+                "distanceNM": 0.12762632296422247,
+                "point": {
+                  "lat": 44.2912146,
+                  "lon": -76.4424312
+                }
+              },
+              {
+                "component": 3601,
+                "distanceNM": 1.4764893593563184,
+                "point": {
+                  "lat": 44.271175,
+                  "lon": -76.4620621
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 44.2912146,
+                "lon": -76.4424312
+              },
+              "point": {
+                "lat": 48.6066317,
+                "lon": -68.6694938
+              },
+              "sourceEdges": 692,
+              "grid": "world-0.1",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 4990713,
+                "component": 1,
+                "componentCells": 4113244
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          }
+        ]
+      },
+      {
+        "name": "Toronto",
+        "lat": 43.70643,
+        "lon": -79.39864,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Montréal",
+        "lat": 45.50884,
+        "lon": -73.58781,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 1945,
+                "distanceNM": 1.610027159430465,
+                "point": {
+                  "lat": 45.5001847,
+                  "lon": -73.5516965
+                }
+              },
+              {
+                "component": 2314,
+                "distanceNM": 2.411258637921716,
+                "point": {
+                  "lat": 45.5230158,
+                  "lon": -73.5343329
+                }
+              },
+              {
+                "component": 2287,
+                "distanceNM": 2.444437875402081,
+                "point": {
+                  "lat": 45.5235541,
+                  "lon": -73.5337834
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 45.5001847,
+                "lon": -73.5516965
+              },
+              "point": {
+                "lat": 48.6066317,
+                "lon": -68.6694938
+              },
+              "sourceEdges": 182,
+              "grid": "world-0.1",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 4990713,
+                "component": 1,
+                "componentCells": 4113244
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3,
+                "distanceNM": 1.610027159430465,
+                "point": {
+                  "lat": 45.5001847,
+                  "lon": -73.5516965
+                }
+              },
+              {
+                "component": 3235,
+                "distanceNM": 2.411258637921716,
+                "point": {
+                  "lat": 45.5230158,
+                  "lon": -73.5343329
+                }
+              },
+              {
+                "component": 2753,
+                "distanceNM": 2.444437875402081,
+                "point": {
+                  "lat": 45.5235541,
+                  "lon": -73.5337834
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 45.5001847,
+                "lon": -73.5516965
+              },
+              "point": {
+                "lat": 48.6066317,
+                "lon": -68.6694938
+              },
+              "sourceEdges": 182,
+              "grid": "world-0.1",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 4990713,
+                "component": 1,
+                "componentCells": 4113244
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          }
+        ]
+      },
+      {
+        "name": "Québec City",
+        "lat": 46.81228,
+        "lon": -71.21454,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [
+              {
+                "component": 1945,
+                "distanceNM": 0.5333210649473673,
+                "point": {
+                  "lat": 46.8202157,
+                  "lon": -71.2203605
+                }
+              },
+              {
+                "component": 2309,
+                "distanceNM": 0.6157172350390581,
+                "point": {
+                  "lat": 46.8189236,
+                  "lon": -71.2031557
+                }
+              },
+              {
+                "component": 2336,
+                "distanceNM": 1.3188865511397976,
+                "point": {
+                  "lat": 46.8146378,
+                  "lon": -71.2463595
+                }
+              },
+              {
+                "component": 1947,
+                "distanceNM": 2.3680587995732667,
+                "point": {
+                  "lat": 46.8503963,
+                  "lon": -71.1997157
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 46.8202157,
+                "lon": -71.2203605
+              },
+              "point": {
+                "lat": 48.6066317,
+                "lon": -68.6694938
+              },
+              "sourceEdges": 42,
+              "grid": "world-0.1",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 4990713,
+                "component": 1,
+                "componentCells": 4113244
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 3,
+                "distanceNM": 0.5333210649473673,
+                "point": {
+                  "lat": 46.8202157,
+                  "lon": -71.2203605
+                }
+              },
+              {
+                "component": 3046,
+                "distanceNM": 0.6157172350390581,
+                "point": {
+                  "lat": 46.8189236,
+                  "lon": -71.2031557
+                }
+              },
+              {
+                "component": 3395,
+                "distanceNM": 1.3188865511397976,
+                "point": {
+                  "lat": 46.8146378,
+                  "lon": -71.2463595
+                }
+              },
+              {
+                "component": 1301,
+                "distanceNM": 2.3680587995732667,
+                "point": {
+                  "lat": 46.8503963,
+                  "lon": -71.1997157
+                }
+              }
+            ],
+            "portal": {
+              "access": {
+                "lat": 46.8202157,
+                "lon": -71.2203605
+              },
+              "point": {
+                "lat": 48.6066317,
+                "lon": -68.6694938
+              },
+              "sourceEdges": 42,
+              "grid": "world-0.1",
+              "gridCell": {
+                "classification": "WATER",
+                "cell": 4990713,
+                "component": 1,
+                "componentCells": 4113244
+              }
+            },
+            "diagnosis": "SOURCE_TO_GRID_PORTAL_PRESENT; pairwise continuity still requires validation"
+          }
+        ]
+      }
+    ],
+    "Rostov": [
+      {
+        "name": "Sevastopol",
+        "lat": 44.60795,
+        "lon": 33.52134,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          }
+        ]
+      },
+      {
+        "name": "Rostov-on-Don",
+        "lat": 47.21997,
+        "lon": 39.70769,
+        "datasets": [
+          {
+            "dataset": "osm",
+            "checksum": "9e9a196bd6a4b933ddca8c255b1aa4cbc36e677f98c718965afabbe6b673d21e",
+            "candidates": [],
+            "portal": null,
+            "diagnosis": "NO_SOURCE_ATTACHMENT_WITHIN_3_NM"
+          },
+          {
+            "dataset": "rivers",
+            "checksum": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+            "candidates": [
+              {
+                "component": 384,
+                "distanceNM": 1.373025522122275,
+                "point": {
+                  "lat": 47.197211,
+                  "lon": 39.711029
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          },
+          {
+            "dataset": "refinement",
+            "checksum": "07f6a828a3855de84fdbe5aad7baa8012a09e66c0caf140f9d012a4a5621b9e1",
+            "candidates": [
+              {
+                "component": 73,
+                "distanceNM": 0.48478472348468254,
+                "point": {
+                  "lat": 47.2127763,
+                  "lon": 39.7130763
+                }
+              },
+              {
+                "component": 955,
+                "distanceNM": 1.7991201389252993,
+                "point": {
+                  "lat": 47.2050437,
+                  "lon": 39.7458312
+                }
+              },
+              {
+                "component": 4161,
+                "distanceNM": 2.59873649046946,
+                "point": {
+                  "lat": 47.1796786,
+                  "lon": 39.7309218
+                }
+              }
+            ],
+            "portal": null,
+            "diagnosis": "SOURCE_COMPONENT_HAS_NO_PORTAL_TO_SELECTED_GRID"
+          }
+        ]
+      }
+    ]
+  }
+}

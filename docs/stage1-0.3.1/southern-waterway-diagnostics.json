@@ -1,0 +1,1409 @@
+{
+  "source": "Existing unchanged Natural Earth-derived 0.1 degree world mask; no new hydrographic/restriction dataset acquired",
+  "maskProcessing": [
+    "scripts/prepare-map.cjs uses only polygon exterior rings (inland holes treated as land)",
+    "One-cell world-mask land dilation",
+    "Water components smaller than 1000 cells removed",
+    "Routing forbids diagonal corner cutting"
+  ],
+  "distinctions": {
+    "access": "Distant nearest mask-water candidate rejected; this does not mean the real harbour or channel is closed.",
+    "connectivity": "DISCONNECTED_COMPONENTS is a grid-topology conclusion only. Southern runs stop at insufficient local access before proving a connected passage.",
+    "restrictions": "No authoritative restrictions, depth, bridge, tide, clearance or closure source is loaded. Genuine restrictions are UNVERIFIED, not asserted absent or present.",
+    "namedWaterways": "Beagle Channel, Strait of Magellan and southern Chilean inland-waterway connectivity remain unvalidated. Open-ocean geometry must not be accepted as proof of those corridors."
+  },
+  "cases": [
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full forward",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Montevideo",
+          "to": "case-Stanley",
+          "status": "CALCULATED",
+          "reason": null,
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -34.90328,
+              "lon": -56.18816
+            },
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Montevideo",
+              "source": {
+                "lat": -34.90328,
+                "lon": -56.18816
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1981238,
+                "component": null
+              },
+              "candidate": {
+                "lon": -56.14999999999999,
+                "lat": -35.15,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1974038,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 14.9315443729425,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            }
+          ],
+          "searchBounds": {
+            "minX": 1224,
+            "maxX": 1244,
+            "minY": 383,
+            "maxY": 548
+          },
+          "termination": "PATH_FOUND"
+        },
+        {
+          "from": "case-Stanley",
+          "to": "case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            },
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "from": "case-Ushuaia",
+          "to": "case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            },
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "from": "case-Punta Arenas",
+          "to": "case-Concepción",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            },
+            {
+              "lat": -36.82699,
+              "lon": -73.04977
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Concepción",
+              "source": {
+                "lat": -36.82699,
+                "lon": -73.04977
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1912669,
+                "component": null
+              },
+              "candidate": {
+                "lon": -73.44999999999999,
+                "lat": -36.75,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1916265,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 19.791847385814222,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción | full reverse",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Concepción",
+          "to": "case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -36.82699,
+              "lon": -73.04977
+            },
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Concepción",
+              "source": {
+                "lat": -36.82699,
+                "lon": -73.04977
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1912669,
+                "component": null
+              },
+              "candidate": {
+                "lon": -73.44999999999999,
+                "lat": -36.75,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1916265,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 19.791847385814222,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "from": "case-Punta Arenas",
+          "to": "case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            },
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "from": "case-Ushuaia",
+          "to": "case-Stanley",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            },
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        },
+        {
+          "from": "case-Stanley",
+          "to": "case-Montevideo",
+          "status": "CALCULATED",
+          "reason": null,
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            },
+            {
+              "lat": -34.90328,
+              "lon": -56.18816
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Montevideo",
+              "source": {
+                "lat": -34.90328,
+                "lon": -56.18816
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1981238,
+                "component": null
+              },
+              "candidate": {
+                "lon": -56.14999999999999,
+                "lat": -35.15,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1974038,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 14.9315443729425,
+              "explicit": false
+            }
+          ],
+          "searchBounds": {
+            "minX": 1216,
+            "maxX": 1238,
+            "minY": 382,
+            "maxY": 548
+          },
+          "termination": "PATH_FOUND"
+        }
+      ]
+    },
+    {
+      "name": "Montevideo → Stanley | isolated",
+      "result": "PASS",
+      "legs": [
+        {
+          "from": "case-Montevideo",
+          "to": "case-Stanley",
+          "status": "CALCULATED",
+          "reason": null,
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -34.90328,
+              "lon": -56.18816
+            },
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Montevideo",
+              "source": {
+                "lat": -34.90328,
+                "lon": -56.18816
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1981238,
+                "component": null
+              },
+              "candidate": {
+                "lon": -56.14999999999999,
+                "lat": -35.15,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1974038,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 14.9315443729425,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            }
+          ],
+          "searchBounds": {
+            "minX": 1224,
+            "maxX": 1244,
+            "minY": 383,
+            "maxY": 548
+          },
+          "termination": "PATH_FOUND"
+        }
+      ]
+    },
+    {
+      "name": "Stanley → Montevideo | isolated",
+      "result": "PASS",
+      "legs": [
+        {
+          "from": "case-Stanley",
+          "to": "case-Montevideo",
+          "status": "CALCULATED",
+          "reason": null,
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            },
+            {
+              "lat": -34.90328,
+              "lon": -56.18816
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Montevideo",
+              "source": {
+                "lat": -34.90328,
+                "lon": -56.18816
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1981238,
+                "component": null
+              },
+              "candidate": {
+                "lon": -56.14999999999999,
+                "lat": -35.15,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1974038,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 14.9315443729425,
+              "explicit": false
+            }
+          ],
+          "searchBounds": {
+            "minX": 1216,
+            "maxX": 1238,
+            "minY": 382,
+            "maxY": 548
+          },
+          "termination": "PATH_FOUND"
+        }
+      ]
+    },
+    {
+      "name": "Stanley → Ushuaia | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Stanley",
+          "to": "case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            },
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Ushuaia → Stanley | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Ushuaia",
+          "to": "case-Stanley",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            },
+            {
+              "lat": -51.69382,
+              "lon": -57.85701
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Stanley",
+              "source": {
+                "lat": -51.69382,
+                "lon": -57.85701
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1380021,
+                "component": null
+              },
+              "candidate": {
+                "lon": -57.55,
+                "lat": -51.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1380024,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 11.730351323449105,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Ushuaia → Punta Arenas | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Ushuaia",
+          "to": "case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            },
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Punta Arenas → Ushuaia | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Punta Arenas",
+          "to": "case-Ushuaia",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            },
+            {
+              "lat": -54.81084,
+              "lon": -68.31591
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Ushuaia",
+              "source": {
+                "lat": -54.81084,
+                "lon": -68.31591
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1264716,
+                "component": null
+              },
+              "candidate": {
+                "lon": -68.64999999999999,
+                "lat": -55.65,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1235913,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 51.66571848344046,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Punta Arenas → Concepción | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Punta Arenas",
+          "to": "case-Concepción",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            },
+            {
+              "lat": -36.82699,
+              "lon": -73.04977
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Concepción",
+              "source": {
+                "lat": -36.82699,
+                "lon": -73.04977
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1912669,
+                "component": null
+              },
+              "candidate": {
+                "lon": -73.44999999999999,
+                "lat": -36.75,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1916265,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 19.791847385814222,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    },
+    {
+      "name": "Concepción → Punta Arenas | isolated",
+      "result": "UNRESOLVED",
+      "legs": [
+        {
+          "from": "case-Concepción",
+          "to": "case-Punta Arenas",
+          "status": "UNRESOLVED",
+          "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+          "grid": "world-0.1",
+          "anchors": [
+            {
+              "lat": -36.82699,
+              "lon": -73.04977
+            },
+            {
+              "lat": -53.16282,
+              "lon": -70.90922
+            }
+          ],
+          "limit": 24,
+          "accessCandidates": [
+            {
+              "waypointId": "case-Concepción",
+              "source": {
+                "lat": -36.82699,
+                "lon": -73.04977
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1912669,
+                "component": null
+              },
+              "candidate": {
+                "lon": -73.44999999999999,
+                "lat": -36.75,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1916265,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 19.791847385814222,
+              "explicit": false
+            },
+            {
+              "waypointId": "case-Punta Arenas",
+              "source": {
+                "lat": -53.16282,
+                "lon": -70.90922
+              },
+              "sourceCell": {
+                "classification": "BLOCKED",
+                "cell": 1325890,
+                "component": null
+              },
+              "candidate": {
+                "lon": -72.75,
+                "lat": -54.35,
+                "name": "Unverified offshore candidate",
+                "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+                "depth": null,
+                "airClearance": null,
+                "maxLOA": null,
+                "maxBeam": null
+              },
+              "cell": {
+                "classification": "WATER",
+                "cell": 1282672,
+                "component": 1,
+                "componentCells": 4113244
+              },
+              "distanceNM": 96.69060027024179,
+              "explicit": false
+            }
+          ],
+          "searchBounds": null,
+          "termination": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+        }
+      ]
+    }
+  ]
+}

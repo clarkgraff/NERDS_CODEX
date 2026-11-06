@@ -1,0 +1,30 @@
+[
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\config.json",
+    "Preserved": true
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\nerds.sqlite",
+    "Preserved": false
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\route-diagnostics\\legs.jsonl",
+    "Preserved": false
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\config.json",
+    "Preserved": true
+  },
+  {
+    "Path": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\nerds.sqlite",
+    "Preserved": false
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\AMAZON_V1.nerds",
+    "Preserved": true
+  },
+  {
+    "Path": "C:\\Users\\Clark\\Documents\\NORTHERN_CANADA_GREENLAND.nerds",
+    "Preserved": true
+  }
+]

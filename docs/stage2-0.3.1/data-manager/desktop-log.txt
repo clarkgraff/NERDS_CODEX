@@ -1,0 +1,6 @@
+[
+  'Desktop COARSE API calculates unrestricted WGS84 intent at 6 knots',
+  'Arbitrary itinerary coverage reports missing evidence without acquisition',
+  'Waypoint reorder preserves IDs, creates revision and retains original calculated course',
+  'Project save and desktop restart retain USER PATH history and course variants'
+]

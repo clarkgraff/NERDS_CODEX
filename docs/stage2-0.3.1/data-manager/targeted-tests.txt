@@ -1,0 +1,57 @@
+✔ offline lookup supports names and diacritics, rejects unknown cities (134.8204ms)
+✔ waypoints reject missing, nonfinite and out-of-range coordinates (7.0068ms)
+✔ database survives restart, empty itinerary stays empty, research references persist (26.2306ms)
+✔ invalid saves cannot overwrite the last good expedition (10.0711ms)
+✔ inference adapter only accepts local HTTP APIs (0.3456ms)
+✔ arbitrary worldwide corridors cover dateline and polar requests with explicit budgets (1.4522ms)
+✖ cache reuse, restart, versions and rollback preserve source identity (5.1533ms)
+✖ bad responses, byte limits, offline misses and interrupted acquisition preserve previous cache (2.8594ms)
+✔ USER PATH revisions preserve intent and independent 6-knot geodesic coarse calculations (1.6298ms)
+✔ legacy projects acquire path identity; edits invalidate active course without deleting archived geometry (13.3227ms)
+✔ OSM provider rejects partial responses and non-world coordinates without inventing water polygons (0.6718ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 9
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 266.0565
+
+✖ failing tests:
+
+test at test\geographic-data.test.cjs:6:1
+✖ cache reuse, restart, versions and rollback preserve source identity (5.1533ms)
+  Error: EPERM: operation not permitted, fsync
+      at Object.fsyncSync (node:fs:1345:11)
+      at atomic (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\src\geographic-data.cjs:13:155)
+      at GeographicDataManager.acquire (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\src\geographic-data.cjs:40:66)
+      at TestContext.<anonymous> (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\geographic-data.test.cjs:6:132)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'fsync'
+  }
+
+test at test\geographic-data.test.cjs:7:1
+✖ bad responses, byte limits, offline misses and interrupted acquisition preserve previous cache (2.8594ms)
+  Error: EPERM: operation not permitted, fsync
+      at Object.fsyncSync (node:fs:1345:11)
+      at atomic (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\src\geographic-data.cjs:13:155)
+      at GeographicDataManager.acquire (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\src\geographic-data.cjs:40:66)
+      at TestContext.<anonymous> (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\geographic-data.test.cjs:7:158)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'fsync'
+  }

@@ -1,0 +1,13 @@
+{
+  "checks": [
+    "Primary ordered itinerary plots three connected legs with validated totals and ETAs",
+    "Cesium authoritative course entities explicitly use GEODESIC segments",
+    "Named project retains all waypoints, geometry and source connectivity evidence",
+    "Restart restores the connected primary itinerary",
+    "Reverse itinerary updates map and accounting without attachment gaps",
+    "WORLD/FIT/FOCUS remain callable with no renderer errors"
+  ],
+  "errors": [],
+  "isolatedDataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-primary-CS1bwy",
+  "packageBuilt": false
+}

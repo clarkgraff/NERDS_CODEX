@@ -1,0 +1,11 @@
+✔ source waterway topology follows all vertices, both directions; nearby gaps remain disconnected (4.0352ms)
+✔ mapped Amazon and Elbe routes preserve source edges and bidirectional distance (8711.4066ms)
+✔ St Lawrence Montreal to Quebec follows validated source geometry both directions (2949.4569ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11841.2446

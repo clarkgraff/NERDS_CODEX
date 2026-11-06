@@ -1,0 +1,2550 @@
+{
+  "commit": "415f2d7",
+  "warning": "Returned baseline geometry is not an acceptance PASS. Zero-distance and remote-substitution defects may be present.",
+  "results": [
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 3024.5657882060214,
+      "connectors": [
+        {
+          "waypointId": "case-Montevideo",
+          "distanceNM": 14.9315443729425,
+          "access": {
+            "lon": -56.14999999999999,
+            "lat": -35.15,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Stanley",
+          "distanceNM": 11.730351323449105,
+          "access": {
+            "lon": -57.55,
+            "lat": -51.65,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Ushuaia",
+          "distanceNM": 51.66571848344046,
+          "access": {
+            "lon": -68.64999999999999,
+            "lat": -55.65,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Punta Arenas",
+          "distanceNM": 96.69060027024179,
+          "access": {
+            "lon": -72.75,
+            "lat": -54.35,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Concepción",
+          "distanceNM": 19.791847385814222,
+          "access": {
+            "lon": -73.44999999999999,
+            "lat": -36.75,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Montevideo",
+          "toId": "case-Stanley",
+          "distanceNM": 1008.5641707166861
+        },
+        {
+          "fromId": "case-Stanley",
+          "toId": "case-Ushuaia",
+          "distanceNM": 583.3175939720808
+        },
+        {
+          "fromId": "case-Ushuaia",
+          "toId": "case-Punta Arenas",
+          "distanceNM": 217.48566107134675
+        },
+        {
+          "fromId": "case-Punta Arenas",
+          "toId": "case-Concepción",
+          "distanceNM": 1215.1983624459078
+        }
+      ],
+      "elapsedMs": 169.52290000000002
+    },
+    {
+      "name": "Montevideo → Stanley → Ushuaia → Punta Arenas → Concepción",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 3015.2003971519725,
+      "connectors": [
+        {
+          "waypointId": "case-Concepción",
+          "distanceNM": 19.791847385814222,
+          "access": {
+            "lon": -73.44999999999999,
+            "lat": -36.75,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Punta Arenas",
+          "distanceNM": 96.69060027024179,
+          "access": {
+            "lon": -72.75,
+            "lat": -54.35,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Ushuaia",
+          "distanceNM": 51.66571848344046,
+          "access": {
+            "lon": -68.64999999999999,
+            "lat": -55.65,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Stanley",
+          "distanceNM": 11.730351323449105,
+          "access": {
+            "lon": -57.55,
+            "lat": -51.65,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Montevideo",
+          "distanceNM": 14.9315443729425,
+          "access": {
+            "lon": -56.14999999999999,
+            "lat": -35.15,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Concepción",
+          "toId": "case-Punta Arenas",
+          "distanceNM": 1205.7679196874508
+        },
+        {
+          "fromId": "case-Punta Arenas",
+          "toId": "case-Ushuaia",
+          "distanceNM": 217.4856610713465
+        },
+        {
+          "fromId": "case-Ushuaia",
+          "toId": "case-Stanley",
+          "distanceNM": 585.9875756295579
+        },
+        {
+          "fromId": "case-Stanley",
+          "toId": "case-Montevideo",
+          "distanceNM": 1005.9592407636173
+        }
+      ],
+      "elapsedMs": 136.35110000000003
+    },
+    {
+      "name": "Marseille → Barcelona → Ibiza → Algiers → Marseille",
+      "direction": "forward",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 34.637500000000045
+    },
+    {
+      "name": "Marseille → Barcelona → Ibiza → Algiers → Marseille",
+      "direction": "reverse",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 3.3698000000000548
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → A Coruña",
+      "direction": "forward",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 18.718099999999993
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → A Coruña",
+      "direction": "reverse",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 1.1931000000000154
+    },
+    {
+      "name": "Amsterdam → Emden → London → Hastings",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 621.9055742228182,
+      "connectors": [
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Amsterdam",
+          "toId": "case-Emden",
+          "distanceNM": 174.17214866501098
+        },
+        {
+          "fromId": "case-Emden",
+          "toId": "case-London",
+          "distanceNM": 323.57588362951003
+        },
+        {
+          "fromId": "case-London",
+          "toId": "case-Hastings",
+          "distanceNM": 124.15754192829728
+        }
+      ],
+      "elapsedMs": 64.92399999999998
+    },
+    {
+      "name": "Amsterdam → Emden → London → Hastings",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 623.7323973903578,
+      "connectors": [
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Hastings",
+          "toId": "case-London",
+          "distanceNM": 124.15651627099919
+        },
+        {
+          "fromId": "case-London",
+          "toId": "case-Emden",
+          "distanceNM": 323.5771284385001
+        },
+        {
+          "fromId": "case-Emden",
+          "toId": "case-Amsterdam",
+          "distanceNM": 175.9987526808585
+        }
+      ],
+      "elapsedMs": 82.61569999999995
+    },
+    {
+      "name": "Hamburg → Cuxhaven → Emden",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 123.58345556510542,
+      "connectors": [
+        {
+          "waypointId": "case-Hamburg",
+          "distanceNM": 39.795423973899275,
+          "access": {
+            "lon": 9.012500000000003,
+            "lat": 53.8625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Hamburg",
+          "toId": "case-Cuxhaven",
+          "distanceNM": 10.590597947730366
+        },
+        {
+          "fromId": "case-Cuxhaven",
+          "toId": "case-Emden",
+          "distanceNM": 112.99285761737505
+        }
+      ],
+      "elapsedMs": 26.545900000000074
+    },
+    {
+      "name": "Hamburg → Cuxhaven → Emden",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 123.58373410987666,
+      "connectors": [
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Hamburg",
+          "distanceNM": 39.795423973899275,
+          "access": {
+            "lon": 9.012500000000003,
+            "lat": 53.8625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Emden",
+          "toId": "case-Cuxhaven",
+          "distanceNM": 112.99366517917093
+        },
+        {
+          "fromId": "case-Cuxhaven",
+          "toId": "case-Hamburg",
+          "distanceNM": 10.590068930705728
+        }
+      ],
+      "elapsedMs": 24.84710000000007
+    },
+    {
+      "name": "Amsterdam → Emden",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 174.17214866501098,
+      "connectors": [
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Amsterdam",
+          "toId": "case-Emden",
+          "distanceNM": 174.17214866501098
+        }
+      ],
+      "elapsedMs": 20.8762999999999
+    },
+    {
+      "name": "Amsterdam → Emden",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 175.9987526808585,
+      "connectors": [
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Emden",
+          "toId": "case-Amsterdam",
+          "distanceNM": 175.9987526808585
+        }
+      ],
+      "elapsedMs": 15.430899999999951
+    },
+    {
+      "name": "Amsterdam → London",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 174.59059324623763,
+      "connectors": [
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Amsterdam",
+          "toId": "case-London",
+          "distanceNM": 174.59059324623763
+        }
+      ],
+      "elapsedMs": 24.10940000000005
+    },
+    {
+      "name": "Amsterdam → London",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 174.59264544900097,
+      "connectors": [
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Amsterdam",
+          "distanceNM": 13.451317380357791,
+          "access": {
+            "lon": 4.537500000000001,
+            "lat": 52.4375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-London",
+          "toId": "case-Amsterdam",
+          "distanceNM": 174.59264544900097
+        }
+      ],
+      "elapsedMs": 20.875799999999913
+    },
+    {
+      "name": "London → Hastings",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 124.15754192829728,
+      "connectors": [
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-London",
+          "toId": "case-Hastings",
+          "distanceNM": 124.15754192829728
+        }
+      ],
+      "elapsedMs": 15.546199999999999
+    },
+    {
+      "name": "London → Hastings",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 124.15651627099919,
+      "connectors": [
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-London",
+          "distanceNM": 28.52123066820517,
+          "access": {
+            "lon": 0.6375000000000028,
+            "lat": 51.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Hastings",
+          "toId": "case-London",
+          "distanceNM": 124.15651627099919
+        }
+      ],
+      "elapsedMs": 16.250600000000077
+    },
+    {
+      "name": "Hastings → Brest",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 314.21979956521335,
+      "connectors": [
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Brest",
+          "distanceNM": 6.814278764127683,
+          "access": {
+            "lon": -4.637499999999999,
+            "lat": 48.3375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Hastings",
+          "toId": "case-Brest",
+          "distanceNM": 314.21979956521335
+        }
+      ],
+      "elapsedMs": 52.49520000000007
+    },
+    {
+      "name": "Hastings → Brest",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 314.2197995652134,
+      "connectors": [
+        {
+          "waypointId": "case-Brest",
+          "distanceNM": 6.814278764127683,
+          "access": {
+            "lon": -4.637499999999999,
+            "lat": 48.3375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Hastings",
+          "distanceNM": 1.1271039387371729,
+          "access": {
+            "lon": 0.5875000000000021,
+            "lat": 50.8375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Brest",
+          "toId": "case-Hastings",
+          "distanceNM": 314.2197995652134
+        }
+      ],
+      "elapsedMs": 28.81219999999996
+    },
+    {
+      "name": "Brest → Bordeaux",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 287.6361425094115,
+      "connectors": [
+        {
+          "waypointId": "case-Brest",
+          "distanceNM": 6.814278764127683,
+          "access": {
+            "lon": -4.637499999999999,
+            "lat": 48.3375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Bordeaux",
+          "distanceNM": 27.608910263570714,
+          "access": {
+            "lon": -0.7374999999999972,
+            "lat": 45.2875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Brest",
+          "toId": "case-Bordeaux",
+          "distanceNM": 287.6361425094115
+        }
+      ],
+      "elapsedMs": 35.76420000000007
+    },
+    {
+      "name": "Brest → Bordeaux",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 287.636609646153,
+      "connectors": [
+        {
+          "waypointId": "case-Bordeaux",
+          "distanceNM": 27.608910263570714,
+          "access": {
+            "lon": -0.7374999999999972,
+            "lat": 45.2875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Brest",
+          "distanceNM": 6.814278764127683,
+          "access": {
+            "lon": -4.637499999999999,
+            "lat": 48.3375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Bordeaux",
+          "toId": "case-Brest",
+          "distanceNM": 287.636609646153
+        }
+      ],
+      "elapsedMs": 22.449799999999982
+    },
+    {
+      "name": "A Coruña → Lisbon",
+      "direction": "forward",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 1.054899999999975
+    },
+    {
+      "name": "A Coruña → Lisbon",
+      "direction": "reverse",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 1.2585000000000264
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → Cádiz",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 1045.0989740384946,
+      "connectors": [
+        {
+          "waypointId": "case-Ponta Delgada",
+          "distanceNM": 11.41370714791301,
+          "access": {
+            "lon": -25.649999999999977,
+            "lat": 37.55000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Lisbon",
+          "distanceNM": 21.512233274442735,
+          "access": {
+            "lon": -9.549999999999983,
+            "lat": 38.55000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Cádiz",
+          "distanceNM": 13.152240149094906,
+          "access": {
+            "lon": -6.449999999999989,
+            "lat": 36.35000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Ponta Delgada",
+          "toId": "case-Lisbon",
+          "distanceNM": 791.8136554502665
+        },
+        {
+          "fromId": "case-Lisbon",
+          "toId": "case-Cádiz",
+          "distanceNM": 253.2853185882281
+        }
+      ],
+      "elapsedMs": 70.16730000000007
+    },
+    {
+      "name": "Ponta Delgada → Lisbon → Cádiz",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 1045.098974038494,
+      "connectors": [
+        {
+          "waypointId": "case-Cádiz",
+          "distanceNM": 13.152240149094906,
+          "access": {
+            "lon": -6.449999999999989,
+            "lat": 36.35000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Lisbon",
+          "distanceNM": 21.512233274442735,
+          "access": {
+            "lon": -9.549999999999983,
+            "lat": 38.55000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Ponta Delgada",
+          "distanceNM": 11.41370714791301,
+          "access": {
+            "lon": -25.649999999999977,
+            "lat": 37.55000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Cádiz",
+          "toId": "case-Lisbon",
+          "distanceNM": 253.28531858822842
+        },
+        {
+          "fromId": "case-Lisbon",
+          "toId": "case-Ponta Delgada",
+          "distanceNM": 791.8136554502654
+        }
+      ],
+      "elapsedMs": 51.42360000000008
+    },
+    {
+      "name": "Barcelona → Ibiza",
+      "direction": "forward",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 0.6837000000000444
+    },
+    {
+      "name": "Barcelona → Ibiza",
+      "direction": "reverse",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 0.656400000000076
+    },
+    {
+      "name": "Ibiza → Gibraltar",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 419.9132453390841,
+      "connectors": [
+        {
+          "waypointId": "case-Ibiza",
+          "distanceNM": 15.233499657813883,
+          "access": {
+            "lon": 1.75,
+            "lat": 38.849999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Gibraltar",
+          "distanceNM": 14.672859736455754,
+          "access": {
+            "lon": -5.049999999999983,
+            "lat": 36.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Ibiza",
+          "toId": "case-Gibraltar",
+          "distanceNM": 419.9132453390841
+        }
+      ],
+      "elapsedMs": 23.126500000000078
+    },
+    {
+      "name": "Ibiza → Gibraltar",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 419.913245339084,
+      "connectors": [
+        {
+          "waypointId": "case-Gibraltar",
+          "distanceNM": 14.672859736455754,
+          "access": {
+            "lon": -5.049999999999983,
+            "lat": 36.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Ibiza",
+          "distanceNM": 15.233499657813883,
+          "access": {
+            "lon": 1.75,
+            "lat": 38.849999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Gibraltar",
+          "toId": "case-Ibiza",
+          "distanceNM": 419.913245339084
+        }
+      ],
+      "elapsedMs": 23.78390000000013
+    },
+    {
+      "name": "Gibraltar → Algiers",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 421.28608651224494,
+      "connectors": [
+        {
+          "waypointId": "case-Gibraltar",
+          "distanceNM": 14.672859736455754,
+          "access": {
+            "lon": -5.049999999999983,
+            "lat": 36.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Algiers",
+          "distanceNM": 19.16249480704613,
+          "access": {
+            "lon": 3.0500000000000114,
+            "lat": 37.05000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Gibraltar",
+          "toId": "case-Algiers",
+          "distanceNM": 421.28608651224494
+        }
+      ],
+      "elapsedMs": 23.201299999999947
+    },
+    {
+      "name": "Gibraltar → Algiers",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 421.28608651224425,
+      "connectors": [
+        {
+          "waypointId": "case-Algiers",
+          "distanceNM": 19.16249480704613,
+          "access": {
+            "lon": 3.0500000000000114,
+            "lat": 37.05000000000001,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Gibraltar",
+          "distanceNM": 14.672859736455754,
+          "access": {
+            "lon": -5.049999999999983,
+            "lat": 36.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Algiers",
+          "toId": "case-Gibraltar",
+          "distanceNM": 421.28608651224425
+        }
+      ],
+      "elapsedMs": 22.14650000000006
+    },
+    {
+      "name": "Gibraltar → Algiers → Marseille",
+      "direction": "forward",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 12.247700000000123
+    },
+    {
+      "name": "Gibraltar → Algiers → Marseille",
+      "direction": "reverse",
+      "returned": false,
+      "error": "A water-access point lies in a blocked coastal grid cell. Choose offshore water access; narrow harbours, rivers and canals are not resolved.",
+      "elapsedMs": 0.8478999999999814
+    },
+    {
+      "name": "Marseille → Barcelona",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 198.30739255476976,
+      "connectors": [
+        {
+          "waypointId": "case-Marseille",
+          "distanceNM": 1.5364998657672257,
+          "access": {
+            "lon": 5.337500000000002,
+            "lat": 43.2875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Barcelona",
+          "distanceNM": 3.537353487308212,
+          "access": {
+            "lon": 2.2375000000000007,
+            "lat": 41.3875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Marseille",
+          "toId": "case-Barcelona",
+          "distanceNM": 198.30739255476976
+        }
+      ],
+      "elapsedMs": 20.537900000000036
+    },
+    {
+      "name": "Marseille → Barcelona",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 198.30380668788482,
+      "connectors": [
+        {
+          "waypointId": "case-Barcelona",
+          "distanceNM": 3.537353487308212,
+          "access": {
+            "lon": 2.2375000000000007,
+            "lat": 41.3875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Marseille",
+          "distanceNM": 1.5364998657672257,
+          "access": {
+            "lon": 5.337500000000002,
+            "lat": 43.2875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Barcelona",
+          "toId": "case-Marseille",
+          "distanceNM": 198.30380668788482
+        }
+      ],
+      "elapsedMs": 17.55540000000019
+    },
+    {
+      "name": "Hamburg → Cuxhaven",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 10.590597947730366,
+      "connectors": [
+        {
+          "waypointId": "case-Hamburg",
+          "distanceNM": 39.795423973899275,
+          "access": {
+            "lon": 9.012500000000003,
+            "lat": 53.8625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Hamburg",
+          "toId": "case-Cuxhaven",
+          "distanceNM": 10.590597947730366
+        }
+      ],
+      "elapsedMs": 11.5467000000001
+    },
+    {
+      "name": "Hamburg → Cuxhaven",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 10.590068930705728,
+      "connectors": [
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Hamburg",
+          "distanceNM": 39.795423973899275,
+          "access": {
+            "lon": 9.012500000000003,
+            "lat": 53.8625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Cuxhaven",
+          "toId": "case-Hamburg",
+          "distanceNM": 10.590068930705728
+        }
+      ],
+      "elapsedMs": 10.286100000000033
+    },
+    {
+      "name": "Cuxhaven → Emden",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 112.99285761737505,
+      "connectors": [
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Cuxhaven",
+          "toId": "case-Emden",
+          "distanceNM": 112.99285761737505
+        }
+      ],
+      "elapsedMs": 17.40650000000005
+    },
+    {
+      "name": "Cuxhaven → Emden",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 112.99366517917093,
+      "connectors": [
+        {
+          "waypointId": "case-Emden",
+          "distanceNM": 7.023808921127223,
+          "access": {
+            "lon": 7.012500000000003,
+            "lat": 53.3625,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Cuxhaven",
+          "distanceNM": 1.7851179990665977,
+          "access": {
+            "lon": 8.7375,
+            "lat": 53.8875,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Emden",
+          "toId": "case-Cuxhaven",
+          "distanceNM": 112.99366517917093
+        }
+      ],
+      "elapsedMs": 13.110699999999952
+    },
+    {
+      "name": "Santarém → Macapá",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Macapá",
+          "distanceNM": 79.21687003905204,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Santarém",
+          "toId": "case-Macapá",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 178.08140000000003
+    },
+    {
+      "name": "Santarém → Macapá",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Macapá",
+          "distanceNM": 79.21687003905204,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Macapá",
+          "toId": "case-Santarém",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 175.78190000000018
+    },
+    {
+      "name": "Macapá → Belém → Breves",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 247.44161594817373,
+      "connectors": [
+        {
+          "waypointId": "case-Macapá",
+          "distanceNM": 79.21687003905204,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Belém",
+          "distanceNM": 64.02933670594126,
+          "access": {
+            "lon": -48.150000000000006,
+            "lat": -0.44999999999998863,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Breves",
+          "distanceNM": 131.12690557433942,
+          "access": {
+            "lon": -49.150000000000006,
+            "lat": 0.05000000000001137,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Macapá",
+          "toId": "case-Belém",
+          "distanceNM": 150.95032641636632
+        },
+        {
+          "fromId": "case-Belém",
+          "toId": "case-Breves",
+          "distanceNM": 96.49128953180741
+        }
+      ],
+      "elapsedMs": 43.500999999999976
+    },
+    {
+      "name": "Macapá → Belém → Breves",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 247.44161594817373,
+      "connectors": [
+        {
+          "waypointId": "case-Breves",
+          "distanceNM": 131.12690557433942,
+          "access": {
+            "lon": -49.150000000000006,
+            "lat": 0.05000000000001137,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Belém",
+          "distanceNM": 64.02933670594126,
+          "access": {
+            "lon": -48.150000000000006,
+            "lat": -0.44999999999998863,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Macapá",
+          "distanceNM": 79.21687003905204,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Breves",
+          "toId": "case-Belém",
+          "distanceNM": 96.49128953180741
+        },
+        {
+          "fromId": "case-Belém",
+          "toId": "case-Macapá",
+          "distanceNM": 150.95032641636632
+        }
+      ],
+      "elapsedMs": 43.60460000000012
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 786.4418614294465,
+      "connectors": [
+        {
+          "waypointId": "case-Atlantic",
+          "distanceNM": 4.244181792333597,
+          "access": {
+            "lon": -48.04999999999998,
+            "lat": 2.0500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Amazon estuary",
+          "distanceNM": 4.245418124669822,
+          "access": {
+            "lon": -49.54999999999998,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Manaus",
+          "distanceNM": 589.1720399430517,
+          "access": {
+            "lon": -56.75,
+            "lat": 6.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Atlantic",
+          "toId": "case-Amazon estuary",
+          "distanceNM": 127.34701140904956
+        },
+        {
+          "fromId": "case-Amazon estuary",
+          "toId": "case-Manaus",
+          "distanceNM": 659.094850020397
+        }
+      ],
+      "elapsedMs": 224.51890000000003
+    },
+    {
+      "name": "Atlantic → Amazon estuary → Manaus",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 786.4418614294467,
+      "connectors": [
+        {
+          "waypointId": "case-Manaus",
+          "distanceNM": 589.1720399430517,
+          "access": {
+            "lon": -56.75,
+            "lat": 6.150000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Amazon estuary",
+          "distanceNM": 4.245418124669822,
+          "access": {
+            "lon": -49.54999999999998,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Atlantic",
+          "distanceNM": 4.244181792333597,
+          "access": {
+            "lon": -48.04999999999998,
+            "lat": 2.0500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Manaus",
+          "toId": "case-Amazon estuary",
+          "distanceNM": 659.0948500203972
+        },
+        {
+          "fromId": "case-Amazon estuary",
+          "toId": "case-Atlantic",
+          "distanceNM": 127.34701140904954
+        }
+      ],
+      "elapsedMs": 222.81039999999985
+    },
+    {
+      "name": "Santarém → Itaituba",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Itaituba",
+          "distanceNM": 468.35627834612956,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Santarém",
+          "toId": "case-Itaituba",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 373.6071000000002
+    },
+    {
+      "name": "Santarém → Itaituba",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Itaituba",
+          "distanceNM": 468.35627834612956,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Itaituba",
+          "toId": "case-Santarém",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 377.0065999999997
+    },
+    {
+      "name": "Santarém → Alter do Chão",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Alter do Chão",
+          "distanceNM": 356.9575554408698,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Santarém",
+          "toId": "case-Alter do Chão",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 378.6459
+    },
+    {
+      "name": "Santarém → Alter do Chão",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Alter do Chão",
+          "distanceNM": 356.9575554408698,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Santarém",
+          "distanceNM": 342.546736787647,
+          "access": {
+            "lon": -49.849999999999994,
+            "lat": 0.5500000000000114,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Alter do Chão",
+          "toId": "case-Santarém",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 377.7545
+    },
+    {
+      "name": "Kingston Mills → Toronto",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Kingston Mills",
+          "distanceNM": 264.9540543593581,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Toronto",
+          "distanceNM": 322.4767397662726,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Kingston Mills",
+          "toId": "case-Toronto",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 387.54280000000017
+    },
+    {
+      "name": "Kingston Mills → Toronto",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 0,
+      "connectors": [
+        {
+          "waypointId": "case-Toronto",
+          "distanceNM": 322.4767397662726,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Kingston Mills",
+          "distanceNM": 264.9540543593581,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Toronto",
+          "toId": "case-Kingston Mills",
+          "distanceNM": 0
+        }
+      ],
+      "elapsedMs": 386.75459999999975
+    },
+    {
+      "name": "Toronto → Montréal",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 361.9147320818661,
+      "connectors": [
+        {
+          "waypointId": "case-Toronto",
+          "distanceNM": 322.4767397662726,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Montréal",
+          "distanceNM": 196.2498421898133,
+          "access": {
+            "lon": -70.14999999999999,
+            "lat": 43.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Toronto",
+          "toId": "case-Montréal",
+          "distanceNM": 361.9147320818661
+        }
+      ],
+      "elapsedMs": 413.0506000000005
+    },
+    {
+      "name": "Toronto → Montréal",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 361.89364655635495,
+      "connectors": [
+        {
+          "waypointId": "case-Montréal",
+          "distanceNM": 196.2498421898133,
+          "access": {
+            "lon": -70.14999999999999,
+            "lat": 43.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Toronto",
+          "distanceNM": 322.4767397662726,
+          "access": {
+            "lon": -73.75,
+            "lat": 40.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Montréal",
+          "toId": "case-Toronto",
+          "distanceNM": 361.89364655635495
+        }
+      ],
+      "elapsedMs": 405.3931999999995
+    },
+    {
+      "name": "Montréal → Québec City",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 1132.315383921617,
+      "connectors": [
+        {
+          "waypointId": "case-Montréal",
+          "distanceNM": 196.2498421898133,
+          "access": {
+            "lon": -70.14999999999999,
+            "lat": 43.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Québec City",
+          "distanceNM": 148.57794580611545,
+          "access": {
+            "lon": -68.75,
+            "lat": 48.650000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Montréal",
+          "toId": "case-Québec City",
+          "distanceNM": 1132.315383921617
+        }
+      ],
+      "elapsedMs": 250.93309999999929
+    },
+    {
+      "name": "Montréal → Québec City",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 1132.307439393904,
+      "connectors": [
+        {
+          "waypointId": "case-Québec City",
+          "distanceNM": 148.57794580611545,
+          "access": {
+            "lon": -68.75,
+            "lat": 48.650000000000006,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Montréal",
+          "distanceNM": 196.2498421898133,
+          "access": {
+            "lon": -70.14999999999999,
+            "lat": 43.349999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Québec City",
+          "toId": "case-Montréal",
+          "distanceNM": 1132.307439393904
+        }
+      ],
+      "elapsedMs": 235.35289999999986
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 379.44123264651455,
+      "connectors": [
+        {
+          "waypointId": "case-Odesa",
+          "distanceNM": 2.4172027654713477,
+          "access": {
+            "lon": 30.7875,
+            "lat": 46.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Sevastopol",
+          "distanceNM": 2.288887966525382,
+          "access": {
+            "lon": 33.487500000000004,
+            "lat": 44.6375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Rostov-on-Don",
+          "distanceNM": 182.89482774972032,
+          "access": {
+            "lon": 36.95000000000002,
+            "lat": 44.849999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Odesa",
+          "toId": "case-Sevastopol",
+          "distanceNM": 172.12561502399925
+        },
+        {
+          "fromId": "case-Sevastopol",
+          "toId": "case-Rostov-on-Don",
+          "distanceNM": 207.31561762251528
+        }
+      ],
+      "elapsedMs": 237.8766000000005
+    },
+    {
+      "name": "Odesa → Sevastopol → Rostov-on-Don",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 379.4412326465146,
+      "connectors": [
+        {
+          "waypointId": "case-Rostov-on-Don",
+          "distanceNM": 182.89482774972032,
+          "access": {
+            "lon": 36.95000000000002,
+            "lat": 44.849999999999994,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Sevastopol",
+          "distanceNM": 2.288887966525382,
+          "access": {
+            "lon": 33.487500000000004,
+            "lat": 44.6375,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        },
+        {
+          "waypointId": "case-Odesa",
+          "distanceNM": 2.4172027654713477,
+          "access": {
+            "lon": 30.7875,
+            "lat": 46.5125,
+            "name": "Unverified offshore candidate",
+            "source": "Natural Earth 1:10 million land mask; NOT a harbour or vessel-suitability assessment",
+            "depth": null,
+            "airClearance": null,
+            "maxLOA": null,
+            "maxBeam": null
+          }
+        }
+      ],
+      "legs": [
+        {
+          "fromId": "case-Rostov-on-Don",
+          "toId": "case-Sevastopol",
+          "distanceNM": 207.31561762251542
+        },
+        {
+          "fromId": "case-Sevastopol",
+          "toId": "case-Odesa",
+          "distanceNM": 172.1256150239992
+        }
+      ],
+      "elapsedMs": 284.9412000000002
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land)",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 942.8365797781412,
+      "connectors": [],
+      "legs": [
+        {
+          "fromId": "case-Odesa",
+          "toId": "case-Istanbul",
+          "distanceNM": 337.59849861978324
+        },
+        {
+          "fromId": "case-Istanbul",
+          "toId": "case-Tel Aviv",
+          "distanceNM": 605.238081158358
+        }
+      ],
+      "elapsedMs": 0.09789999999975407
+    },
+    {
+      "name": "Odesa → Istanbul → Tel Aviv (land)",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 942.8365797781412,
+      "connectors": [],
+      "legs": [
+        {
+          "fromId": "case-Tel Aviv",
+          "toId": "case-Istanbul",
+          "distanceNM": 605.238081158358
+        },
+        {
+          "fromId": "case-Istanbul",
+          "toId": "case-Odesa",
+          "distanceNM": 337.59849861978324
+        }
+      ],
+      "elapsedMs": 0.027000000000043656
+    },
+    {
+      "name": "Lisbon → Ponta Delgada (air)",
+      "direction": "forward",
+      "returned": true,
+      "totalNM": 780.252992301995,
+      "connectors": [],
+      "legs": [
+        {
+          "fromId": "case-Lisbon",
+          "toId": "case-Ponta Delgada",
+          "distanceNM": 780.252992301995
+        }
+      ],
+      "elapsedMs": 0.017600000000129512
+    },
+    {
+      "name": "Lisbon → Ponta Delgada (air)",
+      "direction": "reverse",
+      "returned": true,
+      "totalNM": 780.252992301995,
+      "connectors": [],
+      "legs": [
+        {
+          "fromId": "case-Ponta Delgada",
+          "toId": "case-Lisbon",
+          "distanceNM": 780.252992301995
+        }
+      ],
+      "elapsedMs": 0.01419999999961874
+    }
+  ]
+}

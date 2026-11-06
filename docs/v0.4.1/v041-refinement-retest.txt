@@ -1,0 +1,15 @@
+✔ Gironde coarse raster course refines to actual source bends with identical attachments (10014.6279ms)
+✔ source detours do not silently replace the supported original passage (90.0867ms)
+✔ valid coarse snapshots are retained exactly while departure edits recalculate timing (127.0553ms)
+✔ additive refinement dataset matches its manifest and source acquisition digests (729.7443ms)
+✔ explicit mapped refinement resolves Bordeaux in both directions and retains original unresolved evidence (664.0282ms)
+✔ refinement preserves successful legs, gaps, constraints and nominal accounting (21006.963ms)
+✔ detailed acceptance rejects fabricated source edges and continental shortcuts (199.7991ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 33193.109

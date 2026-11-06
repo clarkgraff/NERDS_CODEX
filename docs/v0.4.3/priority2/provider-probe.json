@@ -1,0 +1,7 @@
+{
+  "source": "https://overpass-api.de/api/interpreter",
+  "status": 406,
+  "ms": 630.0208,
+  "bytes": 156,
+  "body": "<html>\r\n<head><title>406 Not Acceptable</title></head>\r\n<body>\r\n<center><h1>406 Not Acceptable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}

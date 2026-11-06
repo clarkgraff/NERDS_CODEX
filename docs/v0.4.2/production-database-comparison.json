@@ -1,0 +1,66 @@
+{
+  "baseline": {
+    "settings": {
+      "rows": 3,
+      "sha256": "8205a94ef4cc60c95efb6c381cbf93a5bff390d985fdca503b11a94f2c3a4a8e"
+    },
+    "media": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "research": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "acquisitions": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "current": {
+    "settings": {
+      "rows": 4,
+      "sha256": "0f706a64281f4bf70968f9e014fd7dd49dad188c9b0fbc96bf66bdfa3b2b3ed1"
+    },
+    "media": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "research": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "acquisitions": {
+      "rows": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "discovery_features": {
+      "rows": 1,
+      "sha256": "82fde06367d91b24d7b38ff2786df6658bdfd7a198805f1d030017e19747ae16"
+    },
+    "discovery_names": {
+      "rows": 1,
+      "sha256": "dfbe4ac319d62cb07c26bf129e170791db7704be6cd77eefc877825952863ee0"
+    },
+    "discovery_names_data": {
+      "rows": 3,
+      "sha256": "1b2a969771e164f4b3b222a44de09ca76d63d850bc979883890ba0af8ac7aa7a"
+    },
+    "discovery_names_idx": {
+      "rows": 1,
+      "sha256": "5bf2949e78a8412d20716d085c6edc641e12395a4a6990600d38f088b15d1288"
+    },
+    "discovery_names_content": {
+      "rows": 1,
+      "sha256": "c88ede1161eebf5a1e01b86509483a9979f0a3314b597362d3dd35b8b925fb95"
+    },
+    "discovery_names_docsize": {
+      "rows": 1,
+      "sha256": "696052de48089b64599b167b70478dd7d734983b67590f3cc79141e437c69cd8"
+    },
+    "discovery_names_config": {
+      "rows": 1,
+      "sha256": "65642436c0afc30f002b4ffc2bb040fbe3482e13da6fc0b90500c31f80144192"
+    }
+  }
+}

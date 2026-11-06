@@ -1,0 +1,30 @@
+[
+  {
+    "file": "ne_10m_lakes.geojson",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson",
+    "license": "Natural Earth public domain",
+    "scale": "1:10 million",
+    "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9"
+  },
+  {
+    "file": "ne_10m_rivers_lake_centerlines.geojson",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+    "license": "Natural Earth public domain",
+    "scale": "1:10 million",
+    "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a"
+  },
+  {
+    "file": "ne_10m_admin_1_states_provinces_lines.geojson",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces_lines.geojson",
+    "license": "Natural Earth public domain",
+    "scale": "1:10 million",
+    "sha256": "1a1f30ccaaf4cc9c4bde34266f0b8cbb955d3a4cf254b756912255f2ec7c75b6"
+  },
+  {
+    "file": "ne_10m_populated_places.geojson",
+    "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places.geojson",
+    "license": "Natural Earth public domain",
+    "scale": "1:10 million",
+    "sha256": "9b8e3de09048ef00dfc70357dbb9fa324493f214b5e0ae4daf1aa79a8d10116b"
+  }
+]

@@ -10,4 +10,10 @@ async function online(query,fetcher=fetch,endpoint='https://nominatim.openstreet
  const raw=await response.json();if(!Array.isArray(raw))throw Error('Invalid geocoder response.');
  const rows=raw.map(p=>({name:p.name||p.display_name.split(',')[0],lat:Number(p.lat),lon:Number(p.lon),country:p.address?.country||'',region:p.address?.state||p.address?.county||'',source:'https://www.openstreetmap.org/'+p.osm_type+'/'+p.osm_id,sourceId:'osm:'+p.osm_type+':'+p.osm_id,resolutionMethod:'online-nominatim',locationLabel:p.type==='townhall'?'Municipal building (OpenStreetMap)':'Documented place centre / feature (OpenStreetMap)',aliases:Object.values(p.namedetails||{}),coordinatePrecision:'OSM source coordinates; accuracy not certified',zone:'UTC'})).filter(p=>Number.isFinite(p.lat)&&Math.abs(p.lat)<=90&&Number.isFinite(p.lon)&&Math.abs(p.lon)<=180).sort((a,b)=>a.name.localeCompare(b.name)||a.country.localeCompare(b.country));onlineCache.set(q,rows);return rows;
 }
-module.exports={lookup,online};
+function combinedLookup(query){
+ const expanded=require('./world-discovery.cjs').lookup(query);
+ const seen=new Set(expanded.map(p=>p.sourceId));
+ return [...expanded,...lookup(query).filter(p=>!seen.has(p.sourceId))]
+  .sort((a,b)=>a.name.localeCompare(b.name)||a.country.localeCompare(b.country));
+}
+module.exports={lookup:combinedLookup,lookupSeed:lookup,online};

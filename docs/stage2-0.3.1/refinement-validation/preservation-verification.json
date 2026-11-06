@@ -1,0 +1,54 @@
+[
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\dist\\NERDS-0.3.0-x64.msi",
+    "baselineSHA256": "2B190FB955A43FDFD2F010AE5844B29D17025E148E408FC28574901B8E3524DE",
+    "currentSHA256": "2B190FB955A43FDFD2F010AE5844B29D17025E148E408FC28574901B8E3524DE",
+    "unchanged": true,
+    "verifiedAt": "2026-10-17T20:49:53.366681+00:00"
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\land-mask.bin",
+    "baselineSHA256": "BFE9040AB0F2C0E3B19531BA75D54934E07A35CFE96C5F8DF20D04CFCFEC945E",
+    "currentSHA256": "BFE9040AB0F2C0E3B19531BA75D54934E07A35CFE96C5F8DF20D04CFCFEC945E",
+    "unchanged": true,
+    "verifiedAt": "2026-10-17T20:49:53.370683+00:00"
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\europe-mask.bin",
+    "baselineSHA256": "02283FDC4409BA6C5320FC5B1C6C9AA987C9DE567ED56F8091CE9EA32ABAB228",
+    "currentSHA256": "02283FDC4409BA6C5320FC5B1C6C9AA987C9DE567ED56F8091CE9EA32ABAB228",
+    "unchanged": true,
+    "verifiedAt": "2026-10-17T20:49:53.372686+00:00"
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\geonames.sqlite",
+    "baselineSHA256": "377D38E6046D6645B2AA99401FA5BE38F8CF5C9F834D98CA2AEA4FE0B4A4D443",
+    "currentSHA256": "377D38E6046D6645B2AA99401FA5BE38F8CF5C9F834D98CA2AEA4FE0B4A4D443",
+    "unchanged": true,
+    "verifiedAt": "2026-10-17T20:49:53.442343+00:00"
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\waterways\\osm.json.gz",
+    "baselineSHA256": "96398d4b4e66d73ff7a51a6ef114fb0852f4110b82b76949551b015479989821",
+    "currentSHA256": "96398d4b4e66d73ff7a51a6ef114fb0852f4110b82b76949551b015479989821",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\waterways\\rivers.json.gz",
+    "baselineSHA256": "318726cd05ad4af0ca288537acd576530cc58b4340fd11132687c6ff93e2efef",
+    "currentSHA256": "318726cd05ad4af0ca288537acd576530cc58b4340fd11132687c6ff93e2efef",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\waterways\\osm-manifest.json",
+    "baselineSHA256": "ec16977dabf87477378d58c4e41f56f83a8cc6a3aa7e1676f49dc25d583ac523",
+    "currentSHA256": "ec16977dabf87477378d58c4e41f56f83a8cc6a3aa7e1676f49dc25d583ac523",
+    "unchanged": true
+  },
+  {
+    "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\assets\\discovery\\manifest.json",
+    "baselineSHA256": "b5968b5e8eb6f54f4d990514cb54792cb627efe6fa02511f9bb08576876aae5b",
+    "currentSHA256": "b5968b5e8eb6f54f4d990514cb54792cb627efe6fa02511f9bb08576876aae5b",
+    "unchanged": true
+  }
+]

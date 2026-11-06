@@ -1,0 +1,13 @@
+{
+  "pass": [
+    "Packaged version 0.4.0",
+    "New installation zero waypoints",
+    "3840x2160 window",
+    "Offline cartography and place labels loaded",
+    "Place a Map Pin creates waypoint",
+    "Right-click coordinate discovery",
+    "Lightweight hover identification"
+  ],
+  "errors": [],
+  "dataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds-ui040-NHKvb8"
+}

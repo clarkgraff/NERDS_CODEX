@@ -1,3 +1,7 @@
+# Current development test: NERDS v0.4.2
+
+See [v0.4.2 release notes](RELEASE-NOTES-0.4.2.md) and [installed upgrade validation](docs/v0.4.2/REVIEW.md). The production v0.3.0 documentation below is retained as historical context.
+
 # NERDS v0.3.0
 
 Navigation & Expedition Research Discovery Surveyor — © 2026 4nR TeK Inc. Created by Clark Graff.
@@ -55,3 +59,15 @@ The sea graph uses Natural Earth land screening at 0.025° in Europe (-20° to 4
 Chart-constrained navigation, authoritative bathymetry/clearance, canals/locks, fuel optimisation, calibrated sailing polars and numerical forecast routing remain staged. BEST-TIME/BEST-EFFICIENCY/BEST-SAILING are saved objectives; their numerical optimisation is not delivered. Land routes are not road-network routes. Environmental rendering currently displays imported points; Earth-style particle fields, forecast-grid interpolation and automated environmental acquisition remain deferred. No bulk NOAA chart download is performed.
 
 The installed application stores data in the per-user NERDS data folder shown in Settings. Existing data is retained. Close NERDS before copying its database directory for backup. Do not commit local databases, research archives, production media, model weights, credentials or installers to Git.
+
+Stage 2 local development update: the separate all-feature GeoNames index now covers 13,472,462 source records without population eligibility restrictions. It is generated locally at assets/discovery/world.sqlite (about 3.15 GB) and is not included in the source Git commit. See docs/stage2-0.3.1/WORLDWIDE-DISCOVERY-CHECKPOINT.md for reproduction, exact evidence, remaining failures and data preservation. Current verified routing is 113 PASS / 46 UNRESOLVED; this is not a v0.3.1 release or Stage 2 completion.
+
+## v0.4.0 development test
+See [release notes](docs/v0.4.0/RELEASE-NOTES.md) for the separate test installation, operational controls, packaged validation and known limitations.
+
+
+## v0.4.1 corrective development test
+See [corrective release notes](docs/v0.4.1/RELEASE-NOTES.md) for routing recovery, interactive controls, separate installation and remaining limitations. Installed verification: 7 UI checks and 5 maritime persistence checks passed; Node suite 79 passed.
+
+## v0.4.3 Development Test
+Installed test build with approved cached cartography, waypoint renumbering/reversal, global preferences and local location records. See [release verification and unfinished requirements](docs/v0.4.3/release/REVIEW.md). Worldwide endpoint corrections and geographic downloads remain deferred.

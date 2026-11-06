@@ -1,0 +1,1 @@
+{"counts":{"PASS":127,"FAIL":0,"UNRESOLVED":32,"DEFERRED":0},"total":159,"byPurpose":{"geographic":{"PASS":122,"FAIL":0,"UNRESOLVED":30,"DEFERRED":0},"preference comparison":{"PASS":4,"FAIL":0,"UNRESOLVED":0,"DEFERRED":0},"preservation":{"PASS":1,"FAIL":0,"UNRESOLVED":1,"DEFERRED":0},"fault isolation":{"PASS":0,"FAIL":0,"UNRESOLVED":1,"DEFERRED":0}}}

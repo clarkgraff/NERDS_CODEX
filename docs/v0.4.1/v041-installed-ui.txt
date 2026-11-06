@@ -1,0 +1,9 @@
+[
+  'Mission objective and lower dropdowns change persisted state at UHD',
+  'Independent panel resize with Cesium viewport resizing',
+  'Population range, unknown policy, exclusion and label toggle controls',
+  'Waypoint drag changes WGS84 and path revision, preserves IDs/order/history, invalidates route',
+  'BY-AIR preserves waypoint sequence; original coarse overlay changes no accounting',
+  'Saved project and restart preserve controls, widths, labels, path and route',
+  'Smaller desktop layout and divider double-click reset'
+]

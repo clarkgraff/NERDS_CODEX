@@ -1,0 +1,95 @@
+✔ water-area topology excludes holes, diagonal corner cuts and disconnected components (4.2071ms)
+✔ adopted masks, exclusions, exact geometry and available acquisitions match SHA-256 provenance (121.6572ms)
+✖ real Alter water area resolves both directions without replacing coarse evidence or waypoint IDs (7045.4491ms)
+✔ partial itinerary preserves resolved water-area leg and suppresses unsupported downstream ETA (291.4707ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 3
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7972.3238
+
+✖ failing tests:
+
+test at test\water-area.test.cjs:12:1
+✖ real Alter water area resolves both directions without replacing coarse evidence or waypoint IDs (7045.4491ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  ... Skipped lines
+  
+    {
+      alternatives: [
+        {
+          calculatedDistanceNM: null,
+          calculatedETA: null,
+  ...
+          effectiveSOG: null,
+  +       id: '6a7ec372-74d8-4184-9658-9601fa90d31a',
+  -       id: '7e80a0f1-af94-49d2-83cd-96899cbde57a',
+          legs: [
+            {
+              calculatedCumulativeNM: 0,
+              calculatedETA: null,
+              calculatedHours: null,
+  ...
+                effectiveSeparationNM: 0,
+  +             elapsedMs: 50.571699999999964,
+  -             elapsedMs: 3188.4390999999996,
+                grid: 'world-0.1',
+                gridExtent: {
+                  east: 180,
+                  north: 90,
+                  south: -90,
+  ...
+      ],
+  +   createdAt: '2026-10-18T19:48:25.903Z',
+  -   createdAt: '2026-10-18T19:48:25.852Z',
+      differenceHours: null,
+      effectivePreferences: {
+        bypass: true,
+        separationNM: 0
+      },
+  ...
+      },
+  +   id: '6a7ec372-74d8-4184-9658-9601fa90d31a',
+  -   id: '7e80a0f1-af94-49d2-83cd-96899cbde57a',
+      kind: 'water-outline',
+      legs: [
+        {
+          calculatedCumulativeNM: 0,
+          calculatedETA: null,
+  ...
+            effectiveSeparationNM: 0,
+  +         elapsedMs: 50.571699999999964,
+  -         elapsedMs: 3188.4390999999996,
+            grid: 'world-0.1',
+            gridExtent: {
+              east: 180,
+              north: 90,
+              south: -90,
+  ...
+      },
+  +   selectedId: '6a7ec372-74d8-4184-9658-9601fa90d31a',
+  -   selectedId: '7e80a0f1-af94-49d2-83cd-96899cbde57a',
+      standardETA: null,
+      standardHours: null,
+      status: 'UNRESOLVED ROUTE',
+      suitability: {
+        blocksRouting: false,
+  
+      at TestContext.<anonymous> (C:\Users\Clark\Documents\Codex\2026-10-13\ar\outputs\NERDS_CODEX\test\water-area.test.cjs:14:72)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: { id: '6a7ec372-74d8-4184-9658-9601fa90d31a', preference: 'BYPASS', legs: [ [Object] ], complete: false, unresolvedLegs: 1, calculatedDistanceNM: null, provisionalDistanceNM: null, totalEstimatedDistanceNM: null, calculatedStandardHours: null, calculatedOperatingHours: null, provisionalStandardHours: null, provisionalOperatingHours: null, totalNM: null, standardHours: null, calculatedHours: null, effectiveSOG: null, standardETA: null, calculatedETA: null, differenceHours: null, suitability: { mode: 'BYPASS', policy: 'ADVISORY_ONLY_BETA', blocksRouting: false }, engineVersion: '0.3.1-stage2-course-2', selectedId: '6a7ec372-74d8-4184-9658-9601fa90d31a', alternatives: [ [Object] ], requestedPreferences: { routePreference: 'OFFSHORE PREFERRED', coastalSeparationNM: 10, objective: 'BEST-TIME' }, effectivePreferences: { bypass: true, separationNM: 0 }, kind: 'water-outline', status: 'UNRESOLVED ROUTE', createdAt: '2026-10-18T19:48:25.903Z', connectors: [], provenance: 'Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.', warning: 'Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.', confidence: 'Coarse planning only; city/shore connectors unverified', constraints: [ [Object], [Object], [Object], [Object], [Object], [Object] ], validation: { landMask: 'screened at selected grid resolution', depth: 'unresolved', bridges: 'unresolved', restrictions: 'unresolved', forecast: 'nominal speeds only' }, geometryDefinition: { authoritative: 'legs[].points', segmentType: 'GEODESIC', coordinateDatum: 'WGS84', distanceModel: 'WGS84_ELLIPSOID', searchCostModel: 'Spherical estimate for economical graph search; authoritative distances are ellipsoidal', presentation: 'Derived renderer-only geometry; never used for calculation or export' } },
+    expected: { id: '7e80a0f1-af94-49d2-83cd-96899cbde57a', preference: 'BYPASS', legs: [ [Object] ], complete: false, unresolvedLegs: 1, calculatedDistanceNM: null, provisionalDistanceNM: null, totalEstimatedDistanceNM: null, calculatedStandardHours: null, calculatedOperatingHours: null, provisionalStandardHours: null, provisionalOperatingHours: null, totalNM: null, standardHours: null, calculatedHours: null, effectiveSOG: null, standardETA: null, calculatedETA: null, differenceHours: null, suitability: { mode: 'BYPASS', policy: 'ADVISORY_ONLY_BETA', blocksRouting: false }, engineVersion: '0.3.1-stage2-course-2', selectedId: '7e80a0f1-af94-49d2-83cd-96899cbde57a', alternatives: [ [Object] ], requestedPreferences: { routePreference: 'OFFSHORE PREFERRED', coastalSeparationNM: 10, objective: 'BEST-TIME' }, effectivePreferences: { bypass: true, separationNM: 0 }, kind: 'water-outline', status: 'UNRESOLVED ROUTE', createdAt: '2026-10-18T19:48:25.852Z', connectors: [], provenance: 'Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.', warning: 'Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.', confidence: 'Coarse planning only; city/shore connectors unverified', constraints: [ [Object], [Object], [Object], [Object], [Object], [Object] ], validation: { landMask: 'screened at selected grid resolution', depth: 'unresolved', bridges: 'unresolved', restrictions: 'unresolved', forecast: 'nominal speeds only' }, geometryDefinition: { authoritative: 'legs[].points', segmentType: 'GEODESIC', coordinateDatum: 'WGS84', distanceModel: 'WGS84_ELLIPSOID', searchCostModel: 'Spherical estimate for economical graph search; authoritative distances are ellipsoidal', presentation: 'Derived renderer-only geometry; never used for calculation or export' } },
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

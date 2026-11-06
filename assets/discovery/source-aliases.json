@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "purpose": "Supplemental documented names attached to existing source identities. These records do not replace source coordinates or define worldwide discovery coverage.",
+  "records": [
+    {
+      "sourceId": "geonames:6620764",
+      "aliases": ["ECAMP", "Estación Científica Antártica Machu Picchu", "Machu Picchu Antarctic Scientific Station"],
+      "source": "https://www.gob.pe/institucion/rree/informes-publicaciones/7826172-expedicion-cientifica-antar-xxx",
+      "authority": "Peru Ministry of Foreign Affairs",
+      "note": "Spanish name and acronym documented by the operator; English name is the application's translated search label."
+    },
+    {
+      "sourceId": "geonames:5404382",
+      "aliases": ["Two Harbors Catalina Island", "Two Harbors Santa Catalina Island"],
+      "source": "https://www.visitcatalinaisland.com/about-the-island/two-harbors",
+      "authority": "Catalina Island Company",
+      "note": "Qualified locality labels preserve distinction from Two Harbors, Minnesota."
+    }
+  ]
+}

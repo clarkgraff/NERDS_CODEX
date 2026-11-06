@@ -1,0 +1,1063 @@
+{
+  "fixtureSha256": "25722824d3692f9b3d764ff8d5d099bfc0d9a454a384f47aa5dcef3031772073",
+  "waypoints": 122,
+  "network": "fetch disabled in route workers",
+  "full": {
+    "ms": 12299.826000000001,
+    "cpu": {
+      "user": 15093000,
+      "system": 516000
+    },
+    "rss": 1903972352,
+    "calculated": 113,
+    "unresolved": 8,
+    "reused": 113,
+    "legs": [
+      {
+        "from": "8cd1fb21-db6b-4d8b-849a-5bd274cf62d1",
+        "to": "ab88a62a-f7a6-4fd4-a06a-f2c4acb1a86f",
+        "status": "CALCULATED",
+        "nm": 136.59090763023858,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ab88a62a-f7a6-4fd4-a06a-f2c4acb1a86f",
+        "to": "fb464886-079b-48dc-93ee-5973ca02a4e3",
+        "status": "CALCULATED",
+        "nm": 89.07725485752786,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "fb464886-079b-48dc-93ee-5973ca02a4e3",
+        "to": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "to": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "status": "CALCULATED",
+        "nm": 158.16674757305913,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "to": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "status": "CALCULATED",
+        "nm": 80.89586879652684,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "to": "d3d2d937-ae68-42f1-858a-437075d4f338",
+        "status": "CALCULATED",
+        "nm": 11.321038331818674,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "d3d2d937-ae68-42f1-858a-437075d4f338",
+        "to": "3b183ef4-b8bb-4532-87e0-d2b2b3482817",
+        "status": "CALCULATED",
+        "nm": 89.94313645281412,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3b183ef4-b8bb-4532-87e0-d2b2b3482817",
+        "to": "ff724879-4155-4d93-a945-2c4b2e7b5e3d",
+        "status": "CALCULATED",
+        "nm": 131.0483885722928,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ff724879-4155-4d93-a945-2c4b2e7b5e3d",
+        "to": "05941dc2-b851-457b-b57d-f99eb5c7630e",
+        "status": "CALCULATED",
+        "nm": 190.3522906278001,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "05941dc2-b851-457b-b57d-f99eb5c7630e",
+        "to": "b7238902-adbc-41f8-afc4-d1254d1fcbd3",
+        "status": "CALCULATED",
+        "nm": 96.82963744360957,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "b7238902-adbc-41f8-afc4-d1254d1fcbd3",
+        "to": "f45f729c-b2c7-44f0-accd-ade668ca1889",
+        "status": "CALCULATED",
+        "nm": 217.80650432179817,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "f45f729c-b2c7-44f0-accd-ade668ca1889",
+        "to": "1dc67a34-52c6-452c-9dd6-75d57f7358bf",
+        "status": "CALCULATED",
+        "nm": 191.93008529423307,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "1dc67a34-52c6-452c-9dd6-75d57f7358bf",
+        "to": "80aa234a-913f-4573-823f-5d888579fd1d",
+        "status": "CALCULATED",
+        "nm": 101.8189666310094,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "80aa234a-913f-4573-823f-5d888579fd1d",
+        "to": "e13c6168-4f67-447d-ac09-170ffbf0e82b",
+        "status": "CALCULATED",
+        "nm": 56.99575336657088,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "e13c6168-4f67-447d-ac09-170ffbf0e82b",
+        "to": "fe1b61e2-b43b-4525-ba9b-caddebb93602",
+        "status": "CALCULATED",
+        "nm": 71.90009244708753,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "fe1b61e2-b43b-4525-ba9b-caddebb93602",
+        "to": "753abae8-64b1-41e9-8d98-70d253e85ca8",
+        "status": "CALCULATED",
+        "nm": 310.2717573992721,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "753abae8-64b1-41e9-8d98-70d253e85ca8",
+        "to": "67b07711-b6be-4fc0-9373-214705e56e27",
+        "status": "CALCULATED",
+        "nm": 183.58703684483018,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "67b07711-b6be-4fc0-9373-214705e56e27",
+        "to": "11299803-a6cd-4879-8c10-0504b8442941",
+        "status": "CALCULATED",
+        "nm": 66.14082067878837,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "11299803-a6cd-4879-8c10-0504b8442941",
+        "to": "63d6079d-f0f7-4782-af97-bd8616b38be5",
+        "status": "CALCULATED",
+        "nm": 252.52370937520107,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "63d6079d-f0f7-4782-af97-bd8616b38be5",
+        "to": "a3b24518-bab7-45db-8e4a-4866e734fb7d",
+        "status": "CALCULATED",
+        "nm": 169.1005650413085,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a3b24518-bab7-45db-8e4a-4866e734fb7d",
+        "to": "a30202ad-b0be-4cd4-8904-4150c052da0b",
+        "status": "CALCULATED",
+        "nm": 68.77494999881972,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a30202ad-b0be-4cd4-8904-4150c052da0b",
+        "to": "e1f75edf-ce43-4df4-ab7c-1b23ce6a35ca",
+        "status": "CALCULATED",
+        "nm": 97.55982232586052,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "e1f75edf-ce43-4df4-ab7c-1b23ce6a35ca",
+        "to": "559f7f0f-daca-4aa1-99dd-6adef573e97d",
+        "status": "CALCULATED",
+        "nm": 93.88511894436711,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "559f7f0f-daca-4aa1-99dd-6adef573e97d",
+        "to": "987c60cc-73a5-4a5e-a9ce-b11f001f9e40",
+        "status": "CALCULATED",
+        "nm": 115.37217650487497,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "987c60cc-73a5-4a5e-a9ce-b11f001f9e40",
+        "to": "21eb431b-3dd8-4667-9d91-5448083c64c6",
+        "status": "CALCULATED",
+        "nm": 79.27899876030573,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "21eb431b-3dd8-4667-9d91-5448083c64c6",
+        "to": "9d676cc4-1d01-4d27-bbf8-28cb3a7f9db6",
+        "status": "CALCULATED",
+        "nm": 13.37461818892824,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "9d676cc4-1d01-4d27-bbf8-28cb3a7f9db6",
+        "to": "d6dce3fc-2ac7-4c2f-8abe-ad63b5016366",
+        "status": "CALCULATED",
+        "nm": 240.43901304577327,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "d6dce3fc-2ac7-4c2f-8abe-ad63b5016366",
+        "to": "9c4ecfcd-d4fd-4c7c-915e-0c17ec2e67a8",
+        "status": "CALCULATED",
+        "nm": 48.33174908540187,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "9c4ecfcd-d4fd-4c7c-915e-0c17ec2e67a8",
+        "to": "ef204dc9-ed60-4290-b965-692264fb6e77",
+        "status": "CALCULATED",
+        "nm": 2.8599465632137067,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ef204dc9-ed60-4290-b965-692264fb6e77",
+        "to": "7bb0e9e4-1b25-4e48-ae33-f7f10989588f",
+        "status": "CALCULATED",
+        "nm": 16.84974879461843,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "7bb0e9e4-1b25-4e48-ae33-f7f10989588f",
+        "to": "3e4bec49-a205-4090-9b09-e1b293365cca",
+        "status": "CALCULATED",
+        "nm": 34.26175888674671,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3e4bec49-a205-4090-9b09-e1b293365cca",
+        "to": "c3e70f66-aecb-4f93-8dcc-15570f3370ac",
+        "status": "CALCULATED",
+        "nm": 58.04908617169705,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "c3e70f66-aecb-4f93-8dcc-15570f3370ac",
+        "to": "a0eea26b-060e-4397-b3ac-23c4378befa6",
+        "status": "CALCULATED",
+        "nm": 40.598374190733956,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a0eea26b-060e-4397-b3ac-23c4378befa6",
+        "to": "0dd42769-5615-4edc-a308-dc3124eb8c49",
+        "status": "CALCULATED",
+        "nm": 38.53601463925844,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "0dd42769-5615-4edc-a308-dc3124eb8c49",
+        "to": "c751e7e4-0bb3-4573-9de4-79188b4934a0",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "c751e7e4-0bb3-4573-9de4-79188b4934a0",
+        "to": "4c309c37-45bf-4cad-bd01-41412aaae02d",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "4c309c37-45bf-4cad-bd01-41412aaae02d",
+        "to": "3d912135-944f-4b39-b99f-200863ae7fc1",
+        "status": "CALCULATED",
+        "nm": 155.5776937673634,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3d912135-944f-4b39-b99f-200863ae7fc1",
+        "to": "2b0c3f02-d549-44b6-869b-4a81576be28a",
+        "status": "CALCULATED",
+        "nm": 54.02794003057096,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "2b0c3f02-d549-44b6-869b-4a81576be28a",
+        "to": "a159c07b-3a09-4c2a-bb6e-85ddf321b823",
+        "status": "CALCULATED",
+        "nm": 183.55468735444467,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a159c07b-3a09-4c2a-bb6e-85ddf321b823",
+        "to": "200d9353-8d76-4001-b989-8a25c66acb21",
+        "status": "CALCULATED",
+        "nm": 243.58840257687353,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "200d9353-8d76-4001-b989-8a25c66acb21",
+        "to": "b6f962ad-dd77-43a3-bca1-75c56ce44bfe",
+        "status": "CALCULATED",
+        "nm": 44.42206054662875,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "b6f962ad-dd77-43a3-bca1-75c56ce44bfe",
+        "to": "3af0659e-973e-44e9-8e6b-b3e3733ae10d",
+        "status": "CALCULATED",
+        "nm": 141.02797766528727,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3af0659e-973e-44e9-8e6b-b3e3733ae10d",
+        "to": "a72c0400-bcdf-44e2-bab9-0370f4009b83",
+        "status": "CALCULATED",
+        "nm": 64.38733370752021,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a72c0400-bcdf-44e2-bab9-0370f4009b83",
+        "to": "78b19117-b52b-4158-8565-a9b6d265441e",
+        "status": "CALCULATED",
+        "nm": 92.7379123289466,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "78b19117-b52b-4158-8565-a9b6d265441e",
+        "to": "449760bc-fc53-4aa4-b1fe-71444f1799f2",
+        "status": "CALCULATED",
+        "nm": 34.77124879677741,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "449760bc-fc53-4aa4-b1fe-71444f1799f2",
+        "to": "96fa03be-cc8a-4435-8685-72d41ece48ff",
+        "status": "CALCULATED",
+        "nm": 63.4282733955789,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "96fa03be-cc8a-4435-8685-72d41ece48ff",
+        "to": "71a27850-1118-4319-867a-fe90fb1c826e",
+        "status": "CALCULATED",
+        "nm": 18.21150031732171,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "71a27850-1118-4319-867a-fe90fb1c826e",
+        "to": "82cbf425-5d64-4110-af73-82357f02541d",
+        "status": "CALCULATED",
+        "nm": 57.318549767798615,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "82cbf425-5d64-4110-af73-82357f02541d",
+        "to": "90b4bb72-b3c5-43c9-ac70-c42223969ec3",
+        "status": "CALCULATED",
+        "nm": 29.749279987339754,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "90b4bb72-b3c5-43c9-ac70-c42223969ec3",
+        "to": "7950b9d0-f158-4892-8f2d-ec2c0ac003ad",
+        "status": "CALCULATED",
+        "nm": 50.22153164727693,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "7950b9d0-f158-4892-8f2d-ec2c0ac003ad",
+        "to": "623fd658-7b67-4ae5-9dc1-a80870c35a54",
+        "status": "CALCULATED",
+        "nm": 106.79457550535001,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "623fd658-7b67-4ae5-9dc1-a80870c35a54",
+        "to": "d10ef4c9-1f52-4739-849e-fd2db9ee1cd7",
+        "status": "CALCULATED",
+        "nm": 108.22518933155374,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "d10ef4c9-1f52-4739-849e-fd2db9ee1cd7",
+        "to": "4c5deaf8-2f65-45b0-b1ea-dc66bd72526f",
+        "status": "CALCULATED",
+        "nm": 150.50967239335822,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "4c5deaf8-2f65-45b0-b1ea-dc66bd72526f",
+        "to": "734225d9-3979-41df-bcf4-20a278a6f6da",
+        "status": "CALCULATED",
+        "nm": 9.02212544160962,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "734225d9-3979-41df-bcf4-20a278a6f6da",
+        "to": "fffefa35-8fac-4ab3-8a7e-291e1d62d627",
+        "status": "CALCULATED",
+        "nm": 102.0023538607424,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "fffefa35-8fac-4ab3-8a7e-291e1d62d627",
+        "to": "48659a79-1eab-470d-8c8d-2e79fcc490f2",
+        "status": "CALCULATED",
+        "nm": 109.1972081854309,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "48659a79-1eab-470d-8c8d-2e79fcc490f2",
+        "to": "0f52a253-b482-4184-9731-72691950bc8d",
+        "status": "CALCULATED",
+        "nm": 53.007827683671174,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "0f52a253-b482-4184-9731-72691950bc8d",
+        "to": "b33e4e55-4e8c-46b2-b95b-1ac4e3e4d2f8",
+        "status": "CALCULATED",
+        "nm": 41.6287070229398,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "b33e4e55-4e8c-46b2-b95b-1ac4e3e4d2f8",
+        "to": "dcdd4520-dbe2-4a72-ac8b-2ef96ec2a40f",
+        "status": "CALCULATED",
+        "nm": 54.217433743633094,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "dcdd4520-dbe2-4a72-ac8b-2ef96ec2a40f",
+        "to": "f30987c3-7251-450c-9de0-086614283625",
+        "status": "CALCULATED",
+        "nm": 45.90394355066102,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "f30987c3-7251-450c-9de0-086614283625",
+        "to": "7b151c33-830b-46c2-a334-9d67cae7277c",
+        "status": "CALCULATED",
+        "nm": 54.57391190700559,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "7b151c33-830b-46c2-a334-9d67cae7277c",
+        "to": "e64006bd-dc30-4e2c-b177-60e2834460e1",
+        "status": "CALCULATED",
+        "nm": 36.47628173722016,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "e64006bd-dc30-4e2c-b177-60e2834460e1",
+        "to": "c32624bc-e92d-43bc-bd05-eda610458d8e",
+        "status": "CALCULATED",
+        "nm": 111.69951570921239,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "c32624bc-e92d-43bc-bd05-eda610458d8e",
+        "to": "510a8e59-15af-44f1-820b-a17ec465b1db",
+        "status": "CALCULATED",
+        "nm": 50.57029770580438,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "510a8e59-15af-44f1-820b-a17ec465b1db",
+        "to": "da4020aa-fb2a-4eae-a747-623bf5e1c2c3",
+        "status": "CALCULATED",
+        "nm": 63.09438237106423,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "da4020aa-fb2a-4eae-a747-623bf5e1c2c3",
+        "to": "1741cee1-1107-493f-93b6-e15ac4267cb7",
+        "status": "CALCULATED",
+        "nm": 104.29023796402446,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "1741cee1-1107-493f-93b6-e15ac4267cb7",
+        "to": "65c33d36-be5f-4198-80fb-ce9981edc349",
+        "status": "CALCULATED",
+        "nm": 77.23711994368712,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "65c33d36-be5f-4198-80fb-ce9981edc349",
+        "to": "6b1e6b16-90c6-416a-b9da-244d06ddd915",
+        "status": "CALCULATED",
+        "nm": 106.71641933177774,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "6b1e6b16-90c6-416a-b9da-244d06ddd915",
+        "to": "463b5301-dbef-4f1c-9e7b-3975b7e4904f",
+        "status": "CALCULATED",
+        "nm": 84.35699778223288,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "463b5301-dbef-4f1c-9e7b-3975b7e4904f",
+        "to": "ba25d013-f301-4587-95ad-211217c00ea5",
+        "status": "CALCULATED",
+        "nm": 50.48212340133382,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ba25d013-f301-4587-95ad-211217c00ea5",
+        "to": "11440426-fff5-4517-9143-b3c11ccd0a96",
+        "status": "CALCULATED",
+        "nm": 24.59554019403519,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "11440426-fff5-4517-9143-b3c11ccd0a96",
+        "to": "416b55ba-e1f9-499a-a52d-f8edb1b5f2ba",
+        "status": "CALCULATED",
+        "nm": 30.769030407375357,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "416b55ba-e1f9-499a-a52d-f8edb1b5f2ba",
+        "to": "5a62d7d2-fe0a-4109-9870-68e3a5832175",
+        "status": "CALCULATED",
+        "nm": 167.7453152911998,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "5a62d7d2-fe0a-4109-9870-68e3a5832175",
+        "to": "41202836-9039-4a31-8543-2db0958a098c",
+        "status": "CALCULATED",
+        "nm": 284.98278635207265,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "41202836-9039-4a31-8543-2db0958a098c",
+        "to": "1ba6f31f-cf11-497d-9c92-214a4823c7a8",
+        "status": "CALCULATED",
+        "nm": 209.7567318360958,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "1ba6f31f-cf11-497d-9c92-214a4823c7a8",
+        "to": "55acd878-ef17-4de6-b729-bad75f44c67c",
+        "status": "CALCULATED",
+        "nm": 253.89389626517337,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "55acd878-ef17-4de6-b729-bad75f44c67c",
+        "to": "acf44cd9-c173-4ced-9fc4-ada227208f04",
+        "status": "CALCULATED",
+        "nm": 168.4387367846249,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "acf44cd9-c173-4ced-9fc4-ada227208f04",
+        "to": "20737372-da4e-45c5-9488-8970f808bd02",
+        "status": "CALCULATED",
+        "nm": 171.34131534143825,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "20737372-da4e-45c5-9488-8970f808bd02",
+        "to": "bdadc307-b93f-4988-affd-0a9ac3c18b31",
+        "status": "CALCULATED",
+        "nm": 237.70770541258037,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "bdadc307-b93f-4988-affd-0a9ac3c18b31",
+        "to": "ba4da592-eb4b-4839-a6f0-225b208ee133",
+        "status": "CALCULATED",
+        "nm": 35.22632974100288,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ba4da592-eb4b-4839-a6f0-225b208ee133",
+        "to": "d40e2732-96c8-406a-9d3e-bd2e7bcc4be3",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "DISCONNECTED_COMPONENTS: selected access cells are not connected on this grid."
+      },
+      {
+        "from": "d40e2732-96c8-406a-9d3e-bd2e7bcc4be3",
+        "to": "44370fd9-2b37-48f7-a9a9-c10adaa0b9f7",
+        "status": "CALCULATED",
+        "nm": 220.04860878234592,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "44370fd9-2b37-48f7-a9a9-c10adaa0b9f7",
+        "to": "d31dc745-bc1b-40a8-814c-377a7b2a7df2",
+        "status": "CALCULATED",
+        "nm": 129.92390242978152,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "d31dc745-bc1b-40a8-814c-377a7b2a7df2",
+        "to": "a070697a-f909-4cd7-8bf3-02af42be9682",
+        "status": "CALCULATED",
+        "nm": 101.14217354870183,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "a070697a-f909-4cd7-8bf3-02af42be9682",
+        "to": "5cb963f6-23fe-4e1a-85b1-bbbd8f64b89f",
+        "status": "CALCULATED",
+        "nm": 113.75188702819011,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "5cb963f6-23fe-4e1a-85b1-bbbd8f64b89f",
+        "to": "f07e169a-ca17-4b87-bdd2-ca113bd260e7",
+        "status": "CALCULATED",
+        "nm": 93.26090970107929,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "f07e169a-ca17-4b87-bdd2-ca113bd260e7",
+        "to": "0ebdeef3-b7d9-4317-9587-4cf6a8bf4b96",
+        "status": "CALCULATED",
+        "nm": 102.73602905452663,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "0ebdeef3-b7d9-4317-9587-4cf6a8bf4b96",
+        "to": "30eaf83e-ddbe-433a-9bc1-58f6c4dd34c0",
+        "status": "CALCULATED",
+        "nm": 24.09480644986373,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "30eaf83e-ddbe-433a-9bc1-58f6c4dd34c0",
+        "to": "77d1d71b-1092-465e-bedc-8f74673f3083",
+        "status": "CALCULATED",
+        "nm": 42.36268350648166,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "77d1d71b-1092-465e-bedc-8f74673f3083",
+        "to": "429b04f8-697e-449a-9403-bc9fd7626780",
+        "status": "CALCULATED",
+        "nm": 58.19964565304707,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "429b04f8-697e-449a-9403-bc9fd7626780",
+        "to": "fee438a8-3305-4c34-a7ad-090eef7e9927",
+        "status": "CALCULATED",
+        "nm": 166.691606958695,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "fee438a8-3305-4c34-a7ad-090eef7e9927",
+        "to": "d467614f-4152-4e85-a5bc-efdc107f6d2b",
+        "status": "CALCULATED",
+        "nm": 50.72832973619188,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "d467614f-4152-4e85-a5bc-efdc107f6d2b",
+        "to": "f6573024-3d59-4dfe-b9dd-76b7ff6737a5",
+        "status": "CALCULATED",
+        "nm": 34.799262993605716,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "f6573024-3d59-4dfe-b9dd-76b7ff6737a5",
+        "to": "ca8cc6f1-daf9-4a0a-bb25-2482babad06f",
+        "status": "CALCULATED",
+        "nm": 53.4734854585395,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "ca8cc6f1-daf9-4a0a-bb25-2482babad06f",
+        "to": "28ecffd0-3e0d-46ac-9a60-f288833cb0b9",
+        "status": "CALCULATED",
+        "nm": 36.099882404510005,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "28ecffd0-3e0d-46ac-9a60-f288833cb0b9",
+        "to": "c8de1989-43ad-412b-88b5-005c9486a96a",
+        "status": "CALCULATED",
+        "nm": 55.61311039192016,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "c8de1989-43ad-412b-88b5-005c9486a96a",
+        "to": "e56cc85b-3c26-4e26-9f83-9367f08f2313",
+        "status": "CALCULATED",
+        "nm": 398.6533829948143,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "e56cc85b-3c26-4e26-9f83-9367f08f2313",
+        "to": "ccf1d57a-ea84-4abb-a546-45686857029d",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "ccf1d57a-ea84-4abb-a546-45686857029d",
+        "to": "0a3e863b-abbf-400c-b06c-049be0588ebb",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "0a3e863b-abbf-400c-b06c-049be0588ebb",
+        "to": "02dd531a-1511-4105-a7e4-82b14db6ab9d",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "02dd531a-1511-4105-a7e4-82b14db6ab9d",
+        "to": "261a4810-6edb-4e14-acd2-aed64868796e",
+        "status": "CALCULATED",
+        "nm": 62.855442999859946,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "261a4810-6edb-4e14-acd2-aed64868796e",
+        "to": "9a057ec6-13b3-49c1-8d54-ef8aec643aa8",
+        "status": "CALCULATED",
+        "nm": 87.72239149928707,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "9a057ec6-13b3-49c1-8d54-ef8aec643aa8",
+        "to": "fc8af563-572f-4c34-83a1-ea83837f5c8c",
+        "status": "CALCULATED",
+        "nm": 523.0112913656611,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "fc8af563-572f-4c34-83a1-ea83837f5c8c",
+        "to": "4773ecb7-1e7d-4199-8f24-0c2d1a0a9dfd",
+        "status": "CALCULATED",
+        "nm": 42.22058916290612,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "4773ecb7-1e7d-4199-8f24-0c2d1a0a9dfd",
+        "to": "2dcc148b-033c-45ee-b014-9b7f573fcb06",
+        "status": "CALCULATED",
+        "nm": 82.895846605737,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "2dcc148b-033c-45ee-b014-9b7f573fcb06",
+        "to": "2aca7c37-d0f8-4ece-b591-e7d7e6addfc0",
+        "status": "CALCULATED",
+        "nm": 105.17869467731,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "2aca7c37-d0f8-4ece-b591-e7d7e6addfc0",
+        "to": "e4e17fcf-42af-45d4-a349-4a75f8266563",
+        "status": "CALCULATED",
+        "nm": 135.74206553567865,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "e4e17fcf-42af-45d4-a349-4a75f8266563",
+        "to": "dcbdcfb8-c744-42d0-8c61-6ca2a4ef49ac",
+        "status": "CALCULATED",
+        "nm": 173.745521797844,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "dcbdcfb8-c744-42d0-8c61-6ca2a4ef49ac",
+        "to": "c4e17315-1b32-40d2-b45c-060c38a7a2fb",
+        "status": "CALCULATED",
+        "nm": 87.8978096413555,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "c4e17315-1b32-40d2-b45c-060c38a7a2fb",
+        "to": "75792b40-bb78-4967-88dc-ee952d4da91c",
+        "status": "CALCULATED",
+        "nm": 43.59548072663897,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "75792b40-bb78-4967-88dc-ee952d4da91c",
+        "to": "9a6ab021-ec73-4539-b13e-77baaf2efe93",
+        "status": "CALCULATED",
+        "nm": 0,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "9a6ab021-ec73-4539-b13e-77baaf2efe93",
+        "to": "af9c4596-7e64-4785-87cb-4c3521b6058e",
+        "status": "CALCULATED",
+        "nm": 97.5396085894536,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "af9c4596-7e64-4785-87cb-4c3521b6058e",
+        "to": "2e01eced-c8a0-4a89-b16d-b75be7eefae1",
+        "status": "CALCULATED",
+        "nm": 130.67797686601088,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "2e01eced-c8a0-4a89-b16d-b75be7eefae1",
+        "to": "b647089c-2c47-46c5-af28-e73eadaef0ea",
+        "status": "CALCULATED",
+        "nm": 50.308634846188355,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "b647089c-2c47-46c5-af28-e73eadaef0ea",
+        "to": "34fc5ab1-f0e5-4943-8ce1-5b61a163cbdd",
+        "status": "CALCULATED",
+        "nm": 89.66765140496138,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "34fc5ab1-f0e5-4943-8ce1-5b61a163cbdd",
+        "to": "c8d51928-3149-4345-bbf5-0e961d546ce1",
+        "status": "CALCULATED",
+        "nm": 120.32718806335417,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "c8d51928-3149-4345-bbf5-0e961d546ce1",
+        "to": "8b0f407c-7e95-49f5-b51c-5e3c123cd00a",
+        "status": "CALCULATED",
+        "nm": 206.99370224488436,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "8b0f407c-7e95-49f5-b51c-5e3c123cd00a",
+        "to": "86b95579-6803-4ffc-83de-9fd75197bc97",
+        "status": "CALCULATED",
+        "nm": 101.16718783739445,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "86b95579-6803-4ffc-83de-9fd75197bc97",
+        "to": "04bea036-9578-49f8-9dfa-ff9050574724",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "DISCONNECTED_COMPONENTS: selected access cells are not connected on this grid."
+      },
+      {
+        "from": "04bea036-9578-49f8-9dfa-ff9050574724",
+        "to": "1ed7ca5e-9cca-4581-951a-463f38b1a4e6",
+        "status": "CALCULATED",
+        "nm": 121.14230220666329,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "1ed7ca5e-9cca-4581-951a-463f38b1a4e6",
+        "to": "4579d909-18d9-4fbd-821c-e9758975d794",
+        "status": "CALCULATED",
+        "nm": 51.0465807685876,
+        "reason": null,
+        "reused": true
+      }
+    ]
+  },
+  "elbe": {
+    "ms": 11017.6315,
+    "cpu": {
+      "user": 13594000,
+      "system": 266000
+    },
+    "rss": 2090418176,
+    "calculated": 3,
+    "unresolved": 1,
+    "reused": 3,
+    "legs": [
+      {
+        "from": "fb464886-079b-48dc-93ee-5973ca02a4e3",
+        "to": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      },
+      {
+        "from": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "to": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "status": "CALCULATED",
+        "nm": 158.16674757305913,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "to": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "status": "CALCULATED",
+        "nm": 80.89586879652684,
+        "reason": null,
+        "reused": true
+      },
+      {
+        "from": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "to": "d3d2d937-ae68-42f1-858a-437075d4f338",
+        "status": "CALCULATED",
+        "nm": 11.321038331818674,
+        "reason": null,
+        "reused": true
+      }
+    ]
+  },
+  "reverse": {
+    "ms": 13990.7487,
+    "cpu": {
+      "user": 17094000,
+      "system": 390000
+    },
+    "rss": 2093277184,
+    "calculated": 3,
+    "unresolved": 1,
+    "reused": 0,
+    "legs": [
+      {
+        "from": "d3d2d937-ae68-42f1-858a-437075d4f338",
+        "to": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "status": "CALCULATED",
+        "nm": 11.321038331818945,
+        "reason": null
+      },
+      {
+        "from": "3cbb67d6-5c78-4b36-b02e-81815c47e151",
+        "to": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "status": "CALCULATED",
+        "nm": 80.89586879652343,
+        "reason": null
+      },
+      {
+        "from": "779520a0-8b74-4a30-ac61-b94b289af5d1",
+        "to": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "status": "CALCULATED",
+        "nm": 158.16674757305938,
+        "reason": null
+      },
+      {
+        "from": "5c1ccb5d-0abc-4378-b0f4-37eeb8691512",
+        "to": "fb464886-079b-48dc-93ee-5973ca02a4e3",
+        "status": "UNRESOLVED",
+        "nm": null,
+        "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing."
+      }
+    ]
+  }
+}

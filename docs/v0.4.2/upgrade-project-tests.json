@@ -1,0 +1,8 @@
+{
+  "version": "0.4.2",
+  "checks": [
+    "Installed 0.4.2 loads existing settings, custom paths and logo unchanged",
+    "AMAZON_V1.nerds: isolated copy opens, saves and reopens with identical state",
+    "NORTHERN_CANADA_GREENLAND.nerds: isolated copy opens, saves and reopens with identical state"
+  ]
+}

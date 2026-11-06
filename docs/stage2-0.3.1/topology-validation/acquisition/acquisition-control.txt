@@ -1,0 +1,9 @@
+{'region': 'gironde-control', 'attempt': 1, 'status': 'UNRESOLVED', 'error': 'HTTP Error 502: Bad Gateway'}
+{'region': 'gironde-control', 'attempt': 2, 'status': 'UNRESOLVED', 'error': 'HTTP Error 502: Bad Gateway'}
+PRESERVED breves
+PRESERVED alter
+PRESERVED ontario
+{'region': 'don', 'attempt': 1, 'status': 'UNRESOLVED', 'error': 'The read operation timed out'}
+{'region': 'don', 'attempt': 2, 'status': 'ACQUIRED', 'bytes': 5999971, 'sha256': 'eba2e58979615aa25888eca8f1dd397c263123614acacfef2d019624d0eefe02', 'elements': 1445}
+PRESERVED ushuaia
+PRESERVED magellan

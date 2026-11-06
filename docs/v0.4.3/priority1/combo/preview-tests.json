@@ -1,0 +1,32 @@
+{
+  "checks": [
+    {
+      "style": "terrain",
+      "camera": {
+        "position": {
+          "x": -54204.68888102717,
+          "y": -5646553.652203991,
+          "z": 3265031.1595003214
+        },
+        "heading": 6.283185307179586,
+        "pitch": -1.5707963267948966,
+        "roll": 0
+      },
+      "status": "Detailed Terrain · 85 detail tiles · 0 missing · 0 elevation gaps",
+      "acquisition": {
+        "online": false,
+        "downloads": 0,
+        "bytes": 0,
+        "maxBytes": 52428800,
+        "maxTiles": 3000,
+        "missing": []
+      }
+    },
+    {
+      "test": "Offline cached redraw and unchanged authoritative geometry",
+      "status": "PASS"
+    }
+  ],
+  "errors": [],
+  "installedAppModified": false
+}
