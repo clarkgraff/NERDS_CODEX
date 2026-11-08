@@ -16,3 +16,5 @@ button{text-transform:uppercase}label,h2,summary{text-transform:uppercase}select
 
 .assign-menu{position:absolute;z-index:15;width:240px;padding:10px;background:var(--panel);border:1px solid var(--accent);overflow:auto}.assign-menu button{display:block;width:100%;margin:3px 0}.assign-menu strong{display:block;padding:8px}#custom-course-controls{display:flex;gap:4px;flex-wrap:wrap}#custom-course-controls button{font-size:10px}
 .compact-waypoint > :not(.waypoint-top):not(.card-expansion):not(:nth-child(2)){display:none} .card-expansion{font-size:9px;padding:2px;}
+
+.compact-waypoint > .waypoint-actions{display:flex}.compact-waypoint > .waypoint-actions > :not(.remove){display:none}

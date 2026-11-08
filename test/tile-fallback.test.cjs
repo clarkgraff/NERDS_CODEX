@@ -1,0 +1,2 @@
+const test=require('node:test'),a=require('node:assert/strict'),{TileFallback}=require('../src/public/tile-fallback.js');
+test('missing detail reuses correct ancestor quadrant and preserves source identity',()=>{const c=new TileFallback(2),image={};c.put(2,3,4,image);a.deepEqual(c.parent(9,14,6),{image,scale:4,x:1,y:2,level:4});a.equal(c.parent(0,0,6),null);c.put(1,1,2,{});c.put(2,2,2,{});a.equal(c.tiles.size,2);a.equal(c.parent(9,14,6),null);});

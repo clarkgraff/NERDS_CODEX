@@ -1,0 +1,4 @@
+const test=require('node:test'),a=require('node:assert/strict'),n=require('../src/public/navigation-constraints.js');
+test('constraints default off and master preserves independent selections',()=>{const c=n.clean();a.equal(c.enabled,false);a.ok(Object.values(c.individual).every(v=>!v));c.individual.weather=true;a.equal(n.assess(c).checks.length,0);c.enabled=true;a.deepEqual(n.assess(c).checks.map(x=>x.key),['weather']);a.equal(n.assess(c).checks[0].status,'UNRESOLVED');c.enabled=false;a.equal(n.clean(c).individual.weather,true);});
+const {cleanWaypoint}=require('../src/core.cjs');
+test('episode role is explicit and survives cleaning without inferred queue roles',()=>{const w={id:'x',name:'X',lat:0,lon:0};a.equal(cleanWaypoint(w).episodeRole,null);a.equal(cleanWaypoint({...w,episodeRole:'KICKOFF'}).episodeRole,'KICKOFF');a.equal(cleanWaypoint({...w,episodeRole:'EPISODE'}).episodeRole,'EPISODE');});
