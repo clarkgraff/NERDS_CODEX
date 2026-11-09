@@ -1,0 +1,128 @@
+[
+  {
+    "id": "amsterdam",
+    "bounds": [
+      4.85,
+      52.37,
+      4.95,
+      52.42
+    ],
+    "url": "assets/display/amsterdam.geojson",
+    "sha256": "f68627ff376373e01b4ae9087bcec7838bbd6ff4cdc4aed149056e49910c348b",
+    "features": 95690,
+    "relations": 488,
+    "holes": 824
+  },
+  {
+    "id": "copenhagen",
+    "bounds": [
+      12.56,
+      55.66,
+      12.64,
+      55.72
+    ],
+    "url": "assets/display/copenhagen.geojson",
+    "sha256": "26663a4218e4841c338358419ce15dd1dda07577ee8a3bc0639fcdf1a5fb05b0",
+    "features": 40568,
+    "relations": 504,
+    "holes": 728
+  },
+  {
+    "id": "helsinki",
+    "bounds": [
+      24.93,
+      60.14,
+      25.02,
+      60.19
+    ],
+    "url": "assets/display/helsinki.geojson",
+    "sha256": "4b1866320100f02ccaa7204cb90a00aa9197fb7af9eded5d1035d3d06e81e999",
+    "features": 47743,
+    "relations": 444,
+    "holes": 598
+  },
+  {
+    "id": "tallinn",
+    "bounds": [
+      24.72,
+      59.43,
+      24.8,
+      59.47
+    ],
+    "url": "assets/display/tallinn.geojson",
+    "sha256": "63e1798198f6fbff56bd9204c16c8c48ddd3393c0580cd14dd1cf696efd32f7b",
+    "features": 22991,
+    "relations": 252,
+    "holes": 162
+  },
+  {
+    "id": "hamburg",
+    "bounds": [
+      9.93,
+      53.51,
+      10.03,
+      53.56
+    ],
+    "url": "assets/display/hamburg.geojson",
+    "sha256": "d12aae46f72d70e26355f7ce984fbf7f07d2f881a601d127d4b13928c4487f07",
+    "features": 50263,
+    "relations": 267,
+    "holes": 444
+  },
+  {
+    "id": "halifax",
+    "bounds": [
+      -63.61,
+      44.62,
+      -63.54,
+      44.68
+    ],
+    "url": "assets/display/halifax.geojson",
+    "sha256": "a8f8ef1bdfc64bf01004216fa90000ff9d689783d60e23a77f942c00ffe88570",
+    "features": 35431,
+    "relations": 401,
+    "holes": 313
+  },
+  {
+    "id": "quebec",
+    "bounds": [
+      -71.24,
+      46.79,
+      -71.18,
+      46.84
+    ],
+    "url": "assets/display/quebec.geojson",
+    "sha256": "884400f635aeaa2453aadc103148535f5ada6b5004d4353d292ab658185cc71e",
+    "features": 19571,
+    "relations": 114,
+    "holes": 182
+  },
+  {
+    "id": "reykjavik",
+    "bounds": [
+      -21.98,
+      64.13,
+      -21.88,
+      64.18
+    ],
+    "url": "assets/display/reykjavik.geojson",
+    "sha256": "d020b1e283e52e63d572dc4e472b6d7496150b89918b37038fa33a89c25d319f",
+    "features": 21118,
+    "relations": 308,
+    "holes": 161
+  },
+  {
+    "id": "casablanca",
+    "bounds": [
+      -7.65,
+      33.59,
+      -7.56,
+      33.64
+    ],
+    "url": "assets/display/casablanca.geojson",
+    "sha256": "b4a2e06e2d025e2f804fff252a3f358aedd3a850ee593d7b22c0a6350ab8f6e0",
+    "features": 9560,
+    "relations": 107,
+    "holes": 130
+  }
+]

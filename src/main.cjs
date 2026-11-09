@@ -85,7 +85,7 @@ app.whenReady().then(async()=>{
   await new Promise((resolve,reject)=>{httpServer.once('error',reject);httpServer.listen(0,'127.0.0.1',resolve);});
   appBase=`http://127.0.0.1:${httpServer.address().port}${resourcePrefix}`;appURL=appBase+'index.html';
   // The renderer cannot acquire remote content. Deliberate local inference calls run in the main process.
-  session.defaultSession.webRequest.onBeforeRequest((details,callback)=>callback({cancel:!details.url.startsWith(appBase)&&! /^(devtools:|blob:|data:)/.test(details.url)}));
+  session.defaultSession.webRequest.onBeforeRequest((details,callback)=>callback({cancel:!details.url.startsWith('https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer')&&!details.url.startsWith(appBase)&&! /^(devtools:|blob:|data:)/.test(details.url)}));
   session.defaultSession.setPermissionRequestHandler((_,__,callback)=>callback(false));
   const command=action=>win?.webContents.send('command',action);
   Menu.setApplicationMenu(Menu.buildFromTemplate([
