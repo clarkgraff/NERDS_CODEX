@@ -1,0 +1,1 @@
+PASS actual satellite zoom/pan and GLOBE/MERCATOR/TILTED; injected transient failure recorded; retry and Layers DONE recover; combined overlay ordering

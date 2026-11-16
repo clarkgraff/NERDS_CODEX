@@ -39,6 +39,7 @@ function planInternal(s,options={}){
   options.progress?.({stage:'FINDING WATER ACCESS / CONNECTING WATERWAYS',leg:i+1,total:s.waypoints.length-1});
   const a=s.waypoints[i],inputKey=geometryKey(s,a,w,routing),start=performance.now();
   const base={id:a.id+'->'+w.id,fromId:a.id,waypointId:w.id,transport:s.transport,inputKey,points:[],distanceNM:null,provisionalDistanceNM:null,status:'UNRESOLVED',evidence:{waypointIds:[a.id,w.id],anchors:[{lat:a.lat,lon:a.lon},{lat:w.lat,lon:w.lon}],grid:null,accessCandidates:[],searchBounds:null,visitedCells:0,optionalPreferences:bypass?'BYPASS':'ENABLED'}};
+  if(options.suppliedLegs){const supplied=options.suppliedLegs[base.id];return supplied?{...structuredClone(supplied),transitionBefore:null}:{...base,operatingMode:selectedMode(s,w),reason:'PENDING: independent leg calculation',jobStatus:'PENDING'};}
   try{
    base.operatingMode=selectedMode(s,w);
    if(require('./course-model.cjs').constraintsFor(s.coursePlan,a.id,w.id).length)throw Error('MANUAL_CONSTRAINT_ROUTING_PENDING: constraints preserved; geographic calculation is not yet implemented.');

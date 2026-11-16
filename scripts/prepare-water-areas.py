@@ -3,7 +3,7 @@ Development dependency: Shapely 2.1.2. Runtime uses the generated additive masks
 """
 import sys,pathlib,json,gzip,hashlib,math
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parent))
-sys.path.insert(0,str(pathlib.Path('work/topology/python-deps').resolve()))
+sys.path.append(str(pathlib.Path('work/topology/python-deps').resolve()))
 import shapely
 import numpy as np
 from shapely.geometry import Polygon,box,mapping

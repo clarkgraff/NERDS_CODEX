@@ -28,7 +28,7 @@ test('standalone executable works outside repository with no Python environment 
  const {execFileSync}=require('node:child_process'),exe=path.resolve('work/preparation-runtime/nerds-geography/nerds-geography.exe'),args=['--regions',path.join(dir,'regions.json'),'--input-root',dir,'--output-root'];
  execFileSync(exe,[...args,out],{cwd:dir,env:{SystemRoot:process.env.SystemRoot,TEMP:dir,TMP:dir,PATH:process.env.SystemRoot+'\\System32'},windowsHide:true,timeout:30000});
  const python=process.env.NERDS_PREPARATION_PYTHON;a.ok(python,'Reference comparison needs configured development Python');execFileSync(python,[path.resolve('scripts/prepare-water-areas.py'),...args,reference],{windowsHide:true,timeout:30000});
- for(const name of ['multipolygon.bin.gz','multipolygon-exclusions.bin.gz','multipolygon.geojson.gz'])a.deepEqual(fs.readFileSync(path.join(out,name)),fs.readFileSync(path.join(reference,name)));
+ for(const name of ['multipolygon.bin.gz','multipolygon-exclusions.bin.gz','multipolygon.geojson.gz'])a.deepEqual(require('node:zlib').gunzipSync(fs.readFileSync(path.join(out,name))),require('node:zlib').gunzipSync(fs.readFileSync(path.join(reference,name))));
  const m=JSON.parse(fs.readFileSync(path.join(out,'manifest.json')));a.equal(m.regions[0].accepted.length,1);a.ok(m.regions[0].waterCells>0);
 });
 

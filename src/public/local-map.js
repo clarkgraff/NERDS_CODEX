@@ -3,9 +3,9 @@ const mapDataCache=new Map();
 async function mapData(url){if(!mapDataCache.has(url))mapDataCache.set(url,fetch(url).then(r=>{if(!r.ok)throw Error('Map data unavailable');return r.json();}));return mapDataCache.get(url);}
 async function localMap(overlays={}){
  const layers=[];const surfaces=await window.nerds.geographicSurfaces();
- for(const key of ['roads','borders','timezones','rivers','lakes','regions'])if(overlays[key]){
+ for(const key of ['roads','borders','timezones','rivers','lakes','regions'])if(overlays[key]||key==='roads'&&state.mapPresentation.ferryRoutes!==false){
  const data=await mapData('assets/layers/'+({rivers:'ne_10m_rivers_lake_centerlines',lakes:'ne_10m_lakes',regions:'ne_10m_admin_1_states_provinces_lines'}[key]||key)+'.geojson');const shapes=[];
- for(const f of data.features){const g=f.geometry;if(!g)continue;let lines=g.type==='LineString'?[g.coordinates]:g.type==='MultiLineString'||g.type==='Polygon'?g.coordinates:g.type==='MultiPolygon'?g.coordinates.flat():[];
+ for(const f of data.features){if(key==='roads'&&!NerdsDisplay.featureVisible('transportation',f.properties||{},state.mapPresentation,overlays))continue;const g=f.geometry;if(!g)continue;let lines=g.type==='LineString'?[g.coordinates]:g.type==='MultiLineString'||g.type==='Polygon'?g.coordinates:g.type==='MultiPolygon'?g.coordinates.flat():[];
  for(const line of lines){let west=180,east=-180,south=90,north=-90;for(const [lon,lat] of line){west=Math.min(west,lon);east=Math.max(east,lon);south=Math.min(south,lat);north=Math.max(north,lat);}shapes.push({line,west,east,south,north,label:key==='timezones'?f.properties.time_zone||f.properties.name:''});}}
  layers.push({key,shapes});}
 
