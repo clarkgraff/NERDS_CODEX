@@ -1,0 +1,272 @@
+{
+  "head": "9ebe3a48627e67fbb0ab8bf51e81cff08b079f2f",
+  "branch": "codex/beta-v1.0.0",
+  "historyRefs": [
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/backup/NERDS-v0.4.4-20261103",
+      "sha": "a1f160c96616bc815b7514884c05e0a403629b88",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/codex/beta-v1.0.0",
+      "sha": "9ebe3a48627e67fbb0ab8bf51e81cff08b079f2f",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/codex/stage1-v031",
+      "sha": "38f161d8b357f026f12210ef56d184f71a5e5986",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/codex/stage2-v031",
+      "sha": "3ce315c526b55584179b62811d4f0f5474418177",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/main",
+      "sha": "415f2d7d5143f52e57f5780de34bbb2bb1204fc1",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/heads/v0.3.0-source-test",
+      "sha": "6e9aece58a6d9737e9ec5bd27eb952fefbcd37e0",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "f23c401a00cbed1fff0de7f183c8f4824b180c27",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/remotes/origin/backup/nerds-v044-recovered-20261103",
+      "sha": "5924f47060552f1ffb1c3b15cb29fb64dbef2101",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/remotes/origin/main",
+      "sha": "f23c401a00cbed1fff0de7f183c8f4824b180c27",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/remotes/origin/route-swarm-prototype",
+      "sha": "5bcd2b18128b5057aacbae7d3b0e234be3d2e532",
+      "preserved": true
+    },
+    {
+      "source": "active-beta",
+      "ref": "refs/remotes/origin/v0.3.0-source-test",
+      "sha": "6e9aece58a6d9737e9ec5bd27eb952fefbcd37e0",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/heads/main",
+      "sha": "f23c401a00cbed1fff0de7f183c8f4824b180c27",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "f23c401a00cbed1fff0de7f183c8f4824b180c27",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/remotes/origin/backup/nerds-v044-recovered-20261103",
+      "sha": "5924f47060552f1ffb1c3b15cb29fb64dbef2101",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/remotes/origin/main",
+      "sha": "f23c401a00cbed1fff0de7f183c8f4824b180c27",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/remotes/origin/route-swarm-prototype",
+      "sha": "5bcd2b18128b5057aacbae7d3b0e234be3d2e532",
+      "preserved": true
+    },
+    {
+      "source": "canonical-before",
+      "ref": "refs/remotes/origin/v0.3.0-source-test",
+      "sha": "6e9aece58a6d9737e9ec5bd27eb952fefbcd37e0",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/heads/4nr-coder/nerds-routing-audit-006",
+      "sha": "d306504dc0fcc84658815089d6bd7e61ba76a49e",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/heads/codex/stage1-v031",
+      "sha": "38f161d8b357f026f12210ef56d184f71a5e5986",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/heads/codex/stage2-v031",
+      "sha": "d7b8c4380523bb3d6bc749c25bc01a5a4504843e",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/heads/main",
+      "sha": "415f2d7d5143f52e57f5780de34bbb2bb1204fc1",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/heads/v0.3.0-source-test",
+      "sha": "6e9aece58a6d9737e9ec5bd27eb952fefbcd37e0",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "a20088e45de140d5890143e95bef08745ada091e",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/remotes/origin/main",
+      "sha": "a20088e45de140d5890143e95bef08745ada091e",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/remotes/origin/route-swarm-prototype",
+      "sha": "5bcd2b18128b5057aacbae7d3b0e234be3d2e532",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds-codex",
+      "ref": "refs/remotes/origin/v0.3.0-source-test",
+      "sha": "6e9aece58a6d9737e9ec5bd27eb952fefbcd37e0",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds",
+      "ref": "refs/heads/main",
+      "sha": "b1b08d8f325351dd4704a309f4a1b303e71c90cf",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds",
+      "ref": "refs/remotes/origin/main",
+      "sha": "b1b08d8f325351dd4704a309f4a1b303e71c90cf",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds",
+      "ref": "refs/tags/v0.1.0",
+      "sha": "dfd9f284abe66076e02e544f6cf29f344d96ff4e",
+      "preserved": true
+    },
+    {
+      "source": "github-codex-nerds",
+      "ref": "refs/tags/v0.2.0",
+      "sha": "08a01c242e628272ff49018c512d8d39621d7ded",
+      "preserved": true
+    },
+    {
+      "source": "github-copilot",
+      "ref": "refs/heads/main",
+      "sha": "d3c9f3d72610b3e0659d304127cd491931227a30",
+      "preserved": true
+    },
+    {
+      "source": "github-copilot",
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "d3c9f3d72610b3e0659d304127cd491931227a30",
+      "preserved": true
+    },
+    {
+      "source": "github-copilot",
+      "ref": "refs/remotes/origin/main",
+      "sha": "d3c9f3d72610b3e0659d304127cd491931227a30",
+      "preserved": true
+    },
+    {
+      "source": "github-copilot",
+      "ref": "refs/remotes/origin/route-swarm-prototype",
+      "sha": "5e14acb6f2ca48d54e3ee678a8a79ed47f2790ae",
+      "preserved": true
+    },
+    {
+      "source": "github-nerds",
+      "ref": "refs/heads/main",
+      "sha": "bee5bfc35ae9d4ae10caa346ec6df98ead2ee705",
+      "preserved": true
+    },
+    {
+      "source": "github-nerds",
+      "ref": "refs/remotes/origin/HEAD",
+      "sha": "bee5bfc35ae9d4ae10caa346ec6df98ead2ee705",
+      "preserved": true
+    },
+    {
+      "source": "github-nerds",
+      "ref": "refs/remotes/origin/main",
+      "sha": "bee5bfc35ae9d4ae10caa346ec6df98ead2ee705",
+      "preserved": true
+    },
+    {
+      "source": "github-nerds",
+      "ref": "refs/tags/v0.1.0",
+      "sha": "dfd9f284abe66076e02e544f6cf29f344d96ff4e",
+      "preserved": true
+    },
+    {
+      "source": "github-nerds",
+      "ref": "refs/tags/v0.2.0",
+      "sha": "08a01c242e628272ff49018c512d8d39621d7ded",
+      "preserved": true
+    },
+    {
+      "source": "legacy-codex-nerds",
+      "ref": "refs/heads/main",
+      "sha": "b1b08d8f325351dd4704a309f4a1b303e71c90cf",
+      "preserved": true
+    },
+    {
+      "source": "legacy-codex-nerds",
+      "ref": "refs/remotes/origin/main",
+      "sha": "b1b08d8f325351dd4704a309f4a1b303e71c90cf",
+      "preserved": true
+    },
+    {
+      "source": "legacy-codex-nerds",
+      "ref": "refs/tags/v0.1.0",
+      "sha": "dfd9f284abe66076e02e544f6cf29f344d96ff4e",
+      "preserved": true
+    },
+    {
+      "source": "legacy-codex-nerds",
+      "ref": "refs/tags/v0.2.0",
+      "sha": "08a01c242e628272ff49018c512d8d39621d7ded",
+      "preserved": true
+    }
+  ],
+  "historyFailures": [],
+  "buildExit": 0,
+  "buildVersion": "1.0.1",
+  "sourceFilesCompared": 63,
+  "packagedSourceMismatches": [],
+  "executable": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\canonical-build-check\\win-unpacked\\NERDS Beta.exe",
+  "status": "M THIRD-PARTY-NOTICES.txt\n M assets/display/catalogue.json\n M assets/nerds.ico\n M docs/beta-v1.0.0/REVIEW.md\n M docs/beta-v1.0.0/beta-project-hashes.json\n M docs/beta-v1.0.0/changed-files.txt\n M docs/beta-v1.0.0/geographic-summary.json\n M docs/v0.4.4/source-interaction.json\n M package-lock.json\n M package.json\n M scripts/coastline_topology.py\n M scripts/msi-branding.cjs\n M scripts/msi-upgrade.cjs\n M scripts/prepare-display-osm.py\n M src/core.cjs\n M src/course-refinement.cjs\n M src/geographic-preparation.cjs\n M src/geographic-route.cjs\n M src/incremental-routing.cjs\n M src/incremental-worker.cjs\n M src/main.cjs\n M src/passage.cjs\n M src/preload.cjs\n M src/project-directory.cjs\n M src/public/app.js\n M src/public/corrective.js\n M src/public/custom-course.js\n M src/public/detailed-map.js\n M src/public/display-policy.js\n M src/public/incremental-routing.js\n M src/public/local-cartography.js\n M src/public/local-display.js\n M src/public/navigation-constraints.js\n M src/public/release043.js\n M src/public/release044.js\n M src/public/release045.js\n M src/public/release047.js\n M src/public/search-policy.js\n M src/public/style.css\n M src/public/tile-fallback.js\n M src/road-service.cjs\n M src/water-area-route.cjs\n M src/water-route.cjs\n M test/beta-corrections.cjs\n M test/beta-desktop.cjs\n M test/beta-display.test.cjs\n M test/beta-geographic-regressions.cjs\n M test/beta-imagery.cjs\n M test/beta-season-three.cjs\n M test/beta-viewport.cjs\n M test/incremental-routing.test.cjs\n M test/navigation047.test.cjs\n M test/project-directory.test.cjs\n M test/refinement045.test.cjs\n M test/road.test.cjs\n M test/tile-fallback.test.cjs\n M test/v047-harbours.cjs\n M test/v047-imagery-persistence.cjs\n?? NERDS_PROJECT_FILES/\n?? assets/installer-banner.bmp\n?? assets/installer-dialog.bmp\n?? assets/marine/\n?? assets/nerds-beta-logo.png\n?? docs/NERDS_v0.4.6_DEVELOPMENT_RECONCILIATION.md\n?? docs/beta-v1.0.1/\n?? docs/recovered-scope-originals-20261119/\n?? docs/v0.4.4/DELIVERY.md\n?? docs/v0.4.4/installed-interaction.json\n?? docs/v0.4.4/installed-road-ui.json\n?? docs/v0.4.4/preservation-before.json\n?? docs/v0.4.4/road-live.json\n?? docs/v0.4.4/road-regional-validation.json\n?? docs/v0.4.4/source-road-ui.json\n?? scripts/extract-local-hydrography.py\n?? scripts/prepare-bathymetry.py\n?? src/marine-diagnostics.cjs\n?? src/marine-evidence.cjs\n?? test/beta101-alignment-desktop.cjs\n?? test/beta101-bezier.test.cjs\n?? test/beta101-coastal.test.cjs\n?? test/beta101-desktop.cjs\n?? test/beta101-endpoints.test.cjs\n?? test/beta101-geographic.cjs\n?? test/beta101-marine.test.cjs\n?? test/beta101-packaged-marine.cjs\n?? test/beta101-portable-smoke.cjs",
+  "normalizedDiff": "3\t0\tTHIRD-PARTY-NOTICES.txt\n-\t-\tassets/nerds.ico\n9\t2\tdocs/v0.4.4/source-interaction.json\n2\t2\tpackage-lock.json\n1\t1\tpackage.json\n19\t12\tscripts/coastline_topology.py\n2\t0\tscripts/msi-branding.cjs\n2\t1\tsrc/core.cjs\n3\t2\tsrc/geographic-preparation.cjs\n16\t1\tsrc/geographic-route.cjs\n4\t4\tsrc/incremental-routing.cjs\n1\t1\tsrc/main.cjs\n2\t2\tsrc/passage.cjs\n2\t2\tsrc/public/app.js\n2\t2\tsrc/public/corrective.js\n33\t5\tsrc/public/custom-course.js\n6\t5\tsrc/water-area-route.cjs\n2\t0\tsrc/water-route.cjs"
+}

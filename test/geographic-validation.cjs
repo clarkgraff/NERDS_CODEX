@@ -54,6 +54,7 @@ function validate(s,r){
    distance+=l.distanceNM;hours+=l.calculatedHours;standardHours+=l.standardHours;
    if(l.accesses){check(near(l.points[0],l.accesses[0])&&near(l.points.at(-1),l.accesses[1]),'Route endpoints differ from recorded attachments');}
   }
+  if(l.status!=='UNRESOLVED'&&l.points.length&&[l.points[0],l.points.at(-1)].some((p,j)=>distanceNM(s.waypoints[i+j],p)>.001)){gap=true;unresolved.push('Unresolved operator-to-route access');}
   if(l.transitionBefore){gap=true;unresolved.push(l.transitionBefore.reason);}
   const previous=r.legs[i-1];if(previous?.status==='CALCULATED'&&l.status==='CALCULATED'&&!near(previous.points.at(-1),l.points[0])){gap=true;unresolved.push('Discontinuous attachment at '+s.waypoints[i].name);check(!!l.transitionBefore,'Undeclared waypoint attachment jump');}
   check(Math.abs(l.calculatedCumulativeNM-distance)<1e-6,'Cumulative distance mismatch');

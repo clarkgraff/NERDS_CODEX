@@ -2,7 +2,7 @@ const {randomUUID,createHash}=require('node:crypto');
 const {distanceNM}=require('./navigation.cjs');
 const water=require('./water-route.cjs');
 const {assessSuitability}=require('./suitability.cjs');
-const ENGINE_VERSION='0.4.1-course-3';
+const ENGINE_VERSION='1.0.1-marine-1';
 function selectedMode(s,w){if(s.transport!=='BY-SEA')return s.transport;const modes=s.vessel.propulsionModes;const requested=w.operatingMode;if(requested&&requested!=='AUTO'){if(!modes.includes(requested))throw Error('Waypoint operating mode is not enabled on this vessel.');return requested;}return modes.find(m=>m==='SAIL')||modes.find(m=>m==='POWER-DIESEL')||modes.find(m=>m==='POWER-ELECTRIC')||'SAIL';}
 function speed(s,mode){return s.vessel[{'BY-LAND':'landKnots','BY-AIR':'airKnots','SAIL':'sailKnots','POWER-DIESEL':'dieselKnots','POWER-ELECTRIC':'electricKnots'}[mode]];}
 function timeResult(s,legs){
@@ -11,7 +11,8 @@ function timeResult(s,legs){
  for(const leg of legs){
   leg.standardSpeed=s.vessel.referenceKnots;leg.calculatedSpeed=speed(s,leg.operatingMode)||null;
   const resolved=leg.status!=='UNRESOLVED'&&Number.isFinite(leg.distanceNM)&&leg.calculatedSpeed>0;
-  if(leg.transitionBefore)knownPrefix=false;
+  const integrity=require('./route-integrity.cjs').inspect(leg);leg.endpointIntegrity=integrity;
+  if(leg.transitionBefore||!integrity.connected)knownPrefix=false;
   if(resolved){leg.standardHours=leg.distanceNM/leg.standardSpeed;leg.calculatedHours=leg.distanceNM/leg.calculatedSpeed;calculatedDistanceNM+=leg.distanceNM;standardSubtotal+=leg.standardHours;operatingSubtotal+=leg.calculatedHours;}
   else{leg.standardHours=null;leg.calculatedHours=null;knownPrefix=false;unresolvedLegs++;}
   Object.assign(leg,{calculatedCumulativeNM:calculatedDistanceNM,totalNM:knownPrefix?calculatedDistanceNM:null,totalStandardHours:knownPrefix?standardSubtotal:null,totalCalculatedHours:knownPrefix?operatingSubtotal:null,standardETA:knownPrefix?eta(standardSubtotal):null,calculatedETA:knownPrefix?eta(operatingSubtotal):null,etaStatus:knownPrefix?'NOMINAL':'UNRESOLVED: preceding duration or grid transition is unknown',differenceHours:resolved?leg.standardHours-leg.calculatedHours:null});
@@ -56,7 +57,7 @@ function planInternal(s,options={}){
  // Different grids may legitimately resolve a shared city to different access points.
  // Do not imply zero-time travel between those cells or issue an unconditional onward ETA.
  for(let i=1;i<legs.length;i++){const previousLeg=legs[i-1],current=legs[i];if(previousLeg.accesses&&current.accesses&&distanceNM(previousLeg.accesses[1],current.accesses[0])>.001){current.transitionBefore={status:'UNRESOLVED',waypointId:current.fromId,from:previousLeg.accesses[1],to:current.accesses[0],reason:'Access differs between adjacent leg networks; transfer geometry and duration unresolved.'};}}
- for(const leg of legs){leg.geographicStatus=leg.status;leg.suitability=assessSuitability([s.waypoints.find(w=>w.id===leg.fromId),s.waypoints.find(w=>w.id===leg.waypointId)],s.vessel,options.vesselSuitability,leg.transport,leg.evidence.sourceAccessEvidence);}
+ for(const leg of legs){leg.geographicStatus=leg.status;if(sea&&!leg.marineEvidence)leg.marineEvidence=require('./marine-evidence.cjs').assess(leg.points,s.vessel);leg.suitability=assessSuitability([s.waypoints.find(w=>w.id===leg.fromId),s.waypoints.find(w=>w.id===leg.waypointId)],s.vessel,options.vesselSuitability,leg.transport,leg.evidence.sourceAccessEvidence);}
  // Legacy direct-engine fixtures may reuse a place ID on a return visit.
  // Saved USER PATHs enforce distinct waypoint IDs; do not invent identities here.
  const inputPath=new Set(s.waypoints.map(w=>w.id)).size===s.waypoints.length?require('./user-path.cjs').reconcile(s.userPath,s.waypoints):null;
@@ -64,5 +65,5 @@ function planInternal(s,options={}){
  const connectors=legs.flatMap(l=>l.accesses?l.accesses.map((access,j)=>({id:l.id+':'+j,waypointId:j?l.waypointId:l.fromId,anchor:l.evidence.anchors[j],access,distanceNM:distanceNM(l.evidence.anchors[j],access),includedInPassage:false,status:distanceNM(l.evidence.anchors[j],access)>.001?'PROVISIONAL_TRANSFER':'COINCIDENT',transport:'UNSPECIFIED_TRANSFER',durationHours:null})):[]);
  return require('./course-model.cjs').annotate({...primary,userCoarseCourse:inputPath?require('./user-path.cjs').coarse(inputPath,{knots:s.vessel.referenceKnots,departureUTC:s.departureUTC,byWay:s.transport}):null,suitability:{mode:options.vesselSuitability==='ON'?'ON':'BYPASS',policy:'ADVISORY_ONLY_BETA',blocksRouting:false},engineVersion:ENGINE_VERSION,selectedId:id,alternatives:[primary],requestedPreferences:{routePreference:s.routePreference,coastalSeparationNM:s.coastalSeparationNM,objective:s.speed},effectivePreferences:routing,kind:sea?'water-outline':s.transport==='BY-LAND'?'road-network':'air-estimate',status:totals.complete?'PRELIMINARY ROUTE — ALL LEGS CALCULATED':legs.some(l=>l.status==='CALCULATED')?'PARTIAL ROUTE — UNRESOLVED LEGS OR TRANSFERS':'UNRESOLVED ROUTE',createdAt:new Date().toISOString(),connectors,provenance:sea?'Natural Earth coarse ocean grids and mapped waterways; OpenStreetMap contributors (ODbL). Per-leg geometry, source references and checksums retained.':s.transport==='BY-LAND'?'Local Valhalla regional road graph; OpenStreetMap contributors. Regional graphs are not stitched.':'Air geodesic estimates only.',warning:'Optional routing penalties remain BYPASS during baseline validation. Calculated subtotals exclude unresolved legs and anchor connectors. Unknown durations prevent downstream ETAs. No hydrographic clearance or forecast validation.',confidence:'Coarse planning only; city/shore connectors unverified',constraints:['depth-under-keel','air-draft-bridge','canal-lock','traffic-restriction','passage-exclusion','reef-shoal'].map(type=>({type,status:'unresolved',source:null})),validation:{landMask:sea?'screened at selected grid resolution':'not applicable',depth:'unresolved',bridges:'unresolved',restrictions:'unresolved',forecast:'nominal speeds only'}});
 }
-function plan(s,options={}){return require('./route-accounting.cjs').annotate(planInternal(s,options));}
+function plan(s,options={}){if(s.waypoints.some(w=>w.source==='4nR-CRONKITE'&&w.approvalStatus!=='APPROVED'))throw Error('Unapproved discovery cannot enter route calculation');return require('./route-accounting.cjs').annotate(planInternal(s,options));}
 module.exports={plan,timeResult,selectedMode,ENGINE_VERSION};

@@ -1,0 +1,113 @@
+[
+  {
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit": 0,
+    "output": "f23c401a00cbed1fff0de7f183c8f4824b180c27\n"
+  },
+  {
+    "args": [
+      "status",
+      "--porcelain=v1"
+    ],
+    "exit": 0,
+    "output": "?? NERDS_PROJECT_FILES/\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\active-beta",
+      "+refs/*:refs/recovery/active-beta/*",
+      "+refs/heads/*:refs/heads/preserved/active-beta/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\active-beta\n * [new branch]      backup/NERDS-v0.4.4-20261103 -> refs/recovery/active-beta/heads/backup/NERDS-v0.4.4-20261103\n * [new branch]      codex/beta-v1.0.0 -> refs/recovery/active-beta/heads/codex/beta-v1.0.0\n * [new branch]      codex/stage1-v031 -> refs/recovery/active-beta/heads/codex/stage1-v031\n * [new branch]      codex/stage2-v031 -> refs/recovery/active-beta/heads/codex/stage2-v031\n * [new branch]      main       -> refs/recovery/active-beta/heads/main\n * [new branch]      v0.3.0-source-test -> refs/recovery/active-beta/heads/v0.3.0-source-test\n * [new ref]         origin/HEAD -> refs/recovery/active-beta/remotes/origin/HEAD\n * [new ref]         origin/backup/nerds-v044-recovered-20261103 -> refs/recovery/active-beta/remotes/origin/backup/nerds-v044-recovered-20261103\n * [new ref]         origin/main -> refs/recovery/active-beta/remotes/origin/main\n * [new ref]         origin/route-swarm-prototype -> refs/recovery/active-beta/remotes/origin/route-swarm-prototype\n * [new ref]         origin/v0.3.0-source-test -> refs/recovery/active-beta/remotes/origin/v0.3.0-source-test\n * [new branch]      backup/NERDS-v0.4.4-20261103 -> preserved/active-beta/backup/NERDS-v0.4.4-20261103\n * [new branch]      codex/beta-v1.0.0 -> preserved/active-beta/codex/beta-v1.0.0\n * [new branch]      codex/stage1-v031 -> preserved/active-beta/codex/stage1-v031\n * [new branch]      codex/stage2-v031 -> preserved/active-beta/codex/stage2-v031\n * [new branch]      main       -> preserved/active-beta/main\n * [new branch]      v0.3.0-source-test -> preserved/active-beta/v0.3.0-source-test\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\canonical-before",
+      "+refs/*:refs/recovery/canonical-before/*",
+      "+refs/heads/*:refs/heads/preserved/canonical-before/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\canonical-before\n * [new branch]      main       -> refs/recovery/canonical-before/heads/main\n * [new ref]         origin/HEAD -> refs/recovery/canonical-before/remotes/origin/HEAD\n * [new ref]         origin/backup/nerds-v044-recovered-20261103 -> refs/recovery/canonical-before/remotes/origin/backup/nerds-v044-recovered-20261103\n * [new ref]         origin/main -> refs/recovery/canonical-before/remotes/origin/main\n * [new ref]         origin/route-swarm-prototype -> refs/recovery/canonical-before/remotes/origin/route-swarm-prototype\n * [new ref]         origin/v0.3.0-source-test -> refs/recovery/canonical-before/remotes/origin/v0.3.0-source-test\n * [new branch]      main       -> preserved/canonical-before/main\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds-codex",
+      "+refs/*:refs/recovery/github-codex-nerds-codex/*",
+      "+refs/heads/*:refs/heads/preserved/github-codex-nerds-codex/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds-codex\n * [new branch]      4nr-coder/nerds-routing-audit-006 -> refs/recovery/github-codex-nerds-codex/heads/4nr-coder/nerds-routing-audit-006\n * [new branch]      codex/stage1-v031 -> refs/recovery/github-codex-nerds-codex/heads/codex/stage1-v031\n * [new branch]      codex/stage2-v031 -> refs/recovery/github-codex-nerds-codex/heads/codex/stage2-v031\n * [new branch]      main       -> refs/recovery/github-codex-nerds-codex/heads/main\n * [new branch]      v0.3.0-source-test -> refs/recovery/github-codex-nerds-codex/heads/v0.3.0-source-test\n * [new ref]         origin/HEAD -> refs/recovery/github-codex-nerds-codex/remotes/origin/HEAD\n * [new ref]         origin/main -> refs/recovery/github-codex-nerds-codex/remotes/origin/main\n * [new ref]         origin/route-swarm-prototype -> refs/recovery/github-codex-nerds-codex/remotes/origin/route-swarm-prototype\n * [new ref]         origin/v0.3.0-source-test -> refs/recovery/github-codex-nerds-codex/remotes/origin/v0.3.0-source-test\n * [new branch]      4nr-coder/nerds-routing-audit-006 -> preserved/github-codex-nerds-codex/4nr-coder/nerds-routing-audit-006\n * [new branch]      codex/stage1-v031 -> preserved/github-codex-nerds-codex/codex/stage1-v031\n * [new branch]      codex/stage2-v031 -> preserved/github-codex-nerds-codex/codex/stage2-v031\n * [new branch]      main       -> preserved/github-codex-nerds-codex/main\n * [new branch]      v0.3.0-source-test -> preserved/github-codex-nerds-codex/v0.3.0-source-test\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds",
+      "+refs/*:refs/recovery/github-codex-nerds/*",
+      "+refs/heads/*:refs/heads/preserved/github-codex-nerds/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds\n * [new branch]      main       -> refs/recovery/github-codex-nerds/heads/main\n * [new ref]         origin/main -> refs/recovery/github-codex-nerds/remotes/origin/main\n * [new tag]         v0.1.0     -> refs/recovery/github-codex-nerds/tags/v0.1.0\n * [new tag]         v0.2.0     -> refs/recovery/github-codex-nerds/tags/v0.2.0\n * [new branch]      main       -> preserved/github-codex-nerds/main\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-copilot",
+      "+refs/*:refs/recovery/github-copilot/*",
+      "+refs/heads/*:refs/heads/preserved/github-copilot/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-copilot\n * [new branch]      main       -> refs/recovery/github-copilot/heads/main\n * [new ref]         origin/HEAD -> refs/recovery/github-copilot/remotes/origin/HEAD\n * [new ref]         origin/main -> refs/recovery/github-copilot/remotes/origin/main\n * [new ref]         origin/route-swarm-prototype -> refs/recovery/github-copilot/remotes/origin/route-swarm-prototype\n * [new branch]      main       -> preserved/github-copilot/main\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-nerds",
+      "+refs/*:refs/recovery/github-nerds/*",
+      "+refs/heads/*:refs/heads/preserved/github-nerds/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-nerds\n * [new branch]      main       -> refs/recovery/github-nerds/heads/main\n * [new ref]         origin/HEAD -> refs/recovery/github-nerds/remotes/origin/HEAD\n * [new ref]         origin/main -> refs/recovery/github-nerds/remotes/origin/main\n * [new tag]         v0.1.0     -> refs/recovery/github-nerds/tags/v0.1.0\n * [new tag]         v0.2.0     -> refs/recovery/github-nerds/tags/v0.2.0\n * [new branch]      main       -> preserved/github-nerds/main\n"
+  },
+  {
+    "args": [
+      "fetch",
+      "--no-tags",
+      "--no-write-fetch-head",
+      "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\legacy-codex-nerds",
+      "+refs/*:refs/recovery/legacy-codex-nerds/*",
+      "+refs/heads/*:refs/heads/preserved/legacy-codex-nerds/*"
+    ],
+    "exit": 0,
+    "output": "From C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\legacy-codex-nerds\n * [new branch]      main       -> refs/recovery/legacy-codex-nerds/heads/main\n * [new ref]         origin/main -> refs/recovery/legacy-codex-nerds/remotes/origin/main\n * [new tag]         v0.1.0     -> refs/recovery/legacy-codex-nerds/tags/v0.1.0\n * [new tag]         v0.2.0     -> refs/recovery/legacy-codex-nerds/tags/v0.2.0\n * [new branch]      main       -> preserved/legacy-codex-nerds/main\n"
+  },
+  {
+    "args": [
+      "switch",
+      "--no-track",
+      "-c",
+      "codex/beta-v1.0.0",
+      "refs/heads/preserved/active-beta/codex/beta-v1.0.0"
+    ],
+    "exit": 0,
+    "output": "Switched to a new branch 'codex/beta-v1.0.0'\n"
+  }
+]

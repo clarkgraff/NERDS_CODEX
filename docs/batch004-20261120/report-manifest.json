@@ -1,0 +1,87 @@
+[
+  {
+    "file": "20261018_NERDS_V001.md",
+    "bytes": 8603,
+    "sha256": "650d3d612230f33de5a4a90d5fc22c0cef02ff8049cdbfbb6a2bd1286c9fe05f"
+  },
+  {
+    "file": "20261102_G3_GEOGRAPHIC_INTEGRATION_V001.md",
+    "bytes": 6982,
+    "sha256": "21f1ae1fcea1a7cc2c4520a833af28510a3b782e71c3a07bd7367cbe6dab9355"
+  },
+  {
+    "file": "backup-verification-summary.json",
+    "bytes": 2820,
+    "sha256": "912bf8b3582ee2fb05bb15904581457858f0cef5bbca3994f0b46e5de92846b7"
+  },
+  {
+    "file": "Batch004-original.txt",
+    "bytes": 7018,
+    "sha256": "ef5b2a782aad669e052d5f3133b092e332156944a23a803735bad72fd67b52a5"
+  },
+  {
+    "file": "canonical-verification.json",
+    "bytes": 257,
+    "sha256": "c16d0de5d5a62f86c843062395dd7dfc50b4a338d4ef1058077534ec3f04a6e8"
+  },
+  {
+    "file": "external-geographic-inventory.json",
+    "bytes": 8770414,
+    "sha256": "63d86c9ed4d6bde1d68bbddad1997c3e9879436922b5519134ce706e0650e1f3"
+  },
+  {
+    "file": "field-test-register.txt",
+    "bytes": 4120,
+    "sha256": "778aa0fbf4e6104daf59053e306035daec2ae66d67e47ca19eb082e6ca2fcf88"
+  },
+  {
+    "file": "final-working-tree.txt",
+    "bytes": 5308,
+    "sha256": "ebfd2f040c8cf0be7d9303d66ab374e4d2db833f8bef2042d31b7a535b3e3a23"
+  },
+  {
+    "file": "local-history-import.json",
+    "bytes": 9015,
+    "sha256": "38542ef7f8b6d017c95391449d8931089b28c80d8aba73e9ec21a51355f39f65"
+  },
+  {
+    "file": "original-clause-register.csv",
+    "bytes": 622787,
+    "sha256": "654bb675c9624c0ee349614584bb5e898f400676ae8b1cef29ab3e97ad60d7b7"
+  },
+  {
+    "file": "post-build-preservation.json",
+    "bytes": 174,
+    "sha256": "ddeff26bfb21f658548a91431be1ece3f3d6a3a32a6bdf1b8f74d308b02cee5a"
+  },
+  {
+    "file": "REPORT-001-CONSOLIDATION.txt",
+    "bytes": 4064,
+    "sha256": "94a2a23272361ec5910e7773b6534e3511a541cb9bcd4324bef3b8479bd28255"
+  },
+  {
+    "file": "REPORT-002-SCOPE-RECONCILIATION.txt",
+    "bytes": 5921,
+    "sha256": "01c1da32dec033209d0259e3b28d871415866bd2a9dd1ab74e9ce9ca09342997"
+  },
+  {
+    "file": "REPORT-003-MASTER-SCOPE-REVISION-REGISTER.txt",
+    "bytes": 7661,
+    "sha256": "34f0971dc56836ac5ad39c40c1fa99f2af8ae0912b928fba3247ad042f97cf6c"
+  },
+  {
+    "file": "REPORT-004-NEXT-ENGINEERING-BATCH.txt",
+    "bytes": 6028,
+    "sha256": "03f2e220c44fd0c0d5852958e84cc32d3c7358ec958c61a2a18f464785c7a333"
+  },
+  {
+    "file": "requirements-traceability.csv",
+    "bytes": 20348,
+    "sha256": "4a31b1d31c50aba52819f8e1502f22da6bfcc1e0f557292e2f4c23af67774ba6"
+  },
+  {
+    "file": "verification.json",
+    "bytes": 11428,
+    "sha256": "57d40c5295e41ddf40a702428ad65c4d8b4ed769c4e74bd036c2a3b06304b931"
+  }
+]

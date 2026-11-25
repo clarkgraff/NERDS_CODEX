@@ -1,0 +1,10 @@
+{
+  "version": "1.0.1",
+  "path": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX\\dist\\beta-v1.0.1\\NERDS-Beta-1.0.1-x64.exe",
+  "bytes": 240883420,
+  "sha256": "A2A5839F41381C4E8B48C5DFB5343B8EAE2C0F65354E4E967E701A09F3166A14",
+  "type": "Portable Windows x64 executable",
+  "installedApplicationModified": false,
+  "sourceHead": "9ebe3a48627e67fbb0ab8bf51e81cff08b079f2f",
+  "sourceBranch": "codex/beta-v1.0.0"
+}

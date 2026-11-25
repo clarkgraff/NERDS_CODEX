@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\EUROPE\\DENMARK\\denmark-latest.osm.pbf",
+      "bytes": 496826581,
+      "sha256": "2df949c2065e6e3765a2ff404ad3836e8b30af39da4c77bc0416625e6052ec8e"
+    },
+    {
+      "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\BALTIC_OSM_20261108\\sweden-latest.osm.pbf",
+      "bytes": 949756885,
+      "sha256": "e93f79800e0c7d18265e0ca19acf9b555ee3f26be870301749b2ef8e6f3a70a4"
+    }
+  ],
+  "bounds": [
+    11.4,
+    55.5,
+    13.2,
+    57.2
+  ],
+  "license": "OpenStreetMap ODbL 1.0",
+  "attribution": "© OpenStreetMap contributors",
+  "limitations": [
+    "Coastline and flowlines only; water-area relations not included",
+    "Geographic evidence, not depth or safe-passage evidence"
+  ],
+  "derived": "assets/marine/kattegat-topology",
+  "resolutionDegrees": 0.002
+}

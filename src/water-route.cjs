@@ -48,6 +48,8 @@ const MAX_AUTOMATIC_CONNECTOR_NM=15;
 const sharedAccessCache=new Map();
 function automaticAccess(w,n){
  if(w.access)return w.access;
+ // The selected grid must not displace a valid water coordinate merely to satisfy a coarser grid.
+ if(n.inspect(w).classification==='WATER')return {lat:w.lat,lon:w.lon};
  // A common fine-grid water point can anchor either leg grid. Do not widen the
  // existing 15 NM local guard or accept a point blocked in either mask.
  if(inside(w)){

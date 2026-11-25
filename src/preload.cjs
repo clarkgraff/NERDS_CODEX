@@ -3,6 +3,7 @@ let operationId=0;const observers=new Set();const names={'lookup':'Searching geo
 async function invoke(name,...args){if(!names[name])return ipcRenderer.invoke(name,...args);const id=++operationId,emit=status=>{for(const fn of observers)fn({id,name:names[name],status});};emit('ACTIVE');try{const result=await ipcRenderer.invoke(name,...args);emit(result?.status==='UNRESOLVED'?'UNRESOLVED':'COMPLETE');return result;}catch(error){emit(/cancel/i.test(error.message)?'CANCELLED':'FAILED');throw error;}}
 contextBridge.exposeInMainWorld('nerds',{
  onRouteUpdate:fn=>ipcRenderer.on('route-update',(_,v)=>fn(v)),onStatusEvent:fn=>ipcRenderer.on('operation-event',(_,v)=>fn(v)),operationEvents:()=>invoke('operation-events'),recordEvent:e=>invoke('operation-record',e),routePriority:r=>invoke('route-priority',r),cancelLeg:id=>invoke('route-cancel',id),retryLeg:id=>invoke('route-retry',id),
+ importCronkite:()=>invoke('import-cronkite'),
  copyProjects:()=>invoke('copy-projects'),
  roadSettings:request=>invoke('road-settings',request),roadStop:()=>invoke('road-stop'),
  precisionSync:request=>invoke('precision-sync',request),

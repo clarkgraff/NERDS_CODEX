@@ -1,0 +1,428 @@
+# 4nR-NERDS — CODEX DEVELOPMENT DIRECTIVE
+## CRONKITE Discovery Waypoint Integration & Development Coordination
+
+**Date:** November 25, 2026  
+**Status:** APPROVED FUNCTIONAL REQUIREMENTS — IMPLEMENTATION PENDING  
+**Application:** 4nR-NERDS  
+**Integration partner:** 4nR-CRONKITE  
+**Development repository:** `C:\DATA_DRIVE\GITHUB\NERDS_CODEX`  
+**Development authority:** Existing approved NERDS development programme
+
+---
+
+## 1. PURPOSE
+
+Implement the receiving functionality for geographic discoveries transferred from **4nR-CRONKITE** using its `SEND TO NERDS` command.
+
+The integration must allow CRONKITE discoveries to be presented as proposed waypoints within the existing NERDS interface without interfering with approved expedition routes or navigational calculations.
+
+NERDS remains responsible for waypoint management, approval, ordering and routing.
+
+CRONKITE remains responsible for identifying discoveries and initiating their transfer.
+
+**The user retains absolute control over whether a discovery becomes an approved routing waypoint.**
+
+## 2. DEVELOPMENT PRIORITY & COORDINATION
+
+This directive is an addition to the existing NERDS development programme, not a replacement for its previously approved requirements.
+
+Maintain the following development sequence:
+
+**P0 — Existing routing integrity corrections**
+
+Continue the currently authorised work involving:
+
+- Route completion and endpoint-validity reporting.
+- Corrected geographical corridor and land-intersection evaluation.
+- Preservation of USER PATH intent.
+- Existing route-calculation behaviour and regression testing.
+- Outstanding geographic-routing defects previously documented in field testing.
+
+**P1 — Hydrographic integration**
+
+Continue the authorised marine-data work, including:
+
+- S-57 ENC ingestion and updates.
+- Hydrographic feature extraction and identification.
+- Depth, sounding, bridge and overhead-clearance metadata.
+- Integration of verified geographic and hydrographic evidence into routing.
+- Appropriate handling of unknown or insufficient navigational information.
+- Compatibility with additional geographic datasets being acquired independently.
+
+The existing vessel parameters remain:
+
+- **Draft: 4.21 metres**
+- **Air draft: 30 metres**
+
+Bathymetry alone must not establish safe vessel clearance.
+
+**P2 — CRONKITE Discovery Waypoint Integration**
+
+Register this directive as an independent engineering work package.
+
+Implement it after the current routing and hydrographic work reaches an appropriate tested checkpoint.
+
+Do not interrupt, discard or compromise existing development.
+
+The previously approved NERDS interface corrections, waypoint controls, marine-chart display requirements, informative tooltips and other unrelated functionality remain in force.
+
+## 3. WAYPOINT RECEPTION
+
+When NERDS receives a valid CRONKITE discovery:
+
+1. Create a new waypoint using the discovery's geographic coordinates.
+2. Insert the waypoint at the **TOP of the current waypoint list**, regardless of existing waypoint order.
+3. Identify its source as `4nR-CRONKITE`.
+4. Set its initial status to `AWAITING APPROVAL`.
+5. Preserve the CRONKITE discovery ID, event name, category, date/time, description and source references wherever supplied.
+
+The receiving mechanism must respect existing NERDS waypoint data structures and user-project persistence requirements.
+
+**Important:** The pending waypoint's position in the visible list must not automatically determine its participation in the active calculated route.
+
+## 4. VISUAL IDENTIFICATION
+
+Pending CRONKITE waypoints must:
+
+- Flash **yellow-orange at 1 Hz** (one complete cycle per second).
+- Display the caution indication on both the waypoint map marker and the waypoint list entry.
+- Display `AWAITING APPROVAL` as readable text.
+- Remain visually distinguishable from existing red CHEKHOV navigational warnings.
+
+The caution indication must clearly communicate that the waypoint is a proposed discovery awaiting user approval.
+
+Its colour, animation and presentation must not be confused with navigational danger, routing failure or confirmed geographic restrictions.
+
+The implementation must preserve normal waypoint visibility and interaction.
+
+## 5. ROUTE PROTECTION
+
+While awaiting approval:
+
+- The waypoint must not participate in active route calculations.
+- It must not change existing route geometry or sequencing.
+- It must not trigger automatic route recalculation.
+- Its presence must not constitute navigational approval.
+
+NERDS must explicitly distinguish:
+
+**A. Waypoint display order**
+
+The waypoint's position in the user-visible list.
+
+**B. Waypoint approval status**
+
+Whether the user has accepted the proposed discovery.
+
+**C. Route participation**
+
+Whether the waypoint is eligible for inclusion in the actual calculated route.
+
+These are separate properties.
+
+A pending waypoint may be displayed, inspected and reordered without becoming an active navigation waypoint.
+
+All routing functions must continue to exclude unapproved CRONKITE discoveries, regardless of their position in the waypoint list.
+
+## 6. USER INTERACTION
+
+Provide the following waypoint context-menu commands.
+
+### APPROVE WAYPOINT
+
+- Changes the waypoint to approved status.
+- Stops the flashing caution indication.
+- Applies standard NERDS waypoint styling.
+- Makes the waypoint eligible for normal route planning.
+
+Approval must be explicit.
+
+Approval must not silently replace an existing route or override the established user-controlled routing workflow.
+
+### REJECT WAYPOINT
+
+- Removes the pending waypoint from the current waypoint list and map.
+- Does not alter the existing route.
+
+Rejection must not remove or modify unrelated waypoints.
+
+### DRAG AND DROP
+
+- Users can reposition the pending waypoint anywhere in the waypoint list.
+- Reordering does not constitute approval.
+- A pending waypoint remains excluded from route calculations regardless of its list position.
+
+Existing NERDS drag-and-drop behaviour for ordinary waypoints must remain operational.
+
+### STATUS PERSISTENCE
+
+Approval status, source identification and associated discovery metadata must remain consistent with the application's existing waypoint persistence and project-management mechanisms.
+
+Do not allow project reloads, list refreshes or map redraws to bypass the pending-approval requirement.
+
+## 7. TRANSFER INTEGRITY
+
+- Preserve the original CRONKITE discovery identifier.
+- Prevent accidental duplication when the same discovery is transferred repeatedly.
+- Validate received coordinates and required identification fields.
+- Report failed or invalid transfers without corrupting the current waypoint list.
+
+Repeated transfers must not create uncontrolled duplicates or change existing routes.
+
+Malformed or incomplete transfers must be rejected safely and reported appropriately.
+
+Preserve source attribution and available event references for subsequent inspection.
+
+Do not fabricate missing metadata.
+
+## 8. APPLICATION INTEGRATION BOUNDARIES
+
+### CRONKITE RESPONSIBILITIES
+
+- Discovery generation.
+- Geographic discovery identification.
+- Discovery selection.
+- Associated event research and metadata.
+- Initiating transfer through `SEND TO NERDS`.
+
+### NERDS RESPONSIBILITIES
+
+- Receiving transferred discoveries.
+- Validating incoming waypoint information.
+- Creating and displaying proposed waypoints.
+- Initial insertion at the top of the waypoint list.
+- Pending-status presentation.
+- User-controlled list ordering.
+- Approval and rejection.
+- Approved waypoint routing eligibility.
+- Preservation of associated metadata.
+- Waypoint persistence and duplicate handling.
+
+**Do not duplicate CRONKITE discovery functionality inside NERDS.**
+
+The applications must remain operationally independent.
+
+NERDS must not require CRONKITE to be running for its existing navigation, waypoint-management or route-planning functions to operate.
+
+## 9. INBOUND DATA CONTRACT
+
+Before implementing the production transport mechanism, establish and document the inbound discovery data contract.
+
+The contract must support:
+
+| Field | Requirement |
+|---|---|
+| Source application | `4nR-CRONKITE` |
+| Discovery identifier | Required; preserve original |
+| Geographic latitude | Required; validate |
+| Geographic longitude | Required; validate |
+| Event/discovery name | Required |
+| Category | Preserve when supplied |
+| Date/time | Preserve when supplied |
+| Description | Preserve when supplied |
+| Source references | Preserve when supplied |
+| Initial NERDS status | `AWAITING APPROVAL` |
+
+The receiving interface must be capable of distinguishing newly transferred discoveries from previously received discoveries.
+
+Coordinate validation must reject invalid geographic values.
+
+The contract must establish predictable responses for accepted, duplicate, invalid and failed transfers.
+
+Do not assume that an existing transport protocol, API endpoint or shared database has already been implemented.
+
+Document the proposed transport mechanism and any architectural decisions requiring approval before introducing new external dependencies.
+
+## 10. EXISTING NERDS FUNCTIONALITY
+
+The integration must preserve:
+
+- Existing user-created waypoints.
+- Existing USER PATH behaviour.
+- Existing waypoint sequencing and editing.
+- Current route-calculation logic.
+- Existing routing corrections.
+- Existing saved projects and persistence.
+- Existing map markers and geographic overlays.
+- Existing CHEKHOV navigational warnings.
+- Existing marine-chart and hydrographic development.
+- Previously approved UI controls and behaviours.
+- Existing data acquisition and caching operations.
+
+No unrelated functionality may be removed, simplified, replaced or disabled to accommodate CRONKITE.
+
+Do not introduce a mandatory dependency between CRONKITE and the core NERDS routing engine.
+
+## 11. REGRESSION TESTING
+
+Develop automated tests covering the following behaviours.
+
+### A. Discovery reception
+
+- Valid discovery accepted.
+- Invalid coordinates rejected.
+- Missing required identification rejected.
+- Source information preserved.
+- Available metadata retained.
+
+### B. Initial presentation
+
+- New discovery appears at the top of the current waypoint list.
+- New map marker is created.
+- Source `4nR-CRONKITE` is displayed.
+- Status `AWAITING APPROVAL` is displayed.
+- Yellow-orange caution animation operates at 1 Hz.
+- The map marker and waypoint list entry are visually consistent.
+
+### C. Route isolation
+
+- Pending waypoint is excluded from route calculations.
+- Existing route geometry remains unchanged.
+- Existing route order remains unchanged.
+- No automatic recalculation occurs.
+- Dragging a pending waypoint does not alter the active route.
+
+### D. Approval
+
+- Explicit approval changes status.
+- Flashing stops.
+- Normal styling is applied.
+- Waypoint becomes eligible for ordinary routing.
+- Existing routing safeguards remain operative.
+
+### E. Rejection
+
+- Pending waypoint is removed from the list.
+- Pending map marker is removed.
+- Existing route remains unchanged.
+- Other waypoints are unaffected.
+
+### F. Reordering
+
+- Pending waypoints can be repositioned throughout the waypoint list.
+- Approval status remains unchanged after reordering.
+- Route calculations remain unaffected while approval is pending.
+
+### G. Duplicates and invalid transfers
+
+- Repeated discovery transfers are detected.
+- Duplicates do not create uncontrolled waypoint entries.
+- Invalid transfers produce appropriate error reporting.
+- Failed transfers leave existing waypoint and route data intact.
+
+### H. Persistence and compatibility
+
+- Saved projects retain appropriate waypoint statuses and metadata.
+- Reloading a project does not automatically approve a pending waypoint.
+- Existing NERDS projects remain compatible.
+- Existing routing regression tests continue to pass.
+- CHEKHOV warning presentation remains unaffected.
+
+## 12. ACCEPTANCE CRITERIA
+
+Implementation is complete only when:
+
+1. A transferred discovery appears at the top of the waypoint list.
+2. Source and approval status are visible.
+3. The yellow-orange caution indicator flashes at 1 Hz.
+4. Pending waypoints cannot influence route calculations.
+5. Drag-and-drop reordering operates independently of approval.
+6. Approval and rejection function correctly.
+7. Duplicate transfers are handled.
+8. Existing waypoints and route calculations remain unaffected until explicit approval.
+9. Received discovery metadata and source identification are preserved.
+10. Invalid transfers are handled safely.
+11. Pending status survives applicable persistence operations.
+12. Existing NERDS regression tests remain successful.
+13. No unrelated application functions have been removed or degraded.
+
+A passing isolated integration test is not sufficient if existing routing functionality regresses.
+
+## 13. DEVELOPMENT & SOURCE-CONTROL REQUIREMENTS
+
+All development must comply with the established 4nR source-management requirements.
+
+**Canonical working repository:**
+
+`C:\DATA_DRIVE\GITHUB\NERDS_CODEX`
+
+Preserve:
+
+- Existing source files.
+- Existing Git history.
+- Current development branches.
+- Existing uncommitted work.
+- Existing compiled applications.
+- Current working geographic datasets.
+- Existing development documentation.
+- Test fixtures and regression suites.
+
+Do not perform destructive repository consolidation.
+
+Do not automatically migrate geographic datasets into active routing.
+
+Do not overwrite established source data or replace current routing implementations without verified engineering justification and authorisation.
+
+Do not initiate an MSI release or remote GitHub push under this directive.
+
+## 14. DOCUMENTATION & SCOPE CONTROL
+
+Register the CRONKITE Discovery Waypoint Integration as an approved requirement within the NERDS development requirements register.
+
+Document:
+
+- Integration architecture.
+- Inbound data contract.
+- Waypoint status management.
+- Presentation rules.
+- Route-isolation mechanism.
+- Approval/rejection behaviour.
+- Duplicate-detection mechanism.
+- Persistence requirements.
+- Regression tests.
+- Compatibility findings.
+- Remaining implementation dependencies.
+
+Preserve the existing authoritative SCOPE documentation and all historical requirements.
+
+Do not rewrite or replace the master SCOPE without separate authorisation.
+
+## 15. CODEX EXECUTION INSTRUCTIONS
+
+1. Continue the existing authorised development work.
+2. Preserve all work already completed.
+3. Register this complete directive as the next independent integration work package.
+4. Examine the current NERDS architecture to determine the correct integration points.
+5. Establish the proposed inbound discovery contract.
+6. Identify any conflicts with existing waypoint, USER PATH or route-calculation behaviour.
+7. Preserve pending-waypoint isolation from active routing.
+8. Implement the integration in the approved development sequence.
+9. Execute focused integration tests and existing NERDS regression tests.
+10. Report implementation results accurately, including any incomplete requirements.
+
+Do not infer that a feature is implemented merely because its requirement is documented.
+
+Provide an engineering report identifying:
+
+- Files modified.
+- Features implemented.
+- Data structures introduced or extended.
+- Test commands executed.
+- Test results.
+- Existing-function regression results.
+- Unresolved technical issues.
+- Decisions requiring management approval.
+
+---
+
+## FINAL ENGINEERING MANDATE
+
+**CRONKITE discovers. NERDS receives. The user decides.**
+
+A geographic discovery is not an approved navigation waypoint until the user explicitly approves it.
+
+The receiving system must preserve existing routing integrity, user control, source attribution and project data.
+
+**Preserve all existing NERDS functionality. Do not remove, replace or simplify unrelated features.**
+
+**END OF DIRECTIVE — 4nR-NERDS / CRONKITE INTEGRATION**

@@ -1,0 +1,124 @@
+ M THIRD-PARTY-NOTICES.txt
+ M assets/display/catalogue.json
+ M assets/nerds.ico
+ M docs/beta-v1.0.0/REVIEW.md
+ M docs/beta-v1.0.0/beta-project-hashes.json
+ M docs/beta-v1.0.0/changed-files.txt
+ M docs/beta-v1.0.0/geographic-summary.json
+ M docs/v0.4.4/source-interaction.json
+ M package-lock.json
+ M package.json
+ M scripts/coastline_topology.py
+ M scripts/msi-branding.cjs
+ M scripts/msi-upgrade.cjs
+ M scripts/prepare-display-osm.py
+ M src/core.cjs
+ M src/course-refinement.cjs
+ M src/geographic-preparation.cjs
+ M src/geographic-route.cjs
+ M src/incremental-routing.cjs
+ M src/incremental-worker.cjs
+ M src/main.cjs
+ M src/passage.cjs
+ M src/preload.cjs
+ M src/project-directory.cjs
+ M src/public/app.js
+ M src/public/corrective.js
+ M src/public/custom-course.js
+ M src/public/detailed-map.js
+ M src/public/display-policy.js
+ M src/public/incremental-routing.js
+ M src/public/local-cartography.js
+ M src/public/local-display.js
+ M src/public/navigation-constraints.js
+ M src/public/release043.js
+ M src/public/release044.js
+ M src/public/release045.js
+ M src/public/release047.js
+ M src/public/search-policy.js
+ M src/public/style.css
+ M src/public/tile-fallback.js
+ M src/road-service.cjs
+ M src/water-area-route.cjs
+ M src/water-route.cjs
+ M test/beta-corrections.cjs
+ M test/beta-desktop.cjs
+ M test/beta-display.test.cjs
+ M test/beta-geographic-regressions.cjs
+ M test/beta-imagery.cjs
+ M test/beta-season-three.cjs
+ M test/beta-viewport.cjs
+ M test/incremental-routing.test.cjs
+ M test/navigation047.test.cjs
+ M test/project-directory.test.cjs
+ M test/refinement045.test.cjs
+ M test/road.test.cjs
+ M test/tile-fallback.test.cjs
+ M test/v047-harbours.cjs
+ M test/v047-imagery-persistence.cjs
+?? NERDS_PROJECT_FILES/.gitignore
+?? assets/installer-banner.bmp
+?? assets/installer-dialog.bmp
+?? assets/marine/gebco-kattegat/depth.f32
+?? assets/marine/gebco-kattegat/manifest.json
+?? assets/marine/kattegat-topology/kattegat-local-exclusions.bin.gz
+?? assets/marine/kattegat-topology/kattegat-local.bin.gz
+?? assets/marine/kattegat-topology/kattegat-local.geojson.gz
+?? assets/marine/kattegat-topology/manifest.json
+?? assets/marine/kattegat-topology/ready.json
+?? assets/marine/kattegat-topology/waterways.json
+?? assets/nerds-beta-logo.png
+?? docs/NERDS_v0.4.6_DEVELOPMENT_RECONCILIATION.md
+?? docs/batch004-20261120/20261018_NERDS_V001.md
+?? docs/batch004-20261120/20261102_G3_GEOGRAPHIC_INTEGRATION_V001.md
+?? docs/batch004-20261120/Batch004-original.txt
+?? docs/batch004-20261120/REPORT-001-CONSOLIDATION.txt
+?? docs/batch004-20261120/REPORT-002-SCOPE-RECONCILIATION.txt
+?? docs/batch004-20261120/REPORT-003-MASTER-SCOPE-REVISION-REGISTER.txt
+?? docs/batch004-20261120/REPORT-004-NEXT-ENGINEERING-BATCH.txt
+?? docs/batch004-20261120/backup-verification-summary.json
+?? docs/batch004-20261120/canonical-verification.json
+?? docs/batch004-20261120/external-geographic-inventory.json
+?? docs/batch004-20261120/field-test-register.txt
+?? docs/batch004-20261120/local-history-import.json
+?? docs/batch004-20261120/original-clause-register.csv
+?? docs/batch004-20261120/report-manifest.json
+?? docs/batch004-20261120/requirements-traceability.csv
+?? docs/batch004-20261120/verification.json
+?? docs/beta-v1.0.1/RELEASE.md
+?? docs/beta-v1.0.1/additional-marine-resources.json
+?? docs/beta-v1.0.1/adopted-coastline-sources.json
+?? docs/beta-v1.0.1/delivery.json
+?? docs/beta-v1.0.1/geographic-results.json
+?? docs/beta-v1.0.1/marine-audit.json
+?? docs/recovered-scope-originals-20261119/4nR-MOS/20261018_4nR-MOS_SIOP_Master_Scope_v1.0_RevA.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261014_NERDS_Application_Scope_v0.2.1.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261014_NERDS_Application_Scope_v0.2.1_RevA.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261014_NERDS_Application_Scope_v0.2.1_RevB.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261014_NERDS_Application_Scope_v0.2.1_RevC.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261015_NERDS_Development_Scope_v0.3.1_RevA.docx
+?? docs/recovered-scope-originals-20261119/NERDS/20261016_NERDS_Development_Scope_v0.3.1_RevB.docx
+?? "docs/recovered-scope-originals-20261119/NERDS/20261026_4nR-MOS_SIOP_NERDS_Development_Archive_Addendum (1).docx"
+?? docs/recovered-scope-originals-20261119/NERDS/20261026_4nR-MOS_SIOP_NERDS_Development_Archive_Addendum.docx
+?? "docs/recovered-scope-originals-20261119/NERDS/NERDS Operation Manual.docx"
+?? docs/recovered-scope-originals-20261119/manifest.json
+?? docs/v0.4.4/DELIVERY.md
+?? docs/v0.4.4/installed-interaction.json
+?? docs/v0.4.4/installed-road-ui.json
+?? docs/v0.4.4/preservation-before.json
+?? docs/v0.4.4/road-live.json
+?? docs/v0.4.4/road-regional-validation.json
+?? docs/v0.4.4/source-road-ui.json
+?? scripts/extract-local-hydrography.py
+?? scripts/prepare-bathymetry.py
+?? src/marine-diagnostics.cjs
+?? src/marine-evidence.cjs
+?? test/beta101-alignment-desktop.cjs
+?? test/beta101-bezier.test.cjs
+?? test/beta101-coastal.test.cjs
+?? test/beta101-desktop.cjs
+?? test/beta101-endpoints.test.cjs
+?? test/beta101-geographic.cjs
+?? test/beta101-marine.test.cjs
+?? test/beta101-packaged-marine.cjs
+?? test/beta101-portable-smoke.cjs

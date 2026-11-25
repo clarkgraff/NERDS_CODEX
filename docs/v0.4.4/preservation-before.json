@@ -1,0 +1,94 @@
+{
+  "at": "2026-11-05T22:44:10.652Z",
+  "files": [
+    {
+      "file": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\config.json",
+      "sha256": "de7f907ce47da458918dcb563ae9a3a5eb5ac959dd7190e222c5329fdfedfb8c"
+    },
+    {
+      "file": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\config.json",
+      "sha256": "9f64ae201c4ee7fa9fa9a18520c8c7a246ed46fa645b00234fe5a267254a944e"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\AMAZON_V1.nerds",
+      "sha256": "2d922adba1d299c4d037415d041d10f659e810f4080ff44b2660b488097232e8"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\ELBE_RIVER.nerds",
+      "sha256": "39f5b1712d55544346821cc00cf1c24e97430897b65e6130d6d4d45df9b26609"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\MEKONG_RIVER.nerds",
+      "sha256": "a1ffc001b3b36d4f63f3f55b1df87b6628e56e8c08756b7eedf3f1d80e532c89"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\MISSISSIPPI_RIVER.nerds",
+      "sha256": "0d70b96f24c9eb18ee49ebf38562e601e704ee2f0cf845441ea1c1dacbaa33c7"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\NORTHERN_CANADA_GREENLAND.nerds",
+      "sha256": "917f04b8d08ca0b83ef63e446ad9e3016ccfef1ddcd2df648cb6c599b1c3356f"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\ST_LAWRENCE_RIVER.nerds",
+      "sha256": "93c7e0a856c02609541e6b7038516ebde21c7f8b2d9590a0f08a159e8465ee52"
+    },
+    {
+      "file": "C:\\Users\\Clark\\Documents\\TONLE_SAP_RIVER.nerds",
+      "sha256": "4001026e52fe9772b96c29916db88cb580dae24345f30265b05443684c3014c2"
+    }
+  ],
+  "trees": [
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data",
+      "entries": [
+        {
+          "path": "nerds.sqlite",
+          "bytes": 105504768,
+          "modified": 1793905399749.0083
+        },
+        {
+          "path": "route-diagnostics\\legs.jsonl",
+          "bytes": 1834808,
+          "modified": 1793830708084.369
+        },
+        {
+          "path": "route-diagnostics\\legs.previous.jsonl",
+          "bytes": 5551136,
+          "modified": 1793822536427.3079
+        }
+      ]
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\cache",
+      "entries": []
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\NERDS-Development-Test-0.4.1\\data\\archive",
+      "entries": []
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data",
+      "entries": [
+        {
+          "path": "nerds.sqlite",
+          "bytes": 303104,
+          "modified": 1793327936083.542
+        },
+        {
+          "path": "route-diagnostics\\legs.jsonl",
+          "bytes": 624264,
+          "modified": 1793132272085.8162
+        }
+      ]
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\cache",
+      "entries": []
+    },
+    {
+      "root": "C:\\Users\\Clark\\AppData\\Roaming\\nerds\\data\\archive",
+      "entries": []
+    }
+  ]
+}

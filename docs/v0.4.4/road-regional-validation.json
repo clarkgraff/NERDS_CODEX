@@ -1,0 +1,14 @@
+[
+  {
+    "region": "GERMANY_HAMBURG",
+    "status": "PASS",
+    "points": 303,
+    "providerKM": 6.42
+  },
+  {
+    "region": "UNITED_KINGDOM",
+    "status": "PASS",
+    "points": 239,
+    "providerKM": 3.151
+  }
+]

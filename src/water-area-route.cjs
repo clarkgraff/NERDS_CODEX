@@ -44,12 +44,13 @@ function getGraph(){
  function attachments(w){const p=w.access||w,items=net.candidates(p,w.access ? .01 : 3).map(c=>({id:c.id,access:c.point,connectorNM:c.distance}));for(const a of regions)for(const c of a.candidates(p,!!w.access))if(supportedSegment(c.access,a.point(c.cell),a))items.push({...c,id:a.offset+c.cell,area:a.id});return items;}
  graph={net,regions,point,neighbors,attachments};return graph;
 }
-function search(a,b,grid){
+function search(a,b,grid,portalTarget){
  const g=getGraph(),starts=g.attachments(a),ends=b?g.attachments(b):[],targets=new Map(ends.map(c=>[c.id,c]));if(!starts.length||b&&!ends.length)return null;
- const cost=new Map(),parents=new Map(),origins=new Map(),done=new Set(),heap=new Heap();const heuristic=id=>b?Math.max(0,estimateNM(g.point(id),b.access||b)-3):0;
+ const cost=new Map(),parents=new Map(),origins=new Map(),done=new Set(),heap=new Heap();const heuristic=id=>b?Math.max(0,estimateNM(g.point(id),b.access||b)-3):portalTarget?estimateNM(g.point(id),portalTarget.access||portalTarget):0;
+ const portal=id=>{const p=g.point(id);if(grid.inspect(p).classification!=='WATER')return false;if(!portalTarget)return true;return g.regions.every(r=>{const cell=r.cell(p);if(cell<0)return true;const [w,h]=r.dimensions,x=cell%w,y=Math.floor(cell/w);return x<2||y<2||x>=w-2||y>=h-2;});};
  for(const c of starts)if(!cost.has(c.id)||c.connectorNM<cost.get(c.id)){cost.set(c.id,c.connectorNM);origins.set(c.id,c);heap.push(c.id,c.connectorNM+heuristic(c.id));}
  while(heap.q.length){const {id}=heap.pop();if(done.has(id))continue;done.add(id);if(done.size>250000)throw Error('WATER_AREA_SEARCH_LIMIT: supported topology search budget exhausted');
-  if(targets.has(id)||!b&&grid.inspect(g.point(id)).classification==='WATER'){
+  if(targets.has(id)||!b&&portal(id)){
    const ids=[id],proof=[];let at=id;while(parents.has(at)){const p=parents.get(at);proof.unshift(p.proof);at=p.id;ids.unshift(at);}const start=origins.get(at),end=targets.get(id),points=ids.map(g.point);
    if(!near(start.access,points[0])){points.unshift(start.access);proof.unshift({kind:'AREA',area:start.area});}
    const accessEnd=end?.access||points.at(-1);if(!near(accessEnd,points.at(-1))){points.push(accessEnd);proof.push({kind:'AREA',area:end.area});}
@@ -80,11 +81,11 @@ function leg(a,b,options={}){
  if(a.lon>b.lon||a.lon===b.lon&&a.lat>b.lat){const r=leg(b,a,options);r.points.reverse();r.accesses.reverse();const e=r.evidence;if(e.edgeEvidence)e.edgeEvidence.reverse();if(e.sections){const [u,m,v]=e.sections;m.points.reverse();if(m.accesses)m.accesses.reverse();for(const key of ['rawPoints','anchors','waypointIds','accessCandidates'])if(Array.isArray(m.evidence[key]))m.evidence[key].reverse();e.sections=[v,m,u];}e.anchors=[{lat:a.lat,lon:a.lon},{lat:b.lat,lon:b.lon}];e.waypointIds=[a.id,b.id];return r;}
  let direct;try{direct=search(a,b);}catch(error){if(!error.message.startsWith('WATER_AREA_SEARCH_LIMIT'))throw error;}if(direct&&valid(direct))return direct;
  const selected=water.selectNetwork(a.access||a,b.access||b),grid=selected.network;
- function endpoint(w){const result=search(w,null,grid);if(result&&valid(result))return result;
+ function endpoint(w,target){const result=search(w,null,grid,target);if(result&&valid(result))return result;
   const access=water.automaticAccess(w,grid);if(grid.inspect(access).classification!=='WATER'||!w.access&&distanceNM(w,access)>15)throw Error('WATER_AREA_ACCESS_UNRESOLVED');
   return {points:[{lat:access.lat,lon:access.lon}],accesses:[access,access],evidence:{grid:'water-area-topology',sourceChecksum:sourceNetwork().doc.sha256,areaChecksum:manifest.sha256,edgeEvidence:[]}};
  }
- const from=endpoint(a),to=endpoint(b),middle=simplifyLeg(water.leg({...a,access:from.points.at(-1)},{...b,access:to.points.at(-1)},options));
+ const from=endpoint(a,b),to=endpoint(b,a),middle=simplifyLeg(water.leg({...a,access:from.points.at(-1)},{...b,access:to.points.at(-1)},options));
  const result={points:[...from.points,...middle.points.slice(1),...[...to.points].reverse().slice(1)],accesses:[from.accesses[0],to.accesses[0]],evidence:{grid:'water-area-ocean',anchors:[{lat:a.lat,lon:a.lon},{lat:b.lat,lon:b.lon}],waypointIds:[a.id,b.id],sections:[from,middle,to],areaChecksum:manifest.sha256,sourceAccessEvidence:[...(from.evidence.sourceAccessEvidence||[]),...(to.evidence.sourceAccessEvidence||[])],termination:'VERIFIED_WATER_AREA_OCEAN_OVERLAP'}};
  if(!valid(result))throw Error('WATER_AREA_TRANSITION_UNRESOLVED');return result;
 }

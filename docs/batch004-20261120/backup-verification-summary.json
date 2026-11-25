@@ -1,0 +1,65 @@
+[
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\active-beta-sha256.json",
+    "source": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\active-beta",
+    "files": 21454,
+    "bytes": 12275374445,
+    "gitFsckExit": 0,
+    "gitFsckOutput": "dangling tree 2f50cf1e19a160f64ad3815781bce5772bae064f\ndangling commit ecc6ba8917a1282efbda16644170b8db1cb23741\n"
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\canonical-before-sha256.json",
+    "source": "C:\\DATA_DRIVE\\GITHUB\\NERDS_CODEX",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\canonical-before",
+    "files": 122,
+    "bytes": 609626751,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds-codex-sha256.json",
+    "source": "C:\\DATA_DRIVE\\GITHUB\\Codex\\2026-10-13\\ar\\outputs\\NERDS_CODEX",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds-codex",
+    "files": 13213,
+    "bytes": 6564362828,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds-sha256.json",
+    "source": "C:\\DATA_DRIVE\\GITHUB\\Codex\\2026-10-13\\ar\\outputs\\NERDS",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-codex-nerds",
+    "files": 11904,
+    "bytes": 1481159185,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-copilot-sha256.json",
+    "source": "C:\\DATA_DRIVE\\GITHUB\\NERDS_COPILOT",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-copilot",
+    "files": 66,
+    "bytes": 22520356,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-nerds-sha256.json",
+    "source": "C:\\DATA_DRIVE\\GITHUB\\NERDS",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\github-nerds",
+    "files": 123,
+    "bytes": 23095686,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  },
+  {
+    "manifest": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\legacy-codex-nerds-sha256.json",
+    "source": "C:\\Users\\Clark\\Documents\\Codex\\2026-10-13\\ar\\outputs\\NERDS",
+    "backup": "C:\\DATA_DRIVE\\NERDS_RECOVERY\\20261119_SOURCE_CONSOLIDATION\\legacy-codex-nerds",
+    "files": 11904,
+    "bytes": 1481159185,
+    "gitFsckExit": 0,
+    "gitFsckOutput": ""
+  }
+]

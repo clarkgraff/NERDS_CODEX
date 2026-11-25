@@ -1,0 +1,407 @@
+[
+  {
+    "id": "GEBCO_NW_NORTH",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n90.0_s0.0_w-180.0_e-90.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 599755315,
+    "sha256": "7aeada76b1f0a096635097fe776d4c06468ba647bcdf88f4aaed79e720d5b5f2",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -180.0,
+      -1.4210854715202004e-14,
+      -90.0,
+      89.99999999999999
+    ],
+    "resolution": [
+      0.004166666666666667,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -4006,
+        -4006
+      ],
+      [
+        -4006,
+        -4006
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_NE_ATLANTIC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n90.0_s0.0_w-90.0_e0.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 610653119,
+    "sha256": "fd2d220aab8ea6d382df3b840e9d90112149d423ce005b83dbb9165f3fb2fec6",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -90.0,
+      -1.4210854715202004e-14,
+      0.0,
+      89.99999999999999
+    ],
+    "resolution": [
+      0.004166666666666667,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -4409,
+        -4416
+      ],
+      [
+        -4400,
+        -4408
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_N_EURASIA",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n90.0_s0.0_w0.0_e90.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 532215285,
+    "sha256": "d8c5b11bc9f0eb406fdbc587e1e7dfed06f6bd1c5508b14f2a7b3bf27211707b",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -1.8943180357666733e-15,
+      -1.4210854715202004e-14,
+      89.99999999999999,
+      89.99999999999999
+    ],
+    "resolution": [
+      0.004166666666666666,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        45,
+        44
+      ],
+      [
+        44,
+        43
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_N_PACIFIC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n90.0_s0.0_w90.0_e180.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 626381386,
+    "sha256": "52133338b2da2b115c44285aeb3cdae982935e704ac90370b98f9bc23e6aa8ec",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      89.99999999999997,
+      -1.4210854715202004e-14,
+      180.0,
+      89.99999999999999
+    ],
+    "resolution": [
+      0.004166666666666668,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        549,
+        585
+      ],
+      [
+        541,
+        582
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_SW_PACIFIC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n0.0_s-90.0_w-180.0_e-90.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 601504952,
+    "sha256": "657cee5c69ff389ab65b6c8bae8f3ef68e5f0e97d9978d59357d808fe055f9db",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -180.0,
+      -90.0,
+      -90.0,
+      1.8947517166356675e-15
+    ],
+    "resolution": [
+      0.004166666666666667,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -4910,
+        -4929
+      ],
+      [
+        -4888,
+        -4893
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_S_ATLANTIC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n0.0_s-90.0_w-90.0_e0.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 570710506,
+    "sha256": "700682bb126721837d2d484e85997185d93db7a6e0d4ea1a05bf5e6b04f7f967",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -90.0,
+      -90.0,
+      0.0,
+      1.8947517166356675e-15
+    ],
+    "resolution": [
+      0.004166666666666667,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -5034,
+        -5034
+      ],
+      [
+        -5032,
+        -5031
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_S_INDIAN",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n0.0_s-90.0_w0.0_e90.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 558745343,
+    "sha256": "6c02c113dddeca2c0688b8ea541fcb54d6ef23c34e041c22fcb3a471bd9df5c9",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      -1.8943180357666733e-15,
+      -90.0,
+      89.99999999999999,
+      1.8947517166356675e-15
+    ],
+    "resolution": [
+      0.004166666666666666,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -1433,
+        -1434
+      ],
+      [
+        -1434,
+        -1435
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_SE_PACIFIC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n0.0_s-90.0_w90.0_e180.0.tif",
+    "type": "BATHYMETRY_RASTER",
+    "exists": true,
+    "authority": "GEBCO-derived Source Cooperative COG",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 546342631,
+    "sha256": "ad42ce78546ef0aa60907415380d3359d93e222c46278111db5e89e23c4e3c6a",
+    "matchesAudit": true,
+    "crs": "EPSG:4326",
+    "bounds": [
+      89.99999999999997,
+      -90.0,
+      180.0,
+      1.8947517166356675e-15
+    ],
+    "resolution": [
+      0.004166666666666668,
+      0.004166666666666667
+    ],
+    "nodata": -32767.0,
+    "sample": [
+      [
+        -4558,
+        -4569
+      ],
+      [
+        -4523,
+        -4532
+      ]
+    ],
+    "readable": true
+  },
+  {
+    "id": "EMODNET_B4",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\EMODNET_2024\\B4_2024.tif.zip",
+    "type": "REGIONAL_BATHYMETRY",
+    "exists": true,
+    "authority": "EMODnet Bathymetry",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 297631684,
+    "sha256": "f690560e30c6a2d896aaf014bce4d71157a441b617fcb2ee293a4b0a4405eb45",
+    "matchesAudit": true,
+    "archiveEntries": 1,
+    "sampleEntries": [
+      "B4_2024.tif"
+    ],
+    "readable": true
+  },
+  {
+    "id": "FNC_NL_S57",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\FNC_NETHERLANDS\\fnc-nl.zip",
+    "type": "VECTOR_CHART",
+    "exists": true,
+    "authority": "Free Nautical Chart",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 412033135,
+    "sha256": "3508199b2a6580907ef5950b02ebf0ae32ebeceeef7b1248579e15ddf615b0f0",
+    "matchesAudit": true,
+    "archiveEntries": 83,
+    "sampleEntries": [
+      "fnc-nl/",
+      "fnc-nl/Chartinfo.txt",
+      "fnc-nl/1R7587XI.S57",
+      "fnc-nl/1R75883I.S57",
+      "fnc-nl/1R75889I.S57",
+      "fnc-nl/1R7588FI.S57",
+      "fnc-nl/1R7588LI.S57",
+      "fnc-nl/1R7588RI.S57",
+      "fnc-nl/1R7588XI.S57",
+      "fnc-nl/1R75893I.S57"
+    ],
+    "readable": true
+  },
+  {
+    "id": "FNC_DE_S57",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\FNC_GERMANY\\fnc-de.zip",
+    "type": "VECTOR_CHART",
+    "exists": true,
+    "authority": "Free Nautical Chart",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 63607031,
+    "sha256": "8d1a969fbf492aa30ebc409cd4668a464e6501c203fc82d181643a485fa029a4",
+    "matchesAudit": true,
+    "archiveEntries": 316,
+    "sampleEntries": [
+      "fnc-de/",
+      "fnc-de/Chartinfo.txt",
+      "fnc-de/DE1NO000.S57",
+      "fnc-de/DE1OS000.S57",
+      "fnc-de/DE2NO000.S57",
+      "fnc-de/DE2OS000.S57",
+      "fnc-de/DE3NO01D.S57",
+      "fnc-de/DE3NO02C.S57",
+      "fnc-de/DE3NO02D.S57",
+      "fnc-de/DE3NO02E.S57"
+    ],
+    "readable": true
+  },
+  {
+    "id": "FNC_NL_MBTILES",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\FNC_NETHERLANDS\\fnc-nl.mbtiles",
+    "type": "CHART_IMAGERY",
+    "exists": true,
+    "authority": "Free Nautical Chart",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 511827968,
+    "sha256": "b05eb64b3335d86a1c91d1b3296d4b42a91844789edbd2bf8beb5cc634d09bcb",
+    "matchesAudit": true,
+    "readable": "FORMAT_ADAPTER_REQUIRED"
+  },
+  {
+    "id": "FNC_DE_MBTILES",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\FNC_GERMANY\\fnc-de.mbtiles",
+    "type": "CHART_IMAGERY",
+    "exists": true,
+    "authority": "Free Nautical Chart",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 551669760,
+    "sha256": "7741365e119cb1e4f48ef48363cff18d35e1a089b9eb6f0a733fac56b3be7df7",
+    "matchesAudit": true,
+    "readable": "FORMAT_ADAPTER_REQUIRED"
+  },
+  {
+    "id": "NOAA_ENC",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\NOAA_USA\\NOAA_All_ENCs.zip",
+    "type": "VECTOR_CHART",
+    "exists": true,
+    "authority": "NOAA",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 816936164,
+    "sha256": "f45acfde50f6e9b84eeb8acbc5f738c1cae462c33bc51f0dc8521f099a8512ac",
+    "matchesAudit": true,
+    "archiveEntries": 27888,
+    "sampleEntries": [
+      "ENC_ROOT/US1EEZ1M/US1EEZ1A.TXT",
+      "ENC_ROOT/US1EEZ1M/US1EEZ1M.000",
+      "ENC_ROOT/US1EEZ1M/US1EEZ1M.001",
+      "ENC_ROOT/US1EEZ2M/US1EEZ2B.TXT",
+      "ENC_ROOT/US1EEZ2M/US1EEZ2C.TXT",
+      "ENC_ROOT/US1EEZ2M/US1EEZ2M.000",
+      "ENC_ROOT/US1EEZ2M/US1EEZ2M.001",
+      "ENC_ROOT/US1EEZ3M/US1EEZ3A.TXT",
+      "ENC_ROOT/US1EEZ3M/US1EEZ3B.TXT",
+      "ENC_ROOT/US1EEZ3M/US1EEZ3C.TXT"
+    ],
+    "readable": true
+  },
+  {
+    "id": "GEBCO_2026_TID",
+    "path": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\gebco_2026_tid.zip",
+    "type": "BATHYMETRY_QUALITY",
+    "exists": true,
+    "authority": "GEBCO",
+    "pipeline": "NOT_CONNECTED_TO_CHEKOV",
+    "bytes": 98994297,
+    "sha256": "6076ff5d0a1c8e9740b143be51e00a26e0ea8e813556fc86bc863f20d45ed993",
+    "matchesAudit": true,
+    "archiveEntries": 3,
+    "sampleEntries": [
+      "GEBCO_2026_TID.nc",
+      "GEBCO_Grid_docmentation.pdf",
+      "GEBCO_Grid_terms_of_use.pdf"
+    ],
+    "readable": true
+  }
+]

@@ -1,0 +1,25 @@
+REPORT 001 — VERIFIED REPOSITORY CONSOLIDATION
+2026-11-20 | Batch004 | No functional changes
+
+RESULT: Mission 1 verified. Canonical directory: C:\DATA_DRIVE\GITHUB\NERDS_CODEX
+Branch: codex/beta-v1.0.0
+HEAD: 9ebe3a48627e67fbb0ab8bf51e81cff08b079f2f
+Working manifest: Beta 1.0.1. HEAD predates uncommitted Beta101 corrections; do not describe those corrections as committed.
+
+Seven complete recovery copies and their SHA-256 manifests reside at C:\DATA_DRIVE\NERDS_RECOVERY\20261119_SOURCE_CONSOLIDATION.
+All seven backup Git integrity checks passed. 43 imported source refs verified with zero missing/mismatched targets in refs/recovery/<source>/*; preserved/<source>/* branch names retain historical heads. Canonical old main remains f23c401a00cbed1fff0de7f183c8f4824b180c27. Unique routing audit d306504dc0fcc84658815089d6bd7e61ba76a49e is preserved, not merged into Beta. No remote Git operation or history rewriting.
+
+Canonical file verification: 21,290 non-Git source/resources/build files SHA-256 and size matched; zero mismatches. Protected project-directory files: 21, unchanged. Ten original scope/SIOP files copied and verified. Seven original workspaces retained. Historical-unique ZIP: 190 content-unique entries, 776,235,756 bytes; per-entry hash manifest retained. No nested Git repositories introduced. Backup copies are on the same C: volume, not an off-device disaster-recovery copy.
+
+Working-tree state: inherited 18 substantive tracked differences (git diff --numstat) plus inherited untracked Beta files/resources/evidence, protected project directory, recovered documents and new Batch004 report files. git status additionally reports line-ending/stat differences with no normalized content diff after migration. These have not been staged, normalized or hidden; exact source byte verification is authoritative. Full status and numstat saved in verification.json; current reporting files are additional untracked material. Source-index cleanup is unnecessary for preservation and has not been performed.
+
+BUILD READINESS: electron-builder 26.15.3, existing local Electron 44.7.1; --win --dir --x64, output isolated in recovery root. Exit 0. Packaged manifest 1.0.1; all 63 src files byte-identical to canonical source. Executable: C:\DATA_DRIVE\NERDS_RECOVERY\20261119_SOURCE_CONSOLIDATION\canonical-build-check\win-unpacked\NERDS Beta.exe
+Command: .\node_modules\.bin\electron-builder.cmd --win --dir --x64 --config.directories.output=C:/DATA_DRIVE/NERDS_RECOVERY/20261119_SOURCE_CONSOLIDATION/canonical-build-check
+Log: C:\DATA_DRIVE\NERDS_RECOVERY\20261119_SOURCE_CONSOLIDATION\canonical-build-check.log
+This verifies directory packaging from canonical source, NOT a new runtime/route acceptance campaign, MSI or installation. No original installed application was modified. Historical Beta101 executable/desktop tests remain historical evidence.
+
+GEOGRAPHY: external inventory 20,792 files / 90,669,298,765 bytes under C:\DATA_DRIVE\NERDS\GEOGRAPHIC_DATA. Large original/licensed data remains in place. Metadata hashes recorded where bounded; all large data was NOT rehashed. Existing prepared resources were copied with full source verification. Season One Valhalla production and BIG BATCH data untouched. Resource presence does not prove solver integration.
+
+RECOVERY/OWNERSHIP: canonical directory is the sole designated active development target; original workspaces remain recovery sources pending separately authorised archival. Local tools can build here. GitHub Desktop registration/UI was not certified; it does not alter Git/file verification. Do not resume old working copies accidentally. No source commit, release, MSI, master rewrite or dataset processing performed.
+
+EVIDENCE: verification.json; canonical-verification.json; backup-verification-summary.json; local-history-import.json; external-geographic-inventory.json. Original SHA manifests and historical archive manifests remain in recovery/canonical archive locations. Report-only additions do not alter the verified application baseline.

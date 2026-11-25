@@ -1,0 +1,36 @@
+REPORT 002 — SCOPE RECONCILIATION
+2026-11-20 | Proposed dispositions, not an edited or approved replacement master
+
+AUTHORITY
+Original NERDS Operation Manual and v0.2.1 base/RevA/B/C; v0.3.1 RevA/B; SIOP v1.0 Revision A; Oct18 USER PATH amendment; Oct26 archive addendum; Nov2 Geographic Integration addendum; subsequent operator v043–Beta101 directives; engineering audit; Batch003 and Batch004. Latest explicit operator requirements control contradictions. AGENTS.md still describes an old v043 Gate1; subsequent approvals and Batch004 supersede that execution gate, not original preserved functionality.
+
+Original IDEA-SCOPE is represented by the recovered Operation Manual and application-scope lineage. A separately titled IDEA-SCOPE file has not been established; do not claim a missing document was reviewed. November2 exact local amendment recovered from C:\DATA_DRIVE\GITHUB\4nR-MOS-SIOP\MASTER\AMENDMENTS\20261102_G3_GEOGRAPHIC_INTEGRATION_V001.md and copied unchanged here. Its companion generated DOCX is referenced by that document but not located. The original RevA master remains unchanged.
+
+TRACEABILITY
+requirements-traceability.csv contains 81 requirement groups, each with authority, implementation/evidence, disposition and remaining acceptance boundary. original-clause-register.csv preserves 2670 nonempty source paragraphs with exact wording and source positions, including historical appendices (historical test assertions are not new requirements). Read both with the unchanged originals; grouped requirements do not delete subsidiary clauses. Not every historical clause has independent fresh acceptance evidence. Unverified is not passed or deliberately deferred. Documentary gaps above prevent certifying a complete corpus beyond available records.
+
+FOUNDATIONAL CURRENT DIRECTION
+Official chart integration, worldwide navigable connectivity, multiresolution routing and vessel-specific suitability are core capabilities. Prior engineering deferrals are incomplete delivery history, not permission to remove those requirements. Existing Beta is a partial implementation with useful regional evidence, not a navigation-qualified system.
+
+BOUNDARY RECONCILIATION
+Nov2 Architecture A assigns shared geographic acquisition/catalogue/preprocessing/index/cache/prepared network services to SURVEYOR. NERDS retains stable voyage intent, route acceptance, canonical WGS84 accounting/ETA and rendering. NERDS remains independently operable using validated local data. No shared writable database is authorised. Actual local CHEKOV job scheduler is not the SURVEYOR-CHEKOV research specialist or a deployed geographic service. Preserve current algorithms until approved controlled integration; document versioned source/data handoffs rather than silently rewriting ownership.
+
+SOURCE-VERIFIED DEFECTS FROM COMPLETED AUDIT
+1. passage.cjs timeResult and route-accounting.cjs annotate permit legacy complete/ETA despite unresolved connectors; completeExpeditionNM null is insufficient. Scheduler completion counts must distinguish geometry from connected voyage.
+2. Coarse mask generation can remove narrow water and islands/holes need source-correct handling. Detailed-land rejection is conditional on endpoint region proximity rather than the whole corridor.
+3. Grid steps, conservative simplification, nearest-vertex attachments and early portal/dataset choice can produce offsets/detours. Particular field-case cause remains unproven without execution.
+4. Refinement can preserve stale access/evidence after geometry change. Evidence must reference actual resulting geometry/source revision.
+5. GEBCO regional sampling is research context. No operational S57/S101 chart parser, depth/airdraft corridor enforcement, or datum/tide-aware clearance currently verified. 4.21m/30m must not be labelled suitable on missing evidence.
+6. Cesium imagery is not solver coverage. Missing imagery cannot establish unavailable navigable water. Parent raster overzoom magnifies baked labels; unknown-population toggle correlation is operator evidence, not an executed causal reproduction.
+
+HISTORICAL TEST EVIDENCE (NOT RERUN)
+Beta100 review: 112 Node passes; 167-waypoint run 74 geometries/92 unresolved among 166 legs, only 6 fully connected and 160 access-inclusive unresolved. Beta101 release: 122 Node passes before final guard; four affected tests after final guard; packaged marine 9 geometries/2 unresolved; Bezier, label persistence, projections and restart checks recorded. These results are not proof of complete foundational scope. Batch004 newly executed only consolidation verification and isolated directory build/source comparison.
+
+RESOURCE DISPOSITION
+NOAA ENC archives (including updates), German/Dutch material, EMODnet archives and downloaded port packages are inventories, not operational chart adapters. GEBCO adopted regional context covers 9–16E/53–60N at 15 arcsec, with licensing limits. Six earlier water-area packages and Kattegat additions are regional; raw Skagerrak extraction is not automatically adopted. Valhalla13 regional builds remain separate; cross-border continuity not implied. Retain licences/datum/update/hash evidence and distinguish missing coverage, disconnected topology, access ambiguity, search limits and actual clearance constraints.
+
+FIELD EVIDENCE
+See field-test-register.txt. No new field route was executed during this read-only reconciliation. Patagonia 5/5 calculation plus 12.2NM access gap must not be called a complete voyage. Insertion-order cause remains a hypothesis.
+
+RECOMMENDATION
+Approve REPORT003 amendments and REPORT004 bounded implementation sequence before source corrections. Keep all unverified/missing functionality in the active backlog; only explicitly designated future integrations remain future. No blanket worldwide-complete, self-contained-all-services, chart-safe or user-accepted claims.

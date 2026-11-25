@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "source": "C:\\DATA_DRIVE\\NERDS\\GEOGRAPHIC_DATA\\MARINE_CHARTS\\GEBCO_2026\\GLOBAL_COG_TILES\\gebco_2026_n90.0_s0.0_w0.0_e90.0.tif",
+  "sourceName": "GEBCO 2026",
+  "sourceBytes": 532215285,
+  "attribution": "GEBCO Compilation Group (2026)",
+  "license": "Public domain with source acknowledgement",
+  "bounds": [
+    8.999999999999996,
+    52.999999999999986,
+    15.999999999999995,
+    59.999999999999986
+  ],
+  "width": 1680,
+  "height": 1680,
+  "resolutionDegrees": [
+    0.004166666666666666,
+    0.004166666666666667
+  ],
+  "nodata": -32767.0,
+  "values": "elevation metres; negative below reference surface",
+  "verticalDatum": "GEBCO heterogeneous sources; not guaranteed chart datum",
+  "file": "depth.f32",
+  "sha256": "338e0a71bcf1877d50f6e09fcb3f724f669d375cd58d757c029e66691b26aebb",
+  "policy": "ADVISORY_ONLY",
+  "limitations": [
+    "Not an ENC or hydrographic clearance certification",
+    "Tides, uncertainty, survey age and under-keel clearance unresolved",
+    "Nearest source cell; no invented depth or interpolation",
+    "GEBCO excludes navigation and safety-at-sea use; research context only"
+  ],
+  "sourceSHA256": "d8c5b11bc9f0eb406fdbc587e1e7dfed06f6bd1c5508b14f2a7b3bf27211707b",
+  "terms": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use"
+}

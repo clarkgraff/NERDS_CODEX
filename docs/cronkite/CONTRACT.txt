@@ -1,0 +1,13 @@
+CRONKITE discovery reception — approved work package P2
+P0/P1 checkpoint: 129 Node tests passed; actual development executable tested with isolated data. S57 preparation is operational; chart routing/clearance remains incomplete.
+
+Inbound contract v1 (JSON): schemaVersion:1, sourceApplication:"4nR-CRONKITE", discoveryId:nonempty string (max200), name:nonempty string(max200), latitude:number[-90,90], longitude:number[-180,180]. Optional category/dateTime/description strings and sourceReferences JSON array are retained without invented metadata. Max document64KiB. Numeric strings, unknown source, missing identity and invalid coordinates are rejected atomically.
+Responses: ACCEPTED with local ID; DUPLICATE with preserved original discovery ID; INVALID with reason; FAILED for I/O/storage error. Deduplication is project-local and retains rejected IDs as tombstones. No silent coordinate/metadata replacement on repeated transfer.
+
+Initial transport: operator-selected JSON handoff using existing Electron native file dialog/IPC; no new network listener, shared database, external dependency or automatic CRONKITE launch. CRONKITE SEND TO NERDS live transport is not presumed implemented. Automatic transport and partner-side emission/contract compatibility require coordination before deployment.
+
+Isolation: discoveries are stored in project.discoveryInbox, separate from active waypoints/USER PATH. displayOrder places new records above the visible list without changing expedition order. Pending records stay excluded on save/reopen/reorder/plot. Approval marks eligible but does not recalculate or overwrite the existing course. Explicit next PLOT ROUTE promotes approved discoveries into the ordered itinerary and invokes the existing workflow. Reject removes pending display/marker but preserves duplicate tombstone. Existing active waypoint operations retain their semantics.
+
+Presentation: AWAITING APPROVAL text/source, yellow-orange 1-second complete cycle in list and map, distinct from red navigational advisories. Approval removes animation. List and map context commands APPROVE WAYPOINT / REJECT WAYPOINT; pending reorder preserves approval and routing isolation. Labels obey waypoint-label visibility, status remains readable in the card.
+
+Acceptance: reception/malformed/duplicates/rejection/reorder/persistence; untouched route and USER PATH until explicit plot; actual Cesium marker/list and1Hz animation; ordinary routing regressions. No unrelated scope removed. Existing chart foundation, search/UI requirements and marine advisories remain separate active work.

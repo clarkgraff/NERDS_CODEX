@@ -1,0 +1,282 @@
+[
+  {
+    "pair": [
+      "Helsingborg",
+      "Halmstad"
+    ],
+    "status": "CALCULATED",
+    "nm": 44.00867032523299,
+    "reason": null,
+    "access": [
+      0.3829290382521601,
+      0.962909191298724
+    ],
+    "grid": "water-area-topology",
+    "markers": [
+      {
+        "lat": 56.04672999999999,
+        "lon": 12.69437
+      },
+      {
+        "lat": 56.67446000000001,
+        "lon": 12.85676
+      }
+    ],
+    "depth": "MODELLED_DEPTH_ONLY",
+    "vertexCount": 340
+  },
+  {
+    "pair": [
+      "Aarhus",
+      "Halmstad"
+    ],
+    "status": "CALCULATED",
+    "nm": 104.59587569608335,
+    "reason": null,
+    "access": [
+      1.770103523607642,
+      0.962909191298724
+    ],
+    "grid": "water-area-ocean",
+    "markers": [
+      {
+        "lat": 56.15674,
+        "lon": 10.210759999999999
+      },
+      {
+        "lat": 56.67446000000001,
+        "lon": 12.85676
+      }
+    ],
+    "depth": "MODELLED_DEPTH_ONLY",
+    "vertexCount": 725
+  },
+  {
+    "pair": [
+      "Helsingborg",
+      "Gothenburg"
+    ],
+    "status": "CALCULATED",
+    "nm": 104.70094474360722,
+    "reason": null,
+    "access": [
+      0.3829290382521601,
+      14.42202150679327
+    ],
+    "grid": "water-area-ocean",
+    "markers": [
+      {
+        "lat": 56.04672999999999,
+        "lon": 12.69437
+      },
+      {
+        "lat": 57.70715999999999,
+        "lon": 11.966790000000003
+      }
+    ],
+    "depth": "MODELLED_DEPTH_ONLY",
+    "vertexCount": 642
+  },
+  {
+    "pair": [
+      "Gothenburg",
+      "Oslo"
+    ],
+    "status": "UNRESOLVED",
+    "nm": null,
+    "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+    "access": [],
+    "grid": "europe-0.025",
+    "markers": [
+      {
+        "lat": 57.70715999999999,
+        "lon": 11.966790000000003
+      },
+      {
+        "lat": 59.91273000000001,
+        "lon": 10.74609
+      }
+    ],
+    "depth": "UNKNOWN",
+    "vertexCount": 0
+  },
+  {
+    "pair": [
+      "Hamburg",
+      "Kiel"
+    ],
+    "status": "CALCULATED",
+    "nm": 99.39382161695869,
+    "reason": null,
+    "access": [
+      0.05672098145035336,
+      0.27174183246618405
+    ],
+    "grid": "source-waterway-network",
+    "markers": [
+      {
+        "lat": 53.55073,
+        "lon": 9.993019999999998
+      },
+      {
+        "lat": 54.32133,
+        "lon": 10.13489
+      }
+    ],
+    "depth": "MODELLED_SHALLOW_WATER_ADVISORY",
+    "vertexCount": 444
+  },
+  {
+    "pair": [
+      "Kiel",
+      "Helsingborg"
+    ],
+    "status": "CALCULATED",
+    "nm": 173.35642305281735,
+    "reason": null,
+    "access": [
+      0.27174183246618405,
+      0.3829290382521601
+    ],
+    "grid": "water-area-ocean",
+    "markers": [
+      {
+        "lat": 54.32133,
+        "lon": 10.13489
+      },
+      {
+        "lat": 56.04672999999999,
+        "lon": 12.69437
+      }
+    ],
+    "depth": "MODELLED_SHALLOW_WATER_ADVISORY",
+    "vertexCount": 290
+  },
+  {
+    "pair": [
+      "Helsingborg",
+      "Gdańsk"
+    ],
+    "status": "CALCULATED",
+    "nm": 280.6445463683688,
+    "reason": null,
+    "access": [
+      0.3829290382521601,
+      4.2484004394026025
+    ],
+    "grid": "water-area-ocean",
+    "markers": [
+      {
+        "lat": 56.04672999999999,
+        "lon": 12.69437
+      },
+      {
+        "lat": 54.35227,
+        "lon": 18.649119999999996
+      }
+    ],
+    "depth": "MODELLED_SHALLOW_WATER_ADVISORY",
+    "vertexCount": 285
+  },
+  {
+    "pair": [
+      "Gdańsk",
+      "Riga"
+    ],
+    "status": "CALCULATED",
+    "nm": 316.2445191369001,
+    "reason": null,
+    "access": [
+      4.2484004394026025,
+      7.240125721870491
+    ],
+    "grid": "europe-0.025",
+    "markers": [
+      {
+        "lat": 54.35227,
+        "lon": 18.649119999999996
+      },
+      {
+        "lat": 56.945999999999984,
+        "lon": 24.10589
+      }
+    ],
+    "depth": "INCOMPLETE_COVERAGE",
+    "vertexCount": 5
+  },
+  {
+    "pair": [
+      "Riga",
+      "Tallinn"
+    ],
+    "status": "CALCULATED",
+    "nm": 190.0174963142226,
+    "reason": null,
+    "access": [
+      7.240125721870491,
+      3.052505356387611
+    ],
+    "grid": "europe-0.025",
+    "markers": [
+      {
+        "lat": 56.945999999999984,
+        "lon": 24.10589
+      },
+      {
+        "lat": 59.43695999999999,
+        "lon": 24.753530000000005
+      }
+    ],
+    "depth": "INCOMPLETE_COVERAGE",
+    "vertexCount": 10
+  },
+  {
+    "pair": [
+      "Tallinn",
+      "St. Petersburg"
+    ],
+    "status": "CALCULATED",
+    "nm": 186.78759102805572,
+    "reason": null,
+    "access": [
+      3.052505356387611,
+      3.823042972094016
+    ],
+    "grid": "europe-0.025",
+    "markers": [
+      {
+        "lat": 59.43695999999999,
+        "lon": 24.753530000000005
+      },
+      {
+        "lat": 59.93863,
+        "lon": 30.31413
+      }
+    ],
+    "depth": "INCOMPLETE_COVERAGE",
+    "vertexCount": 14
+  },
+  {
+    "pair": [
+      "Kiel",
+      "Szczecin"
+    ],
+    "status": "UNRESOLVED",
+    "nm": null,
+    "reason": "ACCESS_TOO_DISTANT: no local water connection within the grid-scaled diagnostic guard; waterway/harbour geometry is missing.",
+    "access": [],
+    "grid": "europe-0.025",
+    "markers": [
+      {
+        "lat": 54.32133,
+        "lon": 10.13489
+      },
+      {
+        "lat": 53.42893999999998,
+        "lon": 14.55302
+      }
+    ],
+    "depth": "UNKNOWN",
+    "vertexCount": 0
+  }
+]

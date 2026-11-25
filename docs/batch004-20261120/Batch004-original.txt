@@ -1,0 +1,183 @@
+# 4nR-NERDS — BATCH 004
+## COMPLETE REPOSITORY CONSOLIDATION & SCOPE RECONCILIATION
+**Date:** 2026-11-20
+**Priority:** CRITICAL
+**Execution:** Authorised consolidation and read-only SCOPE reconciliation
+
+### MISSION 1 — FINISH PRIORITY ZERO
+
+Resume the previously authorised NERDS repository consolidation from the last verified checkpoint.
+
+**DO NOT REPEAT COMPLETED AUDITS OR BACKUPS.**
+
+Previously reported:
+
+- Seven repository recovery copies created.
+- SHA-256 copy verification completed.
+- Git integrity checks passed.
+- Historical branch imports initiated.
+- Canonical repository consolidation not yet verified.
+
+First inspect the actual current state.
+
+Canonical development location:
+
+`C:\DATA_DRIVE\GITHUB\NERDS_CODEX`
+
+Verify the precise designated repository directory before operations.
+
+Complete all outstanding consolidation work:
+
+1. Preserve all seven original repository histories and unique material.
+2. Finish any incomplete local history imports.
+3. Establish Beta v1.0.1 as the active development baseline.
+4. Preserve older releases, branches and uncommitted work.
+5. Consolidate development documentation, SCOPE files, SIOP documents, build infrastructure, scripts, tests and regression evidence.
+6. Inventory geographic and hydrographic resources, maintaining appropriate local storage for large or licensed data.
+7. Verify file integrity, Git history and repository consistency.
+8. Confirm that the current Beta source can be built from the canonical development location, if existing tools permit.
+9. Preserve every original workspace until its migration has been verified and archival is separately authorised.
+
+Do not force-push, rewrite remote history, delete source material or introduce functional changes.
+
+**DELIVERABLE 001:** Verified consolidation report.
+
+If consolidation is blocked, identify the exact unresolved operation and STOP.
+
+### MISSION 2 — RECONCILE THE AUTHORITATIVE SCOPE
+
+Proceed only after Mission 1 has been verified complete.
+
+Locate the authoritative 4nR-NERDS SCOPE and associated requirements, including:
+
+- Original NERDS Operation Manual.
+- Original IDEA-SCOPE documentation.
+- SIOP Revision A.
+- November 2 Geographic Addendum.
+- Subsequent approved requirements.
+- Completed Beta v1.0.1 engineering audit.
+- Existing approved development mandates.
+
+Preserve all original requirements.
+
+Identify conflicts between historical deferrals and current decisions.
+
+**Current approved direction: Official marine-chart integration, worldwide navigable-waterway connectivity, progressive routing refinement and vessel-specific navigational assessment are foundational NERDS capabilities, not optional future enhancements.**
+
+These requirements must be represented explicitly in the proposed revised SCOPE.
+
+Include:
+
+**HYDROGRAPHIC INTEGRATION**
+- Existing NOAA ENC archives.
+- German/Dutch chart material.
+- GEBCO and EMODnet datasets.
+- S-57 ingestion and S-101 compatibility planning.
+- MARINE CHARTS and MARINE CHARTS + SATELLITE displays.
+- Chart provenance, updates, datums and coverage.
+
+**NAVIGATION**
+- Worldwide oceans, coastlines, straits, fjords, harbours and navigable rivers.
+- Progressive multiresolution geographic routing.
+- Accurate endpoint connections.
+- Removal of artificial offsets.
+- Honest route-completion reporting.
+- Vessel water draft 4.21 m and air draft 30 m.
+- Clear distinction between geographic connectivity and verified vessel suitability.
+
+**SURVEYOR-CHEKOV**
+- Navigational research and source verification.
+- Route-specific advisories.
+- Bold red ! indicator with LMC detail dialog.
+- Weather and oceanographic research.
+- Retention of independent NERDS routing capability.
+
+**GEOGRAPHIC DISPLAY / UI**
+- Correct unknown-population label rendering.
+- EDIT USER PATH / EDITING USER PATH.
+- PLACE MAP PIN / PLACING MAP PIN.
+- Active editing/placement buttons flashing green.
+- ENTER MAP COORDINATES without the + prefix.
+- ORIGINAL / REVERSE ROUTE with the current state highlighted.
+- Preservation of existing editing and waypoint functions.
+
+**FUTURE INTEGRATIONS**
+- Earth Nullschool public visualisation.
+- Potential reuse of MIT-licensed visualisation components.
+- NOAA, ECMWF and Copernicus environmental data.
+- SIMRAD Commercial preferred prospective navigation-equipment partnership.
+- FURUNO alternative.
+- Manufacturer-independent MOS/NERDS interfaces.
+
+### MISSION 3 — REGISTER THE NEW FIELD TESTS
+
+Preserve the additional operator observations in the regression-test register.
+
+**PATAGONIA / SOUTH ATLANTIC**
+
+Montevideo → Stanley with intermediate coastal waypoints.
+
+Earlier five-waypoint test:
+- 2/4 legs calculated.
+- 2 unresolved.
+
+Subsequent six-waypoint test:
+- 5/5 legs calculated.
+- 0 unresolved.
+- Approximately 12.2 NM access gap reported.
+
+The operator constructed the second route by first entering the endpoints and then adding intermediate waypoints individually, working backwards from the destination.
+
+Define a reproducible comparison:
+
+A. Enter the complete final waypoint sequence before calculation.
+
+B. Enter endpoints first, then add the same intermediate waypoints in reverse insertion sequence, recalculating after each addition.
+
+Compare waypoint IDs, final coordinates/order, selected datasets, attachment candidates, caching, scheduler behaviour, route geometry and endpoint gaps.
+
+Do not claim insertion order caused the difference without an executed controlled comparison.
+
+Also preserve:
+
+- Two-waypoint versus multiwaypoint Amazon behaviour.
+- Upper Amazon/Solimões connectivity difficulties.
+- Suriname two-waypoint success versus earlier multiwaypoint partial failure.
+- Gibraltar, Norwegian fjords, Denmark, Stralsund and Athens–Crete.
+
+### MISSION 4 — DELIVERABLES
+
+Provide:
+
+**REPORT 001 — VERIFIED REPOSITORY CONSOLIDATION**
+
+Exact repository state, source version, preserved history, backup verification and build readiness.
+
+**REPORT 002 — SCOPE RECONCILIATION**
+
+Complete requirements traceability matrix, identifying existing implementation, defects, missing functionality, approved decisions and conflicting historical provisions.
+
+**REPORT 003 — PROPOSED MASTER SCOPE REVISION REGISTER**
+
+Specify every required addition, correction and explicitly superseded provision.
+
+**REPORT 004 — NEXT ENGINEERING BATCH**
+
+A focused, dependency-ordered implementation plan beginning with routing integrity and hydrographic foundations.
+
+### EXECUTION RULES
+
+- Execute outstanding consolidation operations.
+- Do not repeat completed backup or audit work.
+- Preserve all original data and documents.
+- No functional application changes.
+- No remote Git operations.
+- No speculative routing fixes.
+- No rewriting the master SCOPE without approval.
+- No substantial new dataset downloads.
+
+If the consolidation is already complete, verify it and immediately proceed to SCOPE reconciliation.
+
+**Complete as much authorised work as available capacity allows. Report the last verified checkpoint and outstanding tasks accurately.**
+
+**ENGINEER. VERIFY. PRESERVE.**

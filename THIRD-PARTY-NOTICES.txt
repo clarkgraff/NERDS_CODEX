@@ -1907,3 +1907,6 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
+
+Beta 1.0.1 regional bathymetric research context: GEBCO Compilation Group (2026), derived from the operator-supplied GEBCO 2026 COG. Public domain with attribution. https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use
+GEBCO is not for navigation or safety at sea. NERDS uses it only as modelled research context, never as verified vessel clearance. No GEBCO/IHO/IOC endorsement is implied. Source resolution does not guarantee survey resolution.
