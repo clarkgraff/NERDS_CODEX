@@ -8,6 +8,7 @@ function baseLeg(a,b,options={}){
  const datasets=options.datasets||['osm','rivers'];
  const selected=water.selectNetwork(a.access||a,b.access||b),grid=selected.network;
  function endpoint(w){
+  if(!w.access&&grid.inspect(w).classification==='WATER')return {access:{lat:w.lat,lon:w.lon},portal:{lat:w.lat,lon:w.lon},points:[{lat:w.lat,lon:w.lon}],sourceEdgeIds:[],sourceAccessEvidence:[]};
   const key=JSON.stringify([w.lat,w.lon,w.access?.lat,w.access?.lon,selected.id,datasets]);
   if(!portalCache.has(key))portalCache.set(key,network.toGrid(w,grid,datasets));
   const source=portalCache.get(key);
@@ -30,8 +31,22 @@ function baseLeg(a,b,options={}){
  return hybrid;
 }
 function leg(a,b,options={}){
+ const directory=require('node:path').resolve(__dirname,'../assets/marine/kattegat-topology');
+ const prepared=[...new Set([...(options.preparedGeography||[]),...(options.bundledMarine===false?[]:require('node:fs').existsSync(directory+'/ready.json')?[directory]:[])])];
+ options={...options,preparedGeography:prepared};
  if(options.preparedGeography)require('./water-area-route.cjs').configure(options.preparedGeography);
- try{return baseLeg(a,b,options);}catch(original){
+ try{const coarse=baseLeg(a,b,options);
+  if(options.preparedGeography?.length&&require('./water-area-route.cjs').manifest.regions.some(r=>r.runtimeDirectory&&coarse.points.slice(1).some((p,i)=>{const q=coarse.points[i],e=r.extent;return Math.max(p.lon,q.lon)>=e.west&&Math.min(p.lon,q.lon)<=e.east&&Math.max(p.lat,q.lat)>=e.south&&Math.min(p.lat,q.lat)<=e.north;}))&&options.recoverTopology!==false&&options.maxVisited===undefined){
+   const areas=require('./water-area-route.cjs'),regions=areas.areas().filter(r=>r.record.runtimeDirectory),coarseSupported=coarse.points.slice(1).every((p,i)=>areas.exclusionClear(coarse.points[i],p,regions));
+   try{const candidate=areas.leg(a,b,options);
+    if(areas.valid(candidate)&&(!coarseSupported||length(candidate)+candidate.accesses.reduce((n,p,i)=>n+distanceNM([a,b][i],p),0)<length(coarse)+coarse.accesses.reduce((n,p,i)=>n+distanceNM([a,b][i],p),0))){
+     candidate.evidence.refinement={method:'CONNECTED_MAPPED_WATER_COMPARISON',originalDistanceNM:length(coarse),refinedDistanceNM:length(candidate),originalGeometry:coarse.points,originalEvidence:coarse.evidence};return candidate;
+    }
+   }catch(error){coarse.evidence.refinement={status:'UNRESOLVED',reason:error.message,originalPreserved:true};}
+   if(!coarseSupported){const error=Error('GEOMETRY_CONFLICT: coarse route intersects verified mapped land');error.evidence={...coarse.evidence,originalGeometry:coarse.points};throw error;}
+  }
+  return coarse;
+ }catch(original){
   if(options.maxVisited!==undefined||options.recoverTopology===false)throw original;
   try{const candidate=require('./water-area-route.cjs').leg(a,b,options);
    if(!require('./water-area-route.cjs').valid(candidate))throw Error('Unsupported water-area recovery');

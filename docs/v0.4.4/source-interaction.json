@@ -1,7 +1,14 @@
 {
   "checks": [
-    "Blank launch"
+    "Blank launch",
+    "List and globe single-click selection, first right-click, deselection, stable camera",
+    "Search clear preserves itinerary",
+    "Route analysis opens with calculated accounting",
+    "Double-click plotted path creates Bezier anchor",
+    "Centre and tangent drag commit",
+    "Anchorage assignment and linked landing with WGS84 transfer distance; queue unchanged",
+    "Restart blank, explicit reopen restores custom anchors and linked landing"
   ],
   "errors": [],
-  "dataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds044-ui-LsFyAT"
+  "dataDir": "C:\\Users\\Clark\\AppData\\Local\\Temp\\nerds044-ui-cw5QQ2"
 }

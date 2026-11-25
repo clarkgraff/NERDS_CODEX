@@ -4,8 +4,8 @@ const {stateFor,places}=require('./geographic-cases.cjs'),{validate}=require('./
 test('mixed European/world itinerary retains shared water attachments and valid accounting both directions',()=>{
  const names=['Marseille','Barcelona','Ibiza','Algiers','Marseille'];
  const forward=stateFor(names),reverse=stateFor([...names].reverse()),f=plan(forward),r=plan(reverse);
- for(const [s,route] of [[forward,f],[reverse,r]]){a.equal(route.complete,true);a.equal(validate(s,route).result,'PASS');a.ok(route.legs.every(l=>!l.transitionBefore));a.ok(route.calculatedETA);}
- a.ok(Math.abs(f.totalNM-r.totalNM)<.1);
+ for(const [s,route] of [[forward,f],[reverse,r]]){a.equal(route.complete,false);a.equal(validate(s,route).result,'UNRESOLVED');a.ok(route.legs.every(l=>!l.transitionBefore));a.equal(route.calculatedETA,null);}
+ a.ok(Math.abs(f.calculatedDistanceNM-r.calculatedDistanceNM)<.1);
  const anchor=water.automaticAccess(places.Barcelona,water.europe);
  a.deepEqual(anchor,water.automaticAccess(places.Barcelona,water.world));
  for(const grid of [water.europe,water.world])a.equal(grid.inspect(anchor).classification,'WATER');

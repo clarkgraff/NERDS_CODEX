@@ -40,20 +40,27 @@ def classify(elements, extent):
         if extent.boundary.distance(Point(p))>1e-10 and (count!=2 or b!=0):
             raise ValueError('Open, branched or inconsistent directed coastline inside coverage')
     faces=list(polygonize(unary_union([extent.boundary,*lines])))
+    # Query only directed edges touching this face. Avoid faces x all-source-edges scans.
+    edges=[];directions=[]
+    for line in lines:
+        coords=list(line.coords)
+        for a,b in zip(coords,coords[1:]):
+            if a==b:continue
+            edges.append(LineString([a,b]));directions.append((a,b))
+    tree=shapely.STRtree(edges)
     water=[];land=[]
     for face in faces:
-        votes=set()
-        for line in lines:
-            coords=list(line.coords)
-            for a,b in zip(coords,coords[1:]):
-                edge=LineString([a,b]);shared=edge.intersection(face.boundary)
-                if shared.length<=1e-12:continue
-                midpoint=shared.interpolate(.5,normalized=True);dx=b[0]-a[0];dy=b[1]-a[1];length=(dx*dx+dy*dy)**.5
-                epsilon=min(length*1e-6,1e-8)
-                left=Point(midpoint.x-dy/length*epsilon,midpoint.y+dx/length*epsilon)
-                right=Point(midpoint.x+dy/length*epsilon,midpoint.y-dx/length*epsilon)
-                if face.contains(left):votes.add('LAND')
-                if face.contains(right):votes.add('WATER')
+        votes=set();boundary=face.boundary;shapely.prepare(face);shapely.prepare(boundary)
+        for index in tree.query(boundary,predicate='intersects'):
+            edge=edges[index];a,b=directions[index]
+            # Faces are polygonized from these already clipped, non-intersecting edges.
+            # Endpoint-only contact contributes no vote when both probes lie outside.
+            midpoint=edge.interpolate(.5,normalized=True);dx=b[0]-a[0];dy=b[1]-a[1];length=(dx*dx+dy*dy)**.5
+            epsilon=min(length*1e-6,1e-8)
+            left=Point(midpoint.x-dy/length*epsilon,midpoint.y+dx/length*epsilon)
+            right=Point(midpoint.x+dy/length*epsilon,midpoint.y-dx/length*epsilon)
+            if face.contains(left):votes.add('LAND')
+            if face.contains(right):votes.add('WATER')
         if len(votes)!=1:raise ValueError('Ambiguous or conflicting coastline face')
         (land if 'LAND' in votes else water).append(face)
     return water,land,{'status':'DIRECTED_SOURCE_CLASSIFIED','sources':ids,'waterFaces':len(water),'landFaces':len(land),'boundaryRole':'Clipping only; no invented coastline'}

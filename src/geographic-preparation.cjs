@@ -1,7 +1,8 @@
 'use strict';
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{execFile}=require('node:child_process'),{promisify}=require('node:util');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
-async function prepare(manager,record,{python,executable,resolution=.005,signal}={}){
+async function prepare(manager,record,{python,executable,resolution=.005,signal,timeoutMs=120000}={}){
+ if(!Number.isFinite(timeoutMs)||timeoutMs<1000||timeoutMs>600000)throw Error('Invalid preparation deadline');
  const bundled=[process.resourcesPath&&path.join(process.resourcesPath,'nerds-geography','nerds-geography.exe'),path.resolve(__dirname,'../work/preparation-runtime/nerds-geography/nerds-geography.exe')].filter(Boolean).find(p=>fs.existsSync(p));
  executable=executable||(!python&&bundled?bundled:null);if(!python&&!executable)throw Error('PREPARATION_RUNTIME_MISSING: install the bundled geography processor');
  if(!Number.isFinite(resolution)||resolution<.0001||resolution>.1)throw Error('Invalid preparation resolution');
@@ -12,7 +13,7 @@ async function prepare(manager,record,{python,executable,resolution=.005,signal}
  if(!/^[a-zA-Z0-9.-]+$/.test(name))throw Error('Invalid tile ID');
  fs.writeFileSync(path.join(work,name+'-areas.json'),manager.read(record));fs.writeFileSync(path.join(work,name+'-query.txt'),JSON.stringify({source:record.source,tile:record.tile,sha256:record.sha256}));
  const t=record.tile;fs.writeFileSync(path.join(work,'regions.json'),JSON.stringify({[name]:[t.west-.02,Math.max(-90,t.south-.02),t.east+.02,Math.min(90,t.north+.02),resolution]}));
- const output=path.join(work,'output');await promisify(execFile)(executable||python,[...(!executable?[path.resolve(__dirname,'../scripts/prepare-water-areas.py')]:[]),'--regions',path.join(work,'regions.json'),'--input-root',work,'--output-root',output],{cwd:executable?work:path.resolve(__dirname,'..'),windowsHide:true,signal,timeout:120000,maxBuffer:1048576});
+ const output=path.join(work,'output');await promisify(execFile)(executable||python,[...(!executable?[path.resolve(__dirname,'../scripts/prepare-water-areas.py')]:[]),'--regions',path.join(work,'regions.json'),'--input-root',work,'--output-root',output],{cwd:executable?work:path.resolve(__dirname,'..'),windowsHide:true,signal,timeout:timeoutMs,maxBuffer:1048576});
  const doc=JSON.parse(manager.read(record));const lines=doc.elements.filter(e=>e.type==='way'&&/^(river|canal|fairway|flowline)$/.test(e.tags?.waterway||'')).map(e=>{if(!Array.isArray(e.geometry)||e.geometry.length<2)throw Error('Incomplete mapped waterway geometry');return {id:'osm/way/'+e.id,coordinates:e.geometry.map(p=>[p.lon,p.lat]),tags:e.tags,source:'https://www.openstreetmap.org/way/'+e.id};});fs.writeFileSync(path.join(output,'waterways.json'),JSON.stringify({lines}));
  const files=Object.fromEntries(fs.readdirSync(output).map(name=>[name,sha(fs.readFileSync(path.join(output,name)))]));fs.writeFileSync(path.join(output,'ready.json'),JSON.stringify({source:record,preparerVersion:'coast-3',resolution,files,geographicOnly:true,preparedAt:new Date().toISOString()}));
  fs.mkdirSync(path.dirname(dest),{recursive:true});if(!fs.existsSync(dest))fs.renameSync(output,dest);verify(dest);return {directory:dest,cacheHit:false};

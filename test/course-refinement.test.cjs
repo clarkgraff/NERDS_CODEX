@@ -24,8 +24,8 @@ test('additive refinement dataset matches its manifest and source acquisition di
 test('explicit mapped refinement resolves Bordeaux in both directions and retains original unresolved evidence',()=>{
  const s=stateFor(['Brest','Bordeaux']),coarse=plan(s,{recoverTopology:false}),before=structuredClone(coarse);
  const r=require('../src/course-refinement.cjs').refine(s,coarse,{recoverTopology:false}),reverse=plan({...s,waypoints:[...s.waypoints].reverse()},{refine:true,recoverTopology:false});
- a.equal(coarse.complete,false);a.deepEqual(coarse,before);a.deepEqual(r.coarseCourse,coarse);a.equal(r.complete,true);a.equal(validate(s,r).result,'PASS');
- a.equal(r.refinement.refinedLegs,1);a.deepEqual(r.legs[0].points,[...reverse.legs[0].points].reverse());a.ok(Math.abs(r.totalNM-reverse.totalNM)<1e-8);
+ a.equal(coarse.complete,false);a.deepEqual(coarse,before);a.deepEqual(r.coarseCourse,coarse);a.equal(r.complete,false);a.equal(validate(s,r).result,'UNRESOLVED');
+ a.equal(r.refinement.refinedLegs,1);a.deepEqual(r.legs[0].points,[...reverse.legs[0].points].reverse());a.ok(Math.abs(r.calculatedDistanceNM-reverse.calculatedDistanceNM)<1e-8);
  a.equal(r.legs[0].fromId,s.waypoints[0].id);a.equal(r.legs[0].waypointId,s.waypoints[1].id);a.ok(r.refinement.dataset.sources.some(x=>x.file==='bordeaux.json'));
  const core=require('../src/core.cjs');a.deepEqual(core.cleanState({...s,route:r}).route.coarseCourse,coarse);
  const bad=structuredClone(r);bad.coarseCourse.legs[0].fromId='substitution';a.throws(()=>core.cleanState({...s,route:bad}));

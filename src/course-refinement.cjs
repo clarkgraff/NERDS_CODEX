@@ -58,7 +58,7 @@ function refine(s,coarse,options={}){
    // Keep a supported coarse leg when source topology requires a large detour.
    if(old.status==='CALCULATED'&&length(detailed.points)>old.distanceNM*1.5+1)throw Error('Mapped path exceeds refinement detour guard (1.5 x coarse NM + 1 NM); original course retained');
    note.status='REFINED';note.reason='Connected mapped source geometry replaces coarse or unresolved geometry';note.beforeNM=old.distanceNM;note.afterNM=length(detailed.points);note.beforeVertices=old.points.length;note.afterVertices=detailed.points.length;
-   return {...old,...detailed,status:'CALCULATED',geographicStatus:'CALCULATED',reason:null,distanceNM:note.afterNM,provisionalDistanceNM:0,reused:false,transitionBefore:null};
+   return {...old,...detailed,marineEvidence:require('./marine-evidence.cjs').assess(detailed.points,s.vessel),status:'CALCULATED',geographicStatus:'CALCULATED',reason:null,distanceNM:note.afterNM,provisionalDistanceNM:0,reused:false,transitionBefore:null};
   }catch(error){note.status=old.status==='UNRESOLVED'?'UNRESOLVED':'UNCHANGED';note.reason=error.message;return old;}
  });
  // Roll back a replacement that breaks an already successful shared attachment.
